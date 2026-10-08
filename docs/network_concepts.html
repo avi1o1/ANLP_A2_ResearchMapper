@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A2 Network Concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Caveat:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+/* Layout: one reading column on graph paper; the teacher's red-pen notes sit in the right margin on wide screens and inline on phones. */
+:root {
+  --paper: #F6F8FC;
+  --grid: rgba(47, 91, 211, 0.065);
+  --card: #FFFFFF;
+  --ink: #18233D;
+  --muted: #56627F;
+  --rule: #D4DBE8;
+  --pen: #C33F2D;
+  --marker: #FFE48C;
+  --kgp: #3366D6;
+  --rkg: #DD7420;
+  --ext: #8890A4;
+  --c1: #3366D6;
+  --c2: #DD7420;
+  --c3: #23966A;
+  --cnone: #B9C1D1;
+  --edge: #8A94AC;
+  --focus: #3366D6;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Literata", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --font-hand: "Caveat", "Segoe Print", "Comic Sans MS", cursive;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #11161F; --grid: rgba(140, 170, 255, 0.05); --card: #19202D; --ink: #E2E7F1; --muted: #9AA5BC;
+    --rule: #2A3345; --pen: #FF7D69; --marker: rgba(255, 210, 80, 0.30); --kgp: #6F96FF; --rkg: #FF9C4A;
+    --ext: #7C8599; --c1: #6F96FF; --c2: #FF9C4A; --c3: #4CC890; --cnone: #4A5366; --edge: #6B7590; --focus: #8FB0FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #11161F; --grid: rgba(140, 170, 255, 0.05); --card: #19202D; --ink: #E2E7F1; --muted: #9AA5BC;
+  --rule: #2A3345; --pen: #FF7D69; --marker: rgba(255, 210, 80, 0.30); --kgp: #6F96FF; --rkg: #FF9C4A;
+  --ext: #7C8599; --c1: #6F96FF; --c2: #FF9C4A; --c3: #4CC890; --cnone: #4A5366; --edge: #6B7590; --focus: #8FB0FF;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  padding: 0 16px;
+  padding-block: 40px 80px;
+}
+.col { max-width: 720px; margin: 0 auto; }
+@media (min-width: 1240px) {
+  .col { margin-left: calc(50% - 500px); }
+}
+
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2.1rem, 5vw, 3rem); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 1.75rem; font-weight: 700; margin-top: 3.5rem; display: flex; gap: 0.6rem; align-items: baseline; }
+h2 .num { font-family: var(--font-hand); color: var(--pen); font-size: 2.2rem; font-weight: 700; }
+h3 { font-size: 1.2rem; font-weight: 700; margin-top: 2.2rem; }
+p { margin: 0.9rem 0; }
+.lede { font-size: 1.12rem; color: var(--muted); max-width: 62ch; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--pen); }
+mark { background: var(--marker); color: var(--ink); padding: 0 0.15em; border-radius: 2px; }
+code { font-family: var(--font-mono); font-size: 0.86em; background: var(--card); border: 1px solid var(--rule); padding: 0.05em 0.35em; border-radius: 4px; }
+pre { font-family: var(--font-mono); font-size: 0.84rem; line-height: 1.55; background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; overflow-x: auto; margin: 1rem 0; }
+pre code { border: 0; padding: 0; background: none; font-size: inherit; }
+pre .c { color: var(--muted); }
+a { color: var(--kgp); }
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.3rem 0; }
+
+/* Teacher's margin notes */
+.note {
+  font-family: var(--font-hand); color: var(--pen); font-size: 1.32rem; line-height: 1.2;
+  margin: 0.6rem 0 1rem; padding-left: 14px; border-left: 2px solid var(--pen);
+}
+@media (min-width: 1240px) {
+  .note { float: right; clear: right; width: 230px; margin: 0.2rem -270px 1rem 0; border-left: 0; padding-left: 0; transform: rotate(-1.2deg); }
+}
+
+nav.toc { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 8px; }
+nav.toc a {
+  font-family: var(--font-display); font-weight: 500; font-size: 0.95rem; text-decoration: none; color: var(--ink);
+  border: 1px solid var(--rule); background: var(--card); padding: 6px 12px; border-radius: 999px;
+}
+nav.toc a:hover { border-color: var(--ink); }
+
+/* Figures & interactives */
+.fig { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 16px; margin: 1.4rem 0; }
+.fig svg { display: block; width: 100%; height: auto; max-width: 100%; }
+.fig figcaption, .caption { font-size: 0.88rem; color: var(--muted); margin-top: 8px; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px; }
+button, select {
+  font-family: var(--font-display); font-size: 0.92rem; font-weight: 500; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 6px 12px; cursor: pointer;
+}
+button:hover, select:hover { border-color: var(--ink); }
+button.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+button:focus-visible, select:focus-visible, .node:focus-visible, .chip:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+label.toggle { display: inline-flex; gap: 6px; align-items: center; font-size: 0.92rem; font-family: var(--font-display); cursor: pointer; }
+.readout { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.bigQ { font-family: var(--font-display); font-size: 2rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.85rem; color: var(--muted); margin-top: 8px; font-family: var(--font-display); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+
+/* SVG */
+.edge { stroke: var(--edge); stroke-width: 1.6; fill: none; }
+.edge.cross { stroke: var(--pen); stroke-width: 2.4; stroke-dasharray: 6 4; }
+.edge.dim { opacity: 0.25; }
+.arrowhead { fill: var(--edge); }
+.arrowhead.cross { fill: var(--pen); }
+.node circle { stroke: var(--card); stroke-width: 2; }
+.node text { font-family: var(--font-display); font-weight: 700; font-size: 13px; fill: #FFFFFF; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.node.click { cursor: pointer; }
+.node.click:hover circle { stroke: var(--ink); }
+.f-kgp { fill: var(--kgp); } .f-rkg { fill: var(--rkg); } .f-ext { fill: var(--ext); }
+.f-c1 { fill: var(--c1); } .f-c2 { fill: var(--c2); } .f-c3 { fill: var(--c3); } .f-none { fill: var(--cnone); }
+.f-plain { fill: var(--ink); }
+.node.f-plain-wrap text { fill: var(--paper); }
+.svgtext { font-family: var(--font-display); font-size: 12px; fill: var(--muted); }
+.svgtext.strong { fill: var(--ink); font-weight: 700; }
+.axis { stroke: var(--rule); stroke-width: 1; }
+.hull { fill: none; stroke-width: 2; stroke-dasharray: 5 4; }
+.hull.c1 { stroke: var(--c1); } .hull.c2 { stroke: var(--c2); }
+
+/* Tables */
+.tablewrap { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th { font-family: var(--font-display); font-weight: 700; font-size: 0.82rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+td.num, th.num { text-align: right; font-family: var(--font-mono); }
+tr.hl td { background: var(--marker); }
+tr.cur td { background: var(--marker); }
+td.wrap { white-space: normal; }
+.flag { font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; }
+.flag.yes { color: var(--pen); }
+.flag.no { color: var(--muted); }
+
+/* Formula box */
+.formula { background: var(--card); border: 1px solid var(--rule); border-left: 4px solid var(--ink); border-radius: 6px; padding: 14px 18px; margin: 1.2rem 0; overflow-x: auto; }
+.formula .eq { font-family: var(--font-mono); font-size: 1rem; white-space: nowrap; }
+.formula dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; margin: 10px 0 0; font-size: 0.9rem; }
+.formula dt { font-family: var(--font-mono); font-weight: 600; }
+.formula dd { margin: 0; color: var(--muted); }
+
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.two > * { min-width: 0; }
+@media (max-width: 620px) { .two { grid-template-columns: 1fr; } }
+
+/* Stepper */
+.steplog { font-size: 0.95rem; min-height: 3.2em; margin-top: 10px; padding: 10px 12px; border-radius: 6px; background: var(--paper); border: 1px dashed var(--rule); }
+.steplog b { font-family: var(--font-display); }
+
+/* Jaccard chips */
+.chiprow { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 14px; }
+.chip { font-family: var(--font-display); font-size: 0.85rem; border-radius: 999px; padding: 4px 11px; border: 1.5px solid var(--rule); background: var(--paper); color: var(--muted); cursor: pointer; }
+.chip.on.a { background: var(--kgp); border-color: var(--kgp); color: #FFFFFF; }
+.chip.on.b { background: var(--rkg); border-color: var(--rkg); color: #FFFFFF; }
+.rowlabel { font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; }
+.venn { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 8px; }
+.venn > div { min-width: 0; border-radius: 8px; padding: 10px; font-size: 0.85rem; border: 1px solid var(--rule); background: var(--paper); }
+.venn h4 { margin: 0 0 4px; font-family: var(--font-display); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.venn .both { border: 2px solid var(--ink); }
+@media (max-width: 520px) { .venn { grid-template-columns: 1fr; } }
+
+.callout { border: 1.5px solid var(--pen); border-radius: 8px; padding: 12px 16px; margin: 1.2rem 0; }
+.callout strong { font-family: var(--font-display); color: var(--pen); }
+
+footer { margin-top: 4rem; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+body { margin: 0; }
+</style>
+</head>
+<body>
+
+<div class="col">
+
+<header>
+  <div class="eyebrow">DPCN · Assignment 2 · Group 3 study notes</div>
+  <h1>The network ideas behind A2</h1>
+  <p class="lede">A walk through PageRank, Louvain and Leiden communities, cross-institution edges and Jaccard similarity. Each one starts on a tiny graph you can check by hand, then grows into a made-up IIT Kharagpur + IIT Roorkee network shaped like your real data.</p>
+  <nav class="toc" aria-label="Sections">
+    <a href="#recap">Warm-up</a>
+    <a href="#pagerank">PageRank</a>
+    <a href="#communities">Communities</a>
+    <a href="#cross">Cross-institution edges</a>
+    <a href="#jaccard">Jaccard similarity</a>
+    <a href="#cheatsheet">Cheat sheet</a>
+  </nav>
+</header>
+
+<!-- ───────────────────────── RECAP ───────────────────────── -->
+<section id="recap">
+  <h2><span class="num">0</span> Warm-up: what you already know</h2>
+  <p>You said in-degree, degree and betweenness feel fine, so here they are in one line each. Keep them in mind, because everything below builds on them.</p>
+  <ul>
+    <li><strong>In-degree</strong> in a citation network = how many papers <em>in your corpus</em> cite this paper. It is smaller than OpenAlex's <code>cited_by_count</code>, which counts citations from the whole world.</li>
+    <li><strong>Degree centrality</strong> in the co-authorship network = how many distinct people someone has written with (networkx divides it by <em>N − 1</em>).</li>
+    <li><strong>Betweenness</strong> = how often someone sits on the shortest path between two other people. High betweenness means "bridge". On a graph with thousands of authors, use the sampled version: <code>nx.betweenness_centrality(H, k=500, seed=42)</code>.</li>
+  </ul>
+  <p>In-degree has one weakness, and it motivates the first new idea: <mark>it treats every citation as equal</mark>. A citation from a landmark paper counts the same as one from a paper nobody reads.</p>
+</section>
+
+<!-- ───────────────────────── PAGERANK ───────────────────────── -->
+<section id="pagerank">
+  <h2><span class="num">1</span> PageRank</h2>
+
+  <h3>The idea in one sentence</h3>
+  <p class="note">This is how Google ranked web pages in 1998. Swap "web page" for "paper" and "link" for "citation".</p>
+  <p><mark>A paper is important if important papers cite it.</mark> That sounds circular, and it is. PageRank solves the circle by letting importance flow around the network until it settles.</p>
+
+  <p>Think of it as a voting game:</p>
+  <ol>
+    <li>Every paper starts with the same amount of "importance", say 1/N each.</li>
+    <li>In each round, every paper <strong>splits its importance equally</strong> among the papers it cites. If a paper cites 2 others, each gets half.</li>
+    <li>Every paper's new importance is the sum of what it received.</li>
+    <li>Repeat until the numbers stop changing.</li>
+  </ol>
+  <p>Two consequences fall out right away. A citation from a paper that is itself important passes along more. And a citation from a paper that cites 50 things passes along very little, because it is split 50 ways.</p>
+
+  <h3>A tiny example: four papers</h3>
+  <p>Arrows point from the citing paper to the cited paper. <strong>A</strong> cites B and C. <strong>B</strong> cites C. <strong>C</strong> cites A. <strong>D</strong> cites C. Before you press anything, guess: which paper will end up most important? Which will be least?</p>
+
+  <figure class="fig" id="pr-fig">
+    <svg id="pr-svg" viewBox="0 0 440 290" role="img" aria-label="Four-paper citation graph; circle size shows PageRank"></svg>
+    <div class="controls">
+      <button class="primary" id="pr-next">Next iteration</button>
+      <button id="pr-conv">Run to convergence</button>
+      <button id="pr-reset">Reset</button>
+      <label class="toggle"><input type="checkbox" id="pr-damp" checked> Use damping (d = 0.85)</label>
+    </div>
+    <div class="tablewrap" style="max-height: 240px; overflow-y: auto;">
+      <table id="pr-table" aria-label="PageRank values per iteration"></table>
+    </div>
+    <figcaption>Circle area follows the current PageRank. The values in each row add up to 1. Try it with damping switched off too.</figcaption>
+  </figure>
+
+  <p>What you should see: <strong>C</strong> gets the most (three papers cite it). <strong>A</strong> comes a close second even though only one paper cites it, because that one paper is C, the most important paper, and C gives A <em>all</em> of its importance. D, which nobody cites, ends lowest.</p>
+
+  <h3>Why damping exists</h3>
+  <p class="note">Switch damping off and watch: the numbers bounce around for many rounds, and D drops to exactly 0.</p>
+  <p>Without damping, two things go wrong:</p>
+  <ul>
+    <li><strong>Papers nobody cites get 0</strong>, and importance can slosh back and forth in cycles (A→C→A) instead of settling quickly.</li>
+    <li><strong>Dead ends leak importance.</strong> A paper whose references are all outside your corpus (very common: a 2016 paper citing 1990s work) has nobody to pass its score to. Importance flows in and never comes out.</li>
+  </ul>
+  <p>The fix is the <strong>random surfer</strong> story. Imagine a reader who starts on a random paper and keeps clicking a random reference. 85% of the time they follow a reference. 15% of the time they get bored and jump to a completely random paper. A paper's PageRank is the fraction of time this reader spends on it. The 0.85 is the <strong>damping factor d</strong> (networkx calls it <code>alpha</code>).</p>
+
+  <div class="formula">
+    <div class="eq">PR(i) = (1 − d)/N + d · Σ<sub>j cites i</sub> PR(j) / out(j)</div>
+    <dl>
+      <dt>N</dt><dd>number of papers in the network</dd>
+      <dt>d</dt><dd>damping factor, almost always 0.85</dd>
+      <dt>out(j)</dt><dd>how many papers j cites (its out-degree), so j's vote is split out(j) ways</dd>
+      <dt>(1 − d)/N</dt><dd>the "bored reader jumps anywhere" share that every paper gets for free</dd>
+    </dl>
+  </div>
+  <p>Dead-end papers (out-degree 0) are handled by pretending they cite <em>every</em> paper equally. networkx does this for you automatically.</p>
+
+  <h3>Do one round by hand</h3>
+  <p>Start with everything at 0.25. Paper C is cited by A (which cites 2 papers), B (cites 1) and D (cites 1):</p>
+  <pre><code>PR(C) = 0.15/4 + 0.85 × ( 0.25/2 + 0.25/1 + 0.25/1 )
+      = 0.0375 + 0.85 × 0.625
+      = 0.0375 + 0.53125
+      = <b>0.56875</b>        <span class="c"># matches row t = 1 in the table above</span></code></pre>
+  <p>That is the whole algorithm. The computer just repeats this for every paper, many times.</p>
+
+  <h3>Now on a citation network</h3>
+  <p>Here is a made-up corpus of 12 papers, 6 from IIT Kharagpur (K1–K6) and 6 from IIT Roorkee (R1–R6). Time runs left to right, so arrows always point backwards: you can only cite older work.</p>
+
+  <figure class="fig" id="cn-fig">
+    <svg id="cn-svg" viewBox="0 0 700 340" role="img" aria-label="Twelve-paper citation network of IIT Kharagpur and IIT Roorkee papers"></svg>
+    <div class="controls" role="group" aria-label="Size circles by">
+      <span class="rowlabel">Circle size:</span>
+      <button id="cn-size-in" aria-pressed="true">In-degree</button>
+      <button id="cn-size-pr" aria-pressed="false">PageRank</button>
+      <label class="toggle"><input type="checkbox" id="cn-cross"> Highlight cross-institution citations</label>
+    </div>
+    <div class="legend">
+      <span><i class="dot" style="background: var(--kgp)"></i>IIT Kharagpur</span>
+      <span><i class="dot" style="background: var(--rkg)"></i>IIT Roorkee</span>
+    </div>
+  </figure>
+
+  <div class="tablewrap">
+    <table id="cn-table" aria-label="In-degree versus PageRank for the 12 papers"></table>
+  </div>
+
+  <p>Flip between the two sizing modes and look at the table. <strong>K3</strong> has the most citations (4), yet three papers outrank it on PageRank. <mark>K2 is cited only once, but that one citation comes from K3</mark>, and K3 cites nothing else, so K3 passes all its importance to K2. K2 then passes it all to K1. That is "important papers cite you" working exactly as designed.</p>
+
+  <div class="callout">
+    <strong>Age bias.</strong> Because citations always point to older papers, importance drains backwards in time and pools in the oldest papers (K1 and R1 here). New 2024–25 papers cannot have earned citations yet. In your report, either say this out loud or compare PageRank only within the same publication year.
+  </div>
+
+  <h3>In code</h3>
+<pre><code>import networkx as nx
+import pandas as pd
+
+cit = pd.read_csv("citation_network.csv")       <span class="c"># source_doi cites target_doi</span>
+G = nx.DiGraph()
+G.add_edges_from(zip(cit.source_doi, cit.target_doi))
+
+pr  = nx.pagerank(G, alpha=0.85)                 <span class="c"># dict: doi -> score (sums to 1)</span>
+ind = dict(G.in_degree())
+
+top10 = sorted(pr, key=pr.get, reverse=True)[:10]
+for doi in top10:
+    print(doi, round(pr[doi], 4), ind[doi])</code></pre>
+  <p class="note">Put the top 10 next to their in-degree in the report. The interesting story is where the two lists disagree.</p>
+
+  <h3>Further reading</h3>
+  <p><a href="https://pi.math.cornell.edu/~mec/Winter2009/RalucaRemus/Lecture3/lecture3.html">PageRank Algorithm: The Mathematics of Google Search</a> (Cornell, Lecture 3). It covers the same ground in matrix form: the random surfer, dangling nodes, disconnected components, the power method and why the Perron–Frobenius theorem guarantees one answer. One notation difference: it writes damping as <code>m = 0.15</code>, the probability of jumping to a random page. That is the same model as <code>d = 0.85</code> here, since m = 1 − d.</p>
+</section>
+
+<!-- ───────────────────────── COMMUNITIES ───────────────────────── -->
+<section id="communities">
+  <h2><span class="num">2</span> Communities: Louvain and Leiden</h2>
+
+  <h3>What is a community?</h3>
+  <p>In the co-authorship network, a <strong>community</strong> is a group of people who write with each other a lot and with outsiders much less. Think of a research group or a lab. Nobody tells the algorithm about departments or institutes. It finds groups from the edges alone, and afterwards you check whether those groups match departments, cut across them, or span both IITs.</p>
+  <p>To find communities, we need a <strong>score</strong> for how good a split into groups is. Louvain and Leiden are both just clever ways of searching for a split with a high score. The score is called <strong>modularity</strong>.</p>
+
+  <h3>Modularity: comparing with a random null model</h3>
+  <p class="note">This is the null-model idea from class: compare what you see to what a random graph would give.</p>
+  <p>Saying "lots of edges inside groups" is not enough. If you put everyone in one giant group, <em>every</em> edge is inside it. So modularity asks a sharper question: <mark>are there more edges inside each group than you would expect if the edges were wired up at random?</mark></p>
+
+  <div class="formula">
+    <div class="eq">Q = Σ<sub>communities c</sub> [ L<sub>c</sub>/m − ( d<sub>c</sub>/2m )² ]</div>
+    <dl>
+      <dt>m</dt><dd>total number of edges in the graph</dd>
+      <dt>L<sub>c</sub></dt><dd>edges with both ends inside community c</dd>
+      <dt>d<sub>c</sub></dt><dd>sum of the degrees of the nodes in c</dd>
+      <dt>L<sub>c</sub>/m</dt><dd>fraction of edges that actually fall inside c</dd>
+      <dt>(d<sub>c</sub>/2m)²</dt><dd>fraction you would expect inside c if you rewired edges randomly but kept everyone's degree (the "configuration model", a cousin of the ER model)</dd>
+    </dl>
+  </div>
+  <p>Q near 0 means "no better than random". Real networks with clear groups usually score about 0.3–0.7. Q can even go negative if you split badly.</p>
+
+  <h3>Try it yourself</h3>
+  <p>Eight faculty, 11 co-authorship edges. <strong>Click a person</strong> to change their community (blue → orange → green). Try to get the highest Q you can.</p>
+
+  <figure class="fig">
+    <svg id="mod-svg" viewBox="0 0 440 220" role="img" aria-label="Eight-person co-authorship graph; click nodes to change community"></svg>
+    <div class="controls">
+      <span class="rowlabel">Presets:</span>
+      <button data-preset="natural">Natural split</button>
+      <button data-preset="one">Everyone together</button>
+      <button data-preset="moved">Move d across</button>
+      <button data-preset="mixed">Mixed up</button>
+    </div>
+    <div style="display:flex; gap: 18px; align-items: baseline; flex-wrap: wrap; margin-top: 12px;">
+      <div>Modularity <span class="bigQ" id="mod-q">0.000</span></div>
+    </div>
+    <div class="tablewrap"><table id="mod-table" aria-label="Modularity contribution per community"></table></div>
+    <figcaption>m = 11 edges, so 2m = 22.</figcaption>
+  </figure>
+
+  <p>Check the natural split by hand. The left group {a, b, c, d} has 5 internal edges. Its degrees are a = 2, b = 3, c = 3, d = 3 (d's edge to e still counts towards d's degree), so d<sub>c</sub> = 11. The right group is a mirror image.</p>
+  <pre><code>one side:  5/11 − (11/22)²  =  0.4545 − 0.25  =  0.2045
+both sides:                    Q  =  2 × 0.2045  =  <b>0.409</b></code></pre>
+  <p>"Everyone together" gives exactly 0: all 11 edges are inside, but you would also expect all of them inside, so there is no surprise. Putting each person in a group alone scores −0.128.</p>
+
+  <h3>Louvain: a greedy search for high Q</h3>
+  <p>With 8 people you can try splits by hand. With 3,000 faculty the number of possible splits is astronomically large. Louvain (named after the Belgian university where it was invented) finds a good one fast by repeating two phases.</p>
+  <ol>
+    <li><strong>Local moving.</strong> Start with everyone alone. Visit each node in turn and ask: "if I moved you into one of your neighbours' communities, which move raises Q the most?" Make that move if it helps. Keep sweeping over all nodes until a full sweep changes nothing.</li>
+    <li><strong>Aggregation.</strong> Collapse each community into a single "super-node". Edges inside a community become a self-loop, and edges between communities add up into one weighted edge. Then go back to phase 1 on this smaller graph.</li>
+  </ol>
+  <p>Stop when nothing moves anymore. Step through it on the same graph:</p>
+
+  <figure class="fig">
+    <svg id="lv-svg" viewBox="0 0 440 220" role="img" aria-label="Louvain algorithm step by step"></svg>
+    <div class="steplog" id="lv-log" aria-live="polite"></div>
+    <div class="controls">
+      <button class="primary" id="lv-next">Next step</button>
+      <button id="lv-reset">Restart</button>
+      <span class="readout" id="lv-count"></span>
+    </div>
+    <figcaption>Grey = still alone. Colours appear once people form a group. Ties go to the first neighbour alphabetically.</figcaption>
+  </figure>
+
+  <h3>Leiden: Louvain with a safety check</h3>
+  <p class="note">Leiden came out of Leiden University in 2019. Same goal (high Q), better guarantees.</p>
+  <p>Louvain has a known flaw. Sometimes a node that was holding a community together moves away, and the community is left as <mark>two pieces with no edge between them</mark> that still carry the same label. That is clearly not a real "group".</p>
+
+  <figure class="fig">
+    <svg id="ld-svg" viewBox="0 0 640 230" role="img" aria-label="Louvain can leave a community internally disconnected"></svg>
+    <figcaption>Left: x holds the blue community together. Right: later in the run the orange group grows, x's best move is now to orange, and blue is left in two disconnected pieces.</figcaption>
+  </figure>
+
+  <p>Leiden adds a <strong>refinement</strong> phase between local moving and aggregation. Inside each community, it rebuilds the group from small well-connected pieces, so a disconnected community gets split before it is collapsed. Leiden guarantees every community it returns is connected, and it is usually faster too. Either is fine for A2. Leiden is the safer modern choice; Louvain is built into networkx.</p>
+
+  <h3>Two practical points</h3>
+  <ul>
+    <li><strong>Randomness.</strong> Both algorithms visit nodes in a random order, so different runs can give slightly different answers. Fix the <code>seed</code> so your results can be reproduced, and if you have time, check that the main groups survive a few different seeds.</li>
+    <li><strong>Resolution.</strong> Both take a <code>resolution</code> parameter (default 1). Higher values give more, smaller communities; lower values give fewer, bigger ones.</li>
+  </ul>
+
+  <h3>In code</h3>
+<pre><code>auth = pd.read_csv("authorship_network.csv")
+
+H = nx.Graph()
+for r in auth.itertuples():                      <span class="c"># weight = number of joint papers</span>
+    if H.has_edge(r.author_a, r.author_b):
+        H[r.author_a][r.author_b]["weight"] += 1
+    else:
+        H.add_edge(r.author_a, r.author_b, weight=1)
+
+<span class="c"># Louvain (built into networkx)</span>
+comms = nx.community.louvain_communities(H, weight="weight", seed=42)
+Q = nx.community.modularity(H, comms, weight="weight")
+print(len(comms), "communities, Q =", round(Q, 3))
+
+<span class="c"># Leiden (pip install igraph leidenalg)</span>
+import igraph as ig, leidenalg as la
+g = ig.Graph.from_networkx(H)
+part = la.find_partition(g, la.ModularityVertexPartition, weights="weight", seed=42)
+print(len(part), "communities, Q =", round(part.modularity, 3))</code></pre>
+  <p>For the report: number of communities, the sizes of the largest few, Q, and one sentence per big community about who is in it (mostly one department? both IITs?).</p>
+</section>
+
+<!-- ───────────────────────── CROSS-INSTITUTION ───────────────────────── -->
+<section id="cross">
+  <h2><span class="num">3</span> Flagging cross-institution edges</h2>
+  <p>This one sounds technical but is really just bookkeeping. Every node carries a label: which institute it belongs to. An edge is <strong>cross-institution</strong> when its two ends have different labels. "Flagging" means adding a TRUE/FALSE column that says so.</p>
+
+  <h3>From one paper to edges</h3>
+  <p>Say a single paper, DOI <code>10.1000/xyz123</code> from 2022, has four authors:</p>
+  <ul>
+    <li>P. Sen, <span style="color: var(--kgp); font-weight: 600">IIT Kharagpur</span></li>
+    <li>R. Ghosh, <span style="color: var(--kgp); font-weight: 600">IIT Kharagpur</span></li>
+    <li>A. Rawat, <span style="color: var(--rkg); font-weight: 600">IIT Roorkee</span></li>
+    <li>M. Iyer, <span style="color: var(--ext); font-weight: 600">IISc Bangalore</span></li>
+  </ul>
+  <p>Every pair of co-authors gets an edge. With k authors that is k(k−1)/2 pairs, so 4 authors give 6 rows in <code>authorship_network.csv</code>:</p>
+
+  <div class="tablewrap">
+    <table aria-label="Authorship edges from one four-author paper">
+      <thead><tr><th>author_a</th><th>author_b</th><th>paper_doi</th><th>inst_a</th><th>inst_b</th><th class="num">year</th><th>cross_inst?</th><th>cross_cluster?</th></tr></thead>
+      <tbody>
+        <tr><td>P. Sen</td><td>R. Ghosh</td><td>10.1000/xyz123</td><td>IIT Kharagpur</td><td>IIT Kharagpur</td><td class="num">2022</td><td class="flag no">FALSE</td><td class="flag no">FALSE</td></tr>
+        <tr class="hl"><td>P. Sen</td><td>A. Rawat</td><td>10.1000/xyz123</td><td>IIT Kharagpur</td><td>IIT Roorkee</td><td class="num">2022</td><td class="flag yes">TRUE</td><td class="flag no">FALSE</td></tr>
+        <tr class="hl"><td>P. Sen</td><td>M. Iyer</td><td>10.1000/xyz123</td><td>IIT Kharagpur</td><td>IISc Bangalore</td><td class="num">2022</td><td class="flag yes">TRUE</td><td class="flag yes">TRUE</td></tr>
+        <tr class="hl"><td>R. Ghosh</td><td>A. Rawat</td><td>10.1000/xyz123</td><td>IIT Kharagpur</td><td>IIT Roorkee</td><td class="num">2022</td><td class="flag yes">TRUE</td><td class="flag no">FALSE</td></tr>
+        <tr class="hl"><td>R. Ghosh</td><td>M. Iyer</td><td>10.1000/xyz123</td><td>IIT Kharagpur</td><td>IISc Bangalore</td><td class="num">2022</td><td class="flag yes">TRUE</td><td class="flag yes">TRUE</td></tr>
+        <tr class="hl"><td>A. Rawat</td><td>M. Iyer</td><td>10.1000/xyz123</td><td>IIT Roorkee</td><td>IISc Bangalore</td><td class="num">2022</td><td class="flag yes">TRUE</td><td class="flag yes">TRUE</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The first six columns are exactly the required CSV schema. The two flag columns are derived by comparing <code>inst_a</code> and <code>inst_b</code>:</p>
+  <ul>
+    <li><strong>cross_inst</strong>: the two institutes differ. Here 5 of 6 edges.</li>
+    <li><strong>cross_cluster</strong>: the two institutes are in different <em>clusters</em> from the course PPT. Kharagpur and Roorkee are both "old IITs", so that edge is not cross-cluster. IIT ↔ IISc is. The PPT's examples are IIT ↔ CSIR, IIT ↔ IISER and CSIR ↔ DAE.</li>
+  </ul>
+  <p class="note">You'll need a small lookup table: institute name → cluster. Write it once by hand from the PPT.</p>
+
+  <h3>The same thing for citations</h3>
+  <p>Go back to the <a href="#cn-fig">12-paper citation network</a> and tick <em>Highlight cross-institution citations</em>. Five of the 14 citations go between Kharagpur and Roorkee: three Kharagpur papers citing Roorkee work, and two the other way round. Counting these per direction gives you the in-flow and out-flow numbers for section 7a of the brief.</p>
+
+  <h3>Three traps in real data</h3>
+  <ul>
+    <li><strong>Huge author lists.</strong> A particle-physics paper with 2,000 authors makes about 2 million edges and swamps everything. Pick a cutoff (for example, skip papers with more than 50 authors for the network), and state it in the report.</li>
+    <li><strong>Multiple affiliations.</strong> OpenAlex can list two institutes for one author on one paper. Decide on a rule (for example, prefer your assigned institute) and apply it the same way everywhere.</li>
+    <li><strong>Name variants.</strong> "P. Sen", "Prasanta Sen" and "P. K. Sen" may be one person. Use OpenAlex author IDs as node IDs and keep names only as labels.</li>
+  </ul>
+
+<pre><code>cluster = {"IIT Kharagpur": "Old IIT", "IIT Roorkee": "Old IIT",
+           "IISc Bangalore": "IISc/TIFR/IISER", "CSIR-NCL Pune": "CSIR Chem", ...}
+
+auth["cross_inst"]    = auth.inst_a != auth.inst_b
+auth["cross_cluster"] = auth.inst_a.map(cluster) != auth.inst_b.map(cluster)
+cit["cross_inst"]     = cit.source_inst != cit.target_inst</code></pre>
+</section>
+
+<!-- ───────────────────────── JACCARD ───────────────────────── -->
+<section id="jaccard">
+  <h2><span class="num">4</span> Jaccard similarity</h2>
+  <p>Jaccard similarity measures <strong>how much two sets overlap</strong>, on a scale from 0 (nothing in common) to 1 (identical).</p>
+
+  <div class="formula">
+    <div class="eq">J(A, B) = |A ∩ B| / |A ∪ B|  =  (things in both) / (things in either)</div>
+  </div>
+
+  <h3>The smallest example</h3>
+  <p>Your fruit basket is {apple, banana, mango}. Mine is {banana, mango, grape, kiwi}. We share 2 fruits (banana, mango), and between us there are 5 different fruits. So J = 2/5 = <strong>0.4</strong>.</p>
+  <p class="note">Why divide by the union and not just count the overlap? So a huge set doesn't look similar to everything just because it's huge.</p>
+  <p>Why not just count the shared items? Because a giant institute that works on 200 topics would "share" many topics with everyone purely by being big. Dividing by the union corrects for size.</p>
+
+  <h3>For A2: research topics of two institutes</h3>
+  <p>Each institute gets a <strong>set of research topics</strong>, for example the top 10 OpenAlex subfields by number of papers. Then J tells you how similar two institutes' research profiles are. Toggle topics on and off below:</p>
+
+  <figure class="fig">
+    <div class="controls" style="margin-top: 0;">
+      <span class="rowlabel">Compare IIT Kharagpur with</span>
+      <select id="jc-partner" aria-label="Partner institute"></select>
+    </div>
+    <div style="margin-top: 12px;"><span class="rowlabel" style="color: var(--kgp)">IIT Kharagpur topics</span></div>
+    <div class="chiprow" id="jc-a"></div>
+    <div><span class="rowlabel" style="color: var(--rkg)" id="jc-b-label">Partner topics</span></div>
+    <div class="chiprow" id="jc-b"></div>
+    <div class="venn">
+      <div><h4>Only Kharagpur</h4><div id="jc-onlyA"></div></div>
+      <div class="both"><h4>Both (∩)</h4><div id="jc-both"></div></div>
+      <div><h4>Only partner</h4><div id="jc-onlyB"></div></div>
+    </div>
+    <p style="margin-bottom: 0;">J = <span class="readout" id="jc-frac"></span> = <span class="bigQ" id="jc-j"></span></p>
+    <figcaption>Topic sets are invented for practice.</figcaption>
+  </figure>
+
+  <h3>The partner ranking you would put in the report</h3>
+  <p>Combine Jaccard with the co-authorship counts and you can ask an interesting question: <em>do we collaborate most with institutes that do similar research, or with ones that complement us?</em></p>
+  <div class="tablewrap"><table id="jc-table" aria-label="Partner institutes ranked by shared papers, with topic Jaccard"></table></div>
+  <p>In this invented data, IISc shares the most papers, but Roorkee has the most similar research profile (J = 0.60). CSIR-NCL overlaps least (J = 0.20), so its 74 joint papers are probably a complementary collaboration: chemistry expertise that Kharagpur doesn't have in-house. One observation like that makes a good paragraph in the report.</p>
+
+  <h3>Bonus: Jaccard on a network</h3>
+  <p>The same formula works on <strong>neighbour sets</strong>. Two faculty with J = 0.8 between their co-author lists move in the same circle even if they have never written together, which makes them a good guess for a future collaboration. networkx has it built in: <code>nx.jaccard_coefficient(H, [(u, v)])</code>.</p>
+
+<pre><code>def jaccard(A, B):
+    A, B = set(A), set(B)
+    return len(A &amp; B) / len(A | B) if (A | B) else 0.0
+
+kgp_topics  = set(top_subfields(df[df.institution == "IIT Kharagpur"], n=10))
+iisc_topics = set(top_subfields(partner_papers["IISc Bangalore"], n=10))
+print(jaccard(kgp_topics, iisc_topics))</code></pre>
+  <p class="note"><code>top_subfields</code> is yours to write: group by OpenAlex topic/subfield, count, take the top n.</p>
+</section>
+
+<!-- ───────────────────────── CHEAT SHEET ───────────────────────── -->
+<section id="cheatsheet">
+  <h2><span class="num">5</span> Cheat sheet</h2>
+  <div class="tablewrap">
+    <table aria-label="Summary of each measure">
+      <thead><tr><th>Measure</th><th>Network</th><th>Question it answers</th><th>networkx</th></tr></thead>
+      <tbody>
+        <tr><td>In-degree</td><td>Citation</td><td class="wrap">How many papers in our corpus cite this one?</td><td><code>G.in_degree()</code></td></tr>
+        <tr><td>PageRank</td><td>Citation</td><td class="wrap">Which papers are cited by <em>other important</em> papers?</td><td><code>nx.pagerank(G, alpha=0.85)</code></td></tr>
+        <tr><td>Degree centrality</td><td>Authorship</td><td class="wrap">Who has the most distinct co-authors?</td><td><code>nx.degree_centrality(H)</code></td></tr>
+        <tr><td>Betweenness</td><td>Authorship</td><td class="wrap">Who bridges groups that would otherwise be apart?</td><td><code>nx.betweenness_centrality(H, k=500)</code></td></tr>
+        <tr><td>Modularity Q</td><td>Authorship</td><td class="wrap">How much better than random is this split into groups?</td><td><code>nx.community.modularity</code></td></tr>
+        <tr><td>Louvain / Leiden</td><td>Authorship</td><td class="wrap">Which split into groups has a high Q?</td><td><code>louvain_communities</code> / <code>leidenalg</code></td></tr>
+        <tr><td>Cross-inst flag</td><td>Both</td><td class="wrap">Does this edge connect two different institutes?</td><td><code>inst_a != inst_b</code></td></tr>
+        <tr><td>Jaccard</td><td>Topic sets</td><td class="wrap">How similar are two institutes' research areas?</td><td><code>len(A&amp;B)/len(A|B)</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>All papers, people, topic sets and paper counts on this page are invented for practice. The PageRank and modularity values are computed live in the page and match networkx's output for the same graphs.</footer>
+</div>
+
+<script>
+(function () {
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (tag, attrs, parent) => {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  };
+  let markerSeq = 0;
+
+  /* Generic graph renderer. nodes: [{id,x,y,label}], edges: [[s,t]] */
+  function renderGraph(svg, o) {
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    const defs = el("defs", {}, svg);
+    const mid = "m" + (++markerSeq), midX = "mx" + markerSeq;
+    if (o.directed) {
+      [[mid, "arrowhead"], [midX, "arrowhead cross"]].forEach(([id, cls]) => {
+        const mk = el("marker", { id, viewBox: "0 0 10 10", refX: 10, refY: 5, markerWidth: 9, markerHeight: 9, markerUnits: "userSpaceOnUse", orient: "auto" }, defs);
+        el("path", { d: "M0,0 L10,5 L0,10 z", class: cls }, mk);
+      });
+    }
+    if (o.before) o.before(svg);
+    const pos = {}; o.nodes.forEach(n => pos[n.id] = n);
+    const R = o.radius || (() => 16);
+    const has = new Set(o.edges.map(e => e[0] + ">" + e[1]));
+    const eg = el("g", {}, svg);
+    o.edges.forEach(e => {
+      const s = pos[e[0]], t = pos[e[1]];
+      const rs = R(s), rt = R(t) + (o.directed ? 2 : 0);
+      const cls = "edge " + (o.edgeClass ? o.edgeClass(e) : "");
+      const cross = cls.indexOf("cross") >= 0;
+      const curved = o.directed && has.has(e[1] + ">" + e[0]);
+      let d;
+      if (curved) {
+        const mx = (s.x + t.x) / 2, my = (s.y + t.y) / 2;
+        const dx = t.x - s.x, dy = t.y - s.y, L = Math.hypot(dx, dy);
+        const cx = mx - dy / L * 26, cy = my + dx / L * 26;
+        const u1x = (cx - s.x), u1y = (cy - s.y), l1 = Math.hypot(u1x, u1y);
+        const u2x = (t.x - cx), u2y = (t.y - cy), l2 = Math.hypot(u2x, u2y);
+        d = `M${s.x + u1x / l1 * rs},${s.y + u1y / l1 * rs} Q${cx},${cy} ${t.x - u2x / l2 * rt},${t.y - u2y / l2 * rt}`;
+      } else {
+        const dx = t.x - s.x, dy = t.y - s.y, L = Math.hypot(dx, dy);
+        d = `M${s.x + dx / L * rs},${s.y + dy / L * rs} L${t.x - dx / L * rt},${t.y - dy / L * rt}`;
+      }
+      const p = el("path", { d, class: cls }, eg);
+      if (o.directed) p.setAttribute("marker-end", `url(#${cross ? midX : mid})`);
+    });
+    const ng = el("g", {}, svg);
+    o.nodes.forEach(n => {
+      const g = el("g", { class: "node" + (o.onClick ? " click" : ""), transform: `translate(${n.x},${n.y})` }, ng);
+      el("circle", { r: R(n), class: o.nodeClass ? o.nodeClass(n) : "f-plain" }, g);
+      const t = el("text", {}, g); t.textContent = n.label || n.id;
+      if (o.onClick) {
+        g.setAttribute("tabindex", "0"); g.setAttribute("role", "button");
+        g.setAttribute("aria-label", (o.ariaLabel ? o.ariaLabel(n) : n.id));
+        g.addEventListener("click", () => o.onClick(n));
+        g.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); o.onClick(n); } });
+      }
+    });
+    if (o.after) o.after(svg);
+  }
+
+  /* One PageRank step, networkx-compatible (dangling nodes spread uniformly). */
+  function prStep(ids, edges, r, d) {
+    const N = ids.length, out = {}, inn = {};
+    ids.forEach(i => { out[i] = 0; inn[i] = []; });
+    edges.forEach(([s, t]) => { out[s]++; inn[t].push(s); });
+    let dang = 0; ids.forEach(i => { if (out[i] === 0) dang += r[i]; });
+    const nr = {};
+    ids.forEach(i => {
+      let s = 0; inn[i].forEach(j => s += r[j] / out[j]);
+      nr[i] = (1 - d) / N + d * (s + dang / N);
+    });
+    return nr;
+  }
+  function pagerank(ids, edges, d) {
+    let r = {}; ids.forEach(i => r[i] = 1 / ids.length);
+    for (let k = 0; k < 1000; k++) {
+      const nr = prStep(ids, edges, r, d);
+      let diff = 0; ids.forEach(i => diff += Math.abs(nr[i] - r[i]));
+      r = nr; if (diff < 1e-12) break;
+    }
+    return r;
+  }
+
+  /* ───── Tiny PageRank stepper ───── */
+  const P_IDS = ["A", "B", "C", "D"];
+  const P_EDGES = [["A", "B"], ["A", "C"], ["B", "C"], ["C", "A"], ["D", "C"]];
+  const P_POS = [{ id: "A", x: 90, y: 75 }, { id: "B", x: 330, y: 70 }, { id: "C", x: 200, y: 210 }, { id: "D", x: 370, y: 225 }];
+  let prHist;
+  function prReset() { const r = {}; P_IDS.forEach(i => r[i] = 0.25); prHist = [r]; prDraw(); }
+  function prD() { return document.getElementById("pr-damp").checked ? 0.85 : 1.0; }
+  function prDraw() {
+    const r = prHist[prHist.length - 1];
+    renderGraph(document.getElementById("pr-svg"), {
+      nodes: P_POS.map(n => ({ ...n, label: n.id })), edges: P_EDGES, directed: true,
+      radius: n => 9 + 44 * Math.sqrt(r[n.id]),
+      nodeClass: () => "f-kgp",
+      after: svg => P_POS.forEach(n => {
+        const t = el("text", { x: n.x, y: n.y + 9 + 44 * Math.sqrt(r[n.id]) + 15, class: "svgtext strong", "text-anchor": "middle" }, svg);
+        t.textContent = r[n.id].toFixed(4);
+      })
+    });
+    const tb = document.getElementById("pr-table");
+    let h = "<thead><tr><th class='num'>t</th>" + P_IDS.map(i => `<th class='num'>${i}</th>`).join("") + "<th class='num'>sum</th></tr></thead><tbody>";
+    prHist.forEach((row, t) => {
+      const s = P_IDS.reduce((a, i) => a + row[i], 0);
+      h += `<tr class='${t === prHist.length - 1 ? "cur" : ""}'><td class='num'>${t}</td>` + P_IDS.map(i => `<td class='num'>${row[i].toFixed(4)}</td>`).join("") + `<td class='num'>${s.toFixed(3)}</td></tr>`;
+    });
+    tb.innerHTML = h + "</tbody>";
+    const wrap = tb.parentElement; wrap.scrollTop = wrap.scrollHeight;
+  }
+  document.getElementById("pr-next").addEventListener("click", () => {
+    prHist.push(prStep(P_IDS, P_EDGES, prHist[prHist.length - 1], prD())); prDraw();
+  });
+  document.getElementById("pr-conv").addEventListener("click", () => {
+    for (let k = 0; k < 200; k++) {
+      const last = prHist[prHist.length - 1], nr = prStep(P_IDS, P_EDGES, last, prD());
+      let diff = 0; P_IDS.forEach(i => diff += Math.abs(nr[i] - last[i]));
+      prHist.push(nr); if (diff < 1e-5) break;
+    }
+    prDraw();
+  });
+  document.getElementById("pr-reset").addEventListener("click", prReset);
+  document.getElementById("pr-damp").addEventListener("change", prReset);
+  prReset();
+
+  /* ───── Citation network ───── */
+  const yearX = y => 60 + (y - 2016) * 65;
+  const CN = [
+    ["K1", 2016, "KGP", 80], ["K2", 2017, "KGP", 55], ["K3", 2019, "KGP", 85], ["K4", 2021, "KGP", 40], ["K5", 2023, "KGP", 105], ["K6", 2024, "KGP", 50],
+    ["R1", 2016, "Roorkee", 235], ["R2", 2018, "Roorkee", 265], ["R3", 2019, "Roorkee", 215], ["R4", 2021, "Roorkee", 205], ["R5", 2023, "Roorkee", 265], ["R6", 2025, "Roorkee", 225]
+  ].map(([id, year, inst, y]) => ({ id, year, inst, x: yearX(year), y }));
+  const CN_EDGES = [["K2", "K1"], ["R2", "R1"], ["K3", "K2"], ["R3", "R1"], ["K4", "K3"], ["R4", "K3"], ["R5", "K3"], ["K5", "K3"],
+    ["K5", "R3"], ["K6", "R3"], ["R6", "R3"], ["R6", "R2"], ["K6", "R2"], ["R5", "R2"]];
+  const CN_IDS = CN.map(n => n.id), cnInst = {}; CN.forEach(n => cnInst[n.id] = n.inst);
+  const cnPR = pagerank(CN_IDS, CN_EDGES, 0.85);
+  const cnIn = {}; CN_IDS.forEach(i => cnIn[i] = 0); CN_EDGES.forEach(([, t]) => cnIn[t]++);
+  let cnMode = "in";
+  function cnDraw() {
+    const cross = document.getElementById("cn-cross").checked;
+    renderGraph(document.getElementById("cn-svg"), {
+      nodes: CN, edges: CN_EDGES, directed: true,
+      radius: n => cnMode === "in" ? 9 + 3.4 * cnIn[n.id] : 7 + 75 * cnPR[n.id],
+      nodeClass: n => n.inst === "KGP" ? "f-kgp" : "f-rkg",
+      edgeClass: e => cross ? (cnInst[e[0]] !== cnInst[e[1]] ? "cross" : "dim") : "",
+      before: svg => {
+        el("line", { x1: 30, x2: 680, y1: 310, y2: 310, class: "axis" }, svg);
+        [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025].forEach(y => {
+          el("line", { x1: yearX(y), x2: yearX(y), y1: 306, y2: 314, class: "axis" }, svg);
+          const t = el("text", { x: yearX(y), y: 330, class: "svgtext", "text-anchor": "middle" }, svg); t.textContent = y;
+        });
+      }
+    });
+    document.getElementById("cn-size-in").setAttribute("aria-pressed", cnMode === "in");
+    document.getElementById("cn-size-pr").setAttribute("aria-pressed", cnMode === "pr");
+  }
+  (function cnTable() {
+    const byPR = [...CN_IDS].sort((a, b) => cnPR[b] - cnPR[a]);
+    const inRank = i => 1 + CN_IDS.filter(j => cnIn[j] > cnIn[i]).length;
+    let h = "<thead><tr><th class='num'>PR rank</th><th>Paper</th><th>Institute</th><th class='num'>Year</th><th class='num'>In-degree</th><th class='num'>In-degree rank</th><th class='num'>PageRank</th></tr></thead><tbody>";
+    byPR.forEach((i, k) => {
+      const n = CN.find(x => x.id === i);
+      h += `<tr class='${i === "K2" ? "hl" : ""}'><td class='num'>${k + 1}</td><td><b>${i}</b></td><td>IIT ${n.inst === "KGP" ? "Kharagpur" : "Roorkee"}</td><td class='num'>${n.year}</td><td class='num'>${cnIn[i]}</td><td class='num'>${inRank(i)}</td><td class='num'>${cnPR[i].toFixed(4)}</td></tr>`;
+    });
+    document.getElementById("cn-table").innerHTML = h + "</tbody>";
+  })();
+  document.getElementById("cn-size-in").addEventListener("click", () => { cnMode = "in"; cnDraw(); });
+  document.getElementById("cn-size-pr").addEventListener("click", () => { cnMode = "pr"; cnDraw(); });
+  document.getElementById("cn-cross").addEventListener("change", cnDraw);
+  cnDraw();
+
+  /* ───── Modularity ───── */
+  const M_POS = [["a", 40, 110], ["b", 115, 45], ["c", 115, 175], ["d", 190, 110], ["e", 250, 110], ["f", 325, 45], ["g", 325, 175], ["h", 400, 110]]
+    .map(([id, x, y]) => ({ id, x, y }));
+  const M_IDS = M_POS.map(n => n.id);
+  const M_EDGES = [["a", "b"], ["a", "c"], ["b", "c"], ["b", "d"], ["c", "d"], ["e", "f"], ["e", "g"], ["f", "g"], ["f", "h"], ["g", "h"], ["d", "e"]];
+  const deg = {}; M_IDS.forEach(i => deg[i] = 0); M_EDGES.forEach(([s, t]) => { deg[s]++; deg[t]++; });
+  const mE = M_EDGES.length;
+  function modularity(assign) {
+    const L = {}, D = {};
+    M_IDS.forEach(i => { const c = assign[i]; D[c] = (D[c] || 0) + deg[i]; if (!(c in L)) L[c] = 0; });
+    M_EDGES.forEach(([s, t]) => { if (assign[s] === assign[t]) L[assign[s]]++; });
+    let Q = 0; const parts = [];
+    Object.keys(D).forEach(c => { const q = L[c] / mE - Math.pow(D[c] / (2 * mE), 2); Q += q; parts.push({ c, L: L[c], D: D[c], q }); });
+    return { Q, parts };
+  }
+  const COLS = ["c1", "c2", "c3"], CNAMES = { c1: "Blue", c2: "Orange", c3: "Green" };
+  const PRESETS = {
+    natural: { a: "c1", b: "c1", c: "c1", d: "c1", e: "c2", f: "c2", g: "c2", h: "c2" },
+    one: { a: "c1", b: "c1", c: "c1", d: "c1", e: "c1", f: "c1", g: "c1", h: "c1" },
+    moved: { a: "c1", b: "c1", c: "c1", d: "c2", e: "c2", f: "c2", g: "c2", h: "c2" },
+    mixed: { a: "c1", b: "c1", c: "c2", d: "c2", e: "c1", f: "c1", g: "c2", h: "c2" }
+  };
+  let mAssign = { ...PRESETS.mixed };
+  function modDraw() {
+    renderGraph(document.getElementById("mod-svg"), {
+      nodes: M_POS, edges: M_EDGES, directed: false, radius: () => 17,
+      nodeClass: n => "f-" + mAssign[n.id],
+      edgeClass: e => mAssign[e[0]] === mAssign[e[1]] ? "" : "dim",
+      onClick: n => { mAssign[n.id] = COLS[(COLS.indexOf(mAssign[n.id]) + 1) % 3]; modDraw(); },
+      ariaLabel: n => `Person ${n.id}, ${CNAMES[mAssign[n.id]]} community. Press to change.`
+    });
+    const { Q, parts } = modularity(mAssign);
+    document.getElementById("mod-q").textContent = (Q >= 0 ? "" : "−") + Math.abs(Q).toFixed(3);
+    let h = "<thead><tr><th>Community</th><th class='num'>L<sub>c</sub></th><th class='num'>d<sub>c</sub></th><th class='num'>L<sub>c</sub>/m</th><th class='num'>(d<sub>c</sub>/2m)²</th><th class='num'>contribution</th></tr></thead><tbody>";
+    parts.sort((x, y) => COLS.indexOf(x.c) - COLS.indexOf(y.c)).forEach(p => {
+      h += `<tr><td><i class='dot' style='background: var(--${p.c})'></i> ${CNAMES[p.c]}</td><td class='num'>${p.L}</td><td class='num'>${p.D}</td><td class='num'>${(p.L / mE).toFixed(3)}</td><td class='num'>${Math.pow(p.D / (2 * mE), 2).toFixed(3)}</td><td class='num'>${p.q.toFixed(3)}</td></tr>`;
+    });
+    document.getElementById("mod-table").innerHTML = h + "</tbody>";
+  }
+  document.querySelectorAll("[data-preset]").forEach(b => b.addEventListener("click", () => { mAssign = { ...PRESETS[b.dataset.preset] }; modDraw(); }));
+  modDraw();
+
+  /* ───── Louvain stepper (phase 1 computed live on the same graph) ───── */
+  const nbrs = {}; M_IDS.forEach(i => nbrs[i] = []); M_EDGES.forEach(([s, t]) => { nbrs[s].push(t); nbrs[t].push(s); });
+  function louvainSteps() {
+    const a = {}; M_IDS.forEach(i => a[i] = i);
+    const steps = [{ a: { ...a }, msg: "<b>Start.</b> Everyone is in a community of their own. Q = " + modularity(a).Q.toFixed(3) + ". Now we visit a, b, c, … in order." }];
+    let pass = 1, moved = true;
+    while (moved && pass < 10) {
+      moved = false;
+      M_IDS.forEach(v => {
+        const cur = a[v], curQ = modularity(a).Q;
+        const cands = [...new Set(nbrs[v].slice().sort().map(u => a[u]))].filter(c => c !== cur);
+        let best = cur, bestQ = curQ;
+        cands.forEach(c => { const t = { ...a, [v]: c }; const q = modularity(t).Q; if (q > bestQ + 1e-12) { bestQ = q; best = c; } });
+        if (best !== cur) {
+          const others = M_IDS.filter(i => a[i] === best).join(", ");
+          a[v] = best; moved = true;
+          const members = M_IDS.filter(i => a[i] === best).join(", ");
+          steps.push({ a: { ...a }, msg: `<b>Pass ${pass}, visit ${v}.</b> Best move: ${v} joins {${others}}, making {${members}}. ΔQ = +${(bestQ - curQ).toFixed(3)}, so Q is now ${bestQ.toFixed(3)}.` });
+        } else if (pass === 1) {
+          steps.push({ a: { ...a }, msg: `<b>Pass ${pass}, visit ${v}.</b> No move raises Q, so ${v} stays where it is.` });
+        }
+      });
+      if (!moved) steps.push({ a: { ...a }, msg: `<b>Pass ${pass}.</b> A full sweep with no moves. Phase 1 is finished with Q = ${modularity(a).Q.toFixed(3)}.` });
+      pass++;
+    }
+    const fin = { ...a };
+    steps.push({ a: fin, agg: true, msg: "<b>Phase 2: aggregate.</b> Each group becomes one super-node. Its 5 internal edges become a self-loop of weight 5, and the single d–e edge becomes a link of weight 1." });
+    steps.push({ a: fin, agg: true, msg: "<b>Phase 1 again on the super-nodes.</b> Merging the two would give Q = 0, lower than 0.409, so nothing moves. <b>Louvain stops.</b> Final answer: {a, b, c, d} and {e, f, g, h}." });
+    return steps;
+  }
+  const LV = louvainSteps();
+  let lvI = 0;
+  function lvDraw() {
+    const s = LV[lvI], svg = document.getElementById("lv-svg");
+    const groups = {}; M_IDS.forEach(i => (groups[s.a[i]] = groups[s.a[i]] || []).push(i));
+    const order = []; M_IDS.forEach(i => { const c = s.a[i]; if (groups[c].length > 1 && order.indexOf(c) < 0) order.push(c); });
+    const colOf = c => groups[c].length > 1 ? COLS[order.indexOf(c) % 3] : "none";
+    if (!s.agg) {
+      renderGraph(svg, {
+        nodes: M_POS, edges: M_EDGES, directed: false, radius: () => 17,
+        nodeClass: n => "f-" + colOf(s.a[n.id])
+      });
+    } else {
+      while (svg.firstChild) svg.removeChild(svg.firstChild);
+      el("path", { d: "M110,110 L330,110", class: "edge", "stroke-width": 2 }, svg);
+      [[110, "c1", "{a,b,c,d}"], [330, "c2", "{e,f,g,h}"]].forEach(([x, c, lab]) => {
+        el("circle", { cx: x - 34, cy: 72, r: 22, class: "edge" }, svg);
+        const w = el("text", { x: x - 60, y: 52, class: "svgtext strong" }, svg); w.textContent = "5";
+        const g = el("g", { class: "node", transform: `translate(${x},110)` }, svg);
+        el("circle", { r: 36, class: "f-" + c }, g);
+        const t = el("text", {}, g); t.textContent = lab; t.setAttribute("style", "font-size: 11px");
+      });
+      const w = el("text", { x: 220, y: 100, class: "svgtext strong", "text-anchor": "middle" }, svg); w.textContent = "1";
+      const cap = el("text", { x: 220, y: 190, class: "svgtext", "text-anchor": "middle" }, svg); cap.textContent = "Aggregated graph: 2 super-nodes";
+    }
+    document.getElementById("lv-log").innerHTML = s.msg;
+    document.getElementById("lv-count").textContent = `step ${lvI + 1} of ${LV.length}`;
+    document.getElementById("lv-next").disabled = lvI === LV.length - 1;
+  }
+  document.getElementById("lv-next").addEventListener("click", () => { if (lvI < LV.length - 1) { lvI++; lvDraw(); } });
+  document.getElementById("lv-reset").addEventListener("click", () => { lvI = 0; lvDraw(); });
+  lvDraw();
+
+  /* ───── Leiden illustration (static) ───── */
+  (function () {
+    const svg = document.getElementById("ld-svg");
+    const base = [["y1", 40, 40], ["y2", 40, 120], ["z1", 220, 40], ["z2", 220, 120], ["x", 130, 80], ["o1", 85, 175], ["o2", 130, 205], ["o3", 175, 175]];
+    const E = [["y1", "y2"], ["z1", "z2"], ["x", "y1"], ["x", "z1"], ["x", "o1"], ["x", "o2"], ["x", "o3"], ["o1", "o2"], ["o2", "o3"], ["o1", "o3"]];
+    const panel = (dx, xComm, title) => {
+      const g = el("g", { transform: `translate(${dx},0)` }, svg);
+      const nodes = base.map(([id, x, y]) => ({ id, x, y }));
+      const sub = el("svg", { x: 0, y: 0, width: 280, height: 230, viewBox: "0 0 280 230", overflow: "visible" }, g);
+      renderGraph(sub, {
+        nodes, edges: E, directed: false, radius: () => 15,
+        nodeClass: n => n.id[0] === "o" ? "f-c2" : (n.id === "x" ? "f-" + xComm : "f-c1"),
+        edgeClass: e => (xComm === "c2" && e[0] === "x" && (e[1] === "y1" || e[1] === "z1")) ? "dim" : ""
+      });
+      const t = el("text", { x: 205, y: 222, class: "svgtext strong" }, g); t.textContent = title;
+      return g;
+    };
+    panel(10, "c1", "Before");
+    panel(340, "c2", "After x moves");
+    const arr = el("text", { x: 305, y: 92, class: "svgtext strong", "text-anchor": "middle" }, svg); arr.textContent = "→";
+    arr.setAttribute("style", "font-size: 26px");
+  })();
+
+  /* ───── Jaccard ───── */
+  const TOPICS = ["Materials science", "Machine learning", "Civil engineering", "Hydrology", "Polymer chemistry", "Power systems",
+    "Earthquake engineering", "Signal processing", "Nanotechnology", "Fluid mechanics", "Remote sensing", "Computational biology", "Catalysis", "Nuclear physics"];
+  const KGP = ["Materials science", "Machine learning", "Civil engineering", "Signal processing", "Nanotechnology", "Fluid mechanics", "Remote sensing", "Power systems"];
+  const PARTNERS = [
+    { name: "IISc Bangalore", cluster: "IISc/TIFR/IISER", shared: 412, cites: 3180, topics: ["Materials science", "Machine learning", "Signal processing", "Nanotechnology", "Computational biology", "Catalysis", "Fluid mechanics", "Polymer chemistry"] },
+    { name: "IIT Roorkee", cluster: "Old IIT", shared: 268, cites: 1950, topics: ["Civil engineering", "Hydrology", "Earthquake engineering", "Remote sensing", "Materials science", "Power systems", "Fluid mechanics", "Machine learning"] },
+    { name: "IIIT Hyderabad", cluster: "IIIT", shared: 97, cites: 860, topics: ["Machine learning", "Signal processing", "Computational biology", "Remote sensing"] },
+    { name: "CSIR-NCL Pune", cluster: "CSIR Chem", shared: 74, cites: 690, topics: ["Polymer chemistry", "Catalysis", "Materials science", "Nanotechnology"] },
+    { name: "BARC Mumbai", cluster: "DAE", shared: 51, cites: 410, topics: ["Nuclear physics", "Materials science", "Power systems", "Fluid mechanics", "Nanotechnology"] }
+  ];
+  const jac = (A, B) => { const a = new Set(A), b = new Set(B); const i = [...a].filter(x => b.has(x)).length; const u = new Set([...a, ...b]).size; return { i, u, j: u ? i / u : 0 }; };
+  let jA = new Set(KGP), jB = new Set(PARTNERS[0].topics);
+  const sel = document.getElementById("jc-partner");
+  PARTNERS.forEach((p, k) => { const o = document.createElement("option"); o.value = k; o.textContent = p.name; sel.appendChild(o); });
+  sel.addEventListener("change", () => { jB = new Set(PARTNERS[+sel.value].topics); jcDraw(); });
+  function chips(container, set, cls) {
+    container.innerHTML = "";
+    TOPICS.forEach(t => {
+      const b = document.createElement("button");
+      b.className = "chip " + cls + (set.has(t) ? " on" : "");
+      b.textContent = t; b.setAttribute("aria-pressed", set.has(t));
+      b.addEventListener("click", () => { set.has(t) ? set.delete(t) : set.add(t); jcDraw(); });
+      container.appendChild(b);
+    });
+  }
+  function jcDraw() {
+    chips(document.getElementById("jc-a"), jA, "a");
+    chips(document.getElementById("jc-b"), jB, "b");
+    document.getElementById("jc-b-label").textContent = PARTNERS[+sel.value].name + " topics";
+    const only = (X, Y) => [...X].filter(x => !Y.has(x));
+    const both = [...jA].filter(x => jB.has(x));
+    const fmt = arr => arr.length ? arr.join(", ") : "<span style='color: var(--muted)'>none</span>";
+    document.getElementById("jc-onlyA").innerHTML = fmt(only(jA, jB));
+    document.getElementById("jc-both").innerHTML = fmt(both);
+    document.getElementById("jc-onlyB").innerHTML = fmt(only(jB, jA));
+    const r = jac(jA, jB);
+    document.getElementById("jc-frac").textContent = `${r.i} / ${r.u}`;
+    document.getElementById("jc-j").textContent = r.j.toFixed(2);
+  }
+  jcDraw();
+  (function () {
+    let h = "<thead><tr><th class='num'>Rank</th><th>Partner</th><th>Cluster</th><th class='num'>shared_papers</th><th class='num'>total_citations</th><th class='num'>Topic J</th><th>Cross-cluster?</th></tr></thead><tbody>";
+    PARTNERS.slice().sort((a, b) => b.shared - a.shared).forEach((p, k) => {
+      const cc = p.cluster !== "Old IIT";
+      h += `<tr><td class='num'>${k + 1}</td><td>${p.name}</td><td>${p.cluster}</td><td class='num'>${p.shared}</td><td class='num'>${p.cites.toLocaleString("en-IN")}</td><td class='num'>${jac(KGP, p.topics).j.toFixed(2)}</td><td class='flag ${cc ? "yes" : "no"}'>${cc ? "TRUE" : "FALSE"}</td></tr>`;
+    });
+    document.getElementById("jc-table").innerHTML = h + "</tbody>";
+  })();
+})();
+</script>
+
+</body>
+</html>
