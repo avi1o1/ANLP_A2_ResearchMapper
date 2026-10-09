@@ -13,3 +13,9 @@ Course project for **DPCN** (Instructor: Prof. Chittaranjan Hens), IIIT Hyderaba
   - a co-authorship graph (undirected), analysed with degree and betweenness centrality and Louvain communities
 - **Indian connections**: citation flow in and out of the institutes, plus the partner institutes they collaborate with
 - **Dashboard**: an interactive view of all of the above, including network visualisations
+
+## Repository contents
+
+- **[WebScrape/](WebScrape/README.md)**: publication datasets for IIT Ropar, IIT Kharagpur and IIT Roorkee (2016–2026), the scraping pipeline, and the [process](WebScrape/PROCESS.md) and [results](WebScrape/RESULTS.md) write-ups
+- [docs/network_concepts.html](docs/network_concepts.html): explainer for the network concepts used
+- `DPCN_Instruction_Note.pdf`: assignment brief; `group3_data.csv`: submission CSV in the brief's column format
