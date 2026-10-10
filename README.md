@@ -19,6 +19,7 @@ Course project for **DPCN** (Instructor: Prof. Chittaranjan Hens), IIIT Hyderaba
 - **[WebScrape/](WebScrape/README.md)**: publication datasets for IIT Ropar, IIT Kharagpur and IIT Roorkee (2016–2026), the scraping pipeline, and the [process](WebScrape/PROCESS.md) and [results](WebScrape/RESULTS.md) write-ups
 - **[Enrichment/](Enrichment/README.md)**: fills the scraped data's TODOs (OpenAlex, Scimago, CORE, ORCID), links papers to faculty, and builds the submission CSV and network files
 - **[Analysis/](Analysis/README.md)**: statistics for the report and dashboard (tables in `results/`, charts in `figures/`)
+- Remaining work, with how-to guides for whoever picks it up: **[Dashboard/](Dashboard/README.md)** (interactive dashboard: panels, data files, how to build it), **[Report/](Report/README.md)** (≤ 10 slides / 5 pages: outline, sources, headline numbers), **[Notebook/](Notebook/README.md)** (code + outputs for the portal)
 - [docs/network_concepts.html](docs/network_concepts.html): explainer for the network concepts used
 - `DPCN_Instruction_Note.pdf`: assignment brief
 - Submission files are in [Enrichment/out/](Enrichment/out): `group3_data.csv` (brief's column format) and the three network files. The large files there use Git LFS: run `git lfs install` once before cloning/pulling
