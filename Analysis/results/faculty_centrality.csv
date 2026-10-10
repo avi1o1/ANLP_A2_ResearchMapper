@@ -1,0 +1,1639 @@
+﻿roster_id,faculty,institution,department,faculty_coauthors,joint_papers_with_faculty,degree_centrality,betweenness,community
+iit_kharagpur:793,Santanu Dhara,IIT Kharagpur,School of Medical Science and Technology,52,200,0.03177,0.02536,2
+iit_kharagpur:621,Suman Chakraborty,IIT Kharagpur,Mechanical Engineering,49,235,0.02993,0.02989,7
+iit_kharagpur:788,Mahitosh Mandal,IIT Kharagpur,School of Medical Science and Technology,47,158,0.02871,0.01879,2
+iit_roorkee:43,Partha Roy,IIT Roorkee,Biosciences and Bioengineering,44,216,0.02688,0.04848,1
+iit_kharagpur:630,Chandra Sekhar Tiwary,IIT Kharagpur,Metallurgical and Materials Engineering,39,211,0.02382,0.01898,8
+iit_kharagpur:794,Soumen Das,IIT Kharagpur,School of Medical Science and Technology,36,118,0.02199,0.0145,7
+iit_kharagpur:290,Pabitra Mitra,IIT Kharagpur,Computer Science and Engineering,35,142,0.02138,0.02898,3
+iit_kharagpur:778,Narayan Chandra Das,IIT Kharagpur,Rubber Technology,35,172,0.02138,0.02169,2
+iit_kharagpur:102,Ramkrishna Sen,IIT Kharagpur,Bioscience and Biotechnology,35,93,0.02138,0.02138,2
+iit_kharagpur:723,Samit Kumar Ray,IIT Kharagpur,Physics,33,154,0.02016,0.01228,2
+iit_kharagpur:91,Amit Kumar Das,IIT Kharagpur,Bioscience and Biotechnology,32,135,0.01955,0.00713,2
+iit_kharagpur:527,Debabrata Pradhan,IIT Kharagpur,Materials Science Centre,30,81,0.01833,0.02192,2
+iit_kharagpur:780,Santanu Chattopadhyay,IIT Kharagpur,Rubber Technology,29,86,0.01772,0.02252,2
+iit_kharagpur:706,Dipak Kumar Goswami,IIT Kharagpur,Physics,27,68,0.01649,0.00621,2
+iit_kharagpur:534,Susanta Banerjee,IIT Kharagpur,Materials Science Centre,26,103,0.01588,0.01291,2
+iit_kharagpur:293,Partha Pratim Chakrabarti,IIT Kharagpur,Computer Science and Engineering,26,84,0.01588,0.02265,11
+iit_kharagpur:1116,Jyotirmoy Chatterjee,IIT Kharagpur,School of Medical Science and Technology,24,80,0.01466,0.01204,3
+iit_kharagpur:362,Aurobinda Routray,IIT Kharagpur,Electrical Engineering,23,135,0.01405,0.0208,3
+iit_kharagpur:872,Tapas Kumar Maiti,IIT Kharagpur,Bioscience and Biotechnology,23,68,0.01405,0.00513,2
+iit_kharagpur:717,Prasanta Kumar Datta,IIT Kharagpur,Physics,22,74,0.01344,0.00664,2
+iit_kharagpur:236,Brajesh Kumar Dubey,IIT Kharagpur,Civil Engineering,22,92,0.01344,0.01122,8
+iit_kharagpur:248,Makarand Madhao Ghangrekar,IIT Kharagpur,Civil Engineering,21,114,0.01283,0.01774,8
+iit_kharagpur:790,Nishant Chakravorty,IIT Kharagpur,School of Medical Science and Technology,21,77,0.01283,0.00879,2
+iit_kharagpur:785,Gayatri Mukherjee,IIT Kharagpur,School of Medical Science and Technology,21,58,0.01283,0.00228,2
+iit_kharagpur:284,Jayanta Mukhopadhyay,IIT Kharagpur,Computer Science and Engineering,20,76,0.01222,0.01132,3
+iit_kharagpur:589,Cheruvu Siva Kumar,IIT Kharagpur,Mechanical Engineering,20,75,0.01222,0.01179,4
+iit_roorkee:120,V. C. Srivastava,IIT Roorkee,Chemical Engineering,20,72,0.01222,0.01046,1
+iit_roorkee:58,Shailly Tomar,IIT Roorkee,Biosciences and Bioengineering,20,118,0.01222,0.00801,1
+iit_roorkee:34,Debabrata Sircar,IIT Roorkee,Biosciences and Bioengineering,20,115,0.01222,0.01134,1
+iit_roorkee:801,Pradip K. Maji,IIT Roorkee,Polymer and Process Engineering,20,58,0.01222,0.02705,1
+iit_kharagpur:426,Tarun Kanti Bhattacharyya,IIT Kharagpur,Electronics and Electrical Communication Engg.,19,61,0.01161,0.01363,2
+iit_kharagpur:896,Anoop Ayyappan,IIT Kharagpur,Chemistry,19,37,0.01161,0.00624,2
+iit_kharagpur:1061,Indranil Manna,IIT Kharagpur,Metallurgical and Materials Engineering,19,83,0.01161,0.00539,4
+iit_kharagpur:224,Swagata Dasgupta,IIT Kharagpur,Chemistry,19,58,0.01161,0.00343,7
+iit_kharagpur:177,Rabibrata Mukherjee,IIT Kharagpur,Chemical Engineering,19,45,0.01161,0.00448,7
+iit_kharagpur:95,Arindam Mondal,IIT Kharagpur,Bioscience and Biotechnology,19,43,0.01161,0.00198,7
+iit_kharagpur:518,Manoj Kumar Tiwari,IIT Kharagpur,Industrial and Systems Engineering,18,68,0.011,0.01188,3
+iit_kharagpur:623,Surjya Kanta Pal,IIT Kharagpur,Mechanical Engineering,18,119,0.011,0.00944,4
+iit_kharagpur:98,Mrinal Kumar Maiti,IIT Kharagpur,Bioscience and Biotechnology,18,46,0.011,0.00612,2
+iit_kharagpur:608,Prasanta Kumar Das,IIT Kharagpur,Mechanical Engineering,18,94,0.011,0.01634,7
+iit_kharagpur:110,Sudip Kumar Ghosh,IIT Kharagpur,Bioscience and Biotechnology,18,37,0.011,0.00217,2
+iit_kharagpur:925,Partha Pratim Das,IIT Kharagpur,Computer Science and Engineering,18,61,0.011,0.00295,3
+iit_kharagpur:411,Prasanta Kumar Guha,IIT Kharagpur,Electronics and Electrical Communication Engg.,18,75,0.011,0.00578,2
+iit_kharagpur:442,Abhijit Mukherjee,IIT Kharagpur,Geology and Geophysics,18,84,0.011,0.01363,8
+iit_roorkee:192,Chandra Shekhar Prasad Ojha,IIT Roorkee,Civil Engineering,18,79,0.011,0.01893,9
+iit_roorkee:49,R. Prasad,IIT Roorkee,Biosciences and Bioengineering,18,62,0.011,0.01172,1
+iit_kharagpur:306,Soumya Kanti Ghosh,IIT Kharagpur,Computer Science and Engineering,17,77,0.01038,0.00957,3
+iit_kharagpur:633,Debalay Chakrabarti,IIT Kharagpur,Metallurgical and Materials Engineering,17,82,0.01038,0.01077,4
+iit_kharagpur:533,Subhasish Basu Majumder,IIT Kharagpur,Materials Science Centre,17,63,0.01038,0.0073,2
+iit_roorkee:98,Ashwini Kumar Sharma,IIT Roorkee,Chemical Engineering,17,62,0.01038,0.01048,1
+iit_kharagpur:789,Manjunatha Mahadevappa,IIT Kharagpur,School of Medical Science and Technology,16,63,0.00977,0.00475,3
+iit_kharagpur:205,Narayan Dhuleep Pradeep Singh,IIT Kharagpur,Chemistry,16,64,0.00977,0.00276,2
+iit_kharagpur:648,Shiv Brat Singh,IIT Kharagpur,Metallurgical and Materials Engineering,16,64,0.00977,0.00375,4
+iit_kharagpur:289,Niloy Ganguly,IIT Kharagpur,Computer Science and Engineering,16,182,0.00977,0.00614,12
+iit_roorkee:824,Ashish Pandey,IIT Roorkee,Water Resources Development and Management,16,72,0.00977,0.01493,6
+iit_roorkee:334,M. L. Sharma,IIT Roorkee,Earthquake Engineering,16,41,0.00977,0.01271,15
+iit_roorkee:775,Soumitra Satapathi,IIT Roorkee,Physics,16,48,0.00977,0.00729,1
+iit_roorkee:47,Pravindra Kumar,IIT Roorkee,Biosciences and Bioengineering,16,109,0.00977,0.00347,1
+iit_kharagpur:311,Sudip Misra,IIT Kharagpur,Computer Science and Engineering,15,73,0.00916,0.0127,3
+iit_kharagpur:57,Rintu Banerjee,IIT Kharagpur,Agricultural and Food Engineering,15,50,0.00916,0.00261,8
+iit_kharagpur:529,Pallab Banerji,IIT Kharagpur,Materials Science Centre,15,54,0.00916,0.0013,2
+iit_kharagpur:36,Dillip Kumar Swain,IIT Kharagpur,Agricultural and Food Engineering,15,41,0.00916,0.01003,10
+iit_kharagpur:653,Sumantra Mandal,IIT Kharagpur,Metallurgical and Materials Engineering,15,48,0.00916,0.00261,4
+iit_kharagpur:430,Chirodeep Bakli,IIT Kharagpur,Energy Science and Engineering,15,52,0.00916,0.00624,7
+iit_kharagpur:38,Gourav Dhar Bhowmick,IIT Kharagpur,Agricultural and Food Engineering,15,49,0.00916,0.00695,8
+iit_kharagpur:783,Budhaditya Mukherjee,IIT Kharagpur,School of Medical Science and Technology,15,50,0.00916,0.00243,2
+iit_roorkee:262,Partha Pratim Roy,IIT Roorkee,Computer Science and Engineering,15,27,0.00916,0.02695,6
+iit_roorkee:orcid:0000-0003-1147-4431,Naveen Kumar Navani,IIT Roorkee,Biosciences and Bioengineering,15,28,0.00916,0.00859,1
+iit_roorkee:147,Paritosh Mohanty,IIT Roorkee,Chemistry,15,40,0.00916,0.01841,1
+iit_kharagpur:515,Jhareswar Maiti,IIT Kharagpur,Industrial and Systems Engineering,14,43,0.00855,0.00921,3
+iit_kharagpur:698,Amreesh Chandra,IIT Kharagpur,Physics,14,53,0.00855,0.00127,8
+iit_kharagpur:377,Pranab Kumar Dutta,IIT Kharagpur,Electrical Engineering,14,36,0.00855,0.01069,3
+iit_kharagpur:642,Manas Paliwal,IIT Kharagpur,Metallurgical and Materials Engineering,14,52,0.00855,0.00416,8
+iit_kharagpur:206,Nilmoni Sarkar,IIT Kharagpur,Chemistry,13,28,0.00794,0.00534,2
+iit_kharagpur:282,Debdeep Mukhopadhyay,IIT Kharagpur,Computer Science and Engineering,13,123,0.00794,0.00429,11
+iit_kharagpur:294,Pawan Goyal,IIT Kharagpur,Computer Science and Engineering,13,122,0.00794,0.00385,12
+iit_kharagpur:649,Siddhartha Das,IIT Kharagpur,Metallurgical and Materials Engineering,13,128,0.00794,0.00099,2
+iit_kharagpur:317,Venimadhav Adyam,IIT Kharagpur,Cryogenic Engineering,13,52,0.00794,0.00333,17
+iit_kharagpur:728,Shivakiran B N Bhaktha,IIT Kharagpur,Physics,13,54,0.00794,0.00072,2
+iit_kharagpur:232,Ashok Kumar Gupta,IIT Kharagpur,Civil Engineering,13,88,0.00794,0.00698,8
+iit_kharagpur:5,Arnab Roy,IIT Kharagpur,Aerospace Engineering,13,66,0.00794,0.00362,7
+iit_kharagpur:645,Rahul Mitra,IIT Kharagpur,Metallurgical and Materials Engineering,13,56,0.00794,0.00328,4
+iit_kharagpur:353,Amit Patra,IIT Kharagpur,Electrical Engineering,13,80,0.00794,0.00354,11
+iit_kharagpur:405,Indrajit Chakrabarti,IIT Kharagpur,Electronics and Electrical Communication Engg.,13,46,0.00794,0.00722,3
+iit_kharagpur:782,Titash Mondal,IIT Kharagpur,Rubber Technology,13,39,0.00794,0.00285,2
+iit_kharagpur:106,Ritobrata Goswami,IIT Kharagpur,Bioscience and Biotechnology,13,19,0.00794,0.00108,7
+iit_kharagpur:531,Rajat Kumar Das,IIT Kharagpur,Materials Science Centre,13,32,0.00794,0.0007,2
+iit_kharagpur:375,Nirmalya Ghosh,IIT Kharagpur,Electrical Engineering,13,55,0.00794,0.00831,11
+iit_kharagpur:656,Tarun Kumar Kundu,IIT Kharagpur,Metallurgical and Materials Engineering,13,42,0.00794,0.00141,8
+iit_kharagpur:398,Basudev Lahiri,IIT Kharagpur,Electronics and Electrical Communication Engg.,13,58,0.00794,0.00136,8
+iit_kharagpur:611,Rajaram Lakkaraju,IIT Kharagpur,Mechanical Engineering,13,56,0.00794,0.00459,7
+iit_kharagpur:523,Ahin Roy,IIT Kharagpur,Materials Science Centre,13,31,0.00794,0.00173,2
+iit_roorkee:378,N. P. Padhy,IIT Roorkee,Electrical Engineering,13,98,0.00794,0.02639,5
+iit_roorkee:orcid:0000-0002-6414-0032,Brajesh Kumar Kaushik,IIT Roorkee,Electronics and Communication Engineering,13,61,0.00794,0.01381,14
+iit_roorkee:40,Krishna Mohan Poluri,IIT Roorkee,Biosciences and Bioengineering,13,46,0.00794,0.00657,1
+iit_roorkee:653,Ravi Kumar,IIT Roorkee,Mechanical and Industrial Engineering,13,71,0.00794,0.00687,1
+iit_roorkee:57,Saugata Hazra,IIT Roorkee,Biosciences and Bioengineering,13,33,0.00794,0.01347,1
+iit_roorkee:764,Monojit Bag,IIT Roorkee,Physics,13,23,0.00794,0.00764,14
+iit_kharagpur:517,Mamata Jenamani,IIT Kharagpur,Industrial and Systems Engineering,12,67,0.00733,0.00926,3
+iit_kharagpur:901,Pratim Kumar Chattaraj,IIT Kharagpur,Chemistry,12,22,0.00733,0.01046,12
+iit_kharagpur:368,Debdoot Sheet,IIT Kharagpur,Electrical Engineering,12,41,0.00733,0.00401,3
+iit_kharagpur:26,Adinpunya Mitra,IIT Kharagpur,Agricultural and Food Engineering,12,25,0.00733,0.00342,2
+iit_kharagpur:779,Nikhil Kumar Singha,IIT Kharagpur,Rubber Technology,12,32,0.00733,0.0042,2
+iit_kharagpur:624,Sushanta Kumar Panda,IIT Kharagpur,Mechanical Engineering,12,70,0.00733,0.00206,4
+iit_kharagpur:895,Amit Basak,IIT Kharagpur,Chemistry,12,36,0.00733,0.00244,2
+iit_kharagpur:200,Kumar Biradha,IIT Kharagpur,Chemistry,12,36,0.00733,0.00326,2
+iit_kharagpur:310,Sudeshna Sarkar,IIT Kharagpur,Computer Science and Engineering,12,48,0.00733,0.00341,3
+iit_kharagpur:385,Siddhartha Mukhopadhyay,IIT Kharagpur,Electrical Engineering,12,40,0.00733,0.00647,11
+iit_kharagpur:577,Aditya Bandopadhyay,IIT Kharagpur,Mechanical Engineering,12,59,0.00733,0.0048,7
+iit_kharagpur:307,Soumyajit Dey,IIT Kharagpur,Computer Science and Engineering,12,62,0.00733,0.00226,11
+iit_kharagpur:1067,Sudipto Ghosh,IIT Kharagpur,Metallurgical and Materials Engineering,12,47,0.00733,0.00225,17
+iit_kharagpur:419,Shailendra Kumar Varshney,IIT Kharagpur,Electronics and Electrical Communication Engg.,12,60,0.00733,0.00245,4
+iit_kharagpur:638,Jyotsna Dutta Majumdar,IIT Kharagpur,Metallurgical and Materials Engineering,12,61,0.00733,0.00119,4
+iit_kharagpur:1072,Jayanta Bhattacharya,IIT Kharagpur,Mining Engineering,12,58,0.00733,0.00255,8
+iit_kharagpur:775,Rajlakshmi Guha,IIT Kharagpur,Rekhi Centre of Excellence for the Science of Happiness,12,43,0.00733,0.00331,3
+iit_roorkee:435,Sanjeev Manhas,IIT Roorkee,Electronics and Communication Engineering,12,30,0.00733,0.01554,14
+iit_roorkee:689,Debrupa Lahiri,IIT Roorkee,Metallurgical and Materials Engineering,12,66,0.00733,0.00827,1
+iit_roorkee:817,Y. S. Negi,IIT Roorkee,Polymer and Process Engineering,12,35,0.00733,0.00413,1
+iit_roorkee:779,Vivek Kumar Malik,IIT Roorkee,Physics,12,26,0.00733,0.01269,17
+iit_kharagpur:135,Mukunda Dev Behera,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",11,13,0.00672,0.01634,10
+iit_kharagpur:298,Sandip Chakraborty,IIT Kharagpur,Computer Science and Engineering,11,99,0.00672,0.00368,12
+iit_kharagpur:787,Koel Chaudhury,IIT Kharagpur,School of Medical Science and Technology,11,47,0.00672,0.00067,7
+iit_kharagpur:185,Sunando Dasgupta,IIT Kharagpur,Chemical Engineering,11,64,0.00672,0.00055,7
+iit_kharagpur:849,Prem Prakash Srivastav,IIT Kharagpur,Agricultural and Food Engineering,11,21,0.00672,0.00573,2
+iit_kharagpur:736,Tapan Kumar Nath,IIT Kharagpur,Physics,11,24,0.00672,0.00242,17
+iit_kharagpur:230,Arghya Deb,IIT Kharagpur,Civil Engineering,11,28,0.00672,0.00504,4
+iit_kharagpur:924,Pallab Dasgupta,IIT Kharagpur,Computer Science and Engineering,11,82,0.00672,0.00181,11
+iit_kharagpur:686,Prasad Kumar Bhaskaran,IIT Kharagpur,Ocean Engg and Naval Architecture,11,16,0.00672,0.00899,10
+iit_kharagpur:582,Anandaroop Bhattacharya,IIT Kharagpur,Mechanical Engineering,11,43,0.00672,0.0049,7
+iit_kharagpur:858,Virendra Kumar Tewari,IIT Kharagpur,Agricultural and Food Engineering,11,30,0.00672,0.00745,10
+iit_kharagpur:420,Sharba Bandyopadhyay,IIT Kharagpur,Electronics and Electrical Communication Engg.,11,16,0.00672,0.00262,12
+iit_kharagpur:169,Manish Kaushal,IIT Kharagpur,Chemical Engineering,11,32,0.00672,0.00421,7
+iit_kharagpur:743,Mamoni Banerjee,IIT Kharagpur,Rajendra Mishra School of Engg Entrepreneurship,11,23,0.00672,0.00366,2
+iit_kharagpur:342,Shirin Dasgupta,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,11,18,0.00672,0.0045,2
+iit_kharagpur:89,Abhijit Das,IIT Kharagpur,Bioscience and Biotechnology,11,16,0.00672,0.0016,2
+iit_roorkee:200,Manoranjan Parida,IIT Roorkee,Civil Engineering,11,54,0.00672,0.00692,9
+iit_roorkee:73,Vikas Pruthi,IIT Roorkee,Biosciences and Bioengineering,11,63,0.00672,0.00724,1
+iit_roorkee:638,Inderdeep Singh,IIT Roorkee,Mechanical and Industrial Engineering,11,52,0.00672,0.00648,13
+iit_roorkee:142,Kaushik Ghosh,IIT Roorkee,Chemistry,11,63,0.00672,0.00334,1
+iit_roorkee:651,Pradeep Kumar,IIT Roorkee,Mechanical and Industrial Engineering,11,57,0.00672,0.00503,13
+iit_roorkee:797,Gaurav Manik,IIT Roorkee,Polymer and Process Engineering,11,19,0.00672,0.0059,1
+iit_roorkee:79,Ankush Kumar,IIT Roorkee,Centre for Nanotechnology,11,15,0.00672,0.00733,5
+iit_kharagpur:701,Arghya Taraphder,IIT Kharagpur,Physics,10,23,0.00611,0.00381,17
+iit_kharagpur:592,Dilip Kumar Pratihar,IIT Kharagpur,Mechanical Engineering,10,77,0.00611,0.00431,4
+iit_kharagpur:700,Anushree Roy,IIT Kharagpur,Physics,10,20,0.00611,0.00273,7
+iit_kharagpur:373,Karabi Biswas,IIT Kharagpur,Electrical Engineering,10,25,0.00611,0.00257,7
+iit_kharagpur:797,Bhabagrahi Sahoo,IIT Kharagpur,School of Water Resources,10,66,0.00611,0.00477,3
+iit_kharagpur:33,Chandranath Chatterjee,IIT Kharagpur,Agricultural and Food Engineering,10,89,0.00611,0.00181,3
+iit_kharagpur:463,Saibal Gupta,IIT Kharagpur,Geology and Geophysics,10,19,0.00611,0.00513,8
+iit_kharagpur:196,Dibakar Dhara,IIT Kharagpur,Chemistry,10,27,0.00611,0.00122,2
+iit_kharagpur:234,Bhargab Maitra,IIT Kharagpur,Civil Engineering,10,22,0.00611,0.00436,3
+iit_kharagpur:604,Partha Pratim Bandyopadhyay,IIT Kharagpur,Mechanical Engineering,10,61,0.00611,0.0009,4
+iit_kharagpur:869,Ananta Kumar Ghosh,IIT Kharagpur,Bioscience and Biotechnology,10,21,0.00611,0.00266,2
+iit_kharagpur:663,Debashish Chakravarty,IIT Kharagpur,Mining Engineering,10,66,0.00611,0.00563,4
+iit_kharagpur:726,Sanjeev Kumar Srivastava,IIT Kharagpur,Physics,10,34,0.00611,0.00609,2
+iit_kharagpur:1079,Samir Kumar Pal,IIT Kharagpur,Mining Engineering,10,25,0.00611,0.00412,4
+iit_kharagpur:299,Saptarshi Ghosh,IIT Kharagpur,Computer Science and Engineering,10,84,0.00611,0.00239,12
+iit_kharagpur:131,Arun Chakraborty,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",10,46,0.00611,0.01102,10
+iit_kharagpur:643,Mangal Roy,IIT Kharagpur,Metallurgical and Materials Engineering,10,23,0.00611,0.01242,2
+iit_kharagpur:532,Shibayan Roy,IIT Kharagpur,Materials Science Centre,10,14,0.00611,0.00429,4
+iit_kharagpur:11,Mohammed Rabius Sunny,IIT Kharagpur,Aerospace Engineering,10,21,0.00611,0.00204,16
+iit_kharagpur:650,Siddhartha Roy,IIT Kharagpur,Metallurgical and Materials Engineering,10,36,0.00611,0.00124,4
+iit_kharagpur:639,Karabi Das,IIT Kharagpur,Metallurgical and Materials Engineering,10,108,0.00611,0.00046,2
+iit_kharagpur:786,Gorachand Dutta,IIT Kharagpur,School of Medical Science and Technology,10,16,0.00611,0.00097,7
+iit_kharagpur:784,Debashree Guha Adhya,IIT Kharagpur,School of Medical Science and Technology,10,39,0.00611,0.00068,3
+iit_kharagpur:791,Praphulla Chandra Shukla,IIT Kharagpur,School of Medical Science and Technology,10,35,0.00611,0.00359,2
+iit_roorkee:161,U. P. Singh,IIT Roorkee,Chemistry,10,45,0.00611,0.00819,1
+iit_roorkee:52,Ranjana Pathania,IIT Roorkee,Biosciences and Bioengineering,10,16,0.00611,0.00396,1
+iit_roorkee:641,Kaushik Pal,IIT Roorkee,Mechanical and Industrial Engineering,10,18,0.00611,0.01846,1
+iit_roorkee:519,Brijesh Kumar Yadav,IIT Roorkee,Hydrology,10,25,0.00611,0.00766,6
+iit_roorkee:212,Rahul Dev Garg,IIT Roorkee,Civil Engineering,10,56,0.00611,0.00712,9
+iit_roorkee:721,Dharm Dutt,IIT Roorkee,Paper Technology,10,37,0.00611,0.00562,1
+iit_roorkee:523,Sumit Sen,IIT Roorkee,Hydrology,10,28,0.00611,0.00769,6
+iit_roorkee:143,M. Sankar,IIT Roorkee,Chemistry,10,29,0.00611,0.00141,1
+iit_roorkee:391,Yogesh Vijay Hote,IIT Roorkee,Electrical Engineering,10,32,0.00611,0.00516,5
+iit_kharagpur:545,Debjani Chakraborty,IIT Kharagpur,Mathematics,9,42,0.0055,0.0013,3
+iit_kharagpur:352,Alok Kanti Deb,IIT Kharagpur,Electrical Engineering,9,38,0.0055,0.00284,3
+iit_kharagpur:302,Shamik Sural,IIT Kharagpur,Computer Science and Engineering,9,43,0.0055,0.00244,12
+iit_kharagpur:179,Sirshendu De,IIT Kharagpur,Chemical Engineering,9,46,0.0055,0.00115,22
+iit_kharagpur:397,Arijit De,IIT Kharagpur,Electronics and Electrical Communication Engg.,9,23,0.0055,0.0109,2
+iit_kharagpur:593,Goutam Chakraborty,IIT Kharagpur,Mechanical Engineering,9,38,0.0055,0.0082,20
+iit_kharagpur:345,Anupam Midya,IIT Kharagpur,Education,9,28,0.0055,0.0002,2
+iit_kharagpur:215,Sabyashachi Mishra,IIT Kharagpur,Chemistry,9,27,0.0055,0.00168,2
+iit_kharagpur:499,Narayan Chandra Nayak,IIT Kharagpur,Humanities and Social Sciences,9,24,0.0055,0.00255,3
+iit_kharagpur:692,Vishwanath Nagarajan,IIT Kharagpur,Ocean Engg and Naval Architecture,9,27,0.0055,0.00353,4
+iit_kharagpur:59,Somsubhra Chakraborty,IIT Kharagpur,Agricultural and Food Engineering,9,26,0.0055,0.0017,10
+iit_kharagpur:605,Partha Saha,IIT Kharagpur,Mechanical Engineering,9,60,0.0055,0.00172,4
+iit_kharagpur:911,Nilanjan Mitra,IIT Kharagpur,Civil Engineering,9,13,0.0055,0.00407,2
+iit_kharagpur:381,Santanu Kapat,IIT Kharagpur,Electrical Engineering,9,32,0.0055,0.00357,11
+iit_kharagpur:654,Tapas Kumar Bandyopadhyay,IIT Kharagpur,Metallurgical and Materials Engineering,9,27,0.0055,0.00045,4
+iit_kharagpur:237,Damodar Maity,IIT Kharagpur,Civil Engineering,9,27,0.0055,0.00575,16
+iit_kharagpur:579,Ajay Muljibhai Sidpara,IIT Kharagpur,Mechanical Engineering,9,48,0.0055,0.00086,4
+iit_kharagpur:759,Padmavati Manchikanti,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,9,18,0.0055,0.00035,2
+iit_kharagpur:133,Jayanarayanan Kuttippurath,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",9,40,0.0055,0.00365,10
+iit_kharagpur:1025,Chacko Jacob,IIT Kharagpur,Materials Science Centre,9,16,0.0055,0.00076,2
+iit_kharagpur:525,Ayan Roy Chaudhuri,IIT Kharagpur,Materials Science Centre,9,26,0.0055,0.00056,17
+iit_kharagpur:800,Partha Sarathi Ghosal,IIT Kharagpur,School of Water Resources,9,47,0.0055,0.00265,8
+iit_kharagpur:675,Shivendu Ranjan,IIT Kharagpur,Nano Science and Technology,9,12,0.0055,0.00105,2
+iit_kharagpur:795,Subhamoy Mandal,IIT Kharagpur,School of Medical Science and Technology,9,15,0.0055,0.00248,3
+iit_roorkee:425,Dharmendra Singh,IIT Roorkee,Electronics and Communication Engineering,9,35,0.0055,0.01007,14
+iit_roorkee:834,Thanga Raj Chelliah,IIT Roorkee,Water Resources Development and Management,9,35,0.0055,0.00389,5
+iit_roorkee:628,Arup Kumar Das,IIT Roorkee,Mechanical and Industrial Engineering,9,33,0.0055,0.01806,1
+iit_roorkee:619,Akshay Dvivedi,IIT Roorkee,Mechanical and Industrial Engineering,9,49,0.0055,0.00144,13
+iit_roorkee:777,Tulika Maitra,IIT Roorkee,Physics,9,32,0.0055,0.0035,17
+iit_roorkee:688,B. V. Manoj Kumar,IIT Roorkee,Metallurgical and Materials Engineering,9,11,0.0055,0.00867,6
+iit_roorkee:381,Pramod Agarwal,IIT Roorkee,Electrical Engineering,9,45,0.0055,0.00513,5
+iit_roorkee:294,Ajanta Goswami,IIT Roorkee,Earth Sciences,9,20,0.0055,0.00612,15
+iit_roorkee:683,Anish Karmakar,IIT Roorkee,Metallurgical and Materials Engineering,9,17,0.0055,0.00547,4
+iit_roorkee:722,Kirtiraj Kundlik Gaikwad,IIT Roorkee,Paper Technology,9,25,0.0055,0.00093,1
+iit_kharagpur:635,Gour Gopal Roy,IIT Kharagpur,Metallurgical and Materials Engineering,8,33,0.00489,0.00098,4
+iit_kharagpur:614,Sanjay Gupta,IIT Kharagpur,Mechanical Engineering,8,26,0.00489,0.00319,2
+iit_kharagpur:501,Priyadarshi Patnaik,IIT Kharagpur,Humanities and Social Sciences,8,16,0.00489,0.00402,3
+iit_kharagpur:412,Raja Datta,IIT Kharagpur,Electronics and Electrical Communication Engg.,8,27,0.00489,0.0039,12
+iit_kharagpur:409,Prabir Kumar Biswas,IIT Kharagpur,Electronics and Electrical Communication Engg.,8,36,0.00489,0.0068,3
+iit_kharagpur:1042,Ashish Kumar Nath,IIT Kharagpur,Mechanical Engineering,8,21,0.00489,0.00041,4
+iit_kharagpur:109,Soumya De,IIT Kharagpur,Bioscience and Biotechnology,8,16,0.00489,0.0001,2
+iit_kharagpur:127,Somnath Sengupta,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,8,16,0.00489,0.00456,11
+iit_kharagpur:308,Sourangshu Bhattacharya,IIT Kharagpur,Computer Science and Engineering,8,35,0.00489,0.00252,12
+iit_kharagpur:776,Kinsuk Naskar,IIT Kharagpur,Rubber Technology,8,32,0.00489,0.00026,2
+iit_kharagpur:184,Sudipto Chakraborty,IIT Kharagpur,Chemical Engineering,8,37,0.00489,0.00159,4
+iit_kharagpur:30,Bhabani Sankar Das,IIT Kharagpur,Agricultural and Food Engineering,8,21,0.00489,0.00153,3
+iit_kharagpur:44,Madan Kumar Jha,IIT Kharagpur,Agricultural and Food Engineering,8,21,0.00489,0.00166,10
+iit_kharagpur:583,Anirvan Dasgupta,IIT Kharagpur,Mechanical Engineering,8,24,0.00489,0.00155,20
+iit_kharagpur:68,Joy Sen,IIT Kharagpur,Architecture and Regional Planning,8,30,0.00489,0.00389,19
+iit_kharagpur:647,Shampa Aich,IIT Kharagpur,Metallurgical and Materials Engineering,8,17,0.00489,0.00111,17
+iit_kharagpur:652,Sujoy Kumar Kar,IIT Kharagpur,Metallurgical and Materials Engineering,8,30,0.00489,0.00026,4
+iit_kharagpur:209,Partha Pratim Jana,IIT Kharagpur,Chemistry,8,29,0.00489,0.00027,2
+iit_kharagpur:391,Amitabha Bhattacharya,IIT Kharagpur,Electronics and Electrical Communication Engg.,8,15,0.00489,0.00349,22
+iit_kharagpur:990,Sudip Nag,IIT Kharagpur,Electronics and Electrical Communication Engg.,8,20,0.00489,0.0011,2
+iit_kharagpur:676,Anirban Bhattacharyya,IIT Kharagpur,Ocean Engg and Naval Architecture,8,17,0.00489,0.00253,16
+iit_kharagpur:641,Koushik Biswas,IIT Kharagpur,Metallurgical and Materials Engineering,8,18,0.00489,0.00033,17
+iit_kharagpur:108,Somdeb Bose Dasgupta,IIT Kharagpur,Bioscience and Biotechnology,8,14,0.00489,0.00368,2
+iit_kharagpur:96,Dibyendu Samanta,IIT Kharagpur,Bioscience and Biotechnology,8,17,0.00489,9e-05,2
+iit_kharagpur:104,Riddhiman Dhar,IIT Kharagpur,Bioscience and Biotechnology,8,16,0.00489,0.00035,7
+iit_kharagpur:77,Adway Mitra,IIT Kharagpur,Artificial Intelligence,8,15,0.00489,0.01472,10
+iit_roorkee:441,Sudeb Dasgupta,IIT Roorkee,Electronics and Communication Engineering,8,92,0.00489,0.00641,14
+iit_roorkee:116,Shishir Sinha,IIT Roorkee,Chemical Engineering,8,25,0.00489,0.00272,13
+iit_roorkee:246,Pradeep Kumar Garg,IIT Roorkee,Civil Engineering,8,64,0.00489,0.00254,9
+iit_roorkee:orcid:0000-0001-7611-3579,Kiran Ambatipudi,IIT Roorkee,Biosciences and Bioengineering,8,14,0.00489,0.00121,1
+iit_roorkee:694,Indranil Lahiri,IIT Roorkee,Metallurgical and Materials Engineering,8,30,0.00489,0.00773,1
+iit_roorkee:831,M. L. Kansal,IIT Roorkee,Water Resources Development and Management,8,15,0.00489,0.00716,6
+iit_roorkee:160,Tapas Kumar Mandal,IIT Roorkee,Chemistry,8,21,0.00489,0.0023,1
+iit_roorkee:501,Rhythm Singh,IIT Roorkee,Hydro and Renewable Energy,8,22,0.00489,0.00274,6
+iit_roorkee:415,Arnab Datta,IIT Roorkee,Electronics and Communication Engineering,8,27,0.00489,0.0072,14
+iit_roorkee:499,Pratham Arora,IIT Roorkee,Hydro and Renewable Energy,8,35,0.00489,0.00233,6
+iit_roorkee:417,Avirup Dasgupta,IIT Roorkee,Electronics and Communication Engineering,8,61,0.00489,0.00256,14
+iit_roorkee:39,Jitin Singla,IIT Roorkee,Biosciences and Bioengineering,8,32,0.00489,0.00236,1
+iit_roorkee:104,K. K. Pant,IIT Roorkee,Chemical Engineering,8,32,0.00489,0.00179,1
+iit_kharagpur:274,Animesh Mukherjee,IIT Kharagpur,Computer Science and Engineering,7,79,0.00428,0.00014,12
+iit_kharagpur:429,Amit Ghosh,IIT Kharagpur,Energy Science and Engineering,7,20,0.00428,0.0005,2
+iit_kharagpur:526,Bhanu Bhusan Khatua,IIT Kharagpur,Materials Science Centre,7,8,0.00428,0.00548,2
+iit_kharagpur:64,Arup Das,IIT Kharagpur,Architecture and Regional Planning,7,18,0.00428,0.00185,8
+iit_kharagpur:229,Anirban Dhar,IIT Kharagpur,Civil Engineering,7,20,0.00428,0.00344,19
+iit_kharagpur:536,Adrijit Goswami,IIT Kharagpur,Mathematics,7,22,0.00428,0.00188,3
+iit_kharagpur:572,Sourav Mukhopadhyay,IIT Kharagpur,Mathematics,7,29,0.00428,0.00224,2
+iit_kharagpur:966,Prabodh Bajpai,IIT Kharagpur,Electrical Engineering,7,44,0.00428,0.00227,11
+iit_kharagpur:360,Ashok Kumar Pradhan,IIT Kharagpur,Electrical Engineering,7,44,0.00428,0.02032,11
+iit_kharagpur:388,Suman Maiti,IIT Kharagpur,Electrical Engineering,7,39,0.00428,0.00145,11
+iit_kharagpur:365,Chandan Chakraborty,IIT Kharagpur,Electrical Engineering,7,60,0.00428,0.00254,11
+iit_kharagpur:217,Sanjib Kumar Patra,IIT Kharagpur,Chemistry,7,23,0.00428,0.00029,2
+iit_kharagpur:1018,Biswajit Mahanty,IIT Kharagpur,Industrial and Systems Engineering,7,22,0.00428,0.00278,3
+iit_kharagpur:437,Debarati Sen,IIT Kharagpur,G.S Sanyal School of Telecommunication,7,28,0.00428,0.00255,12
+iit_kharagpur:100,Pinaki Sar,IIT Kharagpur,Bioscience and Biotechnology,7,17,0.00428,0.00201,2
+iit_kharagpur:1019,Jitesh J Thakkar,IIT Kharagpur,Industrial and Systems Engineering,7,23,0.00428,0.00283,3
+iit_kharagpur:619,Soumitra Paul,IIT Kharagpur,Mechanical Engineering,7,40,0.00428,0.00132,4
+iit_kharagpur:870,Debabrata Das,IIT Kharagpur,Bioscience and Biotechnology,7,15,0.00428,0.00072,2
+iit_kharagpur:195,Debashis Ray,IIT Kharagpur,Chemistry,7,11,0.00428,0.00041,7
+iit_kharagpur:193,C Retna Raj,IIT Kharagpur,Chemistry,7,15,0.00428,0.00156,2
+iit_kharagpur:46,Narendra Singh Raghuwanshi,IIT Kharagpur,Agricultural and Food Engineering,7,69,0.00428,0.00032,3
+iit_kharagpur:281,Debasis Samanta,IIT Kharagpur,Computer Science and Engineering,7,69,0.00428,0.011,3
+iit_kharagpur:903,Suneel Kumar Srivastava,IIT Kharagpur,Chemistry,7,11,0.00428,0.00174,8
+iit_kharagpur:93,Anindya Sundar Ghosh,IIT Kharagpur,Bioscience and Biotechnology,7,10,0.00428,9e-05,2
+iit_kharagpur:691,Trilochan Sahoo,IIT Kharagpur,Ocean Engg and Naval Architecture,7,14,0.00428,0.00359,16
+iit_kharagpur:502,Pulak Mishra,IIT Kharagpur,Humanities and Social Sciences,7,18,0.00428,0.0027,16
+iit_kharagpur:286,Krothapalli Sreenivasa Rao,IIT Kharagpur,Computer Science and Engineering,7,27,0.00428,0.00129,3
+iit_kharagpur:664,Debasis Deb,IIT Kharagpur,Mining Engineering,7,16,0.00428,0.00324,7
+iit_kharagpur:1054,Subhransu Roy,IIT Kharagpur,Mechanical Engineering,7,23,0.00428,0.00126,7
+iit_kharagpur:240,Dhrubajyoti Sen,IIT Kharagpur,Civil Engineering,7,14,0.00428,0.00266,8
+iit_kharagpur:1004,Subhasish Tripathy,IIT Kharagpur,Geology and Geophysics,7,18,0.00428,0.00349,8
+iit_kharagpur:687,Ranadev Datta,IIT Kharagpur,Ocean Engg and Naval Architecture,7,22,0.00428,0.0012,16
+iit_kharagpur:876,Prem Chand Pandey,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",7,11,0.00428,0.00159,10
+iit_kharagpur:618,Somnath Roy,IIT Kharagpur,Mechanical Engineering,7,24,0.00428,0.00597,7
+iit_kharagpur:34,Damodhara Rao Mailapalli,IIT Kharagpur,Agricultural and Food Engineering,7,40,0.00428,0.00066,3
+iit_kharagpur:432,Sreeraj Puravankara,IIT Kharagpur,Energy Science and Engineering,7,18,0.00428,0.00288,3
+iit_kharagpur:99,Nihar Ranjan Jana,IIT Kharagpur,Bioscience and Biotechnology,7,8,0.00428,0.00251,2
+iit_kharagpur:697,Amar Nath Gupta,IIT Kharagpur,Physics,7,15,0.00428,0.00016,8
+iit_kharagpur:864,Subrata Chattopadhyay,IIT Kharagpur,Architecture and Regional Planning,7,19,0.00428,0.00179,16
+iit_kharagpur:355,Arijit Mondal,IIT Kharagpur,Electrical Engineering,7,19,0.00428,0.0003,11
+iit_kharagpur:530,Prasana Kumar Sahoo,IIT Kharagpur,Materials Science Centre,7,16,0.00428,0.00079,2
+iit_kharagpur:434,Amit Kumar Dutta,IIT Kharagpur,G.S Sanyal School of Telecommunication,7,14,0.00428,0.00119,11
+iit_kharagpur:82,Koustav Rudra,IIT Kharagpur,Artificial Intelligence,7,13,0.00428,0.00057,12
+iit_kharagpur:323,Arindam Ghosh,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,7,15,0.00428,0.0014,8
+iit_roorkee:215,Rajib Chowdhury,IIT Roorkee,Civil Engineering,7,33,0.00428,0.00778,18
+iit_roorkee:627,Apurbba Kumar Sharma,IIT Roorkee,Mechanical and Industrial Engineering,7,34,0.00428,0.00181,13
+iit_roorkee:431,N. P. Pathak,IIT Roorkee,Electronics and Communication Engineering,7,25,0.00428,0.012,1
+iit_roorkee:150,Raj Kumar Dutta,IIT Roorkee,Chemistry,7,8,0.00428,0.0023,9
+iit_roorkee:395,Ganesh B. Kumbhar,IIT Roorkee,Electrical Engineering,7,27,0.00428,0.00479,5
+iit_roorkee:122,Vimal Kumar,IIT Roorkee,Chemical Engineering,7,30,0.00428,0.00248,1
+iit_roorkee:208,Praveen Kumar,IIT Roorkee,Civil Engineering,7,17,0.00428,0.00364,9
+iit_roorkee:833,S. K. Mishra,IIT Roorkee,Water Resources Development and Management,7,41,0.00428,0.00384,6
+iit_roorkee:511,R. P. Saini,IIT Roorkee,Hydro and Renewable Energy,7,21,0.00428,0.00453,6
+iit_roorkee:112,Prasenjit Mondal,IIT Roorkee,Chemical Engineering,7,12,0.00428,0.00369,1
+iit_roorkee:231,Vishwas A. Sawant,IIT Roorkee,Civil Engineering,7,28,0.00428,0.00352,1
+iit_roorkee:172,Mala Nath,IIT Roorkee,Chemistry,7,14,0.00428,0.00104,1
+iit_roorkee:750,Anirban Mitra,IIT Roorkee,Physics,7,23,0.00428,0.00545,13
+iit_roorkee:759,K. L. Yadav,IIT Roorkee,Physics,7,26,0.00428,0.00535,14
+iit_roorkee:333,Josodhir Das,IIT Roorkee,Earthquake Engineering,7,14,0.00428,0.00263,15
+iit_roorkee:652,Rahul S. Mulik,IIT Roorkee,Mechanical and Industrial Engineering,7,19,0.00428,0.00345,13
+iit_roorkee:339,Ravi Sankar Jakka,IIT Roorkee,Earthquake Engineering,7,25,0.00428,0.00304,15
+iit_roorkee:189,Bhola Ram Gurjar,IIT Roorkee,Civil Engineering,7,30,0.00428,0.00632,9
+iit_roorkee:520,D. S. Arya,IIT Roorkee,Hydrology,7,16,0.00428,0.00389,9
+iit_roorkee:111,Prakash Biswas,IIT Roorkee,Chemical Engineering,7,15,0.00428,0.0006,1
+iit_roorkee:512,Ramesh Chandra,IIT Roorkee,Hydro and Renewable Energy,7,22,0.00428,0.00359,13
+iit_roorkee:704,Sourav Das,IIT Roorkee,Metallurgical and Materials Engineering,7,17,0.00428,0.00258,6
+iit_roorkee:293,Abhayanand Singh Maurya,IIT Roorkee,Earth Sciences,7,26,0.00428,0.00747,18
+iit_roorkee:825,Basant Yadav,IIT Roorkee,Water Resources Development and Management,7,23,0.00428,0.00116,6
+iit_roorkee:516,Ankit Agarwal,IIT Roorkee,Hydrology,7,18,0.00428,0.00472,6
+iit_roorkee:101,Deepak Kumar Ojha,IIT Roorkee,Chemical Engineering,7,8,0.00428,0.00145,1
+iit_roorkee:491,Amit Bhosale,IIT Roorkee,Hydro and Renewable Energy,7,24,0.00428,0.00139,6
+iit_kharagpur:386,Sourav Patra,IIT Kharagpur,Electrical Engineering,6,14,0.00367,0.00161,11
+iit_kharagpur:923,Indranil Sengupta,IIT Kharagpur,Computer Science and Engineering,6,11,0.00367,0.00051,12
+iit_kharagpur:475,William Kumar Mohanty,IIT Kharagpur,Geology and Geophysics,6,29,0.00367,0.00197,3
+iit_kharagpur:84,Plaban Kumar Bhowmick,IIT Kharagpur,Artificial Intelligence,6,20,0.00367,0.00216,3
+iit_kharagpur:354,Anirban Mukherjee,IIT Kharagpur,Electrical Engineering,6,15,0.00367,0.00101,3
+iit_kharagpur:1030,Bibhas Adhikari,IIT Kharagpur,Mathematics,6,12,0.00367,0.00053,12
+iit_kharagpur:233,Baidurya Bhattacharya,IIT Kharagpur,Civil Engineering,6,14,0.00367,0.00664,16
+iit_kharagpur:548,G P Raja Sekhar,IIT Kharagpur,Mathematics,6,23,0.00367,0.00245,7
+iit_kharagpur:711,Maruthi Manoj Brundavanam,IIT Kharagpur,Physics,6,15,0.00367,0.00015,2
+iit_kharagpur:254,Prashanth Reddy Hanmaiahgari,IIT Kharagpur,Civil Engineering,6,22,0.00367,0.00546,8
+iit_kharagpur:449,Dewashish Upadhyay,IIT Kharagpur,Geology and Geophysics,6,21,0.00367,0.00305,8
+iit_kharagpur:20,Srinibas Karmakar,IIT Kharagpur,Aerospace Engineering,6,23,0.00367,0.00046,7
+iit_kharagpur:975,Ajoy Kumar Ray,IIT Kharagpur,Electronics and Electrical Communication Engg.,6,15,0.00367,0.0005,3
+iit_kharagpur:445,Arun Singh,IIT Kharagpur,Geology and Geophysics,6,47,0.00367,0.00236,12
+iit_kharagpur:492,Jitendra Mahakud,IIT Kharagpur,Humanities and Social Sciences,6,14,0.00367,0.00156,3
+iit_kharagpur:400,Debashis Sen,IIT Kharagpur,Electronics and Electrical Communication Engg.,6,25,0.00367,0.00067,4
+iit_kharagpur:594,Jeevanjyoti Chakraborty,IIT Kharagpur,Mechanical Engineering,6,20,0.00367,0.00013,7
+iit_kharagpur:126,Shyamal Kumar Das Mandal,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,6,17,0.00367,0.00148,10
+iit_kharagpur:162,Gargi Das,IIT Kharagpur,Chemical Engineering,6,34,0.00367,0.0012,7
+iit_kharagpur:892,Sudarsan Neogi,IIT Kharagpur,Chemical Engineering,6,26,0.00367,0.00124,22
+iit_kharagpur:741,Bhaskar Bhowmick,IIT Kharagpur,Rajendra Mishra School of Engg Entrepreneurship,6,14,0.00367,0.00888,3
+iit_kharagpur:443,Anil Kumar Gupta,IIT Kharagpur,Geology and Geophysics,6,19,0.00367,0.00634,10
+iit_kharagpur:440,Saswat Chakrabarti,IIT Kharagpur,G.S Sanyal School of Telecommunication,6,17,0.00367,0.00262,12
+iit_kharagpur:80,Jiaul Hoque Paik,IIT Kharagpur,Artificial Intelligence,6,11,0.00367,0.00025,3
+iit_kharagpur:403,Goutam Das,IIT Kharagpur,Electronics and Electrical Communication Engg.,6,13,0.00367,0.00309,12
+iit_kharagpur:366,Debaprasad Kastha,IIT Kharagpur,Electrical Engineering,6,39,0.00367,0.00034,11
+iit_kharagpur:805,Monalisa Sarma,IIT Kharagpur,Subir Chowdhury School of Quality and Reliability,6,70,0.00367,0.00376,3
+iit_kharagpur:55,Rajendra Machavaram,IIT Kharagpur,Agricultural and Food Engineering,6,28,0.00367,0.00162,10
+iit_kharagpur:295,Pralay Mitra,IIT Kharagpur,Computer Science and Engineering,6,14,0.00367,0.00384,2
+iit_kharagpur:770,Bharath Haridas Aithal,IIT Kharagpur,Ranbir and Chitra Gupta School of Infrastructure Design and Mngt.,6,12,0.00367,0.00151,19
+iit_kharagpur:627,Amlan Dutta,IIT Kharagpur,Metallurgical and Materials Engineering,6,18,0.00367,8e-05,4
+iit_kharagpur:275,Aritra Hazra,IIT Kharagpur,Computer Science and Engineering,6,45,0.00367,0.00025,11
+iit_kharagpur:29,Ashok Mishra,IIT Kharagpur,Agricultural and Food Engineering,6,29,0.00367,0.00016,3
+iit_kharagpur:769,Arkopal Kishore Goswami,IIT Kharagpur,Ranbir and Chitra Gupta School of Infrastructure Design and Mngt.,6,17,0.00367,0.00191,19
+iit_kharagpur:71,Saikat Kumar Paul,IIT Kharagpur,Architecture and Regional Planning,6,11,0.00367,0.00303,10
+iit_kharagpur:983,Kapil Debnath,IIT Kharagpur,Electronics and Electrical Communication Engg.,6,12,0.00367,0.00074,2
+iit_kharagpur:359,Ashish Ranjan Hota,IIT Kharagpur,Electrical Engineering,6,13,0.00367,0.0003,11
+iit_kharagpur:418,Saumik Bhattacharya,IIT Kharagpur,Electronics and Electrical Communication Engg.,6,17,0.00367,0.01294,3
+iit_kharagpur:167,Koustuv Ray,IIT Kharagpur,Chemical Engineering,6,13,0.00367,0.00043,2
+iit_kharagpur:918,Anupam Basu,IIT Kharagpur,Computer Science and Engineering,6,13,0.00367,0.00025,10
+iit_kharagpur:1121,Sanjoy Chatterjee,IIT Kharagpur,School of Medical Science and Technology,6,11,0.00367,0.00017,3
+iit_kharagpur:1115,Indranil Mallick,IIT Kharagpur,School of Medical Science and Technology,6,7,0.00367,0.00017,3
+iit_kharagpur:688,Ritwik Ghoshal,IIT Kharagpur,Ocean Engg and Naval Architecture,6,7,0.00367,0.00078,16
+iit_kharagpur:72,Shankha Pratim Bhattacharya,IIT Kharagpur,Architecture and Regional Planning,6,12,0.00367,0.00085,16
+iit_kharagpur:781,Soumyadip Choudhury,IIT Kharagpur,Rubber Technology,6,15,0.00367,9e-05,2
+iit_kharagpur:324,Arista Lahiri,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,6,14,0.00367,0.00048,3
+iit_kharagpur:1089,Om Prakash Sha,IIT Kharagpur,Ocean Engg and Naval Architecture,6,15,0.00367,0.00126,4
+iit_kharagpur:61,Subhadip Dey,IIT Kharagpur,Agricultural and Food Engineering,6,17,0.00367,0.00398,10
+iit_roorkee:249,S. K. Ghosh,IIT Roorkee,Civil Engineering,6,27,0.00367,0.00172,9
+iit_roorkee:661,Sudhakar Subudhi,IIT Roorkee,Mechanical and Industrial Engineering,6,12,0.00367,0.00541,1
+iit_roorkee:597,Sanjeev Kumar,IIT Roorkee,Mathematics,6,7,0.00367,0.00477,9
+iit_roorkee:650,Pradeep Kr. Jha,IIT Roorkee,Mechanical and Industrial Engineering,6,19,0.00367,0.0047,13
+iit_roorkee:377,Mukesh Kr. Pathak,IIT Roorkee,Electrical Engineering,6,16,0.00367,0.00303,5
+iit_roorkee:655,S. P. Harsha,IIT Roorkee,Mechanical and Industrial Engineering,6,43,0.00367,0.00263,13
+iit_roorkee:390,Vishal Kumar,IIT Roorkee,Electrical Engineering,6,74,0.00367,0.00442,5
+iit_roorkee:433,Pyari Mohan Pradhan,IIT Roorkee,Electronics and Communication Engineering,6,28,0.00367,0.01374,5
+iit_roorkee:263,Peddoju Sateesh Kumar,IIT Roorkee,Computer Science and Engineering,6,12,0.00367,0.00162,5
+iit_roorkee:202,Narendra Kumar Samadhiya,IIT Roorkee,Civil Engineering,6,14,0.00367,0.00226,15
+iit_roorkee:240,Kamal Jain,IIT Roorkee,Civil Engineering,6,9,0.00367,0.0011,15
+iit_roorkee:179,Absar Ahmad Kazmi,IIT Roorkee,Civil Engineering,6,25,0.00367,0.0124,9
+iit_roorkee:366,Bhaveshkumar R. Bhalja,IIT Roorkee,Electrical Engineering,6,40,0.00367,0.00273,5
+iit_roorkee:347,Yogendra Singh,IIT Roorkee,Earthquake Engineering,6,14,0.00367,0.00858,1
+iit_roorkee:649,P. M. Pathak,IIT Roorkee,Mechanical and Industrial Engineering,6,20,0.00367,0.00573,20
+iit_roorkee:376,Manoj Tripathy,IIT Roorkee,Electrical Engineering,6,14,0.00367,0.00256,5
+iit_roorkee:201,Mohd. Ashraf Iqbal,IIT Roorkee,Civil Engineering,6,17,0.00367,0.00446,18
+iit_roorkee:492,Arun Kumar,IIT Roorkee,Hydro and Renewable Energy,6,8,0.00367,0.00337,6
+iit_roorkee:645,Navneet Arora,IIT Roorkee,Mechanical and Industrial Engineering,6,16,0.00367,0.00187,13
+iit_roorkee:648,P. K. Jain,IIT Roorkee,Mechanical and Industrial Engineering,6,20,0.00367,0.00291,13
+iit_roorkee:orcid:0000-0002-6627-013X,Sivamohan N. Reddy,IIT Roorkee,Chemical Engineering,6,6,0.00367,0.00146,1
+iit_roorkee:243,Mahendra Singh,IIT Roorkee,Civil Engineering,6,19,0.00367,0.00327,15
+iit_roorkee:37,Gopinath Packirisamy,IIT Roorkee,Biosciences and Bioengineering,6,12,0.00367,0.00056,13
+iit_roorkee:12,Mahua Mukherjee,IIT Roorkee,Architecture and Planning,6,12,0.00367,0.00255,15
+iit_roorkee:793,V. Singh,IIT Roorkee,Physics,6,12,0.00367,0.00423,1
+iit_roorkee:38,Harsh Chauhan,IIT Roorkee,Biosciences and Bioengineering,6,18,0.00367,0.00252,1
+iit_roorkee:727,Anurag Kulshreshtha,IIT Roorkee,Paper Technology,6,20,0.00367,0.00027,1
+iit_roorkee:728,Ashish A. Kadam,IIT Roorkee,Paper Technology,6,20,0.00367,3e-05,1
+iit_roorkee:358,Anubrata Dey,IIT Roorkee,Electrical Engineering,6,19,0.00367,0.00288,5
+iit_roorkee:184,Amit Agarwal,IIT Roorkee,Civil Engineering,6,9,0.00367,0.00127,9
+iit_roorkee:706,Sumeet Mishra,IIT Roorkee,Metallurgical and Materials Engineering,6,11,0.00367,0.00492,6
+iit_roorkee:664,Varun Sharma,IIT Roorkee,Mechanical and Industrial Engineering,6,11,0.00367,0.00182,13
+iit_roorkee:9,E. Rajasekar,IIT Roorkee,Architecture and Planning,6,35,0.00367,0.00446,9
+iit_roorkee:103,Hari Prakash Veluswamy,IIT Roorkee,Chemical Engineering,6,13,0.00367,0.00015,1
+iit_roorkee:183,Alok Bhardwaj,IIT Roorkee,Civil Engineering,6,7,0.00367,0.00147,9
+iit_roorkee:50,Rajesh Kumar,IIT Roorkee,Biosciences and Bioengineering,6,16,0.00367,0.00075,1
+iit_kharagpur:907,Anjali Pal,IIT Kharagpur,Civil Engineering,5,15,0.00305,0.00644,6
+iit_kharagpur:425,Sudipta Mukhopadhyay,IIT Kharagpur,Electronics and Electrical Communication Engg.,5,13,0.00305,0.0012,4
+iit_kharagpur:976,Akhilesh Mohan,IIT Kharagpur,Electronics and Electrical Communication Engg.,5,12,0.00305,0.002,1
+iit_kharagpur:970,Siddhartha Sen,IIT Kharagpur,Electrical Engineering,5,20,0.00305,0.00142,11
+iit_kharagpur:245,Kusam Sudhakar Reddy,IIT Kharagpur,Civil Engineering,5,11,0.00305,0.00104,4
+iit_kharagpur:415,Santanu Chattopadhyay,IIT Kharagpur,Electronics and Electrical Communication Engg.,5,9,0.00305,0.0005,3
+iit_kharagpur:1119,Sangeeta Das Bhattacharya,IIT Kharagpur,School of Medical Science and Technology,5,11,0.00305,0.00102,3
+iit_kharagpur:615,Sankha Deb,IIT Kharagpur,Mechanical Engineering,5,30,0.00305,0.00039,4
+iit_kharagpur:846,Kamlesh Narayan Tiwari,IIT Kharagpur,Agricultural and Food Engineering,5,12,0.00305,0.00366,19
+iit_kharagpur:orcid:0000-0002-7170-2291,Subhas C. Kundu,IIT Kharagpur,Biotechnology,5,12,0.00305,0.00012,2
+iit_kharagpur:585,Arun Kumar Samantaray,IIT Kharagpur,Mechanical Engineering,5,51,0.00305,0.00171,20
+iit_kharagpur:278,Bivas Mitra,IIT Kharagpur,Computer Science and Engineering,5,76,0.00305,0.0003,12
+iit_kharagpur:160,Bhim Charan Meikap,IIT Kharagpur,Chemical Engineering,5,16,0.00305,0.00207,4
+iit_kharagpur:519,Sarada Prasad Sarmah,IIT Kharagpur,Industrial and Systems Engineering,5,20,0.00305,0.00134,3
+iit_kharagpur:189,Swati Neogi,IIT Kharagpur,Chemical Engineering,5,11,0.00305,0.00108,22
+iit_kharagpur:655,Tapas Laha,IIT Kharagpur,Metallurgical and Materials Engineering,5,18,0.00305,0.0002,4
+iit_kharagpur:134,Mihir Kumar Dash,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",5,13,0.00305,0.00164,10
+iit_kharagpur:978,Chetna Singhal,IIT Kharagpur,Electronics and Electrical Communication Engg.,5,18,0.00305,0.00068,12
+iit_kharagpur:704,Debraj Choudhury,IIT Kharagpur,Physics,5,12,0.00305,9e-05,17
+iit_kharagpur:454,Mruganka Kumar Panigrahi,IIT Kharagpur,Geology and Geophysics,5,19,0.00305,0.00148,10
+iit_kharagpur:314,Parthasarathi Ghosh,IIT Kharagpur,Cryogenic Engineering,5,29,0.00305,0.00047,7
+iit_kharagpur:483,Bimal Kishore Sahoo,IIT Kharagpur,Humanities and Social Sciences,5,14,0.00305,0.00121,3
+iit_kharagpur:660,Arun Kumar Majumder,IIT Kharagpur,Mining Engineering,5,7,0.00305,0.00194,4
+iit_kharagpur:1047,Ranjan Bhattacharyya,IIT Kharagpur,Mechanical Engineering,5,38,0.00305,0.00042,20
+iit_kharagpur:13,Naba Kumar Peyada,IIT Kharagpur,Aerospace Engineering,5,6,0.00305,0.00204,11
+iit_kharagpur:201,Madhab Chandra Das,IIT Kharagpur,Chemistry,5,7,0.00305,0.00019,2
+iit_kharagpur:965,N K Kishore,IIT Kharagpur,Electrical Engineering,5,7,0.00305,0.00044,3
+iit_kharagpur:158,Arnab Atta,IIT Kharagpur,Chemical Engineering,5,26,0.00305,9e-05,7
+iit_kharagpur:472,Sudha Agrahari,IIT Kharagpur,Geology and Geophysics,5,11,0.00305,0.00194,8
+iit_kharagpur:170,Monojit Chakraborty,IIT Kharagpur,Chemical Engineering,5,19,0.00305,0.00018,7
+iit_kharagpur:715,Poornachandra Sekhar Burada,IIT Kharagpur,Physics,5,18,0.00305,0.0006,7
+iit_kharagpur:636,Indrani Sen,IIT Kharagpur,Metallurgical and Materials Engineering,5,14,0.00305,0.00025,4
+iit_kharagpur:42,Joydeep Banerjee,IIT Kharagpur,Agricultural and Food Engineering,5,7,0.00305,0.00024,2
+iit_kharagpur:461,Ravikant Vadlamani,IIT Kharagpur,Geology and Geophysics,5,9,0.00305,0.0056,18
+iit_kharagpur:626,Vikranth Racherla,IIT Kharagpur,Mechanical Engineering,5,20,0.00305,0.00024,4
+iit_kharagpur:433,Trilok Singh,IIT Kharagpur,Energy Science and Engineering,5,18,0.00305,4e-05,8
+iit_kharagpur:542,Buddhananda Banerjee,IIT Kharagpur,Mathematics,5,5,0.00305,0.0006,12
+iit_kharagpur:1141,Swagato Chatterjee,IIT Kharagpur,Vinod Gupta School of Management,5,8,0.00305,0.00488,21
+iit_kharagpur:801,Renji Remesan,IIT Kharagpur,School of Water Resources,5,10,0.00305,0.00027,8
+iit_kharagpur:212,Rajakumar Ananthakrishnan,IIT Kharagpur,Chemistry,5,6,0.00305,0.00057,8
+iit_kharagpur:848,P. B. Singh Bhadoria,IIT Kharagpur,Agricultural and Food Engineering,5,9,0.00305,0.00106,10
+iit_kharagpur:772,Swati Maitra,IIT Kharagpur,Ranbir and Chitra Gupta School of Infrastructure Design and Mngt.,5,8,0.00305,0.00171,4
+iit_kharagpur:702,Debamalya Banerjee,IIT Kharagpur,Physics,5,9,0.00305,4e-05,2
+iit_kharagpur:22,Sunil Manohar Dash,IIT Kharagpur,Aerospace Engineering,5,11,0.00305,0.00177,3
+iit_kharagpur:320,Sandeep D Kulkarni,IIT Kharagpur,Deysarkar Centre of Petroleum and Energy Transition,5,12,0.00305,0.00144,7
+iit_kharagpur:1059,Gour Prasad Das,IIT Kharagpur,Metallurgical and Materials Engineering,5,8,0.00305,0.00036,17
+iit_kharagpur:920,Bhargab Bikram Bhattacharya,IIT Kharagpur,Computer Science and Engineering,5,6,0.00305,0.00047,11
+iit_kharagpur:273,Abir Das,IIT Kharagpur,Computer Science and Engineering,5,12,0.00305,0.00044,12
+iit_kharagpur:1118,Rimpa Basu Achari,IIT Kharagpur,School of Medical Science and Technology,5,14,0.00305,0.0,3
+iit_kharagpur:1123,Soumendranath Ray,IIT Kharagpur,School of Medical Science and Technology,5,19,0.00305,0.0,3
+iit_kharagpur:67,Haimanti Banerji,IIT Kharagpur,Architecture and Regional Planning,5,10,0.00305,6e-05,16
+iit_kharagpur:598,Mahendra Reddy Vanteru,IIT Kharagpur,Mechanical Engineering,5,22,0.00305,0.00284,7
+iit_kharagpur:211,Pradip Kumar Chakraborty,IIT Kharagpur,Chemistry,5,6,0.00305,0.00092,2
+iit_kharagpur:773,Atasi Mohanty,IIT Kharagpur,Rekhi Centre of Excellence for the Science of Happiness,5,6,0.00305,0.00479,23
+iit_kharagpur:322,Arijita Banerjee,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,5,7,0.00305,0.00284,2
+iit_kharagpur:303,Somak Aditya,IIT Kharagpur,Computer Science and Engineering,5,6,0.00305,0.0004,12
+iit_kharagpur:333,Mrinal Kumar Acharya,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,5,8,0.00305,0.00108,11
+iit_kharagpur:231,Aritra Chatterjee,IIT Kharagpur,Civil Engineering,5,5,0.00305,0.00065,16
+iit_kharagpur:120,Nandita Dasgupta,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,5,6,0.00305,0.00013,2
+iit_kharagpur:802,Shamik Chowdhury,IIT Kharagpur,School of Water Resources,5,11,0.00305,9e-05,8
+iit_roorkee:577,Ameeya K. Nayak,IIT Roorkee,Mathematics,5,10,0.00305,0.00529,1
+iit_roorkee:196,Indrajit Ghosh,IIT Roorkee,Civil Engineering,5,13,0.00305,0.00177,9
+iit_roorkee:63,R. P. Singh,IIT Roorkee,Biosciences and Bioengineering,5,13,0.00305,0.00095,1
+iit_roorkee:171,M. R. Maurya,IIT Roorkee,Chemistry,5,29,0.00305,0.00022,1
+iit_roorkee:233,Ajay Gairola,IIT Roorkee,Civil Engineering,5,6,0.00305,0.00198,15
+iit_roorkee:214,Rajat Rastogi,IIT Roorkee,Civil Engineering,5,10,0.00305,0.00032,9
+iit_roorkee:541,Rajat Agrawal,IIT Roorkee,Management Studies,5,14,0.00305,0.00275,6
+iit_roorkee:424,Debashis Ghosh,IIT Roorkee,Electronics and Communication Engineering,5,30,0.00305,0.00367,5
+iit_roorkee:692,G. P. Chaudhari,IIT Roorkee,Metallurgical and Materials Engineering,5,26,0.00305,0.00102,6
+iit_roorkee:708,Ujjwal Prakash,IIT Roorkee,Metallurgical and Materials Engineering,5,12,0.00305,0.00056,6
+iit_roorkee:204,Pradeep Bhargava,IIT Roorkee,Civil Engineering,5,9,0.00305,0.0032,15
+iit_roorkee:153,Ramachandran C. N.,IIT Roorkee,Chemistry,5,10,0.00305,0.00583,1
+iit_roorkee:152,Rama Krishna Peddinti,IIT Roorkee,Chemistry,5,9,0.00305,0.00014,1
+iit_roorkee:502,S. K. Singal,IIT Roorkee,Hydro and Renewable Energy,5,12,0.00305,0.00078,6
+iit_roorkee:662,Sushanta Dutta,IIT Roorkee,Mechanical and Industrial Engineering,5,14,0.00305,0.0021,5
+iit_roorkee:350,Ashok Kumar,IIT Roorkee,Earthquake Engineering,5,13,0.00305,0.00125,15
+iit_roorkee:799,Narayan Chandra Mishra,IIT Roorkee,Polymer and Process Engineering,5,15,0.00305,0.00066,1
+iit_roorkee:715,Prakriti K. Ghosh,IIT Roorkee,Metallurgical and Materials Engineering,5,17,0.00305,0.00358,6
+iit_roorkee:250,S. S. Jain,IIT Roorkee,Civil Engineering,5,10,0.00305,0.00159,9
+iit_roorkee:187,Anupam Chakrabarti,IIT Roorkee,Civil Engineering,5,26,0.00305,0.00433,18
+iit_roorkee:387,Sohom Chakrabarty,IIT Roorkee,Electrical Engineering,5,22,0.00305,0.00296,5
+iit_roorkee:734,Surendra P Singh,IIT Roorkee,Paper Technology,5,8,0.00305,0.00013,1
+iit_roorkee:640,K. M. Singh,IIT Roorkee,Mechanical and Industrial Engineering,5,12,0.00305,0.0014,5
+iit_roorkee:371,G. N. Pillai,IIT Roorkee,Electrical Engineering,5,13,0.00305,0.00215,5
+iit_roorkee:232,Zulfequar Ahmad,IIT Roorkee,Civil Engineering,5,30,0.00305,0.00078,9
+iit_roorkee:226,Sudipta Sarkar,IIT Roorkee,Civil Engineering,5,24,0.00305,0.00181,1
+iit_roorkee:209,Priti Maheshwari,IIT Roorkee,Civil Engineering,5,6,0.00305,0.00201,15
+iit_roorkee:763,Mayank Goswami,IIT Roorkee,Physics,5,11,0.00305,0.00035,13
+iit_roorkee:705,Suhrit Mula,IIT Roorkee,Metallurgical and Materials Engineering,5,11,0.00305,0.00064,6
+iit_roorkee:141,Kalyan Kumar Sadhu,IIT Roorkee,Chemistry,5,14,0.00305,0.00123,1
+iit_roorkee:761,M. V. Sunil Krishna,IIT Roorkee,Physics,5,35,0.00305,0.00072,6
+iit_roorkee:422,Bulusu Anand,IIT Roorkee,Electronics and Communication Engineering,5,86,0.00305,0.00151,14
+iit_roorkee:orcid:0000-0003-0856-759X,Kamal,IIT Roorkee,Earth Sciences,5,22,0.00305,0.00196,15
+iit_roorkee:588,Manil T. Mohan,IIT Roorkee,Mathematics,5,20,0.00305,0.00375,14
+iit_roorkee:695,K. S. Suresh,IIT Roorkee,Metallurgical and Materials Engineering,5,13,0.00305,0.00138,1
+iit_roorkee:188,Bhanu Prakash Vellanki,IIT Roorkee,Civil Engineering,5,17,0.00305,0.00111,9
+iit_roorkee:439,Sourajeet Roy,IIT Roorkee,Electronics and Communication Engineering,5,69,0.00305,0.00037,14
+iit_roorkee:524,Himanshu Joshi,IIT Roorkee,Hydrology,5,11,0.00305,0.00146,6
+iit_roorkee:527,N. K. Goel,IIT Roorkee,Hydrology,5,11,0.00305,0.00492,9
+iit_roorkee:829,K. S. Kasiviswanathan,IIT Roorkee,Water Resources Development and Management,5,13,0.00305,0.00225,5
+iit_roorkee:701,Sadhan Ghosh,IIT Roorkee,Metallurgical and Materials Engineering,5,5,0.00305,0.00054,6
+iit_roorkee:264,Pradumn K. Pandey,IIT Roorkee,Computer Science and Engineering,5,13,0.00305,0.0006,12
+iit_roorkee:410,Akhilesh Mohan,IIT Roorkee,Electronics and Communication Engineering,5,18,0.00305,0.00718,1
+iit_roorkee:265,Pravendra Singh,IIT Roorkee,Computer Science and Engineering,5,8,0.00305,0.00149,6
+iit_roorkee:19,Shubhajit Sadhukhan,IIT Roorkee,Architecture and Planning,5,17,0.00305,0.00084,9
+iit_roorkee:384,Ramanuja Panigrahi,IIT Roorkee,Electrical Engineering,5,5,0.00305,0.00917,10
+iit_roorkee:495,Himanshu Jain,IIT Roorkee,Hydro and Renewable Energy,5,5,0.00305,0.00048,6
+iit_roorkee:318,Vipul Silwal,IIT Roorkee,Earth Sciences,5,9,0.00305,0.00247,15
+iit_roorkee:732,Sampat Singh Bhati,IIT Roorkee,Paper Technology,5,11,0.00305,9e-05,1
+iit_kharagpur:905,Tarasankar Pal,IIT Kharagpur,Chemistry,4,14,0.00244,0.00027,6
+iit_kharagpur:1055,Sukanta Kumar Dash,IIT Kharagpur,Mechanical Engineering,4,18,0.00244,0.0005,7
+iit_kharagpur:808,Sanjay Kumar Chaturvedi,IIT Kharagpur,Subir Chowdhury School of Quality and Reliability,4,29,0.00244,0.00202,3
+iit_kharagpur:407,Mrinal Kanti Mandal,IIT Kharagpur,Electronics and Electrical Communication Engg.,4,9,0.00244,0.00059,12
+iit_kharagpur:809,V N Achutha Naikan,IIT Kharagpur,Subir Chowdhury School of Quality and Reliability,4,19,0.00244,0.00044,3
+iit_kharagpur:554,Koeli Ghoshal,IIT Kharagpur,Mathematics,4,14,0.00244,0.0011,19
+iit_kharagpur:871,Satyahari Dey,IIT Kharagpur,Bioscience and Biotechnology,4,10,0.00244,0.00016,2
+iit_kharagpur:693,Achintya Dhar,IIT Kharagpur,Physics,4,5,0.00244,0.00011,2
+iit_kharagpur:875,Manabottam Mandal,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",4,5,0.00244,0.00025,10
+iit_kharagpur:916,Venkappayya R Desai,IIT Kharagpur,Civil Engineering,4,12,0.00244,0.00039,19
+iit_kharagpur:1111,Anil Kumar Bhowmick,IIT Kharagpur,Rubber Technology,4,14,0.00244,2e-05,2
+iit_kharagpur:1033,Jitendra Kumar,IIT Kharagpur,Mathematics,4,15,0.00244,0.00023,19
+iit_kharagpur:8,Dipak Kumar Maiti,IIT Kharagpur,Aerospace Engineering,4,48,0.00244,0.00111,16
+iit_kharagpur:216,Samik Nanda,IIT Kharagpur,Chemistry,4,6,0.00244,0.00022,2
+iit_kharagpur:568,Somesh Kumar,IIT Kharagpur,Mathematics,4,4,0.00244,0.00188,3
+iit_kharagpur:238,Debarghya Chakraborty,IIT Kharagpur,Civil Engineering,4,6,0.00244,0.00144,2
+iit_kharagpur:213,Rajarshi Samanta,IIT Kharagpur,Chemistry,4,6,0.00244,9e-05,2
+iit_kharagpur:894,Ahindra Nag,IIT Kharagpur,Chemistry,4,11,0.00244,0.00056,2
+iit_kharagpur:915,Sudeshna Mitra,IIT Kharagpur,Civil Engineering,4,9,0.00244,0.00076,3
+iit_kharagpur:845,Hari Niwas Mishra,IIT Kharagpur,Agricultural and Food Engineering,4,12,0.00244,3e-05,22
+iit_kharagpur:661,Basanta Kumar Prusty,IIT Kharagpur,Mining Engineering,4,13,0.00244,0.00153,4
+iit_kharagpur:914,Subhasish Dey,IIT Kharagpur,Civil Engineering,4,10,0.00244,0.00116,8
+iit_kharagpur:453,Melinda Kumar Bera,IIT Kharagpur,Geology and Geophysics,4,12,0.00244,0.00281,18
+iit_kharagpur:817,Biplab Datta,IIT Kharagpur,Vinod Gupta School of Management,4,32,0.00244,0.00383,21
+iit_kharagpur:482,Bhagirath Behera,IIT Kharagpur,Humanities and Social Sciences,4,23,0.00244,0.00102,16
+iit_kharagpur:296,Rajat Subhra Chakraborty,IIT Kharagpur,Computer Science and Engineering,4,38,0.00244,0.00031,11
+iit_kharagpur:115,Arnab Sarkar,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,4,14,0.00244,2e-05,11
+iit_kharagpur:932,Sujoy Ghose,IIT Kharagpur,Computer Science and Engineering,4,7,0.00244,0.00076,12
+iit_kharagpur:246,M Amaranatha Reddy,IIT Kharagpur,Civil Engineering,4,10,0.00244,0.00013,4
+iit_kharagpur:900,Joykrishna Dey,IIT Kharagpur,Chemistry,4,13,0.00244,0.0001,2
+iit_kharagpur:473,Sujoy Kanti Ghosh,IIT Kharagpur,Geology and Geophysics,4,7,0.00244,0.00032,17
+iit_kharagpur:597,Maddali Ramgopal,IIT Kharagpur,Mechanical Engineering,4,4,0.00244,0.00282,2
+iit_kharagpur:569,Somnath Bhattacharyya,IIT Kharagpur,Mathematics,4,5,0.00244,0.00342,19
+iit_kharagpur:822,Parama Barai,IIT Kharagpur,Vinod Gupta School of Management,4,7,0.00244,0.00346,21
+iit_kharagpur:662,Biswajit Samanta,IIT Kharagpur,Mining Engineering,4,17,0.00244,0.00116,4
+iit_kharagpur:696,Amal Kumar Das,IIT Kharagpur,Physics,4,18,0.00244,8e-05,2
+iit_kharagpur:516,Jitendra Kumar Jha,IIT Kharagpur,Industrial and Systems Engineering,4,11,0.00244,0.00027,3
+iit_kharagpur:457,Probal Sengupta,IIT Kharagpur,Geology and Geophysics,4,23,0.00244,0.00044,8
+iit_kharagpur:740,Basab Chakraborty,IIT Kharagpur,Rajendra Mishra School of Engg Entrepreneurship,4,11,0.00244,0.00098,4
+iit_kharagpur:828,Srabanti Mukherjee,IIT Kharagpur,Vinod Gupta School of Management,4,35,0.00244,0.00084,21
+iit_kharagpur:271,Abhijnan Chakraborty,IIT Kharagpur,Computer Science and Engineering,4,49,0.00244,0.00093,12
+iit_kharagpur:651,Somjeet Biswas,IIT Kharagpur,Metallurgical and Materials Engineering,4,7,0.00244,0.00016,17
+iit_kharagpur:722,Sajal Dhara,IIT Kharagpur,Physics,4,8,0.00244,1e-05,17
+iit_kharagpur:130,Achanta Naga Venkata Satyanarayana,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",4,6,0.00244,0.00099,10
+iit_kharagpur:428,Vivek Dixit,IIT Kharagpur,Electronics and Electrical Communication Engg.,4,13,0.00244,0.00111,1
+iit_kharagpur:678,Arunjyoti Sarkar,IIT Kharagpur,Ocean Engg and Naval Architecture,4,8,0.00244,0.00011,16
+iit_kharagpur:172,Narayan Chandra Pradhan,IIT Kharagpur,Chemical Engineering,4,10,0.00244,0.00105,2
+iit_kharagpur:447,Chandrani Singh,IIT Kharagpur,Geology and Geophysics,4,42,0.00244,0.00275,12
+iit_kharagpur:1044,Jinu Paul,IIT Kharagpur,Mechanical Engineering,4,16,0.00244,0.00095,4
+iit_kharagpur:591,Dhananjay Kumar Srivastava,IIT Kharagpur,Mechanical Engineering,4,5,0.00244,0.00119,10
+iit_kharagpur:478,Anuradha Choudry,IIT Kharagpur,Humanities and Social Sciences,4,19,0.00244,0.00242,24
+iit_kharagpur:287,Mainack Mondal,IIT Kharagpur,Computer Science and Engineering,4,14,0.00244,7e-05,12
+iit_kharagpur:165,Jayanta Chakraborty,IIT Kharagpur,Chemical Engineering,4,9,0.00244,0.00063,3
+iit_kharagpur:497,Mantu Kumar Mahalik,IIT Kharagpur,Humanities and Social Sciences,4,7,0.00244,1e-05,3
+iit_kharagpur:358,Ashis Maity,IIT Kharagpur,Electrical Engineering,4,10,0.00244,0.00012,11
+iit_kharagpur:315,Pavitra Sandilya,IIT Kharagpur,Cryogenic Engineering,4,11,0.00244,0.001,20
+iit_kharagpur:116,Ayantika Chatterjee,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,4,12,0.00244,0.00039,11
+iit_kharagpur:476,Amrita Sen,IIT Kharagpur,Humanities and Social Sciences,4,22,0.00244,0.00035,24
+iit_kharagpur:41,Jayraj P,IIT Kharagpur,Agricultural and Food Engineering,4,7,0.00244,0.00088,10
+iit_kharagpur:738,Vishwanath Shukla,IIT Kharagpur,Physics,4,4,0.00244,0.00282,10
+iit_kharagpur:199,Kiran Ramakant Gore,IIT Kharagpur,Chemistry,4,7,0.00244,0.00037,2
+iit_kharagpur:631,Chenna Rao Borra,IIT Kharagpur,Metallurgical and Materials Engineering,4,7,0.00244,5e-05,8
+iit_kharagpur:672,Sunita Mishra,IIT Kharagpur,Mining Engineering,4,6,0.00244,0.00111,3
+iit_kharagpur:646,Sankha Mukherjee,IIT Kharagpur,Metallurgical and Materials Engineering,4,7,0.00244,0.00014,2
+iit_kharagpur:602,Nilanjan Das Chakladar,IIT Kharagpur,Mechanical Engineering,4,19,0.00244,0.00021,4
+iit_kharagpur:32,Brajesh Kumar Panda,IIT Kharagpur,Agricultural and Food Engineering,4,13,0.00244,0.0006,25
+iit_kharagpur:69,Prashant Anand,IIT Kharagpur,Architecture and Regional Planning,4,12,0.00244,0.00194,19
+iit_kharagpur:481,Archana Patnaik,IIT Kharagpur,Humanities and Social Sciences,4,9,0.00244,0.00058,24
+iit_kharagpur:962,Deepak Reddy Pullaguram,IIT Kharagpur,Electrical Engineering,4,20,0.00244,0.00059,11
+iit_kharagpur:674,Indranath Chakraborty,IIT Kharagpur,Nano Science and Technology,4,6,0.00244,0.00033,2
+iit_kharagpur:349,Lisa Roy,IIT Kharagpur,Education,4,7,0.00244,8e-05,2
+iit_kharagpur:690,Swapnadip De Chowdhury,IIT Kharagpur,Ocean Engg and Naval Architecture,4,5,0.00244,0.0,16
+iit_kharagpur:325,Aritri Bir,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,4,12,0.00244,0.0,8
+iit_kharagpur:178,Rahul Ranjan,IIT Kharagpur,Chemical Engineering,4,5,0.00244,0.0002,2
+iit_kharagpur:947,Pradosh Kumar Sarangi,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,4,4,0.00244,0.00217,11
+iit_kharagpur:48,P Srinivasa Rao,IIT Kharagpur,Agricultural and Food Engineering,4,4,0.00244,0.00375,2
+iit_kharagpur:121,Pooja Lahiri,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,4,8,0.00244,0.0,8
+iit_roorkee:orcid:0000-0003-0747-6776,Sandeep Kumar,IIT Roorkee,Computer Science and Engineering,4,13,0.00244,0.00185,14
+iit_roorkee:134,Anuj Sharma,IIT Roorkee,Chemistry,4,11,0.00244,0.00039,1
+iit_roorkee:405,S. P. Singh,IIT Roorkee,Electrical Engineering,4,9,0.00244,0.00296,5
+iit_roorkee:258,Durga Toshniwal,IIT Roorkee,Computer Science and Engineering,4,23,0.00244,0.00155,9
+iit_roorkee:826,Deepak Khare,IIT Roorkee,Water Resources Development and Management,4,21,0.00244,0.00076,5
+iit_roorkee:739,Vivek Kumar,IIT Roorkee,Paper Technology,4,11,0.00244,0.0048,14
+iit_roorkee:270,Rajdeep Niyogi,IIT Roorkee,Computer Science and Engineering,4,4,0.00244,0.00034,5
+iit_roorkee:275,Sugata Gangopadhyay,IIT Roorkee,Computer Science and Engineering,4,21,0.00244,0.0011,14
+iit_roorkee:411,Amalendu Patnaik,IIT Roorkee,Electronics and Communication Engineering,4,24,0.00244,0.00581,14
+iit_roorkee:125,Indra M. Mishra,IIT Roorkee,Chemical Engineering,4,18,0.00244,4e-05,1
+iit_roorkee:95,Amit Kumar Dhiman,IIT Roorkee,Chemical Engineering,4,18,0.00244,0.00036,1
+iit_roorkee:131,Surendra Kumar,IIT Roorkee,Chemical Engineering,4,6,0.00244,0.00036,1
+iit_roorkee:630,Avinash Parashar,IIT Roorkee,Mechanical and Industrial Engineering,4,24,0.00244,0.00036,13
+iit_roorkee:110,Patit Paban Kundu,IIT Roorkee,Chemical Engineering,4,7,0.00244,0.00202,1
+iit_roorkee:100,C. Balomajumder,IIT Roorkee,Chemical Engineering,4,16,0.00244,0.00032,1
+iit_roorkee:148,Prasenjit Kar,IIT Roorkee,Chemistry,4,10,0.00244,0.00016,14
+iit_roorkee:orcid:0000-0001-5653-7120,Pankaj Agarwal,IIT Roorkee,Earthquake Engineering,4,16,0.00244,0.00375,27
+iit_roorkee:719,Sumeer K. Nath,IIT Roorkee,Metallurgical and Materials Engineering,4,16,0.00244,0.00079,6
+iit_roorkee:754,Davinder Kaur,IIT Roorkee,Physics,4,11,0.00244,0.0006,13
+iit_roorkee:430,Meenakshi Rawat,IIT Roorkee,Electronics and Communication Engineering,4,10,0.00244,0.00222,5
+iit_roorkee:124,Indra D. Mall,IIT Roorkee,Chemical Engineering,4,12,0.00244,1e-05,1
+iit_roorkee:428,Karun Rawat,IIT Roorkee,Electronics and Communication Engineering,4,10,0.00244,0.00092,5
+iit_roorkee:624,Anil Kumar,IIT Roorkee,Mechanical and Industrial Engineering,4,20,0.00244,0.00725,1
+iit_roorkee:631,B. K. Gandhi,IIT Roorkee,Mechanical and Industrial Engineering,4,15,0.00244,0.00113,5
+iit_roorkee:710,Vikram Vasant Dabhade,IIT Roorkee,Metallurgical and Materials Engineering,4,12,0.00244,0.00051,6
+iit_roorkee:207,Pramod Kumar Sharma,IIT Roorkee,Civil Engineering,4,27,0.00244,0.00029,9
+iit_roorkee:313,Sandeep Singh,IIT Roorkee,Earth Sciences,4,15,0.00244,0.00355,15
+iit_roorkee:544,Ramesh Anbanandam,IIT Roorkee,Management Studies,4,7,0.00244,0.00226,9
+iit_roorkee:35,Deepak Sharma,IIT Roorkee,Biosciences and Bioengineering,4,4,0.00244,0.00021,1
+iit_roorkee:625,Ankit Bansal,IIT Roorkee,Mechanical and Industrial Engineering,4,8,0.00244,0.00123,1
+iit_roorkee:767,P. Arumugam,IIT Roorkee,Physics,4,22,0.00244,0.00562,26
+iit_roorkee:45,Prabhat Kumar Mandal,IIT Roorkee,Biosciences and Bioengineering,4,5,0.00244,0.00017,1
+iit_roorkee:46,Pranita P. Sarangi,IIT Roorkee,Biosciences and Bioengineering,4,7,0.00244,4e-05,1
+iit_roorkee:636,Dheerendra Kr. Dwivedi,IIT Roorkee,Mechanical and Industrial Engineering,4,8,0.00244,0.00119,13
+iit_roorkee:119,Taraknath Das,IIT Roorkee,Chemical Engineering,4,5,0.00244,0.00029,1
+iit_roorkee:795,Abhijit Maiti,IIT Roorkee,Polymer and Process Engineering,4,12,0.00244,0.00068,1
+iit_roorkee:496,M. K. Singhal,IIT Roorkee,Hydro and Renewable Energy,4,11,0.00244,0.00162,6
+iit_roorkee:113,Prateek Kumar Jha,IIT Roorkee,Chemical Engineering,4,8,0.00244,0.00039,1
+iit_roorkee:617,Abinash Kumar Swain,IIT Roorkee,Mechanical and Industrial Engineering,4,12,0.00244,0.00194,1
+iit_roorkee:794,A. Bandyopadhyay,IIT Roorkee,Polymer and Process Engineering,4,5,0.00244,0.00036,1
+iit_roorkee:18,Saptarshi Kolay,IIT Roorkee,Architecture and Planning,4,9,0.00244,0.00041,9
+iit_roorkee:375,M. Felix Orlando,IIT Roorkee,Electrical Engineering,4,22,0.00244,0.00188,5
+iit_roorkee:210,Pushpa Choudhary,IIT Roorkee,Civil Engineering,4,18,0.00244,0.00029,9
+iit_roorkee:518,Bhaskar Jyoti Deka,IIT Roorkee,Hydrology,4,8,0.00244,0.00049,6
+iit_roorkee:531,Amit Upadhyay,IIT Roorkee,Management Studies,4,5,0.00244,0.00227,21
+iit_roorkee:308,Pradeep Srivastava,IIT Roorkee,Earth Sciences,4,4,0.00244,0.00118,1
+iit_roorkee:orcid:0000-0003-0031-1346,Gowrish Basavarajappa,IIT Roorkee,Electronics and Communication Engineering,4,20,0.00244,0.00085,5
+iit_roorkee:228,Umesh Kumar Sharma,IIT Roorkee,Civil Engineering,4,9,0.00244,0.00316,9
+iit_roorkee:725,Vibhore Kumar Rastogi,IIT Roorkee,Paper Technology,4,4,0.00244,0.00028,1
+iit_roorkee:223,Siddhartha Khare,IIT Roorkee,Civil Engineering,4,5,0.00244,0.0002,9
+iit_roorkee:752,Arup Samanta,IIT Roorkee,Physics,4,9,0.00244,0.00065,1
+iit_roorkee:36,Devesh Bhimsaria,IIT Roorkee,Biosciences and Bioengineering,4,5,0.00244,0.00163,13
+iit_roorkee:159,Swastika Banerjee,IIT Roorkee,Chemistry,4,6,0.00244,0.00113,2
+iit_roorkee:646,Nikhil Kumar Singh,IIT Roorkee,Mechanical and Industrial Engineering,4,10,0.00244,0.00044,1
+iit_roorkee:367,Biswarup Das,IIT Roorkee,Electrical Engineering,4,7,0.00244,0.00107,5
+iit_roorkee:32,A. K. Sharma,IIT Roorkee,Biosciences and Bioengineering,4,11,0.00244,0.0,1
+iit_roorkee:269,Rajat Sadhukhan,IIT Roorkee,Computer Science and Engineering,4,4,0.00244,0.00308,11
+iit_roorkee:56,Satyanarayan Rao,IIT Roorkee,Biosciences and Bioengineering,4,5,0.00244,1e-05,1
+iit_kharagpur:300,Sarani Bhattacharya,IIT Kharagpur,Computer Science and Engineering,3,38,0.00183,7e-05,11
+iit_kharagpur:279,Chittaranjan Mandal,IIT Kharagpur,Computer Science and Engineering,3,24,0.00183,0.00094,3
+iit_kharagpur:9,Manoranjan Sinha,IIT Kharagpur,Aerospace Engineering,3,9,0.00183,0.00083,1
+iit_kharagpur:1009,Damodar Suar,IIT Kharagpur,Humanities and Social Sciences,3,7,0.00183,0.00103,3
+iit_kharagpur:6,Bhrigu Nath Singh,IIT Kharagpur,Aerospace Engineering,3,30,0.00183,0.00017,16
+iit_kharagpur:175,Parag Arvind Deshpande,IIT Kharagpur,Chemical Engineering,3,4,0.00183,6e-05,2
+iit_kharagpur:262,Shubha Verma,IIT Kharagpur,Civil Engineering,3,4,0.00183,0.00023,10
+iit_kharagpur:1064,Nirupam Chakraborti,IIT Kharagpur,Metallurgical and Materials Engineering,3,8,0.00183,0.00011,4
+iit_kharagpur:806,Neeraj Kumar Goyal,IIT Kharagpur,Subir Chowdhury School of Quality and Reliability,3,9,0.00183,0.00069,3
+iit_kharagpur:745,Mrigank Sharad,IIT Kharagpur,Rajendra Mishra School of Engg Entrepreneurship,3,4,0.00183,0.00036,3
+iit_kharagpur:904,Tanmaya Pathak,IIT Kharagpur,Chemistry,3,10,0.00183,0.00018,7
+iit_kharagpur:708,Kamal Lochan Panigrahi,IIT Kharagpur,Physics,3,6,0.00183,0.00469,10
+iit_kharagpur:658,Aditya Kumar Patra,IIT Kharagpur,Mining Engineering,3,9,0.00183,0.00032,4
+iit_kharagpur:998,Anindya Sarkar,IIT Kharagpur,Geology and Geophysics,3,15,0.00183,0.0,18
+iit_kharagpur:913,Sriman Kumar Bhattacharyya,IIT Kharagpur,Civil Engineering,3,4,0.00183,0.00055,16
+iit_kharagpur:852,Shanker Lal Shrivastava,IIT Kharagpur,Agricultural and Food Engineering,3,5,0.00183,0.00163,25
+iit_kharagpur:1104,Pranab Kumar Dan,IIT Kharagpur,Rajendra Mishra School of Engg Entrepreneurship,3,16,0.00183,0.0005,3
+iit_kharagpur:854,Sudhindra Nath Panda,IIT Kharagpur,Agricultural and Food Engineering,3,9,0.00183,0.00058,19
+iit_kharagpur:1015,Suhita Chopra Chatterjee,IIT Kharagpur,Humanities and Social Sciences,3,3,0.00183,0.00031,3
+iit_kharagpur:17,Sandeep Saha,IIT Kharagpur,Aerospace Engineering,3,9,0.00183,0.00013,7
+iit_kharagpur:1003,Subhasish Das,IIT Kharagpur,Geology and Geophysics,3,3,0.00183,0.00041,8
+iit_kharagpur:1043,Biswajit Maiti,IIT Kharagpur,Mechanical Engineering,3,9,0.00183,0.00058,7
+iit_kharagpur:841,Arunabha Mitra,IIT Kharagpur,Agricultural and Food Engineering,3,9,0.00183,1e-05,8
+iit_kharagpur:451,Kamal Lochan Pruseth,IIT Kharagpur,Geology and Geophysics,3,18,0.00183,0.00019,8
+iit_kharagpur:256,Puneet Kumar Patra,IIT Kharagpur,Civil Engineering,3,12,0.00183,0.00105,16
+iit_kharagpur:886,Amar Nath Samanta,IIT Kharagpur,Chemical Engineering,3,9,0.00183,0.00228,20
+iit_kharagpur:181,Sonali Sengupta,IIT Kharagpur,Chemical Engineering,3,9,0.00183,0.00059,20
+iit_kharagpur:389,Tanmoy Bhattacharya,IIT Kharagpur,Electrical Engineering,3,27,0.00183,0.00282,28
+iit_kharagpur:937,Vutukuru Vasudeva Rao,IIT Kharagpur,Cryogenic Engineering,3,14,0.00183,0.00047,17
+iit_kharagpur:404,Goutam Saha,IIT Kharagpur,Electronics and Electrical Communication Engg.,3,6,0.00183,0.0,2
+iit_kharagpur:424,Sudipta Mahapatra,IIT Kharagpur,Electronics and Electrical Communication Engg.,3,3,0.00183,0.00031,3
+iit_kharagpur:1034,Mahendra Prasad Biswal,IIT Kharagpur,Mathematics,3,5,0.00183,0.00094,10
+iit_kharagpur:910,Lingadahally S Ramachandra,IIT Kharagpur,Civil Engineering,3,8,0.00183,0.00094,4
+iit_kharagpur:889,Jayanta Kumar Basu,IIT Kharagpur,Chemical Engineering,3,17,0.00183,0.00097,20
+iit_kharagpur:842,Ashis Kumar Datta,IIT Kharagpur,Agricultural and Food Engineering,3,4,0.00183,0.00027,25
+iit_kharagpur:573,Swanand Ravindra Khare,IIT Kharagpur,Mathematics,3,5,0.00183,4e-05,3
+iit_kharagpur:239,Debasis Roy,IIT Kharagpur,Civil Engineering,3,6,0.00183,0.00068,2
+iit_kharagpur:933,Swagato Sanyal,IIT Kharagpur,Computer Science and Engineering,3,14,0.00183,1e-05,11
+iit_kharagpur:410,Pradip Mandal,IIT Kharagpur,Electronics and Electrical Communication Engg.,3,5,0.00183,0.00023,2
+iit_kharagpur:511,Akhilesh Kumar,IIT Kharagpur,Industrial and Systems Engineering,3,8,0.00183,8e-05,3
+iit_kharagpur:264,Sudha Goel,IIT Kharagpur,Civil Engineering,3,4,0.00183,0.00062,8
+iit_kharagpur:514,Goutam Sen,IIT Kharagpur,Industrial and Systems Engineering,3,5,0.00183,0.00054,3
+iit_kharagpur:682,Kiran Vijayan,IIT Kharagpur,Ocean Engg and Naval Architecture,3,6,0.00183,0.00018,4
+iit_kharagpur:677,Arpit Mishra,IIT Kharagpur,Ocean Engg and Naval Architecture,3,20,0.00183,0.0,7
+iit_kharagpur:468,Shashi Prakash Sharma,IIT Kharagpur,Geology and Geophysics,3,5,0.00183,0.00059,10
+iit_kharagpur:507,Siddhartha Chattopadhyay,IIT Kharagpur,Humanities and Social Sciences,3,14,0.00183,3e-05,8
+iit_kharagpur:747,Ram Babu Roy,IIT Kharagpur,Rajendra Mishra School of Engg Entrepreneurship,3,12,0.00183,0.00103,3
+iit_kharagpur:609,Prashant Kumar,IIT Kharagpur,Mechanical Engineering,3,10,0.00183,1e-05,20
+iit_kharagpur:252,Nirjhar Dhang,IIT Kharagpur,Civil Engineering,3,12,0.00183,0.00124,4
+iit_kharagpur:117,Banibrata Mukherjee,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,3,10,0.00183,0.00097,11
+iit_kharagpur:371,Dipankar Debnath,IIT Kharagpur,Electrical Engineering,3,8,0.00183,0.00378,11
+iit_kharagpur:49,Peeyush Soni,IIT Kharagpur,Agricultural and Food Engineering,3,18,0.00183,0.00094,10
+iit_kharagpur:733,Sudhansu Sekhar Mandal,IIT Kharagpur,Physics,3,3,0.00183,0.0005,17
+iit_kharagpur:250,Mohammad Saud Afzal,IIT Kharagpur,Civil Engineering,3,3,0.00183,0.00105,8
+iit_kharagpur:891,Subhabrata Ray,IIT Kharagpur,Chemical Engineering,3,8,0.00183,4e-05,7
+iit_kharagpur:1070,Bibhuti Bhusan Mandal,IIT Kharagpur,Mining Engineering,3,4,0.00183,0.00103,3
+iit_kharagpur:97,Mainak Bose,IIT Kharagpur,Bioscience and Biotechnology,3,3,0.00183,0.00094,2
+iit_kharagpur:43,Kanishka Bhunia,IIT Kharagpur,Agricultural and Food Engineering,3,5,0.00183,0.0006,25
+iit_kharagpur:50,Poulomi Ganguli,IIT Kharagpur,Agricultural and Food Engineering,3,13,0.00183,3e-05,3
+iit_kharagpur:666,Kaushik Dey,IIT Kharagpur,Mining Engineering,3,7,0.00183,0.00017,12
+iit_kharagpur:994,Manjira Sinha,IIT Kharagpur,G.S Sanyal School of Telecommunication,3,8,0.00183,7e-05,10
+iit_kharagpur:56,Rajendra Singh,IIT Kharagpur,Agricultural and Food Engineering,3,8,0.00183,0.0,3
+iit_kharagpur:1100,Simone Peli,IIT Kharagpur,Physics,3,5,0.00183,1e-05,2
+iit_kharagpur:1085,Debabrata Sen,IIT Kharagpur,Ocean Engg and Naval Architecture,3,4,0.00183,0.00096,16
+iit_kharagpur:223,Suman Kalyan Samanta,IIT Kharagpur,Chemistry,3,4,0.00183,3e-05,2
+iit_kharagpur:90,Agneyo Ganguly,IIT Kharagpur,Bioscience and Biotechnology,3,8,0.00183,0.0,8
+iit_kharagpur:140,Piyush Kumar Singh,IIT Kharagpur,Centre for Rural Development and Innovative Sustainable Technology,3,5,0.00183,0.00012,10
+iit_kharagpur:742,Biswabandhu Jana,IIT Kharagpur,Rajendra Mishra School of Engg Entrepreneurship,3,6,0.00183,0.0,2
+iit_kharagpur:73,Shreya Banerjee,IIT Kharagpur,Architecture and Regional Planning,3,8,0.00183,0.00121,16
+iit_kharagpur:244,Kranthi Kumar Kuna,IIT Kharagpur,Civil Engineering,3,7,0.00183,6e-05,4
+iit_kharagpur:402,Gourab Dutta,IIT Kharagpur,Electronics and Electrical Communication Engg.,3,11,0.00183,0.00028,2
+iit_kharagpur:219,Santanu Panda,IIT Kharagpur,Chemistry,3,4,0.00183,0.0,2
+iit_kharagpur:312,Abhay Singh Gour,IIT Kharagpur,Cryogenic Engineering,3,14,0.00183,0.00047,17
+iit_kharagpur:76,Tarak Nath Mazumder,IIT Kharagpur,Architecture and Regional Planning,3,14,0.00183,0.00064,8
+iit_kharagpur:987,Sajal Kumar Das,IIT Kharagpur,Electronics and Electrical Communication Engg.,3,4,0.00183,0.0,3
+iit_kharagpur:535,Vidya Kochat,IIT Kharagpur,Materials Science Centre,3,10,0.00183,0.0,8
+iit_kharagpur:758,Niharika Sahoo Bhattacharya,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,3,6,0.00183,1e-05,2
+iit_kharagpur:0,Akshay Prakash,IIT Kharagpur,Aerospace Engineering,3,3,0.00183,0.00152,10
+iit_kharagpur:1133,M Vimala Rani,IIT Kharagpur,Vinod Gupta School of Management,3,4,0.00183,0.00094,21
+iit_kharagpur:125,Shaili Sett,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,3,3,0.00183,0.0,7
+iit_kharagpur:766,Uday Shankar,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,3,3,0.00183,0.00111,3
+iit_kharagpur:orcid:0000-0002-0051-0612,srinivasan Sekar,IIT Kharagpur,Vinod Gupta School of Management,3,4,0.00183,0.00188,21
+iit_kharagpur:777,Mythravaruni Pullela,IIT Kharagpur,Rubber Technology,3,3,0.00183,0.0,2
+iit_kharagpur:60,Sridhar Sahoo,IIT Kharagpur,Agricultural and Food Engineering,3,5,0.00183,0.00098,10
+iit_kharagpur:561,Pawan Kumar,IIT Kharagpur,Mathematics,3,10,0.00183,0.0,7
+iit_kharagpur:338,Payal Arvind Kasat,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,3,3,0.00183,0.0,12
+iit_kharagpur:369,Debranjan Mukherjee,IIT Kharagpur,Electrical Engineering,3,6,0.00183,0.00094,11
+iit_kharagpur:331,Mandrita Chatterjee,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,3,4,0.00183,0.00106,23
+iit_kharagpur:952,Soumi Kundu,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,3,3,0.00183,0.0,12
+iit_kharagpur:671,Subhendu Mishra,IIT Kharagpur,Mining Engineering,3,8,0.00183,1e-05,8
+iit_roorkee:140,K. R. Justin Thomas,IIT Roorkee,Chemistry,3,9,0.00183,0.00022,1
+iit_roorkee:65,Ritu Barthwal,IIT Roorkee,Biosciences and Bioengineering,3,9,0.00183,1e-05,1
+iit_roorkee:604,Kusum Deep,IIT Roorkee,Mathematics,3,12,0.00183,0.00375,5
+iit_roorkee:206,Pramod Kumar Gupta,IIT Roorkee,Civil Engineering,3,9,0.00183,0.0006,18
+iit_roorkee:406,S. P. Srivastava,IIT Roorkee,Electrical Engineering,3,7,0.00183,0.00012,5
+iit_roorkee:365,Barjeev Tyagi,IIT Roorkee,Electrical Engineering,3,66,0.00183,0.00014,5
+iit_roorkee:99,B. Prasad,IIT Roorkee,Chemical Engineering,3,7,0.00183,0.0,1
+iit_roorkee:702,Sai Ramudu Meka,IIT Roorkee,Metallurgical and Materials Engineering,3,8,0.00183,0.00063,6
+iit_roorkee:321,D. C. Srivastava,IIT Roorkee,Earth Sciences,3,6,0.00183,0.00035,15
+iit_roorkee:370,Dheeraj K. Khatod,IIT Roorkee,Electrical Engineering,3,14,0.00183,0.00137,5
+iit_roorkee:165,A. K. Singh,IIT Roorkee,Chemistry,3,4,0.00183,4e-05,1
+iit_roorkee:667,Akhilesh Gupta,IIT Roorkee,Mechanical and Industrial Engineering,3,21,0.00183,1e-05,1
+iit_roorkee:396,Girish K. Singh,IIT Roorkee,Electrical Engineering,3,17,0.00183,0.00118,5
+iit_roorkee:781,A. K. Jain,IIT Roorkee,Physics,3,6,0.00183,0.00281,26
+iit_roorkee:768,P. C. Srivastava,IIT Roorkee,Physics,3,9,0.00183,0.00094,26
+iit_roorkee:720,Chhaya Sharma,IIT Roorkee,Paper Technology,3,8,0.00183,6e-05,1
+iit_roorkee:239,Jayanta Kumar Ghosh,IIT Roorkee,Civil Engineering,3,5,0.00183,0.0006,9
+iit_roorkee:778,Vipul Rastogi,IIT Roorkee,Physics,3,10,0.00183,0.00048,13
+iit_roorkee:274,Sudip Roy,IIT Roorkee,Computer Science and Engineering,3,7,0.00183,0.00094,11
+iit_roorkee:623,Andallib Tariq,IIT Roorkee,Mechanical and Industrial Engineering,3,15,0.00183,0.00032,13
+iit_roorkee:644,Manish Mishra,IIT Roorkee,Mechanical and Industrial Engineering,3,13,0.00183,0.00109,13
+iit_roorkee:238,Jagdish Prasad Sahoo,IIT Roorkee,Civil Engineering,3,5,0.00183,0.00039,15
+iit_roorkee:716,R. Jayaganthan,IIT Roorkee,Metallurgical and Materials Engineering,3,5,0.00183,0.00066,18
+iit_roorkee:749,Anil Kumar Gourishetty,IIT Roorkee,Physics,3,3,0.00183,0.0001,1
+iit_roorkee:295,Anand Joshi,IIT Roorkee,Earth Sciences,3,17,0.00183,0.00039,15
+iit_roorkee:382,Premalata Jena,IIT Roorkee,Electrical Engineering,3,34,0.00183,0.00014,5
+iit_roorkee:176,S. M. Sondhi,IIT Roorkee,Chemistry,3,6,0.00183,3e-05,1
+iit_roorkee:114,Ram Prakash Bharti,IIT Roorkee,Chemical Engineering,3,9,0.00183,0.00018,1
+iit_roorkee:473,Pooja Garg,IIT Roorkee,Humanities and Social Sciences,3,3,0.00183,2e-05,9
+iit_roorkee:614,Sunita Gakkhar,IIT Roorkee,Mathematics,3,7,0.00183,0.00188,1
+iit_roorkee:190,Bhupinder Singh,IIT Roorkee,Civil Engineering,3,4,0.00183,0.00064,15
+iit_roorkee:711,Vivek Pancholi,IIT Roorkee,Metallurgical and Materials Engineering,3,9,0.00183,0.00028,1
+iit_roorkee:69,Saurav Datta,IIT Roorkee,Biosciences and Bioengineering,3,3,0.00183,0.00119,1
+iit_roorkee:139,Hem C. Kandpal,IIT Roorkee,Chemistry,3,12,0.00183,0.00019,17
+iit_roorkee:317,Sunil Bajpai,IIT Roorkee,Earth Sciences,3,15,0.00183,0.00203,18
+iit_roorkee:383,R. S. Anand,IIT Roorkee,Electrical Engineering,3,19,0.00183,0.00054,5
+iit_roorkee:266,R. Balasubramanian,IIT Roorkee,Computer Science and Engineering,3,7,0.00183,0.00841,14
+iit_roorkee:459,Vijay Kumar,IIT Roorkee,Electronics and Communication Engineering,3,4,0.00183,0.0,1
+iit_roorkee:70,Soma Rohatgi,IIT Roorkee,Biosciences and Bioengineering,3,4,0.00183,0.00094,1
+iit_roorkee:15,P. S. Chani,IIT Roorkee,Architecture and Planning,3,15,0.00183,0.00094,9
+iit_roorkee:319,A. K. Saraf,IIT Roorkee,Earth Sciences,3,12,0.00183,0.0002,15
+iit_roorkee:41,Maya S. Nair,IIT Roorkee,Biosciences and Bioengineering,3,4,0.00183,1e-05,1
+iit_roorkee:807,Garima Agrawal,IIT Roorkee,Polymer and Process Engineering,3,4,0.00183,3e-05,1
+iit_roorkee:526,M. Perumal,IIT Roorkee,Hydrology,3,4,0.00183,0.00126,3
+iit_roorkee:224,Sonalisa Ray,IIT Roorkee,Civil Engineering,3,5,0.00183,0.00105,1
+iit_roorkee:305,Nachiketa Rai,IIT Roorkee,Earth Sciences,3,5,0.00183,0.00229,18
+iit_roorkee:772,Rajesh Kumar,IIT Roorkee,Physics,3,15,0.00183,0.00012,13
+iit_roorkee:157,Ravindra Pandey,IIT Roorkee,Chemistry,3,5,0.00183,0.00049,1
+iit_roorkee:521,Manoj Kr. Jain,IIT Roorkee,Hydrology,3,7,0.00183,8e-05,6
+iit_roorkee:776,Sumanta Sarkhel,IIT Roorkee,Physics,3,32,0.00183,0.00019,6
+iit_roorkee:336,P. C. Ashwin Kumar,IIT Roorkee,Earthquake Engineering,3,12,0.00183,0.00094,27
+iit_roorkee:535,Gaurav Dixit,IIT Roorkee,Management Studies,3,9,0.00183,0.00018,6
+iit_roorkee:450,DEBIDAS KUNDU,IIT Roorkee,Electronics and Communication Engineering,3,14,0.00183,0.00136,14
+iit_roorkee:255,Vinay Kumar Tyagi,IIT Roorkee,Civil Engineering,3,12,0.00183,0.0008,9
+iit_roorkee:446,Vishvendra Singh Poonia,IIT Roorkee,Electronics and Communication Engineering,3,8,0.00183,0.00094,14
+iit_roorkee:59,Srinivas Kiran Ambatipudi,IIT Roorkee,Biosciences and Bioengineering,3,3,0.00183,0.00011,1
+iit_roorkee:97,Ashish Yadav,IIT Roorkee,Chemical Engineering,3,6,0.00183,1e-05,1
+iit_roorkee:503,Sanjeev Kumar Prajapati,IIT Roorkee,Hydro and Renewable Energy,3,13,0.00183,0.00094,6
+iit_roorkee:72,Surendra Saini,IIT Roorkee,Biosciences and Bioengineering,3,5,0.00183,4e-05,1
+iit_roorkee:841,Raj Deva Singh,IIT Roorkee,Water Resources Development and Management,3,4,0.00183,0.0,6
+iit_roorkee:440,Sparsh Mittal,IIT Roorkee,Electronics and Communication Engineering,3,10,0.00183,0.00013,14
+iit_roorkee:163,Venkatesh V,IIT Roorkee,Chemistry,3,3,0.00183,4e-05,1
+iit_roorkee:418,Biplab Sarkar,IIT Roorkee,Electronics and Communication Engineering,3,14,0.00183,0.0,14
+iit_roorkee:504,Sonal K. Thengane,IIT Roorkee,Hydro and Renewable Energy,3,4,0.00183,2e-05,6
+iit_roorkee:149,Puneet Gupta,IIT Roorkee,Chemistry,3,12,0.00183,0.00094,1
+iit_roorkee:517,Ashutosh Sharma,IIT Roorkee,Hydrology,3,8,0.00183,0.00094,6
+iit_roorkee:584,Deepak Kumar,IIT Roorkee,Mathematics,3,5,0.00183,0.00094,5
+iit_roorkee:218,Sanhita Das,IIT Roorkee,Civil Engineering,3,3,0.00183,0.00032,9
+iit_roorkee:773,Sachin Kumar Srivastava,IIT Roorkee,Physics,3,6,0.00183,0.00087,6
+iit_roorkee:443,Tharun Kumar Reddy Bollu,IIT Roorkee,Electronics and Communication Engineering,3,3,0.00183,0.00182,14
+iit_roorkee:359,Apurv Kumar Yadav,IIT Roorkee,Electrical Engineering,3,3,0.00183,0.00042,5
+iit_roorkee:356,Abdul Saleem Mir,IIT Roorkee,Electrical Engineering,3,11,0.00183,0.00108,5
+iit_roorkee:442,Tanmoy Pramanik,IIT Roorkee,Electronics and Communication Engineering,3,9,0.00183,5e-05,14
+iit_roorkee:658,Shamik Basak,IIT Roorkee,Mechanical and Industrial Engineering,3,7,0.00183,0.00114,4
+iit_roorkee:360,Arnab Dey,IIT Roorkee,Electrical Engineering,3,7,0.00183,0.00108,11
+iit_roorkee:11,Harshit Sosan Lakra,IIT Roorkee,Architecture and Planning,3,6,0.00183,0.00099,9
+iit_roorkee:orcid:0000-0003-4004-0894,Srikrishnan Siva Subramanian,IIT Roorkee,Centre of Excellence in Disaster Mitigation and Management,3,12,0.00183,0.00076,6
+iit_roorkee:766,Narayan Mohanta,IIT Roorkee,Physics,3,3,0.00183,0.00178,17
+iit_roorkee:211,R. Vinnarasi,IIT Roorkee,Civil Engineering,3,3,0.00183,0.00106,9
+iit_roorkee:105,Komal Tripathi,IIT Roorkee,Chemical Engineering,3,16,0.00183,0.0,1
+iit_kharagpur:713,Partha Roy Chaudhuri,IIT Kharagpur,Physics,2,2,0.00122,0.00151,8
+iit_kharagpur:1103,Utpal Sarkar,IIT Kharagpur,Physics,2,3,0.00122,0.00047,12
+iit_kharagpur:414,Ritwik Kumar Layek,IIT Kharagpur,Electronics and Electrical Communication Engg.,2,4,0.00122,0.0,4
+iit_kharagpur:996,Priyadip Ray,IIT Kharagpur,G.S Sanyal School of Telecommunication,2,3,0.00122,0.00027,1
+iit_kharagpur:1026,Debasis Bhattacharya,IIT Kharagpur,Materials Science Centre,2,10,0.00122,0.0,2
+iit_kharagpur:991,Swapna Banerjee,IIT Kharagpur,Electronics and Electrical Communication Engg.,2,2,0.00122,0.0001,2
+iit_kharagpur:243,Kousik Deb,IIT Kharagpur,Civil Engineering,2,8,0.00122,0.00094,19
+iit_kharagpur:1001,Sankar Kumar Nath,IIT Kharagpur,Geology and Geophysics,2,2,0.00122,1e-05,10
+iit_kharagpur:413,Rajarshi Roy,IIT Kharagpur,Electronics and Electrical Communication Engg.,2,6,0.00122,0.0,12
+iit_kharagpur:928,Rajib Mall,IIT Kharagpur,Computer Science and Engineering,2,7,0.00122,0.0,3
+iit_kharagpur:599,Manab Kumar Das,IIT Kharagpur,Mechanical Engineering,2,3,0.00122,1e-05,7
+iit_kharagpur:960,Avinash Kumar Sinha,IIT Kharagpur,Electrical Engineering,2,4,0.00122,0.0,11
+iit_kharagpur:394,Anindya Sundar Dhar,IIT Kharagpur,Electronics and Electrical Communication Engg.,2,8,0.00122,0.0,3
+iit_kharagpur:276,Arobinda Gupta,IIT Kharagpur,Computer Science and Engineering,2,11,0.00122,0.0,12
+iit_kharagpur:844,Chanchal Kumar Mukherjee,IIT Kharagpur,Agricultural and Food Engineering,2,11,0.00122,0.0,8
+iit_kharagpur:853,Snehasish Dutta Gupta,IIT Kharagpur,Agricultural and Food Engineering,2,2,0.00122,0.00019,22
+iit_kharagpur:305,Soumajit Pramanik,IIT Kharagpur,Computer Science and Engineering,2,12,0.00122,0.0,12
+iit_kharagpur:657,Abhiram Kumar Verma,IIT Kharagpur,Mining Engineering,2,2,0.00122,6e-05,4
+iit_kharagpur:1073,Karanam Uma Maheshwar Rao,IIT Kharagpur,Mining Engineering,2,2,0.00122,0.00032,4
+iit_kharagpur:898,Dipakranjan Mal,IIT Kharagpur,Chemistry,2,2,0.00122,0.0,2
+iit_kharagpur:202,Manish Bhattacharjee,IIT Kharagpur,Chemistry,2,5,0.00122,4e-05,2
+iit_kharagpur:257,Rajib Maity,IIT Kharagpur,Civil Engineering,2,5,0.00122,0.00032,19
+iit_kharagpur:746,Prabha Bhola,IIT Kharagpur,Rajendra Mishra School of Engg Entrepreneurship,2,10,0.00122,9e-05,3
+iit_kharagpur:831,Susmita Mukhopadhyay,IIT Kharagpur,Vinod Gupta School of Management,2,2,0.00122,0.00281,21
+iit_kharagpur:139,Rashmi Rekha Nayak,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",2,8,0.00122,0.00561,10
+iit_kharagpur:378,Rajiv Ranjan Sahay,IIT Kharagpur,Electrical Engineering,2,2,0.00122,0.0,3
+iit_kharagpur:521,Sri Krishna Kumar,IIT Kharagpur,Industrial and Systems Engineering,2,14,0.00122,0.0,3
+iit_kharagpur:823,Prabina Rajib,IIT Kharagpur,Vinod Gupta School of Management,2,9,0.00122,0.00028,21
+iit_kharagpur:818,Chandra Sekhar Mishra,IIT Kharagpur,Vinod Gupta School of Management,2,8,0.00122,4e-05,21
+iit_kharagpur:65,Debapratim Pandit,IIT Kharagpur,Architecture and Regional Planning,2,9,0.00122,0.00094,19
+iit_kharagpur:1007,Bani Chatterjee,IIT Kharagpur,Humanities and Social Sciences,2,2,0.00122,0.0,3
+iit_kharagpur:857,Tridib Kumar Goswami,IIT Kharagpur,Agricultural and Food Engineering,2,2,0.00122,2e-05,25
+iit_kharagpur:560,P V S N Murthy,IIT Kharagpur,Mathematics,2,4,0.00122,0.00018,4
+iit_kharagpur:283,Dipanwita Roy Chowdhury,IIT Kharagpur,Computer Science and Engineering,2,8,0.00122,0.00094,3
+iit_kharagpur:1065,Prodip Kumar Sen,IIT Kharagpur,Metallurgical and Materials Engineering,2,6,0.00122,1e-05,4
+iit_kharagpur:267,Sushanta Chakraborty,IIT Kharagpur,Civil Engineering,2,3,0.00122,0.0001,16
+iit_kharagpur:1048,Rathindranath Maiti,IIT Kharagpur,Mechanical Engineering,2,4,0.00122,0.00031,7
+iit_kharagpur:203,Mintu Halder,IIT Kharagpur,Chemistry,2,4,0.00122,1e-05,2
+iit_kharagpur:934,Kanchan Chowdhury,IIT Kharagpur,Cryogenic Engineering,2,2,0.00122,9e-05,7
+iit_kharagpur:1028,Shanker Ram,IIT Kharagpur,Materials Science Centre,2,3,0.00122,0.0,2
+iit_kharagpur:45,Mohan Das,IIT Kharagpur,Agricultural and Food Engineering,2,26,0.00122,0.0,8
+iit_kharagpur:462,Sabyasachi Maiti,IIT Kharagpur,Geology and Geophysics,2,2,0.00122,0.0,8
+iit_kharagpur:737,Tirtha Sankar Ray,IIT Kharagpur,Physics,2,2,0.00122,2e-05,17
+iit_kharagpur:730,Somnath Bharadwaj,IIT Kharagpur,Physics,2,7,0.00122,0.0,29
+iit_kharagpur:890,Saikat Chakraborty,IIT Kharagpur,Chemical Engineering,2,2,0.00122,2e-05,22
+iit_kharagpur:637,Jayanta Das,IIT Kharagpur,Metallurgical and Materials Engineering,2,11,0.00122,0.0,4
+iit_kharagpur:1069,Ashis Bhattacherjee,IIT Kharagpur,Mining Engineering,2,8,0.00122,1e-05,4
+iit_kharagpur:161,Debasis Sarkar,IIT Kharagpur,Chemical Engineering,2,7,0.00122,0.00032,19
+iit_kharagpur:54,Punyadarshini Punam Tripathy,IIT Kharagpur,Agricultural and Food Engineering,2,4,0.00122,0.00068,25
+iit_kharagpur:919,Arun Kumar Majumdar,IIT Kharagpur,Computer Science and Engineering,2,2,0.00122,0.0,3
+iit_kharagpur:16,Ratan Joarder,IIT Kharagpur,Aerospace Engineering,2,3,0.00122,0.0,7
+iit_kharagpur:197,Ganesan Mani,IIT Kharagpur,Chemistry,2,2,0.00122,2e-05,2
+iit_kharagpur:241,Dilip Kumar Baidya,IIT Kharagpur,Civil Engineering,2,7,0.00122,6e-05,4
+iit_kharagpur:86,Shreya Ghosh,IIT Kharagpur,Artificial Intelligence,2,8,0.00122,0.0,3
+iit_kharagpur:810,Abhijeet Chandra,IIT Kharagpur,Vinod Gupta School of Management,2,3,0.00122,0.0,31
+iit_kharagpur:182,Sourav Mondal,IIT Kharagpur,Chemical Engineering,2,10,0.00122,2e-05,22
+iit_kharagpur:1113,Analava Mitra,IIT Kharagpur,School of Medical Science and Technology,2,4,0.00122,0.0,2
+iit_kharagpur:75,Sumana Gupta,IIT Kharagpur,Architecture and Regional Planning,2,6,0.00122,3e-05,16
+iit_kharagpur:382,Saurav Pramanik,IIT Kharagpur,Electrical Engineering,2,2,0.00122,0.0,3
+iit_kharagpur:850,Proshanta Guha,IIT Kharagpur,Agricultural and Food Engineering,2,10,0.00122,0.0,2
+iit_kharagpur:1050,Sankar Kumar Som,IIT Kharagpur,Mechanical Engineering,2,6,0.00122,0.00011,7
+iit_kharagpur:755,Indrajit Dube,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,2,2,0.00122,0.0,30
+iit_kharagpur:7,Chetankumar Sureshbhai Mistry,IIT Kharagpur,Aerospace Engineering,2,11,0.00122,0.0,7
+iit_kharagpur:830,Sujoy Bhattacharya,IIT Kharagpur,Vinod Gupta School of Management,2,7,0.00122,0.00022,3
+iit_kharagpur:491,Jenia Mukherjee,IIT Kharagpur,Humanities and Social Sciences,2,24,0.00122,0.0,24
+iit_kharagpur:316,Tapas Kumar Nandi,IIT Kharagpur,Cryogenic Engineering,2,4,0.00122,0.0,4
+iit_kharagpur:261,Shaikh Jahangir Hossain,IIT Kharagpur,Civil Engineering,2,5,0.00122,0.00087,2
+iit_kharagpur:291,Palash Dey,IIT Kharagpur,Computer Science and Engineering,2,4,0.00122,0.00036,12
+iit_kharagpur:138,Pranab Deb,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",2,6,0.00122,0.0,10
+iit_kharagpur:807,Rajiv Nandan Rai,IIT Kharagpur,Subir Chowdhury School of Quality and Reliability,2,14,0.00122,0.0,3
+iit_kharagpur:513,Balagopal G Menon,IIT Kharagpur,Industrial and Systems Engineering,2,7,0.00122,0.00047,3
+iit_kharagpur:393,Aniket Singha,IIT Kharagpur,Electronics and Electrical Communication Engg.,2,3,0.00122,0.0,4
+iit_kharagpur:520,Sayak Roychowdhury,IIT Kharagpur,Industrial and Systems Engineering,2,4,0.00122,0.00047,3
+iit_kharagpur:456,Paresh Nath Singha Roy,IIT Kharagpur,Geology and Geophysics,2,4,0.00122,0.00045,10
+iit_kharagpur:328,Barnali Ghosh,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,2,2,0.00122,0.0,2
+iit_kharagpur:815,Arun Kumar Misra,IIT Kharagpur,Vinod Gupta School of Management,2,4,0.00122,0.0,31
+iit_kharagpur:1002,Sourendra Kumar Bhattacharya,IIT Kharagpur,Geology and Geophysics,2,8,0.00122,0.0,18
+iit_kharagpur:318,Aditya Vyas,IIT Kharagpur,Deysarkar Centre of Petroleum and Energy Transition,2,5,0.00122,0.0,7
+iit_kharagpur:142,Somnath Ghosal,IIT Kharagpur,Centre for Rural Development and Innovative Sustainable Technology,2,3,0.00122,0.00022,24
+iit_kharagpur:469,Shubhabrata Paul,IIT Kharagpur,Geology and Geophysics,2,3,0.00122,0.0,18
+iit_kharagpur:587,Atul Jain,IIT Kharagpur,Mechanical Engineering,2,6,0.00122,0.0,20
+iit_kharagpur:1090,Subramaniam Neelamani,IIT Kharagpur,Ocean Engg and Naval Architecture,2,5,0.00122,0.00024,16
+iit_kharagpur:873,Divya Nayar,IIT Kharagpur,Centre for Computational and Data Sciences,2,2,0.00122,0.0,8
+iit_kharagpur:874,Jatindra Nath Roy,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,2,5,0.00122,0.00124,11
+iit_kharagpur:1021,O. Bala Krishna,IIT Kharagpur,Industrial and Systems Engineering,2,4,0.00122,0.0,3
+iit_kharagpur:816,Barnali Nag,IIT Kharagpur,Vinod Gupta School of Management,2,3,0.00122,0.0007,21
+iit_kharagpur:610,Purbarun Dhar,IIT Kharagpur,Mechanical Engineering,2,10,0.00122,3e-05,7
+iit_kharagpur:811,Ajay Kumar Mishra,IIT Kharagpur,Vinod Gupta School of Management,2,3,0.00122,0.0,31
+iit_kharagpur:74,Shreyas Pramod Bharule,IIT Kharagpur,Architecture and Regional Planning,2,5,0.00122,0.0,19
+iit_kharagpur:868,Amlan Chakrabarti,IIT Kharagpur,Artificial Intelligence,2,2,0.00122,0.0,3
+iit_kharagpur:948,Ravi Kant Narayan,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,2,2,0.00122,0.0,11
+iit_kharagpur:15,Priyam Chakraborty,IIT Kharagpur,Aerospace Engineering,2,8,0.00122,0.0,7
+iit_kharagpur:840,Abir Chakravorty,IIT Kharagpur,Agricultural and Food Engineering,2,3,0.00122,2e-05,7
+iit_kharagpur:941,Chaitanya Mittal,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,2,2,0.00122,0.0,11
+iit_kharagpur:512,Anand Jacob Abraham,IIT Kharagpur,Industrial and Systems Engineering,2,2,0.00122,1e-05,3
+iit_kharagpur:484,Binita Tiwari,IIT Kharagpur,Humanities and Social Sciences,2,3,0.00122,0.00094,23
+iit_kharagpur:956,Sweety Suman Jha,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,2,9,0.00122,0.0,3
+iit_kharagpur:148,Ashutosh Tiwari,IIT Kharagpur,Centre of Excellence in Affordable Healthcare,2,2,0.00122,0.0,2
+iit_kharagpur:644,Manish Kumar Kar,IIT Kharagpur,Metallurgical and Materials Engineering,2,3,0.00122,0.0,8
+iit_kharagpur:329,Debabrata Majumdar,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,2,7,0.00122,0.0,3
+iit_kharagpur:768,Ankhi Banerjee,IIT Kharagpur,Ranbir and Chitra Gupta School of Infrastructure Design and Mngt.,2,6,0.00122,0.0,24
+iit_kharagpur:799,Indrasis Das,IIT Kharagpur,School of Water Resources,2,3,0.00122,0.0,8
+iit_kharagpur:803,Heeralal Gargama,IIT Kharagpur,Subir Chowdhury School of Quality and Reliability,2,6,0.00122,0.0,3
+iit_kharagpur:37,Gayatri Mishra,IIT Kharagpur,Agricultural and Food Engineering,2,11,0.00122,0.0,25
+iit_kharagpur:149,Debanjan Das,IIT Kharagpur,Centre of Excellence in Affordable Healthcare,2,5,0.00122,0.00015,3
+iit_kharagpur:383,Shambhu Sau,IIT Kharagpur,Electrical Engineering,2,2,0.00122,0.00094,28
+iit_kharagpur:35,Dibyendu Kamilya,IIT Kharagpur,Agricultural and Food Engineering,2,2,0.00122,0.00031,10
+iit_kharagpur:935,Tripti Sekhar Datta,IIT Kharagpur,Cryogenic Engineering,2,6,0.00122,0.0,17
+iit_kharagpur:729,Sitikantha Dhurjati Das,IIT Kharagpur,Physics,2,6,0.00122,1e-05,7
+iit_kharagpur:187,Suverna Trivedi,IIT Kharagpur,Chemical Engineering,2,3,0.00122,7e-05,8
+iit_kharagpur:774,Pritha Datta,IIT Kharagpur,Rekhi Centre of Excellence for the Science of Happiness,2,12,0.00122,0.0,16
+iit_kharagpur:833,Vinay Yadav,IIT Kharagpur,Vinod Gupta School of Management,2,4,0.00122,0.00058,3
+iit_kharagpur:280,Debaditya Roy,IIT Kharagpur,Computer Science and Engineering,2,3,0.00122,0.0,3
+iit_kharagpur:166,Joydip Chaudhuri,IIT Kharagpur,Chemical Engineering,2,2,0.00122,0.0,7
+iit_kharagpur:192,Biswarup Jash,IIT Kharagpur,Chemistry,2,2,0.00122,0.0,2
+iit_kharagpur:327,Avijit Mondal,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,2,3,0.00122,0.00024,23
+iit_kharagpur:673,Archana Shukla,IIT Kharagpur,Nano Science and Technology,2,2,0.00122,0.0,2
+iit_roorkee:434,Rajib Kumar Panigrahi,IIT Roorkee,Electronics and Communication Engineering,2,2,0.00122,0.0002,5
+iit_roorkee:419,Bishnu Prasad Das,IIT Roorkee,Electronics and Communication Engineering,2,4,0.00122,0.0,14
+iit_roorkee:632,B. K. Mishra,IIT Roorkee,Mechanical and Industrial Engineering,2,4,0.00122,0.00094,20
+iit_roorkee:539,Mukesh Kumar Barua,IIT Roorkee,Management Studies,2,5,0.00122,0.00094,5
+iit_roorkee:1,Millie Pant,IIT Roorkee,Applied Mathematics and Scientific Computing (Saharanpur),2,14,0.00122,0.00188,5
+iit_roorkee:235,Ashok Kumar Ahuja,IIT Roorkee,Civil Engineering,2,3,0.00122,5e-05,18
+iit_roorkee:363,Avik Bhattacharya,IIT Roorkee,Electrical Engineering,2,12,0.00122,0.0,5
+iit_roorkee:283,Vaskar Raychoudhury,IIT Roorkee,Computer Science and Engineering,2,2,0.00122,9e-05,5
+iit_roorkee:792,Tashi Nautiyal,IIT Roorkee,Physics,2,12,0.00122,0.0,17
+iit_roorkee:408,Vinay Pant,IIT Roorkee,Electrical Engineering,2,13,0.00122,1e-05,5
+iit_roorkee:839,Nayan Sharma,IIT Roorkee,Water Resources Development and Management,2,8,0.00122,0.00073,6
+iit_roorkee:74,Vinod Kumar,IIT Roorkee,Biosciences and Bioengineering,2,4,0.00122,0.00343,1
+iit_roorkee:607,N. Sukavanam,IIT Roorkee,Mathematics,2,9,0.00122,0.00094,14
+iit_roorkee:475,Rachita Gulati,IIT Roorkee,Humanities and Social Sciences,2,3,0.00122,0.00281,6
+iit_roorkee:847,U. C. Chaube,IIT Roorkee,Water Resources Development and Management,2,4,0.00122,0.0,6
+iit_roorkee:orcid:0000-0003-1581-1474,Sagarika Mukhopadhyay,IIT Roorkee,Earth Sciences,2,3,0.00122,0.0,12
+iit_roorkee:485,Sukhpal Singh,IIT Roorkee,Humanities and Social Sciences,2,5,0.00122,0.00094,6
+iit_roorkee:254,V. K. Gupta,IIT Roorkee,Civil Engineering,2,3,0.00122,0.0,1
+iit_roorkee:220,Satish Chandra,IIT Roorkee,Civil Engineering,2,5,0.00122,5e-05,9
+iit_roorkee:745,Ajay Yashavant Deo,IIT Roorkee,Physics,2,9,0.00122,0.0,26
+iit_roorkee:352,H. R. Wason,IIT Roorkee,Earthquake Engineering,2,5,0.00122,0.00494,15
+iit_roorkee:197,K. S. Hari Prasad,IIT Roorkee,Civil Engineering,2,24,0.00122,0.0001,9
+iit_roorkee:672,M. M. Mahapatra,IIT Roorkee,Mechanical and Industrial Engineering,2,2,0.00122,0.00013,13
+iit_roorkee:466,D. K. Nauriyal,IIT Roorkee,Humanities and Social Sciences,2,4,0.00122,0.00188,6
+iit_roorkee:314,Sarada Prasad Pradhan,IIT Roorkee,Earth Sciences,2,5,0.00122,0.00094,15
+iit_roorkee:461,Anindya Jayanta Mishra,IIT Roorkee,Humanities and Social Sciences,2,4,0.00122,0.0,34
+iit_roorkee:616,V. K. Katiyar,IIT Roorkee,Mathematics,2,2,0.00122,0.0,15
+iit_roorkee:orcid:0000-0002-1152-6847,Pratibha,IIT Roorkee,Mathematics,2,5,0.00122,0.00094,15
+iit_roorkee:684,Anjan Sil,IIT Roorkee,Metallurgical and Materials Engineering,2,5,0.00122,0.0,1
+iit_roorkee:733,Satish Kumar,IIT Roorkee,Paper Technology,2,5,0.00122,0.00029,1
+iit_roorkee:244,N. M Bhandari,IIT Roorkee,Civil Engineering,2,4,0.00122,0.00094,15
+iit_roorkee:335,Manish Shrikhande,IIT Roorkee,Earthquake Engineering,2,11,0.00122,0.0,27
+iit_roorkee:166,Anil Kumar,IIT Roorkee,Chemistry,2,3,0.00122,2e-05,6
+iit_roorkee:145,P. Jeevanandam,IIT Roorkee,Chemistry,2,3,0.00122,0.0,1
+iit_roorkee:545,S. N. Rangnekar,IIT Roorkee,Management Studies,2,3,0.00122,0.0,32
+iit_roorkee:orcid:0000-0003-1991-7401,Sandeep Kumar,IIT Roorkee,Mechanical Engineering,2,4,0.00122,0.0,13
+iit_roorkee:379,P. Sumathi,IIT Roorkee,Electrical Engineering,2,8,0.00122,0.00116,5
+iit_roorkee:635,Dhanashri M. Joglekar,IIT Roorkee,Mechanical and Industrial Engineering,2,10,0.00122,7e-05,13
+iit_roorkee:673,P. K. Sahoo,IIT Roorkee,Mechanical and Industrial Engineering,2,4,0.00122,0.0,13
+iit_roorkee:670,Dinesh Kumar,IIT Roorkee,Mechanical and Industrial Engineering,2,2,0.00122,4e-05,13
+iit_roorkee:242,M. N. Viladkar,IIT Roorkee,Civil Engineering,2,5,0.00122,4e-05,15
+iit_roorkee:421,Brijesh Kumar,IIT Roorkee,Electronics and Communication Engineering,2,8,0.00122,7e-05,13
+iit_roorkee:643,M. M. Joglekar,IIT Roorkee,Mechanical and Industrial Engineering,2,8,0.00122,0.00078,13
+iit_roorkee:843,S. K. Tripathi,IIT Roorkee,Water Resources Development and Management,2,2,0.00122,0.00021,5
+iit_roorkee:307,Pitambar Pati,IIT Roorkee,Earth Sciences,2,2,0.00122,7e-05,1
+iit_roorkee:178,Abhishek,IIT Roorkee,Civil Engineering,2,4,0.00122,0.0,6
+iit_roorkee:338,R. N. Dubey,IIT Roorkee,Earthquake Engineering,2,3,0.00122,0.0,15
+iit_roorkee:505,Alok Kumar,IIT Roorkee,Hydro and Renewable Energy,2,2,0.00122,0.0,1
+iit_roorkee:746,Akhilesh Kumar Mishra,IIT Roorkee,Physics,2,3,0.00122,6e-05,14
+iit_roorkee:24,Uttam Kumar Roy,IIT Roorkee,Architecture and Planning,2,2,0.00122,0.00013,9
+iit_roorkee:657,Saurabh Sharma,IIT Roorkee,Mechanical and Industrial Engineering,2,10,0.00122,0.0,13
+iit_roorkee:219,Sanjay Chikermane,IIT Roorkee,Civil Engineering,2,3,0.00122,0.00094,18
+iit_roorkee:51,Ram Yadav,IIT Roorkee,Biosciences and Bioengineering,2,8,0.00122,0.0,1
+iit_roorkee:634,D. K. Saxena,IIT Roorkee,Mechanical and Industrial Engineering,2,2,0.00122,0.00038,9
+iit_roorkee:323,M Israil,IIT Roorkee,Earth Sciences,2,5,0.00122,0.0,33
+iit_roorkee:orcid:0000-0003-0819-376X,Idhayachandhiran Ilampooranan,IIT Roorkee,Water Resources Development and Management,2,5,0.00122,0.00019,5
+iit_roorkee:42,Naveen Kumar,IIT Roorkee,Biosciences and Bioengineering,2,4,0.00122,7e-05,13
+iit_roorkee:181,Akanksha Tyagi,IIT Roorkee,Civil Engineering,2,13,0.00122,0.00065,1
+iit_roorkee:180,Aditya Singh,IIT Roorkee,Civil Engineering,2,7,0.00122,4e-05,15
+iit_roorkee:413,Anshul Jaiswal,IIT Roorkee,Electronics and Communication Engineering,2,5,0.00122,0.00048,5
+iit_roorkee:709,Varun A Baheti,IIT Roorkee,Metallurgical and Materials Engineering,2,2,0.00122,0.0,4
+iit_roorkee:682,Abhishek Tewari,IIT Roorkee,Metallurgical and Materials Engineering,2,4,0.00122,0.00027,13
+iit_roorkee:61,Hugo Germain,IIT Roorkee,Biosciences and Bioengineering,2,2,0.00122,0.0,6
+iit_roorkee:729,Nishi Kant Bhardwaj,IIT Roorkee,Paper Technology,2,3,0.00122,2e-05,1
+iit_roorkee:261,Neetesh Kumar,IIT Roorkee,Computer Science and Engineering,2,6,0.00122,0.00033,12
+iit_roorkee:427,Ekant Sharma,IIT Roorkee,Electronics and Communication Engineering,2,4,0.00122,0.00048,5
+iit_roorkee:832,Mohit Prakash Mohanty,IIT Roorkee,Water Resources Development and Management,2,6,0.00122,0.0,6
+iit_roorkee:315,Simanchal Padhy,IIT Roorkee,Earth Sciences,2,2,0.00122,5e-05,15
+iit_roorkee:429,Manoj Kumar,IIT Roorkee,Electronics and Communication Engineering,2,17,0.00122,0.0,5
+iit_roorkee:230,Vipul Prakash,IIT Roorkee,Civil Engineering,2,3,0.00122,0.00188,18
+iit_roorkee:340,Ritesh Kumar,IIT Roorkee,Earthquake Engineering,2,2,0.00122,0.00126,15
+iit_roorkee:386,Siba Kumar Patro,IIT Roorkee,Electrical Engineering,2,3,0.00122,1e-05,5
+iit_roorkee:409,Abhay Kumar Sah,IIT Roorkee,Electronics and Communication Engineering,2,2,0.00122,3e-05,5
+iit_roorkee:186,Anumita Mishra,IIT Roorkee,Civil Engineering,2,7,0.00122,0.00071,1
+iit_roorkee:310,Rajarshi Chakravarti,IIT Roorkee,Earth Sciences,2,2,0.00122,0.0,1
+iit_roorkee:398,Jishnu K. Kambrath,IIT Roorkee,Electrical Engineering,2,4,0.00122,0.00027,5
+iit_roorkee:407,Sharmili Das,IIT Roorkee,Electrical Engineering,2,16,0.00122,8e-05,5
+iit_roorkee:82,Santanu Pradhan,IIT Roorkee,Centre for Nanotechnology,2,2,0.00122,0.0,1
+iit_roorkee:117,Shushil Kumar,IIT Roorkee,Chemical Engineering,2,2,0.00122,0.0,1
+iit_roorkee:685,Aparna Tripathi,IIT Roorkee,Metallurgical and Materials Engineering,2,2,0.00122,0.0,4
+iit_roorkee:167,Anil Kumar Mishra,IIT Roorkee,Chemistry,2,3,0.00122,3e-05,9
+iit_roorkee:432,Priyansha Kaurav,IIT Roorkee,Electronics and Communication Engineering,2,3,0.00122,0.0022,1
+iit_roorkee:522,Nitin Khandelwal,IIT Roorkee,Hydrology,2,3,0.00122,0.00028,6
+iit_roorkee:462,Aparajita Singh,IIT Roorkee,Humanities and Social Sciences,2,4,0.00122,0.00375,6
+iit_roorkee:121,Veeramani Chidambaranathan,IIT Roorkee,Chemical Engineering,2,2,0.00122,1e-05,1
+iit_roorkee:724,Subrata Biswas,IIT Roorkee,Paper Technology,2,3,0.00122,0.0,1
+iit_roorkee:368,Chandra Prakash Gupta,IIT Roorkee,Electrical Engineering,2,3,0.00122,0.0,1
+iit_kharagpur:909,Krishna Prapoorna Biligiri,IIT Kharagpur,Civil Engineering,1,1,0.00061,0.0,2
+iit_kharagpur:922,Dipankar Sarkar,IIT Kharagpur,Computer Science and Engineering,1,9,0.00061,0.0,3
+iit_kharagpur:155,Amiya Kumar Jana,IIT Kharagpur,Chemical Engineering,1,5,0.00061,0.0,20
+iit_kharagpur:961,Debapriya Das,IIT Kharagpur,Electrical Engineering,1,1,0.00061,0.0,8
+iit_kharagpur:543,Chandal Nahak,IIT Kharagpur,Mathematics,1,3,0.00061,0.0,10
+iit_kharagpur:164,Harikrishnan G,IIT Kharagpur,Chemical Engineering,1,1,0.00061,0.0,7
+iit_kharagpur:1112,Dipak Khastgir,IIT Kharagpur,Rubber Technology,1,4,0.00061,0.0,2
+iit_kharagpur:566,Ratna Dutta,IIT Kharagpur,Mathematics,1,17,0.00061,0.0,2
+iit_kharagpur:494,Kishor Goswami,IIT Kharagpur,Humanities and Social Sciences,1,1,0.00061,0.0,10
+iit_kharagpur:39,Hifjur Raheman,IIT Kharagpur,Agricultural and Food Engineering,1,2,0.00061,0.0,10
+iit_kharagpur:567,Rupanwita Gayen,IIT Kharagpur,Mathematics,1,7,0.00061,0.0,16
+iit_kharagpur:292,Partha Bhowmick,IIT Kharagpur,Computer Science and Engineering,1,2,0.00061,0.0,45
+iit_kharagpur:313,Indranil Ghosh,IIT Kharagpur,Cryogenic Engineering,1,2,0.00061,0.0,7
+iit_kharagpur:12,Mrinal Kaushik,IIT Kharagpur,Aerospace Engineering,1,9,0.00061,0.0,8
+iit_kharagpur:266,Sujit Kumar Dash,IIT Kharagpur,Civil Engineering,1,2,0.00061,0.0,2
+iit_kharagpur:1023,Pradip Kumar Ray,IIT Kharagpur,Industrial and Systems Engineering,1,1,0.00061,0.0,10
+iit_kharagpur:824,Rudra Prakash Pradhan,IIT Kharagpur,Vinod Gupta School of Management,1,1,0.00061,0.0,23
+iit_kharagpur:843,Bijoy Chandra Ghosh,IIT Kharagpur,Agricultural and Food Engineering,1,1,0.00061,0.0,2
+iit_kharagpur:899,Jayanta Kumar Ray,IIT Kharagpur,Chemistry,1,1,0.00061,0.0,2
+iit_kharagpur:867,Uttam Kumar Banerjee,IIT Kharagpur,Architecture and Regional Planning,1,3,0.00061,0.0,3
+iit_kharagpur:441,Suvra Sekhar Das,IIT Kharagpur,G.S Sanyal School of Telecommunication,1,4,0.00061,0.0,3
+iit_kharagpur:218,Sanjoy Bandyopadhyay,IIT Kharagpur,Chemistry,1,1,0.00061,0.0,2
+iit_kharagpur:979,Debasish Datta,IIT Kharagpur,Electronics and Electrical Communication Engg.,1,1,0.00061,0.0,12
+iit_kharagpur:221,Srabani Taraphder,IIT Kharagpur,Chemistry,1,1,0.00061,0.0,7
+iit_kharagpur:466,Santanu Kumar Bhowmik,IIT Kharagpur,Geology and Geophysics,1,2,0.00061,0.0,8
+iit_kharagpur:180,Somenath Ganguly,IIT Kharagpur,Chemical Engineering,1,1,0.00061,0.0,2
+iit_kharagpur:906,Aniruddha Sengupta,IIT Kharagpur,Civil Engineering,1,7,0.00061,0.0,19
+iit_kharagpur:1097,Krishna Kumar,IIT Kharagpur,Physics,1,4,0.00061,0.0,36
+iit_kharagpur:235,Biswanath Banerjee,IIT Kharagpur,Civil Engineering,1,4,0.00061,0.0,4
+iit_kharagpur:887,Gautam Kundu,IIT Kharagpur,Chemical Engineering,1,1,0.00061,0.0,2
+iit_kharagpur:865,Sutapa Das,IIT Kharagpur,Architecture and Regional Planning,1,3,0.00061,0.0,19
+iit_kharagpur:731,Sonjoy Majumder,IIT Kharagpur,Physics,1,7,0.00061,0.0,2
+iit_kharagpur:981,Dhrubes Biswas,IIT Kharagpur,Electronics and Electrical Communication Engg.,1,14,0.00061,0.0,35
+iit_kharagpur:396,Ankush Bag,IIT Kharagpur,Electronics and Electrical Communication Engg.,1,14,0.00061,0.0,35
+iit_kharagpur:19,Somnath Ghosh,IIT Kharagpur,Aerospace Engineering,1,1,0.00061,0.0,7
+iit_kharagpur:1124,Rabindra Nath Ghosh,IIT Kharagpur,Steel Technology Centre,1,1,0.00061,0.0,4
+iit_kharagpur:575,T Raja Sekhar,IIT Kharagpur,Mathematics,1,7,0.00061,0.0,7
+iit_kharagpur:1052,Souvik Bhattacharyya,IIT Kharagpur,Mechanical Engineering,1,1,0.00061,0.0,2
+iit_kharagpur:1098,Nirupam Roy,IIT Kharagpur,Physics,1,6,0.00061,0.0,29
+iit_kharagpur:452,Manish Atmaprakash Mamtani,IIT Kharagpur,Geology and Geophysics,1,1,0.00061,0.0,12
+iit_kharagpur:862,Sanghamitra Basu,IIT Kharagpur,Architecture and Regional Planning,1,1,0.00061,0.0,19
+iit_kharagpur:1040,Ajay Kumar Chattopadhyay,IIT Kharagpur,Mechanical Engineering,1,1,0.00061,0.0,4
+iit_kharagpur:222,Sukanta Mandal,IIT Kharagpur,Chemistry,1,4,0.00061,0.0,2
+iit_kharagpur:761,Raju K D,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,1,1,0.00061,0.0,3
+iit_kharagpur:825,Saini Das,IIT Kharagpur,Vinod Gupta School of Management,1,2,0.00061,0.0,21
+iit_kharagpur:370,Dheeman Chatterjee,IIT Kharagpur,Electrical Engineering,1,24,0.00061,0.0,28
+iit_kharagpur:763,Shakti Deb,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,1,1,0.00061,0.0,30
+iit_kharagpur:988,Sant Sharan Pathak,IIT Kharagpur,Electronics and Electrical Communication Engg.,1,1,0.00061,0.0,12
+iit_kharagpur:967,Sabyasachi Sengupta,IIT Kharagpur,Electrical Engineering,1,1,0.00061,0.0,3
+iit_kharagpur:851,Rabindra Kumar Panda,IIT Kharagpur,Agricultural and Food Engineering,1,1,0.00061,0.0,3
+iit_kharagpur:613,Sandipan Ghosh Moulic,IIT Kharagpur,Mechanical Engineering,1,2,0.00061,0.0,7
+iit_kharagpur:408,Mrityunjoy Chakraborty,IIT Kharagpur,Electronics and Electrical Communication Engg.,1,1,0.00061,0.0,4
+iit_kharagpur:1016,Vijai Nath Giri,IIT Kharagpur,Humanities and Social Sciences,1,1,0.00061,0.0,3
+iit_kharagpur:727,Sayan Kar,IIT Kharagpur,Physics,1,1,0.00061,0.0,10
+iit_kharagpur:1131,Kalyan Kumar Guin,IIT Kharagpur,Vinod Gupta School of Management,1,1,0.00061,0.0,12
+iit_kharagpur:1046,Kumar Ray,IIT Kharagpur,Mechanical Engineering,1,1,0.00061,0.0,4
+iit_kharagpur:980,Debatosh Guha,IIT Kharagpur,Electronics and Electrical Communication Engg.,1,1,0.00061,0.0,1
+iit_kharagpur:1087,Nabanita Datta,IIT Kharagpur,Ocean Engg and Naval Architecture,1,1,0.00061,0.0,16
+iit_kharagpur:694,Ajay Kumar Singh,IIT Kharagpur,Physics,1,1,0.00061,0.0,26
+iit_kharagpur:724,Samudra Roy,IIT Kharagpur,Physics,1,5,0.00061,0.0,4
+iit_kharagpur:1101,Sumanta Tewari,IIT Kharagpur,Physics,1,5,0.00061,0.0,17
+iit_kharagpur:863,Somnath Sen,IIT Kharagpur,Architecture and Regional Planning,1,6,0.00061,0.0,10
+iit_kharagpur:559,Nitin Gupta,IIT Kharagpur,Mathematics,1,1,0.00061,0.0,3
+iit_kharagpur:4,Anup Ghosh,IIT Kharagpur,Aerospace Engineering,1,3,0.00061,0.0,38
+iit_kharagpur:734,Sugata Pratik Khastgir,IIT Kharagpur,Physics,1,4,0.00061,0.0,36
+iit_kharagpur:620,Sourav Mitra,IIT Kharagpur,Mechanical Engineering,1,1,0.00061,0.0,2
+iit_kharagpur:439,Nilanjan Biswas,IIT Kharagpur,G.S Sanyal School of Telecommunication,1,2,0.00061,0.0,12
+iit_kharagpur:1076,M P Dikshit,IIT Kharagpur,Mining Engineering,1,1,0.00061,0.0,4
+iit_kharagpur:707,Jyotirmoy Bhattacharya,IIT Kharagpur,Physics,1,1,0.00061,0.0,10
+iit_kharagpur:270,Abhijit Das,IIT Kharagpur,Computer Science and Engineering,1,7,0.00061,0.0,3
+iit_kharagpur:14,Prasun Jana,IIT Kharagpur,Aerospace Engineering,1,2,0.00061,0.0,16
+iit_kharagpur:1135,Ranjan Chaudhuri,IIT Kharagpur,Vinod Gupta School of Management,1,1,0.00061,0.0,3
+iit_kharagpur:1122,Satadal Saha,IIT Kharagpur,School of Medical Science and Technology,1,2,0.00061,0.0,7
+iit_kharagpur:129,Abhishek Kumar Rai,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",1,4,0.00061,0.0,10
+iit_kharagpur:304,Somindu Chaya Ramanna,IIT Kharagpur,Computer Science and Engineering,1,1,0.00061,0.0,11
+iit_kharagpur:1084,Dasharatha Achani,IIT Kharagpur,Ocean Engg and Naval Architecture,1,3,0.00061,0.0,16
+iit_kharagpur:556,Mousumi Mandal,IIT Kharagpur,Mathematics,1,1,0.00061,0.0,37
+iit_kharagpur:930,Saurabh Bagchi,IIT Kharagpur,Computer Science and Engineering,1,1,0.00061,0.0,12
+iit_kharagpur:137,Parthasarathi Chakraborty,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",1,1,0.00061,0.0,8
+iit_kharagpur:992,Binay Kanti Dutta,IIT Kharagpur,Environmental Science and Engineering,1,1,0.00061,0.0,22
+iit_kharagpur:744,Manoj Kumar Mondal,IIT Kharagpur,Rajendra Mishra School of Engg Entrepreneurship,1,1,0.00061,0.0,2
+iit_kharagpur:748,Titas Bhattacharjee (Rudra),IIT Kharagpur,Rajendra Mishra School of Engg Entrepreneurship,1,2,0.00061,0.0,23
+iit_kharagpur:319,Ankur Roy,IIT Kharagpur,Deysarkar Centre of Petroleum and Energy Transition,1,2,0.00061,0.0,8
+iit_kharagpur:670,Shantanu Kumar Patel,IIT Kharagpur,Mining Engineering,1,1,0.00061,0.0,3
+iit_kharagpur:1108,Manas Kumar Mandal,IIT Kharagpur,Rekhi Centre of Excellence for the Science of Happiness,1,3,0.00061,0.0,3
+iit_kharagpur:10,Mira Mitra,IIT Kharagpur,Aerospace Engineering,1,3,0.00061,0.0,38
+iit_kharagpur:27,Amey Pathak,IIT Kharagpur,Agricultural and Food Engineering,1,1,0.00061,0.0,8
+iit_kharagpur:479,Anway Mukhopadhyay,IIT Kharagpur,Humanities and Social Sciences,1,1,0.00061,0.0,24
+iit_kharagpur:944,Mayank Agarwal,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,1,1,0.00061,0.0,7
+iit_kharagpur:63,Arjun Mukerji,IIT Kharagpur,Architecture and Regional Planning,1,1,0.00061,0.0,8
+iit_kharagpur:508,Sunandan Ghosh,IIT Kharagpur,Humanities and Social Sciences,1,1,0.00061,0.0,3
+iit_kharagpur:1095,Kannabiran Seshasayanan,IIT Kharagpur,Physics,1,1,0.00061,0.0,10
+iit_kharagpur:367,Debashis Mandal,IIT Kharagpur,Electrical Engineering,1,1,0.00061,0.0,11
+iit_kharagpur:607,Poonam Sundriyal,IIT Kharagpur,Mechanical Engineering,1,2,0.00061,0.0,4
+iit_kharagpur:198,Ganesh Venkataraman,IIT Kharagpur,Chemistry,1,2,0.00061,0.0,2
+iit_kharagpur:62,Abraham George,IIT Kharagpur,Architecture and Regional Planning,1,6,0.00061,0.0,19
+iit_kharagpur:113,Sandeep Kumar Reddy,IIT Kharagpur,Centre for Computational and Data Sciences,1,1,0.00061,0.0,2
+iit_kharagpur:orcid:0000-0002-7954-7759,Aman Kumar,IIT Kharagpur,Mechanical Engineering,1,2,0.00061,0.0,20
+iit_kharagpur:337,Parmeshwar Satpathy,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,1,1,0.00061,0.0,2
+iit_kharagpur:159,Bhaskar Bhaduri,IIT Kharagpur,Chemical Engineering,1,1,0.00061,0.0,20
+iit_kharagpur:249,Manish Pandey,IIT Kharagpur,Civil Engineering,1,5,0.00061,0.0,8
+iit_kharagpur:1000,Debashish Sengupta,IIT Kharagpur,Geology and Geophysics,1,1,0.00061,0.0,8
+iit_kharagpur:539,Arindam Banerjee,IIT Kharagpur,Mathematics,1,1,0.00061,0.0,37
+iit_kharagpur:1024,Soumyanath Chatterjee,IIT Kharagpur,Industrial and Systems Engineering,1,1,0.00061,0.0,3
+iit_kharagpur:1140,Sushil Punia,IIT Kharagpur,Vinod Gupta School of Management,1,1,0.00061,0.0,21
+iit_kharagpur:372,Gautam Poddar,IIT Kharagpur,Electrical Engineering,1,1,0.00061,0.0,28
+iit_kharagpur:665,Islavath Sreenivasa Rao,IIT Kharagpur,Mining Engineering,1,3,0.00061,0.0,7
+iit_kharagpur:612,Saikat Mukherjee,IIT Kharagpur,Mechanical Engineering,1,1,0.00061,0.0,12
+iit_kharagpur:574,Swarup Kumar Panda,IIT Kharagpur,Mathematics,1,1,0.00061,0.0,39
+iit_kharagpur:509,Vikas Thakur,IIT Kharagpur,Humanities and Social Sciences,1,2,0.00061,0.0,23
+iit_kharagpur:31,Bhupendra M Ghodki,IIT Kharagpur,Agricultural and Food Engineering,1,1,0.00061,0.0,2
+iit_kharagpur:765,Shuvro Prosun Sarker,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,1,1,0.00061,0.0,30
+iit_kharagpur:837,Kalyan Prasad Sinhamahapatra,IIT Kharagpur,Aerospace Engineering,1,4,0.00061,0.0,3
+iit_kharagpur:826,Sangeeta Sahney,IIT Kharagpur,Vinod Gupta School of Management,1,1,0.00061,0.0,21
+iit_kharagpur:52,Prithwiraj Dey,IIT Kharagpur,Agricultural and Food Engineering,1,3,0.00061,0.0,10
+iit_kharagpur:856,Thomas E V,IIT Kharagpur,Agricultural and Food Engineering,1,3,0.00061,0.0,10
+iit_kharagpur:128,Syamsundar De,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,1,2,0.00061,0.0,10
+iit_kharagpur:247,Madhumita Paul,IIT Kharagpur,Civil Engineering,1,2,0.00061,0.0,19
+iit_kharagpur:123,Prasun Mishra,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,1,1,0.00061,0.0,11
+iit_kharagpur:668,Rakesh Kumar,IIT Kharagpur,Mining Engineering,1,2,0.00061,0.0,7
+iit_kharagpur:1074,Ketan Arora,IIT Kharagpur,Mining Engineering,1,1,0.00061,0.0,3
+iit_kharagpur:339,Samir Rana,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,1,1,0.00061,0.0,11
+iit_kharagpur:207,Nirmalya Bag,IIT Kharagpur,Chemistry,1,2,0.00061,0.0,2
+iit_kharagpur:51,Praveen Kumar Sappati,IIT Kharagpur,Agricultural and Food Engineering,1,1,0.00061,0.0,8
+iit_kharagpur:999,Biswajit Mishra,IIT Kharagpur,Geology and Geophysics,1,1,0.00061,0.0,8
+iit_kharagpur:154,Amandeep Jindal,IIT Kharagpur,Chemical Engineering,1,1,0.00061,0.0,1
+iit_kharagpur:53,Priyabrata Pradhan,IIT Kharagpur,Agricultural and Food Engineering,1,1,0.00061,0.0,10
+iit_kharagpur:356,Arpan Hota,IIT Kharagpur,Electrical Engineering,1,2,0.00061,0.0,11
+iit_kharagpur:335,Oindrila Dhar,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,1,1,0.00061,0.0,23
+iit_kharagpur:714,Pintu Patra,IIT Kharagpur,Physics,1,1,0.00061,0.0,2
+iit_kharagpur:438,Dibbendu Roy,IIT Kharagpur,G.S Sanyal School of Telecommunication,1,2,0.00061,0.0,12
+iit_kharagpur:563,Pratima Panigrahi,IIT Kharagpur,Mathematics,1,1,0.00061,0.0,39
+iit_kharagpur:431,Mayur Prakash Bonkile,IIT Kharagpur,Energy Science and Engineering,1,1,0.00061,0.0,7
+iit_kharagpur:739,Aviru Kumar Basu,IIT Kharagpur,Rajendra Mishra School of Engg Entrepreneurship,1,2,0.00061,0.0,4
+iit_kharagpur:576,Abhijit Guha,IIT Kharagpur,Mechanical Engineering,1,1,0.00061,0.0,2
+iit_kharagpur:150,Harshad Hemantrao Shrigondekar,IIT Kharagpur,Centre of Excellence on Safety Engineering & Analytics (COE-SEA),1,1,0.00061,0.0,3
+iit_kharagpur:683,Kondeti Lakshmi Vasudev,IIT Kharagpur,Ocean Engg and Naval Architecture,1,1,0.00061,0.0,4
+iit_kharagpur:480,Anwesha Aditya,IIT Kharagpur,Humanities and Social Sciences,1,1,0.00061,0.0,16
+iit_kharagpur:718,Raghunath Ghara,IIT Kharagpur,Physics,1,1,0.00061,0.0,29
+iit_kharagpur:114,Akash Kumar,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,1,1,0.00061,0.0,11
+iit_kharagpur:557,Nabakumar Jana,IIT Kharagpur,Mathematics,1,1,0.00061,0.0,3
+iit_kharagpur:112,Manikandan D,IIT Kharagpur,Centre for Computational and Data Sciences,1,1,0.00061,0.0,7
+iit_kharagpur:685,Md Rushdie Ibne Islam,IIT Kharagpur,Ocean Engg and Naval Architecture,1,1,0.00061,0.0,16
+iit_kharagpur:684,Mainak Chakraborty,IIT Kharagpur,Ocean Engg and Naval Architecture,1,1,0.00061,0.0,16
+iit_roorkee:403,Rajendra Prasad,IIT Roorkee,Electrical Engineering,1,6,0.00061,0.0,5
+iit_roorkee:633,D. Benny Karunakar,IIT Roorkee,Mechanical and Industrial Engineering,1,1,0.00061,0.0,13
+iit_roorkee:676,Satish C. Sharma,IIT Roorkee,Mechanical and Industrial Engineering,1,9,0.00061,0.0,13
+iit_roorkee:606,Madhu Jain,IIT Roorkee,Mathematics,1,2,0.00061,0.0,40
+iit_roorkee:530,A. K. Sharma,IIT Roorkee,Management Studies,1,1,0.00061,0.0,5
+iit_roorkee:571,V. K. Nangia,IIT Roorkee,Management Studies,1,1,0.00061,0.0,6
+iit_roorkee:583,D. N. Pandey,IIT Roorkee,Mathematics,1,5,0.00061,0.0,14
+iit_roorkee:803,Sanjay Palsule,IIT Roorkee,Polymer and Process Engineering,1,1,0.00061,0.0,52
+iit_roorkee:132,Vijay Kumar Agarwal,IIT Roorkee,Chemical Engineering,1,3,0.00061,0.0,13
+iit_roorkee:194,Gargi Singh,IIT Roorkee,Civil Engineering,1,2,0.00061,0.0,9
+iit_roorkee:599,Shiv Kumar Gupta,IIT Roorkee,Mathematics,1,2,0.00061,0.0,1
+iit_roorkee:687,B. S. Sundar Daniel,IIT Roorkee,Metallurgical and Materials Engineering,1,4,0.00061,0.0,6
+iit_roorkee:610,R. R. Bhargava,IIT Roorkee,Mathematics,1,1,0.00061,0.0,15
+iit_roorkee:639,Indra Vir Singh,IIT Roorkee,Mechanical and Industrial Engineering,1,3,0.00061,0.0,20
+iit_roorkee:330,Bal Krishna Maheshwari,IIT Roorkee,Earthquake Engineering,1,2,0.00061,0.0,15
+iit_roorkee:445,Vinod Pankajakshan,IIT Roorkee,Electronics and Communication Engineering,1,5,0.00061,0.0,14
+iit_roorkee:236,Deepak Kashyap,IIT Roorkee,Civil Engineering,1,1,0.00061,0.0,9
+iit_roorkee:536,Jogendra Kumar Nayak,IIT Roorkee,Management Studies,1,2,0.00061,0.0,9
+iit_roorkee:663,V. Huzur Saran,IIT Roorkee,Mechanical and Industrial Engineering,1,23,0.00061,0.0,13
+iit_roorkee:790,Rajesh Srivastava,IIT Roorkee,Physics,1,22,0.00061,0.0,41
+iit_roorkee:760,Lalita Sharma,IIT Roorkee,Physics,1,22,0.00061,0.0,41
+iit_roorkee:326,R. G. S. Sastry,IIT Roorkee,Earth Sciences,1,5,0.00061,0.0,15
+iit_roorkee:248,Pramod Kumar,IIT Roorkee,Civil Engineering,1,5,0.00061,0.0,1
+iit_roorkee:0,Jaydev Dabas,IIT Roorkee,Applied Mathematics and Scientific Computing (Saharanpur),1,9,0.00061,0.0,14
+iit_roorkee:451,Daljit K. Mehra,IIT Roorkee,Electronics and Communication Engineering,1,3,0.00061,0.0,5
+iit_roorkee:123,Bikash Mohanty,IIT Roorkee,Chemical Engineering,1,5,0.00061,0.0,42
+iit_roorkee:128,Ravindra Bhargava,IIT Roorkee,Chemical Engineering,1,5,0.00061,0.0,42
+iit_roorkee:489,Renu Rastogi,IIT Roorkee,Humanities and Social Sciences,1,2,0.00061,0.0,32
+iit_roorkee:726,A. K. Ray,IIT Roorkee,Paper Technology,1,1,0.00061,0.0,43
+iit_roorkee:182,Akhil Upadhyay,IIT Roorkee,Civil Engineering,1,1,0.00061,0.0,15
+iit_roorkee:402,R. P. Maheshwari,IIT Roorkee,Electrical Engineering,1,5,0.00061,0.0,5
+iit_roorkee:325,R. Anbalagan,IIT Roorkee,Earth Sciences,1,2,0.00061,0.0,15
+iit_roorkee:611,Roshan Lal,IIT Roorkee,Mathematics,1,2,0.00061,0.0,6
+iit_roorkee:301,G. J. Chakrapani,IIT Roorkee,Earth Sciences,1,1,0.00061,0.0,5
+iit_roorkee:615,T. R. Gulati,IIT Roorkee,Mathematics,1,2,0.00061,0.0,40
+iit_roorkee:354,Kirat Pal,IIT Roorkee,Earthquake Engineering,1,2,0.00061,0.0,5
+iit_roorkee:193,G. D. Ransinchung R. N.,IIT Roorkee,Civil Engineering,1,1,0.00061,0.0,9
+iit_roorkee:55,Sanjoy Ghosh,IIT Roorkee,Biosciences and Bioengineering,1,1,0.00061,0.0,44
+iit_roorkee:551,Vinay Sharma,IIT Roorkee,Management Studies,1,4,0.00061,0.0,6
+iit_roorkee:351,D. K. Paul,IIT Roorkee,Earthquake Engineering,1,3,0.00061,0.0,27
+iit_roorkee:509,M. P. Sharma,IIT Roorkee,Hydro and Renewable Energy,1,4,0.00061,0.0,6
+iit_roorkee:637,Ganpule Shailesh Govind,IIT Roorkee,Mechanical and Industrial Engineering,1,4,0.00061,0.0,18
+iit_roorkee:576,Aditi Gangopadhyay,IIT Roorkee,Mathematics,1,14,0.00061,0.0,14
+iit_roorkee:671,Krishnan Murugesan,IIT Roorkee,Mechanical and Industrial Engineering,1,7,0.00061,0.0,9
+iit_roorkee:311,Ravi Sharma,IIT Roorkee,Earth Sciences,1,2,0.00061,0.0,18
+iit_roorkee:561,J. P. Singh,IIT Roorkee,Management Studies,1,1,0.00061,0.0,1
+iit_roorkee:394,E. Fernandez,IIT Roorkee,Electrical Engineering,1,1,0.00061,0.0,6
+iit_roorkee:815,U. K. Ghosh,IIT Roorkee,Polymer and Process Engineering,1,1,0.00061,0.0,43
+iit_roorkee:213,Raja Chowdhury,IIT Roorkee,Civil Engineering,1,1,0.00061,0.0,44
+iit_roorkee:281,Ranita Biswas,IIT Roorkee,Computer Science and Engineering,1,2,0.00061,0.0,45
+iit_roorkee:33,Bijan Choudhury,IIT Roorkee,Biosciences and Bioengineering,1,1,0.00061,0.0,1
+iit_roorkee:60,G. S. Randhawa,IIT Roorkee,Biosciences and Bioengineering,1,1,0.00061,0.0,1
+iit_roorkee:353,I. D. Gupta,IIT Roorkee,Earthquake Engineering,1,1,0.00061,0.0,15
+iit_roorkee:115,Shabina Khanam,IIT Roorkee,Chemical Engineering,1,1,0.00061,0.0,5
+iit_roorkee:102,Gaurav Sharma,IIT Roorkee,Chemical Engineering,1,2,0.00061,0.0,46
+iit_roorkee:71,Sulakshana P. Mukherjee,IIT Roorkee,Biosciences and Bioengineering,1,1,0.00061,0.0,1
+iit_roorkee:697,Nikhil Dhawan,IIT Roorkee,Metallurgical and Materials Engineering,1,2,0.00061,0.0,14
+iit_roorkee:579,Ankik Kumar Giri,IIT Roorkee,Mathematics,1,1,0.00061,0.0,14
+iit_roorkee:341,S. C. Gupta,IIT Roorkee,Earthquake Engineering,1,5,0.00061,0.0,15
+iit_roorkee:392,Ambalika Sharma,IIT Roorkee,Electrical Engineering,1,5,0.00061,0.0,5
+iit_roorkee:591,Premananda Bera,IIT Roorkee,Mathematics,1,2,0.00061,0.0,46
+iit_roorkee:818,A. K. Chaudhary,IIT Roorkee,Unknown unit (institute-wide list 2019),1,2,0.00061,0.0,5
+iit_roorkee:320,A. K. Sen,IIT Roorkee,Earth Sciences,1,1,0.00061,0.0,9
+iit_roorkee:332,J. P. Narayan,IIT Roorkee,Earthquake Engineering,1,1,0.00061,0.0,15
+iit_roorkee:467,Diptimayee Nayak,IIT Roorkee,Humanities and Social Sciences,1,3,0.00061,0.0,6
+iit_roorkee:253,Satyendra Mittal,IIT Roorkee,Civil Engineering,1,2,0.00061,0.0,1
+iit_roorkee:484,Subir Sen,IIT Roorkee,Humanities and Social Sciences,1,3,0.00061,0.0,15
+iit_roorkee:788,P. Sanyal,IIT Roorkee,Physics,1,1,0.00061,0.0,1
+iit_roorkee:247,Pradipta Banerji,IIT Roorkee,Civil Engineering,1,2,0.00061,0.0,18
+iit_roorkee:585,Gargi Ghosh,IIT Roorkee,Mathematics,1,1,0.00061,0.0,1
+iit_roorkee:713,Devendra Singh,IIT Roorkee,Metallurgical and Materials Engineering,1,1,0.00061,0.0,14
+iit_roorkee:252,Sarit Kumar Das,IIT Roorkee,Civil Engineering,1,2,0.00061,0.0,9
+iit_roorkee:245,O. P. Dubey,IIT Roorkee,Civil Engineering,1,4,0.00061,0.0,9
+iit_roorkee:369,Deep Kiran,IIT Roorkee,Electrical Engineering,1,9,0.00061,0.0,5
+iit_roorkee:483,Smita Jha,IIT Roorkee,Humanities and Social Sciences,1,1,0.00061,0.0,47
+iit_roorkee:324,P. K. Gupta,IIT Roorkee,Earth Sciences,1,4,0.00061,0.0,33
+iit_roorkee:300,Dharmendra Pratap Singh,IIT Roorkee,Earth Sciences,1,7,0.00061,0.0,18
+iit_roorkee:222,Shubhankar Roy Chowdhury,IIT Roorkee,Civil Engineering,1,2,0.00061,0.0,18
+iit_roorkee:251,Sahil Bansal,IIT Roorkee,Civil Engineering,1,1,0.00061,0.0,5
+iit_roorkee:457,Saumik Bhattacharya,IIT Roorkee,Electronics and Communication Engineering,1,1,0.00061,0.0,6
+iit_roorkee:508,Deepak Ronanki,IIT Roorkee,Hydro and Renewable Energy,1,1,0.00061,0.0,14
+iit_roorkee:665,Vidit Gaur,IIT Roorkee,Mechanical and Industrial Engineering,1,2,0.00061,0.0,49
+iit_roorkee:580,Arbaz Khan,IIT Roorkee,Mathematics,1,4,0.00061,0.0,14
+iit_roorkee:426,Dheeraj Kumar,IIT Roorkee,Electronics and Communication Engineering,1,3,0.00061,0.0,5
+iit_roorkee:783,Bhal Chandra Joshi,IIT Roorkee,Physics,1,14,0.00061,0.0,26
+iit_roorkee:21,Sonal Atreya,IIT Roorkee,Architecture and Planning,1,3,0.00061,0.0,9
+iit_roorkee:203,Nikhil Saboo,IIT Roorkee,Civil Engineering,1,7,0.00061,0.0,9
+iit_roorkee:478,Rishman Jot Kaur Chahal,IIT Roorkee,Humanities and Social Sciences,1,1,0.00061,0.0,9
+iit_roorkee:87,Tomasz Paterek,IIT Roorkee,Centre for Photonics and Quantum Communication Technology,1,6,0.00061,0.0,26
+iit_roorkee:orcid:0000-0002-2072-7317,Jeevanand Seshadrinath,IIT Roorkee,Electrical Engineering,1,2,0.00061,0.0,5
+iit_roorkee:770,Puneet Jain,IIT Roorkee,Physics,1,1,0.00061,0.0,14
+iit_roorkee:758,Himanshu Fulara,IIT Roorkee,Physics,1,2,0.00061,0.0,14
+iit_roorkee:orcid:0000-0002-4510-7990,Ashish Mishra,IIT Roorkee,Civil Engineering,1,2,0.00061,0.0,9
+iit_roorkee:268,Rahul Thakur,IIT Roorkee,Computer Science and Engineering,1,2,0.00061,0.0,11
+iit_roorkee:476,Ram Manohar Singh,IIT Roorkee,Humanities and Social Sciences,1,1,0.00061,0.0,32
+iit_roorkee:16,Ram Sateesh Pasupuleti,IIT Roorkee,Architecture and Planning,1,3,0.00061,0.0,34
+iit_roorkee:389,Sumit GhatakChoudhuri,IIT Roorkee,Electrical Engineering,1,2,0.00061,0.0,48
+iit_roorkee:798,Kaushik Parida,IIT Roorkee,Polymer and Process Engineering,1,5,0.00061,0.0,1
+iit_roorkee:602,Tanuja Srivastava,IIT Roorkee,Mathematics,1,2,0.00061,0.0,1
+iit_roorkee:221,Saurabh Vijay,IIT Roorkee,Civil Engineering,1,10,0.00061,0.0,9
+iit_roorkee:362,Ashish Kothyari,IIT Roorkee,Electrical Engineering,1,1,0.00061,0.0,5
+iit_roorkee:orcid:0000-0001-7975-0186,Saravana Manivannan,IIT Roorkee,Electronics and Communication Engineering,1,2,0.00061,0.0,14
+iit_roorkee:306,Pallavi Chattopadhyay,IIT Roorkee,Earth Sciences,1,1,0.00061,0.0,15
+iit_roorkee:271,Raksha Sharma,IIT Roorkee,Computer Science and Engineering,1,1,0.00061,0.0,6
+iit_roorkee:444,Utpal Dey,IIT Roorkee,Electronics and Communication Engineering,1,6,0.00061,0.0,14
+iit_roorkee:830,Kritika Kothari,IIT Roorkee,Water Resources Development and Management,1,2,0.00061,0.0,6
+iit_roorkee:344,Sohom Ray,IIT Roorkee,Earthquake Engineering,1,1,0.00061,0.0,15
+iit_roorkee:482,Shruti Sengupta,IIT Roorkee,Humanities and Social Sciences,1,3,0.00061,0.0,5
+iit_roorkee:287,Bibhuti Ranjan Bhattacharjya,IIT Roorkee,Design,1,2,0.00061,0.0,13
+iit_roorkee:342,Saurabh Shiradhonkar,IIT Roorkee,Earthquake Engineering,1,2,0.00061,0.0,27
+iit_roorkee:54,Sachin Suresh Tiwari,IIT Roorkee,Biosciences and Bioengineering,1,2,0.00061,0.0,13
+iit_roorkee:756,G. D. Verma,IIT Roorkee,Physics,1,1,0.00061,0.0,14
+iit_roorkee:538,Manu Kumar Gupta,IIT Roorkee,Management Studies,1,3,0.00061,0.0,5
+iit_roorkee:620,Alankrita Singh,IIT Roorkee,Mechanical and Industrial Engineering,1,3,0.00061,0.0,5
+iit_roorkee:80,Ashwani Kumar,IIT Roorkee,Centre for Nanotechnology,1,1,0.00061,0.0,13
+iit_roorkee:108,Niwesh Ojha,IIT Roorkee,Chemical Engineering,1,4,0.00061,0.0,1
+iit_roorkee:227,Tarun Gangwar,IIT Roorkee,Civil Engineering,1,5,0.00061,0.0,18
+iit_roorkee:195,Hemant Kumar,IIT Roorkee,Civil Engineering,1,1,0.00061,0.0,9
+iit_roorkee:296,Arun Singh,IIT Roorkee,Earth Sciences,1,1,0.00061,0.0,33
+iit_roorkee:401,R. N. Patel,IIT Roorkee,Electrical Engineering,1,2,0.00061,0.0,48
+iit_roorkee:493,Chandra Shekhar Pant,IIT Roorkee,Hydro and Renewable Energy,1,1,0.00061,0.0,6
+iit_roorkee:469,Lalatendu Keshari Das,IIT Roorkee,Humanities and Social Sciences,1,1,0.00061,0.0,5
+iit_roorkee:158,Sayanti Chatterjee,IIT Roorkee,Chemistry,1,2,0.00061,0.0,1
+iit_roorkee:277,Aparajita Khan,IIT Roorkee,Computer Science and Engineering,1,1,0.00061,0.0,6
+iit_roorkee:707,Supriyo Ghosh,IIT Roorkee,Metallurgical and Materials Engineering,1,2,0.00061,0.0,49
+iit_roorkee:498,Prashant Surana,IIT Roorkee,Hydro and Renewable Energy,1,1,0.00061,0.0,5
+iit_roorkee:742,Abhishek Nag,IIT Roorkee,Physics,1,1,0.00061,0.0,17
+iit_roorkee:804,Sham Sundar R,IIT Roorkee,Polymer and Process Engineering,1,1,0.00061,0.0,13
+iit_roorkee:693,Gautam Agarwal,IIT Roorkee,Metallurgical and Materials Engineering,1,2,0.00061,0.0,6
+iit_roorkee:515,Subodh Sharma,IIT Roorkee,Hydro and Renewable Energy,1,2,0.00061,0.0,6
+iit_roorkee:93,Hemant Kumar Suman,IIT Roorkee,Centre for Transportation Systems,1,3,0.00061,0.0,9
+iit_roorkee:816,Vinod Kumar Shahi,IIT Roorkee,Polymer and Process Engineering,1,1,0.00061,0.0,50
+iit_roorkee:823,Anshul Yadav,IIT Roorkee,Water Resources Development and Management,1,1,0.00061,0.0,50
+iit_roorkee:380,Parikshit Pareek,IIT Roorkee,Electrical Engineering,1,2,0.00061,0.0,1
+iit_roorkee:698,Pinku Roy,IIT Roorkee,Metallurgical and Materials Engineering,1,1,0.00061,0.0,4
+iit_roorkee:747,Akshay Bhatnagar,IIT Roorkee,Physics,1,1,0.00061,0.0,10
+iit_roorkee:412,Amita Giri,IIT Roorkee,Electronics and Communication Engineering,1,2,0.00061,0.0,14
+iit_roorkee:17,Sameer Ali,IIT Roorkee,Architecture and Planning,1,1,0.00061,0.0,9
+iit_roorkee:691,Digvijay Singh,IIT Roorkee,Metallurgical and Materials Engineering,1,1,0.00061,0.0,34
+iit_roorkee:827,Ellora Padhi,IIT Roorkee,Water Resources Development and Management,1,1,0.00061,0.0,8
+iit_roorkee:463,Aruni Mahapatra,IIT Roorkee,Humanities and Social Sciences,1,1,0.00061,0.0,47
+iit_roorkee:288,Madhan Kumar Vasudevan,IIT Roorkee,Design,1,1,0.00061,0.0,51
+iit_roorkee:290,Marianna Obrist,IIT Roorkee,Design,1,1,0.00061,0.0,51
+iit_roorkee:126,Ishan Bajaj,IIT Roorkee,Chemical Engineering,1,1,0.00061,0.0,6
+iit_roorkee:20,Smriti Saraswat,IIT Roorkee,Architecture and Planning,1,1,0.00061,0.0,52
+iit_roorkee:601,Surojit Ghosh,IIT Roorkee,Mathematics,1,1,0.00061,0.0,4
+iit_roorkee:621,Amit Choudhary,IIT Roorkee,Mechanical and Industrial Engineering,1,2,0.00061,0.0,13
+iit_roorkee:118,Sumana Ghosh,IIT Roorkee,Chemical Engineering,1,1,0.00061,0.0,1
+iit_roorkee:618,Ajit Kumar Dubey,IIT Roorkee,Mechanical and Industrial Engineering,1,1,0.00061,0.0,1
+iit_kharagpur:503,Rabindra Kumar Pradhan,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,53
+iit_kharagpur:1032,Dharmendra Kumar Gupta,IIT Kharagpur,Mathematics,0,0,0.0,0.0,54
+iit_kharagpur:465,Sanghamitra Ray,IIT Kharagpur,Geology and Geophysics,0,0,0.0,0.0,55
+iit_kharagpur:103,Ranjit Prasad Bahadur,IIT Kharagpur,Bioscience and Biotechnology,0,0,0.0,0.0,56
+iit_kharagpur:387,Souvik Chattopadhyay,IIT Kharagpur,Electrical Engineering,0,0,0.0,0.0,57
+iit_kharagpur:1017,Zakir Husain,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,58
+iit_kharagpur:600,Manas Chandra Ray,IIT Kharagpur,Mechanical Engineering,0,0,0.0,0.0,59
+iit_kharagpur:504,Rishabh Rai,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,60
+iit_kharagpur:399,Bratin Ghosh,IIT Kharagpur,Electronics and Electrical Communication Engg.,0,0,0.0,0.0,61
+iit_kharagpur:204,Modhu Sudan Maji,IIT Kharagpur,Chemistry,0,0,0.0,0.0,62
+iit_kharagpur:855,Susanta Kumar Das,IIT Kharagpur,Agricultural and Food Engineering,0,0,0.0,0.0,63
+iit_kharagpur:1062,Madhusudan Chakraborty,IIT Kharagpur,Metallurgical and Materials Engineering,0,0,0.0,0.0,64
+iit_kharagpur:550,Gnaneshwar Nelakanti,IIT Kharagpur,Mathematics,0,0,0.0,0.0,65
+iit_kharagpur:549,Geetanjali Panda,IIT Kharagpur,Mathematics,0,0,0.0,0.0,66
+iit_kharagpur:540,Bappaditya Bhowmik,IIT Kharagpur,Mathematics,0,0,0.0,0.0,67
+iit_kharagpur:581,Amiya Ranjan Mohanty,IIT Kharagpur,Mechanical Engineering,0,0,0.0,0.0,68
+iit_kharagpur:506,Seema Singh,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,69
+iit_kharagpur:716,Pragya Shukla,IIT Kharagpur,Physics,0,0,0.0,0.0,70
+iit_kharagpur:964,Murali Mohan Bosukonda,IIT Kharagpur,Electrical Engineering,0,0,0.0,0.0,71
+iit_kharagpur:725,Sandipan Sengupta,IIT Kharagpur,Physics,0,0,0.0,0.0,72
+iit_kharagpur:493,Kailash Bihari Lal Srivastava,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,73
+iit_kharagpur:489,H S Komalesha,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,74
+iit_kharagpur:963,Goshaidas Ray,IIT Kharagpur,Electrical Engineering,0,0,0.0,0.0,75
+iit_kharagpur:1035,Parmeshwary Dayal Srivastava,IIT Kharagpur,Mathematics,0,0,0.0,0.0,76
+iit_kharagpur:1094,Jayanta K Bhattacharjee,IIT Kharagpur,Physics,0,0,0.0,0.0,77
+iit_kharagpur:601,Mihir Sarangi,IIT Kharagpur,Mechanical Engineering,0,0,0.0,0.0,78
+iit_kharagpur:997,Abhijit Bhattacharya,IIT Kharagpur,Geology and Geophysics,0,0,0.0,0.0,79
+iit_kharagpur:762,S R Subramanian,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,0,0,0.0,0.0,80
+iit_kharagpur:253,Paramita Bhattacharya,IIT Kharagpur,Civil Engineering,0,0,0.0,0.0,81
+iit_kharagpur:679,Hari V Warrior,IIT Kharagpur,Ocean Engg and Naval Architecture,0,0,0.0,0.0,82
+iit_kharagpur:1038,Umesh Chandra Gupta,IIT Kharagpur,Mathematics,0,0,0.0,0.0,83
+iit_kharagpur:1132,Kunal Kanti Ghosh,IIT Kharagpur,Vinod Gupta School of Management,0,0,0.0,0.0,84
+iit_kharagpur:1142,Tuheena Mukherjee,IIT Kharagpur,Vinod Gupta School of Management,0,0,0.0,0.0,85
+iit_kharagpur:1005,Anjali Roy,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,86
+iit_kharagpur:1053,Sovan Lal Das,IIT Kharagpur,Mechanical Engineering,0,0,0.0,0.0,87
+iit_kharagpur:orcid:0000-0001-8038-1795,Rajesh Kannan M,IIT Kharagpur,Mathematics,0,0,0.0,0.0,88
+iit_kharagpur:1008,Chhanda Chakraborti,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,89
+iit_kharagpur:488,Gourishankar S Hiremath,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,90
+iit_kharagpur:357,Arun Ghosh,IIT Kharagpur,Electrical Engineering,0,0,0.0,0.0,91
+iit_kharagpur:490,Inder Sekhar Yadav,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,92
+iit_kharagpur:1,Amardip Ghosh,IIT Kharagpur,Aerospace Engineering,0,0,0.0,0.0,93
+iit_kharagpur:752,Balraj Kaur Sidhu,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,0,0,0.0,0.0,94
+iit_kharagpur:1036,Rajesh Kannan,IIT Kharagpur,Mathematics,0,0,0.0,0.0,95
+iit_kharagpur:1071,Ganga Prasad Karmakar,IIT Kharagpur,Mining Engineering,0,0,0.0,0.0,96
+iit_kharagpur:228,Amit Shaw,IIT Kharagpur,Civil Engineering,0,0,0.0,0.0,97
+iit_kharagpur:1092,Bhupendra Nath Dev,IIT Kharagpur,Physics,0,0,0.0,0.0,98
+iit_kharagpur:754,Gouri Ashok Gargate,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,0,0,0.0,0.0,99
+iit_kharagpur:1093,Ipsita Mandal,IIT Kharagpur,Physics,0,0,0.0,0.0,100
+iit_kharagpur:753,Dipa Dube,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,0,0,0.0,0.0,101
+iit_kharagpur:1082,Ashoke Bhar,IIT Kharagpur,Ocean Engg and Naval Architecture,0,0,0.0,0.0,102
+iit_kharagpur:929,Rogers Mathew,IIT Kharagpur,Computer Science and Engineering,0,0,0.0,0.0,103
+iit_kharagpur:24,Susmita Bhattacharyya,IIT Kharagpur,Aerospace Engineering,0,0,0.0,0.0,104
+iit_kharagpur:18,Sikha Hota,IIT Kharagpur,Aerospace Engineering,0,0,0.0,0.0,105
+iit_kharagpur:897,Debabrata Mukherjee,IIT Kharagpur,Chemistry,0,0,0.0,0.0,106
+iit_kharagpur:119,Kaushal Kumar Bhagat,IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,0,0,0.0,0.0,107
+iit_kharagpur:565,Ramakrishna Nanduri,IIT Kharagpur,Mathematics,0,0,0.0,0.0,108
+iit_kharagpur:839,Navtej Singh,IIT Kharagpur,Aerospace Engineering,0,0,0.0,0.0,109
+iit_kharagpur:132,C Shaji,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",0,0,0.0,0.0,110
+iit_kharagpur:1013,Soumyatanu Mukherjee,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,111
+iit_kharagpur:590,Chirag Deepak Kalelkar,IIT Kharagpur,Mechanical Engineering,0,0,0.0,0.0,112
+iit_kharagpur:1110,Tanusree Dutta,IIT Kharagpur,Rekhi Centre of Excellence for the Science of Happiness,0,0,0.0,0.0,113
+iit_kharagpur:392,Amitalok Jayant Budkuley,IIT Kharagpur,Electronics and Electrical Communication Engg.,0,0,0.0,0.0,114
+iit_kharagpur:1126,Amit Upadhyay,IIT Kharagpur,Vinod Gupta School of Management,0,0,0.0,0.0,115
+iit_kharagpur:628,Brij Kumar Dhindaw,IIT Kharagpur,Metallurgical and Materials Engineering,0,0,0.0,0.0,116
+iit_kharagpur:485,Bornini Lahiri,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,117
+iit_kharagpur:564,Rajni Kant Pandey,IIT Kharagpur,Mathematics,0,0,0.0,0.0,118
+iit_kharagpur:505,Saswat Samay Das,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,119
+iit_kharagpur:1031,Biswa Nath Datta,IIT Kharagpur,Mathematics,0,0,0.0,0.0,120
+iit_kharagpur:347,Ashutosh Mohanty,IIT Kharagpur,Education,0,0,0.0,0.0,121
+iit_kharagpur:471,Suchana Taral,IIT Kharagpur,Geology and Geophysics,0,0,0.0,0.0,122
+iit_kharagpur:416,Sarang Pendharker,IIT Kharagpur,Electronics and Electrical Communication Engg.,0,0,0.0,0.0,123
+iit_kharagpur:277,Ayan Chaudhury,IIT Kharagpur,Computer Science and Engineering,0,0,0.0,0.0,124
+iit_kharagpur:813,Anupam Ghosh,IIT Kharagpur,Vinod Gupta School of Management,0,0,0.0,0.0,125
+iit_kharagpur:986,Ratnam Varada Raja Kumar,IIT Kharagpur,Electronics and Electrical Communication Engg.,0,0,0.0,0.0,126
+iit_kharagpur:450,Dip Kumar Singha,IIT Kharagpur,Geology and Geophysics,0,0,0.0,0.0,127
+iit_kharagpur:538,Apurba Das,IIT Kharagpur,Mathematics,0,0,0.0,0.0,128
+iit_kharagpur:1012,Somdatta Bhattacharya,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,129
+iit_kharagpur:orcid:0000-0001-5348-5847,Jithin Ravi,IIT Kharagpur,Electronics and Electrical Communication Engg.,0,0,0.0,0.0,130
+iit_kharagpur:617,Siddharth Tamang,IIT Kharagpur,Mechanical Engineering,0,0,0.0,0.0,131
+iit_kharagpur:477,Anubhab Pattanayak,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,132
+iit_kharagpur:1011,Rima Bhattacharya,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,133
+iit_kharagpur:541,Bodhayan Roy,IIT Kharagpur,Mathematics,0,0,0.0,0.0,134
+iit_kharagpur:301,Satrajit Ghosh,IIT Kharagpur,Computer Science and Engineering,0,0,0.0,0.0,135
+iit_kharagpur:750,Arindam Basu,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,0,0,0.0,0.0,136
+iit_kharagpur:977,Bibhudatta Sahoo,IIT Kharagpur,Electronics and Electrical Communication Engg.,0,0,0.0,0.0,137
+iit_kharagpur:562,Prateep Chakraborty,IIT Kharagpur,Mathematics,0,0,0.0,0.0,138
+iit_kharagpur:136,Nairita Pal,IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",0,0,0.0,0.0,139
+iit_kharagpur:422,Subhadip Mukherjee,IIT Kharagpur,Electronics and Electrical Communication Engg.,0,0,0.0,0.0,140
+iit_kharagpur:735,Tamoghna Das,IIT Kharagpur,Physics,0,0,0.0,0.0,141
+iit_kharagpur:546,Dipankar Ghosh,IIT Kharagpur,Mathematics,0,0,0.0,0.0,142
+iit_kharagpur:321,Vishnu Chandrasekharan Nair,IIT Kharagpur,Deysarkar Centre of Petroleum and Energy Transition,0,0,0.0,0.0,143
+iit_kharagpur:552,Husney Parvez Sarwar,IIT Kharagpur,Mathematics,0,0,0.0,0.0,144
+iit_kharagpur:760,Prakash Sharma,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,0,0,0.0,0.0,145
+iit_kharagpur:332,Manjunatha S,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,0,0,0.0,0.0,146
+iit_kharagpur:111,Vinay Patel,IIT Kharagpur,Bioscience and Biotechnology,0,0,0.0,0.0,147
+iit_kharagpur:908,Athira Gopinath,IIT Kharagpur,Civil Engineering,0,0,0.0,0.0,148
+iit_kharagpur:721,Saikat Das,IIT Kharagpur,Physics,0,0,0.0,0.0,149
+iit_kharagpur:70,Priyanka Dey,IIT Kharagpur,Architecture and Regional Planning,0,0,0.0,0.0,150
+iit_kharagpur:588,Biswajit Bharat,IIT Kharagpur,Mechanical Engineering,0,0,0.0,0.0,151
+iit_kharagpur:361,Atreyee Kundu,IIT Kharagpur,Electrical Engineering,0,0,0.0,0.0,152
+iit_kharagpur:879,Daya Shankar Pandey,IIT Kharagpur,Centre for Rural Development and Innovative Sustainable Technology,0,0,0.0,0.0,153
+iit_kharagpur:152,Richa Ahuja,IIT Kharagpur,Centre of Excellence on Safety Engineering & Analytics (COE-SEA),0,0,0.0,0.0,154
+iit_kharagpur:151,Laxman Singh Bisht,IIT Kharagpur,Centre of Excellence on Safety Engineering & Analytics (COE-SEA),0,0,0.0,0.0,155
+iit_kharagpur:551,Hari Shankar Mahato,IIT Kharagpur,Mathematics,0,0,0.0,0.0,156
+iit_kharagpur:814,Aradhna Malik,IIT Kharagpur,Vinod Gupta School of Management,0,0,0.0,0.0,157
+iit_kharagpur:268,Troyee Tanu Dutta,IIT Kharagpur,Civil Engineering,0,0,0.0,0.0,158
+iit_kharagpur:28,Ankit Shekhar,IIT Kharagpur,Agricultural and Food Engineering,0,0,0.0,0.0,159
+iit_kharagpur:570,Soumitra Ghara,IIT Kharagpur,Mathematics,0,0,0.0,0.0,160
+iit_kharagpur:500,Prantik Bagchi,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,161
+iit_kharagpur:58,Ronit Mandal,IIT Kharagpur,Agricultural and Food Engineering,0,0,0.0,0.0,162
+iit_kharagpur:496,Mahima Raina,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,163
+iit_kharagpur:792,Raj Kumar Manna,IIT Kharagpur,School of Medical Science and Technology,0,0,0.0,0.0,164
+iit_kharagpur:1058,Anuj Bisht,IIT Kharagpur,Metallurgical and Materials Engineering,0,0,0.0,0.0,165
+iit_kharagpur:364,Bhargav Jha,IIT Kharagpur,Electrical Engineering,0,0,0.0,0.0,166
+iit_kharagpur:444,Arindam Basu,IIT Kharagpur,Geology and Geophysics,0,0,0.0,0.0,167
+iit_kharagpur:953,Soumya Behera,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,0,0,0.0,0.0,168
+iit_kharagpur:756,Narendran Thiruthy,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,0,0,0.0,0.0,169
+iit_kharagpur:498,Mukkamala Kameshwar Rao,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,170
+iit_kharagpur:764,Shreya Matilal,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,0,0,0.0,0.0,171
+iit_kharagpur:486,Dripta Piplai (Mondal),IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,172
+iit_kharagpur:912,Pavithra Parthasarathy,IIT Kharagpur,Civil Engineering,0,0,0.0,0.0,173
+iit_kharagpur:66,Gaurab Das Mahapatra,IIT Kharagpur,Architecture and Regional Planning,0,0,0.0,0.0,174
+iit_kharagpur:225,Tapas Debsharma,IIT Kharagpur,Chemistry,0,0,0.0,0.0,175
+iit_kharagpur:288,Monosij Maitra,IIT Kharagpur,Computer Science and Engineering,0,0,0.0,0.0,176
+iit_kharagpur:188,Swambabu Varanasi,IIT Kharagpur,Chemical Engineering,0,0,0.0,0.0,177
+iit_kharagpur:220,Shubhendu Palei,IIT Kharagpur,Chemistry,0,0,0.0,0.0,178
+iit_kharagpur:940,Azgaonkar Sarvesh Premanand,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,0,0,0.0,0.0,179
+iit_kharagpur:510,Abhishek Sharma,IIT Kharagpur,Industrial and Systems Engineering,0,0,0.0,0.0,180
+iit_kharagpur:384,Shimul Kumar Dam,IIT Kharagpur,Electrical Engineering,0,0,0.0,0.0,181
+iit_kharagpur:767,Varuna Chakraborty,IIT Kharagpur,Rajiv Gandhi School of Intellectual Property Law,0,0,0.0,0.0,182
+iit_kharagpur:153,Abhishek Kumar Gupta,IIT Kharagpur,Chemical Engineering,0,0,0.0,0.0,183
+iit_kharagpur:156,Ananta Kumar Sarkar,IIT Kharagpur,Chemical Engineering,0,0,0.0,0.0,184
+iit_kharagpur:85,Prabhat Kumar Mishra,IIT Kharagpur,Artificial Intelligence,0,0,0.0,0.0,185
+iit_kharagpur:191,Avik Samanta,IIT Kharagpur,Chemistry,0,0,0.0,0.0,186
+iit_kharagpur:945,Monalisa Mohanty,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,0,0,0.0,0.0,187
+iit_kharagpur:168,Madhusudan Sau,IIT Kharagpur,Chemical Engineering,0,0,0.0,0.0,188
+iit_kharagpur:455,Nishant Vats,IIT Kharagpur,Geology and Geophysics,0,0,0.0,0.0,189
+iit_kharagpur:667,Paluchamy B,IIT Kharagpur,Mining Engineering,0,0,0.0,0.0,190
+iit_kharagpur:40,Jayeeta Mitra,IIT Kharagpur,Agricultural and Food Engineering,0,0,0.0,0.0,191
+iit_kharagpur:544,Debapriya Biswas,IIT Kharagpur,Mathematics,0,0,0.0,0.0,192
+iit_kharagpur:467,Saptarshi Dey,IIT Kharagpur,Geology and Geophysics,0,0,0.0,0.0,193
+iit_kharagpur:374,Kaustav Dey,IIT Kharagpur,Electrical Engineering,0,0,0.0,0.0,194
+iit_kharagpur:446,Chandra Prakash Dubey,IIT Kharagpur,Geology and Geophysics,0,0,0.0,0.0,195
+iit_kharagpur:343,Sumana Samanta,IIT Kharagpur,Dr B C Roy Multi Speciality Medical Research Centre,0,0,0.0,0.0,196
+iit_kharagpur:487,Dripto Bakshi,IIT Kharagpur,Humanities and Social Sciences,0,0,0.0,0.0,197
+iit_kharagpur:699,Aniket Patra,IIT Kharagpur,Physics,0,0,0.0,0.0,198
+iit_kharagpur:931,Sudebkumar Prasant Pal,IIT Kharagpur,Computer Science and Engineering,0,0,0.0,0.0,199
+iit_kharagpur:87,Somdyuti Paul,IIT Kharagpur,Artificial Intelligence,0,0,0.0,0.0,200
+iit_kharagpur:350,Manas Seal,IIT Kharagpur,Education,0,0,0.0,0.0,201
+iit_kharagpur:380,Sanjay Ghosh,IIT Kharagpur,Electrical Engineering,0,0,0.0,0.0,202
+iit_kharagpur:528,Hemakesh Mohapatra,IIT Kharagpur,Materials Science Centre,0,0,0.0,0.0,203
+iit_kharagpur:351,Raj Kumar Sadhu,IIT Kharagpur,Education,0,0,0.0,0.0,204
+iit_kharagpur:798,Gurjeet Singh,IIT Kharagpur,School of Water Resources,0,0,0.0,0.0,205
+iit_kharagpur:586,Asimava Roy Choudhury,IIT Kharagpur,Mechanical Engineering,0,0,0.0,0.0,206
+iit_kharagpur:81,Kota Srinivas Reddy,IIT Kharagpur,Artificial Intelligence,0,0,0.0,0.0,207
+iit_kharagpur:344,Anubendu Adhikary,IIT Kharagpur,Education,0,0,0.0,0.0,208
+iit_kharagpur:464,Sambit Ghosh,IIT Kharagpur,Geology and Geophysics,0,0,0.0,0.0,209
+iit_kharagpur:147,Richa Chopra,IIT Kharagpur,Centre of Excellence for Indian Knowledge Systems,0,0,0.0,0.0,210
+iit_kharagpur:689,Shubhrajit Maitra,IIT Kharagpur,Ocean Engg and Naval Architecture,0,0,0.0,0.0,211
+iit_kharagpur:719,Rickmoy Samanta,IIT Kharagpur,Physics,0,0,0.0,0.0,212
+iit_kharagpur:710,Kartick Tarafder,IIT Kharagpur,Physics,0,0,0.0,0.0,213
+iit_kharagpur:242,Gaurav Misuriya,IIT Kharagpur,Civil Engineering,0,0,0.0,0.0,214
+iit_kharagpur:346,Apramita Chand,IIT Kharagpur,Education,0,0,0.0,0.0,215
+iit_kharagpur:272,Abhranil Chatterjee,IIT Kharagpur,Computer Science and Engineering,0,0,0.0,0.0,216
+iit_kharagpur:659,Aditya Pandey,IIT Kharagpur,Mining Engineering,0,0,0.0,0.0,217
+iit_kharagpur:390,Vikrant Kumar Singh,IIT Kharagpur,Electrical Engineering,0,0,0.0,0.0,218
+iit_kharagpur:555,Mithun Bhowmik,IIT Kharagpur,Mathematics,0,0,0.0,0.0,219
+iit_kharagpur:680,Jagadeesh Kadiyam,IIT Kharagpur,Ocean Engg and Naval Architecture,0,0,0.0,0.0,220
+iit_kharagpur:427,Viswanathan Ramachandran,IIT Kharagpur,Electronics and Electrical Communication Engg.,0,0,0.0,0.0,221
+iit_kharagpur:553,Kamalakshya Mahatab,IIT Kharagpur,Mathematics,0,0,0.0,0.0,222
+iit_roorkee:175,Ravi Bhushan,IIT Roorkee,Chemistry,0,0,0.0,0.0,223
+iit_roorkee:25,V. Devadas,IIT Roorkee,Architecture and Planning,0,0,0.0,0.0,224
+iit_roorkee:174,R. N. Goyal,IIT Roorkee,Chemistry,0,0,0.0,0.0,225
+iit_roorkee:144,Naseem Ahmed,IIT Roorkee,Chemistry,0,0,0.0,0.0,226
+iit_roorkee:574,Zillur Rahman,IIT Roorkee,Management Studies,0,0,0.0,0.0,227
+iit_roorkee:orcid:0000-0002-1471-5512,Maheshanand Bhaintwal,IIT Roorkee,Mathematics,0,0,0.0,0.0,228
+iit_roorkee:322,D. K. Mukhopadhyay,IIT Roorkee,Earth Sciences,0,0,0.0,0.0,229
+iit_roorkee:659,Siladitya Pal,IIT Roorkee,Mechanical and Industrial Engineering,0,0,0.0,0.0,230
+iit_roorkee:550,Usha Lenka,IIT Roorkee,Management Studies,0,0,0.0,0.0,231
+iit_roorkee:605,M. L. Mittal,IIT Roorkee,Mathematics,0,0,0.0,0.0,232
+iit_roorkee:603,Uaday Singh,IIT Roorkee,Mathematics,0,0,0.0,0.0,233
+iit_roorkee:27,Ila Gupta,IIT Roorkee,Architecture and Planning,0,0,0.0,0.0,234
+iit_roorkee:orcid:0000-0001-7165-6937,RAJAGOPAL KRISHNAMURTHI,IIT Roorkee,Earth Sciences,0,0,0.0,0.0,235
+iit_roorkee:542,Rajib Lochan Dhar,IIT Roorkee,Management Studies,0,0,0.0,0.0,236
+iit_roorkee:414,Anshul Tyagi,IIT Roorkee,Electronics and Communication Engineering,0,0,0.0,0.0,237
+iit_roorkee:400,M. L. Dewal,IIT Roorkee,Electrical Engineering,0,0,0.0,0.0,238
+iit_roorkee:488,Rahul K. Gairola,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,239
+iit_roorkee:575,A. Swaminathan,IIT Roorkee,Mathematics,0,0,0.0,0.0,240
+iit_roorkee:717,Satya Prakash,IIT Roorkee,Metallurgical and Materials Engineering,0,0,0.0,0.0,241
+iit_roorkee:10,Gaurav Raheja,IIT Roorkee,Architecture and Planning,0,0,0.0,0.0,242
+iit_roorkee:280,Dhaval Patel,IIT Roorkee,Computer Science and Engineering,0,0,0.0,0.0,243
+iit_roorkee:565,M. K. Rao,IIT Roorkee,Management Studies,0,0,0.0,0.0,244
+iit_roorkee:771,Rajdeep Chatterjee,IIT Roorkee,Physics,0,0,0.0,0.0,245
+iit_roorkee:753,B. K. Patra,IIT Roorkee,Physics,0,0,0.0,0.0,246
+iit_roorkee:782,B. D. Indu,IIT Roorkee,Physics,0,0,0.0,0.0,247
+iit_roorkee:765,Moumita Maiti,IIT Roorkee,Physics,0,0,0.0,0.0,248
+iit_roorkee:533,Ashu Khanna,IIT Roorkee,Management Studies,0,0,0.0,0.0,249
+iit_roorkee:468,Falguni Pattanaik,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,250
+iit_roorkee:613,Shiv Prasad Yadav,IIT Roorkee,Mathematics,0,0,0.0,0.0,251
+iit_roorkee:169,K. C. Gupta,IIT Roorkee,Chemistry,0,0,0.0,0.0,252
+iit_roorkee:741,Aalok Misra,IIT Roorkee,Physics,0,0,0.0,0.0,253
+iit_roorkee:654,S H Upadhyay,IIT Roorkee,Mechanical and Industrial Engineering,0,0,0.0,0.0,254
+iit_roorkee:173,P. P. Thankachan,IIT Roorkee,Chemistry,0,0,0.0,0.0,255
+iit_roorkee:241,M. K. Arora,IIT Roorkee,Civil Engineering,0,0,0.0,0.0,256
+iit_roorkee:237,Indu Mehrotra,IIT Roorkee,Civil Engineering,0,0,0.0,0.0,257
+iit_roorkee:146,Pallavi Debnath,IIT Roorkee,Chemistry,0,0,0.0,0.0,258
+iit_roorkee:298,B. Bhattacharya,IIT Roorkee,Earth Sciences,0,0,0.0,0.0,259
+iit_roorkee:331,Daya Shanker,IIT Roorkee,Earthquake Engineering,0,0,0.0,0.0,260
+iit_roorkee:278,Biplab Banerjee,IIT Roorkee,Computer Science and Engineering,0,0,0.0,0.0,261
+iit_roorkee:168,Bina Gupta,IIT Roorkee,Chemistry,0,0,0.0,0.0,262
+iit_roorkee:472,Nagendra Kumar,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,263
+iit_roorkee:477,Rashmi Gaur,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,264
+iit_roorkee:609,R. C. Mittal,IIT Roorkee,Mathematics,0,0,0.0,0.0,265
+iit_roorkee:608,P. N. Agrawal,IIT Roorkee,Mathematics,0,0,0.0,0.0,266
+iit_roorkee:136,Debasis Banerjee,IIT Roorkee,Chemistry,0,0,0.0,0.0,267
+iit_roorkee:814,Tripti Mahara,IIT Roorkee,Polymer and Process Engineering,0,0,0.0,0.0,268
+iit_roorkee:514,S. N. Singh,IIT Roorkee,Hydro and Renewable Energy,0,0,0.0,0.0,269
+iit_roorkee:675,Ram Kumar Singh,IIT Roorkee,Mechanical and Industrial Engineering,0,0,0.0,0.0,270
+iit_roorkee:282,Subhankar Mishra,IIT Roorkee,Computer Science and Engineering,0,0,0.0,0.0,271
+iit_roorkee:674,R. P. Gakkhar,IIT Roorkee,Mechanical and Industrial Engineering,0,0,0.0,0.0,272
+iit_roorkee:6,Arindam Biswas,IIT Roorkee,Architecture and Planning,0,0,0.0,0.0,273
+iit_roorkee:198,Kaustav Chatterjee,IIT Roorkee,Civil Engineering,0,0,0.0,0.0,274
+iit_roorkee:596,Sandip Banerjee,IIT Roorkee,Mathematics,0,0,0.0,0.0,275
+iit_roorkee:3,Rajan Arora,IIT Roorkee,Applied Mathematics and Scientific Computing (Saharanpur),0,0,0.0,0.0,276
+iit_roorkee:7,Avlokita Agrawal,IIT Roorkee,Architecture and Planning,0,0,0.0,0.0,277
+iit_roorkee:757,H. S. Nataraj,IIT Roorkee,Physics,0,0,0.0,0.0,278
+iit_roorkee:547,Sujata Kar,IIT Roorkee,Management Studies,0,0,0.0,0.0,279
+iit_roorkee:594,Ram Krishna Pandey,IIT Roorkee,Mathematics,0,0,0.0,0.0,280
+iit_roorkee:447,Ajit Kumar Chaturvedi,IIT Roorkee,Electronics and Communication Engineering,0,0,0.0,0.0,281
+iit_roorkee:744,Ajay Wasan,IIT Roorkee,Physics,0,0,0.0,0.0,282
+iit_roorkee:137,Dheeraj Kumar,IIT Roorkee,Chemistry,0,0,0.0,0.0,283
+iit_roorkee:755,Dibakar Roychowdhury,IIT Roorkee,Physics,0,0,0.0,0.0,284
+iit_roorkee:660,Sneha Singh,IIT Roorkee,Mechanical and Industrial Engineering,0,0,0.0,0.0,285
+iit_roorkee:582,Chaman Kumar,IIT Roorkee,Mathematics,0,0,0.0,0.0,286
+iit_roorkee:642,Kirti Bhushan Mishra,IIT Roorkee,Mechanical and Industrial Engineering,0,0,0.0,0.0,287
+iit_roorkee:470,Manish Kumar Asthana,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,288
+iit_roorkee:474,Pratap Chandra Mohanty,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,289
+iit_roorkee:357,Abhisek Kumar Behera,IIT Roorkee,Electrical Engineering,0,0,0.0,0.0,290
+iit_roorkee:774,Shiladitya Sengupta,IIT Roorkee,Physics,0,0,0.0,0.0,291
+iit_roorkee:304,Lopamudra Saha,IIT Roorkee,Earth Sciences,0,0,0.0,0.0,292
+iit_roorkee:464,Binod Mishra,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,293
+iit_roorkee:164,Yadagiri Dongari,IIT Roorkee,Chemistry,0,0,0.0,0.0,294
+iit_roorkee:96,Anshu Anand,IIT Roorkee,Chemical Engineering,0,0,0.0,0.0,295
+iit_roorkee:552,Abhinava Tripathi,IIT Roorkee,Management Studies,0,0,0.0,0.0,296
+iit_roorkee:481,Sarbani Banerjee,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,297
+iit_roorkee:orcid:0000-0002-9103-397X,ROLUAHPUIA,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,298
+iit_roorkee:423,Darshak Bhatt,IIT Roorkee,Electronics and Communication Engineering,0,0,0.0,0.0,299
+iit_roorkee:549,Tarun Sharma,IIT Roorkee,Management Studies,0,0,0.0,0.0,300
+iit_roorkee:138,E. Gnanamani,IIT Roorkee,Chemistry,0,0,0.0,0.0,301
+iit_roorkee:548,Sumit Kumar Yadav,IIT Roorkee,Management Studies,0,0,0.0,0.0,302
+iit_roorkee:30,Rita Ahuja,IIT Roorkee,Architecture and Planning,0,0,0.0,0.0,303
+iit_roorkee:312,Sandeep Bhatt,IIT Roorkee,Earth Sciences,0,0,0.0,0.0,304
+iit_roorkee:393,Avanish Tripathi,IIT Roorkee,Electrical Engineering,0,0,0.0,0.0,305
+iit_roorkee:593,Ram Jiwari,IIT Roorkee,Mathematics,0,0,0.0,0.0,306
+iit_roorkee:848,V. P. Singh,IIT Roorkee,Water Resources Development and Management,0,0,0.0,0.0,307
+iit_roorkee:316,Sudheer Kumar Tiwari,IIT Roorkee,Earth Sciences,0,0,0.0,0.0,308
+iit_roorkee:273,Shahbaz Khan,IIT Roorkee,Computer Science and Engineering,0,0,0.0,0.0,309
+iit_roorkee:730,Ram Kumar,IIT Roorkee,Paper Technology,0,0,0.0,0.0,310
+iit_roorkee:299,Champoungam Panmei,IIT Roorkee,Earth Sciences,0,0,0.0,0.0,311
+iit_roorkee:751,Anjani Kumar Tiwari,IIT Roorkee,Physics,0,0,0.0,0.0,312
+iit_roorkee:337,Pankaj Agrawal,IIT Roorkee,Earthquake Engineering,0,0,0.0,0.0,313
+iit_roorkee:217,Sandipan Paul,IIT Roorkee,Civil Engineering,0,0,0.0,0.0,314
+iit_roorkee:805,Udit Choudhury,IIT Roorkee,Polymer and Process Engineering,0,0,0.0,0.0,315
+iit_roorkee:297,Ashutosh Chamoli,IIT Roorkee,Earth Sciences,0,0,0.0,0.0,316
+iit_roorkee:437,Saurabh Khanna,IIT Roorkee,Electronics and Communication Engineering,0,0,0.0,0.0,317
+iit_roorkee:279,Debiprasanna Sahoo,IIT Roorkee,Computer Science and Engineering,0,0,0.0,0.0,318
+iit_roorkee:600,Sugandha Maheshwary,IIT Roorkee,Mathematics,0,0,0.0,0.0,319
+iit_roorkee:4,Sourav Kumar Sasmal,IIT Roorkee,Applied Mathematics and Scientific Computing (Saharanpur),0,0,0.0,0.0,320
+iit_roorkee:23,Tina Pujara,IIT Roorkee,Architecture and Planning,0,0,0.0,0.0,321
+iit_roorkee:191,Bihu Suchetana,IIT Roorkee,Civil Engineering,0,0,0.0,0.0,322
+iit_roorkee:346,Varun Kumar Singla,IIT Roorkee,Earthquake Engineering,0,0,0.0,0.0,323
+iit_roorkee:486,Tony Thomas,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,324
+iit_roorkee:543,Rakesh Padhan,IIT Roorkee,Management Studies,0,0,0.0,0.0,325
+iit_roorkee:500,Ravita Lamba,IIT Roorkee,Hydro and Renewable Energy,0,0,0.0,0.0,326
+iit_roorkee:44,Poonam Choudhary,IIT Roorkee,Biosciences and Bioengineering,0,0,0.0,0.0,327
+iit_roorkee:586,Mahendra Kumar Verma,IIT Roorkee,Mathematics,0,0,0.0,0.0,328
+iit_roorkee:257,Chetan Gupta,IIT Roorkee,Computer Science and Engineering,0,0,0.0,0.0,329
+iit_roorkee:494,Hemant Jibhau Sagar,IIT Roorkee,Hydro and Renewable Energy,0,0,0.0,0.0,330
+iit_roorkee:109,Palas Kumar Farsoiya,IIT Roorkee,Chemical Engineering,0,0,0.0,0.0,331
+iit_roorkee:83,Avik Samanta,IIT Roorkee,Centre for Nanotechnology,0,0,0.0,0.0,332
+iit_roorkee:14,Navjit Gaurav,IIT Roorkee,Architecture and Planning,0,0,0.0,0.0,333
+iit_roorkee:456,Sandeep Kumar Singh,IIT Roorkee,Electronics and Communication Engineering,0,0,0.0,0.0,334
+iit_roorkee:205,Prakhar Misra,IIT Roorkee,Civil Engineering,0,0,0.0,0.0,335
+iit_roorkee:2,Pankaj Gautam,IIT Roorkee,Applied Mathematics and Scientific Computing (Saharanpur),0,0,0.0,0.0,336
+iit_roorkee:420,Bodhibrata Mukhopadhyay,IIT Roorkee,Electronics and Communication Engineering,0,0,0.0,0.0,337
+iit_roorkee:700,Rajeshwar R. Eleti,IIT Roorkee,Metallurgical and Materials Engineering,0,0,0.0,0.0,338
+iit_roorkee:385,Satish Belkhode,IIT Roorkee,Electrical Engineering,0,0,0.0,0.0,339
+iit_roorkee:orcid:0000-0002-0885-5578,Vijay Victor,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,340
+iit_roorkee:578,Amit Maji,IIT Roorkee,Mathematics,0,0,0.0,0.0,341
+iit_roorkee:769,Peayush Kumar Choubey,IIT Roorkee,Physics,0,0,0.0,0.0,342
+iit_roorkee:748,Ambrish Pandey,IIT Roorkee,Physics,0,0,0.0,0.0,343
+iit_roorkee:546,Sourabh Arora,IIT Roorkee,Management Studies,0,0,0.0,0.0,344
+iit_roorkee:374,Kishor Bhaskarrao Nandapurkar,IIT Roorkee,Electrical Engineering,0,0,0.0,0.0,345
+iit_roorkee:800,Naveen K. R.,IIT Roorkee,Polymer and Process Engineering,0,0,0.0,0.0,346
+iit_roorkee:81,Rajesh Kumar Ulaganathan,IIT Roorkee,Centre for Nanotechnology,0,0,0.0,0.0,347
+iit_roorkee:53,Rishikesh Pandey,IIT Roorkee,Biosciences and Bioengineering,0,0,0.0,0.0,348
+iit_roorkee:540,Prachi Jain,IIT Roorkee,Management Studies,0,0,0.0,0.0,349
+iit_roorkee:151,Rakesh Kumar Saunthwal,IIT Roorkee,Chemistry,0,0,0.0,0.0,350
+iit_roorkee:822,Anil Kumar Gupta,IIT Roorkee,Water Resources Development and Management,0,0,0.0,0.0,351
+iit_roorkee:678,Gaurav Kumar Nayak,IIT Roorkee,Mehta Family School of Data Science and Artificial Intelligence,0,0,0.0,0.0,352
+iit_roorkee:626,Anuj Bisht,IIT Roorkee,Mechanical and Industrial Engineering,0,0,0.0,0.0,353
+iit_roorkee:416,Ashish Kumar Chowdhary,IIT Roorkee,Electronics and Communication Engineering,0,0,0.0,0.0,354
+iit_roorkee:532,Anamika Kumar Kulbhaskar,IIT Roorkee,Management Studies,0,0,0.0,0.0,355
+iit_roorkee:361,Asha Sharma,IIT Roorkee,Electrical Engineering,0,0,0.0,0.0,356
+iit_roorkee:8,Debadutta Parida,IIT Roorkee,Architecture and Planning,0,0,0.0,0.0,357
+iit_roorkee:orcid:0000-0001-8895-9467,Bharat D,IIT Roorkee,Humanities and Social Sciences,0,0,0.0,0.0,358
+iit_roorkee:595,Saikat Saha,IIT Roorkee,Mathematics,0,0,0.0,0.0,359
+iit_roorkee:388,Subhash Chand Yogi,IIT Roorkee,Electrical Engineering,0,0,0.0,0.0,360
+iit_roorkee:66,Robert Hänsch,IIT Roorkee,Biosciences and Bioengineering,0,0,0.0,0.0,361
+iit_roorkee:22,Tanaya Sarmah,IIT Roorkee,Architecture and Planning,0,0,0.0,0.0,362
+iit_roorkee:267,Raghvendra Singh Rohit,IIT Roorkee,Computer Science and Engineering,0,0,0.0,0.0,363
+iit_roorkee:256,Awanish Pandey,IIT Roorkee,Computer Science and Engineering,0,0,0.0,0.0,364
+iit_roorkee:581,Arunava Mandal,IIT Roorkee,Mathematics,0,0,0.0,0.0,365
+iit_roorkee:177,Abhiraj Sharma,IIT Roorkee,Civil Engineering,0,0,0.0,0.0,366
+iit_roorkee:199,Ketan Arora,IIT Roorkee,Civil Engineering,0,0,0.0,0.0,367
+iit_roorkee:622,Amritesh Kumar,IIT Roorkee,Mechanical and Industrial Engineering,0,0,0.0,0.0,368
+iit_roorkee:259,Jagnyashini Debadarshini,IIT Roorkee,Computer Science and Engineering,0,0,0.0,0.0,369
+iit_roorkee:840,P. K. Suresh,IIT Roorkee,Water Resources Development and Management,0,0,0.0,0.0,370
+iit_roorkee:811,Sabu Thomas,IIT Roorkee,Polymer and Process Engineering,0,0,0.0,0.0,371
+iit_roorkee:48,Prince Tiwari,IIT Roorkee,Biosciences and Bioengineering,0,0,0.0,0.0,372
+iit_roorkee:107,Niladri Sekhar Mandal,IIT Roorkee,Chemical Engineering,0,0,0.0,0.0,373
+iit_roorkee:592,Rahul Kumar,IIT Roorkee,Mathematics,0,0,0.0,0.0,374
+iit_roorkee:156,Ravi Yadav,IIT Roorkee,Chemistry,0,0,0.0,0.0,375
+iit_roorkee:537,Kalpak Kulkarni,IIT Roorkee,Management Studies,0,0,0.0,0.0,376

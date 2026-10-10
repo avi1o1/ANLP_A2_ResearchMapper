@@ -1,0 +1,28 @@
+﻿community,faculty,internal_edges,IIT Kharagpur,IIT Roorkee,top_department,top_department_share,departments,most_connected_member
+1,146,329,6,140,Biosciences and Bioengineering,0.212,20,Partha Roy
+2,144,434,143,1,Chemistry,0.208,24,Santanu Dhara
+3,122,237,121,1,Computer Science and Engineering,0.123,27,Pabitra Mitra
+4,76,141,70,6,Metallurgical and Materials Engineering,0.263,15,Cheruvu Siva Kumar
+5,73,105,0,73,Electrical Engineering,0.466,16,N. P. Padhy
+6,69,101,2,67,Metallurgical and Materials Engineering,0.188,16,Ashish Pandey
+7,65,126,65,0,Mechanical Engineering,0.246,18,Suman Chakraborty
+8,62,112,61,1,Geology and Geophysics,0.194,23,Chandra Sekhar Tiwary
+9,56,82,0,56,Civil Engineering,0.607,11,Chandra Shekhar Prasad Ojha
+10,53,75,51,2,Agricultural and Food Engineering,0.283,18,Dillip Kumar Swain
+11,48,90,44,4,Electrical Engineering,0.438,6,Partha Pratim Chakrabarti
+12,46,78,43,3,Computer Science and Engineering,0.435,13,Niloy Ganguly
+13,42,57,0,42,Mechanical and Industrial Engineering,0.571,11,Pradeep Kumar
+14,41,58,0,41,Electronics and Communication Engineering,0.488,9,Brajesh Kumar Kaushik
+15,41,57,0,41,Earthquake Engineering,0.293,6,M. L. Sharma
+16,32,51,32,0,Ocean Engg and Naval Architecture,0.375,7,Mohammed Rabius Sunny
+17,24,37,18,6,Physics,0.5,6,Venimadhav Adyam
+18,22,25,5,17,Civil Engineering,0.455,5,Abhayanand Singh Maurya
+19,21,25,21,0,Architecture and Regional Planning,0.333,6,Joy Sen
+20,16,19,13,3,Mechanical Engineering,0.438,4,Goutam Chakraborty
+21,14,15,13,1,Vinod Gupta School of Management,0.929,2,Swagato Chatterjee
+22,9,9,9,0,Chemical Engineering,0.556,4,Sirshendu De
+23,8,7,8,0,Dr B C Roy Multi Speciality Medical Research Centre,0.375,5,Atasi Mohanty
+24,7,7,7,0,Humanities and Social Sciences,0.714,3,Anuradha Choudry
+25,7,7,7,0,Agricultural and Food Engineering,1.0,1,Brajesh Kumar Panda
+26,7,7,1,6,Physics,0.857,2,P. Arumugam
+27,5,5,0,5,Earthquake Engineering,1.0,1,Pankaj Agarwal

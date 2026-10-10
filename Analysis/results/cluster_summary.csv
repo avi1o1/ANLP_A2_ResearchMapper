@@ -1,0 +1,21 @@
+﻿institution,cluster,cross_cluster,partners,shared_papers,citations_from_partner,citations_to_partner
+IIT Kharagpur,Not a course cluster,True,2863,10722,140890,126326
+IIT Kharagpur,Old & large IITs,False,7,1636,15198,23390
+IIT Kharagpur,NITs,True,26,1194,14140,9145
+IIT Kharagpur,Newer IITs,True,13,953,7710,4894
+IIT Kharagpur,IISc / TIFR / IISERs,True,10,694,4294,10896
+IIT Kharagpur,Central Universities,True,6,656,7716,11338
+IIT Kharagpur,CSIR labs,True,22,500,4383,11099
+IIT Kharagpur,Premier science institutes,True,11,467,1307,3555
+IIT Kharagpur,IIITs,True,32,235,2287,1770
+IIT Kharagpur,DAE institutes,True,4,187,1107,2972
+IIT Roorkee,Not a course cluster,True,2720,8216,118460,112094
+IIT Roorkee,Old & large IITs,False,7,1311,10460,25335
+IIT Roorkee,NITs,True,26,969,14639,11003
+IIT Roorkee,Newer IITs,True,13,822,6437,5763
+IIT Roorkee,CSIR labs,True,22,717,3569,9132
+IIT Roorkee,Central Universities,True,6,544,6184,9343
+IIT Roorkee,IISc / TIFR / IISERs,True,10,439,2370,6699
+IIT Roorkee,IIITs,True,34,312,2028,1895
+IIT Roorkee,Premier science institutes,True,11,165,481,2065
+IIT Roorkee,DAE institutes,True,4,154,735,2336

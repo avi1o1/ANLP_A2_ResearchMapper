@@ -1,0 +1,21 @@
+﻿roster_id,faculty,institution,department,faculty_coauthors,joint_papers_with_faculty,degree_centrality,betweenness,community
+iit_kharagpur:621,Suman Chakraborty,IIT Kharagpur,Mechanical Engineering,49,235,0.02993,0.02989,7
+iit_kharagpur:290,Pabitra Mitra,IIT Kharagpur,Computer Science and Engineering,35,142,0.02138,0.02898,3
+iit_kharagpur:793,Santanu Dhara,IIT Kharagpur,School of Medical Science and Technology,52,200,0.03177,0.02536,2
+iit_kharagpur:293,Partha Pratim Chakrabarti,IIT Kharagpur,Computer Science and Engineering,26,84,0.01588,0.02265,11
+iit_kharagpur:780,Santanu Chattopadhyay,IIT Kharagpur,Rubber Technology,29,86,0.01772,0.02252,2
+iit_kharagpur:527,Debabrata Pradhan,IIT Kharagpur,Materials Science Centre,30,81,0.01833,0.02192,2
+iit_kharagpur:778,Narayan Chandra Das,IIT Kharagpur,Rubber Technology,35,172,0.02138,0.02169,2
+iit_kharagpur:102,Ramkrishna Sen,IIT Kharagpur,Bioscience and Biotechnology,35,93,0.02138,0.02138,2
+iit_kharagpur:362,Aurobinda Routray,IIT Kharagpur,Electrical Engineering,23,135,0.01405,0.0208,3
+iit_kharagpur:360,Ashok Kumar Pradhan,IIT Kharagpur,Electrical Engineering,7,44,0.00428,0.02032,11
+iit_roorkee:43,Partha Roy,IIT Roorkee,Biosciences and Bioengineering,44,216,0.02688,0.04848,1
+iit_roorkee:801,Pradip K. Maji,IIT Roorkee,Polymer and Process Engineering,20,58,0.01222,0.02705,1
+iit_roorkee:262,Partha Pratim Roy,IIT Roorkee,Computer Science and Engineering,15,27,0.00916,0.02695,6
+iit_roorkee:378,N. P. Padhy,IIT Roorkee,Electrical Engineering,13,98,0.00794,0.02639,5
+iit_roorkee:192,Chandra Shekhar Prasad Ojha,IIT Roorkee,Civil Engineering,18,79,0.011,0.01893,9
+iit_roorkee:641,Kaushik Pal,IIT Roorkee,Mechanical and Industrial Engineering,10,18,0.00611,0.01846,1
+iit_roorkee:147,Paritosh Mohanty,IIT Roorkee,Chemistry,15,40,0.00916,0.01841,1
+iit_roorkee:628,Arup Kumar Das,IIT Roorkee,Mechanical and Industrial Engineering,9,33,0.0055,0.01806,1
+iit_roorkee:435,Sanjeev Manhas,IIT Roorkee,Electronics and Communication Engineering,12,30,0.00733,0.01554,14
+iit_roorkee:824,Ashish Pandey,IIT Roorkee,Water Resources Development and Management,16,72,0.00977,0.01493,6

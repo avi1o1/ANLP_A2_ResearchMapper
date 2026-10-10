@@ -1,0 +1,31 @@
+﻿scope,rank,title,journal,year,citations,doi,institutions
+IIT Kharagpur,1,Guidelines for the use and interpretation of assays for monitoring autophagy (3rd edition),Autophagy,2016,4434,https://doi.org/10.1080/15548627.2015.1100356,IIT Kharagpur
+IIT Kharagpur,2,Soil carbon 4 per mille,Geoderma,2017,2020,https://doi.org/10.1016/j.geoderma.2017.01.002,IIT Kharagpur
+IIT Kharagpur,3,SymPy: symbolic computing in Python,PeerJ Computer Science,2017,1502,https://doi.org/10.7717/peerj-cs.103,IIT Kharagpur
+IIT Kharagpur,4,"iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments",Software: Practice and Experience,2017,1250,https://doi.org/10.1002/spe.2509,IIT Kharagpur
+IIT Kharagpur,5,Recent advances on the removal of dyes from wastewater using various adsorbents: a critical review,Materials Advances,2021,1248,https://doi.org/10.1039/d1ma00354b,IIT Kharagpur
+IIT Kharagpur,6,Global water resources and the role of groundwater in a resilient water future,Nature Reviews Earth & Environment,2023,1123,https://doi.org/10.1038/s43017-022-00378-6,IIT Kharagpur
+IIT Kharagpur,7,Selective Molecular Separation by Interfacially Crystallized Covalent Organic Framework Thin Films,Journal of the American Chemical Society,2017,1068,https://doi.org/10.1021/jacs.7b06640,IIT Kharagpur
+IIT Kharagpur,8,"Cosmology intertwined: A review of the particle physics, astrophysics, and cosmology associated with the cosmological tensions and anomalies",Journal of High Energy Astrophysics,2022,1050,https://doi.org/10.1016/j.jheap.2022.04.002,IIT Kharagpur
+IIT Kharagpur,9,CHAOS Challenge - combined (CT-MR) healthy abdominal organ segmentation,Medical Image Analysis,2021,783,https://doi.org/10.1016/j.media.2020.101950,IIT Kharagpur
+IIT Kharagpur,10,Selective Molecular Sieving in Self‐Standing Porous Covalent‐Organic‐Framework Membranes,Advanced Materials,2016,713,https://doi.org/10.1002/adma.201603945,IIT Kharagpur
+IIT Roorkee,1,The second data release from the European Pulsar Timing Array,Astronomy & Astrophysics,2023,1069,https://doi.org/10.1051/0004-6361/202346844,IIT Roorkee
+IIT Roorkee,2,A Comprehensive Review on NSGA-II for Multi-Objective Combinatorial Optimization Problems,IEEE Access,2021,971,https://doi.org/10.1109/access.2021.3070634,IIT Roorkee
+IIT Roorkee,3,"Microwave–material interaction phenomena: Heating mechanisms, challenges and opportunities in material processing",Composites Part A: Applied Science and Manufacturing,2016,876,https://doi.org/10.1016/j.compositesa.2015.10.035,IIT Roorkee
+IIT Roorkee,4,Science Requirements and Detector Concepts for the Electron-Ion Collider,Nuclear Physics A,2022,864,https://doi.org/10.1016/j.nuclphysa.2022.122447,IIT Roorkee
+IIT Roorkee,5,Differential Evolution: A review of more than two decades of research,Engineering Applications of Artificial Intelligence,2020,788,https://doi.org/10.1016/j.engappai.2020.103479,IIT Roorkee
+IIT Roorkee,6,Superhydrophobic Surfaces: Insights from Theory and Experiment,The Journal of Physical Chemistry B,2020,777,https://doi.org/10.1021/acs.jpcb.9b08567,IIT Roorkee
+IIT Roorkee,7,"An exhaustive review of the metaheuristic algorithms for search and optimization: taxonomy, applications, and open challenges",Artificial Intelligence Review,2023,668,https://doi.org/10.1007/s10462-023-10470-y,IIT Roorkee
+IIT Roorkee,8,Conducting PANI stimulated ZnO system for visible light photocatalytic degradation of coloured dyes,Journal of Molecular Liquids,2016,667,https://doi.org/10.1016/j.molliq.2016.06.074,IIT Roorkee
+IIT Roorkee,9,Reinforcement learning algorithms: A brief survey,Expert Systems with Applications,2023,659,https://doi.org/10.1016/j.eswa.2023.120495,IIT Roorkee
+IIT Roorkee,10,Graphene reinforced metal and ceramic matrix composites: a review,International Materials Reviews,2016,624,https://doi.org/10.1080/09506608.2016.1219481,IIT Roorkee
+Both,1,Guidelines for the use and interpretation of assays for monitoring autophagy (3rd edition),Autophagy,2016,4434,https://doi.org/10.1080/15548627.2015.1100356,IIT Kharagpur
+Both,2,Soil carbon 4 per mille,Geoderma,2017,2020,https://doi.org/10.1016/j.geoderma.2017.01.002,IIT Kharagpur
+Both,3,SymPy: symbolic computing in Python,PeerJ Computer Science,2017,1502,https://doi.org/10.7717/peerj-cs.103,IIT Kharagpur
+Both,4,"iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments",Software: Practice and Experience,2017,1250,https://doi.org/10.1002/spe.2509,IIT Kharagpur
+Both,5,Recent advances on the removal of dyes from wastewater using various adsorbents: a critical review,Materials Advances,2021,1248,https://doi.org/10.1039/d1ma00354b,IIT Kharagpur
+Both,6,Global water resources and the role of groundwater in a resilient water future,Nature Reviews Earth & Environment,2023,1123,https://doi.org/10.1038/s43017-022-00378-6,IIT Kharagpur
+Both,7,The second data release from the European Pulsar Timing Array,Astronomy & Astrophysics,2023,1069,https://doi.org/10.1051/0004-6361/202346844,IIT Roorkee
+Both,8,Selective Molecular Separation by Interfacially Crystallized Covalent Organic Framework Thin Films,Journal of the American Chemical Society,2017,1068,https://doi.org/10.1021/jacs.7b06640,IIT Kharagpur
+Both,9,"Cosmology intertwined: A review of the particle physics, astrophysics, and cosmology associated with the cosmological tensions and anomalies",Journal of High Energy Astrophysics,2022,1050,https://doi.org/10.1016/j.jheap.2022.04.002,IIT Kharagpur
+Both,10,A Comprehensive Review on NSGA-II for Multi-Objective Combinatorial Optimization Problems,IEEE Access,2021,971,https://doi.org/10.1109/access.2021.3070634,IIT Roorkee

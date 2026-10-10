@@ -1,0 +1,17382 @@
+{
+"I145894827": [
+[
+"Electrical and Electronic Engineering",
+3068
+],
+[
+"Mechanical Engineering",
+2465
+],
+[
+"Artificial Intelligence",
+2097
+],
+[
+"Biomedical Engineering",
+1670
+],
+[
+"Materials Chemistry",
+1594
+],
+[
+"Computational Mechanics",
+1118
+],
+[
+"Computer Vision and Pattern Recognition",
+944
+],
+[
+"Control and Systems Engineering",
+888
+],
+[
+"Electronic, Optical and Magnetic Materials",
+869
+],
+[
+"Aerospace Engineering",
+861
+],
+[
+"Civil and Structural Engineering",
+853
+],
+[
+"Environmental Engineering",
+819
+],
+[
+"Mechanics of Materials",
+802
+],
+[
+"Organic Chemistry",
+771
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+769
+],
+[
+"Water Science and Technology",
+760
+],
+[
+"Computer Networks and Communications",
+758
+],
+[
+"Molecular Biology",
+706
+],
+[
+"Global and Planetary Change",
+683
+],
+[
+"Information Systems",
+612
+],
+[
+"Geophysics",
+593
+],
+[
+"Atomic and Molecular Physics, and Optics",
+507
+],
+[
+"Plant Science",
+477
+],
+[
+"Atmospheric Science",
+435
+],
+[
+"Computational Theory and Mathematics",
+415
+],
+[
+"Biomaterials",
+411
+],
+[
+"Food Science",
+395
+],
+[
+"Astronomy and Astrophysics",
+394
+],
+[
+"Polymers and Plastics",
+375
+],
+[
+"Ecology",
+371
+],
+[
+"Building and Construction",
+364
+],
+[
+"Ocean Engineering",
+358
+],
+[
+"Statistical and Nonlinear Physics",
+305
+],
+[
+"Safety, Risk, Reliability and Quality",
+282
+],
+[
+"Hardware and Architecture",
+270
+],
+[
+"Inorganic Chemistry",
+256
+],
+[
+"Automotive Engineering",
+238
+],
+[
+"Cognitive Neuroscience",
+230
+],
+[
+"Oceanography",
+215
+],
+[
+"Pollution",
+206
+],
+[
+"Algebra and Number Theory",
+206
+],
+[
+"Nuclear and High Energy Physics",
+206
+],
+[
+"Signal Processing",
+204
+],
+[
+"Modeling and Simulation",
+201
+],
+[
+"Soil Science",
+198
+],
+[
+"Industrial and Manufacturing Engineering",
+198
+],
+[
+"Earth-Surface Processes",
+192
+],
+[
+"Environmental Chemistry",
+190
+],
+[
+"Discrete Mathematics and Combinatorics",
+189
+],
+[
+"Statistics and Probability",
+189
+],
+[
+"Waste Management and Disposal",
+181
+],
+[
+"Media Technology",
+177
+],
+[
+"Geometry and Topology",
+165
+],
+[
+"Condensed Matter Physics",
+158
+],
+[
+"Applied Mathematics",
+143
+],
+[
+"Physical and Theoretical Chemistry",
+136
+],
+[
+"Management, Monitoring, Policy and Law",
+131
+],
+[
+"Molecular Medicine",
+130
+],
+[
+"Fluid Flow and Transfer Processes",
+128
+],
+[
+"Health, Toxicology and Mutagenesis",
+119
+],
+[
+"Geochemistry and Petrology",
+116
+],
+[
+"Human-Computer Interaction",
+102
+],
+[
+"Biotechnology",
+98
+],
+[
+"Ceramics and Composites",
+94
+],
+[
+"General Agricultural and Biological Sciences",
+92
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+89
+],
+[
+"Catalysis",
+84
+],
+[
+"Paleontology",
+82
+],
+[
+"Surfaces, Coatings and Films",
+82
+],
+[
+"Spectroscopy",
+72
+],
+[
+"Analytical Chemistry",
+70
+],
+[
+"Computer Science Applications",
+68
+],
+[
+"Immunology",
+64
+],
+[
+"Numerical Analysis",
+57
+],
+[
+"Genetics",
+56
+],
+[
+"Software",
+52
+],
+[
+"Biophysics",
+49
+],
+[
+"Mathematical Physics",
+49
+],
+[
+"Geology",
+39
+],
+[
+"Aquatic Science",
+36
+],
+[
+"Computer Graphics and Computer-Aided Design",
+36
+],
+[
+"Pharmaceutical Science",
+34
+],
+[
+"Ecological Modeling",
+33
+],
+[
+"Cancer Research",
+32
+],
+[
+"Cell Biology",
+29
+],
+[
+"Acoustics and Ultrasonics",
+28
+],
+[
+"General Energy",
+27
+],
+[
+"Microbiology",
+27
+],
+[
+"Cellular and Molecular Neuroscience",
+27
+],
+[
+"Fuel Technology",
+26
+],
+[
+"Radiation",
+23
+],
+[
+"Insect Science",
+21
+],
+[
+"Process Chemistry and Technology",
+21
+],
+[
+"Bioengineering",
+20
+],
+[
+"Metals and Alloys",
+20
+],
+[
+"Neurology",
+20
+],
+[
+"Biochemistry",
+18
+],
+[
+"Energy Engineering and Power Technology",
+18
+],
+[
+"Nature and Landscape Conservation",
+18
+],
+[
+"Agronomy and Crop Science",
+17
+],
+[
+"Animal Science and Zoology",
+16
+],
+[
+"Pharmacology",
+16
+],
+[
+"Forestry",
+13
+],
+[
+"Clinical Biochemistry",
+13
+],
+[
+"General Materials Science",
+12
+],
+[
+"Electrochemistry",
+11
+],
+[
+"Theoretical Computer Science",
+11
+],
+[
+"Architecture",
+7
+],
+[
+"Applied Microbiology and Biotechnology",
+7
+],
+[
+"Parasitology",
+7
+],
+[
+"Toxicology",
+6
+],
+[
+"Computational Mathematics",
+4
+],
+[
+"Virology",
+3
+],
+[
+"Endocrine and Autonomic Systems",
+3
+],
+[
+"Developmental Biology",
+2
+],
+[
+"Endocrinology",
+2
+],
+[
+"Chemical Health and Safety",
+2
+],
+[
+"Developmental Neuroscience",
+2
+],
+[
+"Instrumentation",
+2
+],
+[
+"Structural Biology",
+1
+],
+[
+"Filtration and Separation",
+1
+],
+[
+"Space and Planetary Science",
+1
+],
+[
+"Sensory Systems",
+1
+],
+[
+"Drug Discovery",
+1
+]
+],
+"I154851008": [
+[
+"Electrical and Electronic Engineering",
+3575
+],
+[
+"Mechanical Engineering",
+1739
+],
+[
+"Civil and Structural Engineering",
+1651
+],
+[
+"Materials Chemistry",
+1385
+],
+[
+"Biomedical Engineering",
+1303
+],
+[
+"Artificial Intelligence",
+1150
+],
+[
+"Control and Systems Engineering",
+1054
+],
+[
+"Water Science and Technology",
+932
+],
+[
+"Mechanics of Materials",
+775
+],
+[
+"Aerospace Engineering",
+729
+],
+[
+"Computer Vision and Pattern Recognition",
+711
+],
+[
+"Environmental Engineering",
+705
+],
+[
+"Electronic, Optical and Magnetic Materials",
+685
+],
+[
+"Global and Planetary Change",
+681
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+632
+],
+[
+"Atomic and Molecular Physics, and Optics",
+540
+],
+[
+"Computational Mechanics",
+507
+],
+[
+"Organic Chemistry",
+499
+],
+[
+"Nuclear and High Energy Physics",
+465
+],
+[
+"Geophysics",
+455
+],
+[
+"Biomaterials",
+438
+],
+[
+"Information Systems",
+384
+],
+[
+"Atmospheric Science",
+376
+],
+[
+"Safety, Risk, Reliability and Quality",
+372
+],
+[
+"Building and Construction",
+362
+],
+[
+"Molecular Biology",
+361
+],
+[
+"Polymers and Plastics",
+350
+],
+[
+"Applied Mathematics",
+342
+],
+[
+"Computer Networks and Communications",
+300
+],
+[
+"Pollution",
+276
+],
+[
+"Ecology",
+273
+],
+[
+"Plant Science",
+259
+],
+[
+"Management, Monitoring, Policy and Law",
+238
+],
+[
+"Waste Management and Disposal",
+222
+],
+[
+"Astronomy and Astrophysics",
+209
+],
+[
+"Media Technology",
+186
+],
+[
+"Spectroscopy",
+181
+],
+[
+"Computational Theory and Mathematics",
+180
+],
+[
+"Environmental Chemistry",
+176
+],
+[
+"Ocean Engineering",
+173
+],
+[
+"Inorganic Chemistry",
+169
+],
+[
+"Statistics and Probability",
+166
+],
+[
+"Automotive Engineering",
+161
+],
+[
+"Cognitive Neuroscience",
+148
+],
+[
+"Soil Science",
+138
+],
+[
+"Signal Processing",
+124
+],
+[
+"Condensed Matter Physics",
+120
+],
+[
+"Energy Engineering and Power Technology",
+111
+],
+[
+"Health, Toxicology and Mutagenesis",
+104
+],
+[
+"Statistical and Nonlinear Physics",
+104
+],
+[
+"Industrial and Manufacturing Engineering",
+98
+],
+[
+"Catalysis",
+91
+],
+[
+"Mathematical Physics",
+91
+],
+[
+"Geochemistry and Petrology",
+83
+],
+[
+"Molecular Medicine",
+80
+],
+[
+"Human-Computer Interaction",
+77
+],
+[
+"Food Science",
+72
+],
+[
+"Ecological Modeling",
+72
+],
+[
+"Earth-Surface Processes",
+66
+],
+[
+"Hardware and Architecture",
+64
+],
+[
+"Ceramics and Composites",
+61
+],
+[
+"Modeling and Simulation",
+61
+],
+[
+"Surfaces, Coatings and Films",
+58
+],
+[
+"Radiation",
+56
+],
+[
+"Paleontology",
+55
+],
+[
+"Pharmaceutical Science",
+54
+],
+[
+"Geology",
+53
+],
+[
+"Process Chemistry and Technology",
+51
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+45
+],
+[
+"Physical and Theoretical Chemistry",
+41
+],
+[
+"Numerical Analysis",
+39
+],
+[
+"Oceanography",
+36
+],
+[
+"Discrete Mathematics and Combinatorics",
+36
+],
+[
+"Biotechnology",
+34
+],
+[
+"Genetics",
+33
+],
+[
+"Algebra and Number Theory",
+32
+],
+[
+"Fluid Flow and Transfer Processes",
+28
+],
+[
+"Geometry and Topology",
+27
+],
+[
+"General Agricultural and Biological Sciences",
+24
+],
+[
+"Analytical Chemistry",
+24
+],
+[
+"Neurology",
+24
+],
+[
+"Biophysics",
+23
+],
+[
+"General Materials Science",
+21
+],
+[
+"Immunology",
+20
+],
+[
+"Cell Biology",
+19
+],
+[
+"Software",
+19
+],
+[
+"Metals and Alloys",
+18
+],
+[
+"Insect Science",
+17
+],
+[
+"Nature and Landscape Conservation",
+17
+],
+[
+"Cancer Research",
+14
+],
+[
+"Microbiology",
+13
+],
+[
+"Bioengineering",
+12
+],
+[
+"Computer Science Applications",
+12
+],
+[
+"Agronomy and Crop Science",
+11
+],
+[
+"Aquatic Science",
+11
+],
+[
+"Forestry",
+9
+],
+[
+"Architecture",
+9
+],
+[
+"Cellular and Molecular Neuroscience",
+9
+],
+[
+"Electrochemistry",
+8
+],
+[
+"Computer Graphics and Computer-Aided Design",
+7
+],
+[
+"Toxicology",
+7
+],
+[
+"Virology",
+5
+],
+[
+"Pharmacology",
+5
+],
+[
+"Acoustics and Ultrasonics",
+5
+],
+[
+"Applied Microbiology and Biotechnology",
+4
+],
+[
+"Filtration and Separation",
+3
+],
+[
+"Biochemistry",
+2
+],
+[
+"Clinical Biochemistry",
+2
+],
+[
+"Theoretical Computer Science",
+2
+],
+[
+"Drug Discovery",
+2
+],
+[
+"Animal Science and Zoology",
+1
+],
+[
+"Endocrinology",
+1
+],
+[
+"Structural Biology",
+1
+],
+[
+"Parasitology",
+1
+],
+[
+"Computational Mathematics",
+1
+],
+[
+"Sensory Systems",
+1
+]
+],
+"I59270414": [
+[
+"Electrical and Electronic Engineering",
+4102
+],
+[
+"Materials Chemistry",
+3149
+],
+[
+"Artificial Intelligence",
+1881
+],
+[
+"Molecular Biology",
+1764
+],
+[
+"Nuclear and High Energy Physics",
+1436
+],
+[
+"Mechanical Engineering",
+1399
+],
+[
+"Computational Mechanics",
+1257
+],
+[
+"Biomedical Engineering",
+1249
+],
+[
+"Atomic and Molecular Physics, and Optics",
+1103
+],
+[
+"Electronic, Optical and Magnetic Materials",
+999
+],
+[
+"Aerospace Engineering",
+926
+],
+[
+"Organic Chemistry",
+888
+],
+[
+"Global and Planetary Change",
+865
+],
+[
+"Computer Networks and Communications",
+859
+],
+[
+"Computer Vision and Pattern Recognition",
+855
+],
+[
+"Astronomy and Astrophysics",
+818
+],
+[
+"Civil and Structural Engineering",
+752
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+624
+],
+[
+"Control and Systems Engineering",
+593
+],
+[
+"Mechanics of Materials",
+552
+],
+[
+"Atmospheric Science",
+538
+],
+[
+"Genetics",
+505
+],
+[
+"Computational Theory and Mathematics",
+497
+],
+[
+"Condensed Matter Physics",
+493
+],
+[
+"Cognitive Neuroscience",
+457
+],
+[
+"Applied Mathematics",
+421
+],
+[
+"Water Science and Technology",
+395
+],
+[
+"Polymers and Plastics",
+315
+],
+[
+"Mathematical Physics",
+314
+],
+[
+"Biomaterials",
+304
+],
+[
+"Geophysics",
+299
+],
+[
+"Physical and Theoretical Chemistry",
+295
+],
+[
+"Statistical and Nonlinear Physics",
+287
+],
+[
+"Information Systems",
+277
+],
+[
+"Plant Science",
+267
+],
+[
+"Environmental Engineering",
+266
+],
+[
+"Oceanography",
+257
+],
+[
+"Geometry and Topology",
+246
+],
+[
+"Inorganic Chemistry",
+236
+],
+[
+"Building and Construction",
+234
+],
+[
+"Ecology",
+234
+],
+[
+"Spectroscopy",
+228
+],
+[
+"Hardware and Architecture",
+220
+],
+[
+"Cell Biology",
+219
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+213
+],
+[
+"Immunology",
+163
+],
+[
+"Biophysics",
+145
+],
+[
+"Signal Processing",
+142
+],
+[
+"Automotive Engineering",
+139
+],
+[
+"Discrete Mathematics and Combinatorics",
+138
+],
+[
+"Modeling and Simulation",
+138
+],
+[
+"Industrial and Manufacturing Engineering",
+136
+],
+[
+"Waste Management and Disposal",
+125
+],
+[
+"Ocean Engineering",
+121
+],
+[
+"Pollution",
+119
+],
+[
+"Safety, Risk, Reliability and Quality",
+118
+],
+[
+"Cancer Research",
+117
+],
+[
+"Cellular and Molecular Neuroscience",
+109
+],
+[
+"Human-Computer Interaction",
+106
+],
+[
+"Nature and Landscape Conservation",
+106
+],
+[
+"Molecular Medicine",
+101
+],
+[
+"Media Technology",
+99
+],
+[
+"Geochemistry and Petrology",
+98
+],
+[
+"Fluid Flow and Transfer Processes",
+94
+],
+[
+"Ceramics and Composites",
+89
+],
+[
+"Soil Science",
+75
+],
+[
+"Surfaces, Coatings and Films",
+72
+],
+[
+"Virology",
+71
+],
+[
+"Paleontology",
+68
+],
+[
+"Computer Science Applications",
+63
+],
+[
+"Algebra and Number Theory",
+63
+],
+[
+"Food Science",
+62
+],
+[
+"Statistics and Probability",
+61
+],
+[
+"Catalysis",
+60
+],
+[
+"Computer Graphics and Computer-Aided Design",
+59
+],
+[
+"Health, Toxicology and Mutagenesis",
+57
+],
+[
+"Management, Monitoring, Policy and Law",
+51
+],
+[
+"Environmental Chemistry",
+49
+],
+[
+"Neurology",
+39
+],
+[
+"Pharmaceutical Science",
+38
+],
+[
+"Insect Science",
+37
+],
+[
+"Microbiology",
+35
+],
+[
+"Software",
+34
+],
+[
+"Structural Biology",
+31
+],
+[
+"Numerical Analysis",
+31
+],
+[
+"Analytical Chemistry",
+29
+],
+[
+"Computational Mathematics",
+27
+],
+[
+"Biochemistry",
+26
+],
+[
+"Earth-Surface Processes",
+24
+],
+[
+"Toxicology",
+24
+],
+[
+"Endocrinology",
+22
+],
+[
+"Ecological Modeling",
+22
+],
+[
+"General Materials Science",
+20
+],
+[
+"General Agricultural and Biological Sciences",
+19
+],
+[
+"Biotechnology",
+19
+],
+[
+"Electrochemistry",
+19
+],
+[
+"Parasitology",
+18
+],
+[
+"Radiation",
+18
+],
+[
+"Agronomy and Crop Science",
+17
+],
+[
+"Clinical Biochemistry",
+16
+],
+[
+"Energy Engineering and Power Technology",
+16
+],
+[
+"Pharmacology",
+16
+],
+[
+"Geology",
+15
+],
+[
+"Architecture",
+15
+],
+[
+"Bioengineering",
+13
+],
+[
+"Aging",
+12
+],
+[
+"Developmental Biology",
+12
+],
+[
+"Aquatic Science",
+11
+],
+[
+"Theoretical Computer Science",
+11
+],
+[
+"Process Chemistry and Technology",
+10
+],
+[
+"Metals and Alloys",
+9
+],
+[
+"Developmental Neuroscience",
+9
+],
+[
+"Acoustics and Ultrasonics",
+8
+],
+[
+"Forestry",
+7
+],
+[
+"Physiology",
+7
+],
+[
+"Instrumentation",
+7
+],
+[
+"Animal Science and Zoology",
+6
+],
+[
+"Behavioral Neuroscience",
+6
+],
+[
+"Endocrine and Autonomic Systems",
+5
+],
+[
+"Applied Microbiology and Biotechnology",
+2
+],
+[
+"Sensory Systems",
+2
+],
+[
+"Space and Planetary Science",
+1
+],
+[
+"General Engineering",
+1
+]
+],
+"I162827531": [
+[
+"Electrical and Electronic Engineering",
+3817
+],
+[
+"Materials Chemistry",
+2065
+],
+[
+"Mechanical Engineering",
+2034
+],
+[
+"Artificial Intelligence",
+1907
+],
+[
+"Organic Chemistry",
+1355
+],
+[
+"Computational Mechanics",
+1243
+],
+[
+"Aerospace Engineering",
+1224
+],
+[
+"Biomedical Engineering",
+1206
+],
+[
+"Civil and Structural Engineering",
+1186
+],
+[
+"Control and Systems Engineering",
+1071
+],
+[
+"Atomic and Molecular Physics, and Optics",
+1002
+],
+[
+"Nuclear and High Energy Physics",
+962
+],
+[
+"Molecular Biology",
+925
+],
+[
+"Electronic, Optical and Magnetic Materials",
+807
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+795
+],
+[
+"Mechanics of Materials",
+770
+],
+[
+"Computer Networks and Communications",
+692
+],
+[
+"Environmental Engineering",
+667
+],
+[
+"Global and Planetary Change",
+611
+],
+[
+"Astronomy and Astrophysics",
+599
+],
+[
+"Computer Vision and Pattern Recognition",
+596
+],
+[
+"Computational Theory and Mathematics",
+593
+],
+[
+"Water Science and Technology",
+578
+],
+[
+"Geophysics",
+500
+],
+[
+"Atmospheric Science",
+454
+],
+[
+"Condensed Matter Physics",
+432
+],
+[
+"Information Systems",
+312
+],
+[
+"Building and Construction",
+306
+],
+[
+"Safety, Risk, Reliability and Quality",
+304
+],
+[
+"Media Technology",
+272
+],
+[
+"Applied Mathematics",
+272
+],
+[
+"Inorganic Chemistry",
+258
+],
+[
+"Automotive Engineering",
+249
+],
+[
+"Cell Biology",
+227
+],
+[
+"Biomaterials",
+223
+],
+[
+"Fluid Flow and Transfer Processes",
+210
+],
+[
+"Statistical and Nonlinear Physics",
+208
+],
+[
+"Ocean Engineering",
+201
+],
+[
+"Mathematical Physics",
+193
+],
+[
+"Pollution",
+192
+],
+[
+"Algebra and Number Theory",
+190
+],
+[
+"Geometry and Topology",
+187
+],
+[
+"Spectroscopy",
+185
+],
+[
+"Waste Management and Disposal",
+180
+],
+[
+"Discrete Mathematics and Combinatorics",
+176
+],
+[
+"Hardware and Architecture",
+174
+],
+[
+"Ecology",
+168
+],
+[
+"Earth-Surface Processes",
+160
+],
+[
+"Statistics and Probability",
+153
+],
+[
+"Signal Processing",
+140
+],
+[
+"Computer Science Applications",
+133
+],
+[
+"Paleontology",
+133
+],
+[
+"Industrial and Manufacturing Engineering",
+130
+],
+[
+"Oceanography",
+126
+],
+[
+"Physical and Theoretical Chemistry",
+121
+],
+[
+"Cognitive Neuroscience",
+118
+],
+[
+"Plant Science",
+116
+],
+[
+"Geology",
+115
+],
+[
+"Polymers and Plastics",
+115
+],
+[
+"Human-Computer Interaction",
+111
+],
+[
+"Modeling and Simulation",
+109
+],
+[
+"Health, Toxicology and Mutagenesis",
+108
+],
+[
+"Genetics",
+105
+],
+[
+"Geochemistry and Petrology",
+100
+],
+[
+"Management, Monitoring, Policy and Law",
+87
+],
+[
+"Environmental Chemistry",
+86
+],
+[
+"Theoretical Computer Science",
+86
+],
+[
+"Pharmaceutical Science",
+84
+],
+[
+"Soil Science",
+75
+],
+[
+"Food Science",
+74
+],
+[
+"Surfaces, Coatings and Films",
+71
+],
+[
+"Energy Engineering and Power Technology",
+67
+],
+[
+"Catalysis",
+65
+],
+[
+"Computer Graphics and Computer-Aided Design",
+65
+],
+[
+"Cancer Research",
+64
+],
+[
+"Toxicology",
+49
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+47
+],
+[
+"Molecular Medicine",
+47
+],
+[
+"Analytical Chemistry",
+47
+],
+[
+"Numerical Analysis",
+47
+],
+[
+"Biophysics",
+41
+],
+[
+"General Agricultural and Biological Sciences",
+39
+],
+[
+"Metals and Alloys",
+39
+],
+[
+"Immunology",
+37
+],
+[
+"Biotechnology",
+34
+],
+[
+"Bioengineering",
+30
+],
+[
+"Ceramics and Composites",
+30
+],
+[
+"Microbiology",
+23
+],
+[
+"Software",
+21
+],
+[
+"Cellular and Molecular Neuroscience",
+19
+],
+[
+"Radiation",
+17
+],
+[
+"Process Chemistry and Technology",
+16
+],
+[
+"Electrochemistry",
+16
+],
+[
+"Architecture",
+16
+],
+[
+"Ecological Modeling",
+15
+],
+[
+"Instrumentation",
+15
+],
+[
+"Neurology",
+14
+],
+[
+"Parasitology",
+11
+],
+[
+"Computational Mathematics",
+11
+],
+[
+"Structural Biology",
+10
+],
+[
+"Aquatic Science",
+9
+],
+[
+"Sensory Systems",
+9
+],
+[
+"Biochemistry",
+8
+],
+[
+"Clinical Biochemistry",
+7
+],
+[
+"Nature and Landscape Conservation",
+7
+],
+[
+"Virology",
+7
+],
+[
+"Filtration and Separation",
+5
+],
+[
+"Developmental Neuroscience",
+5
+],
+[
+"Agronomy and Crop Science",
+4
+],
+[
+"Forestry",
+4
+],
+[
+"Insect Science",
+4
+],
+[
+"Endocrinology",
+4
+],
+[
+"Fuel Technology",
+4
+],
+[
+"Applied Microbiology and Biotechnology",
+4
+],
+[
+"General Materials Science",
+4
+],
+[
+"Pharmacology",
+4
+],
+[
+"Animal Science and Zoology",
+2
+],
+[
+"General Energy",
+2
+],
+[
+"Endocrine and Autonomic Systems",
+2
+],
+[
+"Aging",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"General Engineering",
+1
+],
+[
+"Drug Discovery",
+1
+]
+],
+"I170979836": [
+[
+"Electrical and Electronic Engineering",
+2383
+],
+[
+"Biomedical Engineering",
+1108
+],
+[
+"Computer Vision and Pattern Recognition",
+1105
+],
+[
+"Materials Chemistry",
+1025
+],
+[
+"Artificial Intelligence",
+1000
+],
+[
+"Mechanical Engineering",
+917
+],
+[
+"Astronomy and Astrophysics",
+689
+],
+[
+"Molecular Biology",
+624
+],
+[
+"Computational Theory and Mathematics",
+573
+],
+[
+"Organic Chemistry",
+488
+],
+[
+"Computer Networks and Communications",
+487
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+475
+],
+[
+"Mechanics of Materials",
+475
+],
+[
+"Water Science and Technology",
+447
+],
+[
+"Electronic, Optical and Magnetic Materials",
+434
+],
+[
+"Inorganic Chemistry",
+433
+],
+[
+"Control and Systems Engineering",
+402
+],
+[
+"Computational Mechanics",
+375
+],
+[
+"Atomic and Molecular Physics, and Optics",
+362
+],
+[
+"Information Systems",
+337
+],
+[
+"Spectroscopy",
+324
+],
+[
+"Aerospace Engineering",
+322
+],
+[
+"Plant Science",
+281
+],
+[
+"Civil and Structural Engineering",
+266
+],
+[
+"Biomaterials",
+255
+],
+[
+"Geophysics",
+253
+],
+[
+"Ecology",
+233
+],
+[
+"Cognitive Neuroscience",
+231
+],
+[
+"Physical and Theoretical Chemistry",
+229
+],
+[
+"Environmental Engineering",
+201
+],
+[
+"Waste Management and Disposal",
+189
+],
+[
+"Global and Planetary Change",
+186
+],
+[
+"Nuclear and High Energy Physics",
+171
+],
+[
+"Environmental Chemistry",
+170
+],
+[
+"Food Science",
+167
+],
+[
+"Pharmaceutical Science",
+165
+],
+[
+"Signal Processing",
+163
+],
+[
+"Building and Construction",
+154
+],
+[
+"Analytical Chemistry",
+138
+],
+[
+"Applied Mathematics",
+137
+],
+[
+"Pollution",
+135
+],
+[
+"Statistical and Nonlinear Physics",
+135
+],
+[
+"Earth-Surface Processes",
+131
+],
+[
+"Media Technology",
+119
+],
+[
+"Condensed Matter Physics",
+118
+],
+[
+"Health, Toxicology and Mutagenesis",
+110
+],
+[
+"Mathematical Physics",
+108
+],
+[
+"Algebra and Number Theory",
+105
+],
+[
+"Modeling and Simulation",
+95
+],
+[
+"Geometry and Topology",
+94
+],
+[
+"Ceramics and Composites",
+89
+],
+[
+"Polymers and Plastics",
+85
+],
+[
+"Oceanography",
+80
+],
+[
+"Automotive Engineering",
+78
+],
+[
+"Molecular Medicine",
+63
+],
+[
+"Industrial and Manufacturing Engineering",
+63
+],
+[
+"Energy Engineering and Power Technology",
+60
+],
+[
+"Atmospheric Science",
+59
+],
+[
+"Human-Computer Interaction",
+57
+],
+[
+"Pharmacology",
+56
+],
+[
+"Management, Monitoring, Policy and Law",
+55
+],
+[
+"Hardware and Architecture",
+54
+],
+[
+"Statistics and Probability",
+50
+],
+[
+"Paleontology",
+48
+],
+[
+"Ocean Engineering",
+47
+],
+[
+"Immunology",
+47
+],
+[
+"Geochemistry and Petrology",
+44
+],
+[
+"Cancer Research",
+43
+],
+[
+"Safety, Risk, Reliability and Quality",
+40
+],
+[
+"Soil Science",
+39
+],
+[
+"Surfaces, Coatings and Films",
+37
+],
+[
+"Computer Science Applications",
+35
+],
+[
+"Biophysics",
+34
+],
+[
+"Fluid Flow and Transfer Processes",
+33
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+29
+],
+[
+"Biotechnology",
+26
+],
+[
+"Structural Biology",
+26
+],
+[
+"Cell Biology",
+24
+],
+[
+"Geology",
+24
+],
+[
+"General Agricultural and Biological Sciences",
+23
+],
+[
+"Ecological Modeling",
+21
+],
+[
+"Catalysis",
+20
+],
+[
+"Neurology",
+20
+],
+[
+"Genetics",
+19
+],
+[
+"Computational Mathematics",
+15
+],
+[
+"Cellular and Molecular Neuroscience",
+15
+],
+[
+"Aquatic Science",
+13
+],
+[
+"Bioengineering",
+12
+],
+[
+"Electrochemistry",
+10
+],
+[
+"Computer Graphics and Computer-Aided Design",
+10
+],
+[
+"Numerical Analysis",
+10
+],
+[
+"Radiation",
+10
+],
+[
+"Microbiology",
+9
+],
+[
+"Discrete Mathematics and Combinatorics",
+9
+],
+[
+"Toxicology",
+9
+],
+[
+"Insect Science",
+8
+],
+[
+"Process Chemistry and Technology",
+8
+],
+[
+"Software",
+8
+],
+[
+"Animal Science and Zoology",
+7
+],
+[
+"Aging",
+6
+],
+[
+"Physiology",
+6
+],
+[
+"Theoretical Computer Science",
+6
+],
+[
+"Architecture",
+5
+],
+[
+"Virology",
+5
+],
+[
+"Biochemistry",
+4
+],
+[
+"Fuel Technology",
+4
+],
+[
+"Metals and Alloys",
+4
+],
+[
+"Clinical Biochemistry",
+3
+],
+[
+"Nature and Landscape Conservation",
+3
+],
+[
+"Agronomy and Crop Science",
+2
+],
+[
+"Endocrinology",
+2
+],
+[
+"Filtration and Separation",
+2
+],
+[
+"General Energy",
+2
+],
+[
+"Applied Microbiology and Biotechnology",
+2
+],
+[
+"Forestry",
+1
+],
+[
+"Developmental Biology",
+1
+],
+[
+"Chemical Health and Safety",
+1
+],
+[
+"General Materials Science",
+1
+],
+[
+"Behavioral Neuroscience",
+1
+],
+[
+"Developmental Neuroscience",
+1
+],
+[
+"Endocrine and Autonomic Systems",
+1
+],
+[
+"Sensory Systems",
+1
+],
+[
+"Drug Discovery",
+1
+],
+[
+"Acoustics and Ultrasonics",
+1
+]
+],
+"I16292982": [
+[
+"Electrical and Electronic Engineering",
+1901
+],
+[
+"Mechanical Engineering",
+1396
+],
+[
+"Materials Chemistry",
+1078
+],
+[
+"Biomedical Engineering",
+736
+],
+[
+"Mechanics of Materials",
+603
+],
+[
+"Computer Vision and Pattern Recognition",
+579
+],
+[
+"Civil and Structural Engineering",
+520
+],
+[
+"Control and Systems Engineering",
+468
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+408
+],
+[
+"Aerospace Engineering",
+390
+],
+[
+"Artificial Intelligence",
+389
+],
+[
+"Computer Networks and Communications",
+383
+],
+[
+"Molecular Biology",
+366
+],
+[
+"Food Science",
+346
+],
+[
+"Water Science and Technology",
+324
+],
+[
+"Electronic, Optical and Magnetic Materials",
+274
+],
+[
+"Information Systems",
+269
+],
+[
+"Computational Mechanics",
+257
+],
+[
+"Biomaterials",
+248
+],
+[
+"Statistics and Probability",
+242
+],
+[
+"Modeling and Simulation",
+214
+],
+[
+"Organic Chemistry",
+207
+],
+[
+"Statistical and Nonlinear Physics",
+186
+],
+[
+"Global and Planetary Change",
+184
+],
+[
+"Plant Science",
+180
+],
+[
+"Environmental Engineering",
+175
+],
+[
+"Astronomy and Astrophysics",
+160
+],
+[
+"Atmospheric Science",
+159
+],
+[
+"Polymers and Plastics",
+147
+],
+[
+"Media Technology",
+133
+],
+[
+"Ceramics and Composites",
+132
+],
+[
+"Building and Construction",
+124
+],
+[
+"Ocean Engineering",
+115
+],
+[
+"Ecology",
+112
+],
+[
+"Pollution",
+107
+],
+[
+"Automotive Engineering",
+106
+],
+[
+"Applied Mathematics",
+101
+],
+[
+"Signal Processing",
+99
+],
+[
+"Software",
+91
+],
+[
+"Numerical Analysis",
+87
+],
+[
+"Inorganic Chemistry",
+86
+],
+[
+"Geophysics",
+86
+],
+[
+"Molecular Medicine",
+65
+],
+[
+"Atomic and Molecular Physics, and Optics",
+64
+],
+[
+"Nuclear and High Energy Physics",
+62
+],
+[
+"Biotechnology",
+61
+],
+[
+"Industrial and Manufacturing Engineering",
+60
+],
+[
+"Safety, Risk, Reliability and Quality",
+60
+],
+[
+"Cancer Research",
+59
+],
+[
+"Cognitive Neuroscience",
+59
+],
+[
+"Surfaces, Coatings and Films",
+57
+],
+[
+"Computational Theory and Mathematics",
+56
+],
+[
+"Waste Management and Disposal",
+55
+],
+[
+"Genetics",
+52
+],
+[
+"Health, Toxicology and Mutagenesis",
+50
+],
+[
+"Pharmaceutical Science",
+47
+],
+[
+"Spectroscopy",
+46
+],
+[
+"Geometry and Topology",
+45
+],
+[
+"Ecological Modeling",
+41
+],
+[
+"Hardware and Architecture",
+38
+],
+[
+"Neurology",
+37
+],
+[
+"Environmental Chemistry",
+36
+],
+[
+"Fluid Flow and Transfer Processes",
+34
+],
+[
+"Human-Computer Interaction",
+34
+],
+[
+"Mathematical Physics",
+29
+],
+[
+"Oceanography",
+25
+],
+[
+"Immunology",
+25
+],
+[
+"Discrete Mathematics and Combinatorics",
+24
+],
+[
+"Aquatic Science",
+23
+],
+[
+"Algebra and Number Theory",
+23
+],
+[
+"Cellular and Molecular Neuroscience",
+23
+],
+[
+"Condensed Matter Physics",
+23
+],
+[
+"Analytical Chemistry",
+21
+],
+[
+"Geochemistry and Petrology",
+21
+],
+[
+"Soil Science",
+18
+],
+[
+"Management, Monitoring, Policy and Law",
+16
+],
+[
+"Cell Biology",
+15
+],
+[
+"Energy Engineering and Power Technology",
+15
+],
+[
+"Insect Science",
+14
+],
+[
+"Biophysics",
+14
+],
+[
+"Physical and Theoretical Chemistry",
+14
+],
+[
+"General Agricultural and Biological Sciences",
+12
+],
+[
+"Catalysis",
+12
+],
+[
+"Earth-Surface Processes",
+11
+],
+[
+"Toxicology",
+11
+],
+[
+"General Materials Science",
+9
+],
+[
+"Microbiology",
+8
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+7
+],
+[
+"Computer Science Applications",
+7
+],
+[
+"Geology",
+6
+],
+[
+"Agronomy and Crop Science",
+5
+],
+[
+"Pharmacology",
+5
+],
+[
+"Bioengineering",
+4
+],
+[
+"Fuel Technology",
+4
+],
+[
+"Aging",
+3
+],
+[
+"Filtration and Separation",
+3
+],
+[
+"Electrochemistry",
+3
+],
+[
+"Nature and Landscape Conservation",
+3
+],
+[
+"Animal Science and Zoology",
+2
+],
+[
+"Clinical Biochemistry",
+2
+],
+[
+"Applied Microbiology and Biotechnology",
+2
+],
+[
+"Metals and Alloys",
+2
+],
+[
+"Sensory Systems",
+2
+],
+[
+"Instrumentation",
+2
+],
+[
+"Biochemistry",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"Process Chemistry and Technology",
+1
+],
+[
+"Computer Graphics and Computer-Aided Design",
+1
+],
+[
+"Paleontology",
+1
+],
+[
+"Architecture",
+1
+],
+[
+"Developmental Neuroscience",
+1
+],
+[
+"Endocrine and Autonomic Systems",
+1
+],
+[
+"Acoustics and Ultrasonics",
+1
+]
+],
+"I68891433": [
+[
+"Electrical and Electronic Engineering",
+5998
+],
+[
+"Biomedical Engineering",
+2026
+],
+[
+"Materials Chemistry",
+1891
+],
+[
+"Mechanical Engineering",
+1808
+],
+[
+"Control and Systems Engineering",
+1527
+],
+[
+"Artificial Intelligence",
+1497
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+1452
+],
+[
+"Civil and Structural Engineering",
+1205
+],
+[
+"Atomic and Molecular Physics, and Optics",
+1104
+],
+[
+"Molecular Biology",
+961
+],
+[
+"Mechanics of Materials",
+901
+],
+[
+"Electronic, Optical and Magnetic Materials",
+831
+],
+[
+"Aerospace Engineering",
+766
+],
+[
+"Computational Mechanics",
+665
+],
+[
+"Computer Vision and Pattern Recognition",
+658
+],
+[
+"Polymers and Plastics",
+644
+],
+[
+"Global and Planetary Change",
+605
+],
+[
+"Organic Chemistry",
+589
+],
+[
+"Computational Theory and Mathematics",
+520
+],
+[
+"Biomaterials",
+517
+],
+[
+"Computer Networks and Communications",
+489
+],
+[
+"Atmospheric Science",
+476
+],
+[
+"Environmental Engineering",
+474
+],
+[
+"Building and Construction",
+472
+],
+[
+"Water Science and Technology",
+426
+],
+[
+"Plant Science",
+415
+],
+[
+"Information Systems",
+360
+],
+[
+"Automotive Engineering",
+347
+],
+[
+"Pollution",
+346
+],
+[
+"Applied Mathematics",
+309
+],
+[
+"Cognitive Neuroscience",
+285
+],
+[
+"Statistical and Nonlinear Physics",
+285
+],
+[
+"Nuclear and High Energy Physics",
+280
+],
+[
+"Catalysis",
+261
+],
+[
+"Health, Toxicology and Mutagenesis",
+239
+],
+[
+"Safety, Risk, Reliability and Quality",
+236
+],
+[
+"Waste Management and Disposal",
+226
+],
+[
+"Mathematical Physics",
+223
+],
+[
+"Signal Processing",
+221
+],
+[
+"Condensed Matter Physics",
+213
+],
+[
+"Inorganic Chemistry",
+196
+],
+[
+"Food Science",
+192
+],
+[
+"Ocean Engineering",
+192
+],
+[
+"Fluid Flow and Transfer Processes",
+185
+],
+[
+"Hardware and Architecture",
+162
+],
+[
+"Industrial and Manufacturing Engineering",
+162
+],
+[
+"Astronomy and Astrophysics",
+156
+],
+[
+"Algebra and Number Theory",
+144
+],
+[
+"Oceanography",
+126
+],
+[
+"Media Technology",
+124
+],
+[
+"Modeling and Simulation",
+111
+],
+[
+"Genetics",
+110
+],
+[
+"Spectroscopy",
+108
+],
+[
+"Surfaces, Coatings and Films",
+108
+],
+[
+"Physical and Theoretical Chemistry",
+91
+],
+[
+"Energy Engineering and Power Technology",
+88
+],
+[
+"Biophysics",
+77
+],
+[
+"Statistics and Probability",
+77
+],
+[
+"Management, Monitoring, Policy and Law",
+74
+],
+[
+"Human-Computer Interaction",
+72
+],
+[
+"Ecology",
+72
+],
+[
+"Soil Science",
+70
+],
+[
+"Molecular Medicine",
+70
+],
+[
+"Immunology",
+67
+],
+[
+"Geometry and Topology",
+67
+],
+[
+"Analytical Chemistry",
+66
+],
+[
+"Pharmaceutical Science",
+64
+],
+[
+"Ceramics and Composites",
+59
+],
+[
+"Cancer Research",
+58
+],
+[
+"Numerical Analysis",
+52
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+51
+],
+[
+"Biotechnology",
+51
+],
+[
+"Discrete Mathematics and Combinatorics",
+45
+],
+[
+"General Agricultural and Biological Sciences",
+39
+],
+[
+"Neurology",
+38
+],
+[
+"Environmental Chemistry",
+37
+],
+[
+"Cell Biology",
+34
+],
+[
+"Computer Graphics and Computer-Aided Design",
+29
+],
+[
+"Geophysics",
+28
+],
+[
+"Ecological Modeling",
+26
+],
+[
+"Geochemistry and Petrology",
+25
+],
+[
+"Radiation",
+24
+],
+[
+"Acoustics and Ultrasonics",
+22
+],
+[
+"Aquatic Science",
+19
+],
+[
+"Pharmacology",
+19
+],
+[
+"Bioengineering",
+18
+],
+[
+"Microbiology",
+18
+],
+[
+"Earth-Surface Processes",
+17
+],
+[
+"Cellular and Molecular Neuroscience",
+16
+],
+[
+"Nature and Landscape Conservation",
+15
+],
+[
+"Forestry",
+14
+],
+[
+"Computer Science Applications",
+14
+],
+[
+"Software",
+13
+],
+[
+"Instrumentation",
+13
+],
+[
+"Process Chemistry and Technology",
+12
+],
+[
+"Geology",
+12
+],
+[
+"Insect Science",
+11
+],
+[
+"Architecture",
+11
+],
+[
+"Filtration and Separation",
+10
+],
+[
+"Toxicology",
+10
+],
+[
+"Agronomy and Crop Science",
+9
+],
+[
+"General Materials Science",
+9
+],
+[
+"Applied Microbiology and Biotechnology",
+8
+],
+[
+"Metals and Alloys",
+8
+],
+[
+"Electrochemistry",
+7
+],
+[
+"Fuel Technology",
+7
+],
+[
+"Biochemistry",
+5
+],
+[
+"Developmental Neuroscience",
+5
+],
+[
+"Virology",
+4
+],
+[
+"Theoretical Computer Science",
+4
+],
+[
+"Animal Science and Zoology",
+3
+],
+[
+"Clinical Biochemistry",
+3
+],
+[
+"Structural Biology",
+3
+],
+[
+"General Energy",
+3
+],
+[
+"Sensory Systems",
+3
+],
+[
+"Aging",
+2
+],
+[
+"Computational Mathematics",
+2
+],
+[
+"Endocrinology",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"General Engineering",
+1
+],
+[
+"Parasitology",
+1
+]
+],
+"I94234084": [
+[
+"Electrical and Electronic Engineering",
+3001
+],
+[
+"Materials Chemistry",
+1473
+],
+[
+"Computational Mechanics",
+1324
+],
+[
+"Aerospace Engineering",
+1316
+],
+[
+"Mechanical Engineering",
+1234
+],
+[
+"Biomedical Engineering",
+922
+],
+[
+"Artificial Intelligence",
+914
+],
+[
+"Atomic and Molecular Physics, and Optics",
+901
+],
+[
+"Civil and Structural Engineering",
+765
+],
+[
+"Organic Chemistry",
+738
+],
+[
+"Nuclear and High Energy Physics",
+702
+],
+[
+"Electronic, Optical and Magnetic Materials",
+699
+],
+[
+"Control and Systems Engineering",
+626
+],
+[
+"Computer Vision and Pattern Recognition",
+554
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+534
+],
+[
+"Astronomy and Astrophysics",
+490
+],
+[
+"Mechanics of Materials",
+484
+],
+[
+"Molecular Biology",
+459
+],
+[
+"Fluid Flow and Transfer Processes",
+433
+],
+[
+"Statistics and Probability",
+399
+],
+[
+"Computer Networks and Communications",
+396
+],
+[
+"Atmospheric Science",
+373
+],
+[
+"Computational Theory and Mathematics",
+361
+],
+[
+"Applied Mathematics",
+325
+],
+[
+"Inorganic Chemistry",
+322
+],
+[
+"Condensed Matter Physics",
+297
+],
+[
+"Geophysics",
+241
+],
+[
+"Information Systems",
+240
+],
+[
+"Signal Processing",
+232
+],
+[
+"Environmental Engineering",
+232
+],
+[
+"Water Science and Technology",
+216
+],
+[
+"Biomaterials",
+190
+],
+[
+"Statistical and Nonlinear Physics",
+171
+],
+[
+"Global and Planetary Change",
+158
+],
+[
+"Mathematical Physics",
+155
+],
+[
+"Cognitive Neuroscience",
+149
+],
+[
+"Safety, Risk, Reliability and Quality",
+129
+],
+[
+"Automotive Engineering",
+121
+],
+[
+"Hardware and Architecture",
+111
+],
+[
+"Polymers and Plastics",
+111
+],
+[
+"Physical and Theoretical Chemistry",
+109
+],
+[
+"Surfaces, Coatings and Films",
+105
+],
+[
+"Geometry and Topology",
+104
+],
+[
+"Catalysis",
+101
+],
+[
+"Ocean Engineering",
+98
+],
+[
+"Algebra and Number Theory",
+90
+],
+[
+"Ecology",
+87
+],
+[
+"Spectroscopy",
+84
+],
+[
+"Health, Toxicology and Mutagenesis",
+80
+],
+[
+"Environmental Chemistry",
+74
+],
+[
+"Ceramics and Composites",
+73
+],
+[
+"Media Technology",
+71
+],
+[
+"Building and Construction",
+70
+],
+[
+"Geochemistry and Petrology",
+68
+],
+[
+"Plant Science",
+64
+],
+[
+"Pollution",
+63
+],
+[
+"Modeling and Simulation",
+62
+],
+[
+"Oceanography",
+59
+],
+[
+"Human-Computer Interaction",
+58
+],
+[
+"Genetics",
+56
+],
+[
+"Molecular Medicine",
+52
+],
+[
+"Computer Science Applications",
+46
+],
+[
+"Industrial and Manufacturing Engineering",
+45
+],
+[
+"Waste Management and Disposal",
+44
+],
+[
+"Numerical Analysis",
+42
+],
+[
+"Management, Monitoring, Policy and Law",
+41
+],
+[
+"Cellular and Molecular Neuroscience",
+39
+],
+[
+"Soil Science",
+38
+],
+[
+"Geology",
+37
+],
+[
+"Earth-Surface Processes",
+34
+],
+[
+"Cell Biology",
+33
+],
+[
+"Biophysics",
+32
+],
+[
+"Software",
+31
+],
+[
+"Pharmaceutical Science",
+31
+],
+[
+"Discrete Mathematics and Combinatorics",
+30
+],
+[
+"Cancer Research",
+29
+],
+[
+"General Agricultural and Biological Sciences",
+27
+],
+[
+"Computer Graphics and Computer-Aided Design",
+23
+],
+[
+"Process Chemistry and Technology",
+22
+],
+[
+"Food Science",
+20
+],
+[
+"Bioengineering",
+20
+],
+[
+"Radiation",
+19
+],
+[
+"Paleontology",
+18
+],
+[
+"Energy Engineering and Power Technology",
+18
+],
+[
+"Immunology",
+16
+],
+[
+"Acoustics and Ultrasonics",
+16
+],
+[
+"Architecture",
+14
+],
+[
+"Ecological Modeling",
+14
+],
+[
+"Metals and Alloys",
+14
+],
+[
+"Electrochemistry",
+13
+],
+[
+"Nature and Landscape Conservation",
+13
+],
+[
+"Sensory Systems",
+11
+],
+[
+"Instrumentation",
+11
+],
+[
+"General Materials Science",
+9
+],
+[
+"Neurology",
+9
+],
+[
+"Biochemistry",
+8
+],
+[
+"Analytical Chemistry",
+8
+],
+[
+"Developmental Neuroscience",
+8
+],
+[
+"Microbiology",
+7
+],
+[
+"Aging",
+6
+],
+[
+"Toxicology",
+6
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+5
+],
+[
+"Biotechnology",
+5
+],
+[
+"Endocrinology",
+4
+],
+[
+"Structural Biology",
+4
+],
+[
+"Agronomy and Crop Science",
+3
+],
+[
+"Filtration and Separation",
+3
+],
+[
+"General Energy",
+3
+],
+[
+"Virology",
+3
+],
+[
+"Pharmacology",
+3
+],
+[
+"Aquatic Science",
+2
+],
+[
+"Insect Science",
+2
+],
+[
+"Clinical Biochemistry",
+2
+],
+[
+"Computational Mathematics",
+2
+],
+[
+"Theoretical Computer Science",
+2
+],
+[
+"Endocrine and Autonomic Systems",
+2
+],
+[
+"Animal Science and Zoology",
+1
+],
+[
+"Forestry",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"Chemical Health and Safety",
+1
+]
+],
+"I189109744": [
+[
+"Electrical and Electronic Engineering",
+2245
+],
+[
+"Mechanical Engineering",
+1296
+],
+[
+"Mechanics of Materials",
+1053
+],
+[
+"Materials Chemistry",
+1015
+],
+[
+"Aerospace Engineering",
+729
+],
+[
+"Biomedical Engineering",
+703
+],
+[
+"Geophysics",
+565
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+560
+],
+[
+"Computer Networks and Communications",
+521
+],
+[
+"Civil and Structural Engineering",
+478
+],
+[
+"Artificial Intelligence",
+441
+],
+[
+"Water Science and Technology",
+409
+],
+[
+"Control and Systems Engineering",
+408
+],
+[
+"Computational Mechanics",
+381
+],
+[
+"Ocean Engineering",
+347
+],
+[
+"Computer Vision and Pattern Recognition",
+345
+],
+[
+"Organic Chemistry",
+276
+],
+[
+"Environmental Engineering",
+265
+],
+[
+"Information Systems",
+252
+],
+[
+"Electronic, Optical and Magnetic Materials",
+242
+],
+[
+"Safety, Risk, Reliability and Quality",
+233
+],
+[
+"Statistics and Probability",
+231
+],
+[
+"Atomic and Molecular Physics, and Optics",
+231
+],
+[
+"Computational Theory and Mathematics",
+227
+],
+[
+"Building and Construction",
+181
+],
+[
+"Pollution",
+173
+],
+[
+"Applied Mathematics",
+149
+],
+[
+"Molecular Biology",
+122
+],
+[
+"Environmental Chemistry",
+101
+],
+[
+"Automotive Engineering",
+100
+],
+[
+"Geochemistry and Petrology",
+98
+],
+[
+"Health, Toxicology and Mutagenesis",
+97
+],
+[
+"Polymers and Plastics",
+96
+],
+[
+"Global and Planetary Change",
+93
+],
+[
+"Analytical Chemistry",
+89
+],
+[
+"Biomaterials",
+82
+],
+[
+"Inorganic Chemistry",
+81
+],
+[
+"Nuclear and High Energy Physics",
+80
+],
+[
+"Ecological Modeling",
+78
+],
+[
+"Waste Management and Disposal",
+72
+],
+[
+"Plant Science",
+67
+],
+[
+"Management, Monitoring, Policy and Law",
+66
+],
+[
+"Atmospheric Science",
+64
+],
+[
+"Surfaces, Coatings and Films",
+63
+],
+[
+"Condensed Matter Physics",
+58
+],
+[
+"Geology",
+57
+],
+[
+"Media Technology",
+54
+],
+[
+"Soil Science",
+52
+],
+[
+"Ecology",
+50
+],
+[
+"Energy Engineering and Power Technology",
+49
+],
+[
+"Statistical and Nonlinear Physics",
+49
+],
+[
+"Industrial and Manufacturing Engineering",
+47
+],
+[
+"Astronomy and Astrophysics",
+47
+],
+[
+"Catalysis",
+46
+],
+[
+"Paleontology",
+46
+],
+[
+"Cognitive Neuroscience",
+45
+],
+[
+"Modeling and Simulation",
+41
+],
+[
+"Signal Processing",
+40
+],
+[
+"Fluid Flow and Transfer Processes",
+39
+],
+[
+"Spectroscopy",
+38
+],
+[
+"Software",
+36
+],
+[
+"Fuel Technology",
+33
+],
+[
+"Process Chemistry and Technology",
+32
+],
+[
+"Earth-Surface Processes",
+29
+],
+[
+"Molecular Medicine",
+27
+],
+[
+"Oceanography",
+27
+],
+[
+"Hardware and Architecture",
+26
+],
+[
+"Food Science",
+24
+],
+[
+"Ceramics and Composites",
+22
+],
+[
+"Neurology",
+16
+],
+[
+"Geometry and Topology",
+14
+],
+[
+"General Agricultural and Biological Sciences",
+13
+],
+[
+"Numerical Analysis",
+13
+],
+[
+"Physical and Theoretical Chemistry",
+12
+],
+[
+"Nature and Landscape Conservation",
+11
+],
+[
+"Bioengineering",
+10
+],
+[
+"Radiation",
+10
+],
+[
+"Biophysics",
+9
+],
+[
+"Pharmaceutical Science",
+9
+],
+[
+"Human-Computer Interaction",
+7
+],
+[
+"Algebra and Number Theory",
+7
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+6
+],
+[
+"Computer Graphics and Computer-Aided Design",
+6
+],
+[
+"Insect Science",
+5
+],
+[
+"Electrochemistry",
+5
+],
+[
+"Forestry",
+4
+],
+[
+"Microbiology",
+4
+],
+[
+"Toxicology",
+4
+],
+[
+"Biotechnology",
+3
+],
+[
+"Cancer Research",
+3
+],
+[
+"General Energy",
+3
+],
+[
+"Parasitology",
+3
+],
+[
+"Metals and Alloys",
+3
+],
+[
+"Mathematical Physics",
+3
+],
+[
+"Cell Biology",
+2
+],
+[
+"Genetics",
+2
+],
+[
+"Computer Science Applications",
+2
+],
+[
+"Instrumentation",
+2
+],
+[
+"Agronomy and Crop Science",
+1
+],
+[
+"Animal Science and Zoology",
+1
+],
+[
+"Filtration and Separation",
+1
+],
+[
+"Space and Planetary Science",
+1
+],
+[
+"Discrete Mathematics and Combinatorics",
+1
+],
+[
+"Theoretical Computer Science",
+1
+],
+[
+"Cellular and Molecular Neuroscience",
+1
+],
+[
+"Pharmacology",
+1
+]
+],
+"I6498739": [
+[
+"Artificial Intelligence",
+1314
+],
+[
+"Statistics and Probability",
+806
+],
+[
+"Computer Vision and Pattern Recognition",
+747
+],
+[
+"Computational Theory and Mathematics",
+531
+],
+[
+"Mathematical Physics",
+421
+],
+[
+"Computer Networks and Communications",
+390
+],
+[
+"Applied Mathematics",
+354
+],
+[
+"Geometry and Topology",
+292
+],
+[
+"Molecular Biology",
+291
+],
+[
+"Information Systems",
+224
+],
+[
+"Atomic and Molecular Physics, and Optics",
+198
+],
+[
+"Statistical and Nonlinear Physics",
+176
+],
+[
+"Electrical and Electronic Engineering",
+169
+],
+[
+"Algebra and Number Theory",
+169
+],
+[
+"Astronomy and Astrophysics",
+137
+],
+[
+"Computer Graphics and Computer-Aided Design",
+99
+],
+[
+"Cognitive Neuroscience",
+93
+],
+[
+"Ecology",
+89
+],
+[
+"Paleontology",
+88
+],
+[
+"Modeling and Simulation",
+79
+],
+[
+"Media Technology",
+78
+],
+[
+"Plant Science",
+72
+],
+[
+"Materials Chemistry",
+72
+],
+[
+"Earth-Surface Processes",
+71
+],
+[
+"Pollution",
+71
+],
+[
+"Hardware and Architecture",
+69
+],
+[
+"Genetics",
+67
+],
+[
+"Discrete Mathematics and Combinatorics",
+65
+],
+[
+"Biomedical Engineering",
+62
+],
+[
+"Geophysics",
+61
+],
+[
+"Computational Mechanics",
+47
+],
+[
+"Soil Science",
+45
+],
+[
+"Signal Processing",
+44
+],
+[
+"Nuclear and High Energy Physics",
+44
+],
+[
+"Control and Systems Engineering",
+39
+],
+[
+"Atmospheric Science",
+38
+],
+[
+"Global and Planetary Change",
+36
+],
+[
+"Health, Toxicology and Mutagenesis",
+35
+],
+[
+"Safety, Risk, Reliability and Quality",
+32
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+31
+],
+[
+"Environmental Chemistry",
+30
+],
+[
+"Cancer Research",
+29
+],
+[
+"Environmental Engineering",
+28
+],
+[
+"Numerical Analysis",
+27
+],
+[
+"Software",
+26
+],
+[
+"Nature and Landscape Conservation",
+24
+],
+[
+"Water Science and Technology",
+24
+],
+[
+"Neurology",
+22
+],
+[
+"General Agricultural and Biological Sciences",
+18
+],
+[
+"Mechanical Engineering",
+18
+],
+[
+"Ocean Engineering",
+18
+],
+[
+"Ecological Modeling",
+18
+],
+[
+"Computational Mathematics",
+18
+],
+[
+"Aerospace Engineering",
+17
+],
+[
+"Theoretical Computer Science",
+17
+],
+[
+"Computer Science Applications",
+16
+],
+[
+"Geochemistry and Petrology",
+16
+],
+[
+"Food Science",
+15
+],
+[
+"Immunology",
+14
+],
+[
+"Oceanography",
+13
+],
+[
+"Mechanics of Materials",
+13
+],
+[
+"Building and Construction",
+12
+],
+[
+"Organic Chemistry",
+11
+],
+[
+"Human-Computer Interaction",
+11
+],
+[
+"Industrial and Manufacturing Engineering",
+11
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+10
+],
+[
+"Condensed Matter Physics",
+10
+],
+[
+"Biophysics",
+9
+],
+[
+"Cell Biology",
+9
+],
+[
+"Civil and Structural Engineering",
+8
+],
+[
+"Fluid Flow and Transfer Processes",
+7
+],
+[
+"Geology",
+7
+],
+[
+"Automotive Engineering",
+7
+],
+[
+"Management, Monitoring, Policy and Law",
+7
+],
+[
+"Waste Management and Disposal",
+7
+],
+[
+"Biomaterials",
+7
+],
+[
+"Polymers and Plastics",
+6
+],
+[
+"Physical and Theoretical Chemistry",
+5
+],
+[
+"Electronic, Optical and Magnetic Materials",
+5
+],
+[
+"Cellular and Molecular Neuroscience",
+5
+],
+[
+"Agronomy and Crop Science",
+4
+],
+[
+"Insect Science",
+4
+],
+[
+"Fuel Technology",
+4
+],
+[
+"Aging",
+3
+],
+[
+"Analytical Chemistry",
+3
+],
+[
+"Applied Microbiology and Biotechnology",
+3
+],
+[
+"Molecular Medicine",
+2
+],
+[
+"Inorganic Chemistry",
+2
+],
+[
+"Spectroscopy",
+2
+],
+[
+"Sensory Systems",
+2
+],
+[
+"Aquatic Science",
+1
+],
+[
+"Forestry",
+1
+],
+[
+"Biotechnology",
+1
+],
+[
+"Endocrinology",
+1
+],
+[
+"Virology",
+1
+],
+[
+"Surfaces, Coatings and Films",
+1
+],
+[
+"Behavioral Neuroscience",
+1
+],
+[
+"Endocrine and Autonomic Systems",
+1
+],
+[
+"Pharmacology",
+1
+],
+[
+"Toxicology",
+1
+]
+],
+"I115715567": [
+[
+"Electrical and Electronic Engineering",
+1005
+],
+[
+"Mechanical Engineering",
+526
+],
+[
+"Biomedical Engineering",
+475
+],
+[
+"Materials Chemistry",
+445
+],
+[
+"Artificial Intelligence",
+386
+],
+[
+"Information Systems",
+376
+],
+[
+"Aerospace Engineering",
+348
+],
+[
+"Computer Networks and Communications",
+345
+],
+[
+"Computer Vision and Pattern Recognition",
+329
+],
+[
+"Control and Systems Engineering",
+268
+],
+[
+"Plant Science",
+235
+],
+[
+"Organic Chemistry",
+193
+],
+[
+"Molecular Biology",
+182
+],
+[
+"Computational Theory and Mathematics",
+178
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+177
+],
+[
+"Water Science and Technology",
+164
+],
+[
+"Computational Mechanics",
+152
+],
+[
+"Electronic, Optical and Magnetic Materials",
+145
+],
+[
+"Pharmaceutical Science",
+143
+],
+[
+"Biomaterials",
+136
+],
+[
+"Signal Processing",
+134
+],
+[
+"Environmental Engineering",
+125
+],
+[
+"Industrial and Manufacturing Engineering",
+116
+],
+[
+"Global and Planetary Change",
+114
+],
+[
+"Civil and Structural Engineering",
+107
+],
+[
+"Pollution",
+106
+],
+[
+"Cognitive Neuroscience",
+105
+],
+[
+"Food Science",
+102
+],
+[
+"Mechanics of Materials",
+89
+],
+[
+"Building and Construction",
+86
+],
+[
+"Numerical Analysis",
+77
+],
+[
+"Ecology",
+68
+],
+[
+"Atmospheric Science",
+64
+],
+[
+"Astronomy and Astrophysics",
+64
+],
+[
+"Statistical and Nonlinear Physics",
+64
+],
+[
+"Polymers and Plastics",
+63
+],
+[
+"Safety, Risk, Reliability and Quality",
+62
+],
+[
+"Automotive Engineering",
+56
+],
+[
+"Media Technology",
+55
+],
+[
+"Atomic and Molecular Physics, and Optics",
+55
+],
+[
+"Modeling and Simulation",
+53
+],
+[
+"Molecular Medicine",
+47
+],
+[
+"Condensed Matter Physics",
+46
+],
+[
+"Applied Mathematics",
+40
+],
+[
+"Biotechnology",
+39
+],
+[
+"Analytical Chemistry",
+37
+],
+[
+"Nuclear and High Energy Physics",
+35
+],
+[
+"Environmental Chemistry",
+34
+],
+[
+"Waste Management and Disposal",
+32
+],
+[
+"Inorganic Chemistry",
+30
+],
+[
+"Software",
+28
+],
+[
+"Ocean Engineering",
+26
+],
+[
+"Statistics and Probability",
+26
+],
+[
+"Neurology",
+26
+],
+[
+"Soil Science",
+23
+],
+[
+"Catalysis",
+23
+],
+[
+"Fluid Flow and Transfer Processes",
+21
+],
+[
+"Pharmacology",
+19
+],
+[
+"Physical and Theoretical Chemistry",
+18
+],
+[
+"Geophysics",
+17
+],
+[
+"Health, Toxicology and Mutagenesis",
+17
+],
+[
+"Human-Computer Interaction",
+15
+],
+[
+"General Agricultural and Biological Sciences",
+14
+],
+[
+"Management, Monitoring, Policy and Law",
+14
+],
+[
+"Toxicology",
+14
+],
+[
+"Insect Science",
+13
+],
+[
+"Genetics",
+12
+],
+[
+"Hardware and Architecture",
+12
+],
+[
+"Ceramics and Composites",
+12
+],
+[
+"Mathematical Physics",
+12
+],
+[
+"Cancer Research",
+11
+],
+[
+"Cell Biology",
+11
+],
+[
+"Geochemistry and Petrology",
+10
+],
+[
+"Microbiology",
+10
+],
+[
+"Spectroscopy",
+9
+],
+[
+"Computer Science Applications",
+9
+],
+[
+"Energy Engineering and Power Technology",
+9
+],
+[
+"Ecological Modeling",
+9
+],
+[
+"Immunology",
+9
+],
+[
+"Geometry and Topology",
+9
+],
+[
+"Biophysics",
+8
+],
+[
+"Animal Science and Zoology",
+6
+],
+[
+"Earth-Surface Processes",
+6
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+5
+],
+[
+"Biochemistry",
+5
+],
+[
+"Endocrine and Autonomic Systems",
+5
+],
+[
+"Agronomy and Crop Science",
+4
+],
+[
+"Aquatic Science",
+4
+],
+[
+"Clinical Biochemistry",
+4
+],
+[
+"Oceanography",
+4
+],
+[
+"Fuel Technology",
+4
+],
+[
+"Architecture",
+4
+],
+[
+"Surfaces, Coatings and Films",
+4
+],
+[
+"Drug Discovery",
+4
+],
+[
+"Computer Graphics and Computer-Aided Design",
+3
+],
+[
+"Geology",
+3
+],
+[
+"Virology",
+3
+],
+[
+"Discrete Mathematics and Combinatorics",
+3
+],
+[
+"Radiation",
+3
+],
+[
+"Physiology",
+2
+],
+[
+"Process Chemistry and Technology",
+2
+],
+[
+"General Materials Science",
+2
+],
+[
+"Behavioral Neuroscience",
+2
+],
+[
+"Cellular and Molecular Neuroscience",
+2
+],
+[
+"Endocrinology",
+1
+],
+[
+"Electrochemistry",
+1
+],
+[
+"Applied Microbiology and Biotechnology",
+1
+],
+[
+"Biological Psychiatry",
+1
+],
+[
+"Sensory Systems",
+1
+]
+],
+"I98365261": [
+[
+"Electrical and Electronic Engineering",
+1259
+],
+[
+"Mechanical Engineering",
+554
+],
+[
+"Materials Chemistry",
+421
+],
+[
+"Artificial Intelligence",
+393
+],
+[
+"Biomedical Engineering",
+393
+],
+[
+"Computer Vision and Pattern Recognition",
+351
+],
+[
+"Civil and Structural Engineering",
+314
+],
+[
+"Aerospace Engineering",
+286
+],
+[
+"Control and Systems Engineering",
+281
+],
+[
+"Astronomy and Astrophysics",
+276
+],
+[
+"Computer Networks and Communications",
+258
+],
+[
+"Mechanics of Materials",
+244
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+213
+],
+[
+"Environmental Engineering",
+151
+],
+[
+"Computational Mechanics",
+144
+],
+[
+"Organic Chemistry",
+139
+],
+[
+"Computational Theory and Mathematics",
+138
+],
+[
+"Spectroscopy",
+114
+],
+[
+"Electronic, Optical and Magnetic Materials",
+109
+],
+[
+"Statistical and Nonlinear Physics",
+107
+],
+[
+"Nuclear and High Energy Physics",
+101
+],
+[
+"Hardware and Architecture",
+100
+],
+[
+"Molecular Biology",
+92
+],
+[
+"Geometry and Topology",
+92
+],
+[
+"Statistics and Probability",
+91
+],
+[
+"Atomic and Molecular Physics, and Optics",
+89
+],
+[
+"Water Science and Technology",
+83
+],
+[
+"Safety, Risk, Reliability and Quality",
+79
+],
+[
+"Information Systems",
+78
+],
+[
+"Ecology",
+60
+],
+[
+"Automotive Engineering",
+58
+],
+[
+"Biomaterials",
+54
+],
+[
+"Building and Construction",
+50
+],
+[
+"Polymers and Plastics",
+48
+],
+[
+"Inorganic Chemistry",
+44
+],
+[
+"Global and Planetary Change",
+44
+],
+[
+"Modeling and Simulation",
+44
+],
+[
+"Plant Science",
+40
+],
+[
+"Fluid Flow and Transfer Processes",
+34
+],
+[
+"Pollution",
+34
+],
+[
+"Geophysics",
+33
+],
+[
+"Food Science",
+32
+],
+[
+"Ocean Engineering",
+32
+],
+[
+"Earth-Surface Processes",
+31
+],
+[
+"Condensed Matter Physics",
+29
+],
+[
+"Environmental Chemistry",
+28
+],
+[
+"Ceramics and Composites",
+28
+],
+[
+"Computer Science Applications",
+26
+],
+[
+"Media Technology",
+25
+],
+[
+"Applied Mathematics",
+24
+],
+[
+"Signal Processing",
+22
+],
+[
+"Waste Management and Disposal",
+21
+],
+[
+"Cognitive Neuroscience",
+20
+],
+[
+"Biophysics",
+16
+],
+[
+"Molecular Medicine",
+16
+],
+[
+"Oceanography",
+16
+],
+[
+"Energy Engineering and Power Technology",
+16
+],
+[
+"Management, Monitoring, Policy and Law",
+16
+],
+[
+"Neurology",
+16
+],
+[
+"Surfaces, Coatings and Films",
+14
+],
+[
+"Health, Toxicology and Mutagenesis",
+13
+],
+[
+"Bioengineering",
+12
+],
+[
+"Geochemistry and Petrology",
+11
+],
+[
+"Mathematical Physics",
+11
+],
+[
+"Cell Biology",
+10
+],
+[
+"Computer Graphics and Computer-Aided Design",
+9
+],
+[
+"Human-Computer Interaction",
+9
+],
+[
+"Paleontology",
+9
+],
+[
+"Soil Science",
+8
+],
+[
+"Biochemistry",
+8
+],
+[
+"Atmospheric Science",
+8
+],
+[
+"Biotechnology",
+7
+],
+[
+"Cancer Research",
+7
+],
+[
+"Immunology",
+7
+],
+[
+"Industrial and Manufacturing Engineering",
+5
+],
+[
+"Ecological Modeling",
+5
+],
+[
+"Physical and Theoretical Chemistry",
+4
+],
+[
+"Radiation",
+4
+],
+[
+"Insect Science",
+3
+],
+[
+"Geology",
+3
+],
+[
+"Numerical Analysis",
+3
+],
+[
+"Toxicology",
+3
+],
+[
+"Animal Science and Zoology",
+2
+],
+[
+"Aquatic Science",
+2
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+2
+],
+[
+"Architecture",
+2
+],
+[
+"General Agricultural and Biological Sciences",
+1
+],
+[
+"Agronomy and Crop Science",
+1
+],
+[
+"Forestry",
+1
+],
+[
+"Genetics",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"Process Chemistry and Technology",
+1
+],
+[
+"Analytical Chemistry",
+1
+],
+[
+"Electrochemistry",
+1
+],
+[
+"Software",
+1
+],
+[
+"Fuel Technology",
+1
+],
+[
+"General Materials Science",
+1
+],
+[
+"Algebra and Number Theory",
+1
+],
+[
+"Discrete Mathematics and Combinatorics",
+1
+],
+[
+"Theoretical Computer Science",
+1
+],
+[
+"Cellular and Molecular Neuroscience",
+1
+],
+[
+"Developmental Neuroscience",
+1
+],
+[
+"Pharmaceutical Science",
+1
+],
+[
+"Acoustics and Ultrasonics",
+1
+]
+],
+"I24676775": [
+[
+"Electrical and Electronic Engineering",
+3173
+],
+[
+"Mechanical Engineering",
+2457
+],
+[
+"Materials Chemistry",
+2272
+],
+[
+"Biomedical Engineering",
+2001
+],
+[
+"Computational Mechanics",
+2000
+],
+[
+"Nuclear and High Energy Physics",
+1862
+],
+[
+"Artificial Intelligence",
+1618
+],
+[
+"Civil and Structural Engineering",
+1583
+],
+[
+"Mechanics of Materials",
+1264
+],
+[
+"Aerospace Engineering",
+1109
+],
+[
+"Organic Chemistry",
+981
+],
+[
+"Computer Vision and Pattern Recognition",
+915
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+855
+],
+[
+"Control and Systems Engineering",
+841
+],
+[
+"Molecular Biology",
+837
+],
+[
+"Electronic, Optical and Magnetic Materials",
+833
+],
+[
+"Computer Networks and Communications",
+787
+],
+[
+"Ocean Engineering",
+787
+],
+[
+"Computational Theory and Mathematics",
+680
+],
+[
+"Atomic and Molecular Physics, and Optics",
+575
+],
+[
+"Condensed Matter Physics",
+459
+],
+[
+"Statistical and Nonlinear Physics",
+445
+],
+[
+"Fluid Flow and Transfer Processes",
+401
+],
+[
+"Building and Construction",
+400
+],
+[
+"Automotive Engineering",
+387
+],
+[
+"Astronomy and Astrophysics",
+377
+],
+[
+"Water Science and Technology",
+364
+],
+[
+"Geometry and Topology",
+346
+],
+[
+"Biomaterials",
+340
+],
+[
+"Environmental Engineering",
+307
+],
+[
+"Information Systems",
+290
+],
+[
+"Atmospheric Science",
+277
+],
+[
+"Cognitive Neuroscience",
+277
+],
+[
+"Global and Planetary Change",
+275
+],
+[
+"Inorganic Chemistry",
+254
+],
+[
+"Polymers and Plastics",
+251
+],
+[
+"Mathematical Physics",
+217
+],
+[
+"Applied Mathematics",
+214
+],
+[
+"Earth-Surface Processes",
+212
+],
+[
+"Environmental Chemistry",
+199
+],
+[
+"Pollution",
+181
+],
+[
+"Oceanography",
+163
+],
+[
+"Safety, Risk, Reliability and Quality",
+147
+],
+[
+"Signal Processing",
+144
+],
+[
+"Catalysis",
+143
+],
+[
+"Industrial and Manufacturing Engineering",
+138
+],
+[
+"Spectroscopy",
+124
+],
+[
+"Hardware and Architecture",
+122
+],
+[
+"Plant Science",
+121
+],
+[
+"Waste Management and Disposal",
+119
+],
+[
+"Health, Toxicology and Mutagenesis",
+106
+],
+[
+"Physical and Theoretical Chemistry",
+100
+],
+[
+"Statistics and Probability",
+98
+],
+[
+"Food Science",
+95
+],
+[
+"Algebra and Number Theory",
+94
+],
+[
+"Ceramics and Composites",
+90
+],
+[
+"Surfaces, Coatings and Films",
+89
+],
+[
+"Ecology",
+77
+],
+[
+"Modeling and Simulation",
+76
+],
+[
+"Cancer Research",
+73
+],
+[
+"Geophysics",
+71
+],
+[
+"Molecular Medicine",
+65
+],
+[
+"Media Technology",
+63
+],
+[
+"Genetics",
+62
+],
+[
+"Cell Biology",
+60
+],
+[
+"Biophysics",
+59
+],
+[
+"Analytical Chemistry",
+57
+],
+[
+"Ecological Modeling",
+54
+],
+[
+"Pharmaceutical Science",
+48
+],
+[
+"Biotechnology",
+44
+],
+[
+"Metals and Alloys",
+42
+],
+[
+"Neurology",
+42
+],
+[
+"Human-Computer Interaction",
+41
+],
+[
+"Computer Science Applications",
+35
+],
+[
+"Computer Graphics and Computer-Aided Design",
+28
+],
+[
+"Numerical Analysis",
+28
+],
+[
+"Energy Engineering and Power Technology",
+27
+],
+[
+"Management, Monitoring, Policy and Law",
+25
+],
+[
+"Discrete Mathematics and Combinatorics",
+25
+],
+[
+"Acoustics and Ultrasonics",
+24
+],
+[
+"Soil Science",
+23
+],
+[
+"Process Chemistry and Technology",
+23
+],
+[
+"Immunology",
+21
+],
+[
+"Software",
+18
+],
+[
+"General Agricultural and Biological Sciences",
+17
+],
+[
+"Filtration and Separation",
+17
+],
+[
+"Radiation",
+17
+],
+[
+"Cellular and Molecular Neuroscience",
+16
+],
+[
+"Aquatic Science",
+15
+],
+[
+"Electrochemistry",
+14
+],
+[
+"Architecture",
+14
+],
+[
+"Biochemistry",
+12
+],
+[
+"Structural Biology",
+11
+],
+[
+"Geochemistry and Petrology",
+11
+],
+[
+"Bioengineering",
+10
+],
+[
+"Geology",
+10
+],
+[
+"Nature and Landscape Conservation",
+10
+],
+[
+"General Materials Science",
+10
+],
+[
+"Toxicology",
+10
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+9
+],
+[
+"Parasitology",
+9
+],
+[
+"Sensory Systems",
+9
+],
+[
+"Pharmacology",
+7
+],
+[
+"Instrumentation",
+7
+],
+[
+"Agronomy and Crop Science",
+6
+],
+[
+"Endocrine and Autonomic Systems",
+6
+],
+[
+"Computational Mathematics",
+5
+],
+[
+"Developmental Neuroscience",
+5
+],
+[
+"Animal Science and Zoology",
+4
+],
+[
+"Physiology",
+4
+],
+[
+"Virology",
+4
+],
+[
+"Theoretical Computer Science",
+4
+],
+[
+"Insect Science",
+3
+],
+[
+"Fuel Technology",
+3
+],
+[
+"Applied Microbiology and Biotechnology",
+3
+],
+[
+"Microbiology",
+3
+],
+[
+"Forestry",
+2
+],
+[
+"Clinical Biochemistry",
+2
+],
+[
+"Paleontology",
+2
+],
+[
+"Drug Discovery",
+2
+],
+[
+"Developmental Biology",
+1
+],
+[
+"Chemical Health and Safety",
+1
+],
+[
+"General Energy",
+1
+]
+],
+"I106542073": [
+[
+"Molecular Biology",
+984
+],
+[
+"Electrical and Electronic Engineering",
+877
+],
+[
+"Plant Science",
+793
+],
+[
+"Materials Chemistry",
+651
+],
+[
+"Astronomy and Astrophysics",
+591
+],
+[
+"Organic Chemistry",
+512
+],
+[
+"Artificial Intelligence",
+487
+],
+[
+"Biomedical Engineering",
+473
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+456
+],
+[
+"Atomic and Molecular Physics, and Optics",
+423
+],
+[
+"Genetics",
+409
+],
+[
+"Ecology",
+328
+],
+[
+"Water Science and Technology",
+319
+],
+[
+"Aerospace Engineering",
+318
+],
+[
+"Computer Vision and Pattern Recognition",
+316
+],
+[
+"Information Systems",
+311
+],
+[
+"Electronic, Optical and Magnetic Materials",
+272
+],
+[
+"Global and Planetary Change",
+249
+],
+[
+"Biomaterials",
+241
+],
+[
+"Pollution",
+225
+],
+[
+"Nuclear and High Energy Physics",
+224
+],
+[
+"Control and Systems Engineering",
+217
+],
+[
+"Computational Theory and Mathematics",
+213
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+202
+],
+[
+"Computer Networks and Communications",
+190
+],
+[
+"Health, Toxicology and Mutagenesis",
+183
+],
+[
+"Environmental Engineering",
+178
+],
+[
+"Spectroscopy",
+175
+],
+[
+"Geophysics",
+169
+],
+[
+"Atmospheric Science",
+168
+],
+[
+"Inorganic Chemistry",
+166
+],
+[
+"Statistics and Probability",
+160
+],
+[
+"Mechanics of Materials",
+151
+],
+[
+"Food Science",
+149
+],
+[
+"Polymers and Plastics",
+148
+],
+[
+"Statistical and Nonlinear Physics",
+147
+],
+[
+"Earth-Surface Processes",
+129
+],
+[
+"Oceanography",
+119
+],
+[
+"Condensed Matter Physics",
+119
+],
+[
+"Soil Science",
+112
+],
+[
+"Mechanical Engineering",
+110
+],
+[
+"Environmental Chemistry",
+108
+],
+[
+"Cancer Research",
+103
+],
+[
+"Insect Science",
+96
+],
+[
+"Cell Biology",
+89
+],
+[
+"Immunology",
+85
+],
+[
+"Physical and Theoretical Chemistry",
+83
+],
+[
+"Building and Construction",
+80
+],
+[
+"Management, Monitoring, Policy and Law",
+77
+],
+[
+"Hardware and Architecture",
+70
+],
+[
+"Applied Mathematics",
+67
+],
+[
+"Media Technology",
+66
+],
+[
+"Geometry and Topology",
+61
+],
+[
+"Molecular Medicine",
+59
+],
+[
+"Mathematical Physics",
+59
+],
+[
+"Modeling and Simulation",
+59
+],
+[
+"Pharmaceutical Science",
+59
+],
+[
+"General Agricultural and Biological Sciences",
+54
+],
+[
+"Neurology",
+54
+],
+[
+"Aquatic Science",
+53
+],
+[
+"Cognitive Neuroscience",
+53
+],
+[
+"Signal Processing",
+52
+],
+[
+"Paleontology",
+51
+],
+[
+"Endocrine and Autonomic Systems",
+50
+],
+[
+"Pharmacology",
+49
+],
+[
+"Instrumentation",
+43
+],
+[
+"Ocean Engineering",
+40
+],
+[
+"Ceramics and Composites",
+39
+],
+[
+"Waste Management and Disposal",
+37
+],
+[
+"Computational Mechanics",
+34
+],
+[
+"Industrial and Manufacturing Engineering",
+33
+],
+[
+"Nature and Landscape Conservation",
+29
+],
+[
+"Algebra and Number Theory",
+29
+],
+[
+"Filtration and Separation",
+26
+],
+[
+"Biophysics",
+25
+],
+[
+"Biotechnology",
+22
+],
+[
+"Analytical Chemistry",
+22
+],
+[
+"Geochemistry and Petrology",
+22
+],
+[
+"Computer Science Applications",
+19
+],
+[
+"Physiology",
+17
+],
+[
+"Catalysis",
+16
+],
+[
+"Safety, Risk, Reliability and Quality",
+16
+],
+[
+"Clinical Biochemistry",
+15
+],
+[
+"Geology",
+15
+],
+[
+"Ecological Modeling",
+14
+],
+[
+"Parasitology",
+14
+],
+[
+"Automotive Engineering",
+13
+],
+[
+"Civil and Structural Engineering",
+13
+],
+[
+"Surfaces, Coatings and Films",
+13
+],
+[
+"Endocrinology",
+11
+],
+[
+"Bioengineering",
+11
+],
+[
+"Software",
+9
+],
+[
+"Microbiology",
+9
+],
+[
+"Cellular and Molecular Neuroscience",
+9
+],
+[
+"Biochemistry",
+8
+],
+[
+"Radiation",
+8
+],
+[
+"Discrete Mathematics and Combinatorics",
+7
+],
+[
+"Human-Computer Interaction",
+6
+],
+[
+"Animal Science and Zoology",
+5
+],
+[
+"Forestry",
+5
+],
+[
+"Process Chemistry and Technology",
+5
+],
+[
+"Numerical Analysis",
+5
+],
+[
+"Architecture",
+4
+],
+[
+"Virology",
+4
+],
+[
+"General Materials Science",
+4
+],
+[
+"Biological Psychiatry",
+4
+],
+[
+"Acoustics and Ultrasonics",
+4
+],
+[
+"Agronomy and Crop Science",
+3
+],
+[
+"Fluid Flow and Transfer Processes",
+3
+],
+[
+"General Energy",
+3
+],
+[
+"Energy Engineering and Power Technology",
+3
+],
+[
+"Applied Microbiology and Biotechnology",
+3
+],
+[
+"Behavioral Neuroscience",
+3
+],
+[
+"Developmental Neuroscience",
+3
+],
+[
+"Sensory Systems",
+3
+],
+[
+"Electrochemistry",
+2
+],
+[
+"Theoretical Computer Science",
+2
+],
+[
+"Toxicology",
+2
+],
+[
+"Computer Graphics and Computer-Aided Design",
+1
+],
+[
+"Drug Discovery",
+1
+]
+],
+"I1289461252": [
+[
+"Aerospace Engineering",
+1762
+],
+[
+"Global and Planetary Change",
+823
+],
+[
+"Electrical and Electronic Engineering",
+807
+],
+[
+"Atmospheric Science",
+756
+],
+[
+"Astronomy and Astrophysics",
+689
+],
+[
+"Environmental Engineering",
+528
+],
+[
+"Ecology",
+507
+],
+[
+"Mechanical Engineering",
+488
+],
+[
+"Oceanography",
+413
+],
+[
+"Media Technology",
+413
+],
+[
+"Artificial Intelligence",
+221
+],
+[
+"Ocean Engineering",
+221
+],
+[
+"Computational Mechanics",
+211
+],
+[
+"Computer Vision and Pattern Recognition",
+207
+],
+[
+"Water Science and Technology",
+166
+],
+[
+"Mechanics of Materials",
+165
+],
+[
+"Materials Chemistry",
+155
+],
+[
+"Management, Monitoring, Policy and Law",
+144
+],
+[
+"Control and Systems Engineering",
+128
+],
+[
+"Soil Science",
+110
+],
+[
+"Civil and Structural Engineering",
+110
+],
+[
+"Computer Networks and Communications",
+109
+],
+[
+"Earth-Surface Processes",
+107
+],
+[
+"Biomedical Engineering",
+97
+],
+[
+"Geophysics",
+83
+],
+[
+"Atomic and Molecular Physics, and Optics",
+75
+],
+[
+"Ceramics and Composites",
+70
+],
+[
+"Plant Science",
+61
+],
+[
+"Geology",
+51
+],
+[
+"Instrumentation",
+50
+],
+[
+"Electronic, Optical and Magnetic Materials",
+45
+],
+[
+"Ecological Modeling",
+43
+],
+[
+"Automotive Engineering",
+39
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+38
+],
+[
+"Polymers and Plastics",
+38
+],
+[
+"Nature and Landscape Conservation",
+36
+],
+[
+"Information Systems",
+31
+],
+[
+"Applied Mathematics",
+31
+],
+[
+"Hardware and Architecture",
+30
+],
+[
+"Condensed Matter Physics",
+27
+],
+[
+"Nuclear and High Energy Physics",
+26
+],
+[
+"Pollution",
+25
+],
+[
+"Health, Toxicology and Mutagenesis",
+24
+],
+[
+"Signal Processing",
+23
+],
+[
+"Geochemistry and Petrology",
+23
+],
+[
+"Industrial and Manufacturing Engineering",
+21
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+20
+],
+[
+"Safety, Risk, Reliability and Quality",
+20
+],
+[
+"Computational Theory and Mathematics",
+18
+],
+[
+"Radiation",
+18
+],
+[
+"Building and Construction",
+17
+],
+[
+"Forestry",
+12
+],
+[
+"Modeling and Simulation",
+12
+],
+[
+"Molecular Biology",
+11
+],
+[
+"Inorganic Chemistry",
+11
+],
+[
+"Spectroscopy",
+11
+],
+[
+"Environmental Chemistry",
+11
+],
+[
+"Software",
+9
+],
+[
+"Waste Management and Disposal",
+9
+],
+[
+"Organic Chemistry",
+8
+],
+[
+"General Materials Science",
+7
+],
+[
+"Statistical and Nonlinear Physics",
+7
+],
+[
+"Catalysis",
+6
+],
+[
+"Surfaces, Coatings and Films",
+6
+],
+[
+"Mathematical Physics",
+6
+],
+[
+"General Agricultural and Biological Sciences",
+5
+],
+[
+"Agronomy and Crop Science",
+4
+],
+[
+"Aquatic Science",
+4
+],
+[
+"Human-Computer Interaction",
+4
+],
+[
+"Fuel Technology",
+4
+],
+[
+"Metals and Alloys",
+4
+],
+[
+"Geometry and Topology",
+4
+],
+[
+"Numerical Analysis",
+4
+],
+[
+"Insect Science",
+3
+],
+[
+"Fluid Flow and Transfer Processes",
+3
+],
+[
+"Analytical Chemistry",
+3
+],
+[
+"Paleontology",
+3
+],
+[
+"Space and Planetary Science",
+3
+],
+[
+"Parasitology",
+3
+],
+[
+"Cognitive Neuroscience",
+3
+],
+[
+"Bioengineering",
+2
+],
+[
+"Biomaterials",
+2
+],
+[
+"Food Science",
+1
+],
+[
+"Biophysics",
+1
+],
+[
+"Biotechnology",
+1
+],
+[
+"Genetics",
+1
+],
+[
+"Structural Biology",
+1
+],
+[
+"Process Chemistry and Technology",
+1
+],
+[
+"Computer Science Applications",
+1
+],
+[
+"General Energy",
+1
+],
+[
+"Energy Engineering and Power Technology",
+1
+],
+[
+"Immunology",
+1
+],
+[
+"Statistics and Probability",
+1
+],
+[
+"Theoretical Computer Science",
+1
+],
+[
+"Neurology",
+1
+]
+],
+"I155837530": [
+[
+"Electrical and Electronic Engineering",
+1272
+],
+[
+"Mechanical Engineering",
+529
+],
+[
+"Aerospace Engineering",
+471
+],
+[
+"Biomedical Engineering",
+459
+],
+[
+"Computer Vision and Pattern Recognition",
+354
+],
+[
+"Artificial Intelligence",
+342
+],
+[
+"Control and Systems Engineering",
+298
+],
+[
+"Materials Chemistry",
+287
+],
+[
+"Computer Networks and Communications",
+272
+],
+[
+"Water Science and Technology",
+258
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+233
+],
+[
+"Civil and Structural Engineering",
+232
+],
+[
+"Computational Theory and Mathematics",
+191
+],
+[
+"Molecular Biology",
+171
+],
+[
+"Computational Mechanics",
+156
+],
+[
+"Information Systems",
+134
+],
+[
+"Nuclear and High Energy Physics",
+132
+],
+[
+"Geometry and Topology",
+130
+],
+[
+"Electronic, Optical and Magnetic Materials",
+108
+],
+[
+"Statistical and Nonlinear Physics",
+97
+],
+[
+"Pollution",
+94
+],
+[
+"Plant Science",
+92
+],
+[
+"Building and Construction",
+82
+],
+[
+"Signal Processing",
+75
+],
+[
+"Environmental Engineering",
+72
+],
+[
+"Biomaterials",
+71
+],
+[
+"Hardware and Architecture",
+64
+],
+[
+"Polymers and Plastics",
+64
+],
+[
+"Waste Management and Disposal",
+56
+],
+[
+"Atomic and Molecular Physics, and Optics",
+47
+],
+[
+"Automotive Engineering",
+46
+],
+[
+"Mechanics of Materials",
+46
+],
+[
+"Physical and Theoretical Chemistry",
+42
+],
+[
+"Cognitive Neuroscience",
+38
+],
+[
+"Industrial and Manufacturing Engineering",
+37
+],
+[
+"Food Science",
+36
+],
+[
+"Inorganic Chemistry",
+36
+],
+[
+"Ocean Engineering",
+34
+],
+[
+"Computer Science Applications",
+33
+],
+[
+"Geophysics",
+33
+],
+[
+"Health, Toxicology and Mutagenesis",
+33
+],
+[
+"Organic Chemistry",
+31
+],
+[
+"Spectroscopy",
+31
+],
+[
+"Energy Engineering and Power Technology",
+29
+],
+[
+"Global and Planetary Change",
+29
+],
+[
+"Astronomy and Astrophysics",
+28
+],
+[
+"Ceramics and Composites",
+27
+],
+[
+"Safety, Risk, Reliability and Quality",
+25
+],
+[
+"Media Technology",
+25
+],
+[
+"Ecology",
+25
+],
+[
+"Mathematical Physics",
+25
+],
+[
+"Biotechnology",
+21
+],
+[
+"Environmental Chemistry",
+21
+],
+[
+"Computer Graphics and Computer-Aided Design",
+20
+],
+[
+"Statistics and Probability",
+20
+],
+[
+"Human-Computer Interaction",
+19
+],
+[
+"Acoustics and Ultrasonics",
+19
+],
+[
+"Condensed Matter Physics",
+19
+],
+[
+"Neurology",
+16
+],
+[
+"Modeling and Simulation",
+14
+],
+[
+"Cancer Research",
+12
+],
+[
+"Pharmaceutical Science",
+10
+],
+[
+"General Agricultural and Biological Sciences",
+9
+],
+[
+"Surfaces, Coatings and Films",
+9
+],
+[
+"Soil Science",
+8
+],
+[
+"Genetics",
+8
+],
+[
+"Fluid Flow and Transfer Processes",
+8
+],
+[
+"Management, Monitoring, Policy and Law",
+8
+],
+[
+"Electrochemistry",
+7
+],
+[
+"Catalysis",
+6
+],
+[
+"Software",
+6
+],
+[
+"Bioengineering",
+5
+],
+[
+"Analytical Chemistry",
+5
+],
+[
+"Oceanography",
+5
+],
+[
+"Atmospheric Science",
+4
+],
+[
+"Immunology",
+4
+],
+[
+"Applied Mathematics",
+4
+],
+[
+"Cell Biology",
+3
+],
+[
+"Endocrinology",
+3
+],
+[
+"Molecular Medicine",
+3
+],
+[
+"Process Chemistry and Technology",
+3
+],
+[
+"Earth-Surface Processes",
+3
+],
+[
+"Fuel Technology",
+3
+],
+[
+"Ecological Modeling",
+3
+],
+[
+"Discrete Mathematics and Combinatorics",
+3
+],
+[
+"Animal Science and Zoology",
+2
+],
+[
+"Aquatic Science",
+2
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+2
+],
+[
+"Aging",
+2
+],
+[
+"Filtration and Separation",
+2
+],
+[
+"Geology",
+2
+],
+[
+"Paleontology",
+2
+],
+[
+"Architecture",
+2
+],
+[
+"Microbiology",
+2
+],
+[
+"Metals and Alloys",
+2
+],
+[
+"Endocrine and Autonomic Systems",
+2
+],
+[
+"Agronomy and Crop Science",
+1
+],
+[
+"Biophysics",
+1
+],
+[
+"Structural Biology",
+1
+],
+[
+"Nature and Landscape Conservation",
+1
+],
+[
+"Virology",
+1
+],
+[
+"General Materials Science",
+1
+],
+[
+"Numerical Analysis",
+1
+]
+],
+"I87816474": [
+[
+"Mechanical Engineering",
+1437
+],
+[
+"Materials Chemistry",
+234
+],
+[
+"Mechanics of Materials",
+143
+],
+[
+"Fuel Technology",
+78
+],
+[
+"Water Science and Technology",
+73
+],
+[
+"Electrical and Electronic Engineering",
+71
+],
+[
+"Civil and Structural Engineering",
+47
+],
+[
+"Biomedical Engineering",
+43
+],
+[
+"Computational Mechanics",
+43
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+37
+],
+[
+"Aerospace Engineering",
+37
+],
+[
+"Control and Systems Engineering",
+36
+],
+[
+"Metals and Alloys",
+27
+],
+[
+"Electronic, Optical and Magnetic Materials",
+24
+],
+[
+"Building and Construction",
+22
+],
+[
+"Industrial and Manufacturing Engineering",
+19
+],
+[
+"Ceramics and Composites",
+19
+],
+[
+"Environmental Engineering",
+15
+],
+[
+"Catalysis",
+12
+],
+[
+"Pollution",
+12
+],
+[
+"Artificial Intelligence",
+10
+],
+[
+"Biomaterials",
+10
+],
+[
+"Safety, Risk, Reliability and Quality",
+9
+],
+[
+"Waste Management and Disposal",
+9
+],
+[
+"Plant Science",
+8
+],
+[
+"Geochemistry and Petrology",
+8
+],
+[
+"Geophysics",
+8
+],
+[
+"Surfaces, Coatings and Films",
+8
+],
+[
+"Ocean Engineering",
+7
+],
+[
+"Soil Science",
+6
+],
+[
+"Inorganic Chemistry",
+6
+],
+[
+"Health, Toxicology and Mutagenesis",
+6
+],
+[
+"Polymers and Plastics",
+6
+],
+[
+"Applied Mathematics",
+6
+],
+[
+"Organic Chemistry",
+5
+],
+[
+"Computer Vision and Pattern Recognition",
+5
+],
+[
+"Statistical and Nonlinear Physics",
+5
+],
+[
+"Molecular Biology",
+4
+],
+[
+"Computational Theory and Mathematics",
+4
+],
+[
+"Food Science",
+3
+],
+[
+"Physical and Theoretical Chemistry",
+3
+],
+[
+"Global and Planetary Change",
+3
+],
+[
+"General Materials Science",
+3
+],
+[
+"Biotechnology",
+2
+],
+[
+"Molecular Medicine",
+2
+],
+[
+"Atmospheric Science",
+2
+],
+[
+"Automotive Engineering",
+2
+],
+[
+"Ecological Modeling",
+2
+],
+[
+"Environmental Chemistry",
+2
+],
+[
+"Modeling and Simulation",
+2
+],
+[
+"Cognitive Neuroscience",
+2
+],
+[
+"Astronomy and Astrophysics",
+2
+],
+[
+"Atomic and Molecular Physics, and Optics",
+2
+],
+[
+"Insect Science",
+1
+],
+[
+"Fluid Flow and Transfer Processes",
+1
+],
+[
+"Process Chemistry and Technology",
+1
+],
+[
+"Electrochemistry",
+1
+],
+[
+"Spectroscopy",
+1
+],
+[
+"Computer Graphics and Computer-Aided Design",
+1
+],
+[
+"Computer Networks and Communications",
+1
+],
+[
+"Computer Science Applications",
+1
+],
+[
+"Information Systems",
+1
+],
+[
+"Geology",
+1
+],
+[
+"Paleontology",
+1
+],
+[
+"Ecology",
+1
+],
+[
+"Management, Monitoring, Policy and Law",
+1
+],
+[
+"Nature and Landscape Conservation",
+1
+],
+[
+"Virology",
+1
+],
+[
+"Mathematical Physics",
+1
+],
+[
+"Radiation",
+1
+]
+],
+"I74796645": [
+[
+"Electrical and Electronic Engineering",
+2145
+],
+[
+"Artificial Intelligence",
+1389
+],
+[
+"Mechanical Engineering",
+1100
+],
+[
+"Biomedical Engineering",
+953
+],
+[
+"Materials Chemistry",
+892
+],
+[
+"Organic Chemistry",
+795
+],
+[
+"Computer Vision and Pattern Recognition",
+757
+],
+[
+"Computer Networks and Communications",
+732
+],
+[
+"Astronomy and Astrophysics",
+727
+],
+[
+"Information Systems",
+718
+],
+[
+"Molecular Biology",
+676
+],
+[
+"Civil and Structural Engineering",
+666
+],
+[
+"Aerospace Engineering",
+561
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+510
+],
+[
+"Control and Systems Engineering",
+434
+],
+[
+"Atomic and Molecular Physics, and Optics",
+421
+],
+[
+"Computational Mechanics",
+414
+],
+[
+"Computational Theory and Mathematics",
+386
+],
+[
+"Biomaterials",
+346
+],
+[
+"Plant Science",
+309
+],
+[
+"Water Science and Technology",
+308
+],
+[
+"Electronic, Optical and Magnetic Materials",
+293
+],
+[
+"Mechanics of Materials",
+277
+],
+[
+"Pharmaceutical Science",
+274
+],
+[
+"Applied Mathematics",
+260
+],
+[
+"Automotive Engineering",
+253
+],
+[
+"Signal Processing",
+247
+],
+[
+"Nuclear and High Energy Physics",
+243
+],
+[
+"Building and Construction",
+238
+],
+[
+"Spectroscopy",
+216
+],
+[
+"Environmental Engineering",
+202
+],
+[
+"Hardware and Architecture",
+170
+],
+[
+"Ocean Engineering",
+155
+],
+[
+"Polymers and Plastics",
+149
+],
+[
+"Industrial and Manufacturing Engineering",
+137
+],
+[
+"Modeling and Simulation",
+132
+],
+[
+"Cognitive Neuroscience",
+132
+],
+[
+"Safety, Risk, Reliability and Quality",
+111
+],
+[
+"Analytical Chemistry",
+107
+],
+[
+"Catalysis",
+97
+],
+[
+"Media Technology",
+97
+],
+[
+"Waste Management and Disposal",
+95
+],
+[
+"Statistical and Nonlinear Physics",
+94
+],
+[
+"Pollution",
+93
+],
+[
+"Inorganic Chemistry",
+89
+],
+[
+"Global and Planetary Change",
+86
+],
+[
+"Food Science",
+84
+],
+[
+"Physical and Theoretical Chemistry",
+81
+],
+[
+"Condensed Matter Physics",
+76
+],
+[
+"Fluid Flow and Transfer Processes",
+73
+],
+[
+"Mathematical Physics",
+70
+],
+[
+"Genetics",
+58
+],
+[
+"Cancer Research",
+57
+],
+[
+"Ecology",
+54
+],
+[
+"Human-Computer Interaction",
+53
+],
+[
+"Immunology",
+53
+],
+[
+"Algebra and Number Theory",
+52
+],
+[
+"Computer Science Applications",
+49
+],
+[
+"Numerical Analysis",
+45
+],
+[
+"Neurology",
+44
+],
+[
+"Computer Graphics and Computer-Aided Design",
+43
+],
+[
+"Geophysics",
+43
+],
+[
+"Management, Monitoring, Policy and Law",
+43
+],
+[
+"Cell Biology",
+42
+],
+[
+"Molecular Medicine",
+42
+],
+[
+"Earth-Surface Processes",
+42
+],
+[
+"Discrete Mathematics and Combinatorics",
+42
+],
+[
+"Health, Toxicology and Mutagenesis",
+40
+],
+[
+"Surfaces, Coatings and Films",
+39
+],
+[
+"Geometry and Topology",
+37
+],
+[
+"General Agricultural and Biological Sciences",
+35
+],
+[
+"Statistics and Probability",
+32
+],
+[
+"Atmospheric Science",
+29
+],
+[
+"Software",
+28
+],
+[
+"Architecture",
+28
+],
+[
+"Energy Engineering and Power Technology",
+27
+],
+[
+"Environmental Chemistry",
+27
+],
+[
+"Bioengineering",
+26
+],
+[
+"Microbiology",
+26
+],
+[
+"Parasitology",
+26
+],
+[
+"Cellular and Molecular Neuroscience",
+26
+],
+[
+"Biophysics",
+25
+],
+[
+"Computational Mathematics",
+23
+],
+[
+"Soil Science",
+19
+],
+[
+"Pharmacology",
+17
+],
+[
+"Aquatic Science",
+16
+],
+[
+"Biotechnology",
+16
+],
+[
+"Electrochemistry",
+15
+],
+[
+"Toxicology",
+15
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+12
+],
+[
+"Process Chemistry and Technology",
+11
+],
+[
+"Ceramics and Composites",
+9
+],
+[
+"Clinical Biochemistry",
+8
+],
+[
+"Applied Microbiology and Biotechnology",
+7
+],
+[
+"Sensory Systems",
+7
+],
+[
+"Radiation",
+7
+],
+[
+"Geology",
+6
+],
+[
+"Nature and Landscape Conservation",
+6
+],
+[
+"Biochemistry",
+5
+],
+[
+"Theoretical Computer Science",
+5
+],
+[
+"Endocrine and Autonomic Systems",
+5
+],
+[
+"Forestry",
+4
+],
+[
+"General Materials Science",
+4
+],
+[
+"Metals and Alloys",
+4
+],
+[
+"Instrumentation",
+4
+],
+[
+"Agronomy and Crop Science",
+3
+],
+[
+"Endocrinology",
+3
+],
+[
+"Geochemistry and Petrology",
+3
+],
+[
+"General Energy",
+3
+],
+[
+"Animal Science and Zoology",
+2
+],
+[
+"Filtration and Separation",
+2
+],
+[
+"Paleontology",
+2
+],
+[
+"Developmental Neuroscience",
+2
+],
+[
+"Acoustics and Ultrasonics",
+2
+],
+[
+"Aging",
+1
+],
+[
+"Developmental Biology",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"Structural Biology",
+1
+],
+[
+"Chemical Health and Safety",
+1
+],
+[
+"Oceanography",
+1
+],
+[
+"Behavioral Neuroscience",
+1
+],
+[
+"Drug Discovery",
+1
+]
+],
+"I1317621060": [
+[
+"Electrical and Electronic Engineering",
+2009
+],
+[
+"Biomedical Engineering",
+1577
+],
+[
+"Mechanical Engineering",
+1358
+],
+[
+"Materials Chemistry",
+1229
+],
+[
+"Civil and Structural Engineering",
+1067
+],
+[
+"Nuclear and High Energy Physics",
+993
+],
+[
+"Organic Chemistry",
+902
+],
+[
+"Artificial Intelligence",
+850
+],
+[
+"Computational Mechanics",
+794
+],
+[
+"Molecular Biology",
+769
+],
+[
+"Water Science and Technology",
+717
+],
+[
+"Atomic and Molecular Physics, and Optics",
+606
+],
+[
+"Electronic, Optical and Magnetic Materials",
+596
+],
+[
+"Control and Systems Engineering",
+524
+],
+[
+"Computer Networks and Communications",
+519
+],
+[
+"Computer Vision and Pattern Recognition",
+509
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+501
+],
+[
+"Biomaterials",
+493
+],
+[
+"Aerospace Engineering",
+371
+],
+[
+"Computational Theory and Mathematics",
+314
+],
+[
+"Building and Construction",
+302
+],
+[
+"Pollution",
+291
+],
+[
+"Inorganic Chemistry",
+283
+],
+[
+"Environmental Engineering",
+276
+],
+[
+"Mechanics of Materials",
+274
+],
+[
+"Plant Science",
+268
+],
+[
+"Hardware and Architecture",
+250
+],
+[
+"Ecology",
+229
+],
+[
+"Astronomy and Astrophysics",
+222
+],
+[
+"Ocean Engineering",
+190
+],
+[
+"Waste Management and Disposal",
+176
+],
+[
+"Human-Computer Interaction",
+171
+],
+[
+"Applied Mathematics",
+169
+],
+[
+"Polymers and Plastics",
+150
+],
+[
+"Automotive Engineering",
+148
+],
+[
+"Food Science",
+142
+],
+[
+"Information Systems",
+141
+],
+[
+"Safety, Risk, Reliability and Quality",
+134
+],
+[
+"Physical and Theoretical Chemistry",
+126
+],
+[
+"Spectroscopy",
+126
+],
+[
+"Soil Science",
+123
+],
+[
+"Condensed Matter Physics",
+123
+],
+[
+"Cognitive Neuroscience",
+119
+],
+[
+"Global and Planetary Change",
+114
+],
+[
+"Signal Processing",
+108
+],
+[
+"Statistical and Nonlinear Physics",
+107
+],
+[
+"Surfaces, Coatings and Films",
+106
+],
+[
+"Environmental Chemistry",
+100
+],
+[
+"Biotechnology",
+92
+],
+[
+"Catalysis",
+92
+],
+[
+"Geometry and Topology",
+91
+],
+[
+"Atmospheric Science",
+87
+],
+[
+"Algebra and Number Theory",
+86
+],
+[
+"Numerical Analysis",
+79
+],
+[
+"Genetics",
+77
+],
+[
+"Molecular Medicine",
+66
+],
+[
+"Modeling and Simulation",
+64
+],
+[
+"Fluid Flow and Transfer Processes",
+62
+],
+[
+"Mathematical Physics",
+61
+],
+[
+"Geophysics",
+59
+],
+[
+"Media Technology",
+59
+],
+[
+"Cancer Research",
+56
+],
+[
+"Computer Graphics and Computer-Aided Design",
+46
+],
+[
+"Industrial and Manufacturing Engineering",
+46
+],
+[
+"Earth-Surface Processes",
+45
+],
+[
+"Statistics and Probability",
+44
+],
+[
+"General Agricultural and Biological Sciences",
+42
+],
+[
+"Microbiology",
+42
+],
+[
+"Health, Toxicology and Mutagenesis",
+41
+],
+[
+"Energy Engineering and Power Technology",
+36
+],
+[
+"Management, Monitoring, Policy and Law",
+32
+],
+[
+"Biophysics",
+30
+],
+[
+"Cell Biology",
+30
+],
+[
+"Immunology",
+25
+],
+[
+"Analytical Chemistry",
+24
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+22
+],
+[
+"Pharmaceutical Science",
+22
+],
+[
+"Animal Science and Zoology",
+21
+],
+[
+"Insect Science",
+21
+],
+[
+"Process Chemistry and Technology",
+21
+],
+[
+"Virology",
+20
+],
+[
+"Discrete Mathematics and Combinatorics",
+20
+],
+[
+"Computer Science Applications",
+19
+],
+[
+"Agronomy and Crop Science",
+17
+],
+[
+"Bioengineering",
+16
+],
+[
+"Oceanography",
+16
+],
+[
+"Toxicology",
+16
+],
+[
+"Pharmacology",
+14
+],
+[
+"Biochemistry",
+13
+],
+[
+"Filtration and Separation",
+12
+],
+[
+"Ceramics and Composites",
+12
+],
+[
+"Geochemistry and Petrology",
+11
+],
+[
+"Neurology",
+10
+],
+[
+"Aquatic Science",
+9
+],
+[
+"Cellular and Molecular Neuroscience",
+9
+],
+[
+"Parasitology",
+8
+],
+[
+"Electrochemistry",
+6
+],
+[
+"Nature and Landscape Conservation",
+6
+],
+[
+"Applied Microbiology and Biotechnology",
+6
+],
+[
+"Clinical Biochemistry",
+5
+],
+[
+"Software",
+5
+],
+[
+"Architecture",
+5
+],
+[
+"Aging",
+4
+],
+[
+"Fuel Technology",
+4
+],
+[
+"Radiation",
+4
+],
+[
+"Geology",
+3
+],
+[
+"Computational Mathematics",
+3
+],
+[
+"Sensory Systems",
+3
+],
+[
+"Developmental Biology",
+2
+],
+[
+"Paleontology",
+2
+],
+[
+"Ecological Modeling",
+2
+],
+[
+"Drug Discovery",
+2
+],
+[
+"Acoustics and Ultrasonics",
+2
+],
+[
+"Space and Planetary Science",
+1
+],
+[
+"General Energy",
+1
+],
+[
+"General Materials Science",
+1
+],
+[
+"Metals and Alloys",
+1
+],
+[
+"Behavioral Neuroscience",
+1
+],
+[
+"Endocrine and Autonomic Systems",
+1
+]
+],
+"I1329621470": [
+[
+"Materials Chemistry",
+2977
+],
+[
+"Nuclear and High Energy Physics",
+1911
+],
+[
+"Electrical and Electronic Engineering",
+1045
+],
+[
+"Inorganic Chemistry",
+987
+],
+[
+"Electronic, Optical and Magnetic Materials",
+850
+],
+[
+"Radiation",
+801
+],
+[
+"Aerospace Engineering",
+749
+],
+[
+"Mechanical Engineering",
+747
+],
+[
+"Organic Chemistry",
+637
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+573
+],
+[
+"Plant Science",
+565
+],
+[
+"Atomic and Molecular Physics, and Optics",
+530
+],
+[
+"Molecular Biology",
+505
+],
+[
+"Biomedical Engineering",
+498
+],
+[
+"Mechanics of Materials",
+400
+],
+[
+"Water Science and Technology",
+301
+],
+[
+"Control and Systems Engineering",
+258
+],
+[
+"Geophysics",
+256
+],
+[
+"Computational Mechanics",
+202
+],
+[
+"Biomaterials",
+185
+],
+[
+"Condensed Matter Physics",
+184
+],
+[
+"Spectroscopy",
+180
+],
+[
+"Civil and Structural Engineering",
+175
+],
+[
+"Food Science",
+172
+],
+[
+"Ceramics and Composites",
+171
+],
+[
+"Safety, Risk, Reliability and Quality",
+163
+],
+[
+"Physical and Theoretical Chemistry",
+161
+],
+[
+"Analytical Chemistry",
+140
+],
+[
+"Genetics",
+133
+],
+[
+"Polymers and Plastics",
+123
+],
+[
+"Geochemistry and Petrology",
+122
+],
+[
+"Pollution",
+119
+],
+[
+"Global and Planetary Change",
+110
+],
+[
+"Waste Management and Disposal",
+99
+],
+[
+"Catalysis",
+95
+],
+[
+"Environmental Chemistry",
+89
+],
+[
+"Astronomy and Astrophysics",
+88
+],
+[
+"Atmospheric Science",
+81
+],
+[
+"Surfaces, Coatings and Films",
+79
+],
+[
+"Metals and Alloys",
+58
+],
+[
+"Fluid Flow and Transfer Processes",
+56
+],
+[
+"Artificial Intelligence",
+55
+],
+[
+"Health, Toxicology and Mutagenesis",
+53
+],
+[
+"Ocean Engineering",
+51
+],
+[
+"Computational Theory and Mathematics",
+47
+],
+[
+"Molecular Medicine",
+46
+],
+[
+"Computer Vision and Pattern Recognition",
+45
+],
+[
+"Modeling and Simulation",
+42
+],
+[
+"Electrochemistry",
+38
+],
+[
+"Building and Construction",
+38
+],
+[
+"Statistical and Nonlinear Physics",
+38
+],
+[
+"Environmental Engineering",
+37
+],
+[
+"Pharmaceutical Science",
+35
+],
+[
+"Biophysics",
+33
+],
+[
+"Toxicology",
+33
+],
+[
+"Cancer Research",
+29
+],
+[
+"Immunology",
+28
+],
+[
+"Insect Science",
+27
+],
+[
+"Ecology",
+26
+],
+[
+"Soil Science",
+23
+],
+[
+"Biotechnology",
+21
+],
+[
+"Statistics and Probability",
+20
+],
+[
+"Computer Networks and Communications",
+19
+],
+[
+"Information Systems",
+19
+],
+[
+"Energy Engineering and Power Technology",
+16
+],
+[
+"Mathematical Physics",
+16
+],
+[
+"Microbiology",
+15
+],
+[
+"Cell Biology",
+14
+],
+[
+"Industrial and Manufacturing Engineering",
+13
+],
+[
+"Hardware and Architecture",
+12
+],
+[
+"Applied Mathematics",
+11
+],
+[
+"Bioengineering",
+10
+],
+[
+"Cognitive Neuroscience",
+10
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+9
+],
+[
+"Media Technology",
+9
+],
+[
+"Pharmacology",
+9
+],
+[
+"Animal Science and Zoology",
+8
+],
+[
+"Paleontology",
+8
+],
+[
+"Agronomy and Crop Science",
+7
+],
+[
+"Process Chemistry and Technology",
+7
+],
+[
+"Earth-Surface Processes",
+7
+],
+[
+"General Materials Science",
+7
+],
+[
+"Instrumentation",
+7
+],
+[
+"Oceanography",
+6
+],
+[
+"Automotive Engineering",
+6
+],
+[
+"Physiology",
+5
+],
+[
+"Signal Processing",
+5
+],
+[
+"Aquatic Science",
+4
+],
+[
+"Biochemistry",
+4
+],
+[
+"General Agricultural and Biological Sciences",
+3
+],
+[
+"Endocrinology",
+3
+],
+[
+"Chemical Health and Safety",
+3
+],
+[
+"Software",
+3
+],
+[
+"Numerical Analysis",
+3
+],
+[
+"Cellular and Molecular Neuroscience",
+3
+],
+[
+"Acoustics and Ultrasonics",
+3
+],
+[
+"Clinical Biochemistry",
+2
+],
+[
+"Developmental Biology",
+2
+],
+[
+"Ecological Modeling",
+2
+],
+[
+"Nature and Landscape Conservation",
+2
+],
+[
+"Geometry and Topology",
+2
+],
+[
+"Behavioral Neuroscience",
+2
+],
+[
+"Sensory Systems",
+2
+],
+[
+"Structural Biology",
+1
+],
+[
+"Filtration and Separation",
+1
+],
+[
+"Computer Graphics and Computer-Aided Design",
+1
+],
+[
+"Geology",
+1
+],
+[
+"Nuclear Energy and Engineering",
+1
+],
+[
+"Management, Monitoring, Policy and Law",
+1
+],
+[
+"Parasitology",
+1
+],
+[
+"Virology",
+1
+]
+],
+"I66760702": [
+[
+"Organic Chemistry",
+6306
+],
+[
+"Molecular Biology",
+6224
+],
+[
+"Materials Chemistry",
+5510
+],
+[
+"Electrical and Electronic Engineering",
+4688
+],
+[
+"Plant Science",
+4159
+],
+[
+"Biomedical Engineering",
+3997
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+3463
+],
+[
+"Mechanical Engineering",
+3210
+],
+[
+"Electronic, Optical and Magnetic Materials",
+2367
+],
+[
+"Water Science and Technology",
+2045
+],
+[
+"Biomaterials",
+1800
+],
+[
+"Civil and Structural Engineering",
+1567
+],
+[
+"Geophysics",
+1507
+],
+[
+"Food Science",
+1436
+],
+[
+"Pollution",
+1325
+],
+[
+"Oceanography",
+1087
+],
+[
+"Mechanics of Materials",
+986
+],
+[
+"Building and Construction",
+956
+],
+[
+"Atomic and Molecular Physics, and Optics",
+916
+],
+[
+"Inorganic Chemistry",
+896
+],
+[
+"Genetics",
+889
+],
+[
+"Aerospace Engineering",
+885
+],
+[
+"Polymers and Plastics",
+767
+],
+[
+"Environmental Engineering",
+756
+],
+[
+"Atmospheric Science",
+713
+],
+[
+"Computational Theory and Mathematics",
+687
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+684
+],
+[
+"Ecology",
+682
+],
+[
+"Spectroscopy",
+659
+],
+[
+"Health, Toxicology and Mutagenesis",
+656
+],
+[
+"Cancer Research",
+596
+],
+[
+"Environmental Chemistry",
+590
+],
+[
+"Global and Planetary Change",
+577
+],
+[
+"Cell Biology",
+548
+],
+[
+"Analytical Chemistry",
+548
+],
+[
+"Catalysis",
+534
+],
+[
+"Biotechnology",
+530
+],
+[
+"Control and Systems Engineering",
+529
+],
+[
+"Waste Management and Disposal",
+494
+],
+[
+"Computational Mechanics",
+430
+],
+[
+"Artificial Intelligence",
+391
+],
+[
+"Geochemistry and Petrology",
+391
+],
+[
+"Molecular Medicine",
+388
+],
+[
+"Pharmaceutical Science",
+388
+],
+[
+"Immunology",
+383
+],
+[
+"Computer Vision and Pattern Recognition",
+380
+],
+[
+"Soil Science",
+361
+],
+[
+"Ceramics and Composites",
+353
+],
+[
+"Pharmacology",
+348
+],
+[
+"Condensed Matter Physics",
+333
+],
+[
+"Physical and Theoretical Chemistry",
+316
+],
+[
+"Astronomy and Astrophysics",
+294
+],
+[
+"Safety, Risk, Reliability and Quality",
+267
+],
+[
+"Automotive Engineering",
+248
+],
+[
+"Ocean Engineering",
+231
+],
+[
+"Geology",
+229
+],
+[
+"Aquatic Science",
+218
+],
+[
+"Management, Monitoring, Policy and Law",
+213
+],
+[
+"Surfaces, Coatings and Films",
+198
+],
+[
+"Cellular and Molecular Neuroscience",
+185
+],
+[
+"Insect Science",
+184
+],
+[
+"Computer Networks and Communications",
+184
+],
+[
+"Process Chemistry and Technology",
+179
+],
+[
+"Earth-Surface Processes",
+179
+],
+[
+"Microbiology",
+176
+],
+[
+"Information Systems",
+136
+],
+[
+"General Agricultural and Biological Sciences",
+134
+],
+[
+"Ecological Modeling",
+119
+],
+[
+"Paleontology",
+115
+],
+[
+"Nature and Landscape Conservation",
+105
+],
+[
+"Neurology",
+100
+],
+[
+"Biochemistry",
+93
+],
+[
+"Electrochemistry",
+92
+],
+[
+"Fluid Flow and Transfer Processes",
+90
+],
+[
+"Cognitive Neuroscience",
+89
+],
+[
+"Industrial and Manufacturing Engineering",
+84
+],
+[
+"Clinical Biochemistry",
+83
+],
+[
+"Agronomy and Crop Science",
+75
+],
+[
+"Toxicology",
+75
+],
+[
+"Biophysics",
+70
+],
+[
+"Hardware and Architecture",
+68
+],
+[
+"Fuel Technology",
+68
+],
+[
+"Modeling and Simulation",
+67
+],
+[
+"Endocrinology",
+65
+],
+[
+"Bioengineering",
+65
+],
+[
+"Media Technology",
+65
+],
+[
+"Aging",
+62
+],
+[
+"Developmental Neuroscience",
+57
+],
+[
+"Animal Science and Zoology",
+55
+],
+[
+"Virology",
+48
+],
+[
+"Radiation",
+48
+],
+[
+"Parasitology",
+45
+],
+[
+"Forestry",
+44
+],
+[
+"Statistical and Nonlinear Physics",
+40
+],
+[
+"Sensory Systems",
+38
+],
+[
+"Endocrine and Autonomic Systems",
+35
+],
+[
+"Human-Computer Interaction",
+32
+],
+[
+"Applied Microbiology and Biotechnology",
+31
+],
+[
+"Energy Engineering and Power Technology",
+30
+],
+[
+"Signal Processing",
+29
+],
+[
+"Metals and Alloys",
+27
+],
+[
+"Nuclear and High Energy Physics",
+23
+],
+[
+"Behavioral Neuroscience",
+22
+],
+[
+"Drug Discovery",
+19
+],
+[
+"Structural Biology",
+15
+],
+[
+"Physiology",
+14
+],
+[
+"Filtration and Separation",
+14
+],
+[
+"Geometry and Topology",
+14
+],
+[
+"Mathematical Physics",
+14
+],
+[
+"Applied Mathematics",
+13
+],
+[
+"General Materials Science",
+11
+],
+[
+"Computer Science Applications",
+10
+],
+[
+"Biological Psychiatry",
+9
+],
+[
+"Acoustics and Ultrasonics",
+9
+],
+[
+"Numerical Analysis",
+8
+],
+[
+"Algebra and Number Theory",
+7
+],
+[
+"Software",
+6
+],
+[
+"Developmental Biology",
+5
+],
+[
+"Chemical Health and Safety",
+5
+],
+[
+"Statistics and Probability",
+5
+],
+[
+"General Energy",
+4
+],
+[
+"Horticulture",
+2
+],
+[
+"Theoretical Computer Science",
+2
+],
+[
+"Computer Graphics and Computer-Aided Design",
+1
+],
+[
+"General Engineering",
+1
+],
+[
+"Architecture",
+1
+],
+[
+"Instrumentation",
+1
+]
+],
+"I200207707": [
+[
+"Nuclear and High Energy Physics",
+4406
+],
+[
+"Materials Chemistry",
+2541
+],
+[
+"Atomic and Molecular Physics, and Optics",
+1448
+],
+[
+"Electrical and Electronic Engineering",
+1223
+],
+[
+"Electronic, Optical and Magnetic Materials",
+978
+],
+[
+"Molecular Biology",
+937
+],
+[
+"Inorganic Chemistry",
+804
+],
+[
+"Organic Chemistry",
+775
+],
+[
+"Mechanical Engineering",
+710
+],
+[
+"Aerospace Engineering",
+696
+],
+[
+"Radiation",
+592
+],
+[
+"Astronomy and Astrophysics",
+588
+],
+[
+"Biomedical Engineering",
+566
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+498
+],
+[
+"Condensed Matter Physics",
+448
+],
+[
+"Artificial Intelligence",
+437
+],
+[
+"Mechanics of Materials",
+360
+],
+[
+"Plant Science",
+248
+],
+[
+"Genetics",
+223
+],
+[
+"Computational Theory and Mathematics",
+221
+],
+[
+"Computational Mechanics",
+212
+],
+[
+"Physical and Theoretical Chemistry",
+205
+],
+[
+"Mathematical Physics",
+198
+],
+[
+"Control and Systems Engineering",
+187
+],
+[
+"Cancer Research",
+180
+],
+[
+"Water Science and Technology",
+169
+],
+[
+"Statistical and Nonlinear Physics",
+167
+],
+[
+"Spectroscopy",
+166
+],
+[
+"Algebra and Number Theory",
+155
+],
+[
+"Geophysics",
+143
+],
+[
+"Biomaterials",
+136
+],
+[
+"Geometry and Topology",
+131
+],
+[
+"Catalysis",
+107
+],
+[
+"Applied Mathematics",
+107
+],
+[
+"Surfaces, Coatings and Films",
+104
+],
+[
+"Ceramics and Composites",
+103
+],
+[
+"Civil and Structural Engineering",
+97
+],
+[
+"Discrete Mathematics and Combinatorics",
+96
+],
+[
+"Cell Biology",
+92
+],
+[
+"Biophysics",
+89
+],
+[
+"Analytical Chemistry",
+89
+],
+[
+"Atmospheric Science",
+88
+],
+[
+"Pollution",
+87
+],
+[
+"Polymers and Plastics",
+82
+],
+[
+"Global and Planetary Change",
+77
+],
+[
+"Immunology",
+75
+],
+[
+"Food Science",
+74
+],
+[
+"Fluid Flow and Transfer Processes",
+74
+],
+[
+"Waste Management and Disposal",
+66
+],
+[
+"Sensory Systems",
+65
+],
+[
+"Health, Toxicology and Mutagenesis",
+60
+],
+[
+"Safety, Risk, Reliability and Quality",
+56
+],
+[
+"Statistics and Probability",
+56
+],
+[
+"Metals and Alloys",
+55
+],
+[
+"Computer Networks and Communications",
+53
+],
+[
+"Geochemistry and Petrology",
+52
+],
+[
+"Computer Vision and Pattern Recognition",
+49
+],
+[
+"Environmental Chemistry",
+47
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+41
+],
+[
+"Molecular Medicine",
+39
+],
+[
+"Modeling and Simulation",
+39
+],
+[
+"Ocean Engineering",
+33
+],
+[
+"Ecology",
+31
+],
+[
+"Insect Science",
+30
+],
+[
+"Cognitive Neuroscience",
+30
+],
+[
+"Microbiology",
+29
+],
+[
+"Toxicology",
+28
+],
+[
+"Building and Construction",
+22
+],
+[
+"Pharmaceutical Science",
+20
+],
+[
+"Environmental Engineering",
+18
+],
+[
+"Instrumentation",
+15
+],
+[
+"Biotechnology",
+14
+],
+[
+"Electrochemistry",
+14
+],
+[
+"Computer Graphics and Computer-Aided Design",
+14
+],
+[
+"Pharmacology",
+14
+],
+[
+"Cellular and Molecular Neuroscience",
+13
+],
+[
+"Process Chemistry and Technology",
+12
+],
+[
+"Hardware and Architecture",
+12
+],
+[
+"Paleontology",
+12
+],
+[
+"Information Systems",
+11
+],
+[
+"Energy Engineering and Power Technology",
+11
+],
+[
+"Neurology",
+11
+],
+[
+"Bioengineering",
+10
+],
+[
+"Endocrine and Autonomic Systems",
+9
+],
+[
+"Aging",
+8
+],
+[
+"Soil Science",
+7
+],
+[
+"Management, Monitoring, Policy and Law",
+7
+],
+[
+"Signal Processing",
+6
+],
+[
+"Aquatic Science",
+5
+],
+[
+"Biochemistry",
+5
+],
+[
+"Structural Biology",
+5
+],
+[
+"Automotive Engineering",
+5
+],
+[
+"Industrial and Manufacturing Engineering",
+5
+],
+[
+"Media Technology",
+5
+],
+[
+"General Materials Science",
+5
+],
+[
+"Animal Science and Zoology",
+4
+],
+[
+"Earth-Surface Processes",
+4
+],
+[
+"Parasitology",
+4
+],
+[
+"Agronomy and Crop Science",
+3
+],
+[
+"Human-Computer Interaction",
+3
+],
+[
+"Oceanography",
+3
+],
+[
+"General Agricultural and Biological Sciences",
+2
+],
+[
+"Endocrinology",
+2
+],
+[
+"Computer Science Applications",
+2
+],
+[
+"Geology",
+2
+],
+[
+"Nature and Landscape Conservation",
+2
+],
+[
+"Applied Microbiology and Biotechnology",
+2
+],
+[
+"Numerical Analysis",
+2
+],
+[
+"Developmental Neuroscience",
+2
+],
+[
+"Clinical Biochemistry",
+1
+],
+[
+"Developmental Biology",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"Software",
+1
+],
+[
+"General Energy",
+1
+],
+[
+"Biological Psychiatry",
+1
+]
+],
+"I77430839": [
+[
+"Atomic and Molecular Physics, and Optics",
+484
+],
+[
+"Materials Chemistry",
+386
+],
+[
+"Astronomy and Astrophysics",
+349
+],
+[
+"Electronic, Optical and Magnetic Materials",
+226
+],
+[
+"Condensed Matter Physics",
+220
+],
+[
+"Nuclear and High Energy Physics",
+186
+],
+[
+"Molecular Biology",
+161
+],
+[
+"Artificial Intelligence",
+154
+],
+[
+"Electrical and Electronic Engineering",
+147
+],
+[
+"Statistical and Nonlinear Physics",
+134
+],
+[
+"Biomedical Engineering",
+85
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+82
+],
+[
+"Spectroscopy",
+54
+],
+[
+"Organic Chemistry",
+37
+],
+[
+"Physical and Theoretical Chemistry",
+36
+],
+[
+"Biomaterials",
+33
+],
+[
+"Catalysis",
+30
+],
+[
+"Geometry and Topology",
+27
+],
+[
+"Inorganic Chemistry",
+22
+],
+[
+"Mathematical Physics",
+22
+],
+[
+"Geophysics",
+20
+],
+[
+"Computer Networks and Communications",
+16
+],
+[
+"Civil and Structural Engineering",
+11
+],
+[
+"Mechanical Engineering",
+11
+],
+[
+"Water Science and Technology",
+11
+],
+[
+"Health, Toxicology and Mutagenesis",
+9
+],
+[
+"Computational Theory and Mathematics",
+8
+],
+[
+"Polymers and Plastics",
+8
+],
+[
+"Modeling and Simulation",
+7
+],
+[
+"Radiation",
+7
+],
+[
+"Genetics",
+6
+],
+[
+"Molecular Medicine",
+6
+],
+[
+"Environmental Engineering",
+6
+],
+[
+"Biophysics",
+5
+],
+[
+"Microbiology",
+5
+],
+[
+"Applied Mathematics",
+5
+],
+[
+"Cell Biology",
+4
+],
+[
+"Analytical Chemistry",
+4
+],
+[
+"Computer Vision and Pattern Recognition",
+4
+],
+[
+"Mechanics of Materials",
+4
+],
+[
+"Surfaces, Coatings and Films",
+4
+],
+[
+"Cellular and Molecular Neuroscience",
+4
+],
+[
+"Bioengineering",
+3
+],
+[
+"Information Systems",
+3
+],
+[
+"Computational Mechanics",
+3
+],
+[
+"Numerical Analysis",
+3
+],
+[
+"Plant Science",
+2
+],
+[
+"Structural Biology",
+2
+],
+[
+"Fluid Flow and Transfer Processes",
+2
+],
+[
+"Atmospheric Science",
+2
+],
+[
+"Geochemistry and Petrology",
+2
+],
+[
+"Control and Systems Engineering",
+2
+],
+[
+"Industrial and Manufacturing Engineering",
+2
+],
+[
+"Environmental Chemistry",
+2
+],
+[
+"Pharmaceutical Science",
+2
+],
+[
+"Aging",
+1
+],
+[
+"Cancer Research",
+1
+],
+[
+"Filtration and Separation",
+1
+],
+[
+"Process Chemistry and Technology",
+1
+],
+[
+"Electrochemistry",
+1
+],
+[
+"Aerospace Engineering",
+1
+],
+[
+"Automotive Engineering",
+1
+],
+[
+"Ocean Engineering",
+1
+],
+[
+"Global and Planetary Change",
+1
+],
+[
+"Pollution",
+1
+],
+[
+"Waste Management and Disposal",
+1
+],
+[
+"Immunology",
+1
+],
+[
+"Algebra and Number Theory",
+1
+],
+[
+"Acoustics and Ultrasonics",
+1
+]
+],
+"I99729588": [
+[
+"Electrical and Electronic Engineering",
+928
+],
+[
+"Mechanical Engineering",
+547
+],
+[
+"Nuclear and High Energy Physics",
+530
+],
+[
+"Civil and Structural Engineering",
+398
+],
+[
+"Materials Chemistry",
+299
+],
+[
+"Atmospheric Science",
+254
+],
+[
+"Control and Systems Engineering",
+246
+],
+[
+"Biomedical Engineering",
+229
+],
+[
+"Artificial Intelligence",
+174
+],
+[
+"Mechanics of Materials",
+167
+],
+[
+"Global and Planetary Change",
+162
+],
+[
+"Aerospace Engineering",
+145
+],
+[
+"Computational Mechanics",
+143
+],
+[
+"Environmental Engineering",
+132
+],
+[
+"Electronic, Optical and Magnetic Materials",
+125
+],
+[
+"Geometry and Topology",
+122
+],
+[
+"Computer Networks and Communications",
+121
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+121
+],
+[
+"Atomic and Molecular Physics, and Optics",
+119
+],
+[
+"Computer Vision and Pattern Recognition",
+108
+],
+[
+"Oceanography",
+89
+],
+[
+"Organic Chemistry",
+88
+],
+[
+"Waste Management and Disposal",
+82
+],
+[
+"Computational Theory and Mathematics",
+76
+],
+[
+"Water Science and Technology",
+69
+],
+[
+"Pollution",
+59
+],
+[
+"Applied Mathematics",
+56
+],
+[
+"Statistical and Nonlinear Physics",
+55
+],
+[
+"Molecular Biology",
+54
+],
+[
+"Signal Processing",
+43
+],
+[
+"Building and Construction",
+41
+],
+[
+"Automotive Engineering",
+39
+],
+[
+"Mathematical Physics",
+38
+],
+[
+"Information Systems",
+35
+],
+[
+"Biomaterials",
+35
+],
+[
+"Ecology",
+33
+],
+[
+"Geophysics",
+32
+],
+[
+"Spectroscopy",
+27
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+26
+],
+[
+"Cognitive Neuroscience",
+25
+],
+[
+"Hardware and Architecture",
+23
+],
+[
+"Polymers and Plastics",
+23
+],
+[
+"Physical and Theoretical Chemistry",
+21
+],
+[
+"Safety, Risk, Reliability and Quality",
+19
+],
+[
+"Astronomy and Astrophysics",
+18
+],
+[
+"Food Science",
+17
+],
+[
+"Discrete Mathematics and Combinatorics",
+17
+],
+[
+"Environmental Chemistry",
+16
+],
+[
+"Algebra and Number Theory",
+16
+],
+[
+"Condensed Matter Physics",
+16
+],
+[
+"Inorganic Chemistry",
+15
+],
+[
+"Human-Computer Interaction",
+15
+],
+[
+"Geochemistry and Petrology",
+15
+],
+[
+"Ocean Engineering",
+15
+],
+[
+"Health, Toxicology and Mutagenesis",
+15
+],
+[
+"Surfaces, Coatings and Films",
+15
+],
+[
+"Soil Science",
+14
+],
+[
+"Energy Engineering and Power Technology",
+14
+],
+[
+"Statistics and Probability",
+14
+],
+[
+"Management, Monitoring, Policy and Law",
+12
+],
+[
+"Modeling and Simulation",
+12
+],
+[
+"Plant Science",
+10
+],
+[
+"Bioengineering",
+10
+],
+[
+"General Agricultural and Biological Sciences",
+9
+],
+[
+"Media Technology",
+8
+],
+[
+"Immunology",
+8
+],
+[
+"Numerical Analysis",
+8
+],
+[
+"Earth-Surface Processes",
+7
+],
+[
+"Biophysics",
+6
+],
+[
+"Ceramics and Composites",
+6
+],
+[
+"Metals and Alloys",
+6
+],
+[
+"Molecular Medicine",
+5
+],
+[
+"Geology",
+5
+],
+[
+"Paleontology",
+5
+],
+[
+"Industrial and Manufacturing Engineering",
+5
+],
+[
+"Catalysis",
+4
+],
+[
+"Analytical Chemistry",
+4
+],
+[
+"Radiation",
+4
+],
+[
+"Cancer Research",
+3
+],
+[
+"Genetics",
+3
+],
+[
+"Fluid Flow and Transfer Processes",
+3
+],
+[
+"Computer Science Applications",
+3
+],
+[
+"Ecological Modeling",
+3
+],
+[
+"Pharmaceutical Science",
+3
+],
+[
+"Aquatic Science",
+2
+],
+[
+"Fuel Technology",
+2
+],
+[
+"Microbiology",
+2
+],
+[
+"General Materials Science",
+2
+],
+[
+"Sensory Systems",
+2
+],
+[
+"Agronomy and Crop Science",
+1
+],
+[
+"Biotechnology",
+1
+],
+[
+"Cell Biology",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"Computer Graphics and Computer-Aided Design",
+1
+],
+[
+"General Energy",
+1
+],
+[
+"Architecture",
+1
+],
+[
+"Endocrine and Autonomic Systems",
+1
+],
+[
+"Neurology",
+1
+],
+[
+"Toxicology",
+1
+]
+],
+"I876193797": [
+[
+"Electrical and Electronic Engineering",
+6366
+],
+[
+"Artificial Intelligence",
+3692
+],
+[
+"Biomedical Engineering",
+3120
+],
+[
+"Computer Vision and Pattern Recognition",
+2997
+],
+[
+"Information Systems",
+2920
+],
+[
+"Mechanical Engineering",
+2873
+],
+[
+"Computer Networks and Communications",
+2729
+],
+[
+"Materials Chemistry",
+2000
+],
+[
+"Plant Science",
+1474
+],
+[
+"Control and Systems Engineering",
+1470
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+1392
+],
+[
+"Electronic, Optical and Magnetic Materials",
+1256
+],
+[
+"Aerospace Engineering",
+1182
+],
+[
+"Molecular Biology",
+1157
+],
+[
+"Computational Theory and Mathematics",
+1041
+],
+[
+"Civil and Structural Engineering",
+991
+],
+[
+"Automotive Engineering",
+935
+],
+[
+"Organic Chemistry",
+810
+],
+[
+"Geometry and Topology",
+607
+],
+[
+"Signal Processing",
+583
+],
+[
+"Polymers and Plastics",
+582
+],
+[
+"Water Science and Technology",
+566
+],
+[
+"Computational Mechanics",
+563
+],
+[
+"Mechanics of Materials",
+519
+],
+[
+"Building and Construction",
+510
+],
+[
+"Environmental Engineering",
+489
+],
+[
+"Media Technology",
+471
+],
+[
+"Industrial and Manufacturing Engineering",
+460
+],
+[
+"Cognitive Neuroscience",
+443
+],
+[
+"Pollution",
+435
+],
+[
+"Biomaterials",
+421
+],
+[
+"Applied Mathematics",
+410
+],
+[
+"Food Science",
+348
+],
+[
+"Spectroscopy",
+346
+],
+[
+"Neurology",
+315
+],
+[
+"Fluid Flow and Transfer Processes",
+314
+],
+[
+"Atomic and Molecular Physics, and Optics",
+310
+],
+[
+"Human-Computer Interaction",
+246
+],
+[
+"Hardware and Architecture",
+244
+],
+[
+"Modeling and Simulation",
+238
+],
+[
+"Statistics and Probability",
+203
+],
+[
+"Cancer Research",
+199
+],
+[
+"Astronomy and Astrophysics",
+196
+],
+[
+"Statistical and Nonlinear Physics",
+193
+],
+[
+"Inorganic Chemistry",
+185
+],
+[
+"Ecology",
+174
+],
+[
+"Ocean Engineering",
+173
+],
+[
+"Safety, Risk, Reliability and Quality",
+172
+],
+[
+"Global and Planetary Change",
+170
+],
+[
+"Health, Toxicology and Mutagenesis",
+164
+],
+[
+"Waste Management and Disposal",
+164
+],
+[
+"Biotechnology",
+160
+],
+[
+"Molecular Medicine",
+160
+],
+[
+"Energy Engineering and Power Technology",
+154
+],
+[
+"Immunology",
+141
+],
+[
+"Atmospheric Science",
+135
+],
+[
+"Genetics",
+127
+],
+[
+"Radiation",
+119
+],
+[
+"Computer Science Applications",
+99
+],
+[
+"Analytical Chemistry",
+91
+],
+[
+"Management, Monitoring, Policy and Law",
+83
+],
+[
+"Mathematical Physics",
+81
+],
+[
+"Software",
+78
+],
+[
+"Pharmaceutical Science",
+74
+],
+[
+"Aquatic Science",
+73
+],
+[
+"General Agricultural and Biological Sciences",
+66
+],
+[
+"Earth-Surface Processes",
+64
+],
+[
+"Condensed Matter Physics",
+63
+],
+[
+"Catalysis",
+62
+],
+[
+"Pharmacology",
+62
+],
+[
+"Nuclear and High Energy Physics",
+60
+],
+[
+"Numerical Analysis",
+59
+],
+[
+"Environmental Chemistry",
+57
+],
+[
+"Physical and Theoretical Chemistry",
+54
+],
+[
+"Microbiology",
+52
+],
+[
+"Ecological Modeling",
+49
+],
+[
+"Ceramics and Composites",
+45
+],
+[
+"Oceanography",
+43
+],
+[
+"Cell Biology",
+42
+],
+[
+"Surfaces, Coatings and Films",
+40
+],
+[
+"Soil Science",
+35
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+34
+],
+[
+"Bioengineering",
+30
+],
+[
+"Electrochemistry",
+27
+],
+[
+"Biophysics",
+26
+],
+[
+"Algebra and Number Theory",
+26
+],
+[
+"Cellular and Molecular Neuroscience",
+26
+],
+[
+"Insect Science",
+25
+],
+[
+"Geophysics",
+20
+],
+[
+"Toxicology",
+20
+],
+[
+"Metals and Alloys",
+19
+],
+[
+"Agronomy and Crop Science",
+17
+],
+[
+"Geology",
+17
+],
+[
+"Clinical Biochemistry",
+16
+],
+[
+"Computer Graphics and Computer-Aided Design",
+16
+],
+[
+"Architecture",
+15
+],
+[
+"Endocrine and Autonomic Systems",
+15
+],
+[
+"Virology",
+14
+],
+[
+"Discrete Mathematics and Combinatorics",
+13
+],
+[
+"Aging",
+10
+],
+[
+"Endocrinology",
+10
+],
+[
+"Geochemistry and Petrology",
+9
+],
+[
+"Applied Microbiology and Biotechnology",
+9
+],
+[
+"Biochemistry",
+8
+],
+[
+"Process Chemistry and Technology",
+8
+],
+[
+"Structural Biology",
+7
+],
+[
+"Nature and Landscape Conservation",
+7
+],
+[
+"Parasitology",
+7
+],
+[
+"Drug Discovery",
+7
+],
+[
+"Animal Science and Zoology",
+6
+],
+[
+"General Materials Science",
+6
+],
+[
+"Sensory Systems",
+5
+],
+[
+"Physiology",
+4
+],
+[
+"Filtration and Separation",
+4
+],
+[
+"Fuel Technology",
+4
+],
+[
+"Instrumentation",
+4
+],
+[
+"Forestry",
+3
+],
+[
+"Developmental Neuroscience",
+3
+],
+[
+"General Energy",
+2
+],
+[
+"Biological Psychiatry",
+2
+],
+[
+"Paleontology",
+1
+],
+[
+"Nuclear Energy and Engineering",
+1
+],
+[
+"Behavioral Neuroscience",
+1
+],
+[
+"Acoustics and Ultrasonics",
+1
+]
+],
+"I56404289": [
+[
+"Electrical and Electronic Engineering",
+1675
+],
+[
+"Materials Chemistry",
+1611
+],
+[
+"Mechanical Engineering",
+1149
+],
+[
+"Biomedical Engineering",
+1033
+],
+[
+"Electronic, Optical and Magnetic Materials",
+556
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+544
+],
+[
+"Aerospace Engineering",
+493
+],
+[
+"Control and Systems Engineering",
+477
+],
+[
+"Civil and Structural Engineering",
+451
+],
+[
+"Artificial Intelligence",
+445
+],
+[
+"Mechanics of Materials",
+436
+],
+[
+"Computer Vision and Pattern Recognition",
+403
+],
+[
+"Biomaterials",
+358
+],
+[
+"Atomic and Molecular Physics, and Optics",
+351
+],
+[
+"Water Science and Technology",
+328
+],
+[
+"Computational Theory and Mathematics",
+326
+],
+[
+"Molecular Biology",
+324
+],
+[
+"Astronomy and Astrophysics",
+304
+],
+[
+"Organic Chemistry",
+244
+],
+[
+"Computer Networks and Communications",
+227
+],
+[
+"Information Systems",
+219
+],
+[
+"Modeling and Simulation",
+201
+],
+[
+"Environmental Engineering",
+200
+],
+[
+"Computational Mechanics",
+196
+],
+[
+"Plant Science",
+189
+],
+[
+"Building and Construction",
+166
+],
+[
+"Applied Mathematics",
+149
+],
+[
+"Safety, Risk, Reliability and Quality",
+139
+],
+[
+"Pharmaceutical Science",
+120
+],
+[
+"Pollution",
+115
+],
+[
+"Cognitive Neuroscience",
+111
+],
+[
+"Statistical and Nonlinear Physics",
+107
+],
+[
+"Polymers and Plastics",
+105
+],
+[
+"Condensed Matter Physics",
+103
+],
+[
+"Automotive Engineering",
+90
+],
+[
+"Media Technology",
+79
+],
+[
+"Food Science",
+72
+],
+[
+"Ceramics and Composites",
+72
+],
+[
+"Signal Processing",
+71
+],
+[
+"Global and Planetary Change",
+70
+],
+[
+"Nuclear and High Energy Physics",
+70
+],
+[
+"Environmental Chemistry",
+69
+],
+[
+"Molecular Medicine",
+68
+],
+[
+"Waste Management and Disposal",
+67
+],
+[
+"Atmospheric Science",
+65
+],
+[
+"Fluid Flow and Transfer Processes",
+61
+],
+[
+"Ecology",
+55
+],
+[
+"Numerical Analysis",
+55
+],
+[
+"Industrial and Manufacturing Engineering",
+51
+],
+[
+"Geometry and Topology",
+50
+],
+[
+"Mathematical Physics",
+47
+],
+[
+"Geophysics",
+43
+],
+[
+"Health, Toxicology and Mutagenesis",
+42
+],
+[
+"Ocean Engineering",
+40
+],
+[
+"Biotechnology",
+39
+],
+[
+"Neurology",
+39
+],
+[
+"Inorganic Chemistry",
+38
+],
+[
+"Statistics and Probability",
+36
+],
+[
+"Spectroscopy",
+35
+],
+[
+"Acoustics and Ultrasonics",
+29
+],
+[
+"Soil Science",
+27
+],
+[
+"Catalysis",
+27
+],
+[
+"Genetics",
+24
+],
+[
+"Human-Computer Interaction",
+24
+],
+[
+"Algebra and Number Theory",
+24
+],
+[
+"Biophysics",
+23
+],
+[
+"Hardware and Architecture",
+23
+],
+[
+"Management, Monitoring, Policy and Law",
+22
+],
+[
+"Microbiology",
+22
+],
+[
+"Analytical Chemistry",
+21
+],
+[
+"Physical and Theoretical Chemistry",
+20
+],
+[
+"Ecological Modeling",
+20
+],
+[
+"Radiation",
+20
+],
+[
+"Cancer Research",
+19
+],
+[
+"Cell Biology",
+19
+],
+[
+"Pharmacology",
+19
+],
+[
+"Energy Engineering and Power Technology",
+18
+],
+[
+"Immunology",
+18
+],
+[
+"Software",
+14
+],
+[
+"Surfaces, Coatings and Films",
+14
+],
+[
+"Endocrine and Autonomic Systems",
+14
+],
+[
+"Process Chemistry and Technology",
+13
+],
+[
+"Geochemistry and Petrology",
+13
+],
+[
+"General Agricultural and Biological Sciences",
+12
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+12
+],
+[
+"Bioengineering",
+12
+],
+[
+"Cellular and Molecular Neuroscience",
+12
+],
+[
+"Structural Biology",
+11
+],
+[
+"Oceanography",
+9
+],
+[
+"Agronomy and Crop Science",
+7
+],
+[
+"Architecture",
+7
+],
+[
+"Metals and Alloys",
+7
+],
+[
+"Clinical Biochemistry",
+6
+],
+[
+"Aquatic Science",
+5
+],
+[
+"Electrochemistry",
+5
+],
+[
+"General Materials Science",
+5
+],
+[
+"Discrete Mathematics and Combinatorics",
+5
+],
+[
+"Sensory Systems",
+5
+],
+[
+"Toxicology",
+4
+],
+[
+"Insect Science",
+3
+],
+[
+"Geology",
+3
+],
+[
+"Paleontology",
+3
+],
+[
+"Fuel Technology",
+3
+],
+[
+"Forestry",
+2
+],
+[
+"Biochemistry",
+2
+],
+[
+"Physiology",
+2
+],
+[
+"Computer Graphics and Computer-Aided Design",
+2
+],
+[
+"Computer Science Applications",
+2
+],
+[
+"Applied Microbiology and Biotechnology",
+2
+],
+[
+"Behavioral Neuroscience",
+2
+],
+[
+"Drug Discovery",
+2
+],
+[
+"Chemical Health and Safety",
+1
+],
+[
+"Filtration and Separation",
+1
+],
+[
+"Earth-Surface Processes",
+1
+]
+],
+"I4210147361": [
+[
+"Water Science and Technology",
+302
+],
+[
+"Global and Planetary Change",
+238
+],
+[
+"Environmental Engineering",
+192
+],
+[
+"Atmospheric Science",
+156
+],
+[
+"Geochemistry and Petrology",
+137
+],
+[
+"Pollution",
+49
+],
+[
+"Soil Science",
+48
+],
+[
+"Ocean Engineering",
+40
+],
+[
+"Environmental Chemistry",
+34
+],
+[
+"Waste Management and Disposal",
+33
+],
+[
+"Ecology",
+29
+],
+[
+"Building and Construction",
+25
+],
+[
+"Management, Monitoring, Policy and Law",
+19
+],
+[
+"Civil and Structural Engineering",
+16
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+12
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+12
+],
+[
+"Geophysics",
+10
+],
+[
+"Nature and Landscape Conservation",
+10
+],
+[
+"Biomedical Engineering",
+9
+],
+[
+"Media Technology",
+7
+],
+[
+"Electronic, Optical and Magnetic Materials",
+7
+],
+[
+"Earth-Surface Processes",
+6
+],
+[
+"Inorganic Chemistry",
+5
+],
+[
+"Health, Toxicology and Mutagenesis",
+5
+],
+[
+"Aquatic Science",
+3
+],
+[
+"Geology",
+3
+],
+[
+"Oceanography",
+2
+],
+[
+"Electrical and Electronic Engineering",
+2
+],
+[
+"Safety, Risk, Reliability and Quality",
+2
+],
+[
+"Materials Chemistry",
+2
+],
+[
+"Statistics and Probability",
+2
+],
+[
+"General Agricultural and Biological Sciences",
+1
+],
+[
+"Plant Science",
+1
+],
+[
+"Electrochemistry",
+1
+],
+[
+"Spectroscopy",
+1
+],
+[
+"Paleontology",
+1
+],
+[
+"Aerospace Engineering",
+1
+],
+[
+"Control and Systems Engineering",
+1
+],
+[
+"Immunology",
+1
+],
+[
+"Biomaterials",
+1
+],
+[
+"Astronomy and Astrophysics",
+1
+]
+],
+"I99364266": [
+[
+"Organic Chemistry",
+3285
+],
+[
+"Molecular Biology",
+2629
+],
+[
+"Materials Chemistry",
+2319
+],
+[
+"Electrical and Electronic Engineering",
+2210
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+1791
+],
+[
+"Biomedical Engineering",
+1638
+],
+[
+"Plant Science",
+1629
+],
+[
+"Electronic, Optical and Magnetic Materials",
+1094
+],
+[
+"Mechanical Engineering",
+932
+],
+[
+"Biomaterials",
+765
+],
+[
+"Water Science and Technology",
+693
+],
+[
+"Food Science",
+579
+],
+[
+"Pollution",
+504
+],
+[
+"Inorganic Chemistry",
+396
+],
+[
+"Civil and Structural Engineering",
+384
+],
+[
+"Atomic and Molecular Physics, and Optics",
+377
+],
+[
+"Atmospheric Science",
+373
+],
+[
+"Genetics",
+359
+],
+[
+"Polymers and Plastics",
+324
+],
+[
+"Spectroscopy",
+308
+],
+[
+"Computational Theory and Mathematics",
+307
+],
+[
+"Geophysics",
+290
+],
+[
+"Cancer Research",
+286
+],
+[
+"Oceanography",
+283
+],
+[
+"Building and Construction",
+270
+],
+[
+"Environmental Engineering",
+251
+],
+[
+"Catalysis",
+248
+],
+[
+"Analytical Chemistry",
+242
+],
+[
+"Health, Toxicology and Mutagenesis",
+238
+],
+[
+"Ecology",
+225
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+214
+],
+[
+"Global and Planetary Change",
+210
+],
+[
+"Environmental Chemistry",
+203
+],
+[
+"Biotechnology",
+192
+],
+[
+"Pharmaceutical Science",
+183
+],
+[
+"Cell Biology",
+181
+],
+[
+"Condensed Matter Physics",
+181
+],
+[
+"Waste Management and Disposal",
+176
+],
+[
+"Mechanics of Materials",
+172
+],
+[
+"Molecular Medicine",
+163
+],
+[
+"Pharmacology",
+157
+],
+[
+"Aerospace Engineering",
+155
+],
+[
+"Physical and Theoretical Chemistry",
+153
+],
+[
+"Artificial Intelligence",
+133
+],
+[
+"Immunology",
+133
+],
+[
+"Computer Vision and Pattern Recognition",
+124
+],
+[
+"Control and Systems Engineering",
+113
+],
+[
+"Soil Science",
+107
+],
+[
+"Aquatic Science",
+103
+],
+[
+"Process Chemistry and Technology",
+101
+],
+[
+"Astronomy and Astrophysics",
+100
+],
+[
+"Geochemistry and Petrology",
+95
+],
+[
+"Surfaces, Coatings and Films",
+90
+],
+[
+"Insect Science",
+81
+],
+[
+"Automotive Engineering",
+81
+],
+[
+"Management, Monitoring, Policy and Law",
+78
+],
+[
+"Computational Mechanics",
+76
+],
+[
+"Paleontology",
+75
+],
+[
+"Cellular and Molecular Neuroscience",
+75
+],
+[
+"Microbiology",
+72
+],
+[
+"Ceramics and Composites",
+68
+],
+[
+"Safety, Risk, Reliability and Quality",
+61
+],
+[
+"Electrochemistry",
+55
+],
+[
+"Computer Networks and Communications",
+52
+],
+[
+"Earth-Surface Processes",
+50
+],
+[
+"Neurology",
+50
+],
+[
+"Ocean Engineering",
+49
+],
+[
+"Biochemistry",
+43
+],
+[
+"Geology",
+41
+],
+[
+"Toxicology",
+41
+],
+[
+"Clinical Biochemistry",
+38
+],
+[
+"Developmental Neuroscience",
+36
+],
+[
+"Bioengineering",
+30
+],
+[
+"Virology",
+26
+],
+[
+"Parasitology",
+25
+],
+[
+"Biophysics",
+24
+],
+[
+"Ecological Modeling",
+24
+],
+[
+"Nature and Landscape Conservation",
+24
+],
+[
+"Cognitive Neuroscience",
+24
+],
+[
+"Fluid Flow and Transfer Processes",
+23
+],
+[
+"Media Technology",
+23
+],
+[
+"Aging",
+22
+],
+[
+"General Agricultural and Biological Sciences",
+19
+],
+[
+"Statistical and Nonlinear Physics",
+19
+],
+[
+"Endocrinology",
+18
+],
+[
+"Fuel Technology",
+18
+],
+[
+"Sensory Systems",
+17
+],
+[
+"Agronomy and Crop Science",
+15
+],
+[
+"Signal Processing",
+14
+],
+[
+"Modeling and Simulation",
+14
+],
+[
+"Information Systems",
+12
+],
+[
+"Endocrine and Autonomic Systems",
+12
+],
+[
+"Hardware and Architecture",
+11
+],
+[
+"Industrial and Manufacturing Engineering",
+11
+],
+[
+"Nuclear and High Energy Physics",
+11
+],
+[
+"Animal Science and Zoology",
+10
+],
+[
+"Behavioral Neuroscience",
+10
+],
+[
+"Human-Computer Interaction",
+9
+],
+[
+"Applied Microbiology and Biotechnology",
+9
+],
+[
+"Structural Biology",
+8
+],
+[
+"Energy Engineering and Power Technology",
+6
+],
+[
+"Physiology",
+5
+],
+[
+"Filtration and Separation",
+5
+],
+[
+"Discrete Mathematics and Combinatorics",
+5
+],
+[
+"Forestry",
+4
+],
+[
+"Algebra and Number Theory",
+4
+],
+[
+"Mathematical Physics",
+4
+],
+[
+"Biological Psychiatry",
+4
+],
+[
+"Drug Discovery",
+4
+],
+[
+"Geometry and Topology",
+3
+],
+[
+"Radiation",
+3
+],
+[
+"Developmental Biology",
+2
+],
+[
+"Chemical Health and Safety",
+2
+],
+[
+"General Materials Science",
+2
+],
+[
+"Software",
+1
+],
+[
+"General Energy",
+1
+],
+[
+"General Engineering",
+1
+],
+[
+"Metals and Alloys",
+1
+]
+],
+"I110166357": [
+[
+"Plant Science",
+2011
+],
+[
+"Materials Chemistry",
+1940
+],
+[
+"Molecular Biology",
+1938
+],
+[
+"Nuclear and High Energy Physics",
+1926
+],
+[
+"Electrical and Electronic Engineering",
+1454
+],
+[
+"Organic Chemistry",
+1223
+],
+[
+"Electronic, Optical and Magnetic Materials",
+943
+],
+[
+"Information Systems",
+907
+],
+[
+"Artificial Intelligence",
+788
+],
+[
+"Biomedical Engineering",
+783
+],
+[
+"Atomic and Molecular Physics, and Optics",
+625
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+593
+],
+[
+"Genetics",
+580
+],
+[
+"Water Science and Technology",
+552
+],
+[
+"Computational Theory and Mathematics",
+549
+],
+[
+"Global and Planetary Change",
+532
+],
+[
+"Astronomy and Astrophysics",
+493
+],
+[
+"Statistical and Nonlinear Physics",
+459
+],
+[
+"Aerospace Engineering",
+448
+],
+[
+"Applied Mathematics",
+429
+],
+[
+"Biomaterials",
+367
+],
+[
+"Computer Networks and Communications",
+366
+],
+[
+"Pollution",
+364
+],
+[
+"Food Science",
+334
+],
+[
+"Computer Vision and Pattern Recognition",
+324
+],
+[
+"Geometry and Topology",
+311
+],
+[
+"Statistics and Probability",
+309
+],
+[
+"Health, Toxicology and Mutagenesis",
+307
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+292
+],
+[
+"Ecology",
+270
+],
+[
+"Management, Monitoring, Policy and Law",
+260
+],
+[
+"Atmospheric Science",
+247
+],
+[
+"Immunology",
+238
+],
+[
+"General Agricultural and Biological Sciences",
+228
+],
+[
+"Environmental Engineering",
+224
+],
+[
+"Inorganic Chemistry",
+215
+],
+[
+"Polymers and Plastics",
+212
+],
+[
+"Spectroscopy",
+211
+],
+[
+"Cancer Research",
+208
+],
+[
+"Soil Science",
+206
+],
+[
+"Geophysics",
+205
+],
+[
+"Mathematical Physics",
+200
+],
+[
+"Molecular Medicine",
+188
+],
+[
+"Condensed Matter Physics",
+182
+],
+[
+"Modeling and Simulation",
+180
+],
+[
+"Cell Biology",
+173
+],
+[
+"Software",
+154
+],
+[
+"Insect Science",
+151
+],
+[
+"Catalysis",
+149
+],
+[
+"Waste Management and Disposal",
+149
+],
+[
+"Numerical Analysis",
+142
+],
+[
+"Control and Systems Engineering",
+141
+],
+[
+"Cognitive Neuroscience",
+137
+],
+[
+"Computational Mechanics",
+133
+],
+[
+"Mechanical Engineering",
+127
+],
+[
+"Building and Construction",
+114
+],
+[
+"Microbiology",
+109
+],
+[
+"Clinical Biochemistry",
+106
+],
+[
+"Pharmaceutical Science",
+106
+],
+[
+"Nature and Landscape Conservation",
+105
+],
+[
+"Biotechnology",
+104
+],
+[
+"Fluid Flow and Transfer Processes",
+102
+],
+[
+"Cellular and Molecular Neuroscience",
+101
+],
+[
+"Paleontology",
+100
+],
+[
+"Radiation",
+89
+],
+[
+"Media Technology",
+88
+],
+[
+"Analytical Chemistry",
+86
+],
+[
+"Environmental Chemistry",
+86
+],
+[
+"Virology",
+84
+],
+[
+"Physical and Theoretical Chemistry",
+82
+],
+[
+"Endocrine and Autonomic Systems",
+82
+],
+[
+"Applied Microbiology and Biotechnology",
+79
+],
+[
+"Neurology",
+78
+],
+[
+"Safety, Risk, Reliability and Quality",
+71
+],
+[
+"Algebra and Number Theory",
+69
+],
+[
+"Geochemistry and Petrology",
+68
+],
+[
+"Signal Processing",
+65
+],
+[
+"Earth-Surface Processes",
+63
+],
+[
+"Industrial and Manufacturing Engineering",
+60
+],
+[
+"Parasitology",
+59
+],
+[
+"Pharmacology",
+58
+],
+[
+"Computer Science Applications",
+53
+],
+[
+"Endocrinology",
+49
+],
+[
+"Electrochemistry",
+49
+],
+[
+"Mechanics of Materials",
+49
+],
+[
+"Toxicology",
+48
+],
+[
+"Geology",
+45
+],
+[
+"Aquatic Science",
+44
+],
+[
+"Biophysics",
+40
+],
+[
+"Bioengineering",
+40
+],
+[
+"Ocean Engineering",
+38
+],
+[
+"Civil and Structural Engineering",
+34
+],
+[
+"Forestry",
+32
+],
+[
+"Physiology",
+31
+],
+[
+"Sensory Systems",
+30
+],
+[
+"Ceramics and Composites",
+27
+],
+[
+"Automotive Engineering",
+25
+],
+[
+"Biochemistry",
+23
+],
+[
+"Developmental Biology",
+21
+],
+[
+"Human-Computer Interaction",
+20
+],
+[
+"Discrete Mathematics and Combinatorics",
+20
+],
+[
+"Energy Engineering and Power Technology",
+19
+],
+[
+"Ecological Modeling",
+19
+],
+[
+"Process Chemistry and Technology",
+18
+],
+[
+"Agronomy and Crop Science",
+17
+],
+[
+"General Energy",
+17
+],
+[
+"Theoretical Computer Science",
+16
+],
+[
+"Aging",
+15
+],
+[
+"Oceanography",
+12
+],
+[
+"Behavioral Neuroscience",
+12
+],
+[
+"Animal Science and Zoology",
+11
+],
+[
+"Surfaces, Coatings and Films",
+10
+],
+[
+"Biological Psychiatry",
+8
+],
+[
+"Drug Discovery",
+8
+],
+[
+"Hardware and Architecture",
+6
+],
+[
+"Developmental Neuroscience",
+5
+],
+[
+"Architecture",
+3
+],
+[
+"Chemical Health and Safety",
+2
+],
+[
+"Filtration and Separation",
+2
+],
+[
+"Computer Graphics and Computer-Aided Design",
+2
+],
+[
+"Instrumentation",
+2
+],
+[
+"Horticulture",
+1
+],
+[
+"Space and Planetary Science",
+1
+],
+[
+"Fuel Technology",
+1
+],
+[
+"General Materials Science",
+1
+]
+],
+"I91357014": [
+[
+"Plant Science",
+3137
+],
+[
+"Materials Chemistry",
+2500
+],
+[
+"Electrical and Electronic Engineering",
+2171
+],
+[
+"Biomedical Engineering",
+1473
+],
+[
+"Molecular Biology",
+1394
+],
+[
+"Mechanical Engineering",
+1247
+],
+[
+"Organic Chemistry",
+1005
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+932
+],
+[
+"Soil Science",
+872
+],
+[
+"Electronic, Optical and Magnetic Materials",
+816
+],
+[
+"Artificial Intelligence",
+666
+],
+[
+"Astronomy and Astrophysics",
+637
+],
+[
+"Nuclear and High Energy Physics",
+634
+],
+[
+"Computational Theory and Mathematics",
+633
+],
+[
+"Water Science and Technology",
+604
+],
+[
+"Genetics",
+577
+],
+[
+"Geophysics",
+574
+],
+[
+"Global and Planetary Change",
+565
+],
+[
+"Atomic and Molecular Physics, and Optics",
+550
+],
+[
+"Aerospace Engineering",
+545
+],
+[
+"Biomaterials",
+537
+],
+[
+"Food Science",
+507
+],
+[
+"Control and Systems Engineering",
+507
+],
+[
+"Computer Vision and Pattern Recognition",
+505
+],
+[
+"Civil and Structural Engineering",
+504
+],
+[
+"Pollution",
+502
+],
+[
+"Mechanics of Materials",
+494
+],
+[
+"Environmental Engineering",
+487
+],
+[
+"Information Systems",
+459
+],
+[
+"Atmospheric Science",
+419
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+407
+],
+[
+"Statistics and Probability",
+403
+],
+[
+"Computer Networks and Communications",
+338
+],
+[
+"General Agricultural and Biological Sciences",
+327
+],
+[
+"Applied Mathematics",
+317
+],
+[
+"Computational Mechanics",
+310
+],
+[
+"Ecology",
+303
+],
+[
+"Environmental Chemistry",
+298
+],
+[
+"Health, Toxicology and Mutagenesis",
+283
+],
+[
+"Modeling and Simulation",
+271
+],
+[
+"Spectroscopy",
+227
+],
+[
+"Cancer Research",
+207
+],
+[
+"Building and Construction",
+207
+],
+[
+"Agronomy and Crop Science",
+203
+],
+[
+"Insect Science",
+184
+],
+[
+"Molecular Medicine",
+184
+],
+[
+"Immunology",
+183
+],
+[
+"Safety, Risk, Reliability and Quality",
+169
+],
+[
+"Cognitive Neuroscience",
+169
+],
+[
+"Condensed Matter Physics",
+169
+],
+[
+"Pharmaceutical Science",
+168
+],
+[
+"Management, Monitoring, Policy and Law",
+165
+],
+[
+"Statistical and Nonlinear Physics",
+164
+],
+[
+"Cell Biology",
+161
+],
+[
+"Polymers and Plastics",
+156
+],
+[
+"Geochemistry and Petrology",
+151
+],
+[
+"Waste Management and Disposal",
+150
+],
+[
+"Biotechnology",
+144
+],
+[
+"Inorganic Chemistry",
+136
+],
+[
+"Media Technology",
+125
+],
+[
+"Geometry and Topology",
+124
+],
+[
+"Physical and Theoretical Chemistry",
+107
+],
+[
+"Ceramics and Composites",
+107
+],
+[
+"Analytical Chemistry",
+106
+],
+[
+"Paleontology",
+105
+],
+[
+"Automotive Engineering",
+101
+],
+[
+"Numerical Analysis",
+95
+],
+[
+"Pharmacology",
+86
+],
+[
+"Neurology",
+85
+],
+[
+"Cellular and Molecular Neuroscience",
+84
+],
+[
+"Radiation",
+80
+],
+[
+"Signal Processing",
+78
+],
+[
+"Fluid Flow and Transfer Processes",
+75
+],
+[
+"Nature and Landscape Conservation",
+75
+],
+[
+"Animal Science and Zoology",
+73
+],
+[
+"Catalysis",
+71
+],
+[
+"Endocrine and Autonomic Systems",
+71
+],
+[
+"Mathematical Physics",
+69
+],
+[
+"Parasitology",
+68
+],
+[
+"Ocean Engineering",
+66
+],
+[
+"Industrial and Manufacturing Engineering",
+62
+],
+[
+"Physiology",
+56
+],
+[
+"Earth-Surface Processes",
+52
+],
+[
+"Forestry",
+49
+],
+[
+"Microbiology",
+49
+],
+[
+"Oceanography",
+42
+],
+[
+"Biophysics",
+41
+],
+[
+"Aquatic Science",
+34
+],
+[
+"Human-Computer Interaction",
+33
+],
+[
+"Ecological Modeling",
+33
+],
+[
+"Toxicology",
+32
+],
+[
+"Clinical Biochemistry",
+30
+],
+[
+"Acoustics and Ultrasonics",
+29
+],
+[
+"Hardware and Architecture",
+27
+],
+[
+"Virology",
+26
+],
+[
+"Surfaces, Coatings and Films",
+25
+],
+[
+"Algebra and Number Theory",
+25
+],
+[
+"Applied Microbiology and Biotechnology",
+24
+],
+[
+"Geology",
+23
+],
+[
+"Sensory Systems",
+23
+],
+[
+"Electrochemistry",
+20
+],
+[
+"Energy Engineering and Power Technology",
+18
+],
+[
+"Biochemistry",
+16
+],
+[
+"Computer Science Applications",
+16
+],
+[
+"Software",
+16
+],
+[
+"Process Chemistry and Technology",
+15
+],
+[
+"Bioengineering",
+14
+],
+[
+"Endocrinology",
+13
+],
+[
+"Structural Biology",
+11
+],
+[
+"Aging",
+10
+],
+[
+"Architecture",
+10
+],
+[
+"Developmental Neuroscience",
+10
+],
+[
+"Behavioral Neuroscience",
+9
+],
+[
+"Metals and Alloys",
+8
+],
+[
+"Developmental Biology",
+7
+],
+[
+"Space and Planetary Science",
+7
+],
+[
+"Discrete Mathematics and Combinatorics",
+7
+],
+[
+"Drug Discovery",
+7
+],
+[
+"Computer Graphics and Computer-Aided Design",
+6
+],
+[
+"Fuel Technology",
+6
+],
+[
+"General Materials Science",
+5
+],
+[
+"Filtration and Separation",
+2
+],
+[
+"General Energy",
+2
+],
+[
+"Biological Psychiatry",
+2
+],
+[
+"Horticulture",
+1
+],
+[
+"Chemical Health and Safety",
+1
+],
+[
+"Nuclear Energy and Engineering",
+1
+],
+[
+"General Engineering",
+1
+]
+],
+"I2801347850": [
+[
+"Civil and Structural Engineering",
+457
+],
+[
+"Building and Construction",
+173
+],
+[
+"Mechanical Engineering",
+134
+],
+[
+"Safety, Risk, Reliability and Quality",
+91
+],
+[
+"Management, Monitoring, Policy and Law",
+84
+],
+[
+"Mechanics of Materials",
+46
+],
+[
+"Geophysics",
+34
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+33
+],
+[
+"Environmental Engineering",
+30
+],
+[
+"Biomedical Engineering",
+26
+],
+[
+"Materials Chemistry",
+16
+],
+[
+"Electrical and Electronic Engineering",
+14
+],
+[
+"Computer Networks and Communications",
+13
+],
+[
+"Polymers and Plastics",
+13
+],
+[
+"Geology",
+11
+],
+[
+"Aerospace Engineering",
+9
+],
+[
+"Control and Systems Engineering",
+9
+],
+[
+"Biomaterials",
+9
+],
+[
+"Water Science and Technology",
+8
+],
+[
+"Ocean Engineering",
+7
+],
+[
+"Automotive Engineering",
+5
+],
+[
+"Artificial Intelligence",
+4
+],
+[
+"Waste Management and Disposal",
+4
+],
+[
+"Food Science",
+3
+],
+[
+"Hardware and Architecture",
+3
+],
+[
+"Computational Mechanics",
+3
+],
+[
+"Ecology",
+3
+],
+[
+"Health, Toxicology and Mutagenesis",
+3
+],
+[
+"Plant Science",
+2
+],
+[
+"Soil Science",
+2
+],
+[
+"Fluid Flow and Transfer Processes",
+2
+],
+[
+"Information Systems",
+2
+],
+[
+"Earth-Surface Processes",
+2
+],
+[
+"Energy Engineering and Power Technology",
+2
+],
+[
+"Applied Mathematics",
+2
+],
+[
+"Atomic and Molecular Physics, and Optics",
+2
+],
+[
+"Forestry",
+1
+],
+[
+"Molecular Biology",
+1
+],
+[
+"Molecular Medicine",
+1
+],
+[
+"Catalysis",
+1
+],
+[
+"Chemical Health and Safety",
+1
+],
+[
+"Inorganic Chemistry",
+1
+],
+[
+"Computer Vision and Pattern Recognition",
+1
+],
+[
+"Atmospheric Science",
+1
+],
+[
+"Geochemistry and Petrology",
+1
+],
+[
+"Media Technology",
+1
+],
+[
+"Electronic, Optical and Magnetic Materials",
+1
+]
+],
+"I60054993": [
+[
+"Electrical and Electronic Engineering",
+1469
+],
+[
+"Plant Science",
+1281
+],
+[
+"Artificial Intelligence",
+1011
+],
+[
+"Information Systems",
+943
+],
+[
+"Computer Vision and Pattern Recognition",
+828
+],
+[
+"Biomedical Engineering",
+772
+],
+[
+"Computer Networks and Communications",
+682
+],
+[
+"Mechanical Engineering",
+641
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+551
+],
+[
+"Materials Chemistry",
+506
+],
+[
+"Control and Systems Engineering",
+399
+],
+[
+"Molecular Biology",
+309
+],
+[
+"Civil and Structural Engineering",
+294
+],
+[
+"Safety, Risk, Reliability and Quality",
+274
+],
+[
+"Food Science",
+262
+],
+[
+"Water Science and Technology",
+244
+],
+[
+"Environmental Engineering",
+229
+],
+[
+"Polymers and Plastics",
+226
+],
+[
+"Aerospace Engineering",
+195
+],
+[
+"Industrial and Manufacturing Engineering",
+185
+],
+[
+"Biomaterials",
+178
+],
+[
+"Automotive Engineering",
+172
+],
+[
+"Electronic, Optical and Magnetic Materials",
+167
+],
+[
+"Media Technology",
+163
+],
+[
+"Pollution",
+161
+],
+[
+"Building and Construction",
+155
+],
+[
+"Computational Theory and Mathematics",
+132
+],
+[
+"Mechanics of Materials",
+127
+],
+[
+"Organic Chemistry",
+117
+],
+[
+"Signal Processing",
+114
+],
+[
+"Global and Planetary Change",
+103
+],
+[
+"Computational Mechanics",
+101
+],
+[
+"Waste Management and Disposal",
+90
+],
+[
+"Neurology",
+89
+],
+[
+"Ecology",
+83
+],
+[
+"Soil Science",
+75
+],
+[
+"Human-Computer Interaction",
+68
+],
+[
+"Atmospheric Science",
+68
+],
+[
+"Cognitive Neuroscience",
+67
+],
+[
+"Ocean Engineering",
+63
+],
+[
+"Management, Monitoring, Policy and Law",
+60
+],
+[
+"Energy Engineering and Power Technology",
+58
+],
+[
+"Genetics",
+50
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+48
+],
+[
+"Biotechnology",
+48
+],
+[
+"Health, Toxicology and Mutagenesis",
+42
+],
+[
+"Computer Science Applications",
+40
+],
+[
+"Ecological Modeling",
+40
+],
+[
+"Fluid Flow and Transfer Processes",
+39
+],
+[
+"Statistical and Nonlinear Physics",
+39
+],
+[
+"Molecular Medicine",
+37
+],
+[
+"General Agricultural and Biological Sciences",
+35
+],
+[
+"Aquatic Science",
+31
+],
+[
+"Environmental Chemistry",
+31
+],
+[
+"Cancer Research",
+30
+],
+[
+"Modeling and Simulation",
+30
+],
+[
+"Surfaces, Coatings and Films",
+29
+],
+[
+"Astronomy and Astrophysics",
+29
+],
+[
+"Spectroscopy",
+28
+],
+[
+"Software",
+26
+],
+[
+"Pharmacology",
+26
+],
+[
+"Insect Science",
+24
+],
+[
+"Analytical Chemistry",
+22
+],
+[
+"Cell Biology",
+20
+],
+[
+"Hardware and Architecture",
+19
+],
+[
+"Pharmaceutical Science",
+18
+],
+[
+"Microbiology",
+17
+],
+[
+"Condensed Matter Physics",
+17
+],
+[
+"Inorganic Chemistry",
+16
+],
+[
+"Virology",
+16
+],
+[
+"Statistics and Probability",
+16
+],
+[
+"Biophysics",
+15
+],
+[
+"Immunology",
+15
+],
+[
+"Numerical Analysis",
+15
+],
+[
+"Geophysics",
+14
+],
+[
+"Catalysis",
+13
+],
+[
+"Geometry and Topology",
+13
+],
+[
+"Nature and Landscape Conservation",
+12
+],
+[
+"Ceramics and Composites",
+12
+],
+[
+"Animal Science and Zoology",
+11
+],
+[
+"Forestry",
+11
+],
+[
+"Agronomy and Crop Science",
+10
+],
+[
+"Applied Mathematics",
+10
+],
+[
+"Atomic and Molecular Physics, and Optics",
+10
+],
+[
+"Clinical Biochemistry",
+9
+],
+[
+"Applied Microbiology and Biotechnology",
+9
+],
+[
+"Radiation",
+9
+],
+[
+"Nuclear and High Energy Physics",
+8
+],
+[
+"Bioengineering",
+6
+],
+[
+"Computer Graphics and Computer-Aided Design",
+5
+],
+[
+"Cellular and Molecular Neuroscience",
+5
+],
+[
+"Sensory Systems",
+5
+],
+[
+"Toxicology",
+5
+],
+[
+"Endocrinology",
+4
+],
+[
+"Physiology",
+4
+],
+[
+"Fuel Technology",
+4
+],
+[
+"Parasitology",
+4
+],
+[
+"Metals and Alloys",
+4
+],
+[
+"Mathematical Physics",
+4
+],
+[
+"Drug Discovery",
+4
+],
+[
+"Electrochemistry",
+3
+],
+[
+"Architecture",
+3
+],
+[
+"General Materials Science",
+3
+],
+[
+"Computational Mathematics",
+3
+],
+[
+"Biochemistry",
+2
+],
+[
+"Structural Biology",
+2
+],
+[
+"Physical and Theoretical Chemistry",
+2
+],
+[
+"Geochemistry and Petrology",
+2
+],
+[
+"Paleontology",
+2
+],
+[
+"Developmental Biology",
+1
+],
+[
+"Process Chemistry and Technology",
+1
+],
+[
+"Earth-Surface Processes",
+1
+],
+[
+"Geology",
+1
+],
+[
+"Oceanography",
+1
+],
+[
+"General Energy",
+1
+],
+[
+"Nuclear Energy and Engineering",
+1
+],
+[
+"Algebra and Number Theory",
+1
+],
+[
+"Discrete Mathematics and Combinatorics",
+1
+],
+[
+"Theoretical Computer Science",
+1
+],
+[
+"Developmental Neuroscience",
+1
+],
+[
+"Endocrine and Autonomic Systems",
+1
+]
+],
+"I5847235": [
+[
+"Electrical and Electronic Engineering",
+789
+],
+[
+"Information Systems",
+768
+],
+[
+"Artificial Intelligence",
+702
+],
+[
+"Biomedical Engineering",
+663
+],
+[
+"Materials Chemistry",
+652
+],
+[
+"Computer Networks and Communications",
+618
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+506
+],
+[
+"Mechanical Engineering",
+485
+],
+[
+"Computer Vision and Pattern Recognition",
+467
+],
+[
+"Water Science and Technology",
+365
+],
+[
+"Aerospace Engineering",
+325
+],
+[
+"Plant Science",
+296
+],
+[
+"Electronic, Optical and Magnetic Materials",
+280
+],
+[
+"Biomaterials",
+269
+],
+[
+"Molecular Biology",
+221
+],
+[
+"Pollution",
+198
+],
+[
+"Polymers and Plastics",
+196
+],
+[
+"Environmental Engineering",
+188
+],
+[
+"Ocean Engineering",
+186
+],
+[
+"Control and Systems Engineering",
+160
+],
+[
+"Computational Mechanics",
+157
+],
+[
+"Mechanics of Materials",
+133
+],
+[
+"Food Science",
+132
+],
+[
+"Nuclear and High Energy Physics",
+131
+],
+[
+"Automotive Engineering",
+121
+],
+[
+"Building and Construction",
+110
+],
+[
+"Global and Planetary Change",
+106
+],
+[
+"Industrial and Manufacturing Engineering",
+105
+],
+[
+"Organic Chemistry",
+104
+],
+[
+"Waste Management and Disposal",
+98
+],
+[
+"Media Technology",
+97
+],
+[
+"Computational Theory and Mathematics",
+95
+],
+[
+"Civil and Structural Engineering",
+92
+],
+[
+"Safety, Risk, Reliability and Quality",
+91
+],
+[
+"Human-Computer Interaction",
+88
+],
+[
+"Signal Processing",
+88
+],
+[
+"Pharmaceutical Science",
+83
+],
+[
+"Atomic and Molecular Physics, and Optics",
+83
+],
+[
+"Health, Toxicology and Mutagenesis",
+81
+],
+[
+"Environmental Chemistry",
+71
+],
+[
+"Management, Monitoring, Policy and Law",
+68
+],
+[
+"Geophysics",
+60
+],
+[
+"Soil Science",
+56
+],
+[
+"Surfaces, Coatings and Films",
+53
+],
+[
+"Modeling and Simulation",
+53
+],
+[
+"Neurology",
+53
+],
+[
+"Cognitive Neuroscience",
+52
+],
+[
+"Ecology",
+44
+],
+[
+"Astronomy and Astrophysics",
+43
+],
+[
+"Energy Engineering and Power Technology",
+42
+],
+[
+"Applied Mathematics",
+38
+],
+[
+"Cancer Research",
+35
+],
+[
+"Fluid Flow and Transfer Processes",
+33
+],
+[
+"Statistics and Probability",
+33
+],
+[
+"Spectroscopy",
+32
+],
+[
+"Radiation",
+32
+],
+[
+"Earth-Surface Processes",
+30
+],
+[
+"Atmospheric Science",
+29
+],
+[
+"Inorganic Chemistry",
+28
+],
+[
+"Molecular Medicine",
+27
+],
+[
+"Condensed Matter Physics",
+27
+],
+[
+"Analytical Chemistry",
+26
+],
+[
+"General Agricultural and Biological Sciences",
+24
+],
+[
+"Geochemistry and Petrology",
+23
+],
+[
+"Catalysis",
+22
+],
+[
+"Biotechnology",
+21
+],
+[
+"Statistical and Nonlinear Physics",
+20
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+19
+],
+[
+"Geology",
+19
+],
+[
+"Genetics",
+18
+],
+[
+"Computer Science Applications",
+17
+],
+[
+"Software",
+17
+],
+[
+"Cellular and Molecular Neuroscience",
+15
+],
+[
+"Physical and Theoretical Chemistry",
+13
+],
+[
+"Hardware and Architecture",
+13
+],
+[
+"General Energy",
+13
+],
+[
+"Insect Science",
+11
+],
+[
+"Ceramics and Composites",
+11
+],
+[
+"Pharmacology",
+10
+],
+[
+"Oceanography",
+9
+],
+[
+"Applied Microbiology and Biotechnology",
+9
+],
+[
+"Aquatic Science",
+8
+],
+[
+"Paleontology",
+8
+],
+[
+"Ecological Modeling",
+8
+],
+[
+"Algebra and Number Theory",
+8
+],
+[
+"Electrochemistry",
+7
+],
+[
+"Mathematical Physics",
+7
+],
+[
+"Numerical Analysis",
+7
+],
+[
+"Forestry",
+6
+],
+[
+"Biophysics",
+6
+],
+[
+"Cell Biology",
+6
+],
+[
+"Immunology",
+6
+],
+[
+"Virology",
+6
+],
+[
+"Toxicology",
+6
+],
+[
+"Animal Science and Zoology",
+5
+],
+[
+"Process Chemistry and Technology",
+5
+],
+[
+"Computer Graphics and Computer-Aided Design",
+5
+],
+[
+"Microbiology",
+5
+],
+[
+"Theoretical Computer Science",
+5
+],
+[
+"Metals and Alloys",
+4
+],
+[
+"Biological Psychiatry",
+4
+],
+[
+"Clinical Biochemistry",
+3
+],
+[
+"Chemical Health and Safety",
+3
+],
+[
+"Architecture",
+3
+],
+[
+"Parasitology",
+3
+],
+[
+"Drug Discovery",
+3
+],
+[
+"Aging",
+2
+],
+[
+"Biochemistry",
+2
+],
+[
+"Endocrinology",
+2
+],
+[
+"Bioengineering",
+2
+],
+[
+"Nature and Landscape Conservation",
+2
+],
+[
+"Computational Mathematics",
+2
+],
+[
+"Endocrine and Autonomic Systems",
+2
+],
+[
+"Sensory Systems",
+2
+],
+[
+"Agronomy and Crop Science",
+1
+],
+[
+"Developmental Biology",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"Structural Biology",
+1
+],
+[
+"Space and Planetary Science",
+1
+],
+[
+"Nuclear Energy and Engineering",
+1
+],
+[
+"Discrete Mathematics and Combinatorics",
+1
+],
+[
+"Geometry and Topology",
+1
+],
+[
+"Behavioral Neuroscience",
+1
+],
+[
+"Developmental Neuroscience",
+1
+],
+[
+"Instrumentation",
+1
+]
+],
+"I162030827": [
+[
+"Electrical and Electronic Engineering",
+1334
+],
+[
+"Artificial Intelligence",
+818
+],
+[
+"Biomedical Engineering",
+777
+],
+[
+"Computer Vision and Pattern Recognition",
+742
+],
+[
+"Computer Networks and Communications",
+702
+],
+[
+"Mechanical Engineering",
+601
+],
+[
+"Information Systems",
+575
+],
+[
+"Materials Chemistry",
+495
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+429
+],
+[
+"Control and Systems Engineering",
+393
+],
+[
+"Aerospace Engineering",
+319
+],
+[
+"Nuclear and High Energy Physics",
+314
+],
+[
+"Civil and Structural Engineering",
+296
+],
+[
+"Electronic, Optical and Magnetic Materials",
+253
+],
+[
+"Water Science and Technology",
+243
+],
+[
+"Plant Science",
+236
+],
+[
+"Molecular Biology",
+236
+],
+[
+"Mechanics of Materials",
+183
+],
+[
+"Automotive Engineering",
+169
+],
+[
+"Building and Construction",
+166
+],
+[
+"Computational Theory and Mathematics",
+146
+],
+[
+"Organic Chemistry",
+144
+],
+[
+"Computational Mechanics",
+136
+],
+[
+"Environmental Engineering",
+125
+],
+[
+"Ceramics and Composites",
+101
+],
+[
+"Statistical and Nonlinear Physics",
+98
+],
+[
+"Signal Processing",
+96
+],
+[
+"Geometry and Topology",
+82
+],
+[
+"Cognitive Neuroscience",
+81
+],
+[
+"Media Technology",
+78
+],
+[
+"Polymers and Plastics",
+73
+],
+[
+"Spectroscopy",
+70
+],
+[
+"Biomaterials",
+67
+],
+[
+"Statistics and Probability",
+67
+],
+[
+"Ecological Modeling",
+63
+],
+[
+"Modeling and Simulation",
+62
+],
+[
+"Applied Mathematics",
+58
+],
+[
+"Food Science",
+55
+],
+[
+"Pollution",
+55
+],
+[
+"Numerical Analysis",
+51
+],
+[
+"Atomic and Molecular Physics, and Optics",
+43
+],
+[
+"Industrial and Manufacturing Engineering",
+39
+],
+[
+"Ocean Engineering",
+39
+],
+[
+"Neurology",
+38
+],
+[
+"Condensed Matter Physics",
+38
+],
+[
+"Waste Management and Disposal",
+37
+],
+[
+"Algebra and Number Theory",
+37
+],
+[
+"Hardware and Architecture",
+35
+],
+[
+"Astronomy and Astrophysics",
+34
+],
+[
+"Safety, Risk, Reliability and Quality",
+33
+],
+[
+"Energy Engineering and Power Technology",
+32
+],
+[
+"Fluid Flow and Transfer Processes",
+30
+],
+[
+"Human-Computer Interaction",
+30
+],
+[
+"Genetics",
+29
+],
+[
+"Inorganic Chemistry",
+27
+],
+[
+"Global and Planetary Change",
+26
+],
+[
+"Atmospheric Science",
+25
+],
+[
+"Pharmacology",
+22
+],
+[
+"Catalysis",
+19
+],
+[
+"Computer Science Applications",
+19
+],
+[
+"Discrete Mathematics and Combinatorics",
+19
+],
+[
+"Biotechnology",
+16
+],
+[
+"Ecology",
+16
+],
+[
+"Soil Science",
+15
+],
+[
+"Bioengineering",
+15
+],
+[
+"Analytical Chemistry",
+15
+],
+[
+"Health, Toxicology and Mutagenesis",
+15
+],
+[
+"Management, Monitoring, Policy and Law",
+15
+],
+[
+"Mathematical Physics",
+15
+],
+[
+"Geophysics",
+14
+],
+[
+"Software",
+12
+],
+[
+"General Agricultural and Biological Sciences",
+11
+],
+[
+"Surfaces, Coatings and Films",
+11
+],
+[
+"Cell Biology",
+10
+],
+[
+"Geochemistry and Petrology",
+10
+],
+[
+"Process Chemistry and Technology",
+9
+],
+[
+"Insect Science",
+8
+],
+[
+"Cancer Research",
+8
+],
+[
+"Electrochemistry",
+8
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+7
+],
+[
+"Physical and Theoretical Chemistry",
+7
+],
+[
+"Pharmaceutical Science",
+7
+],
+[
+"Environmental Chemistry",
+6
+],
+[
+"Metals and Alloys",
+6
+],
+[
+"Agronomy and Crop Science",
+4
+],
+[
+"Biochemistry",
+4
+],
+[
+"Biophysics",
+4
+],
+[
+"Molecular Medicine",
+4
+],
+[
+"Oceanography",
+4
+],
+[
+"Immunology",
+4
+],
+[
+"Animal Science and Zoology",
+3
+],
+[
+"Aquatic Science",
+3
+],
+[
+"Computer Graphics and Computer-Aided Design",
+3
+],
+[
+"Nature and Landscape Conservation",
+3
+],
+[
+"General Materials Science",
+3
+],
+[
+"Computational Mathematics",
+3
+],
+[
+"Radiation",
+3
+],
+[
+"Geology",
+2
+],
+[
+"Applied Microbiology and Biotechnology",
+2
+],
+[
+"Parasitology",
+2
+],
+[
+"Drug Discovery",
+2
+],
+[
+"Forestry",
+1
+],
+[
+"Developmental Biology",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"Earth-Surface Processes",
+1
+],
+[
+"General Energy",
+1
+],
+[
+"Fuel Technology",
+1
+],
+[
+"Microbiology",
+1
+],
+[
+"Sensory Systems",
+1
+],
+[
+"Toxicology",
+1
+]
+],
+"I1340206300": [
+[
+"Mechanical Engineering",
+1482
+],
+[
+"Aerospace Engineering",
+1282
+],
+[
+"Electrical and Electronic Engineering",
+1175
+],
+[
+"Materials Chemistry",
+1097
+],
+[
+"Mechanics of Materials",
+687
+],
+[
+"Artificial Intelligence",
+571
+],
+[
+"Electronic, Optical and Magnetic Materials",
+550
+],
+[
+"Biomedical Engineering",
+456
+],
+[
+"Plant Science",
+417
+],
+[
+"Computer Vision and Pattern Recognition",
+405
+],
+[
+"Molecular Biology",
+319
+],
+[
+"Atomic and Molecular Physics, and Optics",
+316
+],
+[
+"Genetics",
+248
+],
+[
+"Computational Mechanics",
+239
+],
+[
+"Control and Systems Engineering",
+227
+],
+[
+"Computer Networks and Communications",
+223
+],
+[
+"Civil and Structural Engineering",
+206
+],
+[
+"Polymers and Plastics",
+197
+],
+[
+"Food Science",
+180
+],
+[
+"Signal Processing",
+173
+],
+[
+"Condensed Matter Physics",
+172
+],
+[
+"Biomaterials",
+151
+],
+[
+"Information Systems",
+138
+],
+[
+"Organic Chemistry",
+134
+],
+[
+"Water Science and Technology",
+118
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+109
+],
+[
+"Ceramics and Composites",
+109
+],
+[
+"Atmospheric Science",
+108
+],
+[
+"Pharmaceutical Science",
+108
+],
+[
+"Automotive Engineering",
+105
+],
+[
+"Oceanography",
+104
+],
+[
+"Ocean Engineering",
+104
+],
+[
+"Computational Theory and Mathematics",
+102
+],
+[
+"Spectroscopy",
+88
+],
+[
+"Management, Monitoring, Policy and Law",
+79
+],
+[
+"Cognitive Neuroscience",
+77
+],
+[
+"Media Technology",
+75
+],
+[
+"Pollution",
+72
+],
+[
+"Safety, Risk, Reliability and Quality",
+70
+],
+[
+"Fluid Flow and Transfer Processes",
+66
+],
+[
+"Soil Science",
+63
+],
+[
+"Hardware and Architecture",
+62
+],
+[
+"Analytical Chemistry",
+54
+],
+[
+"Cancer Research",
+53
+],
+[
+"Global and Planetary Change",
+51
+],
+[
+"Inorganic Chemistry",
+45
+],
+[
+"Health, Toxicology and Mutagenesis",
+45
+],
+[
+"Immunology",
+45
+],
+[
+"Neurology",
+45
+],
+[
+"Biotechnology",
+43
+],
+[
+"Ecological Modeling",
+43
+],
+[
+"Building and Construction",
+42
+],
+[
+"Molecular Medicine",
+41
+],
+[
+"Environmental Engineering",
+40
+],
+[
+"Environmental Chemistry",
+37
+],
+[
+"Radiation",
+33
+],
+[
+"Animal Science and Zoology",
+32
+],
+[
+"Ecology",
+32
+],
+[
+"Industrial and Manufacturing Engineering",
+29
+],
+[
+"Biophysics",
+28
+],
+[
+"Human-Computer Interaction",
+27
+],
+[
+"Surfaces, Coatings and Films",
+25
+],
+[
+"Aquatic Science",
+24
+],
+[
+"General Materials Science",
+23
+],
+[
+"Applied Mathematics",
+22
+],
+[
+"Modeling and Simulation",
+22
+],
+[
+"Cell Biology",
+21
+],
+[
+"Software",
+21
+],
+[
+"General Agricultural and Biological Sciences",
+17
+],
+[
+"Endocrinology",
+17
+],
+[
+"Waste Management and Disposal",
+17
+],
+[
+"Astronomy and Astrophysics",
+15
+],
+[
+"Insect Science",
+14
+],
+[
+"Pharmacology",
+14
+],
+[
+"Statistical and Nonlinear Physics",
+14
+],
+[
+"Parasitology",
+13
+],
+[
+"Mathematical Physics",
+13
+],
+[
+"Nuclear and High Energy Physics",
+13
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+12
+],
+[
+"Metals and Alloys",
+12
+],
+[
+"Cellular and Molecular Neuroscience",
+12
+],
+[
+"Geometry and Topology",
+11
+],
+[
+"Endocrine and Autonomic Systems",
+11
+],
+[
+"Agronomy and Crop Science",
+10
+],
+[
+"Earth-Surface Processes",
+10
+],
+[
+"Catalysis",
+8
+],
+[
+"Energy Engineering and Power Technology",
+8
+],
+[
+"Toxicology",
+8
+],
+[
+"Nature and Landscape Conservation",
+7
+],
+[
+"Sensory Systems",
+7
+],
+[
+"Biochemistry",
+6
+],
+[
+"Computer Graphics and Computer-Aided Design",
+6
+],
+[
+"Computer Science Applications",
+6
+],
+[
+"Microbiology",
+6
+],
+[
+"Algebra and Number Theory",
+6
+],
+[
+"Instrumentation",
+6
+],
+[
+"Physical and Theoretical Chemistry",
+5
+],
+[
+"Geophysics",
+5
+],
+[
+"Discrete Mathematics and Combinatorics",
+5
+],
+[
+"Statistics and Probability",
+5
+],
+[
+"Clinical Biochemistry",
+4
+],
+[
+"Geochemistry and Petrology",
+4
+],
+[
+"Electrochemistry",
+3
+],
+[
+"Behavioral Neuroscience",
+3
+],
+[
+"Forestry",
+2
+],
+[
+"Physiology",
+2
+],
+[
+"Structural Biology",
+2
+],
+[
+"Bioengineering",
+2
+],
+[
+"Geology",
+2
+],
+[
+"Architecture",
+2
+],
+[
+"Virology",
+2
+],
+[
+"Biological Psychiatry",
+2
+],
+[
+"Drug Discovery",
+2
+],
+[
+"Acoustics and Ultrasonics",
+2
+],
+[
+"Aging",
+1
+],
+[
+"Applied Microbiology and Biotechnology",
+1
+],
+[
+"Numerical Analysis",
+1
+],
+[
+"Developmental Neuroscience",
+1
+]
+],
+"I154549908": [
+[
+"Electrical and Electronic Engineering",
+1207
+],
+[
+"Mechanical Engineering",
+544
+],
+[
+"Artificial Intelligence",
+472
+],
+[
+"Computer Vision and Pattern Recognition",
+463
+],
+[
+"Materials Chemistry",
+323
+],
+[
+"Biomedical Engineering",
+275
+],
+[
+"Control and Systems Engineering",
+257
+],
+[
+"Molecular Biology",
+191
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+177
+],
+[
+"Aerospace Engineering",
+171
+],
+[
+"Organic Chemistry",
+167
+],
+[
+"Nuclear and High Energy Physics",
+165
+],
+[
+"Computational Mechanics",
+158
+],
+[
+"Atomic and Molecular Physics, and Optics",
+149
+],
+[
+"Civil and Structural Engineering",
+143
+],
+[
+"Electronic, Optical and Magnetic Materials",
+134
+],
+[
+"Computational Theory and Mathematics",
+115
+],
+[
+"Computer Networks and Communications",
+115
+],
+[
+"Information Systems",
+94
+],
+[
+"Statistical and Nonlinear Physics",
+82
+],
+[
+"Applied Mathematics",
+81
+],
+[
+"Cognitive Neuroscience",
+79
+],
+[
+"Water Science and Technology",
+67
+],
+[
+"Astronomy and Astrophysics",
+62
+],
+[
+"Mechanics of Materials",
+59
+],
+[
+"Plant Science",
+54
+],
+[
+"Environmental Engineering",
+53
+],
+[
+"Biomaterials",
+52
+],
+[
+"Atmospheric Science",
+48
+],
+[
+"Industrial and Manufacturing Engineering",
+41
+],
+[
+"Signal Processing",
+39
+],
+[
+"Safety, Risk, Reliability and Quality",
+39
+],
+[
+"Ecology",
+39
+],
+[
+"Mathematical Physics",
+37
+],
+[
+"Catalysis",
+36
+],
+[
+"Polymers and Plastics",
+34
+],
+[
+"Genetics",
+32
+],
+[
+"Inorganic Chemistry",
+31
+],
+[
+"Hardware and Architecture",
+31
+],
+[
+"Condensed Matter Physics",
+31
+],
+[
+"Automotive Engineering",
+30
+],
+[
+"Global and Planetary Change",
+27
+],
+[
+"Neurology",
+26
+],
+[
+"Building and Construction",
+25
+],
+[
+"Statistics and Probability",
+25
+],
+[
+"Spectroscopy",
+24
+],
+[
+"Food Science",
+22
+],
+[
+"Cancer Research",
+22
+],
+[
+"Pollution",
+21
+],
+[
+"Human-Computer Interaction",
+20
+],
+[
+"Ocean Engineering",
+20
+],
+[
+"Cell Biology",
+19
+],
+[
+"Physical and Theoretical Chemistry",
+19
+],
+[
+"Modeling and Simulation",
+19
+],
+[
+"Media Technology",
+18
+],
+[
+"Molecular Medicine",
+17
+],
+[
+"Health, Toxicology and Mutagenesis",
+16
+],
+[
+"Algebra and Number Theory",
+14
+],
+[
+"Biophysics",
+13
+],
+[
+"Waste Management and Disposal",
+13
+],
+[
+"Surfaces, Coatings and Films",
+13
+],
+[
+"Bioengineering",
+11
+],
+[
+"Immunology",
+11
+],
+[
+"Numerical Analysis",
+10
+],
+[
+"Cellular and Molecular Neuroscience",
+10
+],
+[
+"Acoustics and Ultrasonics",
+10
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+9
+],
+[
+"Fluid Flow and Transfer Processes",
+9
+],
+[
+"Geometry and Topology",
+9
+],
+[
+"Process Chemistry and Technology",
+8
+],
+[
+"Computer Graphics and Computer-Aided Design",
+8
+],
+[
+"Environmental Chemistry",
+8
+],
+[
+"Ceramics and Composites",
+8
+],
+[
+"Discrete Mathematics and Combinatorics",
+8
+],
+[
+"Pharmaceutical Science",
+8
+],
+[
+"General Agricultural and Biological Sciences",
+7
+],
+[
+"Computer Science Applications",
+7
+],
+[
+"Earth-Surface Processes",
+7
+],
+[
+"Geology",
+6
+],
+[
+"Microbiology",
+6
+],
+[
+"Soil Science",
+5
+],
+[
+"Biotechnology",
+5
+],
+[
+"Electrochemistry",
+4
+],
+[
+"Geophysics",
+4
+],
+[
+"Energy Engineering and Power Technology",
+4
+],
+[
+"Radiation",
+4
+],
+[
+"Aquatic Science",
+3
+],
+[
+"Analytical Chemistry",
+3
+],
+[
+"Metals and Alloys",
+3
+],
+[
+"Agronomy and Crop Science",
+2
+],
+[
+"Endocrinology",
+2
+],
+[
+"Structural Biology",
+2
+],
+[
+"Geochemistry and Petrology",
+2
+],
+[
+"General Energy",
+2
+],
+[
+"Ecological Modeling",
+2
+],
+[
+"Nature and Landscape Conservation",
+2
+],
+[
+"Applied Microbiology and Biotechnology",
+2
+],
+[
+"Parasitology",
+2
+],
+[
+"Endocrine and Autonomic Systems",
+2
+],
+[
+"Forestry",
+1
+],
+[
+"Insect Science",
+1
+],
+[
+"Biochemistry",
+1
+],
+[
+"Clinical Biochemistry",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"Software",
+1
+],
+[
+"Oceanography",
+1
+],
+[
+"Fuel Technology",
+1
+],
+[
+"Architecture",
+1
+],
+[
+"Management, Monitoring, Policy and Law",
+1
+],
+[
+"General Materials Science",
+1
+],
+[
+"Theoretical Computer Science",
+1
+],
+[
+"Behavioral Neuroscience",
+1
+],
+[
+"Biological Psychiatry",
+1
+],
+[
+"Developmental Neuroscience",
+1
+],
+[
+"Pharmacology",
+1
+],
+[
+"Toxicology",
+1
+]
+],
+"I65181880": [
+[
+"Electrical and Electronic Engineering",
+1556
+],
+[
+"Astronomy and Astrophysics",
+700
+],
+[
+"Biomedical Engineering",
+690
+],
+[
+"Materials Chemistry",
+648
+],
+[
+"Nuclear and High Energy Physics",
+646
+],
+[
+"Civil and Structural Engineering",
+638
+],
+[
+"Artificial Intelligence",
+632
+],
+[
+"Mechanical Engineering",
+608
+],
+[
+"Computational Mechanics",
+479
+],
+[
+"Electronic, Optical and Magnetic Materials",
+470
+],
+[
+"Computer Vision and Pattern Recognition",
+401
+],
+[
+"Computer Networks and Communications",
+399
+],
+[
+"Atomic and Molecular Physics, and Optics",
+393
+],
+[
+"Organic Chemistry",
+389
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+317
+],
+[
+"Molecular Biology",
+284
+],
+[
+"Computational Theory and Mathematics",
+284
+],
+[
+"Mechanics of Materials",
+223
+],
+[
+"Biomaterials",
+199
+],
+[
+"Control and Systems Engineering",
+190
+],
+[
+"Aerospace Engineering",
+182
+],
+[
+"Information Systems",
+142
+],
+[
+"Building and Construction",
+141
+],
+[
+"Water Science and Technology",
+125
+],
+[
+"Automotive Engineering",
+118
+],
+[
+"Inorganic Chemistry",
+105
+],
+[
+"Hardware and Architecture",
+101
+],
+[
+"Applied Mathematics",
+100
+],
+[
+"Safety, Risk, Reliability and Quality",
+97
+],
+[
+"Environmental Engineering",
+94
+],
+[
+"Global and Planetary Change",
+81
+],
+[
+"Catalysis",
+71
+],
+[
+"Mathematical Physics",
+67
+],
+[
+"Fluid Flow and Transfer Processes",
+63
+],
+[
+"Ecology",
+63
+],
+[
+"Cognitive Neuroscience",
+63
+],
+[
+"Pollution",
+60
+],
+[
+"Plant Science",
+56
+],
+[
+"Physical and Theoretical Chemistry",
+51
+],
+[
+"Health, Toxicology and Mutagenesis",
+51
+],
+[
+"Statistical and Nonlinear Physics",
+47
+],
+[
+"Condensed Matter Physics",
+45
+],
+[
+"Polymers and Plastics",
+43
+],
+[
+"Signal Processing",
+41
+],
+[
+"Media Technology",
+40
+],
+[
+"Geometry and Topology",
+40
+],
+[
+"Pharmaceutical Science",
+40
+],
+[
+"Cell Biology",
+36
+],
+[
+"Human-Computer Interaction",
+36
+],
+[
+"Spectroscopy",
+35
+],
+[
+"Genetics",
+34
+],
+[
+"Molecular Medicine",
+34
+],
+[
+"Biophysics",
+30
+],
+[
+"Statistics and Probability",
+30
+],
+[
+"Atmospheric Science",
+29
+],
+[
+"Waste Management and Disposal",
+29
+],
+[
+"Algebra and Number Theory",
+28
+],
+[
+"Geophysics",
+26
+],
+[
+"Modeling and Simulation",
+23
+],
+[
+"Instrumentation",
+21
+],
+[
+"Ocean Engineering",
+20
+],
+[
+"Surfaces, Coatings and Films",
+19
+],
+[
+"Soil Science",
+17
+],
+[
+"Biotechnology",
+17
+],
+[
+"Software",
+17
+],
+[
+"Geology",
+17
+],
+[
+"Cancer Research",
+16
+],
+[
+"Food Science",
+15
+],
+[
+"Electrochemistry",
+15
+],
+[
+"Discrete Mathematics and Combinatorics",
+14
+],
+[
+"Cellular and Molecular Neuroscience",
+14
+],
+[
+"Endocrine and Autonomic Systems",
+14
+],
+[
+"Environmental Chemistry",
+13
+],
+[
+"Toxicology",
+13
+],
+[
+"Neurology",
+11
+],
+[
+"Computer Graphics and Computer-Aided Design",
+10
+],
+[
+"Energy Engineering and Power Technology",
+10
+],
+[
+"Industrial and Manufacturing Engineering",
+9
+],
+[
+"Immunology",
+9
+],
+[
+"Process Chemistry and Technology",
+8
+],
+[
+"Oceanography",
+8
+],
+[
+"Earth-Surface Processes",
+7
+],
+[
+"Management, Monitoring, Policy and Law",
+7
+],
+[
+"Analytical Chemistry",
+6
+],
+[
+"Ceramics and Composites",
+6
+],
+[
+"Numerical Analysis",
+6
+],
+[
+"Radiation",
+6
+],
+[
+"General Agricultural and Biological Sciences",
+5
+],
+[
+"Endocrinology",
+5
+],
+[
+"Bioengineering",
+4
+],
+[
+"Computer Science Applications",
+4
+],
+[
+"Geochemistry and Petrology",
+4
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+3
+],
+[
+"Applied Microbiology and Biotechnology",
+3
+],
+[
+"Microbiology",
+3
+],
+[
+"Parasitology",
+3
+],
+[
+"Virology",
+3
+],
+[
+"General Materials Science",
+3
+],
+[
+"Metals and Alloys",
+3
+],
+[
+"Clinical Biochemistry",
+2
+],
+[
+"General Energy",
+2
+],
+[
+"Computational Mathematics",
+2
+],
+[
+"Pharmacology",
+2
+],
+[
+"Aquatic Science",
+1
+],
+[
+"Biochemistry",
+1
+],
+[
+"Physiology",
+1
+],
+[
+"Structural Biology",
+1
+],
+[
+"Chemical Health and Safety",
+1
+],
+[
+"Fuel Technology",
+1
+],
+[
+"Architecture",
+1
+],
+[
+"Sensory Systems",
+1
+],
+[
+"Drug Discovery",
+1
+]
+],
+"I191972202": [
+[
+"Information Systems",
+2714
+],
+[
+"Plant Science",
+2461
+],
+[
+"Artificial Intelligence",
+2260
+],
+[
+"Electrical and Electronic Engineering",
+2146
+],
+[
+"Molecular Biology",
+1668
+],
+[
+"Materials Chemistry",
+1600
+],
+[
+"Computer Vision and Pattern Recognition",
+1593
+],
+[
+"Computer Networks and Communications",
+1406
+],
+[
+"Biomedical Engineering",
+1309
+],
+[
+"Mechanical Engineering",
+904
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+883
+],
+[
+"Food Science",
+674
+],
+[
+"Aerospace Engineering",
+659
+],
+[
+"Biomaterials",
+659
+],
+[
+"Computational Theory and Mathematics",
+618
+],
+[
+"Pollution",
+538
+],
+[
+"Water Science and Technology",
+538
+],
+[
+"Pharmaceutical Science",
+510
+],
+[
+"Organic Chemistry",
+491
+],
+[
+"Environmental Engineering",
+436
+],
+[
+"Electronic, Optical and Magnetic Materials",
+402
+],
+[
+"Control and Systems Engineering",
+383
+],
+[
+"Civil and Structural Engineering",
+376
+],
+[
+"Building and Construction",
+372
+],
+[
+"Cognitive Neuroscience",
+327
+],
+[
+"Genetics",
+303
+],
+[
+"Polymers and Plastics",
+300
+],
+[
+"Global and Planetary Change",
+297
+],
+[
+"Industrial and Manufacturing Engineering",
+289
+],
+[
+"Automotive Engineering",
+282
+],
+[
+"Signal Processing",
+278
+],
+[
+"Atomic and Molecular Physics, and Optics",
+276
+],
+[
+"Astronomy and Astrophysics",
+271
+],
+[
+"Media Technology",
+268
+],
+[
+"Software",
+248
+],
+[
+"Waste Management and Disposal",
+246
+],
+[
+"Cancer Research",
+240
+],
+[
+"Human-Computer Interaction",
+236
+],
+[
+"Health, Toxicology and Mutagenesis",
+236
+],
+[
+"Computational Mechanics",
+221
+],
+[
+"Ecology",
+218
+],
+[
+"Nuclear and High Energy Physics",
+201
+],
+[
+"Neurology",
+197
+],
+[
+"Modeling and Simulation",
+194
+],
+[
+"Soil Science",
+192
+],
+[
+"Analytical Chemistry",
+175
+],
+[
+"Molecular Medicine",
+165
+],
+[
+"Mechanics of Materials",
+163
+],
+[
+"Computer Science Applications",
+160
+],
+[
+"Immunology",
+152
+],
+[
+"Atmospheric Science",
+146
+],
+[
+"General Agricultural and Biological Sciences",
+142
+],
+[
+"Biotechnology",
+141
+],
+[
+"Safety, Risk, Reliability and Quality",
+139
+],
+[
+"Statistics and Probability",
+138
+],
+[
+"Management, Monitoring, Policy and Law",
+137
+],
+[
+"Pharmacology",
+121
+],
+[
+"Statistical and Nonlinear Physics",
+115
+],
+[
+"Environmental Chemistry",
+103
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+102
+],
+[
+"Geometry and Topology",
+96
+],
+[
+"Cell Biology",
+95
+],
+[
+"Ocean Engineering",
+87
+],
+[
+"Toxicology",
+79
+],
+[
+"Spectroscopy",
+76
+],
+[
+"Radiation",
+76
+],
+[
+"Insect Science",
+73
+],
+[
+"Inorganic Chemistry",
+72
+],
+[
+"Aquatic Science",
+70
+],
+[
+"Applied Mathematics",
+69
+],
+[
+"Surfaces, Coatings and Films",
+68
+],
+[
+"Condensed Matter Physics",
+61
+],
+[
+"Energy Engineering and Power Technology",
+58
+],
+[
+"Fluid Flow and Transfer Processes",
+56
+],
+[
+"Microbiology",
+50
+],
+[
+"Hardware and Architecture",
+47
+],
+[
+"Agronomy and Crop Science",
+42
+],
+[
+"Computer Graphics and Computer-Aided Design",
+42
+],
+[
+"Applied Microbiology and Biotechnology",
+42
+],
+[
+"Biophysics",
+41
+],
+[
+"Clinical Biochemistry",
+40
+],
+[
+"Ecological Modeling",
+36
+],
+[
+"Physical and Theoretical Chemistry",
+34
+],
+[
+"Architecture",
+34
+],
+[
+"Catalysis",
+29
+],
+[
+"Nature and Landscape Conservation",
+28
+],
+[
+"Virology",
+28
+],
+[
+"Geophysics",
+27
+],
+[
+"Cellular and Molecular Neuroscience",
+27
+],
+[
+"Animal Science and Zoology",
+22
+],
+[
+"Bioengineering",
+19
+],
+[
+"Oceanography",
+18
+],
+[
+"Mathematical Physics",
+18
+],
+[
+"Forestry",
+17
+],
+[
+"Sensory Systems",
+17
+],
+[
+"Drug Discovery",
+17
+],
+[
+"Parasitology",
+15
+],
+[
+"Ceramics and Composites",
+15
+],
+[
+"Electrochemistry",
+14
+],
+[
+"Earth-Surface Processes",
+14
+],
+[
+"Geology",
+14
+],
+[
+"Endocrine and Autonomic Systems",
+14
+],
+[
+"Biochemistry",
+13
+],
+[
+"Aging",
+12
+],
+[
+"Geochemistry and Petrology",
+12
+],
+[
+"Algebra and Number Theory",
+10
+],
+[
+"Developmental Neuroscience",
+10
+],
+[
+"Physiology",
+9
+],
+[
+"Process Chemistry and Technology",
+9
+],
+[
+"Endocrinology",
+8
+],
+[
+"Paleontology",
+8
+],
+[
+"General Materials Science",
+8
+],
+[
+"Biological Psychiatry",
+8
+],
+[
+"General Energy",
+7
+],
+[
+"Numerical Analysis",
+7
+],
+[
+"Behavioral Neuroscience",
+6
+],
+[
+"Chemical Health and Safety",
+5
+],
+[
+"Metals and Alloys",
+5
+],
+[
+"Structural Biology",
+4
+],
+[
+"Space and Planetary Science",
+2
+],
+[
+"Discrete Mathematics and Combinatorics",
+2
+],
+[
+"Fuel Technology",
+1
+],
+[
+"Nuclear Energy and Engineering",
+1
+],
+[
+"Theoretical Computer Science",
+1
+],
+[
+"Instrumentation",
+1
+]
+],
+"I70971781": [
+[
+"Electrical and Electronic Engineering",
+844
+],
+[
+"Mechanical Engineering",
+585
+],
+[
+"Civil and Structural Engineering",
+491
+],
+[
+"Biomedical Engineering",
+463
+],
+[
+"Computer Networks and Communications",
+397
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+345
+],
+[
+"Computer Vision and Pattern Recognition",
+337
+],
+[
+"Nuclear and High Energy Physics",
+304
+],
+[
+"Artificial Intelligence",
+299
+],
+[
+"Materials Chemistry",
+287
+],
+[
+"Information Systems",
+284
+],
+[
+"Building and Construction",
+236
+],
+[
+"Polymers and Plastics",
+223
+],
+[
+"Water Science and Technology",
+188
+],
+[
+"Aerospace Engineering",
+170
+],
+[
+"Organic Chemistry",
+162
+],
+[
+"Fluid Flow and Transfer Processes",
+154
+],
+[
+"Control and Systems Engineering",
+150
+],
+[
+"Electronic, Optical and Magnetic Materials",
+135
+],
+[
+"Plant Science",
+115
+],
+[
+"Automotive Engineering",
+108
+],
+[
+"Computational Mechanics",
+91
+],
+[
+"Mechanics of Materials",
+87
+],
+[
+"Cognitive Neuroscience",
+86
+],
+[
+"Biomaterials",
+75
+],
+[
+"Environmental Engineering",
+70
+],
+[
+"Pollution",
+68
+],
+[
+"Signal Processing",
+63
+],
+[
+"Molecular Biology",
+59
+],
+[
+"Industrial and Manufacturing Engineering",
+53
+],
+[
+"Computational Theory and Mathematics",
+46
+],
+[
+"Inorganic Chemistry",
+43
+],
+[
+"Food Science",
+42
+],
+[
+"Waste Management and Disposal",
+41
+],
+[
+"Safety, Risk, Reliability and Quality",
+38
+],
+[
+"Molecular Medicine",
+37
+],
+[
+"Atomic and Molecular Physics, and Optics",
+37
+],
+[
+"Neurology",
+36
+],
+[
+"Statistical and Nonlinear Physics",
+36
+],
+[
+"Surfaces, Coatings and Films",
+31
+],
+[
+"Modeling and Simulation",
+31
+],
+[
+"Pharmaceutical Science",
+30
+],
+[
+"Numerical Analysis",
+27
+],
+[
+"Applied Mathematics",
+26
+],
+[
+"Condensed Matter Physics",
+26
+],
+[
+"Spectroscopy",
+22
+],
+[
+"Media Technology",
+22
+],
+[
+"Ecology",
+21
+],
+[
+"Statistics and Probability",
+21
+],
+[
+"Geometry and Topology",
+16
+],
+[
+"Catalysis",
+13
+],
+[
+"Human-Computer Interaction",
+13
+],
+[
+"Ecological Modeling",
+13
+],
+[
+"Global and Planetary Change",
+13
+],
+[
+"Health, Toxicology and Mutagenesis",
+13
+],
+[
+"Astronomy and Astrophysics",
+12
+],
+[
+"Radiation",
+12
+],
+[
+"Management, Monitoring, Policy and Law",
+11
+],
+[
+"Biophysics",
+10
+],
+[
+"Physical and Theoretical Chemistry",
+10
+],
+[
+"Hardware and Architecture",
+10
+],
+[
+"Ceramics and Composites",
+10
+],
+[
+"Metals and Alloys",
+9
+],
+[
+"Bioengineering",
+8
+],
+[
+"Analytical Chemistry",
+8
+],
+[
+"Computer Science Applications",
+8
+],
+[
+"Environmental Chemistry",
+8
+],
+[
+"Algebra and Number Theory",
+8
+],
+[
+"Biotechnology",
+7
+],
+[
+"Ocean Engineering",
+7
+],
+[
+"Energy Engineering and Power Technology",
+6
+],
+[
+"Mathematical Physics",
+6
+],
+[
+"General Agricultural and Biological Sciences",
+5
+],
+[
+"Soil Science",
+5
+],
+[
+"Software",
+5
+],
+[
+"Aquatic Science",
+3
+],
+[
+"Geology",
+3
+],
+[
+"Virology",
+3
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+2
+],
+[
+"Process Chemistry and Technology",
+2
+],
+[
+"Atmospheric Science",
+2
+],
+[
+"Earth-Surface Processes",
+2
+],
+[
+"Geophysics",
+2
+],
+[
+"Oceanography",
+2
+],
+[
+"Pharmacology",
+2
+],
+[
+"Toxicology",
+2
+],
+[
+"Agronomy and Crop Science",
+1
+],
+[
+"Animal Science and Zoology",
+1
+],
+[
+"Forestry",
+1
+],
+[
+"Biochemistry",
+1
+],
+[
+"Filtration and Separation",
+1
+],
+[
+"Geochemistry and Petrology",
+1
+],
+[
+"Architecture",
+1
+],
+[
+"General Materials Science",
+1
+],
+[
+"Cellular and Molecular Neuroscience",
+1
+]
+],
+"I51281103": [
+[
+"Global and Planetary Change",
+290
+],
+[
+"Environmental Engineering",
+207
+],
+[
+"Atmospheric Science",
+199
+],
+[
+"Aerospace Engineering",
+199
+],
+[
+"Ecology",
+188
+],
+[
+"Media Technology",
+151
+],
+[
+"Water Science and Technology",
+75
+],
+[
+"Management, Monitoring, Policy and Law",
+67
+],
+[
+"Astronomy and Astrophysics",
+61
+],
+[
+"Ocean Engineering",
+56
+],
+[
+"Soil Science",
+53
+],
+[
+"Oceanography",
+44
+],
+[
+"Geophysics",
+40
+],
+[
+"Artificial Intelligence",
+33
+],
+[
+"Earth-Surface Processes",
+33
+],
+[
+"Geology",
+31
+],
+[
+"Ecological Modeling",
+26
+],
+[
+"Computer Vision and Pattern Recognition",
+22
+],
+[
+"Ecology, Evolution, Behavior and Systematics",
+15
+],
+[
+"Plant Science",
+13
+],
+[
+"Civil and Structural Engineering",
+12
+],
+[
+"Nature and Landscape Conservation",
+11
+],
+[
+"Geochemistry and Petrology",
+10
+],
+[
+"Building and Construction",
+9
+],
+[
+"Health, Toxicology and Mutagenesis",
+8
+],
+[
+"Forestry",
+7
+],
+[
+"Environmental Chemistry",
+7
+],
+[
+"Modeling and Simulation",
+6
+],
+[
+"Information Systems",
+5
+],
+[
+"Pollution",
+5
+],
+[
+"Safety, Risk, Reliability and Quality",
+3
+],
+[
+"Waste Management and Disposal",
+3
+],
+[
+"Aquatic Science",
+2
+],
+[
+"Control and Systems Engineering",
+2
+],
+[
+"Mechanical Engineering",
+2
+],
+[
+"Materials Chemistry",
+2
+],
+[
+"Atomic and Molecular Physics, and Optics",
+2
+],
+[
+"Statistical and Nonlinear Physics",
+2
+],
+[
+"General Agricultural and Biological Sciences",
+1
+],
+[
+"Insect Science",
+1
+],
+[
+"Biophysics",
+1
+],
+[
+"Molecular Biology",
+1
+],
+[
+"Structural Biology",
+1
+],
+[
+"Paleontology",
+1
+],
+[
+"Renewable Energy, Sustainability and the Environment",
+1
+],
+[
+"Biomedical Engineering",
+1
+],
+[
+"Electrical and Electronic Engineering",
+1
+],
+[
+"Mechanics of Materials",
+1
+],
+[
+"Parasitology",
+1
+],
+[
+"Electronic, Optical and Magnetic Materials",
+1
+]
+]
+}
