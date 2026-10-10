@@ -5,6 +5,37 @@ Roorkee**, shown to the class, due **Week 3**. All the numbers it needs are alre
 is a presentation job: read the CSVs below, draw them, and make them filterable. You don't need to touch the
 scraping or enrichment code.
 
+## Status (11 Oct 2026): a working dashboard exists in `site/`
+
+A first full version is built as a **static website** (the "no server" option in section 3), following the design
+rules in section 3b. Open `Dashboard/site/index.html` in a browser. It needs internet for the chart library and font.
+
+| File | What |
+|---|---|
+| `site/index.html` | the page: layout, light/dark mode, all charts (ECharts 5.5.0 from cdnjs) and interactions |
+| `site/data.js` | all the numbers the page shows, built from `Analysis/results` (+ titles and network edges from `Enrichment/out`) |
+| `site/build_data.py` | rebuilds `data.js`: `python Dashboard/site/build_data.py`, after `Analysis/scripts/run_all.sh` if stats change |
+
+**Done:** all 11 required panels plus the Indian-links, communities, null-model and partner panels. A
+Both / Kharagpur / Roorkee filter for the whole page, light/dark toggle, interactive citation and faculty networks
+(zoom, hover, click for details, faculty search), and a sortable, searchable faculty table. Reviewed by screenshots
+at desktop width in light and dark mode.
+
+**Left to do**
+- [ ] **Phone layout.** Not finished. Two fixes are in but not yet verified by a phone render: the hero
+      counters and bar-chart label widths on narrow screens. Check every section at ~390 px (browser dev tools,
+      device mode), especially the network panels, the faculty table (it scrolls sideways inside its card) and the
+      partner charts.
+- [ ] **Final desktop pass.** The two fixes above came after the last desktop screenshot. Do a quick visual check
+      in both themes.
+- [ ] **Slide-12 table: "top 10 most-cited papers citing your institute".** Not computed yet. See section 7.
+- [ ] **Hosting for the class demo.** Either open it locally, or publish `Dashboard/site/` with GitHub Pages
+      (the page only needs `index.html` + `data.js`).
+- [ ] **Optional.** A CSV export of the faculty table, and a year-range filter.
+
+The rest of this file is the original guide: the panel ↔ file mapping (section 2) and the design rules (3b) still
+apply to any changes.
+
 ## 1. Before you start
 
 ```
