@@ -17,5 +17,6 @@ Course project for **DPCN** (Instructor: Prof. Chittaranjan Hens), IIIT Hyderaba
 ## Repository contents
 
 - **[WebScrape/](WebScrape/README.md)**: publication datasets for IIT Ropar, IIT Kharagpur and IIT Roorkee (2016–2026), the scraping pipeline, and the [process](WebScrape/PROCESS.md) and [results](WebScrape/RESULTS.md) write-ups
+- **[Enrichment/](Enrichment/README.md)**: fills the scraped data's TODOs (OpenAlex, Scimago, CORE, ORCID), links papers to faculty, and builds the submission CSV and network files
 - [docs/network_concepts.html](docs/network_concepts.html): explainer for the network concepts used
 - `DPCN_Instruction_Note.pdf`: assignment brief; `group3_data.csv`: submission CSV in the brief's column format

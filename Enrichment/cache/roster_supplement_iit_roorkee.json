@@ -1,0 +1,1383 @@
+[
+ {
+  "orcid": "0000-0001-5098-9759",
+  "orcid_name": "Ravi Bhushan",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemistry",
+    "role": "Professor (retired 2018)",
+    "start": 1979,
+    "end": 2018
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-5098-9759",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:175",
+  "roster_name": "Ravi Bhushan",
+  "papers": 71
+ },
+ {
+  "orcid": "0000-0002-3416-8640",
+  "orcid_name": "Rajendra N Goyal",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemistry Department",
+    "role": "Professor",
+    "start": 1996,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-3416-8640",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:174",
+  "roster_name": "R. N. Goyal",
+  "papers": 28
+ },
+ {
+  "orcid": "0000-0002-7254-4029",
+  "orcid_name": "udai singh",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemistry",
+    "role": "Professor",
+    "start": null,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-7254-4029",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:161",
+  "roster_name": "U. P. Singh",
+  "papers": 61
+ },
+ {
+  "orcid": "0000-0001-7849-9313",
+  "orcid_name": "SANJAY GHOSH",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Civil Engineering",
+    "role": "Professor",
+    "start": 2007,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-7849-9313",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:249",
+  "roster_name": "S. K. Ghosh",
+  "papers": 73
+ },
+ {
+  "orcid": "0009-0007-7264-7339",
+  "orcid_name": "Naseem Ahmed",
+  "jobs": [
+   {
+    "organization": "University of Roorkee",
+    "department": "chemistry",
+    "role": "Professor",
+    "start": 2008,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0009-0007-7264-7339",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:144",
+  "roster_name": "Naseem Ahmed",
+  "papers": 35
+ },
+ {
+  "orcid": "0000-0001-7528-1618",
+  "orcid_name": "Dilip Mukhopadhyay",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Earth Sciences",
+    "role": "Professor (Retd.)",
+    "start": 1983,
+    "end": 2019
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-7528-1618",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:322",
+  "roster_name": "D. K. Mukhopadhyay",
+  "papers": 7
+ },
+ {
+  "orcid": "0000-0002-2140-7454",
+  "orcid_name": "Vimal Kumar",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemical Engineering",
+    "role": "Professor",
+    "start": 2023,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemical Engineering",
+    "role": "Associate Professor",
+    "start": 2023,
+    "end": 2023
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemical Engineering",
+    "role": "Assistant Professor",
+    "start": 2011,
+    "end": 2016
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-2140-7454",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:122",
+  "roster_name": "Vimal Kumar",
+  "papers": 66
+ },
+ {
+  "orcid": "0000-0003-0202-3196",
+  "orcid_name": "Sateesh Kumar Peddoju",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Computer Science and Engineering",
+    "role": "Associate Professor",
+    "start": 2018,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Computer Science and Engineering",
+    "role": "Assistant Professor",
+    "start": 2010,
+    "end": 2018
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-0202-3196",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:263",
+  "roster_name": "Peddoju Sateesh Kumar",
+  "papers": 47
+ },
+ {
+  "orcid": "0000-0002-8855-1469",
+  "orcid_name": "Ravi Kumar",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Mechanical  & Industrial Engineering",
+    "role": "Professor",
+    "start": null,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-8855-1469",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:653",
+  "roster_name": "Ravi Kumar",
+  "papers": 70
+ },
+ {
+  "orcid": "0000-0001-5243-5223",
+  "orcid_name": "DHARM DUTT",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Paper Technology",
+    "role": "Professor",
+    "start": 1997,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-5243-5223",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:721",
+  "roster_name": "Dharm Dutt",
+  "papers": 59
+ },
+ {
+  "orcid": "0000-0003-2331-5374",
+  "orcid_name": "Ramachandran C N",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemistry",
+    "role": "Associate Professor",
+    "start": 2019,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-2331-5374",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:153",
+  "roster_name": "Ramachandran C. N.",
+  "papers": 74
+ },
+ {
+  "orcid": "0000-0003-2518-5956",
+  "orcid_name": "A A Kazmi",
+  "jobs": [
+   {
+    "organization": "IIT Roorkee",
+    "department": "Civil Engineering",
+    "role": "Professor",
+    "start": null,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-2518-5956",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:179",
+  "roster_name": "Absar Ahmad Kazmi",
+  "papers": 79
+ },
+ {
+  "orcid": "0009-0009-0250-4863",
+  "orcid_name": "Basheshwer Prasad",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemical Engineering",
+    "role": "Professor",
+    "start": 2012,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0009-0009-0250-4863",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:99",
+  "roster_name": "B. Prasad",
+  "papers": 6
+ },
+ {
+  "orcid": "0000-0001-6722-8956",
+  "orcid_name": "Yogendra Singh",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Earthquake Engineering",
+    "role": "Professor",
+    "start": 2012,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Earthquake Engineering",
+    "role": "Associate Professor",
+    "start": 2007,
+    "end": 2012
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Earthquake Engineering",
+    "role": "Assistant Professor",
+    "start": 2001,
+    "end": 2007
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-6722-8956",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:347",
+  "roster_name": "Yogendra Singh",
+  "papers": 75
+ },
+ {
+  "orcid": "0000-0002-9549-2997",
+  "orcid_name": "Kanhaiya Lal Yadav",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Physics",
+    "role": "Faculty",
+    "start": 2002,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-9549-2997",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:759",
+  "roster_name": "K. L. Yadav",
+  "papers": 92
+ },
+ {
+  "orcid": "0000-0003-2628-4737",
+  "orcid_name": "Mukat Sharma",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Earthquake Engineering",
+    "role": "Professor",
+    "start": 1985,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-2628-4737",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:334",
+  "roster_name": "M. L. Sharma",
+  "papers": 40
+ },
+ {
+  "orcid": "0000-0002-7181-4031",
+  "orcid_name": "Arun Kumar",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Hydro and Renewable energy",
+    "role": "Professor",
+    "start": 1981,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-7181-4031",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:492",
+  "roster_name": "Arun Kumar",
+  "papers": 53
+ },
+ {
+  "orcid": "0000-0002-3993-4447",
+  "orcid_name": "Rudra Prakash Maheshwari",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Electrical Engineering",
+    "role": "Professor",
+    "start": 1998,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-3993-4447",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:402",
+  "roster_name": "R. P. Maheshwari",
+  "papers": 6
+ },
+ {
+  "orcid": "0000-0002-9411-9867",
+  "orcid_name": "Krishna Mohan Singh",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Mechanical and Industrial Engineering",
+    "role": "Professor",
+    "start": 2019,
+    "end": null
+   },
+   {
+    "organization": "IIT-Roorkee",
+    "department": "Mechanical and Industrial Engineering",
+    "role": "Associate Professor",
+    "start": 2012,
+    "end": 2019
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-9411-9867",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:640",
+  "roster_name": "K. M. Singh",
+  "papers": 24
+ },
+ {
+  "orcid": "0000-0003-1106-5961",
+  "orcid_name": "Dhyan Singh Arya",
+  "jobs": [
+   {
+    "organization": "IIT Roorkee",
+    "department": "Hydrology",
+    "role": "Professor and Dean",
+    "start": 1998,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-1106-5961",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:520",
+  "roster_name": "D. S. Arya",
+  "papers": 34
+ },
+ {
+  "orcid": "0000-0001-9624-8024",
+  "orcid_name": "Paramasivan Arumugam",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Physics",
+    "role": "Professor",
+    "start": 2019,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Physics",
+    "role": "Associate Professor",
+    "start": 2014,
+    "end": 2019
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Physics",
+    "role": "Assistant Professor",
+    "start": 2008,
+    "end": 2014
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-9624-8024",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:767",
+  "roster_name": "P. Arumugam",
+  "papers": 65
+ },
+ {
+  "orcid": "0009-0004-7403-6679",
+  "orcid_name": "Bhupinder Singh",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Department of Civil Engineering",
+    "role": "Professor",
+    "start": 2018,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Department of Civil Engineering",
+    "role": "Associate Professor",
+    "start": 2012,
+    "end": 2018
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Department of Civil Engineering",
+    "role": "Assistant Professor",
+    "start": 2005,
+    "end": 2012
+   }
+  ],
+  "url": "https://orcid.org/0009-0004-7403-6679",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:190",
+  "roster_name": "Bhupinder Singh",
+  "papers": 9
+ },
+ {
+  "orcid": "0000-0002-9585-4249",
+  "orcid_name": "Ramesh Chand Mittal",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Mathematics",
+    "role": "Professor",
+    "start": 1980,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-9585-4249",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:609",
+  "roster_name": "R. C. Mittal",
+  "papers": 10
+ },
+ {
+  "orcid": "0000-0003-4558-8779",
+  "orcid_name": "Sandip Banerjee",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Mathematics",
+    "role": "Associate Professor",
+    "start": 2008,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-4558-8779",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:596",
+  "roster_name": "Sandip Banerjee",
+  "papers": 4
+ },
+ {
+  "orcid": "0000-0002-9416-7180",
+  "orcid_name": "Sourav Das",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Metallurgical and Materials Engineering",
+    "role": "Associate Professor",
+    "start": 2021,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Metallurgical and Materials Engineering",
+    "role": "Assistant Professor",
+    "start": 2015,
+    "end": 2021
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-9416-7180",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:704",
+  "roster_name": "Sourav Das",
+  "papers": 27
+ },
+ {
+  "orcid": "0000-0002-3306-3986",
+  "orcid_name": "Gaurav Manik",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Polymer and Process Engineering",
+    "role": "Professor",
+    "start": 2022,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Polymer and Process Engineering",
+    "role": "Associate Professor",
+    "start": 2018,
+    "end": 2022
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Department of Polymer and Process Engineering",
+    "role": "Assistant Professor",
+    "start": 2013,
+    "end": 2018
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-3306-3986",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:797",
+  "roster_name": "Gaurav Manik",
+  "papers": 8
+ },
+ {
+  "orcid": "0000-0001-6787-8641",
+  "orcid_name": "Patit Kundu",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology, Roorkee",
+    "department": "Department of Chemical Engineering",
+    "role": "Professor",
+    "start": 2016,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-6787-8641",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:110",
+  "roster_name": "Patit Paban Kundu",
+  "papers": 3
+ },
+ {
+  "orcid": "0000-0001-9251-5818",
+  "orcid_name": "Gaurav Dixit",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Mehta Family School of Data Science and Artificial Intelligence and Department of Management Studies",
+    "role": "Associate Professor",
+    "start": 2015,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-9251-5818",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:535",
+  "roster_name": "Gaurav Dixit",
+  "papers": 30
+ },
+ {
+  "orcid": "0000-0001-8572-7046",
+  "orcid_name": "Ankit Agarwal",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Department of Hydrology",
+    "role": "Assistant Professor",
+    "start": 2019,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-8572-7046",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:516",
+  "roster_name": "Ankit Agarwal",
+  "papers": 187
+ },
+ {
+  "orcid": "0000-0001-6994-2993",
+  "orcid_name": "Himanshu Joshi",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Hydrology",
+    "role": "Professor",
+    "start": null,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-6994-2993",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:524",
+  "roster_name": "Himanshu Joshi",
+  "papers": 40
+ },
+ {
+  "orcid": "0000-0003-3778-901X",
+  "orcid_name": "Varun Sharma",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Department of Mechanical and Industrial Engineering",
+    "role": "Associate Professor",
+    "start": 2024,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Department of Mechanical and Industrial Engineering",
+    "role": "Assistant Professor",
+    "start": 2018,
+    "end": 2024
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-3778-901X",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:664",
+  "roster_name": "Varun Sharma",
+  "papers": 42
+ },
+ {
+  "orcid": "0000-0003-4252-2897",
+  "orcid_name": "Chaman Kumar",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Mathematics",
+    "role": "Assistant Professor",
+    "start": 2016,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-4252-2897",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:582",
+  "roster_name": "Chaman Kumar",
+  "papers": 11
+ },
+ {
+  "orcid": "0000-0001-7809-7744",
+  "orcid_name": "DHISH KUMAR SAXENA",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "MECHANICAL & INDUSTRIAL ENGINEERING",
+    "role": "PROFESSOR",
+    "start": 2023,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "MECHANICAL & INDUSTRIAL ENGINEERING",
+    "role": "PROFESSOR",
+    "start": 2023,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "MECHANICAL & INDUSTRIAL ENGINEERING",
+    "role": "PROFESSOR",
+    "start": 2023,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "MECHANICAL & INDUSTRIAL ENGINEERING",
+    "role": "ASSOCIATE PROFESSOR",
+    "start": 2016,
+    "end": 2023
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "MECHANICAL & INDUSTRIAL ENGINEERING",
+    "role": "ASSISTANT PROFESSOR",
+    "start": 2012,
+    "end": 2016
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-7809-7744",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:634",
+  "roster_name": "D. K. Saxena",
+  "papers": 19
+ },
+ {
+  "orcid": "0000-0001-9520-6842",
+  "orcid_name": "V. Venkatesh",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemistry",
+    "role": "Associate Professor",
+    "start": 2025,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemistry",
+    "role": "Assistant Professor",
+    "start": 2019,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-9520-6842",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:163",
+  "roster_name": "Venkatesh V",
+  "papers": 39
+ },
+ {
+  "orcid": "0000-0002-8110-6637",
+  "orcid_name": "Shruti Sengupta",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology, Roorkee",
+    "department": "Humanities and Social Sciences",
+    "role": "Assistant Professor of Economics",
+    "start": 2021,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-8110-6637",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:482",
+  "roster_name": "Shruti Sengupta",
+  "papers": 10
+ },
+ {
+  "orcid": "0000-0001-6834-9696",
+  "orcid_name": "Shushil Kumar",
+  "jobs": [
+   {
+    "organization": "IIT Roorkee",
+    "department": "Chemical Engineering",
+    "role": "Assistant Professor",
+    "start": 2020,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-6834-9696",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:117",
+  "roster_name": "Shushil Kumar",
+  "papers": 16
+ },
+ {
+  "orcid": "0000-0002-1067-0740",
+  "orcid_name": "Kenkera Rayappa Naveen",
+  "jobs": [
+   {
+    "organization": "IIT Roorkee",
+    "department": "Polymer & Process Engineering",
+    "role": "Assistant Professor",
+    "start": 2025,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-1067-0740",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:800",
+  "roster_name": "Naveen K. R.",
+  "papers": 5
+ },
+ {
+  "orcid": "0000-0003-4398-5236",
+  "orcid_name": "Dr. SUBRATA BISWAS",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Paper Technology",
+    "role": "Assistant Professor",
+    "start": 2024,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-4398-5236",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:724",
+  "roster_name": "Subrata Biswas",
+  "papers": 2
+ },
+ {
+  "orcid": "0000-0001-6263-3143",
+  "orcid_name": "Ankush Kumar",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Centre for Nanotechnology ",
+    "role": "Assistant Professor ",
+    "start": 2024,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-6263-3143",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:79",
+  "roster_name": "Ankush Kumar",
+  "papers": 10
+ },
+ {
+  "orcid": "0000-0002-2259-8475",
+  "orcid_name": "Prof. Ashwani kumar",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Centre for Nanotechnology",
+    "role": "Assistant Professor Grade-I",
+    "start": 2026,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-2259-8475",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:80",
+  "roster_name": "Ashwani Kumar",
+  "papers": 2
+ },
+ {
+  "orcid": "0000-0002-2533-837X",
+  "orcid_name": "Rahul Kumar",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Mathematics",
+    "role": "Assistant Professor",
+    "start": 2024,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-2533-837X",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:592",
+  "roster_name": "Rahul Kumar",
+  "papers": 1
+ },
+ {
+  "orcid": "0000-0003-2375-7607",
+  "orcid_name": "Ravi Yadav",
+  "jobs": [
+   {
+    "organization": "IIT Roorkee",
+    "department": "Chemistry",
+    "role": "Assistant Professor",
+    "start": 2025,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-2375-7607",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:156",
+  "roster_name": "Ravi Yadav",
+  "papers": 2
+ },
+ {
+  "orcid": "0000-0003-0747-6776",
+  "orcid_name": "Sandeep Kumar",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Computer Science and Engineering",
+    "role": "Professor",
+    "start": null,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-0747-6776",
+  "kind": "new_person",
+  "name": "Sandeep Kumar",
+  "department": "Computer Science and Engineering",
+  "start": null,
+  "end": null,
+  "papers": 62
+ },
+ {
+  "orcid": "0000-0002-6414-0032",
+  "orcid_name": "Brajesh Kumar Kaushik",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Electronics and Communication Engg.",
+    "role": "Professor",
+    "start": 2009,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-6414-0032",
+  "kind": "new_person",
+  "name": "Brajesh Kumar Kaushik",
+  "department": "Electronics and Communication Engg.",
+  "start": 2009,
+  "end": null,
+  "papers": 381
+ },
+ {
+  "orcid": "0000-0002-1471-5512",
+  "orcid_name": "Maheshanand Bhaintwal",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Mathematics",
+    "role": "Professor",
+    "start": null,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-1471-5512",
+  "kind": "new_person",
+  "name": "Maheshanand Bhaintwal",
+  "department": "Mathematics",
+  "start": null,
+  "end": null,
+  "papers": 25
+ },
+ {
+  "orcid": "0000-0003-1147-4431",
+  "orcid_name": "Naveen Kumar Navani",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Biosciences and Bioengineering ",
+    "role": "Professor",
+    "start": null,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-1147-4431",
+  "kind": "new_person",
+  "name": "Naveen Kumar Navani",
+  "department": "Biosciences and Bioengineering ",
+  "start": null,
+  "end": null,
+  "papers": 44
+ },
+ {
+  "orcid": "0000-0002-3250-4866",
+  "orcid_name": "Sandeep Kumar",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Computer Science and Engineering",
+    "role": "Professor",
+    "start": null,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-3250-4866",
+  "kind": "new_person",
+  "name": "Sandeep Kumar",
+  "department": "Computer Science and Engineering",
+  "start": null,
+  "end": null,
+  "papers": 73
+ },
+ {
+  "orcid": "0000-0003-1581-1474",
+  "orcid_name": "Sagarika Mukhopadhyay",
+  "jobs": [
+   {
+    "organization": "IIT Roorkee",
+    "department": "Department of Earth Sciences",
+    "role": "Professor",
+    "start": 2009,
+    "end": 2025
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-1581-1474",
+  "kind": "new_person",
+  "name": "Sagarika Mukhopadhyay",
+  "department": "Department of Earth Sciences",
+  "start": 2009,
+  "end": 2025,
+  "papers": 17
+ },
+ {
+  "orcid": "0000-0001-7165-6937",
+  "orcid_name": "RAJAGOPAL KRISHNAMURTHI",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Earth Sciences",
+    "role": "Professor",
+    "start": 2003,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-7165-6937",
+  "kind": "new_person",
+  "name": "RAJAGOPAL KRISHNAMURTHI",
+  "department": "Earth Sciences",
+  "start": 2003,
+  "end": null,
+  "papers": 16
+ },
+ {
+  "orcid": "0000-0001-5653-7120",
+  "orcid_name": "Pankaj Agarwal",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Dept. of Earthquake Engineering",
+    "role": "Professor",
+    "start": 2014,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-5653-7120",
+  "kind": "new_person",
+  "name": "Pankaj Agarwal",
+  "department": "Dept. of Earthquake Engineering",
+  "start": 2014,
+  "end": null,
+  "papers": 38
+ },
+ {
+  "orcid": "0000-0001-7611-3579",
+  "orcid_name": "Kiran Ambatipudi",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Biosciences and Bioengineering",
+    "role": "Professor",
+    "start": 2025,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Biosciences and Bioengineering",
+    "role": "Assistant Professor",
+    "start": 2014,
+    "end": 2020
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-7611-3579",
+  "kind": "new_person",
+  "name": "Kiran Ambatipudi",
+  "department": "Biosciences and Bioengineering",
+  "start": 2014,
+  "end": null,
+  "papers": 38
+ },
+ {
+  "orcid": "0000-0002-1906-5539",
+  "orcid_name": "Dr. Sumit Kumar",
+  "jobs": [
+   {
+    "organization": "College of Engineering Roorkee",
+    "department": "COMPUTER SCIENCE & ENGINEERING",
+    "role": "HEAD, DEPT. OF CSE",
+    "start": 2021,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-1906-5539",
+  "kind": "new_person",
+  "name": "Dr. Sumit Kumar",
+  "department": "COMPUTER SCIENCE & ENGINEERING",
+  "start": 2021,
+  "end": null,
+  "papers": 5
+ },
+ {
+  "orcid": "0000-0002-1152-6847",
+  "orcid_name": "Pratibha",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Mathematics",
+    "role": "Associate Professor",
+    "start": 2014,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-1152-6847",
+  "kind": "new_person",
+  "name": "Pratibha",
+  "department": "Mathematics",
+  "start": 2014,
+  "end": null,
+  "papers": 15
+ },
+ {
+  "orcid": "0000-0003-1991-7401",
+  "orcid_name": "Sandeep Kumar",
+  "jobs": [
+   {
+    "organization": "Quantum Global Campus Roorkee Uttarakhand",
+    "department": "Mechanical Engineering",
+    "role": "Assistant Professor",
+    "start": 2013,
+    "end": 2014
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-1991-7401",
+  "kind": "new_person",
+  "name": "Sandeep Kumar",
+  "department": "Mechanical Engineering",
+  "start": 2013,
+  "end": 2014,
+  "papers": 10
+ },
+ {
+  "orcid": "0000-0003-0856-759X",
+  "orcid_name": "Kamal",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Earth Sciences",
+    "role": "Professor",
+    "start": 2019,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-0856-759X",
+  "kind": "new_person",
+  "name": "Kamal",
+  "department": "Earth Sciences",
+  "start": 2019,
+  "end": null,
+  "papers": 23
+ },
+ {
+  "orcid": "0000-0002-6627-013X",
+  "orcid_name": "Sivamohan N. Reddy",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemical Engineering",
+    "role": "Associate Professor",
+    "start": 2021,
+    "end": null
+   },
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Chemical Engineering",
+    "role": "Assistant Professor",
+    "start": 2015,
+    "end": 2021
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-6627-013X",
+  "kind": "new_person",
+  "name": "Sivamohan N. Reddy",
+  "department": "Chemical Engineering",
+  "start": 2015,
+  "end": null,
+  "papers": 46
+ },
+ {
+  "orcid": "0000-0003-0819-376X",
+  "orcid_name": "Idhayachandhiran Ilampooranan",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Water Resources Development and Management",
+    "role": "Assistant Professor",
+    "start": 2019,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-0819-376X",
+  "kind": "new_person",
+  "name": "Idhayachandhiran Ilampooranan",
+  "department": "Water Resources Development and Management",
+  "start": 2019,
+  "end": null,
+  "papers": 22
+ },
+ {
+  "orcid": "0000-0002-2072-7317",
+  "orcid_name": "Jeevanand Seshadrinath",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Electrical Engineering Dept.",
+    "role": "Assistant Professor",
+    "start": null,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-2072-7317",
+  "kind": "new_person",
+  "name": "Jeevanand Seshadrinath",
+  "department": "Electrical Engineering Dept.",
+  "start": null,
+  "end": null,
+  "papers": 57
+ },
+ {
+  "orcid": "0000-0002-4510-7990",
+  "orcid_name": "Ashish Mishra",
+  "jobs": [
+   {
+    "organization": "College of Engineering Roorkee",
+    "department": "Civil Engineering",
+    "role": "Assistant Professor",
+    "start": 2018,
+    "end": 2019
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-4510-7990",
+  "kind": "new_person",
+  "name": "Ashish Mishra",
+  "department": "Civil Engineering",
+  "start": 2018,
+  "end": 2019,
+  "papers": 11
+ },
+ {
+  "orcid": "0000-0002-9103-397X",
+  "orcid_name": "ROLUAHPUIA",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Humanities and Social Sciences ",
+    "role": "Assistant Professor",
+    "start": null,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-9103-397X",
+  "kind": "new_person",
+  "name": "ROLUAHPUIA",
+  "department": "Humanities and Social Sciences ",
+  "start": null,
+  "end": null,
+  "papers": 21
+ },
+ {
+  "orcid": "0000-0003-0031-1346",
+  "orcid_name": "Gowrish Basavarajappa",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee Roorkee Uttarakhand IN",
+    "department": "ECE",
+    "role": "Assistant Professor",
+    "start": 2021,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-0031-1346",
+  "kind": "new_person",
+  "name": "Gowrish Basavarajappa",
+  "department": "ECE",
+  "start": 2021,
+  "end": null,
+  "papers": 49
+ },
+ {
+  "orcid": "0000-0003-4004-0894",
+  "orcid_name": "Srikrishnan Siva Subramanian",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Centre of Excellence in Disaster Mitigation and Management",
+    "role": "Assistant Professor",
+    "start": 2021,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0003-4004-0894",
+  "kind": "new_person",
+  "name": "Srikrishnan Siva Subramanian",
+  "department": "Centre of Excellence in Disaster Mitigation and Management",
+  "start": 2021,
+  "end": null,
+  "papers": 32
+ },
+ {
+  "orcid": "0000-0001-7975-0186",
+  "orcid_name": "Saravana Manivannan",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Electronics and Communication Engineering",
+    "role": "Assistant Professor",
+    "start": 2021,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-7975-0186",
+  "kind": "new_person",
+  "name": "Saravana Manivannan",
+  "department": "Electronics and Communication Engineering",
+  "start": 2021,
+  "end": null,
+  "papers": 11
+ },
+ {
+  "orcid": "0000-0002-0885-5578",
+  "orcid_name": "Vijay Victor",
+  "jobs": [
+   {
+    "organization": "IIT Roorkee",
+    "department": "Department of Humanities and Social Sciences",
+    "role": "Assistant Professor",
+    "start": 2024,
+    "end": 2026
+   }
+  ],
+  "url": "https://orcid.org/0000-0002-0885-5578",
+  "kind": "new_person",
+  "name": "Vijay Victor",
+  "department": "Department of Humanities and Social Sciences",
+  "start": 2024,
+  "end": 2026,
+  "papers": 9
+ },
+ {
+  "orcid": "0000-0001-6263-3143",
+  "orcid_name": "Ankush Kumar",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Centre for Nanotechnology ",
+    "role": "Assistant Professor ",
+    "start": 2024,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-6263-3143",
+  "kind": "alt_orcid",
+  "roster_id": "iit_roorkee:79",
+  "roster_name": "Ankush Kumar",
+  "papers": 10
+ },
+ {
+  "orcid": "0000-0001-8895-9467",
+  "orcid_name": "Bharat D",
+  "jobs": [
+   {
+    "organization": "Indian Institute of Technology Roorkee",
+    "department": "Humanities and Social Sciences",
+    "role": "Assistant Professor",
+    "start": 2019,
+    "end": null
+   }
+  ],
+  "url": "https://orcid.org/0000-0001-8895-9467",
+  "kind": "new_person",
+  "name": "Bharat D",
+  "department": "Humanities and Social Sciences",
+  "start": 2019,
+  "end": null,
+  "papers": 8
+ }
+]
