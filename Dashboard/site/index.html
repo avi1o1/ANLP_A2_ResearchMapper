@@ -59,7 +59,14 @@
 html { scroll-behavior: smooth; scroll-padding-top: 64px; }
 body {
   margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-text); font-size: 17px; line-height: 1.47;
-  letter-spacing: -0.012em; -webkit-font-smoothing: antialiased; transition: background-color .4s var(--ease), color .4s var(--ease);
+  letter-spacing: -0.012em; -webkit-font-smoothing: antialiased;
+}
+/* theme switch: one cross-fade of the whole page (view transition), with element transitions paused so nothing
+   inside the new snapshot animates on its own; .theme-fade is the fallback where view transitions are missing */
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .5s; animation-timing-function: var(--ease); }
+:root.theming *, :root.theming *::before, :root.theming *::after { transition: none !important; }
+:root.theme-fade *, :root.theme-fade *::before, :root.theme-fade *::after {
+  transition: background-color .4s var(--ease), color .4s var(--ease), border-color .4s var(--ease), fill .4s var(--ease), stroke .4s var(--ease) !important;
 }
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -237,12 +244,16 @@ footer p { margin: 4px 0; }
 }
 @media (max-width: 520px) {
   .brand { display: none; }
+  .rank li { grid-template-columns: 24px 1fr; gap: 4px 12px; }
+  .rank .v { grid-column: 2; font-size: 15px; }
+  .rank .v:empty { display: none; }
   .nav .wrap { justify-content: space-between; }
 }
 @media (max-width: 440px) {
   .nav .wrap { gap: 8px; padding-inline: 14px; }
   .seg button { padding: 5px 8px; font-size: 12px; }
-  .kpis, .strip { grid-template-columns: 1fr; }
+  .kpis { grid-template-columns: 1fr; }
+  .strip { gap: 12px; } .stat { padding: 18px; } .stat .big { font-size: 28px; }
 }
 </style>
 </head>
@@ -361,6 +372,7 @@ footer p { margin: 4px 0; }
         <div class="tools">
           <input class="field" id="facSearch" type="search" placeholder="Search faculty or journal" aria-label="Search faculty">
           <select class="field" id="facDept" aria-label="Department"><option value="">All departments</option></select>
+          <button type="button" class="btn" id="facCsv" title="Download the rows that match the current filters">Download CSV</button>
         </div>
         <div class="tablewrap">
           <table id="facTable">
@@ -465,6 +477,12 @@ footer p { margin: 4px 0; }
         <h3>Top 10 Indian institutions citing us</h3>
         <div class="chart" id="chCiters"></div>
       </div>
+    </div>
+    <div class="card rv" id="topCitingCard" style="margin-top:20px" hidden>
+      <h3>The most cited Indian papers that cite us</h3>
+      <p class="cap">Papers from other Indian institutions (and from the other IIT) that cite this institute's work, ranked by their own citations worldwide.</p>
+      <div id="topCiting"></div>
+      <p class="note">Citation counts from OpenAlex, fetched October 2026.</p>
     </div>
   </div>
 </section>
@@ -592,12 +610,27 @@ footer p { margin: 4px 0; }
   try { const t = localStorage.getItem("irm-theme"); if (t) root.dataset.theme = t; } catch (e) {}
   try { const q = new URLSearchParams(location.search).get("theme"); if (q === "dark" || q === "light") root.dataset.theme = q; } catch (e) {}
   const isDark = () => root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
-  document.getElementById("themeBtn").addEventListener("click", () => {
+  // A theme switch only recolours: the HTML follows the CSS variables, and each chart gets its new colours merged in
+  // with animation off, so lines don't redraw from zero and the networks keep their zoom. The whole swap runs inside
+  // a view transition, which cross-fades one snapshot of the page into the next.
+  function retheme(flip) {
+    const apply = () => {
+      flip();
+      Object.entries(charts).forEach(([id, c]) => c.setOption(Object.assign(builders[id](), { animation: false })));
+    };
+    if (reduce) return apply();
+    if (!document.startViewTransition) {                    // older browsers: fade the HTML colours, charts swap
+      root.classList.add("theme-fade"); apply();
+      return setTimeout(() => root.classList.remove("theme-fade"), 500);
+    }
+    root.classList.add("theming");
+    document.startViewTransition(apply).finished.finally(() => root.classList.remove("theming"));
+  }
+  document.getElementById("themeBtn").addEventListener("click", () => retheme(() => {
     root.dataset.theme = isDark() ? "light" : "dark";
     try { localStorage.setItem("irm-theme", root.dataset.theme); } catch (e) {}
-    setTimeout(renderAll, 60);
-  });
-  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { if (!root.dataset.theme) renderAll(); });
+  }));
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { if (!root.dataset.theme) retheme(() => {}); });
 
   /* ---------------- segmented controls ---------------- */
   function seg(id, key, onChange) {
@@ -625,6 +658,7 @@ footer p { margin: 4px 0; }
       textStyle: { color: css("--fg"), fontSize: 13 }, extraCssText: "border-radius:12px;box-shadow:" + css("--shadow") + ";" },
     grid: { left: 8, right: 16, top: 24, bottom: 8, containLabel: true }
   });
+  const narrow = () => innerWidth < 600;                       // phones: end labels show the number only, in the line colour
   const labelW = () => innerWidth < 600 ? 112 : 210;            // category labels on narrow screens are truncated
   const axisX = extra => Object.assign({ axisLine: { lineStyle: { color: css("--line") } }, axisTick: { show: false },
     axisLabel: { color: css("--fg2") }, splitLine: { show: false } }, extra);
@@ -694,15 +728,14 @@ footer p { margin: 4px 0; }
     const series = [];
     shown().forEach(i => {
       const v = D.trend[i][state.type];
-      series.push({ name: SHORT[i], type: "line", data: v.map((x, j) => j === last ? null : x), smooth: 0.25, symbol: "circle", symbolSize: 7,
-        showSymbol: false, lineStyle: { width: 3, color: col(i) }, itemStyle: { color: col(i) },
-        areaStyle: { color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{ offset: 0, color: col(i) + "33" }, { offset: 1, color: col(i) + "00" }]) },
-        endLabel: { show: true, formatter: p => `${SHORT[i]}  ${fmt(p.value)}`, color: css("--fg"), fontWeight: 600, fontSize: 13, offset: [8, 0] },
+      series.push({ name: SHORT[i], type: "line", data: v.map((x, j) => j === last ? null : x), symbol: "circle", symbolSize: 7,
+        lineStyle: { width: 3, color: col(i) }, itemStyle: { color: col(i) },
+        endLabel: { show: true, formatter: p => narrow() ? fmt(p.value) : `${SHORT[i]}  ${fmt(p.value)}`, color: narrow() ? col(i) : css("--fg"), fontWeight: 600, fontSize: 13, offset: [8, 0], backgroundColor: css("--card"), padding: [2, 4], borderRadius: 4 },
         emphasis: { focus: "series" } });
       series.push({ name: SHORT[i] + " (2026, partial)", type: "line", data: v.map((x, j) => j >= last - 1 ? x : null), symbol: "circle", symbolSize: 7,
         lineStyle: { width: 2.5, type: [6, 6], color: col(i) }, itemStyle: { color: col(i) }, tooltip: { show: false } });
     });
-    return Object.assign(base(), { grid: { left: 8, right: 130, top: 24, bottom: 8, containLabel: true },
+    return Object.assign(base(), { grid: { left: 8, right: narrow() ? 64 : 130, top: 24, bottom: 8, containLabel: true },
       tooltip: Object.assign(base().tooltip, { valueFormatter: v => v == null ? "–" : fmt(v) }),
       xAxis: axisX({ type: "category", data: ys, boundaryGap: false }), yAxis: axisY({ type: "value", min: 0 }), series });
   };
@@ -718,7 +751,7 @@ footer p { margin: 4px 0; }
       yAxis: axisY({ type: "category", data: insts.map(i => SHORT[i]), inverse: true, splitLine: { show: false },
         axisLabel: { color: css("--fg"), fontSize: 14, fontWeight: 500 } }),
       series: qs.map((q, n) => ({ name: q, type: "bar", stack: "q", barWidth: 30, itemStyle: { color: cols[n], borderColor: css("--card"), borderWidth: 2, borderRadius: 4 },
-        label: { show: true, formatter: p => p.value >= 7 ? `${q} ${Math.round(p.value)}%` : "", color: n < 2 ? "#ffffff" : css("--fg"), fontSize: 12, fontWeight: 600 },
+        label: { show: true, formatter: p => p.value >= (narrow() ? 14 : 7) ? `${q} ${Math.round(p.value)}%` : "", color: n < 2 ? "#ffffff" : css("--fg"), fontSize: 12, fontWeight: 600 },
         data: insts.map(i => { const x = D.quartiles[i], t = x.Q1 + x.Q2 + x.Q3 + x.Q4; return +(x[q] / t * 100).toFixed(2); }) }))
     });
   };
@@ -730,7 +763,7 @@ footer p { margin: 4px 0; }
       tooltip: Object.assign(base().tooltip, { valueFormatter: v => fmt(v) + " papers" }),
       legend: { show: shown().length > 1, top: 0, right: 0, icon: "circle", itemWidth: 8, textStyle: { color: css("--fg2") } },
       grid: { left: 8, right: 16, top: 32, bottom: 8, containLabel: true },
-      xAxis: axisX({ type: "category", data: ranks.map(r => "CORE " + r) }), yAxis: axisY({ type: "value" }),
+      xAxis: axisX({ type: "category", data: ranks.map(r => narrow() ? r : "CORE " + r), axisLabel: { color: css("--fg2"), interval: 0 } }), yAxis: axisY({ type: "value" }),
       series: shown().map(i => ({ name: SHORT[i], type: "bar", barMaxWidth: 34, barGap: "18%", itemStyle: { color: col(i), borderRadius: [6, 6, 0, 0] },
         label: { show: true, position: "top", color: css("--fg2"), fontSize: 12 }, data: ranks.map(r => D.core[i][r]) }))
     });
@@ -826,9 +859,8 @@ footer p { margin: 4px 0; }
     const series = [];
     shown().forEach(i => {
       const v = D.flow_yearly[i][key];
-      series.push({ name: SHORT[i], type: "line", smooth: 0.25, showSymbol: false, data: v.map((x, j) => j === last ? null : x), lineStyle: { width: 3, color: col(i) }, itemStyle: { color: col(i) },
-        areaStyle: { color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{ offset: 0, color: col(i) + "2e" }, { offset: 1, color: col(i) + "00" }]) } });
-      series.push({ name: SHORT[i] + " 2026", type: "line", data: v.map((x, j) => j >= last - 1 ? x : null), showSymbol: false, lineStyle: { width: 2.5, type: [6, 6], color: col(i) }, tooltip: { show: false } });
+      series.push({ name: SHORT[i], type: "line", symbol: "circle", symbolSize: 6, data: v.map((x, j) => j === last ? null : x), lineStyle: { width: 3, color: col(i) }, itemStyle: { color: col(i) } });
+      series.push({ name: SHORT[i] + " 2026", type: "line", data: v.map((x, j) => j >= last - 1 ? x : null), symbol: "circle", symbolSize: 6, lineStyle: { width: 2.5, type: [6, 6], color: col(i) }, itemStyle: { color: col(i) }, tooltip: { show: false } });
     });
     return Object.assign(base(), { tooltip: Object.assign(base().tooltip, { valueFormatter: v => v == null ? "–" : fmt(v) + " citations" }),
       legend: { show: shown().length > 1, data: shown().map(i => SHORT[i]), top: 0, right: 0, icon: "circle", itemWidth: 8, textStyle: { color: css("--fg2") } },
@@ -965,6 +997,12 @@ footer p { margin: 4px 0; }
     const mc = D.most_cited[state.inst === "both" ? "Both" : state.inst];
     document.getElementById("mostCited").innerHTML = mc.map((p, n) => `<li><span class="i">${n + 1}</span><span class="t"><a href="${esc(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>
       <span class="m">${esc(p.journal)} · ${p.year}${state.inst === "both" ? " · " + esc(p.insts.replace(/IIT /g, "").replace(";", " & ")) : ""}</span></span><span class="v">${fmt(p.cites)}<small>citations</small></span></li>`).join("");
+    // most-cited papers citing us
+    document.getElementById("topCitingCard").hidden = !D.top_citing;
+    if (D.top_citing) document.getElementById("topCiting").innerHTML = shown().map(i => `${shown().length > 1 ? `<p class="cap" style="margin-top:18px"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}</p>` : ""}
+      <ol class="rank clamp">${D.top_citing[i].map((p, n) => `<li><span class="i">${n + 1}</span><span class="t">${p.doi ? `<a href="${esc(p.doi)}" target="_blank" rel="noopener"><b>${esc(p.title)}</b></a>` : `<b>${esc(p.title)}</b>`}
+      <span class="m">${[p.journal, p.year, p.insts.split("; ").slice(0, 2).map(instName).join(", ") + (p.insts.split("; ").length > 2 ? " and others" : ""), `cites ${p.n} ${SHORT[i]} paper${p.n > 1 ? "s" : ""}`].filter(Boolean).map(esc).join(" · ")}</span></span>
+      <span class="v">${fmt(p.cites)}<small>citations</small></span></li>`).join("")}</ol>`).join("");
     // pagerank top
     const pr = D.pagerank_top[state.inst === "both" ? "Cluster (both IITs)" : state.inst];
     document.getElementById("prTop").innerHTML = pr.map((p, n) => `<li><span class="i">${n + 1}</span><span class="t"><b title="${esc(p.title)}">${esc(p.title)}</b><span class="m">${p.year} · ${p.indeg} citations from our papers · in-degree rank ${p.indeg_rank}</span></span><span class="v"></span></li>`).join("");
@@ -1017,6 +1055,15 @@ footer p { margin: 4px 0; }
   }));
   search.addEventListener("input", () => { state.page = 0; renderFaculty(); });
   deptSel.addEventListener("change", () => { state.page = 0; renderFaculty(); });
+  document.getElementById("facCsv").addEventListener("click", () => {
+    const cols = [["name", "Name"], ["inst", "Institute"], ["dept", "Department"], ["papers", "Papers"], ["cites", "Citations"], ["h", "h-index"], ["q1", "Q1 papers"], ["journal", "Top journal"]];
+    const cell = v => /[",\n]/.test(String(v ?? "")) ? `"${String(v).replace(/"/g, '""')}"` : String(v ?? "");
+    const csv = [cols.map(c => c[1]).join(","), ...rows().map(f => cols.map(c => cell(f[c[0]])).join(","))].join("\r\n");
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" }));   // BOM so Excel reads UTF-8
+    a.download = "faculty" + (state.inst === "both" ? "" : "_" + SHORT[state.inst].toLowerCase()) + (deptSel.value ? "_" + deptSel.value.replace(/\W+/g, "_").toLowerCase() : "") + ".csv";
+    a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
   document.getElementById("pgPrev").addEventListener("click", () => { state.page--; renderFaculty(); });
   document.getElementById("pgNext").addEventListener("click", () => { state.page++; renderFaculty(); });
   function renderDepts() {

@@ -21,17 +21,27 @@ Both / Kharagpur / Roorkee filter for the whole page, light/dark toggle, interac
 (zoom, hover, click for details, faculty search), and a sortable, searchable faculty table. Reviewed by screenshots
 at desktop width in light and dark mode.
 
-**Left to do**
-- [ ] **Phone layout.** Not finished. Two fixes are in but not yet verified by a phone render: the hero
-      counters and bar-chart label widths on narrow screens. Check every section at ~390 px (browser dev tools,
-      device mode), especially the network panels, the faculty table (it scrolls sideways inside its card) and the
-      partner charts.
-- [ ] **Final desktop pass.** The two fixes above came after the last desktop screenshot. Do a quick visual check
-      in both themes.
-- [ ] **Slide-12 table: "top 10 most-cited papers citing your institute".** Not computed yet. See section 7.
+**Update (12 Oct 2026)**
+- [x] **Phone layout.** Checked every section at 390 px (headless Edge screenshots): no sideways page scroll. Fixed
+      the trend chart's end labels (number only on phones, so the plot keeps its width), quartile labels that
+      collided on narrow segments, CORE axis labels that were being dropped, ranked lists (the count moves under
+      the title), and stat strips (two columns instead of four tall tiles).
+- [x] **Final desktop pass**, light and dark.
+- [ ] **Slide-12 table: script and panel done, fetch not finished.** `Analysis/scripts/stats_citing_top.py` →
+      `results/top_citing_papers.csv`, shown as "The most cited Indian papers that cite us" in the Indian-links
+      section (hidden until the CSV exists). The first run cached 95,100 of 143,599 citing works, then hit
+      OpenAlex's free daily budget for keyless requests. To finish: after midnight UTC (or with `OPENALEX_API_KEY`
+      set), run `python Analysis/scripts/stats_citing_top.py` (it resumes from the cache), then
+      `python Dashboard/site/build_data.py`. See section 7.
+- [x] **CSV export** of the faculty table (exports the rows matching the current search, department and institute).
+- [x] **Theme switch** is now a single cross-fade (View Transitions API); charts are recoloured in place instead of
+      being rebuilt, so lines don't redraw and the networks keep their zoom.
+- [x] **Year charts are discrete**: straight segments with a dot per year, no spline smoothing, no gradient fill.
 - [ ] **Hosting for the class demo.** Either open it locally, or publish `Dashboard/site/` with GitHub Pages
       (the page only needs `index.html` + `data.js`).
-- [ ] **Optional.** A CSV export of the faculty table, and a year-range filter.
+- Not done, on purpose: **a year-range filter.** Only the two per-year charts could honour it; every other panel
+  (h-index, quartiles, journals, networks, PageRank) is precomputed over 2016–2026, so a page-wide year slider
+  would silently not apply to most of the page.
 
 The rest of this file is the original guide: the panel ↔ file mapping (section 2) and the design rules (3b) still
 apply to any changes.
@@ -266,7 +276,12 @@ our two IITs in the middle, the top 30 partners around them, edge width = shared
 * About 15 % of papers have no identified faculty author. They count for the institute but not for any faculty member.
 * PageRank favours older papers (Spearman ρ ≈ −0.39 with publication year).
 
-## 7. Still to compute (small)
+## 7. Still to compute (small) — script written 12 Oct 2026, fetch about two-thirds done
+Computed by `Analysis/scripts/stats_citing_top.py` (no key needed; uses `OPENALEX_API_KEY` if set). The citing set
+matches the in-flow definition in `stats_citation.py`: `in_from_indian` edges plus cross-institute `internal` edges.
+Counts are cached in `Analysis/cache/citing_counts.json`, so a re-run is offline. The original note follows.
+
+
 Slide 12 of the PPT lists **"Top 10 most-cited papers citing your institute"**. We have the citing works
 (`edge_type == "in_from_indian"` in `citation_network.csv`), but not *their* citation counts. Getting them takes one
 OpenAlex request per 100 works (`/works?filter=openalex:W1|W2|…&select=id,doi,display_name,cited_by_count`), using

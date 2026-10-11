@@ -13,6 +13,7 @@ Reads the enriched data and network files in `../Enrichment/out/` (never modifie
 | `stats_citation.py` | 6a, 7a: in-degree, PageRank, citation flow, top citing institutes, impact ratio, year-wise flow | `citation_network_summary`, `pagerank_top10`, `paper_citation_metrics`, `indegree_distribution`, `citation_flow_summary`, `citation_flow_partners`, `citation_flow_yearly` | `indegree_ccdf`, `citation_flow_yearly`, `top_citing_institutes` |
 | `stats_authorship.py` | 6b: degree & betweenness centrality, Louvain communities; null models (ER, degree-preserving) | `authorship_summary`, `faculty_centrality`, `top_collaborators`, `top_brokers`, `communities`, `community_stability`, `null_model_comparison`, `bridging_faculty` | `coauthor_degree_ccdf`, `community_sizes`, `faculty_network` |
 | `stats_connectivity.py` | 7b: partner ranking, co-authorship strength, cross-cluster links, Jaccard topic similarity | `partners`, `cluster_summary`, `jaccard_topics` | `top_partners`, `jaccard_vs_shared` |
+| `stats_citing_top.py` | 7 (slide 12): top 10 most-cited Indian papers citing each institute (OpenAlex, cached) | `top_citing_papers` | — |
 
 Definitions and caveats are in each script's docstring. The main ones:
 * **h-index** is computed over the faculty member's papers in this dataset (2016–2026, citations at collection

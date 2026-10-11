@@ -9,4 +9,5 @@ python stats_bibliometric.py
 python stats_citation.py           # writes citation_flow_partners.csv, used by stats_connectivity.py
 python stats_authorship.py
 python stats_connectivity.py
+python stats_citing_top.py         # online on first run (~1,410 OpenAlex requests, no key needed), cached after
 echo STATS-DONE

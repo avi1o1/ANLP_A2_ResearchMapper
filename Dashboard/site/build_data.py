@@ -110,6 +110,12 @@ def main():
     D["most_cited"] = {s: [{"title": r["title"], "journal": r["journal"], "year": int(r["year"]), "cites": int(r["citations"]),
                             "doi": r["doi"], "insts": r["institutions"]} for r in rows]
                        for s, rows in by_inst(rd("most_cited.csv"), "scope").items()}
+    # slide 12: most-cited Indian papers that cite each institute (Analysis/scripts/stats_citing_top.py)
+    if os.path.exists(os.path.join(RES, "top_citing_papers.csv")):     # online step; the panel hides until it has run
+        D["top_citing"] = {s: [{"title": r["title"], "journal": r["journal"], "year": int(r["year"]) if r["year"] else None,
+                                "cites": int(r["citations"]), "doi": r["doi"], "insts": r["citing_institutions"],
+                                "n": int(r["papers_cited"])} for r in rows]
+                           for s, rows in by_inst(rd("top_citing_papers.csv"), "scope").items()}
     D["pagerank_top"] = {s: [{"title": r["title"], "journal": r["journal"], "year": int(r["year"]), "pr": float(r["pagerank"]),
                               "indeg": int(r["in_degree"]), "indeg_rank": int(r["in_degree_rank"]), "doi": r["doi"]}
                              for r in rows] for s, rows in by_inst(rd("pagerank_top10.csv"), "scope").items()}
