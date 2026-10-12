@@ -89,7 +89,7 @@ a:hover { text-decoration: underline; }
 .links a:hover, .links a.on { color: var(--fg); text-decoration: none; }
 .controls { display: flex; align-items: center; gap: 10px; }
 
-.seg { position: relative; display: inline-flex; background: var(--hair); border-radius: 9px; padding: 2px; }
+.seg { position: relative; display: inline-flex; align-self: flex-start; background: var(--hair); border-radius: 9px; padding: 2px; }
 .seg button {
   position: relative; z-index: 1; border: 0; background: transparent; color: var(--fg); font: 500 12.5px var(--font-text);
   padding: 5px 12px; border-radius: 7px; cursor: pointer; white-space: nowrap; transition: color .2s;
@@ -172,7 +172,14 @@ section:not(.alt) .field { background: var(--card); }
 input.field { flex: 1 1 220px; }
 .tablewrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
-#facTable { table-layout: fixed; min-width: 760px; }
+#facTable { table-layout: fixed; min-width: 900px; }
+#facTable td { vertical-align: middle; }
+#facTable td.lcell { white-space: normal; padding-block: 7px; line-height: 1.7; }
+th.nosort { cursor: default; }
+.lk { display: inline-block; font-size: 11.5px; font-weight: 600; line-height: 1.5; padding: 0 7px; margin: 1px 3px 1px 0; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--link); text-decoration: none; white-space: nowrap; }
+.lk:hover { background: color-mix(in srgb, var(--link) 12%, transparent); border-color: var(--link); }
+.lkrow { margin: 8px 0 0; line-height: 1.9; }
 #facTable td, #facTable th { overflow: hidden; text-overflow: ellipsis; }
 th, td { text-align: left; padding: 11px 10px; border-bottom: 1px solid var(--hair); white-space: nowrap; }
 th { font-weight: 600; font-size: 12.5px; color: var(--fg2); cursor: pointer; user-select: none; }
@@ -376,11 +383,12 @@ footer p { margin: 4px 0; }
         </div>
         <div class="tablewrap">
           <table id="facTable">
-            <colgroup><col style="width:21%"><col style="width:22%"><col style="width:8%"><col style="width:10%"><col style="width:9%"><col style="width:9%"><col style="width:21%"></colgroup>
+            <colgroup><col style="width:17%"><col style="width:16%"><col style="width:7%"><col style="width:8%"><col style="width:8%"><col style="width:8%"><col style="width:14%"><col style="width:22%"></colgroup>
             <thead><tr>
               <th data-k="name">Name</th><th data-k="dept">Department</th><th data-k="papers" class="n">Papers</th>
               <th data-k="cites" class="n">Citations</th><th data-k="h" class="n" aria-sort="descending">h-index</th>
               <th data-k="q1" class="n">Q1 papers</th><th data-k="journal">Top journal</th>
+              <th class="nosort" title="Links listed on the institute's faculty pages, plus ORCID iDs we verified">Links</th>
             </tr></thead>
             <tbody></tbody>
           </table>
@@ -922,6 +930,7 @@ footer p { margin: 4px 0; }
     const nb = fg.edges.filter(e => e[0] === id || e[1] === id).map(e => [e[0] === id ? e[1] : e[0], e[2]]).sort((a, b) => b[1] - a[1]).slice(0, 6);
     const c = D.communities.find(x => x.id === n.community);
     document.getElementById("facInspect").innerHTML = `<h3>${esc(n.name)}</h3><p class="cap">${esc(n.dept)} · ${esc(n.inst)}</p>
+      ${f && linkList(f.links).length ? `<p class="lkrow">${linkChips(f.links)}</p>` : ""}
       <dl><dt>Papers</dt><dd>${f ? fmt(f.papers) : "–"}</dd><dt>Citations</dt><dd>${f ? fmt(f.cites) : "–"}</dd><dt>h-index</dt><dd>${n.h}</dd>
       <dt>Faculty co-authors</dt><dd>${n.deg}</dd><dt>Betweenness</dt><dd>${n.betw.toFixed(4)}</dd>
       <dt>Community</dt><dd>${c ? esc(c.dept) + " group" : "small group"}</dd></dl>
@@ -1026,6 +1035,13 @@ footer p { margin: 4px 0; }
 
   /* ---------------- faculty table ---------------- */
   const tbody = document.querySelector("#facTable tbody"), PAGE = 12;
+  const INST_ABBR = { [KGP]: "IIT KGP", [RKG]: "IIT R" };
+  // Profile links come only from the institute's own faculty pages (and ORCID iDs we verified); none are guessed.
+  const LINKS = [["profile", "Profile", "Institute profile page"], ["scholar", "Scholar", "Google Scholar"], ["orcid", "ORCID", "ORCID"],
+    ["home", "Web", "Personal homepage"], ["dblp", "DBLP", "DBLP"], ["scopus", "Scopus", "Scopus author ID"], ["irins", "IRINS", "IRINS profile"]];
+  const linkList = L => LINKS.flatMap(([k, t, long]) => { const v = L && L[k]; if (!v) return []; const a = Array.isArray(v) ? v : [v];
+    return a.map((u, n) => ({ u, t: t + (a.length > 1 ? " " + (n + 1) : ""), long })); });
+  const linkChips = L => linkList(L).map(x => `<a class="lk" href="${esc(x.u)}" target="_blank" rel="noopener noreferrer" title="${esc(x.long)}: ${esc(x.u)}">${esc(x.t)}</a>`).join("");
   const deptSel = document.getElementById("facDept"), search = document.getElementById("facSearch");
   function fillDepts() {
     const ds = [...new Set(D.faculty.filter(f => shown().includes(f.inst)).map(f => f.dept))].sort();
@@ -1042,9 +1058,10 @@ footer p { margin: 4px 0; }
     const all = rows(), pages = Math.max(1, Math.ceil(all.length / PAGE));
     state.page = Math.min(state.page, pages - 1);
     const view = all.slice(state.page * PAGE, state.page * PAGE + PAGE);
-    tbody.innerHTML = view.map(f => `<tr><td title="${esc(f.name)}"><span class="dot ${f.inst === KGP ? "k" : "r"}"></span>${esc(f.name)}</td><td class="clip" title="${esc(f.dept)}">${esc(f.dept)}</td>
-      <td class="n">${fmt(f.papers)}</td><td class="n">${fmt(f.cites)}</td><td class="n"><b>${f.h}</b></td><td class="n">${fmt(f.q1)}</td><td class="clip" title="${esc(f.journal || "")}">${esc(f.journal || "–")}</td></tr>`).join("")
-      || `<tr><td colspan="7" style="color:var(--fg2)">No faculty match this search.</td></tr>`;
+    tbody.innerHTML = view.map(f => `<tr><td title="${esc(f.name)} · ${INST_ABBR[f.inst]}"><span class="dot ${f.inst === KGP ? "k" : "r"}"></span>${esc(f.name)}</td><td class="clip" title="${esc(f.dept)}">${esc(f.dept)}</td>
+      <td class="n">${fmt(f.papers)}</td><td class="n">${fmt(f.cites)}</td><td class="n"><b>${f.h}</b></td><td class="n">${fmt(f.q1)}</td><td class="clip" title="${esc(f.journal || "")}">${esc(f.journal || "–")}</td>
+      <td class="lcell">${linkChips(f.links) || `<span style="color:var(--fg3)">–</span>`}</td></tr>`).join("")
+      || `<tr><td colspan="8" style="color:var(--fg2)">No faculty match this search.</td></tr>`;
     document.getElementById("facCount").textContent = `${fmt(all.length)} faculty`;
     document.getElementById("pgInfo").textContent = `${state.page + 1} / ${pages}`;
     document.getElementById("pgPrev").disabled = state.page === 0;
@@ -1052,14 +1069,17 @@ footer p { margin: 4px 0; }
     document.querySelectorAll("#facTable th").forEach(th => th.dataset.k === state.sortK ? th.setAttribute("aria-sort", state.sortDir < 0 ? "descending" : "ascending") : th.removeAttribute("aria-sort"));
   }
   document.querySelectorAll("#facTable th").forEach(th => th.addEventListener("click", () => {
-    const k = th.dataset.k; state.sortDir = state.sortK === k ? -state.sortDir : (["name", "dept", "journal"].includes(k) ? 1 : -1); state.sortK = k; state.page = 0; renderFaculty();
+    const k = th.dataset.k; if (!k) return; state.sortDir = state.sortK === k ? -state.sortDir : (["name", "dept", "journal"].includes(k) ? 1 : -1); state.sortK = k; state.page = 0; renderFaculty();
   }));
   search.addEventListener("input", () => { state.page = 0; renderFaculty(); });
   deptSel.addEventListener("change", () => { state.page = 0; renderFaculty(); });
   document.getElementById("facCsv").addEventListener("click", () => {
     const cols = [["name", "Name"], ["inst", "Institute"], ["dept", "Department"], ["papers", "Papers"], ["cites", "Citations"], ["h", "h-index"], ["q1", "Q1 papers"], ["journal", "Top journal"]];
     const cell = v => /[",\n]/.test(String(v ?? "")) ? `"${String(v).replace(/"/g, '""')}"` : String(v ?? "");
-    const csv = [cols.map(c => c[1]).join(","), ...rows().map(f => cols.map(c => cell(f[c[0]])).join(","))].join("\r\n");
+    const lcols = LINKS.map(([k, t, long]) => [k, long]);
+    const lv = (f, k) => { const v = f.links && f.links[k]; return Array.isArray(v) ? v.join(" ") : v; };
+    const csv = [[...cols, ...lcols].map(c => c[1]).join(","),
+      ...rows().map(f => [...cols.map(c => cell(f[c[0]])), ...lcols.map(c => cell(lv(f, c[0])))].join(","))].join("\r\n");
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" }));   // BOM so Excel reads UTF-8
     a.download = "faculty" + (state.inst === "both" ? "" : "_" + SHORT[state.inst].toLowerCase()) + (deptSel.value ? "_" + deptSel.value.replace(/\W+/g, "_").toLowerCase() : "") + ".csv";

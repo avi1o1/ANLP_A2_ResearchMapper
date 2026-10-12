@@ -3,7 +3,7 @@ Reads Analysis/results/*.csv (small) and, for the two network panels and paper t
 (citation_network.csv, authorship_network.csv, group3_data.csv). Graph layouts are precomputed here with networkx so
 the browser only draws. Output: data.js (window.DASH = {...}), loaded by index.html. No network access, no API key.
 usage: python Dashboard/site/build_data.py   (re-run after Analysis/scripts/run_all.sh)"""
-import os, csv, json, math, collections as C
+import os, re, csv, json, math, urllib.parse, collections as C
 import networkx as nx
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -58,6 +58,54 @@ def packed_layout(G, aspect=1.25, gap=0.12):
     return pos
 
 
+ROSTERS = os.path.join(REPO, "WebScrape", "rosters")
+SUPPLEMENT = os.path.join(REPO, "Enrichment", "cache")
+LINK_STATUS = os.path.join(HERE, "link_status.json")   # optional, written by check_links.py
+ORCID_RE = re.compile(r"\d{4}-\d{4}-\d{4}-\d{3}[\dX]")
+
+
+def clean_url(u):
+    """http(s) URL with spaces and other unsafe characters percent-encoded; anything else -> None."""
+    u = (u or "").strip()
+    if not re.match(r"https?://[\w-]+(\.[\w-]+)+(/|$|:|\?)", u, re.I):   # rejects "http://Nil", "To be updated", ...
+        return None
+    u = u.replace("://www.facweb.iitkgp.ac.in", "://facweb.iitkgp.ac.in")   # dead www. alias of KGP's faculty web server
+    return urllib.parse.quote(u, safe=":/?&=#%+@,;~!$'()*[]")
+
+
+def faculty_links(drop_dead=True):
+    """roster_id -> {profile, scholar, home, dblp, scopus, irins, orcid: [...]}, taken only from what the institute
+    pages list (WebScrape/rosters) plus the ORCID-verified additions (Enrichment/cache/roster_supplement_*.json).
+    Nothing is searched for or guessed. Links that check_links.py found dead (404/410/no such host) are dropped."""
+    dead = set()
+    if drop_dead and os.path.exists(LINK_STATUS):
+        with open(LINK_STATUS, encoding="utf-8") as fh:
+            dead = {u for u, s in json.load(fh).items() if s in (404, 410, "dns")}
+    links = {}
+    for inst in ("iit_kharagpur", "iit_roorkee"):
+        for k, r in enumerate(rd(f"{inst}_faculty.csv", ROSTERS)):
+            L = {"profile": clean_url(r["profile_url"]), "scholar": clean_url(r["google_scholar"]),
+                 "home": clean_url(r["homepage"]), "dblp": clean_url(r["dblp"]), "irins": clean_url(r["irins"]),
+                 "scopus": f"https://www.scopus.com/authid/detail.uri?authorId={r['scopus_id'].strip()}"
+                           if r["scopus_id"].strip().isdigit() else None,
+                 "orcid": ORCID_RE.findall(r["orcid"] or "")}
+            links[f"{inst}:{k}"] = L
+        sfn = os.path.join(SUPPLEMENT, f"roster_supplement_{inst}.json")
+        if os.path.exists(sfn):
+            with open(sfn, encoding="utf-8") as fh:
+                for s in json.load(fh):
+                    rid = s["roster_id"] if s.get("kind") == "alt_orcid" else f"{inst}:orcid:{s['orcid']}"
+                    L = links.setdefault(rid, {"orcid": []})
+                    if s["orcid"] not in L["orcid"]:
+                        L["orcid"].append(s["orcid"])
+    for L in links.values():
+        L["orcid"] = [f"https://orcid.org/{o}" for o in L["orcid"]]
+        for k in list(L):
+            if not L[k] or (isinstance(L[k], str) and L[k] in dead):
+                del L[k]
+    return links
+
+
 def main():
     D = {"generated": "October 2026", "insts": INSTS}
 
@@ -94,13 +142,17 @@ def main():
 
     # ---------------- people
     D["faculty"] = []
+    links = faculty_links()
     for r in fac:
         c = cent.get(r["roster_id"], {})
         D["faculty"].append({"id": r["roster_id"], "name": r["faculty"], "inst": r["institution"], "dept": r["department"],
                              "papers": int(r["papers"]), "cites": int(r["citations"]), "h": int(r["h_index"]),
                              "q1": int(r["q1_papers"]), "journal": r["top_journal"], "from": int(r["first_year"]),
                              "to": int(r["last_year"]), "coauthors": num(c.get("faculty_coauthors"), int),
-                             "betw": num(c.get("betweenness")), "community": num(c.get("community"), int)})
+                             "betw": num(c.get("betweenness")), "community": num(c.get("community"), int),
+                             "links": links.get(r["roster_id"], {})})
+    have = C.Counter(k for f in D["faculty"] for k in f["links"])
+    print("faculty links:", dict(have), "| none:", sum(1 for f in D["faculty"] if not f["links"]))
     D["departments"] = [{"inst": r["institution"], "dept": r["department"], "faculty": int(r["faculty_with_papers"]),
                          "papers": int(r["papers"]), "cites": int(r["citations"]),
                          "q1": num(r["q1_fraction_of_ranked"]), "median_h": float(r["median_h_index"]), "max_h": int(r["max_h_index"])}
