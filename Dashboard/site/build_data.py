@@ -116,6 +116,14 @@ def main():
     fac = rd("faculty.csv")
     cent = {r["roster_id"]: r for r in rd("faculty_centrality.csv")}
     flow = {r["institution"]: r for r in rd("citation_flow_summary.csv")}
+    hsum = rd("h_index_summary.csv")
+    hchk = {r["institution"]: r for r in rd("h_index_check_summary.csv")}
+    hyr = by_inst(rd("h_index_by_year.csv"))
+    D["h_summary"] = {i: {r["metric"]: {k: num(r[k]) for k in ("n", "mean", "sd", "q1", "median", "q3", "p90", "max")}
+                          for r in hsum if r["institution"] == i and r["department"] == "All departments"} for i in INSTS}
+    D["h_check"] = {i: {k: num(v) for k, v in hchk[i].items() if k != "institution"} for i in INSTS}
+    D["h_by_year"] = {i: {k: [num(r[k]) for r in hyr[i]] for k in ("mean_h", "median_h", "p90_h", "institute_h_index")}
+                      for i in INSTS}
     kpi = {}
     for i in INSTS:
         hs = sorted(int(r["h_index"]) for r in fac if r["institution"] == i)
@@ -135,8 +143,40 @@ def main():
                   for i in INSTS}
     D["quartiles"] = {i: {k: int(quart[i][k]) for k in ("Q1", "Q2", "Q3", "Q4", "not_in_scimago")} for i in INSTS}
     D["core"] = {i: {k: int(core[i][k]) for k in ("A*", "A", "B", "C", "not_core_ranked", "conference_papers")} for i in INSTS}
-    D["top_journals"] = {i: [{"journal": r["journal"], "papers": int(r["papers"]), "q": r["most_common_quartile"]}
-                             for r in rows] for i, rows in by_inst(rd("top_journals.csv")).items()}
+    D["top_journals"] = {i: [{"journal": r["journal"], "papers": int(r["papers"]), "q": r["most_common_quartile"],
+                              "if": num(r["if_openalex"])} for r in rows] for i, rows in by_inst(rd("top_journals.csv")).items()}
+    imp = by_inst(rd("important_journals.csv"))
+    ys = [str(y) for y in range(2016, 2027)]
+    D["important"] = {i: [{"group": r["group"], "total": int(r["total"]), "years": [int(r[y]) for y in ys]} for r in imp[i]]
+                      for i in INSTS}
+    ipp = C.defaultdict(list)
+    for r in rd("important_journal_papers.csv"):
+        if len([x for x in ipp[(r["institution"], r["group"])]]) < 6:
+            ipp[(r["institution"], r["group"])].append({"title": r["title"], "journal": r["journal"], "year": int(r["year"]),
+                                                        "cites": num(r["citations"], int), "doi": r["doi"], "faculty": r["faculty"]})
+    D["important_papers"] = {f"{i}|{g}": v for (i, g), v in ipp.items()}
+    ifr = rd("impact_factor.csv")
+    D["impact"] = {i: {"all": next({k: r[k] for k in r} for r in ifr if r["institution"] == i and r["scope"] == "all years" and not r["department"]),
+                       "over5": [float(r["share_if_over_5"] or 0) for y in ys for r in ifr if r["institution"] == i and r["scope"] == y and not r["department"]],
+                       "over10": [float(r["share_if_over_10"] or 0) for y in ys for r in ifr if r["institution"] == i and r["scope"] == y and not r["department"]]}
+                   for i in INSTS}
+    lc = rd("large_collaborations.csv")
+    D["large"] = {i: next({k: r[k] for k in r} for r in lc if r["institution"] == i and r["scope"] == "all years") for i in INSTS}
+    cs = rd("core_summary.csv")
+    D["core_years"] = {i: {k: [int(r[k]) for y in ys for r in cs if r["institution"] == i and r["scope"] == y and not r["department"]]
+                           for k in ("A*", "A", "B", "C")} for i in INSTS}
+    D["core_venues"] = {i: [{"conf": r["conference"], "rank": r["core_rank"], "papers": int(r["papers"])} for r in rows]
+                        for i, rows in by_inst(rd("core_top_venues.csv")).items()}
+    sub = rd("research_subfields.csv")
+    D["subfields"] = {i: {} for i in INSTS}
+    for r in sub:
+        L = D["subfields"][r["institution"]].setdefault(r["field"], [])
+        if len(L) < 8:
+            L.append({"sub": r["subfield"], "papers": int(r["papers"]), "share": float(r["share_of_field"])})
+    env = rd("env_science_breakdown.csv")
+    D["env"] = {i: {b: [{"name": r["name"], "papers": int(r["papers"]), "share": float(r["share_of_env_papers"])}
+                        for r in env if r["institution"] == i and r["by"] == b][:6] for b in ("subfield", "department", "topic")}
+                for i in INSTS}
     areas = by_inst(rd("research_areas.csv"))
     D["areas"] = {i: [{"field": r["field"], "share": float(r["share"]), "papers": int(r["papers"])} for r in areas[i]] for i in INSTS}
 
@@ -147,7 +187,8 @@ def main():
         c = cent.get(r["roster_id"], {})
         D["faculty"].append({"id": r["roster_id"], "name": r["faculty"], "inst": r["institution"], "dept": r["department"],
                              "papers": int(r["papers"]), "cites": int(r["citations"]), "h": int(r["h_index"]),
-                             "q1": int(r["q1_papers"]), "journal": r["top_journal"], "from": int(r["first_year"]),
+                             "q1": int(r["q1_papers"]), "i10": int(r["i10_index"]), "oa_h": num(r["oa_h_index_all_career"], int),
+                             "journal": r["top_journal"], "from": int(r["first_year"]),
                              "to": int(r["last_year"]), "coauthors": num(c.get("faculty_coauthors"), int),
                              "betw": num(c.get("betweenness")), "community": num(c.get("community"), int),
                              "links": links.get(r["roster_id"], {})})
@@ -155,7 +196,8 @@ def main():
     print("faculty links:", dict(have), "| none:", sum(1 for f in D["faculty"] if not f["links"]))
     D["departments"] = [{"inst": r["institution"], "dept": r["department"], "faculty": int(r["faculty_with_papers"]),
                          "papers": int(r["papers"]), "cites": int(r["citations"]),
-                         "q1": num(r["q1_fraction_of_ranked"]), "median_h": float(r["median_h_index"]), "max_h": int(r["max_h_index"])}
+                         "q1": num(r["q1_fraction_of_ranked"]), "median_h": float(r["median_h_index"]), "max_h": int(r["max_h_index"]),
+                         "mean_h": num(r["mean_h_index"]), "sd_h": num(r["sd_h_index"])}
                         for r in rd("departments.csv")]
 
     # ---------------- papers
@@ -204,11 +246,37 @@ def main():
 
     # ---------------- citation network panel: the most influential papers (PageRank) and the papers citing them
     pm = {r["node"]: r for r in rd("paper_citation_metrics.csv")}
-    titles = {}
+    titles, nauth = {}, {}
+    rid = {(r["institution"], r["faculty"], r["department"]): r["roster_id"] for r in fac}
+    plist, pidx, fpapers = [], {}, C.defaultdict(list)       # per-faculty paper lists -> papers.js (loaded on demand)
+    venues, types = {}, {}                                  # stored once; papers refer to them by index
     for r in rd("group3_data.csv", OUT):
         for k in (r["openalex_id"], (r["doi"] or "").lower()):
             if k and k not in titles:
                 titles[k] = (r["title"], r["journal_name"])
+        if r["doi"]:
+            nauth[r["doi"].lower()] = num(r["n_authors"], int)
+        key = (r["doi"] or "").lower() or r["record_id"]
+        if key not in pidx:
+            pidx[key] = len(plist)
+            plist.append([r["title"], num(r["year"], int), venues.setdefault(r["journal_name"], len(venues)),
+                          num(r["citations"], int), (r["doi"] or "").replace("https://doi.org/", ""),
+                          num(r["n_authors"], int), types.setdefault(r["type"], len(types))])
+        f = rid.get((r["institution"], r["author"], r["department"]))
+        if f and pidx[key] not in fpapers[f]:
+            fpapers[f].append(pidx[key])
+    for rows in D["most_cited"].values():
+        for p in rows:
+            p["na"] = nauth.get((p["doi"] or "").lower())
+    for f in fpapers:
+        fpapers[f].sort(key=lambda k: -(plist[k][3] or 0))
+    pjs = "window.PAPERS = " + json.dumps({"p": plist, "f": fpapers, "v": list(venues), "t": list(types)}, ensure_ascii=False, separators=(",", ":")) + ";\n"
+    open(os.path.join(HERE, "papers.js"), "w", encoding="utf8").write(pjs)
+    print(f"papers.js {len(pjs) / 1e6:.2f} MB, {len(plist)} papers, {len(fpapers)} faculty")
+    yfn = os.path.join(RES, "faculty_by_year.csv")
+    if os.path.exists(yfn):
+        D["fac_years"] = {i: {"listed": [int(r["faculty_listed"]) for r in rows], "snaps": [int(r["snapshots_used"]) for r in rows]}
+                          for i, rows in by_inst(rd("faculty_by_year.csv")).items()}
     full = nx.DiGraph()
     for e in rd("citation_network.csv", OUT):
         if e["edge_type"] != "internal":

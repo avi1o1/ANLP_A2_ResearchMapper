@@ -21,6 +21,16 @@ Both / Kharagpur / Roorkee filter for the whole page, light/dark toggle, interac
 (zoom, hover, click for details, faculty search), and a sortable, searchable faculty table. Reviewed by screenshots
 at desktop width in light and dark mode.
 
+**Update (12 Oct 2026, professor's review)**
+- [x] Scope is science and engineering only (all numbers regenerated).
+- [x] People: h-index mean ± SD / median / quartiles and i10 strip, h-index over the years, "Why is the h-index low?"
+      panel, i10 column, and a click on a faculty name lists that person's papers (`papers.js`, loaded on demand).
+- [x] Quality: top 10 journals with IF (OpenAlex), IF > 5 / > 10 panel, important journals (APS, PRL, SPIE, Nature,
+      JACS), CORE ranks per year and top CORE venues, subfields inside each research area (click a field), and an
+      Environmental Science explainer. Most-cited papers mark papers with more than 10 authors.
+- [ ] Faculty per year from the archived institute websites: `WebScrape/scripts/wayback_rosters.py` is slow (the
+      Wayback Machine throttles), the panel will follow when it has run.
+
 **Update (12 Oct 2026)**
 - [x] **Phone layout.** Checked every section at 390 px (headless Edge screenshots): no sideways page scroll. Fixed
       the trend chart's end labels (number only on phones, so the plot keeps its width), quartile labels that

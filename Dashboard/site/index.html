@@ -129,6 +129,31 @@ h3 { font-size: 21px; font-weight: 600; letter-spacing: -0.02em; }
 .card { background: var(--card); border-radius: var(--radius); padding: 28px; min-width: 0; }
 section:not(.alt) .card { background: var(--band); }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 8px; }
+.grid3 h4, .subfields h4 { font: 600 13px var(--font-text); color: var(--fg2); margin: 14px 0 4px; text-transform: none; }
+.strip.two { grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 14px 0 6px; }
+.strip.two .stat { padding: 14px 16px; } .strip.two .stat .big { font-size: 26px; }
+.subfields { margin-top: 10px; }
+.subfields .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.bars li { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; padding: 6px 0; font-size: 14px; border-top: 1px solid var(--hair); }
+.bars li:first-child { border-top: 0; }
+.bars li .bar { grid-column: 1 / -1; height: 4px; border-radius: 2px; background: var(--hair); overflow: hidden; }
+.bars li .bar span { display: block; height: 100%; border-radius: 2px; }
+.bars li .v { color: var(--fg2); font-variant-numeric: tabular-nums; }
+.imp summary { display: grid; grid-template-columns: 1fr auto; gap: 10px; color: var(--fg); margin-top: 0; padding: 12px 0; border-top: 1px solid var(--hair); }
+.imp summary::after { content: ""; }
+.imp:first-child summary { border-top: 0; }
+.imp .v { font-variant-numeric: tabular-nums; color: var(--fg2); font-size: 14px; }
+.imp .v b { color: var(--fg); }
+.imp ol { margin: 0 0 10px; }
+.facpapers { margin-top: 14px; padding: 16px 18px; border-radius: var(--radius); background: var(--band); }
+section.alt .facpapers { background: var(--bg); }
+.facpapers h4 { margin: 0 0 4px; font: 600 16px var(--font-display); }
+.facpapers ol { max-height: 360px; overflow-y: auto; }
+#facTable td.nm { cursor: pointer; } #facTable td.nm:hover { color: var(--link); }
+.hcheck dl { display: grid; grid-template-columns: 1fr auto auto; gap: 8px 16px; margin: 12px 0; font-size: 14px; }
+.hcheck dt { color: var(--fg2); } .hcheck dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+.hcheck .hd { font-size: 12px; color: var(--fg2); font-weight: 600; text-align: right; }
 .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .stack { display: grid; gap: 20px; }
 .chart { width: 100%; height: 380px; }
@@ -239,6 +264,7 @@ footer p { margin: 4px 0; }
 @media (max-width: 980px) {
   .links { display: none; }
   .kpis, .strip { grid-template-columns: repeat(2, 1fr); }
+  .grid3, .subfields .cols { grid-template-columns: 1fr; }
   .net { grid-template-columns: 1fr; }
   .grid3 { grid-template-columns: 1fr 1fr; }
 }
@@ -341,20 +367,45 @@ footer p { margin: 4px 0; }
       </div>
       <div class="grid2">
         <div class="card rv">
-          <h3>Top journals</h3>
-          <p class="cap">By number of papers, 2016–2026.</p>
+          <h3>Top 10 journals</h3>
+          <p class="cap">By number of papers, 2016–2026. IF is the journal's OpenAlex 2-year mean citedness (same formula as the Journal Impact Factor, on OpenAlex data, current value; it runs higher than Clarivate's JIF).</p>
           <div id="topJournals"></div>
         </div>
         <div class="card rv">
           <h3>Conference ranks</h3>
           <p class="cap">CORE ranking of conference papers. CORE only ranks computing venues, so most conferences have no rank.</p>
           <div class="chart short" id="chCore"></div>
+          <h3 style="margin-top:22px">CORE ranks per year</h3>
+          <div class="chart short" id="chCoreYear"></div>
+          <h3 style="margin-top:22px">Top CORE venues</h3>
+          <div id="coreVenues"></div>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="card rv">
+          <div class="cardhead"><h3>High-impact journals</h3>
+            <div class="seg" id="ifSeg" role="group" aria-label="IF threshold"><span class="thumb"></span>
+              <button type="button" data-th="5" aria-pressed="true">IF &gt; 5</button><button type="button" data-th="10" aria-pressed="false">IF &gt; 10</button></div></div>
+          <p class="cap">Share of journal papers in journals above the IF threshold, per year (IF = OpenAlex 2-year mean citedness).</p>
+          <div class="strip two" id="ifStrip"></div>
+          <div class="chart short" id="chIF"></div>
+        </div>
+        <div class="card rv">
+          <h3>Important journals</h3>
+          <p class="cap">Papers in journal groups the field watches closely, 2016–2026. Open a group to see its most cited papers.</p>
+          <div id="importantList"></div>
         </div>
       </div>
       <div class="card rv">
         <h3>Research areas</h3>
-        <p class="cap">Share of each institute's papers by research field (OpenAlex primary topic).</p>
+        <p class="cap">Share of each institute's papers by research field (OpenAlex primary topic). Click a field to see the subfields inside it.</p>
         <div class="chart tall" id="chAreas"></div>
+        <div id="areaSub" class="subfields"></div>
+      </div>
+      <div class="card rv">
+        <h3>Why is Environmental Science so large?</h3>
+        <p class="cap" id="envLede"></p>
+        <div class="grid3" id="envGrid"></div>
       </div>
     </div>
   </div>
@@ -372,7 +423,21 @@ footer p { margin: 4px 0; }
       <div class="card rv">
         <h3>Faculty h-index</h3>
         <p class="cap">Number of faculty by h-index, counted over their 2016–2026 papers in this dataset.</p>
+        <div class="strip" id="hStrip"></div>
         <div class="chart" id="chH"></div>
+      </div>
+      <div class="grid2">
+        <div class="card rv">
+          <div class="cardhead"><h3>h-index over the years</h3>
+            <div class="seg" id="hySeg" role="group" aria-label="Measure"><span class="thumb"></span>
+              <button type="button" data-hy="mean_h" aria-pressed="true">Faculty mean</button><button type="button" data-hy="institute_h_index" aria-pressed="false">Institute</button></div></div>
+          <p class="cap">h-index at the end of each year, from papers published and citations received up to that year (OpenAlex yearly citation counts). 2026 runs to October.</p>
+          <div class="chart" id="chHYear"></div>
+        </div>
+        <div class="card rv">
+          <h3>Why is the h-index low?</h3>
+          <div id="hCheck"></div>
+        </div>
       </div>
       <div class="card rv">
         <div class="cardhead"><h3>Faculty performance</h3><span class="sub" id="facCount"></span></div>
@@ -383,22 +448,24 @@ footer p { margin: 4px 0; }
         </div>
         <div class="tablewrap">
           <table id="facTable">
-            <colgroup><col style="width:17%"><col style="width:16%"><col style="width:7%"><col style="width:8%"><col style="width:8%"><col style="width:8%"><col style="width:14%"><col style="width:22%"></colgroup>
+            <colgroup><col style="width:16%"><col style="width:15%"><col style="width:7%"><col style="width:8%"><col style="width:7%"><col style="width:7%"><col style="width:7%"><col style="width:13%"><col style="width:20%"></colgroup>
             <thead><tr>
               <th data-k="name">Name</th><th data-k="dept">Department</th><th data-k="papers" class="n">Papers</th>
-              <th data-k="cites" class="n">Citations</th><th data-k="h" class="n" aria-sort="descending">h-index</th>
+              <th data-k="cites" class="n">Citations</th><th data-k="h" class="n" aria-sort="descending">h-index</th><th data-k="i10" class="n" title="Papers with at least 10 citations">i10</th>
               <th data-k="q1" class="n">Q1 papers</th><th data-k="journal">Top journal</th>
               <th class="nosort" title="Links listed on the institute's faculty pages, plus ORCID iDs we verified">Links</th>
             </tr></thead>
             <tbody></tbody>
           </table>
         </div>
+        <p class="cap" style="margin-top:10px">Click a name to list that person's papers in this dataset.</p>
+        <div id="facPapers" class="facpapers" hidden></div>
         <div class="pager"><button type="button" class="btn" id="pgPrev">Previous</button><span id="pgInfo" class="num"></span><button type="button" class="btn" id="pgNext">Next</button></div>
         <details>
           <summary>Departments</summary>
           <div class="tablewrap" style="margin-top:12px">
             <table id="deptTable">
-              <thead><tr><th>Department</th><th class="n">Faculty</th><th class="n">Papers</th><th class="n">Citations</th><th class="n">Q1 share</th><th class="n">Median h</th></tr></thead>
+              <thead><tr><th>Department</th><th class="n">Faculty</th><th class="n">Papers</th><th class="n">Citations</th><th class="n">Q1 share</th><th class="n">Mean h ± SD</th><th class="n">Median h</th></tr></thead>
               <tbody></tbody>
             </table>
           </div>
@@ -414,7 +481,7 @@ footer p { margin: 4px 0; }
     <div class="head rv">
       <p class="eyebrow">Papers</p>
       <h2>The most cited work.</h2>
-      <p class="lede">The ten papers with the most citations worldwide. A few are large collaborations with hundreds of authors, where our faculty are one group among many.</p>
+      <p class="lede">The ten papers with the most citations worldwide. Papers with more than 10 authors are marked: in those large collaborations our faculty are one group among many.</p>
     </div>
     <div class="card rv"><ol class="rank" id="mostCited"></ol></div>
   </div>
@@ -572,12 +639,12 @@ footer p { margin: 4px 0; }
       <h2>How this was built.</h2>
     </div>
     <div class="method rv">
-      <div><h3>Papers</h3><p>Scraped from Crossref, Europe PMC, DOAJ, ORCID and DBLP, then checked against OpenAlex. A paper counts only when the IIT is named in an author's affiliation on the paper itself.</p></div>
-      <div><h3>Faculty</h3><p>Papers are linked to faculty from the institutes' own lists by ORCID, then by name and department. Unclear names are left unlinked rather than guessed; about 85% of papers have a faculty author.</p></div>
+      <div><h3>Papers</h3><p>Scraped from Crossref, Europe PMC, DOAJ, INSPIRE, ORCID, DBLP and Semantic Scholar, then checked against OpenAlex. A paper counts only when the IIT is named in an author's affiliation on the paper itself.</p></div>
+      <div><h3>Faculty</h3><p>Papers are linked to faculty from the institutes' own lists by ORCID, then by name and department. Unclear names are left unlinked rather than guessed; about 83% of papers have a faculty author.</p></div>
       <div><h3>Journals and conferences</h3><p>Journal quartiles come from Scimago for the year of publication. Conference ranks come from the CORE portal edition in force that year.</p></div>
       <div><h3>Networks</h3><p>Citation links and Indian partners come from OpenAlex. Influence uses PageRank (damping 0.85); communities use Louvain over ten random seeds.</p></div>
-      <div><h3>Read with care</h3><p>h-index here covers 2016–2026 only, so it is lower than a career h-index. Citation counts are as of October 2026. PageRank favours older papers.</p></div>
-      <div><h3>Scope</h3><p>All research fields are included. The course TAs asked for science and engineering only; the project can switch to that rule in one line.</p></div>
+      <div><h3>Read with care</h3><p>h-index and i10 here cover 2016–2026 papers only, so they are about half a career value. IF is OpenAlex's 2-year mean citedness, which runs higher than Clarivate's JIF. Citation counts are as of October 2026. PageRank favours older papers.</p></div>
+      <div><h3>Scope</h3><p>Science and engineering only: papers whose OpenAlex topic is in the Physical or Life Sciences. Faculty of humanities, management, law, education and medical units are not included.</p></div>
     </div>
   </div>
 </section>
@@ -609,7 +676,8 @@ footer p { margin: 4px 0; }
     .replace("University of Petroleum and Energy Studies", "UPES").replace("Council of Scientific and Industrial Research", "CSIR")
     .replace("SRM Institute of Science and Technology", "SRM IST").replace("S.N. Bose National Centre for Basic Sciences", "S.N. Bose Centre")
     .replace("Indian Statistical Institute", "ISI").replace("National Institute of Hydrology", "Natl. Inst. of Hydrology");
-  const state = { inst: "both", type: "total", size: "pr", dir: "in", color: "inst", sortK: "h", sortDir: -1, page: 0 };
+  const state = { inst: "both", type: "total", size: "pr", dir: "in", color: "inst", sortK: "h", sortDir: -1, page: 0,
+    ifTh: "5", hy: "mean_h", area: "Engineering", facSel: null };
   try { const s = localStorage.getItem("irm-inst"); if (s) state.inst = s; } catch (e) {}
   const shown = () => state.inst === "both" ? INSTS : [state.inst];
   const col = i => css(i === KGP ? "--kgp" : "--rkg");
@@ -657,6 +725,8 @@ footer p { margin: 4px 0; }
   seg("sizeSeg", "size", v => { state.size = v; draw("chCitNet"); });
   seg("flowSeg", "dir", v => { state.dir = v; draw("chFlow"); });
   seg("colorSeg", "color", v => { state.color = v; draw("chFacNet"); legendFac(); });
+  seg("ifSeg", "th", v => { state.ifTh = v; draw("chIF"); renderIfStrip(); });
+  seg("hySeg", "hy", v => { state.hy = v; draw("chHYear"); });
 
   /* ---------------- ECharts helpers ---------------- */
   const charts = {};
@@ -811,6 +881,78 @@ footer p { margin: 4px 0; }
       })
     });
   };
+
+  /* ---------------- 5b. new statistics (professor's review) ---------------- */
+  const yearAxis = () => axisX({ type: "category", data: D.years.map(y => narrow() ? "'" + String(y).slice(2) : y) });
+  const legendTop = () => ({ show: shown().length > 1, top: 0, right: 0, icon: "circle", itemWidth: 8, textStyle: { color: css("--fg2") } });
+  builders.chCoreYear = () => {
+    const ranks = ["A*", "A", "B", "C"], cols = ["--q1", "--q2", "--q3", "--q4"].map(css);
+    return Object.assign(base(), {
+      tooltip: Object.assign(base().tooltip, { valueFormatter: v => fmt(v) + " papers" }),
+      legend: { top: 0, right: 0, icon: "roundRect", itemWidth: 10, itemHeight: 10, textStyle: { color: css("--fg2") } },
+      grid: { left: 8, right: 16, top: 32, bottom: 8, containLabel: true }, xAxis: yearAxis(), yAxis: axisY({ type: "value" }),
+      series: ranks.map((r, n) => ({ name: "CORE " + r, type: "bar", stack: "c", barMaxWidth: 26, itemStyle: { color: cols[n] },
+        data: D.years.map((y, j) => shown().reduce((a, i) => a + D.core_years[i][r][j], 0)) }))
+    });
+  };
+  builders.chIF = () => {
+    const k = state.ifTh === "10" ? "over10" : "over5";
+    return Object.assign(base(), {
+      tooltip: Object.assign(base().tooltip, { valueFormatter: v => v.toFixed(1) + "% of journal papers" }),
+      legend: legendTop(), grid: { left: 8, right: 16, top: 32, bottom: 8, containLabel: true }, xAxis: yearAxis(),
+      yAxis: axisY({ type: "value", axisLabel: { color: css("--fg2"), formatter: "{value}%" } }),
+      series: shown().map(i => ({ name: SHORT[i], type: "bar", barMaxWidth: 18, barGap: "12%", itemStyle: { color: col(i), borderRadius: [4, 4, 0, 0] },
+        data: D.impact[i][k].map(v => +(v * 100).toFixed(2)) }))
+    });
+  };
+  builders.chHYear = () => Object.assign(base(), {
+    tooltip: Object.assign(base().tooltip, { valueFormatter: v => v == null ? "–" : String(v) }),
+    legend: legendTop(), grid: { left: 8, right: 16, top: 32, bottom: 8, containLabel: true }, xAxis: yearAxis(), yAxis: axisY({ type: "value" }),
+    series: shown().map(i => ({ name: SHORT[i], type: "bar", barMaxWidth: 18, barGap: "12%", itemStyle: { color: col(i), borderRadius: [4, 4, 0, 0] },
+      data: D.h_by_year[i][state.hy].map((v, j) => j === D.years.length - 1 ? { value: v, itemStyle: { color: fade(col(i), 0.25), borderColor: col(i), borderWidth: 1.5, borderType: [4, 3] } } : v) }))
+  });
+  const instHead = i => shown().length > 1 ? `<p class="cap" style="margin-top:18px"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}</p>` : "";
+  const barList = (items, i, label) => `<ol class="bars">${items.map(x => `<li><span>${esc(x.name || x.sub)}</span><span class="v">${label(x)}</span>
+    <span class="bar"><span style="width:${Math.max(2, x.share * 100).toFixed(1)}%;background:${col(i)}"></span></span></li>`).join("")}</ol>`;
+  function renderIfStrip() {
+    const k = state.ifTh;
+    document.getElementById("ifStrip").innerHTML = shown().map(i => { const a = D.impact[i].all; return `
+      <div class="stat"><div class="big">${(+a["share_if_over_" + k] * 100).toFixed(1)}<small>%</small></div><div class="lbl"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}: ${fmt(+a["if_over_" + k])} papers, IF &gt; ${k}</div></div>`; }).join("");
+  }
+  function renderAreaSub() {
+    const f = state.area;
+    document.getElementById("areaSub").innerHTML = `<h3 style="margin-top:18px">Inside “${esc(f)}”</h3><div class="cols">` + shown().map(i => `<div>${instHead(i)}
+      ${D.subfields[i][f] ? barList(D.subfields[i][f], i, x => `${fmt(x.papers)} · ${(x.share * 100).toFixed(0)}%`) : `<p class="cap">No papers.</p>`}</div>`).join("") + `</div>`;
+  }
+  function renderNew() {
+    renderIfStrip();
+    renderAreaSub();
+    // important journals
+    const groups = D.important[INSTS[0]].map(g => g.group);
+    document.getElementById("importantList").innerHTML = groups.map(g => {
+      const tot = shown().map(i => `<span class="dot ${i === KGP ? "k" : "r"}"></span><b>${D.important[i].find(x => x.group === g).total}</b>`).join(" &nbsp; ");
+      const ps = shown().flatMap(i => (D.important_papers[i + "|" + g] || []).map(p => Object.assign({ i }, p))).sort((a, b) => (b.cites || 0) - (a.cites || 0)).slice(0, 6);
+      return `<details class="imp"><summary><span>${esc(g)}</span><span class="v">${tot}</span></summary>
+        <ol class="rank clamp">${ps.map((p, n) => `<li><span class="i">${n + 1}</span><span class="t"><a href="${esc(p.doi)}" target="_blank" rel="noopener"><b>${esc(p.title)}</b></a>
+        <span class="m">${esc(p.journal)} · ${p.year} · ${esc(p.faculty || SHORT[p.i])}</span></span><span class="v">${p.cites == null ? "–" : fmt(p.cites)}<small>citations</small></span></li>`).join("")}</ol></details>`; }).join("");
+    // CORE venues
+    document.getElementById("coreVenues").innerHTML = shown().map(i => `${instHead(i)}<ol class="rank">${(D.core_venues[i] || []).slice(0, 6).map((v, n) =>
+      `<li><span class="i">${n + 1}</span><span class="t"><b>${esc(v.conf)}</b><span class="pill">CORE ${v.rank}</span></span><span class="v">${v.papers}<small>papers</small></span></li>`).join("")}</ol>`).join("");
+    // environmental science
+    const e0 = shown().map(i => { const t = D.areas[i].find(a => a.field === "Environmental Science"); return `${(t ? t.share * 100 : 0).toFixed(1)}% of ${SHORT[i]}'s papers`; }).join(" and ");
+    document.getElementById("envLede").textContent = `Environmental Science is ${e0}. OpenAlex files water, hydrology, climate and pollution-treatment work there, and most of it comes from engineering departments.`;
+    document.getElementById("envGrid").innerHTML = [["subfield", "Subfields"], ["department", "Departments of the authors"], ["topic", "Most common topics"]].map(([k, t]) =>
+      `<div><h4>${t}</h4>${shown().map(i => instHead(i) + barList(D.env[i][k], i, x => `${fmt(x.papers)} · ${(x.share * 100).toFixed(0)}%`)).join("")}</div>`).join("");
+    // h-index statistics
+    document.getElementById("hStrip").innerHTML = shown().map(i => { const h = D.h_summary[i]["h-index"], t = D.h_summary[i]["i10-index"]; return `
+      <div class="stat"><div class="big">${h.mean.toFixed(1)}<small>± ${h.sd.toFixed(1)}</small></div><div class="lbl"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}: mean h ± SD (median ${h.median}, middle half ${h.q1}–${h.q3})</div></div>
+      <div class="stat"><div class="big">${t.mean.toFixed(1)}<small>median ${t.median}</small></div><div class="lbl"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}: i10-index (papers with 10+ citations)</div></div>`; }).join("");
+    document.getElementById("hCheck").innerHTML = `<div class="hcheck"><p class="cap">Medians over faculty with a reliable OpenAlex author profile. Our h-index counts only 2016–2026 papers; Google Scholar and OpenAlex profiles count a whole career.</p>
+      <dl><span></span>${shown().map(i => `<span class="hd"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}</span>`).join("")}${shown().length < 2 ? "<span></span>" : ""}
+      ${[["Our h-index (2016–2026)", "median_h_our_counts"], ["Same papers, OpenAlex citations", "median_h_openalex_counts_same_papers"], ["OpenAlex profile, whole career", "median_h_openalex_all_career"]].map(([l, k]) =>
+        `<dt>${l}</dt>${shown().map(i => `<dd>${D.h_check[i][k]}</dd>`).join("")}${shown().length < 2 ? "<dd></dd>" : ""}`).join("")}</dl>
+      <p class="cap">The citation source changes little: the same papers give about the same h with OpenAlex counts. The gap comes from the time window. Papers before 2016 are not counted, and a ten-year window roughly halves the h-index (our value is ${shown().map(i => Math.round(D.h_check[i].median_ratio_ours_to_career * 100) + "%").join(" and ")} of the career value at the median).</p></div>`;
+  }
 
   /* ---------------- 6. citation network ---------------- */
   const cg = D.citation_graph, hubSet = new Set(D.citation_graph_hubs);
@@ -1002,11 +1144,12 @@ footer p { margin: 4px 0; }
     renderKpis();
     // top journals
     document.getElementById("topJournals").innerHTML = shown().map(i => `${shown().length > 1 ? `<p class="cap" style="margin-top:18px"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}</p>` : ""}
-      <ol class="rank">${D.top_journals[i].map((j, n) => `<li><span class="i">${n + 1}</span><span class="t"><b>${esc(j.journal)}</b>${j.q ? `<span class="pill">${j.q}</span>` : ""}</span><span class="v">${fmt(j.papers)}<small>papers</small></span></li>`).join("")}</ol>`).join("");
+      <ol class="rank">${D.top_journals[i].map((j, n) => `<li><span class="i">${n + 1}</span><span class="t"><b>${esc(j.journal)}</b>${j.q ? `<span class="pill">${j.q}</span>` : ""}${j.if != null ? `<span class="pill" title="OpenAlex 2-year mean citedness">IF ${j.if.toFixed(1)}</span>` : ""}</span><span class="v">${fmt(j.papers)}<small>papers</small></span></li>`).join("")}</ol>`).join("");
+    renderNew();
     // most cited
     const mc = D.most_cited[state.inst === "both" ? "Both" : state.inst];
     document.getElementById("mostCited").innerHTML = mc.map((p, n) => `<li><span class="i">${n + 1}</span><span class="t"><a href="${esc(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>
-      <span class="m">${esc(p.journal)} · ${p.year}${state.inst === "both" ? " · " + esc(p.insts.replace(/IIT /g, "").replace(";", " & ")) : ""}</span></span><span class="v">${fmt(p.cites)}<small>citations</small></span></li>`).join("");
+      <span class="m">${esc(p.journal)} · ${p.year}${state.inst === "both" ? " · " + esc(p.insts.replace(/IIT /g, "").replace(";", " & ")) : ""}${p.na > 10 ? ` · <span class="pill" style="margin-left:0">${p.na >= 100 ? "100+" : p.na} authors</span>` : ""}</span></span><span class="v">${fmt(p.cites)}<small>citations</small></span></li>`).join("");
     // most-cited papers citing us
     document.getElementById("topCitingCard").hidden = !D.top_citing;
     if (D.top_citing) document.getElementById("topCiting").innerHTML = shown().map(i => `${shown().length > 1 ? `<p class="cap" style="margin-top:18px"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}</p>` : ""}
@@ -1058,10 +1201,10 @@ footer p { margin: 4px 0; }
     const all = rows(), pages = Math.max(1, Math.ceil(all.length / PAGE));
     state.page = Math.min(state.page, pages - 1);
     const view = all.slice(state.page * PAGE, state.page * PAGE + PAGE);
-    tbody.innerHTML = view.map(f => `<tr><td title="${esc(f.name)} · ${INST_ABBR[f.inst]}"><span class="dot ${f.inst === KGP ? "k" : "r"}"></span>${esc(f.name)}</td><td class="clip" title="${esc(f.dept)}">${esc(f.dept)}</td>
-      <td class="n">${fmt(f.papers)}</td><td class="n">${fmt(f.cites)}</td><td class="n"><b>${f.h}</b></td><td class="n">${fmt(f.q1)}</td><td class="clip" title="${esc(f.journal || "")}">${esc(f.journal || "–")}</td>
+    tbody.innerHTML = view.map(f => `<tr><td class="nm" data-id="${esc(f.id)}" title="${esc(f.name)} · ${INST_ABBR[f.inst]} · click for papers"><span class="dot ${f.inst === KGP ? "k" : "r"}"></span>${esc(f.name)}</td><td class="clip" title="${esc(f.dept)}">${esc(f.dept)}</td>
+      <td class="n">${fmt(f.papers)}</td><td class="n">${fmt(f.cites)}</td><td class="n"><b>${f.h}</b></td><td class="n">${fmt(f.i10)}</td><td class="n">${fmt(f.q1)}</td><td class="clip" title="${esc(f.journal || "")}">${esc(f.journal || "–")}</td>
       <td class="lcell">${linkChips(f.links) || `<span style="color:var(--fg3)">–</span>`}</td></tr>`).join("")
-      || `<tr><td colspan="8" style="color:var(--fg2)">No faculty match this search.</td></tr>`;
+      || `<tr><td colspan="9" style="color:var(--fg2)">No faculty match this search.</td></tr>`;
     document.getElementById("facCount").textContent = `${fmt(all.length)} faculty`;
     document.getElementById("pgInfo").textContent = `${state.page + 1} / ${pages}`;
     document.getElementById("pgPrev").disabled = state.page === 0;
@@ -1072,9 +1215,27 @@ footer p { margin: 4px 0; }
     const k = th.dataset.k; if (!k) return; state.sortDir = state.sortK === k ? -state.sortDir : (["name", "dept", "journal"].includes(k) ? 1 : -1); state.sortK = k; state.page = 0; renderFaculty();
   }));
   search.addEventListener("input", () => { state.page = 0; renderFaculty(); });
+  // per-faculty paper list: papers.js (about 6 MB) is loaded only when a name is clicked
+  let papersReq = null;
+  const loadPapers = () => papersReq || (papersReq = new Promise((ok, bad) => {
+    const sc = document.createElement("script"); sc.src = "papers.js"; sc.onload = () => ok(window.PAPERS); sc.onerror = bad; document.head.appendChild(sc); }));
+  tbody.addEventListener("click", ev => {
+    const td = ev.target.closest("td.nm"); if (!td) return;
+    const f = D.faculty.find(x => x.id === td.dataset.id), box = document.getElementById("facPapers");
+    if (!f) return;
+    if (state.facSel === f.id && !box.hidden) { box.hidden = true; state.facSel = null; return; }
+    state.facSel = f.id; box.hidden = false;
+    box.innerHTML = `<h4>${esc(f.name)}</h4><p class="cap" style="margin:0">Loading papers…</p>`;
+    loadPapers().then(P => {
+      const ids = P.f[f.id] || [];
+      box.innerHTML = `<h4>${esc(f.name)}</h4><p class="cap" style="margin:0 0 6px">${esc(f.dept)} · ${INST_ABBR[f.inst]} · ${ids.length} papers in this dataset, most cited first. h-index ${f.h}, i10 ${f.i10}${f.oa_h != null ? `, OpenAlex all-career h ${f.oa_h}` : ""}.</p>
+        <ol class="rank">${ids.map((k, n) => { const p = P.p[k]; return `<li><span class="i">${n + 1}</span><span class="t">${p[4] ? `<a href="https://doi.org/${esc(p[4])}" target="_blank" rel="noopener"><b>${esc(p[0])}</b></a>` : `<b>${esc(p[0])}</b>`}
+          <span class="m">${[P.v[p[2]], p[1], P.t[p[6]], p[5] > 10 ? (p[5] >= 100 ? "100+" : p[5]) + " authors" : ""].filter(Boolean).map(esc).join(" · ")}</span></span><span class="v">${p[3] == null ? "–" : fmt(p[3])}<small>citations</small></span></li>`; }).join("")}</ol>`;
+    }).catch(() => { box.innerHTML = `<h4>${esc(f.name)}</h4><p class="cap">Could not load the paper list.</p>`; });
+  });
   deptSel.addEventListener("change", () => { state.page = 0; renderFaculty(); });
   document.getElementById("facCsv").addEventListener("click", () => {
-    const cols = [["name", "Name"], ["inst", "Institute"], ["dept", "Department"], ["papers", "Papers"], ["cites", "Citations"], ["h", "h-index"], ["q1", "Q1 papers"], ["journal", "Top journal"]];
+    const cols = [["name", "Name"], ["inst", "Institute"], ["dept", "Department"], ["papers", "Papers"], ["cites", "Citations"], ["h", "h-index"], ["i10", "i10-index"], ["oa_h", "h-index OpenAlex all career"], ["q1", "Q1 papers"], ["journal", "Top journal"]];
     const cell = v => /[",\n]/.test(String(v ?? "")) ? `"${String(v).replace(/"/g, '""')}"` : String(v ?? "");
     const lcols = LINKS.map(([k, t, long]) => [k, long]);
     const lv = (f, k) => { const v = f.links && f.links[k]; return Array.isArray(v) ? v.join(" ") : v; };
@@ -1090,7 +1251,7 @@ footer p { margin: 4px 0; }
   function renderDepts() {
     document.querySelector("#deptTable tbody").innerHTML = D.departments.filter(d => shown().includes(d.inst)).sort((a, b) => b.papers - a.papers)
       .map(d => `<tr><td><span class="dot ${d.inst === KGP ? "k" : "r"}"></span>${esc(d.dept)}</td><td class="n">${d.faculty}</td><td class="n">${fmt(d.papers)}</td><td class="n">${fmt(d.cites)}</td>
-      <td class="n">${d.q1 == null ? "–" : pct(d.q1)}</td><td class="n">${d.median_h}</td></tr>`).join("");
+      <td class="n">${d.q1 == null ? "–" : pct(d.q1)}</td><td class="n">${d.mean_h == null ? "–" : d.mean_h.toFixed(1) + (d.sd_h == null ? "" : " ± " + d.sd_h.toFixed(1))}</td><td class="n">${d.median_h}</td></tr>`).join("");
   }
 
   /* ---------------- boot: text, lazy charts, reveal, nav ---------------- */
@@ -1104,6 +1265,7 @@ footer p { margin: 4px 0; }
     const c = charts[id]; if (!c || c.__bound) return; c.__bound = true;
     if (id === "chCitNet") c.on("click", p => p.dataType === "node" && citInspect(p.data.id));
     if (id === "chFacNet") c.on("click", p => p.dataType === "node" && facInspect(p.data.id));
+    if (id === "chAreas") c.on("click", p => { state.area = p.name; renderAreaSub(); });
   }
   ids.forEach(id => { const el = document.getElementById(id); if (io) io.observe(el); else { el.dataset.live = "1"; draw(id); bindChart(id); } });
   // re-bind click handlers after theme / filter re-renders
