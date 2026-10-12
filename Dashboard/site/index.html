@@ -313,7 +313,7 @@ footer p { margin: 4px 0; }
         </div>
       </div>
       <div class="chart" id="chTrend"></div>
-      <p class="note">2026 covers January to October (data collected October 2026), so its point is shown dashed.</p>
+      <p class="note">2026 covers January to October (data collected October 2026), so its bars are faded with a dashed outline.</p>
     </div>
   </div>
 </section>
@@ -723,21 +723,21 @@ footer p { margin: 4px 0; }
   }
 
   /* ---------------- 1. trend ---------------- */
+  // Yearly counts are discrete, so this is a grouped bar chart (one bar per institute per year). 2026 is a partial
+  // year: its bars are faded with a dashed outline, so they don't read as a drop in output.
+  const fade = (hex, a) => { const n = parseInt(hex.replace("#", ""), 16); return `rgba(${n >> 16 & 255},${n >> 8 & 255},${n & 255},${a})`; };
   builders.chTrend = () => {
     const ys = D.years, last = ys.length - 1;
-    const series = [];
-    shown().forEach(i => {
-      const v = D.trend[i][state.type];
-      series.push({ name: SHORT[i], type: "line", data: v.map((x, j) => j === last ? null : x), symbol: "circle", symbolSize: 7,
-        lineStyle: { width: 3, color: col(i) }, itemStyle: { color: col(i) },
-        endLabel: { show: true, formatter: p => narrow() ? fmt(p.value) : `${SHORT[i]}  ${fmt(p.value)}`, color: narrow() ? col(i) : css("--fg"), fontWeight: 600, fontSize: 13, offset: [8, 0], backgroundColor: css("--card"), padding: [2, 4], borderRadius: 4 },
-        emphasis: { focus: "series" } });
-      series.push({ name: SHORT[i] + " (2026, partial)", type: "line", data: v.map((x, j) => j >= last - 1 ? x : null), symbol: "circle", symbolSize: 7,
-        lineStyle: { width: 2.5, type: [6, 6], color: col(i) }, itemStyle: { color: col(i) }, tooltip: { show: false } });
-    });
-    return Object.assign(base(), { grid: { left: 8, right: narrow() ? 64 : 130, top: 24, bottom: 8, containLabel: true },
-      tooltip: Object.assign(base().tooltip, { valueFormatter: v => v == null ? "–" : fmt(v) }),
-      xAxis: axisX({ type: "category", data: ys, boundaryGap: false }), yAxis: axisY({ type: "value", min: 0 }), series });
+    const series = shown().map(i => ({ name: SHORT[i], type: "bar", barMaxWidth: 22, barGap: "12%",
+      itemStyle: { color: col(i), borderRadius: [4, 4, 0, 0] }, emphasis: { focus: "series" },
+      data: D.trend[i][state.type].map((x, j) => j === last
+        ? { value: x, itemStyle: { color: fade(col(i), 0.25), borderColor: col(i), borderWidth: 1.5, borderType: [4, 3] } } : x) }));
+    return Object.assign(base(), { grid: { left: 8, right: 16, top: 36, bottom: 8, containLabel: true },
+      legend: { top: 0, left: 0, icon: "roundRect", itemWidth: 12, itemHeight: 12, textStyle: { color: css("--fg2") } },
+      tooltip: Object.assign(base().tooltip, { axisPointer: { type: "shadow", shadowStyle: { color: fade(css("--fg2"), 0.08) } },
+        formatter: ps => `${ps[0].axisValue}${ps[0].dataIndex === last ? " (January to October)" : ""}<br>` +
+          ps.map(p => `${p.marker}${p.seriesName}&nbsp;&nbsp;<b>${fmt(p.value)}</b>`).join("<br>") }),
+      xAxis: axisX({ type: "category", data: ys }), yAxis: axisY({ type: "value", min: 0 }), series });
   };
 
   /* ---------------- 2. quartiles ---------------- */

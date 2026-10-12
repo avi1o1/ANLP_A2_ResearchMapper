@@ -68,7 +68,7 @@ All files are in `Analysis/results/` unless marked otherwise. Every table has an
 
 | # | Panel (brief §4) | File | Columns to use | Chart |
 |---|---|---|---|---|
-| 1 | **Publication trend** 2016–2026 | `trend.csv` | `year`, `total` (also `journal`, `conference`, `book-chapter`, `preprint`, `other`), `partial_year` | line chart, one line per institute; dash the 2026 segment (partial year) |
+| 1 | **Publication trend** 2016–2026 | `trend.csv` | `year`, `total` (also `journal`, `conference`, `book-chapter`, `preprint`, `other`), `partial_year` | grouped bar chart, one bar per institute per year; fade the 2026 bars (partial year) |
 | 2 | **Faculty list**: name, department, h-index, total papers | `faculty.csv` | `faculty`, `department`, `h_index`, `papers` | searchable table |
 | 3 | **Journal quartile distribution** | `quartiles.csv` | `Q1`–`Q4`, `not_in_scimago`, `q1_fraction_of_ranked` | 100 % stacked bar per institute (or two donuts) |
 | 4 | **Faculty performance table** (sortable): papers, citations, top journal, h-index | `faculty.csv` (+ `faculty_centrality.csv`, join on `roster_id`) | `papers`, `citations`, `top_journal`, `h_index`, `q1_papers`; optional `faculty_coauthors`, `betweenness` | sortable, filterable table |
