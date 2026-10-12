@@ -28,7 +28,7 @@ jobs:
       - name: Stage site
         run: |
           mkdir -p _site
-          cp Dashboard/site/index.html Dashboard/site/data.js _site/
+          cp Dashboard/site/index.html Dashboard/site/data.js Dashboard/site/papers.js _site/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
