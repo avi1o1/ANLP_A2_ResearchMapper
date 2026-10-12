@@ -1,5 +1,8 @@
 # Report — what to write and where every number comes from
 
+**Status (12 Oct 2026):** written. `report.tex` → `report.pdf` (IEEE two-column, 5 pages; figures copied into
+`figures/`). Build with `latexmk -pdf report.tex`. The name/roll-number line is still to be added if required.
+
 The brief (`DPCN_Instruction_Note.pdf`, section 8; checklist in section 11) asks for **a statistics report of at most
 10 slides or 5 pages**, covering IIT Kharagpur and IIT Roorkee at **faculty, department and institution level**, due
 **Week 3**. Everything is already computed. The report only needs choosing, framing and explaining.
