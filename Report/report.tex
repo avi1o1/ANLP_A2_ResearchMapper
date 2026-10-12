@@ -18,38 +18,42 @@
 \maketitle
 
 \begin{abstract}
-We collected the papers of IIT Kharagpur and IIT Roorkee from 2016 to 2026 and linked them to 1,638 faculty. We study
-them at the institution, department and faculty level, and we build a citation network and a co-authorship network.
-Both IITs doubled their output, their citations are heavy-tailed, and their faculty work in tight groups inside their
-own IIT.
+We collected the science and engineering papers of IIT Kharagpur and IIT Roorkee from 2016 to 2026 and linked them to
+1,410 faculty members. We study them at the institution, department and faculty level, and we build a citation network
+and a co-authorship network. Both IITs almost doubled their output, and most of their journal papers are in Q1 journals.
+Their faculty h-index is about half of a career h-index, because we count only ten years of papers. Citations are
+heavy-tailed, and faculty work in tight groups inside their own IIT.
 \end{abstract}
 
 %===========================================================
 \section{Introduction}
 %===========================================================
 We look at research at three levels, the \textbf{institution}, its \textbf{departments} and its \textbf{faculty}.
-Counts of papers and citations describe each level, but they do not show how the research is \emph{connected}. Networks show this. A \textbf{citation network} shows how
-ideas move between papers. A \textbf{co-authorship network} shows how people work together.
+Counts of papers and citations describe each level, but they do not show how the research is \emph{connected}. Networks
+show this. A \textbf{citation network} shows how ideas move between papers. A \textbf{co-authorship network} shows how
+people work together.
 
-This report follows that order. It goes from the institution to the faculty, then to the two networks, and then to
-the links with other Indian institutes. Table~\ref{tab:glance} gives the main numbers.
+This report follows that order. It goes from the institution to the faculty, then to the two networks, and then to the
+links with other Indian institutes. Table~\ref{tab:glance} gives the main numbers.
 
 \begin{table}[!h]
 \centering
 \caption{The dataset at a glance}
 \label{tab:glance}
 \footnotesize
-\begin{tabular}{lrr}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrr@{}}
 \toprule
  & \textbf{IIT Kharagpur} & \textbf{IIT Roorkee} \\
 \midrule
-Papers, 2016--2026                 & 30,019 & 22,844 \\
-Papers in 2016 $\rightarrow$ 2025  & 1,782 $\rightarrow$ 3,429 & 1,335 $\rightarrow$ 2,932 \\
-Journal papers                     & 21,988 & 16,970 \\
-Q1 share of ranked journal papers  & 64.4\% & 59.5\% \\
-CORE A* / A conference papers      & 118 / 97 & 11 / 37 \\
-Faculty with at least one paper    & 934 & 704 \\
-Median faculty h-index             & 7 & 7 \\
+Papers, 2016--2026                 & 25,950 & 20,326 \\
+Papers in 2016 $\rightarrow$ 2025  & 1,583 $\rightarrow$ 2,914 & 1,186 $\rightarrow$ 2,575 \\
+Journal papers                     & 19,003 & 14,966 \\
+Q1 share of ranked journal papers  & 66.0\% & 60.7\% \\
+Journal papers with IF $>$ 5       & 36.0\% & 34.1\% \\
+CORE A* / A conference papers      & 98 / 80 & 11 / 34 \\
+Faculty with at least one paper    & 770 & 640 \\
+Faculty h-index, mean $\pm$ SD (median) & 9.6 $\pm$ 8.6 (8) & 8.7 $\pm$ 7.6 (7) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -58,32 +62,38 @@ Median faculty h-index             & 7 & 7 \\
 \section{Data and Method}\label{sec:data}
 %===========================================================
 \textbf{Collecting the papers.} We scraped publication records from public sources. These are Crossref, Europe PMC,
-DOAJ, INSPIRE, ORCID, DBLP and Semantic Scholar. We searched in two ways. The first way uses the institute name in
-the author affiliations. The second way uses the faculty list of each IIT. This gave 33,393 records for KGP and 25,775
+DOAJ, INSPIRE, ORCID, DBLP and Semantic Scholar. We searched in two ways. The first way uses the institute name in the
+author affiliations. The second way uses the faculty list of each IIT. This gave 33,393 records for KGP and 25,775
 records for Roorkee.
 
-\textbf{Filling in missing values.} Many records had missing fields. We used \textbf{OpenAlex} to get the DOI, type,
-venue, ISSN, citations, references, author affiliations and research topic. We used \textbf{Scimago} to get the
-journal quartile, by ISSN and publication year. We used \textbf{CORE} to get the conference rank. We did not guess any
-value. If we could not find a value, we left it blank.
+\textbf{Filling in missing values.} We used \textbf{OpenAlex} to get the DOI, type, venue, ISSN, citations,
+references, author affiliations and research topic. We used \textbf{Scimago} to get the journal quartile, by ISSN and
+publication year, and \textbf{CORE} to get the conference rank. Later we also took from OpenAlex the yearly citation
+counts of each paper, the impact factor of each journal and the career profile of each faculty member. We did not guess
+any value. If we could not find a value, we left it blank.
 
 \textbf{Checking the affiliation.} We kept a paper only if the IIT is in the author affiliations on the paper. This
-removes namesakes and papers from before a person joined the IIT. After this check we have \textbf{30,019} papers for
-KGP and \textbf{22,844} papers for Roorkee.
+removes namesakes and papers from before a person joined the IIT.
+
+\textbf{Scope.} We keep only \textbf{science and engineering}, as the professor asked. A paper is kept if its OpenAlex
+topic is in the Physical Sciences or Life Sciences. Health Sciences and Social Sciences papers are left out. We also
+leave out the faculty of humanities, management, law, education and medical units (for example HSS, the Vinod Gupta
+School of Management, the School of Medical Science and Technology and the B C Roy hospital). Their science papers stay,
+and they count for the institute. This scope removed 4,069 papers at KGP and 2,518 at Roorkee. We are left with
+\textbf{25,950} papers for KGP and \textbf{20,326} for Roorkee.
 
 \textbf{Linking papers to faculty.} The brief asks for one row for each paper and faculty member. We linked papers to
 faculty with five rules, from the most reliable to the least reliable. These are the \textbf{ORCID}, the faculty
 profile where we found the paper, the exact \textbf{name}, the \textbf{name and department}, and the OpenAlex author
-ID. Extra checks stop wrong matches, for example two faculty with the same common surname. About \textbf{85\%} of the
-papers have at least one faculty member (84.7\% for KGP and 84.4\% for Roorkee). We credited the other papers to the
-institute.
+ID. Extra checks stop wrong matches, for example two faculty with the same common surname. 82.8\% of KGP papers and
+84.4\% of Roorkee papers have at least one faculty member. We credited the other papers to the institute.
 
-\textbf{Deliverables.} The four files have 63,122 rows (\texttt{group3\_data}), 544,794 citation edges, 160,214
-author pairs and 5,847 Indian partners.
+\textbf{Deliverables.} The four files have 54,826 rows (\texttt{group3\_data}), 489,869 citation edges, 137,473
+author pairs and 5,367 Indian partners. \texttt{group3\_data} also has the number of authors of each paper and a flag
+for papers with more than 10 authors.
 
-\textbf{Limits.} We include all fields, which are science, engineering, health and social sciences. 2026 is a \textbf{partial year}, and the citation counts are from
-October 2026. The h-index uses only the 2016--2026 papers in our dataset. Thus it is lower than a Google Scholar
-h-index.
+\textbf{Limits.} 2026 is a \textbf{partial year}, and the citation counts are from October 2026. The h-index and
+i10-index use only the 2016--2026 papers in our dataset (Section~\ref{sec:hlow} shows what this means).
 
 %===========================================================
 \section{Institution-Level Statistics}\label{sec:inst}
@@ -93,17 +103,17 @@ The simplest measure of research activity is the \textbf{number of papers per ye
 sets the scale for all other results. More papers give more citations and larger networks. Thus we must keep the size
 of each IIT in mind when we compare them.
 
-Both IITs grew steadily (Fig.~\ref{fig:trend}). KGP went from 1,782 papers in 2016 to 3,429 papers in 2025, which is
-\textbf{1.9 times} more. Its peak was 3,580 papers in 2024. Roorkee went from 1,335 papers to 2,932 papers, which is
+Both IITs grew steadily (Fig.~\ref{fig:trend}). KGP went from 1,583 papers in 2016 to 2,914 in 2025, which is
+\textbf{1.8 times} more. Its peak was 3,094 papers in 2024. Roorkee went from 1,186 papers to 2,575, which is
 \textbf{2.2 times} more. KGP is larger every year, but Roorkee grows faster. Not all paper types grew at the same rate.
-At KGP, conference papers grew 2.4 times and journal papers grew 1.7 times. At Roorkee the values are 2.9 and 2.0.
-Preprints went from almost zero to 150 to 200 each year. Thus part of the growth is a change in \emph{how} the IITs
-publish, and not only in how much. The drop in 2026 is because the year is not complete.
+At KGP, conference papers grew 2.4 times and journal papers grew 1.6 times. At Roorkee the values are 2.9 and 1.9.
+Preprints went from almost zero to 130 to 200 each year. Thus part of the growth is a change in \emph{how} the IITs
+publish, and not only in how much. The low 2026 bars are because the year is not complete.
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.76\linewidth]{trend.png}
-\caption{Papers per year. The dashed part is 2026, which is a partial year.}
+\includegraphics[width=0.95\linewidth]{trend.png}
+\caption{Papers per year. The faded bars are 2026, which is a partial year.}
 \label{fig:trend}
 \end{figure}
 
@@ -112,50 +122,161 @@ A paper count does not show quality. The \textbf{Scimago quartile} ranks each jo
 Then it divides the list into four equal parts. Q1 is the top 25\%. Scimago ranks journals \emph{inside} each subject.
 Thus the Q1 share lets us compare quality across fields that cite at very different rates.
 
-About 94\% of the journal papers of both IITs have a quartile. Of these papers, \textbf{64.4\%} at KGP and
-\textbf{59.5\%} at Roorkee are in Q1 (Fig.~\ref{fig:quart}). Between 28\% and 30\% are in Q2, and only about 1\% are
-in Q4. We expect this result from two of the oldest IITs, which publish mostly in established journals.
-
-For conferences we use the \textbf{CORE} rank. CORE ranks mostly computing conferences. Here KGP is far ahead, with
-118 A* papers and 97 A papers. Roorkee has 11 and 37. This result makes sense. Computer Science is the largest
-department of KGP by papers (Table~\ref{tab:dept}), and it gives 12.2\% of KGP papers. At Roorkee, Computer Science
-gives 8.0\% of papers.
+About 95\% of the journal papers of both IITs have a quartile. Of these papers, \textbf{66.0\%} at KGP and
+\textbf{60.7\%} at Roorkee are in Q1 (Fig.~\ref{fig:quart}). Between 27\% and 30\% are in Q2, and only about 1\% are in
+Q4. We expect this result from two of the oldest IITs, which publish mostly in established journals.
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.8\linewidth]{quartiles.png}
+\includegraphics[width=0.9\linewidth]{quartiles.png}
 \caption{Journal quartile mix (Scimago, year of publication).}
 \label{fig:quart}
 \end{figure}
 
-\subsection{Research areas and journals}
-Next we ask \emph{what} each IIT works on. For this we use the OpenAlex \textbf{field} of each paper. The research
-areas are important for the rest of the report. They control which papers can cite each other and which faculty can
-work together. In Section~\ref{sec:india} we use them again to compare the IITs with their partners.
+\subsection{Impact factor}
+The quartile puts a journal in one of four bands. The \textbf{impact factor} (IF) gives a number. It is the number of
+citations a journal received in one year to its papers of the two years before, divided by the number of those papers.
+The official Journal Impact Factor of Clarivate is not free. Thus we use the same formula on OpenAlex data, which
+OpenAlex calls the \emph{2-year mean citedness}. Two things are different from the official IF. It is the current
+value, not the value in the year of publication. It is also usually higher, because OpenAlex counts more citing
+sources. For example, Scientific Reports has 5.2 here and about 3.8 in Clarivate. Thus the thresholds below are on the
+OpenAlex scale.
 
-\textbf{Engineering} is the largest field at both IITs. It has 31.6\% of KGP papers and 38.6\% of Roorkee papers. After
-Engineering, the two IITs are different. The second field at KGP is \textbf{Computer Science} (12.2\%). The second
-field at Roorkee is \textbf{Environmental Science} (11.3\%). This agrees with the large Civil Engineering department
-of Roorkee, which is its largest department (Table~\ref{tab:dept}), and with its departments that study water.
-Materials Science is third at both IITs, with about 9\%. The top journals of KGP are Physics of Fluids (330 papers),
-Scientific Reports (194) and ACS Applied Materials and Interfaces (152). The top journals of Roorkee are Scientific
-Reports (133), the International Journal of Biological Macromolecules (132) and Physical Review C (117). All of them
-are Q1 journals. Some are broad journals, and others match a strong area of each IIT, such as fluid mechanics at KGP
-and nuclear physics at Roorkee.
+The median journal paper is in a journal with IF 4.1 at KGP and 4.0 at Roorkee. \textbf{36.0\%} of KGP journal papers
+and \textbf{34.1\%} of Roorkee journal papers are in journals with IF $>$ 5. \textbf{6.1\%} and \textbf{5.3\%} are in
+journals with IF $>$ 10 (1,148 and 797 papers). The share above 5 grew a little over the decade, from about 30\% in 2017--2019 to between
+36\% and 39\% since 2021 (Fig.~\ref{fig:if}). This agrees with the Q1 share above, and KGP is a little ahead on both.
 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.95\linewidth]{impact_factor_over5.png}
+\caption{Share of journal papers in journals with IF (OpenAlex) above 5, per year.}
+\label{fig:if}
+\end{figure}
 
+\subsection{Top journals and important journals}
+Table~\ref{tab:journals} shows the top 10 journals of each IIT with their IF. All are Q1 except ChemistrySelect (Q2).
+Some are broad journals, such as Scientific Reports and RSC Advances. Others match a strong area of each IIT, such as
+fluid mechanics at KGP (Physics of Fluids) and nuclear physics at Roorkee (Physical Review C).
 
-\subsection{Most-cited papers}
+\begin{table}[!t]
+\centering
+\caption{Top 10 journals of each IIT by papers, with IF (OpenAlex)}
+\label{tab:journals}
+\footnotesize
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Journal} & \textbf{Papers} & \textbf{IF} \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{IIT Kharagpur}} \\
+Physics of Fluids & 325 & 4.2 \\
+Scientific Reports & 175 & 5.2 \\
+ACS Applied Materials \& Interfaces & 149 & 8.8 \\
+Langmuir & 130 & 4.9 \\
+RSC Advances & 112 & 7.5 \\
+Physical Chemistry Chemical Physics & 107 & 3.6 \\
+Journal of Alloys and Compounds & 96 & 6.3 \\
+ACS Applied Nano Materials & 95 & 6.9 \\
+Science of The Total Environment & 93 & 12.2 \\
+Materials Science and Engineering A & 88 & 6.8 \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{IIT Roorkee}} \\
+Scientific Reports & 124 & 5.2 \\
+Int.\ J.\ of Biological Macromolecules & 120 & 9.2 \\
+Physical Review C & 117 & 3.2 \\
+IEEE Trans.\ on Industry Applications & 110 & 4.4 \\
+Environ.\ Science and Pollution Research & 101 & 6.4 \\
+Physics of Fluids & 86 & 4.2 \\
+IEEE Access & 85 & 6.4 \\
+ChemistrySelect & 78 & 2.5 \\
+IEEE Trans.\ on Electron Devices & 77 & 3.6 \\
+J.\ of Environmental Chemical Engineering & 70 & 6.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Some journal groups are seen as \textbf{important} in physics and chemistry. These are the American Physical Society
+(APS) journals (the Physical Review family), Physical Review Letters (PRL), the SPIE journals, the Nature journals and
+the Journal of the American Chemical Society (JACS). Counting these papers shows how often the IITs publish at the top
+of these fields. The counts are in Table~\ref{tab:important}. The APS journals are the largest group, with about 300
+papers at KGP and 230 at Roorkee. At KGP they are spread over Physical Review A, B, D and E, and at Roorkee half of
+them are in Physical Review C (nuclear physics). Papers in PRL, Nature journals and JACS
+are rare, with 6 to 25 papers each over ten years. This is expected, because these journals accept very few papers.
+
+\begin{table}[!t]
+\centering
+\caption{Papers in important journal groups, 2016--2026}
+\label{tab:important}
+\footnotesize
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Group} & \textbf{KGP} & \textbf{Roorkee} \\
+\midrule
+APS (all Physical Review journals) & 299 & 231 \\
+\quad of which PRL & 10 & 6 \\
+SPIE journals & 17 & 22 \\
+SPIE conference proceedings & 8 & 8 \\
+Nature journals (Nature, Nature Communications, ...) & 25 & 22 \\
+JACS & 9 & 14 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Conferences and CORE}
+For conference papers we use the \textbf{CORE} rank (A*, A, B, C). CORE ranks mostly computing conferences. Thus it
+tells us about the computer science side of each IIT, and most conference papers have no CORE rank.
+
+At KGP, 522 of 3,814 conference papers (13.7\%) are in CORE-ranked venues. These are 98 A*, 80 A, 222 B and 122 C
+papers. At Roorkee, 289 of 3,211 (9.0\%) are ranked. These are 11 A*, 34 A, 144 B and 100 C papers. Thus KGP is far
+ahead at the top ranks. This result makes sense. Computer Science is 14.1\% of KGP papers and only 8.9\% of Roorkee
+papers. The most frequent CORE venue is the same for both IITs. It is the IEEE Geoscience and Remote Sensing
+Symposium (rank C, 51 KGP papers and 81 Roorkee papers). The KGP list also has top venues such as AAAI (A*, 16
+papers) and CIKM (A, 17 papers). Ranked conference papers increased after 2021 at both IITs.
+
+\subsection{Research areas and their categories}
+Next we ask \emph{what} each IIT works on. OpenAlex puts every paper in a hierarchy of four levels. These are the
+\emph{domain}, the \emph{field}, the \emph{subfield} and the \emph{topic}. For example, a paper on perovskite solar
+cells is in the domain Physical Sciences, the field Engineering, the subfield Electrical and Electronic Engineering and
+the topic Perovskite Materials and Applications. The research areas are important for the rest of the report. They
+control which papers can cite each other and which faculty can work together.
+
+\textbf{Engineering} is the largest field at both IITs, with 36.6\% of KGP papers and 43.3\% of Roorkee papers
+(Fig.~\ref{fig:areas}). Inside Engineering the main subfields are Electrical and Electronic Engineering (24\% at KGP
+and 32\% at Roorkee), Mechanical Engineering, Biomedical Engineering and Civil and Structural Engineering. After
+Engineering, KGP has more Computer Science (14.1\%) and Roorkee has more Environmental Science (12.7\%). Materials
+Science is about 11\% at both. The dashboard lists the subfields inside every field.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.95\linewidth]{research_areas.png}
+\caption{Share of papers by OpenAlex field (primary topic).}
+\label{fig:areas}
+\end{figure}
+
+\textbf{Why is Environmental Science so high?} It is 10.4\% of KGP papers and 12.7\% of Roorkee papers. The subfields
+explain it (Fig.~\ref{fig:env}). About two thirds of these papers are in Environmental Engineering, Water Science and
+Technology, and Global and Planetary Change. The most common topics are hydrology, watershed management, floods,
+climate models and the removal of pollutants from water. The departments of the authors are mostly engineering
+departments. At KGP these are Civil Engineering (28\% of these papers), Agricultural and Food Engineering and the CORAL
+centre. At Roorkee they are Civil Engineering (21\%), Hydrology and Water Resources Development and Management. Thus
+Environmental Science is high because OpenAlex puts much of the water and climate engineering of the two IITs in this
+field. Roorkee has entire departments for hydrology and water resources, so its share is higher.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.95\linewidth]{env_science_subfields.png}
+\caption{Subfields inside Environmental Science.}
+\label{fig:env}
+\end{figure}
+
+\subsection{Most-cited papers and large collaborations}
 The last measure at this level is the number of \textbf{worldwide citations} of each paper. These papers are the most
 visible work of each IIT. But some of them tell us more about the type of paper than about the institute.
 
-Table~\ref{tab:cited} shows the top three papers of each IIT. The top papers of KGP are of three types. These are
-\textbf{large collaborations} (the autophagy guidelines, with 4,434 citations), \textbf{software tools} (SymPy and
-iFogSim) and \textbf{reviews}. At Roorkee, at least five of the top ten papers are \textbf{reviews or surveys}. Their
-topics are NSGA-II, differential evolution, metaheuristics, reinforcement learning and graphene composites. The top
-paper of Roorkee is also a large collaboration, the European Pulsar Timing Array. This result makes sense. Everyone who
-uses a topic or a software tool cites its review or its tool paper. Thus these papers get citations much faster than a
-typical research paper.
+Table~\ref{tab:cited} shows the top three papers of each IIT. At KGP two of them are \textbf{software tools} (SymPy
+and iFogSim). At Roorkee the top paper is a \textbf{large collaboration} (the European Pulsar Timing Array), and at
+least five of the top ten are \textbf{reviews or surveys}. This makes sense. Everyone who uses a topic or a tool cites
+its review or its tool paper, so these papers get citations very fast.
 
 \begin{table}[!t]
 \centering
@@ -166,9 +287,9 @@ typical research paper.
 \toprule
  & \textbf{Paper (year)} & \textbf{Cit.} \\
 \midrule
-KGP & Guidelines for the use and interpretation of assays for monitoring autophagy (2016) & 4,434 \\
 KGP & Soil carbon 4 per mille (2017) & 2,020 \\
 KGP & SymPy, symbolic computing in Python (2017) & 1,502 \\
+KGP & iFogSim, a toolkit for modeling and simulation of resource management techniques ... (2017) & 1,250 \\
 \midrule
 Roork. & The second data release from the European Pulsar Timing Array (2023) & 1,069 \\
 Roork. & A comprehensive review on NSGA-II for multi-objective combinatorial optimization (2021) & 971 \\
@@ -177,65 +298,158 @@ Roork. & Microwave--material interaction phenomena, heating mechanisms ... (2016
 \end{tabular}
 \end{table}
 
+We \textbf{flag papers with more than 10 authors}, because in such papers our faculty are one group among many. They
+are few, 534 papers at KGP (2.1\%) and 454 at Roorkee (2.2\%). 17 and 7 of them have 100 or more authors. But they get
+more than their share of citations, 6.0\% of all KGP citations and 3.7\% of all Roorkee citations. The flag is in
+\texttt{group3\_data.csv} and on the dashboard.
+
 %===========================================================
 \section{Faculty and Department Level}\label{sec:fac}
 %===========================================================
 The institution numbers are sums over people. Now we look at the people, and then at the departments that group them.
 
-\subsection{h-index of faculty}
+\subsection{h-index statistics}
 A faculty member has an \textbf{h-index} of $h$ if $h$ of their papers have at least $h$ citations each. This measure
-is useful here because it combines \emph{how much} a person publishes and \emph{how much} other people cite it. One
-very large paper, such as the large collaborations above, cannot increase it alone.
+combines \emph{how much} a person publishes and \emph{how much} other people cite it. One very large paper cannot
+increase it alone.
 
-The median h-index is \textbf{7} at both IITs. The mean is 9.2 at KGP and 8.7 at Roorkee. The distribution is strongly
-right-skewed (Fig.~\ref{fig:h}). Many faculty have a small h-index, and a few have a very large one. The highest value
-is 63 at KGP (Narayan Chandra Das, Rubber Technology), and the next is 54 (Makarand M.\ Ghangrekar, Civil Engineering).
-At Roorkee the highest value is 42 (Zillur Rahman, Management Studies, and Soumitra Satapathi, Physics). The low median
-makes sense. We count only ten years of papers, and recent papers had little time to get citations.
+The h-index is strongly right-skewed (Fig.~\ref{fig:h}). Many faculty have a small h-index, and a few have a very large
+one. Thus the mean alone is misleading, and we give several statistics (Table~\ref{tab:hstats}). At KGP the mean is
+9.6 with a standard deviation of 8.6, and the median is 8. At Roorkee the mean is 8.7 with a standard deviation of 7.6,
+and the median is 7. The SD is almost as large as the mean, which again shows the long tail. The highest values are 63
+at KGP (Narayan Chandra Das, Rubber Technology) and 53 (Makarand M.\ Ghangrekar, Civil Engineering), and 42 at
+Roorkee (Soumitra Satapathi, Physics).
+
+\begin{table}[!t]
+\centering
+\caption{Faculty h-index and i10-index (2016--2026 papers)}
+\label{tab:hstats}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+ & \multicolumn{2}{c}{\textbf{h-index}} & \multicolumn{2}{c}{\textbf{i10-index}} \\
+ & \textbf{KGP} & \textbf{Roorkee} & \textbf{KGP} & \textbf{Roorkee} \\
+\midrule
+Faculty & 770 & 640 & 770 & 640 \\
+Mean $\pm$ SD & 9.6 $\pm$ 8.6 & 8.7 $\pm$ 7.6 & 13.9 $\pm$ 21.7 & 11.6 $\pm$ 17.2 \\
+Median & 8 & 7 & 6 & 5 \\
+Middle half (Q1--Q3) & 3--13 & 3--12 & 1--16 & 1--14 \\
+90th percentile & 22 & 19 & 37 & 30 \\
+Maximum & 63 & 42 & 184 & 122 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.8\linewidth]{h_index_hist.png}
+\includegraphics[width=0.95\linewidth]{h_index_hist.png}
 \caption{Distribution of the faculty h-index (2016--2026 papers in our dataset).}
 \label{fig:h}
+\end{figure}
+
+\subsection{i10-index}
+The \textbf{i10-index} is the number of papers with at least 10 citations. It is used by Google Scholar. It is simpler
+than the h-index, and it shows how many of a person's papers are cited well. The median faculty member has 6 such
+papers at KGP and 5 at Roorkee in these ten years. The mean is much higher (13.9 and 11.6), because a few very active
+labs have more than 100 such papers each (Table~\ref{tab:hstats}).
+
+\subsection{Why is our h-index low?}\label{sec:hlow}
+A median h-index of 7 or 8 looks low for faculty of old IITs. We checked why. For each faculty member we compare three
+values. The first is our h-index. The second is the h-index of the same papers with OpenAlex citation counts in place
+of ours. The third is the h-index of the person's whole OpenAlex profile, which covers the whole career. We use the
+career value only when the profile clearly belongs to the person (at least 5 of their papers checked, and at least
+80\% of them have that profile). This leaves 565 faculty at KGP and 437 at Roorkee. Some profiles merge two people with
+the same name, and this rule removes them.
+
+\begin{table}[!t]
+\centering
+\caption{Median faculty h-index, three ways}
+\label{tab:hcheck}
+\footnotesize
+\begin{tabular}{@{}lrr@{}}
+\toprule
+ & \textbf{KGP} & \textbf{Roorkee} \\
+\midrule
+Our h-index (2016--2026 papers) & 9 & 9 \\
+Same papers, OpenAlex citation counts & 10 & 9 \\
+OpenAlex profile, whole career & 20 & 19 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:hcheck} gives the answer. The citation source changes very little, because the same papers give almost
+the same h-index with OpenAlex counts. The big difference is the \textbf{time window}. Our h-index counts only papers
+from 2016 to 2026. A career h-index also counts all the older papers, which have had many years to collect citations.
+Thus our value is about \textbf{half} of the career value (53\% at KGP and 50\% at Roorkee at the median), and 98\% of
+faculty are below their career value (Fig.~\ref{fig:hcheck}). Google Scholar is higher again, because it also counts
+preprints, theses and books. For example, A.\ Taraphder's 2017 PRL paper has 351 citations in our data and 435 in
+Google Scholar. The paper is in our dataset and linked to him by ORCID.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.95\linewidth]{h_index_check.png}
+\caption{Our h-index against the OpenAlex whole-career h-index (dashed line: equal).}
+\label{fig:hcheck}
+\end{figure}
+
+\subsection{h-index over the years}
+The h-index grows with time, because a person writes more papers and the old papers collect citations. To see this
+growth, we compute the h-index at the end of each year. For year $Y$ we use the papers published up to $Y$ and only the
+citations received up to $Y$, from the yearly citation counts in OpenAlex.
+
+The mean faculty h-index rose from 0.9 at the end of 2016 to 9.5 at the end of 2025 at KGP, and from 0.8 to 8.5 at
+Roorkee (Fig.~\ref{fig:hyear}). It grows by about one point each year at both IITs, and KGP stays a little ahead. The
+h-index of each institute as a whole, computed over all its papers, grew from 10 to 178 at KGP and from 12 to 153 at
+Roorkee. The growth is steady. This agrees with the growing output and the growing citations
+from Indian institutes (Section~\ref{sec:cit}).
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\linewidth]{h_index_by_year.png}
+\caption{h-index at the end of each year. Left, the mean faculty h-index. Right, the h-index of each institute.}
+\label{fig:hyear}
 \end{figure}
 
 \subsection{Departments}
 Departments are between the person and the institute. They are the natural unit to compare research areas inside one
 IIT. Table~\ref{tab:dept} shows the five departments with the most papers at each IIT.
 
-At KGP, Computer Science has the most papers, but Civil Engineering has the most citations (42,007). Civil Engineering
+At KGP, Computer Science has the most papers, but Civil Engineering has the most citations (41,228). Civil Engineering
 includes environmental engineering, and two of the five highest h-index values at KGP are in this department. At
-Roorkee, Civil Engineering has the most papers and the most faculty (75). The Q1 share is similar in the engineering
-departments, between 50\% and 73\%. Mathematics is much lower at both IITs, at about 44\%. We expect this, because
-mathematics journals have lower impact scores in general. Small departments can also be strong. Rubber Technology at
-KGP has only 9 faculty, but its median h-index is 22.
+Roorkee, Civil Engineering has the most papers and the most faculty (75). The Q1 share is between 50\% and 73\% in the
+engineering departments. Mathematics is much lower at both IITs, at about 45\%. We expect this, because mathematics
+journals have lower impact scores in general. The mean h-index of a department is close to its SD, so every department
+has a mix of young and very senior faculty.
 
 \begin{table}[!t]
 \centering
 \caption{Top 5 departments of each IIT by number of papers}
 \label{tab:dept}
 \footnotesize
-\begin{tabular}{@{}lrrrr@{}}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lrrrrr@{}}
 \toprule
-\textbf{Department} & \textbf{Fac.} & \textbf{Papers} & \textbf{Cit.} & \textbf{Q1} \\
+\textbf{Department} & \textbf{Fac.} & \textbf{Papers} & \textbf{Cit.} & \textbf{Q1} & \textbf{h, mean$\pm$SD} \\
 \midrule
-\multicolumn{5}{@{}l}{\emph{IIT Kharagpur}} \\
-Computer Sci.\ \& Engg.     & 52 & 2,836 & 30,227 & 67.8\% \\
-Mechanical Engg.            & 54 & 1,998 & 29,849 & 70.8\% \\
-Civil Engg.                 & 45 & 1,796 & 42,007 & 70.5\% \\
-Chemistry                   & 42 & 1,712 & 37,324 & 72.9\% \\
-Agricultural \& Food Engg.  & 53 & 1,632 & 35,235 & 61.2\% \\
+\multicolumn{6}{@{}l}{\emph{IIT Kharagpur}} \\
+Computer Sci.\ \& Engg.    & 51 & 2,429 & 25,758 & 66.9\% & 9.0 $\pm$ 7.9 \\
+Mechanical Engg.           & 54 & 1,926 & 29,048 & 71.3\% & 11.0 $\pm$ 9.3 \\
+Civil Engg.                & 45 & 1,748 & 41,228 & 70.8\% & 12.7 $\pm$ 10.9 \\
+Chemistry                  & 42 & 1,650 & 36,372 & 72.8\% & 14.0 $\pm$ 9.3 \\
+Agri.\ \& Food Engg.       & 52 & 1,480 & 32,085 & 61.5\% & 10.8 $\pm$ 8.5 \\
 \midrule
-\multicolumn{5}{@{}l}{\emph{IIT Roorkee}} \\
-Civil Engg.                 & 75 & 2,188 & 30,002 & 57.0\% \\
-Electronics \& Comm.\ Engg. & 45 & 1,887 & 16,262 & 49.6\% \\
-Mech.\ \& Industrial Engg.  & 54 & 1,745 & 31,497 & 61.2\% \\
-Electrical Engg.            & 48 & 1,738 & 17,169 & 68.2\% \\
-Physics                     & 44 & 1,545 & 21,154 & 65.3\% \\
+\multicolumn{6}{@{}l}{\emph{IIT Roorkee}} \\
+Civil Engg.                & 75 & 2,021 & 26,979 & 56.2\% & 8.5 $\pm$ 6.6 \\
+Electronics \& Comm.       & 45 & 1,854 & 15,978 & 49.7\% & 7.9 $\pm$ 6.0 \\
+Electrical Engg.           & 48 & 1,694 & 16,424 & 68.7\% & 8.3 $\pm$ 6.6 \\
+Mech.\ \& Industrial Engg. & 53 & 1,671 & 30,210 & 61.4\% & 11.2 $\pm$ 8.2 \\
+Physics                    & 44 & 1,515 & 20,711 & 65.8\% & 9.4 $\pm$ 7.9 \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+%FACULTY-BY-YEAR
 
 %===========================================================
 \section{Citation Network}\label{sec:cit}
@@ -245,11 +459,11 @@ Up to now, all citations had the same value. A network lets us ask \emph{who} ci
 \subsection{Construction}
 Each \textbf{node} is a paper of our two IITs. A \textbf{directed edge} $A \to B$ means that paper $A$ cites paper $B$,
 and both papers are in our dataset. The edges have a direction because a citation goes one way, from a newer paper to
-an older paper. The network has \textbf{52,584} papers and \textbf{96,030} edges. KGP has 29,997 papers and 53,798
-edges, and Roorkee has 22,804 papers and 38,648 edges. The network is very sparse. The density is
-$3.5\times10^{-5}$ and the mean in-degree is 1.8. About \textbf{half} of the papers get no citation from another paper
-of the two IITs. The largest weakly connected component has 53\% of the papers. We expect this, because the papers
-are in many fields that do not cite each other.
+an older paper. The network has \textbf{46,072} papers and \textbf{86,090} edges. KGP has 25,942 papers and 47,586
+edges, and Roorkee has 20,326 papers and 35,246 edges. The network is very sparse. The density is $4.1\times10^{-5}$
+and the mean in-degree is 1.9. About \textbf{half} of the papers get no citation from another paper of the two IITs.
+The largest weakly connected component has 53\% of the papers. We expect this, because the papers are in many fields
+that do not cite each other.
 
 \subsection{In-degree distribution}
 As we know from our lectures already, the in-degree of a node is the number of edges that point to it. Here it is the
@@ -280,7 +494,7 @@ the same value to every citation. PageRank gives more value to a citation from a
 papers that are the \emph{base} of other well-cited work.
 
 Our data shows this clearly (Table~\ref{tab:pr}). The top paper by PageRank is a 2016 KGP paper on MoS$_2$
-heterojunctions. It has only 20 internal citations and its in-degree rank is 209. But the papers that cite it have many
+heterojunctions. It has only 20 internal citations and its in-degree rank is 195. But the papers that cite it have many
 citations themselves. There is also an \textbf{age bias}. Seven of the top ten papers are from 2016, and the Spearman
 correlation between PageRank and publication year is $-0.39$. This makes sense. In a citation network the score moves
 almost only from newer papers to older papers. Thus the oldest papers in our window collect the most score.
@@ -294,11 +508,11 @@ almost only from newer papers to older papers. Thus the oldest papers in our win
 \toprule
  & \textbf{Paper (year)} & \textbf{In} & \textbf{Rank} \\
 \midrule
-KGP    & Hydrothermal growth of few layer 2H-MoS$_2$ for heterojunction ... (2016) & 20 & 209 \\
-KGP    & Uniform electric-field-induced lateral migration of a sedimenting ... (2016) & 58 & 1 \\
-KGP    & V$_2$O$_5$ microflower decorated cathode for enhancing power ... (2016) & 23 & 117 \\
-Roork. & A review of power electronic converters for variable speed ... (2018) & 49 & 4 \\
-Roork. & Synergistic dynamics of nitrogen and phosphorous ... (2016) & 21 & 174 \\
+KGP    & Hydrothermal growth of few layer 2H-MoS$_2$ for heterojunction ... (2016) & 20 & 195 \\
+KGP    & Uniform electric-field-induced lateral migration of a sedimenting drop (2016) & 58 & 1 \\
+KGP    & V$_2$O$_5$ microflower decorated cathode for enhancing power ... (2016) & 23 & 108 \\
+Roork. & A review of power electronic converters for variable speed pumped storage ... (2018) & 49 & 4 \\
+KGP    & Groundwater quality and depletion in the Indo-Gangetic Basin ... (2016) & 51 & 2 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -310,16 +524,17 @@ our papers. The \textbf{out-flow} is the number of citations from our papers to 
 ratio} is the in-flow divided by the out-flow. A ratio above 1 means that Indian research cites the IIT more than the
 IIT cites Indian research.
 
-KGP has an in-flow of 114,443 and an out-flow of 129,758, so its ratio is \textbf{0.88}. Roorkee has 96,963 and
-117,255, so its ratio is \textbf{0.83}. At first, it seems that both IITs give more citations than they get.
-Fig.~\ref{fig:flow} shows the reason. In 2016 our papers already cited thousands of older Indian papers (the KGP
-out-flow was 5,764). But almost no paper had cited them yet (the KGP in-flow was 217), because citations take years to
-arrive. The in-flow grows much faster over time. Since \textbf{2023} it is larger than the out-flow at both IITs. Thus
-the total ratio below 1 comes mostly from the 2016--2026 window.
+KGP has an in-flow of 102,511 and an out-flow of 115,479, so its ratio is \textbf{0.89}. Roorkee has 86,983 and 107,630,
+so its ratio is \textbf{0.81}. At first, it seems that both IITs give more citations than they get. Fig.~\ref{fig:flow}
+shows the reason. In 2016 our papers already cited thousands of older Indian papers (the KGP out-flow was 5,335). But
+almost no paper had cited them yet (the KGP in-flow was 214), because citations take years to arrive. The in-flow grows
+much faster over time. It is larger than the out-flow since \textbf{2023} at KGP and since \textbf{2024} at Roorkee.
+Thus the total ratio below 1 comes mostly from the 2016--2026 window.
 
-The largest Indian source of citations to KGP is IIT Roorkee (3,105 citations). VIT (3,022) and AcSIR (2,885) are next.
-For Roorkee the largest sources are VIT (2,565), UPES (2,533) and AcSIR (2,211). Large universities such as VIT and
-Saveetha cite our IITs much more than our IITs cite them (the KGP ratio with Saveetha is 4.7).
+The largest Indian source of citations to KGP is IIT Roorkee (2,914 citations), followed by VIT and AcSIR. For Roorkee
+the largest sources are UPES (2,345), VIT and AcSIR. Large universities such as VIT, UPES and Saveetha cite our IITs
+much more than our IITs cite them (ratios between 1.6 and 3.7). The most cited Indian paper that cites KGP is the SciPy
+1.0 paper, and the most cited one that cites Roorkee is a paper on drug delivery vehicles for cancer treatment.
 
 \begin{figure}[!t]
 \centering
@@ -336,11 +551,11 @@ This is closer to how research groups really work.
 
 \subsection{Construction}
 Each \textbf{node} is a faculty member of one of the two IITs. An \textbf{undirected edge} connects two faculty who
-wrote at least one paper together. The edge weight is the number of joint papers. The network has \textbf{1,638}
-faculty and \textbf{3,329} edges, and its density is 0.0025. On average, a faculty member has 4.1 faculty co-authors,
-and 324 faculty have no faculty co-author. The largest component has 1,260 faculty, which is 77\% of all faculty.
-Fig.~\ref{fig:net} shows this component. The two IITs make \textbf{two separate clusters}, and only \textbf{90} edges
-connect them. This is natural, because the two campuses are far apart and most work happens inside one campus.
+wrote at least one paper together. The edge weight is the number of joint papers. The network has \textbf{1,410}
+faculty and \textbf{2,719} edges, and its density is 0.0027. On average, a faculty member has 3.9 faculty co-authors,
+and 254 faculty have no faculty co-author. The largest component has 79\% of all faculty. Fig.~\ref{fig:net} shows it.
+The two IITs make \textbf{two separate clusters}, and only \textbf{77} edges connect them. This is natural, because the
+two campuses are far apart and most work happens inside one campus.
 
 \begin{figure}[!t]
 \centering
@@ -354,20 +569,20 @@ As we know from our lectures already, \textbf{degree centrality} is the number o
 $n-1$. In this network it is the number of faculty colleagues that a person wrote papers with. Thus it finds the people
 who collaborate the most.
 
-The highest values are for Santanu Dhara (KGP, Medical Science and Technology, 52 faculty co-authors), Suman
-Chakraborty (KGP, Mechanical Engineering, 49) and Partha Roy (Roorkee, Biosciences and Bioengineering, 44). Medical
-science and biosciences are interdisciplinary areas. A project in these areas needs people from many departments, so
-we expect a high degree here.
+The highest values are for Partha Roy (Roorkee, Biosciences and Bioengineering, 41 faculty co-authors), Suman
+Chakraborty (KGP, Mechanical Engineering, 40) and Chandra Sekhar Tiwary (KGP, Metallurgical and Materials Engineering,
+36). Work in these fields often needs equipment and skills from several departments, so we expect a high degree
+here.
 
 \subsection{Betweenness centrality}
 As we know from our lectures already, \textbf{betweenness centrality} measures how often a node is on the shortest path
 between two other nodes. A person with a high betweenness is a \textbf{bridge}. Without this person, some groups are
 far apart or not connected. This role is different from having many co-authors.
 
-The top bridges are Partha Roy at Roorkee (0.048), and Suman Chakraborty (0.030) and Pabitra Mitra (Computer Science,
-0.029) at KGP. Pabitra Mitra shows the difference between the two measures. He has fewer co-authors than the top people
-by degree (35), but his co-authors are in many different groups. Many departments use computer science methods. Thus
-it makes sense that a computer scientist connects them.
+The top bridges are Partha Roy (0.054) and Pradip K.\ Maji (0.038) at Roorkee, and Ramkrishna Sen (0.035) and Narayan
+Chandra Das (0.031) at KGP. Pradip K.\ Maji shows the difference between the two measures. He has only 20 faculty
+co-authors, half as many as the top people by degree, but his co-authors are in different groups. Polymer and process
+engineering is used by chemists, materials scientists and engineers, so it makes sense that he connects them.
 
 \subsection{Communities}
 A \textbf{community} is a group of nodes with many edges inside the group and few edges to other groups. We use the
@@ -378,26 +593,25 @@ Q = \frac{1}{2m}\sum_{i,j}\left(A_{ij} - \frac{k_i k_j}{2m}\right)\delta(c_i, c_
 The modularity compares the number of edges inside the groups with the number we expect at random. Here the
 communities are the real research groups. These groups can follow department lines, or not.
 
-We get $Q = 0.76$ and \textbf{27 communities} with 5 or more faculty. In 23 of these 27 communities, 90\% or more of
+We get $Q = 0.79$ and \textbf{26 communities} with 5 or more faculty. In 23 of these 26 communities, 90\% or more of
 the members are from one IIT. This again shows that collaboration stays inside each campus. The communities are
-\textbf{interdisciplinary}. In a typical community, the largest department has only about 44\% of the members. For
-example, the largest community has 146 faculty from Roorkee. Biosciences is its largest department, but its members
-come from 20 departments. The result is stable. Over 10 random seeds, the mean Adjusted
-Rand Index is 0.83.
+\textbf{interdisciplinary}. In a typical community, the largest department has only about 46\% of the members. For
+example, the largest community has 139 faculty, almost all from Roorkee. Biosciences is its largest department, but its
+members come from 20 departments. The result is stable. Over 10 random seeds, the mean Adjusted Rand Index is 0.84.
 
 \subsection{Comparison with random networks}
 As we know from our lectures already, the \textbf{clustering coefficient} is the probability that two co-authors of a
-person also wrote a paper together. A value such as 0.17 has a meaning only
-when we compare it with a baseline. Thus we compare the network with two random models of the same size, with 10
-samples each (Table~\ref{tab:null}). The first model is an \textbf{Erd\H{o}s--R\'enyi} (ER) graph with the same number
-of edges. The second model is a \textbf{degree-preserving} rewiring that keeps the degree of every node.
+person also wrote a paper together. A value such as 0.17 has a meaning only when we compare it with a baseline. Thus we
+compare the network with two random models of the same size, with 10 samples each (Table~\ref{tab:null}). The first
+model is an \textbf{Erd\H{o}s--R\'enyi} (ER) graph with the same number of edges. The second model is a
+\textbf{degree-preserving} rewiring that keeps the degree of every node.
 
-The real network has about \textbf{90 times} more clustering than the ER graph and 17 times more than the rewired
-graph. But its mean shortest path is almost the same as in the ER graph. This is the \textbf{small-world} property.
-The network has tight local groups, but the paths between people are still short. This makes sense for research
-groups. A new project often brings in a colleague of a colleague. The modularity is also much higher than in the two
-random models. Thus the communities above are real, and the algorithm did not create them. The positive assortativity
-(0.19) shows that well-connected faculty usually work with other well-connected faculty.
+The real network has about \textbf{70 times} more clustering than the ER graph and 23 times more than the rewired
+graph. But its mean shortest path is almost the same as in the ER graph. This is the \textbf{small-world} property. The
+network has tight local groups, but the paths between people are still short. This makes sense for research groups. A
+new project often brings in a colleague of a colleague. The modularity is also much higher than in the two random
+models. Thus the communities above are real, and the algorithm did not create them. The positive assortativity (0.12)
+shows that well-connected faculty usually work with other well-connected faculty.
 
 \begin{table}[!t]
 \centering
@@ -408,10 +622,10 @@ random models. Thus the communities above are real, and the algorithm did not cr
 \toprule
 \textbf{Metric} & \textbf{Real} & \textbf{ER} & \textbf{Rewired} \\
 \midrule
-Clustering coefficient           & 0.170 & 0.002 & 0.010 \\
-Modularity (Louvain)             & 0.766 & 0.517 & 0.441 \\
-Degree assortativity             & 0.185 & 0.00  & $-0.01$ \\
-Mean shortest path (giant comp.) & 5.28  & 5.40  & 4.13 \\
+Clustering coefficient           & 0.168 & 0.002 & 0.007 \\
+Modularity (Louvain)             & 0.785 & 0.538 & 0.464 \\
+Degree assortativity             & 0.121 & 0.00  & $-0.03$ \\
+Mean shortest path (giant comp.) & 5.34  & 5.48  & 4.28 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -423,12 +637,11 @@ The faculty network stays inside the two IITs. As a last step, we look at co-aut
 institutes.
 
 \subsection{Partner institutes}
-We count the \textbf{shared papers} between each IIT and each Indian partner. KGP works most with \textbf{Jadavpur
-University} (361 papers), IISc Bangalore (358) and IIT Bombay (342). Roorkee works most with \textbf{IIT Delhi} (333),
-the National Institute of Hydrology (267) and IIT Kharagpur (253) (Fig.~\ref{fig:partners}). These lists make sense by
-location and by field. The KGP list has several institutes in Kolkata, which are Jadavpur University, IIEST Shibpur and
-the University of Calcutta. The National Institute of Hydrology is in Roorkee, and it matches the strength of Roorkee
-in water and environment.
+We count the \textbf{shared papers} between each IIT and each Indian partner. KGP works most with \textbf{IISc
+Bangalore} (340 papers), IIT Bombay (317) and Jadavpur University (305). Roorkee works most with \textbf{IIT Delhi}
+(310), the National Institute of Hydrology (266) and IIT Kharagpur (231) (Fig.~\ref{fig:partners}). These lists make
+sense by location and by field. The KGP list has several institutes in Kolkata, for example Jadavpur University. The
+National Institute of Hydrology is in Roorkee, and it matches the strength of Roorkee in water research.
 
 \begin{figure}[!t]
 \centering
@@ -445,16 +658,22 @@ J(A, B) = \frac{|A \cap B|}{|A \cup B|}
 \]
 The value is 1 if the two lists are the same, and 0 if they have nothing in common.
 
-For the top 25 partners of each IIT, the median is \textbf{0.60}. Thus most partners do \textbf{similar} research. Some strong partners are
-\textbf{complementary}. Examples are the National Institute of Hydrology (0.21, Roorkee) and the Indian Statistical
-Institute (0.18, KGP). These institutes are specialised. Thus the collaboration is probably on one topic, such as
-hydrology or statistics.
+For the top 25 partners of each IIT, the median is \textbf{0.60}. Thus most partners do \textbf{similar} research. Some
+strong partners are \textbf{complementary}. Examples are the Indian Statistical Institute (0.18, KGP), and the National
+Institute of Hydrology and the Indian Institute of Remote Sensing (0.21 each, Roorkee). These institutes are
+specialised. Thus the collaboration is probably on one topic, such as statistics, hydrology or remote sensing.
 
 %===========================================================
 \section{Dashboard and Conclusions}
 %===========================================================
-All these results are also in an interactive website, with a switch for KGP, Roorkee or both. To conclude, both
-IITs grew fast and publish mostly in Q1 journals, Indian research cites them more each year, and their faculty work in
-tight groups inside each campus. Each step is a script in our repository, so anyone can repeat it.
+All these results are also in an interactive website, with a switch for KGP, Roorkee or both. A click on a faculty
+member lists all their papers in our dataset, so anyone can check a person's numbers.
+
+To conclude, both IITs almost doubled their science and engineering output in ten years, and about two thirds of their
+ranked journal papers are in Q1. Their faculty h-index is about half of a career h-index, because we count only ten
+years of papers, and it grows by about one point each year. Environmental Science is high because much water and
+climate engineering is filed there. Citations are heavy-tailed, and since 2023 Indian research cites the IITs more than
+they cite it. Faculty work in tight, interdisciplinary groups inside each campus. Each step of this work is a script in
+our repository, so anyone can repeat it.
 
 \end{document}

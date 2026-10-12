@@ -1,7 +1,10 @@
 # Report — what to write and where every number comes from
 
-**Status (12 Oct 2026):** written. `report.tex` → `report.pdf` (IEEE two-column, 5 pages; figures copied into
-`figures/`). Build with `latexmk -pdf report.tex`. The name/roll-number line is still to be added if required.
+**Status (12 Oct 2026, after the professor's review):** rewritten for the science-and-engineering scope with the new
+statistics (h / i10 statistics, why h is low, h over the years, IF, important journals, CORE, research-area categories,
+Environmental Science, large collaborations). `report.tex` → `report.pdf` (IEEE two-column, page cap removed; figures
+copied into `figures/`). Build with `latexmk -pdf report.tex`. The numbers in sections 3–4 of this README are from the
+old all-fields scope; the report itself has the current ones.
 
 The brief (`DPCN_Instruction_Note.pdf`, section 8; checklist in section 11) asks for **a statistics report of at most
 10 slides or 5 pages**, covering IIT Kharagpur and IIT Roorkee at **faculty, department and institution level**, due
