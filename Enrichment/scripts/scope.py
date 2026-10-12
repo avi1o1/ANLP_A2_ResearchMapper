@@ -1,17 +1,20 @@
 """Which research fields are in scope. Stored per record as record["sci_eng_scope"] = {in_scope, basis}
 (the field name is kept from the first rule so every script keeps working).
 
-SCOPE_MODE = "all"      (team decision, 2026-10-10) every field is in scope: Physical, Life, Health and Social
-                        Sciences, and papers without an OpenAlex topic. NOTE: the TAs' clarification (2026-10-09) said
-                        to focus on engineering and science papers; switch back with SCOPE_MODE = "sci_eng".
-SCOPE_MODE = "sci_eng"  the TA rule:
+SCOPE_MODE = "all"      every field is in scope: Physical, Life, Health and Social Sciences, and papers without an
+                        OpenAlex topic (team decision 2026-10-10, used until 2026-10-12).
+SCOPE_MODE = "sci_eng"  (current, 2026-10-12: TA clarification of 2026-10-09 and the professor's review, "avoid human
+                        science and medical papers and faculties")
   1. OpenAlex primary topic domain: Physical Sciences, Life Sciences -> in; Health Sciences, Social Sciences -> out.
   2. No OpenAlex topic: the roster departments of the faculty who found the record ('[roster:<dept>]' tags).
      In/out only if every tagged department agrees; mixed, ambiguous or no department -> None (unknown).
-After changing SCOPE_MODE re-run Enrichment/scripts/rebuild.sh and Analysis/scripts/run_all.sh."""
+FACULTY_DEPT_OUT: faculty of these departments are not reported (no rows, no network nodes), whatever the paper's
+field. They stay in the roster during matching, so name-ambiguity guards still see them (removing them first would make
+some surnames look unique). Their in-scope papers stay, credited to other faculty or to the institute.
+After changing SCOPE_MODE or FACULTY_DEPT_OUT re-run Enrichment/scripts/rebuild.sh and Analysis/scripts/run_all.sh."""
 import re
 
-SCOPE_MODE = "all"
+SCOPE_MODE = "sci_eng"
 
 IN_DOMAINS = {"Physical Sciences", "Life Sciences"}
 OUT_DOMAINS = {"Health Sciences", "Social Sciences"}
@@ -30,6 +33,9 @@ DEPT_UNKNOWN = {
     "Institute Computer Centre", "Unknown unit (institute-wide list 2019)", "School of Medical Science and Technology",
     "Centre of Excellence in Affordable Healthcare",
 }
+
+FACULTY_DEPT_OUT = DEPT_OUT | {"School of Medical Science and Technology", "Design",
+                               "Centre of Excellence in Affordable Healthcare"}
 
 
 def dept_verdict(d):

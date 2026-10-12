@@ -26,6 +26,7 @@ Initials-only forms are not used by the plain name rule for family names carried
 usage: python faculty.py <inst_key> [...]   -> adds record["faculty"] in out/<inst>_enriched.json"""
 import os, re, sys, csv, json, unicodedata, collections as C
 from oa import OUT, CACHE, REPO
+from scope import FACULTY_DEPT_OUT
 
 ROSTERS = os.path.join(REPO, "WebScrape", "rosters")
 LAG = {"iit_kharagpur": 1, "iit_roorkee": 4}
@@ -303,8 +304,17 @@ def run(inst):
             r["faculty"].append({"name": p.get("display", p["name"]), "department": p["department"], "roster_id": p["rid"],
                                  "match": "openalex_author", "person_source": p["source"]})
             have.add(p["rid"])
+    # departments out of scope (scope.FACULTY_DEPT_OUT): matched with the full roster above, then left out here
+    for r, _ in recs.values():
+        out = [f for f in r["faculty"] if f["department"] in FACULTY_DEPT_OUT]
+        if out:
+            r["faculty"] = [f for f in r["faculty"] if f["department"] not in FACULTY_DEPT_OUT]
+            r["faculty_out_of_scope"] = out
+        else:
+            r.pop("faculty_out_of_scope", None)
     stats = C.Counter()
     for k, (r, comma) in recs.items():
+        stats["links_out_of_scope_dept"] += len(r.get("faculty_out_of_scope", []))
         stats["papers_with_faculty" if r["faculty"] else "papers_without_faculty"] += 1
         for f in r["faculty"]:
             stats["link_" + f["match"]] += 1

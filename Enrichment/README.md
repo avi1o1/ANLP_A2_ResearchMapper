@@ -19,8 +19,11 @@ The two enriched JSONs and `citation_network.csv` are stored with **Git LFS** (o
 run `git lfs install` once, then clone/pull as usual.
 
 ## Field scope
-`scripts/scope.py`: `SCOPE_MODE = "all"` (every research field; team decision) or `"sci_eng"` (TA clarification:
-Physical + Life Sciences only). Change it and re-run `rebuild.sh` and `../Analysis/scripts/run_all.sh`.
+`scripts/scope.py`: `SCOPE_MODE = "sci_eng"` (current, since 2026-10-12: the TA clarification and the professor's
+review; faculty in `FACULTY_DEPT_OUT` — humanities, management, law, education, medical units — are matched but not
+reported) or `"all"` (every field; used until 2026-10-12). `sci_eng` keeps papers whose OpenAlex domain is Physical
+or Life Sciences. Change it and re-run `rebuild.sh` and `../Analysis/scripts/run_all.sh`.
+`group3_data.csv` also has `n_authors` and `more_than_10_authors` (OpenAlex lists at most 100 authors).
 
 ## Pipeline
 **Online steps** (only for new data; resumable, cached in `cache/`, which is git-ignored except the small files below):

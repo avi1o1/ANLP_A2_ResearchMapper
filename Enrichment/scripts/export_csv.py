@@ -11,7 +11,8 @@ Required columns: group, institution, author, title, year, type, journal_name, i
   cites_indian_inst / cited_by_indian_inst   TRUE / FALSE / blank (blank = could not be determined)
 Unknown values are left blank (never the string TODO, never a guess).
 Extra columns: department, faculty_match, faculty_source, affiliation_status, in_scope, scope_basis,
-  research_field, research_domain, record_id, openalex_id, quartile_basis
+  research_field, research_domain, record_id, openalex_id, quartile_basis, coauthor_institutes_all,
+  n_authors (OpenAlex author list; OpenAlex lists at most 100, so 100 means 100 or more), more_than_10_authors
 Outputs: out/group3_data.csv      papers with affiliation_status 'verified' and in_scope true (the submission)
          out/group3_data_all.csv  every paper except 'rejected' ones (for the team to filter differently)
 usage: python export_csv.py"""
@@ -22,7 +23,8 @@ INSTS = {"iit_kharagpur": "IIT Kharagpur", "iit_roorkee": "IIT Roorkee"}
 REQUIRED = ["group", "institution", "author", "title", "year", "type", "journal_name", "issn", "doi", "citations",
             "quartile", "coauthor_institutes", "cites_indian_inst", "cited_by_indian_inst"]
 EXTRA = ["department", "faculty_match", "faculty_source", "affiliation_status", "in_scope", "scope_basis",
-         "research_field", "research_domain", "record_id", "openalex_id", "quartile_basis", "coauthor_institutes_all"]
+         "research_field", "research_domain", "record_id", "openalex_id", "quartile_basis", "coauthor_institutes_all",
+         "n_authors", "more_than_10_authors"]
 
 
 def val(v):
@@ -45,6 +47,8 @@ def rows_for(r, inst_name):
     else:
         quart, basis = "", ""
     co = r.get("coauthor_institutions") or []
+    al = r.get("authors_openalex") or r.get("authors")
+    na = len(al) if isinstance(al, list) and al else None
     area = r.get("research_area") or {}
     base = {
         "group": 3, "institution": inst_name, "title": val(r["title"]), "year": val(r["year"]), "type": val(r["type"]),
@@ -57,6 +61,7 @@ def rows_for(r, inst_name):
         "research_field": area.get("field") or "", "research_domain": area.get("domain") or "",
         "record_id": r["record_id"], "openalex_id": r.get("openalex_id") or "", "quartile_basis": basis,
         "coauthor_institutes_all": ";".join(i["name"] for i in co if i.get("name")),
+        "n_authors": "" if na is None else na, "more_than_10_authors": "" if na is None else tf(na > 10),
     }
     if not r["faculty"]:
         return [dict(base, author=inst_name, department="", faculty_match="none (institute)", faculty_source="")]
