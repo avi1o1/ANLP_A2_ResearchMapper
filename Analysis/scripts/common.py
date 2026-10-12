@@ -1,7 +1,7 @@
 """Shared loading, definitions and chart style for the Group 3 statistics (IIT Kharagpur, IIT Roorkee).
 Inputs (read-only): ../../Enrichment/out/  (enriched datasets + network files built by Enrichment/scripts).
-Analysis set = the submission set: affiliation 'verified' AND in field scope (Enrichment/scripts/scope.py; currently
-all fields) - the same papers as group3_data.csv.
+Analysis set = the submission set: affiliation 'verified' AND in field scope (Enrichment/scripts/scope.py; since
+2026-10-12 Physical and Life Sciences only) - the same papers as group3_data.csv.
 Citations = the dataset's citation count at collection date (Crossref; OpenAlex where Crossref had none);
 papers whose count is unknown are left out of citation statistics (never counted as 0)."""
 import os, sys, csv, json
@@ -71,6 +71,46 @@ def write_csv(name, rows, cols=None):
 def h_index(citation_counts):
     c = sorted((x for x in citation_counts if x is not None), reverse=True)
     return sum(1 for i, x in enumerate(c, 1) if x >= i)
+
+
+def i10_index(citation_counts):
+    """Papers with at least 10 citations (Google Scholar's i10-index), over the counts given."""
+    return sum(1 for x in citation_counts if x is not None and x >= 10)
+
+
+# ---------------------------------------------------------------- OpenAlex extras (fetch_openalex_extra.py)
+_oa = {}
+
+
+def oa_extra():
+    """Caches written by fetch_openalex_extra.py: counts_by_year, sources, paper -> source, faculty authors."""
+    if not _oa:
+        for k in ("counts_by_year", "sources", "paper_source", "authors"):
+            fn = os.path.join(CACHE, f"oa_{k}.json")
+            with open(fn, encoding="utf-8") as fh:
+                _oa[k] = json.load(fh)
+    return _oa
+
+
+def source_of(r):
+    """OpenAlex source record of a paper's venue (name, publisher, if_2yr, ...) or None."""
+    o = oa_extra()
+    s = o["paper_source"].get(r.get("openalex_id") or "")
+    return o["sources"].get(s) if s else None
+
+
+def impact_factor(r):
+    """'IF (OpenAlex)': the venue's 2-year mean citedness, for journal papers only; None if unknown."""
+    if r["type"] != "journal":
+        return None
+    s = source_of(r)
+    return s.get("if_2yr") if s else None
+
+
+def n_authors(r):
+    """Number of authors listed by OpenAlex (it lists at most 100, so 100 means 100 or more); else the scraped list."""
+    a = r.get("authors_openalex") or r.get("authors")
+    return len(a) if isinstance(a, list) and a else None
 
 
 # ---------------------------------------------------------------- chart style (validated palette, light surface)

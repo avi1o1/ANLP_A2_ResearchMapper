@@ -1,0 +1,238 @@
+﻿institution,field,field_papers,subfield,papers,share_of_field,share_of_institute
+IIT Kharagpur,Engineering,9492,Electrical and Electronic Engineering,2283,0.2405,0.088
+IIT Kharagpur,Engineering,9492,Mechanical Engineering,1722,0.1814,0.0664
+IIT Kharagpur,Engineering,9492,Biomedical Engineering,1318,0.1389,0.0508
+IIT Kharagpur,Engineering,9492,Computational Mechanics,792,0.0834,0.0305
+IIT Kharagpur,Engineering,9492,Aerospace Engineering,633,0.0667,0.0244
+IIT Kharagpur,Engineering,9492,Civil and Structural Engineering,587,0.0618,0.0226
+IIT Kharagpur,Engineering,9492,Control and Systems Engineering,576,0.0607,0.0222
+IIT Kharagpur,Engineering,9492,Mechanics of Materials,504,0.0531,0.0194
+IIT Kharagpur,Engineering,9492,Ocean Engineering,235,0.0248,0.0091
+IIT Kharagpur,Engineering,9492,Building and Construction,213,0.0224,0.0082
+IIT Kharagpur,Engineering,9492,"Safety, Risk, Reliability and Quality",193,0.0203,0.0074
+IIT Kharagpur,Engineering,9492,Automotive Engineering,171,0.018,0.0066
+IIT Kharagpur,Engineering,9492,Industrial and Manufacturing Engineering,136,0.0143,0.0052
+IIT Kharagpur,Engineering,9492,Media Technology,127,0.0134,0.0049
+IIT Kharagpur,Engineering,9492,Architecture,2,0.0002,0.0001
+IIT Kharagpur,Computer Science,3650,Artificial Intelligence,1310,0.3589,0.0505
+IIT Kharagpur,Computer Science,3650,Computer Vision and Pattern Recognition,609,0.1668,0.0235
+IIT Kharagpur,Computer Science,3650,Computer Networks and Communications,557,0.1526,0.0215
+IIT Kharagpur,Computer Science,3650,Information Systems,400,0.1096,0.0154
+IIT Kharagpur,Computer Science,3650,Computational Theory and Mathematics,240,0.0658,0.0092
+IIT Kharagpur,Computer Science,3650,Hardware and Architecture,222,0.0608,0.0086
+IIT Kharagpur,Computer Science,3650,Signal Processing,139,0.0381,0.0054
+IIT Kharagpur,Computer Science,3650,Human-Computer Interaction,74,0.0203,0.0029
+IIT Kharagpur,Computer Science,3650,Computer Science Applications,44,0.0121,0.0017
+IIT Kharagpur,Computer Science,3650,Software,40,0.011,0.0015
+IIT Kharagpur,Computer Science,3650,Computer Graphics and Computer-Aided Design,15,0.0041,0.0006
+IIT Kharagpur,Materials Science,2746,Materials Chemistry,1192,0.4341,0.0459
+IIT Kharagpur,Materials Science,2746,"Electronic, Optical and Magnetic Materials",716,0.2607,0.0276
+IIT Kharagpur,Materials Science,2746,Biomaterials,373,0.1358,0.0144
+IIT Kharagpur,Materials Science,2746,Polymers and Plastics,307,0.1118,0.0118
+IIT Kharagpur,Materials Science,2746,Ceramics and Composites,72,0.0262,0.0028
+IIT Kharagpur,Materials Science,2746,"Surfaces, Coatings and Films",68,0.0248,0.0026
+IIT Kharagpur,Materials Science,2746,Metals and Alloys,12,0.0044,0.0005
+IIT Kharagpur,Materials Science,2746,General Materials Science,6,0.0022,0.0002
+IIT Kharagpur,Environmental Science,2691,Environmental Engineering,659,0.2449,0.0254
+IIT Kharagpur,Environmental Science,2691,Water Science and Technology,567,0.2107,0.0218
+IIT Kharagpur,Environmental Science,2691,Global and Planetary Change,518,0.1925,0.02
+IIT Kharagpur,Environmental Science,2691,Ecology,294,0.1093,0.0113
+IIT Kharagpur,Environmental Science,2691,Environmental Chemistry,160,0.0595,0.0062
+IIT Kharagpur,Environmental Science,2691,Pollution,157,0.0583,0.0061
+IIT Kharagpur,Environmental Science,2691,Waste Management and Disposal,122,0.0453,0.0047
+IIT Kharagpur,Environmental Science,2691,"Health, Toxicology and Mutagenesis",93,0.0346,0.0036
+IIT Kharagpur,Environmental Science,2691,"Management, Monitoring, Policy and Law",81,0.0301,0.0031
+IIT Kharagpur,Environmental Science,2691,Ecological Modeling,26,0.0097,0.001
+IIT Kharagpur,Environmental Science,2691,Nature and Landscape Conservation,14,0.0052,0.0005
+IIT Kharagpur,Physics and Astronomy,1207,"Atomic and Molecular Physics, and Optics",375,0.3107,0.0145
+IIT Kharagpur,Physics and Astronomy,1207,Astronomy and Astrophysics,295,0.2444,0.0114
+IIT Kharagpur,Physics and Astronomy,1207,Statistical and Nonlinear Physics,207,0.1715,0.008
+IIT Kharagpur,Physics and Astronomy,1207,Nuclear and High Energy Physics,186,0.1541,0.0072
+IIT Kharagpur,Physics and Astronomy,1207,Condensed Matter Physics,108,0.0895,0.0042
+IIT Kharagpur,Physics and Astronomy,1207,Acoustics and Ultrasonics,19,0.0157,0.0007
+IIT Kharagpur,Physics and Astronomy,1207,Radiation,15,0.0124,0.0006
+IIT Kharagpur,Physics and Astronomy,1207,Instrumentation,2,0.0017,0.0001
+IIT Kharagpur,Chemistry,1157,Organic Chemistry,678,0.586,0.0261
+IIT Kharagpur,Chemistry,1157,Inorganic Chemistry,228,0.1971,0.0088
+IIT Kharagpur,Chemistry,1157,Physical and Theoretical Chemistry,119,0.1029,0.0046
+IIT Kharagpur,Chemistry,1157,Analytical Chemistry,65,0.0562,0.0025
+IIT Kharagpur,Chemistry,1157,Spectroscopy,58,0.0501,0.0022
+IIT Kharagpur,Chemistry,1157,Electrochemistry,9,0.0078,0.0003
+IIT Kharagpur,Earth and Planetary Sciences,1105,Geophysics,350,0.3167,0.0135
+IIT Kharagpur,Earth and Planetary Sciences,1105,Atmospheric Science,288,0.2606,0.0111
+IIT Kharagpur,Earth and Planetary Sciences,1105,Oceanography,157,0.1421,0.0061
+IIT Kharagpur,Earth and Planetary Sciences,1105,Earth-Surface Processes,141,0.1276,0.0054
+IIT Kharagpur,Earth and Planetary Sciences,1105,Geochemistry and Petrology,83,0.0751,0.0032
+IIT Kharagpur,Earth and Planetary Sciences,1105,Paleontology,68,0.0615,0.0026
+IIT Kharagpur,Earth and Planetary Sciences,1105,Geology,18,0.0163,0.0007
+IIT Kharagpur,Agricultural and Biological Sciences,972,Plant Science,355,0.3652,0.0137
+IIT Kharagpur,Agricultural and Biological Sciences,972,Food Science,295,0.3035,0.0114
+IIT Kharagpur,Agricultural and Biological Sciences,972,Soil Science,110,0.1132,0.0042
+IIT Kharagpur,Agricultural and Biological Sciences,972,General Agricultural and Biological Sciences,70,0.072,0.0027
+IIT Kharagpur,Agricultural and Biological Sciences,972,"Ecology, Evolution, Behavior and Systematics",66,0.0679,0.0025
+IIT Kharagpur,Agricultural and Biological Sciences,972,Aquatic Science,22,0.0226,0.0008
+IIT Kharagpur,Agricultural and Biological Sciences,972,Insect Science,16,0.0165,0.0006
+IIT Kharagpur,Agricultural and Biological Sciences,972,Agronomy and Crop Science,14,0.0144,0.0005
+IIT Kharagpur,Agricultural and Biological Sciences,972,Animal Science and Zoology,13,0.0134,0.0005
+IIT Kharagpur,Agricultural and Biological Sciences,972,Forestry,11,0.0113,0.0004
+IIT Kharagpur,"Biochemistry, Genetics and Molecular Biology",940,Molecular Biology,597,0.6351,0.023
+IIT Kharagpur,"Biochemistry, Genetics and Molecular Biology",940,Molecular Medicine,116,0.1234,0.0045
+IIT Kharagpur,"Biochemistry, Genetics and Molecular Biology",940,Biotechnology,69,0.0734,0.0027
+IIT Kharagpur,"Biochemistry, Genetics and Molecular Biology",940,Biophysics,40,0.0426,0.0015
+IIT Kharagpur,"Biochemistry, Genetics and Molecular Biology",940,Genetics,38,0.0404,0.0015
+IIT Kharagpur,"Biochemistry, Genetics and Molecular Biology",940,Cancer Research,28,0.0298,0.0011
+IIT Kharagpur,"Biochemistry, Genetics and Molecular Biology",940,Cell Biology,27,0.0287,0.001
+IIT Kharagpur,"Biochemistry, Genetics and Molecular Biology",940,Biochemistry,17,0.0181,0.0007
+IIT Kharagpur,"Biochemistry, Genetics and Molecular Biology",940,Clinical Biochemistry,5,0.0053,0.0002
+IIT Kharagpur,"Biochemistry, Genetics and Molecular Biology",940,Developmental Biology,2,0.0021,0.0001
+IIT Kharagpur,"Biochemistry, Genetics and Molecular Biology",940,Structural Biology,1,0.0011,0.0
+IIT Kharagpur,Energy,685,"Renewable Energy, Sustainability and the Environment",645,0.9416,0.0249
+IIT Kharagpur,Energy,685,Fuel Technology,21,0.0307,0.0008
+IIT Kharagpur,Energy,685,Energy Engineering and Power Technology,12,0.0175,0.0005
+IIT Kharagpur,Energy,685,General Energy,7,0.0102,0.0003
+IIT Kharagpur,Mathematics,666,Statistics and Probability,137,0.2057,0.0053
+IIT Kharagpur,Mathematics,666,Modeling and Simulation,113,0.1697,0.0044
+IIT Kharagpur,Mathematics,666,Algebra and Number Theory,93,0.1396,0.0036
+IIT Kharagpur,Mathematics,666,Discrete Mathematics and Combinatorics,88,0.1321,0.0034
+IIT Kharagpur,Mathematics,666,Geometry and Topology,86,0.1291,0.0033
+IIT Kharagpur,Mathematics,666,Applied Mathematics,86,0.1291,0.0033
+IIT Kharagpur,Mathematics,666,Numerical Analysis,26,0.039,0.001
+IIT Kharagpur,Mathematics,666,Mathematical Physics,25,0.0375,0.001
+IIT Kharagpur,Mathematics,666,Theoretical Computer Science,8,0.012,0.0003
+IIT Kharagpur,Mathematics,666,Computational Mathematics,4,0.006,0.0002
+IIT Kharagpur,Neuroscience,224,Cognitive Neuroscience,182,0.8125,0.007
+IIT Kharagpur,Neuroscience,224,Cellular and Molecular Neuroscience,21,0.0938,0.0008
+IIT Kharagpur,Neuroscience,224,Neurology,16,0.0714,0.0006
+IIT Kharagpur,Neuroscience,224,Endocrine and Autonomic Systems,2,0.0089,0.0001
+IIT Kharagpur,Neuroscience,224,Developmental Neuroscience,2,0.0089,0.0001
+IIT Kharagpur,Neuroscience,224,Sensory Systems,1,0.0045,0.0
+IIT Kharagpur,Chemical Engineering,208,Fluid Flow and Transfer Processes,97,0.4663,0.0037
+IIT Kharagpur,Chemical Engineering,208,Catalysis,72,0.3462,0.0028
+IIT Kharagpur,Chemical Engineering,208,Bioengineering,19,0.0913,0.0007
+IIT Kharagpur,Chemical Engineering,208,Process Chemistry and Technology,19,0.0913,0.0007
+IIT Kharagpur,Chemical Engineering,208,Filtration and Separation,1,0.0048,0.0
+IIT Kharagpur,Immunology and Microbiology,94,Immunology,56,0.5957,0.0022
+IIT Kharagpur,Immunology and Microbiology,94,Microbiology,23,0.2447,0.0009
+IIT Kharagpur,Immunology and Microbiology,94,Applied Microbiology and Biotechnology,7,0.0745,0.0003
+IIT Kharagpur,Immunology and Microbiology,94,Parasitology,6,0.0638,0.0002
+IIT Kharagpur,Immunology and Microbiology,94,Virology,2,0.0213,0.0001
+IIT Kharagpur,Unknown,64,Unknown,64,1.0,0.0025
+IIT Kharagpur,"Pharmacology, Toxicology and Pharmaceutics",49,Pharmaceutical Science,30,0.6122,0.0012
+IIT Kharagpur,"Pharmacology, Toxicology and Pharmaceutics",49,Pharmacology,12,0.2449,0.0005
+IIT Kharagpur,"Pharmacology, Toxicology and Pharmaceutics",49,Toxicology,6,0.1224,0.0002
+IIT Kharagpur,"Pharmacology, Toxicology and Pharmaceutics",49,Drug Discovery,1,0.0204,0.0
+IIT Roorkee,Engineering,8807,Electrical and Electronic Engineering,2791,0.3169,0.1373
+IIT Roorkee,Engineering,8807,Civil and Structural Engineering,1012,0.1149,0.0498
+IIT Roorkee,Engineering,8807,Mechanical Engineering,1006,0.1142,0.0495
+IIT Roorkee,Engineering,8807,Biomedical Engineering,931,0.1057,0.0458
+IIT Roorkee,Engineering,8807,Control and Systems Engineering,839,0.0953,0.0413
+IIT Roorkee,Engineering,8807,Mechanics of Materials,493,0.056,0.0243
+IIT Roorkee,Engineering,8807,Aerospace Engineering,480,0.0545,0.0236
+IIT Roorkee,Engineering,8807,Computational Mechanics,334,0.0379,0.0164
+IIT Roorkee,Engineering,8807,"Safety, Risk, Reliability and Quality",275,0.0312,0.0135
+IIT Roorkee,Engineering,8807,Building and Construction,252,0.0286,0.0124
+IIT Roorkee,Engineering,8807,Media Technology,119,0.0135,0.0059
+IIT Roorkee,Engineering,8807,Ocean Engineering,115,0.0131,0.0057
+IIT Roorkee,Engineering,8807,Automotive Engineering,113,0.0128,0.0056
+IIT Roorkee,Engineering,8807,Industrial and Manufacturing Engineering,42,0.0048,0.0021
+IIT Roorkee,Engineering,8807,Architecture,5,0.0006,0.0002
+IIT Roorkee,Environmental Science,2586,Water Science and Technology,636,0.2459,0.0313
+IIT Roorkee,Environmental Science,2586,Environmental Engineering,499,0.193,0.0245
+IIT Roorkee,Environmental Science,2586,Global and Planetary Change,484,0.1872,0.0238
+IIT Roorkee,Environmental Science,2586,Pollution,213,0.0824,0.0105
+IIT Roorkee,Environmental Science,2586,Ecology,203,0.0785,0.01
+IIT Roorkee,Environmental Science,2586,Waste Management and Disposal,160,0.0619,0.0079
+IIT Roorkee,Environmental Science,2586,"Management, Monitoring, Policy and Law",142,0.0549,0.007
+IIT Roorkee,Environmental Science,2586,Environmental Chemistry,126,0.0487,0.0062
+IIT Roorkee,Environmental Science,2586,"Health, Toxicology and Mutagenesis",84,0.0325,0.0041
+IIT Roorkee,Environmental Science,2586,Ecological Modeling,30,0.0116,0.0015
+IIT Roorkee,Environmental Science,2586,Nature and Landscape Conservation,9,0.0035,0.0004
+IIT Roorkee,Materials Science,2244,Materials Chemistry,981,0.4372,0.0483
+IIT Roorkee,Materials Science,2244,"Electronic, Optical and Magnetic Materials",478,0.213,0.0235
+IIT Roorkee,Materials Science,2244,Biomaterials,392,0.1747,0.0193
+IIT Roorkee,Materials Science,2244,Polymers and Plastics,292,0.1301,0.0144
+IIT Roorkee,Materials Science,2244,"Surfaces, Coatings and Films",45,0.0201,0.0022
+IIT Roorkee,Materials Science,2244,Ceramics and Composites,34,0.0152,0.0017
+IIT Roorkee,Materials Science,2244,General Materials Science,13,0.0058,0.0006
+IIT Roorkee,Materials Science,2244,Metals and Alloys,9,0.004,0.0004
+IIT Roorkee,Computer Science,1817,Artificial Intelligence,634,0.3489,0.0312
+IIT Roorkee,Computer Science,1817,Computer Vision and Pattern Recognition,455,0.2504,0.0224
+IIT Roorkee,Computer Science,1817,Information Systems,222,0.1222,0.0109
+IIT Roorkee,Computer Science,1817,Computer Networks and Communications,171,0.0941,0.0084
+IIT Roorkee,Computer Science,1817,Computational Theory and Mathematics,121,0.0666,0.006
+IIT Roorkee,Computer Science,1817,Signal Processing,93,0.0512,0.0046
+IIT Roorkee,Computer Science,1817,Human-Computer Interaction,57,0.0314,0.0028
+IIT Roorkee,Computer Science,1817,Hardware and Architecture,44,0.0242,0.0022
+IIT Roorkee,Computer Science,1817,Software,12,0.0066,0.0006
+IIT Roorkee,Computer Science,1817,Computer Science Applications,4,0.0022,0.0002
+IIT Roorkee,Computer Science,1817,Computer Graphics and Computer-Aided Design,4,0.0022,0.0002
+IIT Roorkee,Physics and Astronomy,1142,Nuclear and High Energy Physics,420,0.3678,0.0207
+IIT Roorkee,Physics and Astronomy,1142,"Atomic and Molecular Physics, and Optics",365,0.3196,0.018
+IIT Roorkee,Physics and Astronomy,1142,Astronomy and Astrophysics,139,0.1217,0.0068
+IIT Roorkee,Physics and Astronomy,1142,Condensed Matter Physics,101,0.0884,0.005
+IIT Roorkee,Physics and Astronomy,1142,Statistical and Nonlinear Physics,73,0.0639,0.0036
+IIT Roorkee,Physics and Astronomy,1142,Radiation,39,0.0342,0.0019
+IIT Roorkee,Physics and Astronomy,1142,Acoustics and Ultrasonics,5,0.0044,0.0002
+IIT Roorkee,Chemistry,782,Organic Chemistry,430,0.5499,0.0212
+IIT Roorkee,Chemistry,782,Spectroscopy,154,0.1969,0.0076
+IIT Roorkee,Chemistry,782,Inorganic Chemistry,144,0.1841,0.0071
+IIT Roorkee,Chemistry,782,Physical and Theoretical Chemistry,30,0.0384,0.0015
+IIT Roorkee,Chemistry,782,Analytical Chemistry,19,0.0243,0.0009
+IIT Roorkee,Chemistry,782,Electrochemistry,5,0.0064,0.0002
+IIT Roorkee,Earth and Planetary Sciences,673,Atmospheric Science,254,0.3774,0.0125
+IIT Roorkee,Earth and Planetary Sciences,673,Geophysics,227,0.3373,0.0112
+IIT Roorkee,Earth and Planetary Sciences,673,Geochemistry and Petrology,52,0.0773,0.0026
+IIT Roorkee,Earth and Planetary Sciences,673,Paleontology,45,0.0669,0.0022
+IIT Roorkee,Earth and Planetary Sciences,673,Geology,37,0.055,0.0018
+IIT Roorkee,Earth and Planetary Sciences,673,Oceanography,29,0.0431,0.0014
+IIT Roorkee,Earth and Planetary Sciences,673,Earth-Surface Processes,29,0.0431,0.0014
+IIT Roorkee,Energy,516,"Renewable Energy, Sustainability and the Environment",465,0.9012,0.0229
+IIT Roorkee,Energy,516,Energy Engineering and Power Technology,51,0.0988,0.0025
+IIT Roorkee,"Biochemistry, Genetics and Molecular Biology",477,Molecular Biology,292,0.6122,0.0144
+IIT Roorkee,"Biochemistry, Genetics and Molecular Biology",477,Molecular Medicine,75,0.1572,0.0037
+IIT Roorkee,"Biochemistry, Genetics and Molecular Biology",477,Genetics,32,0.0671,0.0016
+IIT Roorkee,"Biochemistry, Genetics and Molecular Biology",477,Biotechnology,26,0.0545,0.0013
+IIT Roorkee,"Biochemistry, Genetics and Molecular Biology",477,Biophysics,16,0.0335,0.0008
+IIT Roorkee,"Biochemistry, Genetics and Molecular Biology",477,Cell Biology,15,0.0314,0.0007
+IIT Roorkee,"Biochemistry, Genetics and Molecular Biology",477,Cancer Research,15,0.0314,0.0007
+IIT Roorkee,"Biochemistry, Genetics and Molecular Biology",477,Biochemistry,2,0.0042,0.0001
+IIT Roorkee,"Biochemistry, Genetics and Molecular Biology",477,Clinical Biochemistry,2,0.0042,0.0001
+IIT Roorkee,"Biochemistry, Genetics and Molecular Biology",477,Endocrinology,1,0.0021,0.0
+IIT Roorkee,"Biochemistry, Genetics and Molecular Biology",477,Structural Biology,1,0.0021,0.0
+IIT Roorkee,Mathematics,453,Applied Mathematics,219,0.4834,0.0108
+IIT Roorkee,Mathematics,453,Statistics and Probability,93,0.2053,0.0046
+IIT Roorkee,Mathematics,453,Modeling and Simulation,38,0.0839,0.0019
+IIT Roorkee,Mathematics,453,Mathematical Physics,38,0.0839,0.0019
+IIT Roorkee,Mathematics,453,Numerical Analysis,25,0.0552,0.0012
+IIT Roorkee,Mathematics,453,Discrete Mathematics and Combinatorics,20,0.0442,0.001
+IIT Roorkee,Mathematics,453,Geometry and Topology,12,0.0265,0.0006
+IIT Roorkee,Mathematics,453,Algebra and Number Theory,7,0.0155,0.0003
+IIT Roorkee,Mathematics,453,Computational Mathematics,1,0.0022,0.0
+IIT Roorkee,Agricultural and Biological Sciences,405,Plant Science,186,0.4593,0.0092
+IIT Roorkee,Agricultural and Biological Sciences,405,Soil Science,92,0.2272,0.0045
+IIT Roorkee,Agricultural and Biological Sciences,405,Food Science,52,0.1284,0.0026
+IIT Roorkee,Agricultural and Biological Sciences,405,"Ecology, Evolution, Behavior and Systematics",30,0.0741,0.0015
+IIT Roorkee,Agricultural and Biological Sciences,405,General Agricultural and Biological Sciences,14,0.0346,0.0007
+IIT Roorkee,Agricultural and Biological Sciences,405,Insect Science,12,0.0296,0.0006
+IIT Roorkee,Agricultural and Biological Sciences,405,Agronomy and Crop Science,9,0.0222,0.0004
+IIT Roorkee,Agricultural and Biological Sciences,405,Aquatic Science,7,0.0173,0.0003
+IIT Roorkee,Agricultural and Biological Sciences,405,Forestry,2,0.0049,0.0001
+IIT Roorkee,Agricultural and Biological Sciences,405,Animal Science and Zoology,1,0.0025,0.0
+IIT Roorkee,Neuroscience,149,Cognitive Neuroscience,126,0.8456,0.0062
+IIT Roorkee,Neuroscience,149,Neurology,14,0.094,0.0007
+IIT Roorkee,Neuroscience,149,Cellular and Molecular Neuroscience,8,0.0537,0.0004
+IIT Roorkee,Neuroscience,149,Sensory Systems,1,0.0067,0.0
+IIT Roorkee,Chemical Engineering,140,Catalysis,69,0.4929,0.0034
+IIT Roorkee,Chemical Engineering,140,Process Chemistry and Technology,48,0.3429,0.0024
+IIT Roorkee,Chemical Engineering,140,Fluid Flow and Transfer Processes,13,0.0929,0.0006
+IIT Roorkee,Chemical Engineering,140,Bioengineering,8,0.0571,0.0004
+IIT Roorkee,Chemical Engineering,140,Filtration and Separation,2,0.0143,0.0001
+IIT Roorkee,"Pharmacology, Toxicology and Pharmaceutics",60,Pharmaceutical Science,53,0.8833,0.0026
+IIT Roorkee,"Pharmacology, Toxicology and Pharmaceutics",60,Toxicology,3,0.05,0.0001
+IIT Roorkee,"Pharmacology, Toxicology and Pharmaceutics",60,Pharmacology,2,0.0333,0.0001
+IIT Roorkee,"Pharmacology, Toxicology and Pharmaceutics",60,Drug Discovery,2,0.0333,0.0001
+IIT Roorkee,Unknown,42,Unknown,42,1.0,0.0021
+IIT Roorkee,Immunology and Microbiology,33,Immunology,16,0.4848,0.0008
+IIT Roorkee,Immunology and Microbiology,33,Microbiology,12,0.3636,0.0006
+IIT Roorkee,Immunology and Microbiology,33,Virology,3,0.0909,0.0001
+IIT Roorkee,Immunology and Microbiology,33,Applied Microbiology and Biotechnology,2,0.0606,0.0001

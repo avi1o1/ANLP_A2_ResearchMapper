@@ -1,0 +1,247 @@
+﻿institution,department,metric,n,mean,sd,min,q1,median,q3,p90,max
+IIT Kharagpur,All departments,h-index,770,9.55,8.63,0,3.0,8.0,13.0,22.0,63
+IIT Kharagpur,All departments,i10-index,770,13.93,21.69,0,1.0,6.0,16.0,37.10000000000002,184
+IIT Kharagpur,All departments,"h-index, OpenAlex all career",565,23.11,13.42,0,14.0,20.0,30.0,42.0,85
+IIT Kharagpur,All departments,"i10-index, OpenAlex all career",565,52.72,57.85,0,19.0,34.0,64.0,119.20000000000005,455
+IIT Roorkee,All departments,h-index,640,8.7,7.63,0,3.0,7.0,12.0,19.0,42
+IIT Roorkee,All departments,i10-index,640,11.63,17.15,0,1.0,5.0,14.25,30.0,122
+IIT Roorkee,All departments,"h-index, OpenAlex all career",437,21.84,12.32,2,13.0,19.0,29.0,39.0,72
+IIT Roorkee,All departments,"i10-index, OpenAlex all career",437,45.75,44.18,0,15.0,31.0,59.0,108.40000000000003,302
+IIT Kharagpur,Mechanical Engineering,h-index,54,11.04,9.34,0,3.25,9.5,18.0,22.700000000000003,41
+IIT Kharagpur,Mechanical Engineering,i10-index,54,18.5,28.31,0,1.25,8.5,25.0,40.400000000000006,174
+IIT Kharagpur,Mechanical Engineering,"h-index, OpenAlex all career",37,26.57,11.81,10,16.0,25.0,34.0,40.4,60
+IIT Kharagpur,Mechanical Engineering,"i10-index, OpenAlex all career",37,66.05,69.16,10,28.0,49.0,84.0,127.19999999999999,397
+IIT Kharagpur,Agricultural and Food Engineering,h-index,52,10.77,8.53,0,4.5,8.5,15.0,24.9,32
+IIT Kharagpur,Agricultural and Food Engineering,i10-index,52,15.52,18.39,0,2.75,8.0,21.0,43.9,76
+IIT Kharagpur,Agricultural and Food Engineering,"h-index, OpenAlex all career",37,24.59,10.72,5,17.0,23.0,31.0,39.599999999999994,49
+IIT Kharagpur,Agricultural and Food Engineering,"i10-index, OpenAlex all career",37,46.19,31.58,5,24.0,37.0,64.0,92.59999999999997,121
+IIT Kharagpur,Computer Science and Engineering,h-index,51,8.96,7.93,0,3.0,8.0,12.0,18.0,40
+IIT Kharagpur,Computer Science and Engineering,i10-index,51,14.24,25.69,0,0.0,7.0,15.0,35.0,158
+IIT Kharagpur,Computer Science and Engineering,"h-index, OpenAlex all career",37,24.0,11.95,8,15.0,21.0,29.0,42.0,60
+IIT Kharagpur,Computer Science and Engineering,"i10-index, OpenAlex all career",37,65.81,63.46,8,24.0,39.0,87.0,137.59999999999997,327
+IIT Kharagpur,Physics,h-index,48,8.27,7.85,0,3.0,6.0,11.25,19.0,38
+IIT Kharagpur,Physics,i10-index,48,11.81,21.07,0,1.0,4.0,13.25,31.60000000000001,126
+IIT Kharagpur,Physics,"h-index, OpenAlex all career",32,20.41,9.86,2,15.5,18.0,24.0,33.60000000000001,54
+IIT Kharagpur,Physics,"i10-index, OpenAlex all career",32,47.12,58.36,1,18.75,32.5,56.5,82.7,332
+IIT Kharagpur,Electronics and Electrical Communication Engg.,h-index,46,8.2,5.76,0,4.25,7.5,12.0,14.5,25
+IIT Kharagpur,Electronics and Electrical Communication Engg.,i10-index,46,9.52,11.74,0,1.25,5.5,14.75,19.0,56
+IIT Kharagpur,Electronics and Electrical Communication Engg.,"h-index, OpenAlex all career",35,18.4,8.22,6,13.0,16.0,21.5,29.6,40
+IIT Kharagpur,Electronics and Electrical Communication Engg.,"i10-index, OpenAlex all career",35,39.09,36.98,3,20.0,26.0,51.0,75.40000000000002,207
+IIT Kharagpur,Civil Engineering,h-index,45,12.67,10.93,0,6.0,10.0,16.0,24.6,53
+IIT Kharagpur,Civil Engineering,i10-index,45,20.47,31.17,0,5.0,11.0,24.0,52.00000000000001,184
+IIT Kharagpur,Civil Engineering,"h-index, OpenAlex all career",35,25.46,14.72,8,16.0,21.0,30.5,50.6,69
+IIT Kharagpur,Civil Engineering,"i10-index, OpenAlex all career",35,57.49,58.71,8,20.5,46.0,60.0,134.80000000000004,272
+IIT Kharagpur,Electrical Engineering,h-index,45,7.84,6.46,0,2.0,8.0,11.0,17.000000000000007,27
+IIT Kharagpur,Electrical Engineering,i10-index,45,9.71,12.75,0,1.0,6.0,12.0,24.000000000000007,52
+IIT Kharagpur,Electrical Engineering,"h-index, OpenAlex all career",34,20.5,10.34,7,14.0,16.0,24.75,34.89999999999999,50
+IIT Kharagpur,Electrical Engineering,"i10-index, OpenAlex all career",34,41.62,37.4,6,19.0,24.0,49.25,103.29999999999997,144
+IIT Kharagpur,Mathematics,h-index,44,5.45,4.88,0,1.0,4.0,8.25,14.0,16
+IIT Kharagpur,Mathematics,i10-index,44,5.61,8.03,0,0.0,2.0,6.5,19.0,29
+IIT Kharagpur,Mathematics,"h-index, OpenAlex all career",32,14.88,9.45,0,7.0,13.0,21.5,26.800000000000004,38
+IIT Kharagpur,Mathematics,"i10-index, OpenAlex all career",32,26.88,25.58,0,4.5,16.0,46.0,65.60000000000002,86
+IIT Kharagpur,Chemistry,h-index,42,14.02,9.29,0,8.0,12.0,18.0,26.9,40
+IIT Kharagpur,Chemistry,i10-index,42,21.6,22.4,0,8.0,14.5,31.0,55.79999999999998,108
+IIT Kharagpur,Chemistry,"h-index, OpenAlex all career",35,30.2,16.31,1,19.0,26.0,35.5,49.6,73
+IIT Kharagpur,Chemistry,"i10-index, OpenAlex all career",35,78.6,73.71,0,35.5,50.0,97.5,164.2000000000001,352
+IIT Kharagpur,Geology and Geophysics,h-index,36,8.53,7.91,0,4.75,7.5,10.25,13.5,44
+IIT Kharagpur,Geology and Geophysics,i10-index,36,10.53,18.53,0,1.0,6.0,11.25,18.5,106
+IIT Kharagpur,Geology and Geophysics,"h-index, OpenAlex all career",28,22.54,11.1,7,13.0,21.5,27.25,37.3,53
+IIT Kharagpur,Geology and Geophysics,"i10-index, OpenAlex all career",28,43.04,34.34,5,16.0,39.0,48.25,78.70000000000002,141
+IIT Kharagpur,Chemical Engineering,h-index,35,11.31,8.74,0,5.0,10.0,15.5,22.6,36
+IIT Kharagpur,Chemical Engineering,i10-index,35,17.23,21.87,0,3.5,10.0,25.5,39.80000000000001,105
+IIT Kharagpur,Chemical Engineering,"h-index, OpenAlex all career",27,25.59,12.25,10,16.5,21.0,33.0,40.2,63
+IIT Kharagpur,Chemical Engineering,"i10-index, OpenAlex all career",27,60.63,60.72,10,24.0,40.0,71.0,111.80000000000005,302
+IIT Kharagpur,Metallurgical and Materials Engineering,h-index,33,14.64,8.7,1,9.0,14.0,21.0,24.0,40
+IIT Kharagpur,Metallurgical and Materials Engineering,i10-index,33,26.36,26.55,0,8.0,21.0,37.0,54.2,134
+IIT Kharagpur,Metallurgical and Materials Engineering,"h-index, OpenAlex all career",27,31.48,13.32,11,23.0,29.0,39.0,47.000000000000014,68
+IIT Kharagpur,Metallurgical and Materials Engineering,"i10-index, OpenAlex all career",27,81.59,66.76,12,36.0,62.0,104.5,153.20000000000002,308
+IIT Kharagpur,Mining Engineering,h-index,23,6.39,6.89,0,2.0,3.0,8.5,14.8,28
+IIT Kharagpur,Mining Engineering,i10-index,23,7.57,12.06,0,1.0,2.0,7.5,23.200000000000003,49
+IIT Kharagpur,Mining Engineering,"h-index, OpenAlex all career",11,18.64,8.09,7,14.5,19.0,22.0,22.0,36
+IIT Kharagpur,Mining Engineering,"i10-index, OpenAlex all career",11,33.91,23.26,4,20.0,35.0,40.5,53.0,86
+IIT Kharagpur,Aerospace Engineering,h-index,23,8.35,5.91,2,4.0,7.0,10.0,17.000000000000004,25
+IIT Kharagpur,Aerospace Engineering,i10-index,23,9.61,13.02,0,1.0,5.0,11.0,23.200000000000006,53
+IIT Kharagpur,Aerospace Engineering,"h-index, OpenAlex all career",19,15.58,9.58,3,9.5,15.0,17.0,26.999999999999996,43
+IIT Kharagpur,Aerospace Engineering,"i10-index, OpenAlex all career",19,28.05,35.82,0,9.5,21.0,23.0,52.99999999999998,157
+IIT Kharagpur,Bioscience and Biotechnology,h-index,22,13.27,10.68,1,5.75,9.5,19.25,29.60000000000001,37
+IIT Kharagpur,Bioscience and Biotechnology,i10-index,22,19.0,23.43,0,4.75,10.0,24.25,43.800000000000004,83
+IIT Kharagpur,Bioscience and Biotechnology,"h-index, OpenAlex all career",18,31.67,15.94,15,19.0,29.0,42.0,54.00000000000001,65
+IIT Kharagpur,Bioscience and Biotechnology,"i10-index, OpenAlex all career",18,67.56,51.59,15,29.0,47.5,92.75,152.8,171
+IIT Kharagpur,Ocean Engg and Naval Architecture,h-index,22,6.0,6.96,0,1.25,5.0,7.75,10.700000000000006,26
+IIT Kharagpur,Ocean Engg and Naval Architecture,i10-index,22,8.0,17.77,0,0.0,2.5,5.0,12.400000000000013,69
+IIT Kharagpur,Ocean Engg and Naval Architecture,"h-index, OpenAlex all career",14,15.43,10.88,6,9.0,12.0,14.0,33.30000000000001,40
+IIT Kharagpur,Ocean Engg and Naval Architecture,"i10-index, OpenAlex all career",14,28.29,37.06,5,9.0,13.0,18.25,82.30000000000004,125
+IIT Kharagpur,Architecture and Regional Planning,h-index,18,4.56,3.13,1,2.0,4.0,7.0,8.600000000000001,10
+IIT Kharagpur,Architecture and Regional Planning,i10-index,18,3.78,3.41,0,1.0,3.0,6.5,8.600000000000001,10
+IIT Kharagpur,Architecture and Regional Planning,"h-index, OpenAlex all career",12,11.17,4.09,6,8.0,10.5,15.25,16.0,17
+IIT Kharagpur,Architecture and Regional Planning,"i10-index, OpenAlex all career",12,12.75,7.47,4,6.75,10.5,18.75,21.9,25
+IIT Kharagpur,Industrial and Systems Engineering,h-index,16,7.31,8.81,0,1.75,5.0,8.5,15.0,35
+IIT Kharagpur,Industrial and Systems Engineering,i10-index,16,9.38,16.15,0,1.0,4.0,9.0,20.5,64
+IIT Kharagpur,Industrial and Systems Engineering,"h-index, OpenAlex all career",10,28.7,19.87,6,19.0,22.0,39.5,45.999999999999986,73
+IIT Kharagpur,Industrial and Systems Engineering,"i10-index, OpenAlex all career",10,77.1,97.88,4,24.25,46.5,84.75,135.39999999999992,337
+IIT Kharagpur,Materials Science Centre,h-index,15,15.67,11.99,1,7.5,12.0,21.5,32.2,43
+IIT Kharagpur,Materials Science Centre,i10-index,15,27.8,33.86,0,5.5,13.0,39.0,77.39999999999999,108
+IIT Kharagpur,Materials Science Centre,"h-index, OpenAlex all career",14,32.36,13.58,18,21.25,29.0,41.0,51.1,60
+IIT Kharagpur,Materials Science Centre,"i10-index, OpenAlex all career",14,85.43,64.12,26,36.25,63.5,111.25,181.1,214
+IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",h-index,13,10.69,9.04,1,5.0,8.0,13.0,25.400000000000002,27
+IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",i10-index,13,19.69,27.45,0,5.0,7.0,18.0,60.40000000000001,85
+IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)","h-index, OpenAlex all career",10,22.5,11.37,8,13.25,20.5,33.75,35.3,38
+IIT Kharagpur,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)","i10-index, OpenAlex all career",10,51.1,44.63,7,17.25,35.0,86.25,117.3,120
+IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,h-index,13,3.92,3.17,0,1.0,4.0,6.0,7.600000000000001,10
+IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,i10-index,13,2.54,3.04,0,1.0,1.0,4.0,6.400000000000002,10
+IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,"h-index, OpenAlex all career",9,13.0,4.85,7,10.0,11.0,17.0,19.2,20
+IIT Kharagpur,Centre for Interdisciplinary and Convergent Technologies,"i10-index, OpenAlex all career",9,17.67,11.26,5,10.0,14.0,26.0,32.6,35
+IIT Kharagpur,Rubber Technology,h-index,9,22.89,17.51,2,14.0,22.0,25.0,37.400000000000006,63
+IIT Kharagpur,Rubber Technology,i10-index,9,48.33,45.41,1,16.0,35.0,69.0,84.4,146
+IIT Kharagpur,Rubber Technology,"h-index, OpenAlex all career",9,40.78,21.95,5,24.0,40.0,58.0,68.2,69
+IIT Kharagpur,Rubber Technology,"i10-index, OpenAlex all career",9,154.89,135.86,1,38.0,161.0,201.0,256.6,455
+IIT Kharagpur,Cryogenic Engineering,h-index,9,7.0,6.93,2,3.0,5.0,6.0,13.600000000000001,24
+IIT Kharagpur,Cryogenic Engineering,i10-index,9,8.0,15.02,0,1.0,2.0,6.0,18.200000000000006,47
+IIT Kharagpur,Cryogenic Engineering,"h-index, OpenAlex all career",7,15.14,9.04,7,8.5,14.0,17.5,24.600000000000005,33
+IIT Kharagpur,Cryogenic Engineering,"i10-index, OpenAlex all career",7,26.43,27.44,5,8.0,22.0,29.0,53.40000000000002,84
+IIT Kharagpur,Artificial Intelligence,h-index,9,2.56,2.46,0,1.0,1.0,4.0,6.0,6
+IIT Kharagpur,Artificial Intelligence,i10-index,9,1.44,1.67,0,0.0,1.0,2.0,3.4000000000000004,5
+IIT Kharagpur,Artificial Intelligence,"h-index, OpenAlex all career",4,13.25,3.2,11,11.75,12.0,13.5,16.200000000000003,18
+IIT Kharagpur,Artificial Intelligence,"i10-index, OpenAlex all career",4,16.75,7.14,11,12.5,14.5,18.75,23.700000000000003,27
+IIT Kharagpur,G.S Sanyal School of Telecommunication,h-index,8,6.12,4.16,2,2.75,5.0,9.0,12.0,12
+IIT Kharagpur,G.S Sanyal School of Telecommunication,i10-index,8,5.5,6.32,0,0.75,3.0,8.75,14.6,16
+IIT Kharagpur,G.S Sanyal School of Telecommunication,"h-index, OpenAlex all career",6,11.83,4.36,7,8.5,11.0,15.75,17.0,17
+IIT Kharagpur,G.S Sanyal School of Telecommunication,"i10-index, OpenAlex all career",6,20.17,15.74,4,7.75,17.0,30.75,38.0,43
+IIT Kharagpur,School of Water Resources,h-index,6,9.0,9.12,0,2.25,6.0,15.75,20.0,22
+IIT Kharagpur,School of Water Resources,i10-index,6,13.17,17.43,0,0.5,5.5,21.0,34.0,43
+IIT Kharagpur,School of Water Resources,"h-index, OpenAlex all career",4,24.5,18.48,2,17.0,24.5,32.0,41.0,47
+IIT Kharagpur,School of Water Resources,"i10-index, OpenAlex all career",4,47.0,38.6,0,29.25,47.5,65.25,81.9,93
+IIT Kharagpur,Subir Chowdhury School of Quality and Reliability,h-index,6,7.83,3.31,3,5.75,8.5,9.75,11.0,12
+IIT Kharagpur,Subir Chowdhury School of Quality and Reliability,i10-index,6,7.17,5.56,0,3.25,7.5,10.25,13.0,15
+IIT Kharagpur,Subir Chowdhury School of Quality and Reliability,"h-index, OpenAlex all career",6,16.0,5.59,8,12.5,17.0,19.25,21.5,23
+IIT Kharagpur,Subir Chowdhury School of Quality and Reliability,"i10-index, OpenAlex all career",6,27.33,15.58,5,17.25,31.0,35.75,42.0,47
+IIT Kharagpur,Energy Science and Engineering,h-index,5,15.8,8.41,1,18.0,18.0,21.0,21.0,21
+IIT Kharagpur,Energy Science and Engineering,i10-index,5,24.0,13.77,0,27.0,27.0,32.0,33.2,34
+IIT Kharagpur,Energy Science and Engineering,"h-index, OpenAlex all career",4,30.25,10.69,21,23.25,27.5,34.5,40.800000000000004,45
+IIT Kharagpur,Energy Science and Engineering,"i10-index, OpenAlex all career",4,61.75,35.86,36,37.5,49.0,73.25,97.10000000000001,113
+IIT Kharagpur,Ranbir and Chitra Gupta School of Infrastructure Design and Mngt.,h-index,4,8.5,5.45,4,4.75,7.0,10.75,13.900000000000002,16
+IIT Kharagpur,Ranbir and Chitra Gupta School of Infrastructure Design and Mngt.,i10-index,4,8.5,7.59,2,3.5,6.5,11.5,16.0,19
+IIT Kharagpur,Ranbir and Chitra Gupta School of Infrastructure Design and Mngt.,"h-index, OpenAlex all career",4,13.75,7.41,6,9.0,13.0,17.75,20.900000000000002,23
+IIT Kharagpur,Ranbir and Chitra Gupta School of Infrastructure Design and Mngt.,"i10-index, OpenAlex all career",4,20.25,16.7,4,9.25,17.5,28.5,36.6,42
+IIT Kharagpur,Deysarkar Centre of Petroleum and Energy Transition,h-index,4,5.0,0.82,4,4.75,5.0,5.25,5.7,6
+IIT Kharagpur,Deysarkar Centre of Petroleum and Energy Transition,i10-index,4,3.0,1.41,1,2.5,3.5,4.0,4.0,4
+IIT Kharagpur,Deysarkar Centre of Petroleum and Energy Transition,"h-index, OpenAlex all career",3,11.67,3.51,8,10.0,12.0,13.5,14.4,15
+IIT Kharagpur,Deysarkar Centre of Petroleum and Energy Transition,"i10-index, OpenAlex all career",3,14.0,7.21,6,11.0,16.0,18.0,19.2,20
+IIT Kharagpur,Centre for Computational and Data Sciences,h-index,3,4.33,4.51,0,2.0,4.0,6.5,8.0,9
+IIT Kharagpur,Centre for Computational and Data Sciences,i10-index,3,4.0,4.58,0,1.5,3.0,6.0,7.800000000000001,9
+IIT Kharagpur,Nano Science and Technology,h-index,3,5.0,3.61,1,3.5,6.0,7.0,7.6,8
+IIT Kharagpur,Nano Science and Technology,i10-index,3,4.0,3.61,0,2.5,5.0,6.0,6.6,7
+IIT Kharagpur,Nano Science and Technology,"h-index, OpenAlex all career",2,35.5,0.71,35,35.25,35.5,35.75,35.9,36
+IIT Kharagpur,Nano Science and Technology,"i10-index, OpenAlex all career",2,65.5,6.36,61,63.25,65.5,67.75,69.1,70
+IIT Kharagpur,Centre for Rural Development and Innovative Sustainable Technology,h-index,3,4.67,3.21,1,3.5,6.0,6.5,6.8,7
+IIT Kharagpur,Centre for Rural Development and Innovative Sustainable Technology,i10-index,3,3.67,2.52,1,2.5,4.0,5.0,5.6,6
+IIT Kharagpur,Centre for Rural Development and Innovative Sustainable Technology,"h-index, OpenAlex all career",2,12.5,0.71,12,12.25,12.5,12.75,12.9,13
+IIT Kharagpur,Centre for Rural Development and Innovative Sustainable Technology,"i10-index, OpenAlex all career",2,16.5,3.54,14,15.25,16.5,17.75,18.5,19
+IIT Kharagpur,Centre of Excellence on Safety Engineering & Analytics (COE-SEA),h-index,2,1.0,0.0,1,1.0,1.0,1.0,1.0,1
+IIT Kharagpur,Centre of Excellence on Safety Engineering & Analytics (COE-SEA),i10-index,2,0.0,0.0,0,0.0,0.0,0.0,0.0,0
+IIT Kharagpur,Biotechnology,h-index,1,20.0,,20,20.0,20.0,20.0,20.0,20
+IIT Kharagpur,Biotechnology,i10-index,1,23.0,,23,23.0,23.0,23.0,23.0,23
+IIT Kharagpur,Biotechnology,"h-index, OpenAlex all career",1,85.0,,85,85.0,85.0,85.0,85.0,85
+IIT Kharagpur,Biotechnology,"i10-index, OpenAlex all career",1,280.0,,280,280.0,280.0,280.0,280.0,280
+IIT Kharagpur,Environmental Science and Engineering,h-index,1,3.0,,3,3.0,3.0,3.0,3.0,3
+IIT Kharagpur,Environmental Science and Engineering,i10-index,1,2.0,,2,2.0,2.0,2.0,2.0,2
+IIT Kharagpur,Steel Technology Centre,h-index,1,2.0,,2,2.0,2.0,2.0,2.0,2
+IIT Kharagpur,Steel Technology Centre,i10-index,1,2.0,,2,2.0,2.0,2.0,2.0,2
+IIT Roorkee,Civil Engineering,h-index,75,8.48,6.58,0,3.0,7.0,13.0,18.60000000000001,25
+IIT Roorkee,Civil Engineering,i10-index,75,10.47,12.75,0,2.0,6.0,14.5,28.200000000000017,63
+IIT Roorkee,Civil Engineering,"h-index, OpenAlex all career",48,21.98,12.05,5,12.75,18.5,29.25,38.60000000000001,56
+IIT Roorkee,Civil Engineering,"i10-index, OpenAlex all career",48,46.04,42.52,2,15.75,30.0,62.0,102.30000000000001,170
+IIT Roorkee,Mechanical and Industrial Engineering,h-index,53,11.23,8.19,0,5.0,10.0,15.0,23.800000000000004,31
+IIT Roorkee,Mechanical and Industrial Engineering,i10-index,53,17.09,18.52,0,4.0,11.0,23.0,45.60000000000001,65
+IIT Roorkee,Mechanical and Industrial Engineering,"h-index, OpenAlex all career",39,26.28,14.21,8,15.0,23.0,36.5,42.400000000000006,68
+IIT Roorkee,Mechanical and Industrial Engineering,"i10-index, OpenAlex all career",39,62.13,55.6,6,21.5,43.0,96.5,133.00000000000006,256
+IIT Roorkee,Electrical Engineering,h-index,48,8.27,6.61,0,3.0,6.5,11.25,17.300000000000004,28
+IIT Roorkee,Electrical Engineering,i10-index,48,10.44,13.96,0,1.0,4.5,14.0,26.300000000000004,70
+IIT Roorkee,Electrical Engineering,"h-index, OpenAlex all career",34,16.44,9.73,2,9.25,15.0,20.0,28.4,44
+IIT Roorkee,Electrical Engineering,"i10-index, OpenAlex all career",34,30.32,32.19,0,9.25,21.0,39.5,64.49999999999999,149
+IIT Roorkee,Electronics and Communication Engineering,h-index,45,7.87,5.99,0,4.0,8.0,10.0,13.600000000000001,35
+IIT Roorkee,Electronics and Communication Engineering,i10-index,45,9.64,17.25,0,2.0,6.0,10.0,20.0,111
+IIT Roorkee,Electronics and Communication Engineering,"h-index, OpenAlex all career",35,17.03,10.13,4,9.0,14.0,23.0,28.6,48
+IIT Roorkee,Electronics and Communication Engineering,"i10-index, OpenAlex all career",35,33.31,37.27,1,8.5,20.0,37.5,67.6,183
+IIT Roorkee,Physics,h-index,44,9.41,7.89,0,4.5,8.5,11.25,16.700000000000003,42
+IIT Roorkee,Physics,i10-index,44,12.77,20.12,0,2.0,7.0,13.25,29.600000000000023,109
+IIT Roorkee,Physics,"h-index, OpenAlex all career",34,20.03,9.75,9,13.0,16.5,25.75,33.099999999999994,46
+IIT Roorkee,Physics,"i10-index, OpenAlex all career",34,44.79,42.3,9,16.0,30.5,52.5,122.3,160
+IIT Roorkee,Biosciences and Bioengineering,h-index,40,9.98,9.22,0,3.0,8.0,15.0,18.400000000000006,40
+IIT Roorkee,Biosciences and Bioengineering,i10-index,40,15.02,21.63,0,2.0,7.0,19.25,30.400000000000006,100
+IIT Roorkee,Biosciences and Bioengineering,"h-index, OpenAlex all career",25,23.04,12.19,6,13.0,22.0,30.0,34.6,54
+IIT Roorkee,Biosciences and Bioengineering,"i10-index, OpenAlex all career",25,47.44,48.42,5,15.0,33.0,61.0,105.40000000000003,214
+IIT Roorkee,Mathematics,h-index,38,5.74,5.82,0,1.0,4.0,8.5,12.300000000000004,29
+IIT Roorkee,Mathematics,i10-index,38,5.76,9.96,0,0.0,2.0,8.5,14.600000000000009,53
+IIT Roorkee,Mathematics,"h-index, OpenAlex all career",21,20.81,11.69,5,11.0,20.0,28.0,37.0,49
+IIT Roorkee,Mathematics,"i10-index, OpenAlex all career",21,48.95,41.68,2,14.0,44.0,58.0,120.0,143
+IIT Roorkee,Chemistry,h-index,38,12.11,7.19,0,7.0,12.0,17.0,22.300000000000004,26
+IIT Roorkee,Chemistry,i10-index,38,17.84,15.55,0,5.0,15.0,24.0,39.10000000000003,59
+IIT Roorkee,Chemistry,"h-index, OpenAlex all career",31,29.1,12.55,4,19.0,28.0,33.0,52.0,58
+IIT Roorkee,Chemistry,"i10-index, OpenAlex all career",31,69.58,46.73,4,33.0,56.0,84.0,143.0,170
+IIT Roorkee,Chemical Engineering,h-index,35,11.6,9.5,0,5.0,9.0,15.0,24.6,39
+IIT Roorkee,Chemical Engineering,i10-index,35,17.14,22.36,0,3.5,9.0,21.5,42.00000000000001,107
+IIT Roorkee,Chemical Engineering,"h-index, OpenAlex all career",26,29.58,18.06,7,14.25,25.5,38.0,52.0,72
+IIT Roorkee,Chemical Engineering,"i10-index, OpenAlex all career",26,67.73,71.76,5,18.5,48.0,78.25,148.0,302
+IIT Roorkee,Earth Sciences,h-index,33,5.94,5.07,1,2.0,5.0,7.0,10.8,24
+IIT Roorkee,Earth Sciences,i10-index,33,5.52,8.49,0,1.0,2.0,6.0,12.600000000000001,42
+IIT Roorkee,Earth Sciences,"h-index, OpenAlex all career",23,18.74,11.02,5,11.5,16.0,23.5,34.0,41
+IIT Roorkee,Earth Sciences,"i10-index, OpenAlex all career",23,29.13,25.35,2,12.0,20.0,36.5,60.400000000000006,100
+IIT Roorkee,Metallurgical and Materials Engineering,h-index,30,8.73,6.67,0,3.5,8.0,10.75,18.0,27
+IIT Roorkee,Metallurgical and Materials Engineering,i10-index,30,10.57,13.13,0,1.25,7.0,11.75,25.60000000000001,56
+IIT Roorkee,Metallurgical and Materials Engineering,"h-index, OpenAlex all career",22,24.95,10.51,10,16.5,24.5,30.0,32.800000000000004,50
+IIT Roorkee,Metallurgical and Materials Engineering,"i10-index, OpenAlex all career",22,51.14,33.11,11,31.25,43.5,61.5,85.00000000000003,136
+IIT Roorkee,Computer Science and Engineering,h-index,26,6.85,8.65,0,2.0,4.0,8.75,16.0,40
+IIT Roorkee,Computer Science and Engineering,i10-index,26,9.62,22.53,0,0.0,1.0,8.75,21.0,113
+IIT Roorkee,Computer Science and Engineering,"h-index, OpenAlex all career",13,19.85,10.97,3,15.0,19.0,22.0,31.800000000000008,47
+IIT Roorkee,Computer Science and Engineering,"i10-index, OpenAlex all career",13,41.62,43.85,0,20.0,33.0,37.0,76.60000000000002,171
+IIT Roorkee,Earthquake Engineering,h-index,22,5.55,4.79,0,3.0,4.0,7.75,10.900000000000002,20
+IIT Roorkee,Earthquake Engineering,i10-index,22,5.05,7.51,0,0.25,2.0,6.75,11.900000000000002,32
+IIT Roorkee,Earthquake Engineering,"h-index, OpenAlex all career",12,15.83,7.72,3,10.5,16.5,19.5,25.5,29
+IIT Roorkee,Earthquake Engineering,"i10-index, OpenAlex all career",12,27.75,19.7,2,11.75,26.5,37.5,57.300000000000004,62
+IIT Roorkee,Hydro and Renewable Energy,h-index,20,9.35,7.43,1,3.75,7.0,14.5,21.1,26
+IIT Roorkee,Hydro and Renewable Energy,i10-index,20,12.2,14.96,0,1.0,6.0,15.75,32.70000000000001,54
+IIT Roorkee,Hydro and Renewable Energy,"h-index, OpenAlex all career",15,20.07,10.15,4,13.5,20.0,24.5,32.0,42
+IIT Roorkee,Hydro and Renewable Energy,"i10-index, OpenAlex all career",15,37.0,34.9,2,16.5,27.0,51.5,57.8,143
+IIT Roorkee,Water Resources Development and Management,h-index,19,9.0,9.05,1,2.0,5.0,14.0,21.999999999999996,29
+IIT Roorkee,Water Resources Development and Management,i10-index,19,12.37,16.5,0,1.0,4.0,19.0,30.19999999999998,53
+IIT Roorkee,Water Resources Development and Management,"h-index, OpenAlex all career",12,20.17,10.42,7,13.5,18.0,23.0,36.50000000000001,42
+IIT Roorkee,Water Resources Development and Management,"i10-index, OpenAlex all career",12,36.83,26.86,7,17.25,30.5,45.5,79.4,93
+IIT Roorkee,Architecture and Planning,h-index,18,2.94,2.44,0,1.0,2.5,4.0,5.900000000000002,8
+IIT Roorkee,Architecture and Planning,i10-index,18,1.72,2.42,0,0.0,0.5,2.75,4.200000000000003,8
+IIT Roorkee,Architecture and Planning,"h-index, OpenAlex all career",12,9.0,5.34,3,4.75,7.0,14.0,16.700000000000003,17
+IIT Roorkee,Architecture and Planning,"i10-index, OpenAlex all career",12,9.75,8.28,1,3.75,6.5,14.75,21.5,25
+IIT Roorkee,Polymer and Process Engineering,h-index,16,12.5,12.32,0,2.75,9.5,17.5,30.0,40
+IIT Roorkee,Polymer and Process Engineering,i10-index,16,22.31,34.49,0,0.75,9.5,22.0,61.0,122
+IIT Roorkee,Polymer and Process Engineering,"h-index, OpenAlex all career",10,29.5,10.72,12,22.0,29.5,36.5,43.1,44
+IIT Roorkee,Polymer and Process Engineering,"i10-index, OpenAlex all career",10,59.5,44.37,13,28.75,43.5,80.75,120.89999999999999,147
+IIT Roorkee,Paper Technology,h-index,14,8.86,9.2,1,3.25,4.5,11.5,17.500000000000007,35
+IIT Roorkee,Paper Technology,i10-index,14,12.43,21.14,0,0.25,4.0,12.5,27.500000000000014,79
+IIT Roorkee,Paper Technology,"h-index, OpenAlex all career",8,21.5,13.31,5,11.75,19.0,29.5,35.5,46
+IIT Roorkee,Paper Technology,"i10-index, OpenAlex all career",8,45.5,41.47,2,12.5,35.0,67.75,98.8,117
+IIT Roorkee,Hydrology,h-index,11,12.73,6.84,2,7.0,13.0,16.0,19.0,26
+IIT Roorkee,Hydrology,i10-index,11,18.18,14.17,1,6.5,18.0,21.5,34.0,50
+IIT Roorkee,Hydrology,"h-index, OpenAlex all career",10,23.7,5.36,16,20.25,24.0,26.75,29.4,33
+IIT Roorkee,Hydrology,"i10-index, OpenAlex all career",10,40.6,15.41,21,30.75,37.0,50.75,58.199999999999996,69
+IIT Roorkee,Centre for Nanotechnology,h-index,5,2.2,1.79,1,1.0,1.0,3.0,4.2,5
+IIT Roorkee,Centre for Nanotechnology,i10-index,5,1.0,1.22,0,0.0,1.0,1.0,2.2,3
+IIT Roorkee,Centre for Nanotechnology,"h-index, OpenAlex all career",3,19.67,2.08,18,18.5,19.0,20.5,21.4,22
+IIT Roorkee,Centre for Nanotechnology,"i10-index, OpenAlex all career",3,26.67,3.21,23,25.5,28.0,28.5,28.8,29
+IIT Roorkee,Applied Mathematics and Scientific Computing (Saharanpur),h-index,4,8.0,5.6,1,4.75,9.0,12.25,12.7,13
+IIT Roorkee,Applied Mathematics and Scientific Computing (Saharanpur),i10-index,4,11.75,12.92,0,3.0,9.0,17.75,24.500000000000004,29
+IIT Roorkee,Applied Mathematics and Scientific Computing (Saharanpur),"h-index, OpenAlex all career",3,23.0,15.72,12,14.0,16.0,28.5,36.0,41
+IIT Roorkee,Applied Mathematics and Scientific Computing (Saharanpur),"i10-index, OpenAlex all career",3,71.67,77.51,15,27.5,40.0,100.0,136.0,160
+IIT Roorkee,Centre of Excellence in Disaster Mitigation and Management,h-index,1,4.0,,4,4.0,4.0,4.0,4.0,4
+IIT Roorkee,Centre of Excellence in Disaster Mitigation and Management,i10-index,1,3.0,,3,3.0,3.0,3.0,3.0,3
+IIT Roorkee,Unknown unit (institute-wide list 2019),h-index,1,3.0,,3,3.0,3.0,3.0,3.0,3
+IIT Roorkee,Unknown unit (institute-wide list 2019),i10-index,1,1.0,,1,1.0,1.0,1.0,1.0,1
+IIT Roorkee,Mechanical Engineering,h-index,1,2.0,,2,2.0,2.0,2.0,2.0,2
+IIT Roorkee,Mechanical Engineering,i10-index,1,1.0,,1,1.0,1.0,1.0,1.0,1
+IIT Roorkee,Centre for Photonics and Quantum Communication Technology,h-index,1,2.0,,2,2.0,2.0,2.0,2.0,2
+IIT Roorkee,Centre for Photonics and Quantum Communication Technology,i10-index,1,0.0,,0,0.0,0.0,0.0,0.0,0
+IIT Roorkee,Centre for Photonics and Quantum Communication Technology,"h-index, OpenAlex all career",1,32.0,,32,32.0,32.0,32.0,32.0,32
+IIT Roorkee,Centre for Photonics and Quantum Communication Technology,"i10-index, OpenAlex all career",1,64.0,,64,64.0,64.0,64.0,64.0,64
+IIT Roorkee,Mehta Family School of Data Science and Artificial Intelligence,h-index,1,1.0,,1,1.0,1.0,1.0,1.0,1
+IIT Roorkee,Mehta Family School of Data Science and Artificial Intelligence,i10-index,1,0.0,,0,0.0,0.0,0.0,0.0,0
+IIT Roorkee,Centre for Transportation Systems,h-index,1,0.0,,0,0.0,0.0,0.0,0.0,0
+IIT Roorkee,Centre for Transportation Systems,i10-index,1,0.0,,0,0.0,0.0,0.0,0.0,0

@@ -1,28 +1,27 @@
 ﻿community,faculty,internal_edges,IIT Kharagpur,IIT Roorkee,top_department,top_department_share,departments,most_connected_member
-1,146,329,6,140,Biosciences and Bioengineering,0.212,20,Partha Roy
-2,144,434,143,1,Chemistry,0.208,24,Santanu Dhara
-3,122,237,121,1,Computer Science and Engineering,0.123,27,Pabitra Mitra
-4,76,141,70,6,Metallurgical and Materials Engineering,0.263,15,Cheruvu Siva Kumar
-5,73,105,0,73,Electrical Engineering,0.466,16,N. P. Padhy
-6,69,101,2,67,Metallurgical and Materials Engineering,0.188,16,Ashish Pandey
-7,65,126,65,0,Mechanical Engineering,0.246,18,Suman Chakraborty
-8,62,112,61,1,Geology and Geophysics,0.194,23,Chandra Sekhar Tiwary
-9,56,82,0,56,Civil Engineering,0.607,11,Chandra Shekhar Prasad Ojha
-10,53,75,51,2,Agricultural and Food Engineering,0.283,18,Dillip Kumar Swain
-11,48,90,44,4,Electrical Engineering,0.438,6,Partha Pratim Chakrabarti
-12,46,78,43,3,Computer Science and Engineering,0.435,13,Niloy Ganguly
-13,42,57,0,42,Mechanical and Industrial Engineering,0.571,11,Pradeep Kumar
-14,41,58,0,41,Electronics and Communication Engineering,0.488,9,Brajesh Kumar Kaushik
-15,41,57,0,41,Earthquake Engineering,0.293,6,M. L. Sharma
-16,32,51,32,0,Ocean Engg and Naval Architecture,0.375,7,Mohammed Rabius Sunny
-17,24,37,18,6,Physics,0.5,6,Venimadhav Adyam
-18,22,25,5,17,Civil Engineering,0.455,5,Abhayanand Singh Maurya
-19,21,25,21,0,Architecture and Regional Planning,0.333,6,Joy Sen
-20,16,19,13,3,Mechanical Engineering,0.438,4,Goutam Chakraborty
-21,14,15,13,1,Vinod Gupta School of Management,0.929,2,Swagato Chatterjee
-22,9,9,9,0,Chemical Engineering,0.556,4,Sirshendu De
-23,8,7,8,0,Dr B C Roy Multi Speciality Medical Research Centre,0.375,5,Atasi Mohanty
-24,7,7,7,0,Humanities and Social Sciences,0.714,3,Anuradha Choudry
-25,7,7,7,0,Agricultural and Food Engineering,1.0,1,Brajesh Kumar Panda
-26,7,7,1,6,Physics,0.857,2,P. Arumugam
-27,5,5,0,5,Earthquake Engineering,1.0,1,Pankaj Agarwal
+1,139,301,9,130,Biosciences and Bioengineering,0.237,20,Partha Roy
+2,111,301,110,1,Chemistry,0.252,16,Narayan Chandra Das
+3,68,103,2,66,Metallurgical and Materials Engineering,0.221,15,Ashish Pandey
+4,64,126,61,3,Metallurgical and Materials Engineering,0.312,13,Indranil Manna
+5,62,104,62,0,Mechanical Engineering,0.258,18,Suman Chakraborty
+6,61,105,60,1,Computer Science and Engineering,0.246,13,Pabitra Mitra
+7,61,90,0,61,Electrical Engineering,0.557,14,N. P. Padhy
+8,57,103,57,0,Geology and Geophysics,0.211,20,Chandra Sekhar Tiwary
+9,51,85,49,2,Computer Science and Engineering,0.392,12,Niloy Ganguly
+10,48,68,46,2,Agricultural and Food Engineering,0.312,14,Dillip Kumar Swain
+11,47,64,0,47,Mechanical and Industrial Engineering,0.596,10,Pradeep Kumar
+12,42,81,38,4,Electrical Engineering,0.5,4,Partha Pratim Chakrabarti
+13,41,55,0,41,Civil Engineering,0.756,8,Chandra Shekhar Prasad Ojha
+14,41,57,0,41,Earth Sciences,0.293,5,M. L. Sharma
+15,35,52,0,35,Electronics and Communication Engineering,0.514,7,Brajesh Kumar Kaushik
+16,32,53,32,0,Ocean Engg and Naval Architecture,0.5,5,Mohammed Rabius Sunny
+17,31,35,28,3,Mining Engineering,0.355,7,Samir Kumar Pal
+18,28,42,18,10,Physics,0.571,6,Venimadhav Adyam
+19,26,31,8,18,Civil Engineering,0.385,5,Rajib Chowdhury
+20,24,26,23,1,Civil Engineering,0.417,10,Dhrubajyoti Sen
+21,9,9,9,0,Chemical Engineering,0.556,4,Amitabha Bhattacharya
+22,7,7,1,6,Physics,0.857,2,P. Arumugam
+23,7,7,0,7,Electronics and Communication Engineering,1.0,1,Karun Rawat
+24,5,4,5,0,Mechanical Engineering,0.8,2,Maddali Ramgopal
+25,5,4,0,5,Mathematics,0.6,3,Manil T. Mohan
+26,5,5,0,5,Physics,0.6,3,V. Singh

@@ -1,0 +1,56 @@
+﻿institution,scope,department,conference_papers,A*,A,B,C,ranked,ranked_share
+IIT Kharagpur,all years,,3814,98,80,222,122,522,0.1369
+IIT Kharagpur,2016,,214,2,7,13,9,31,0.1449
+IIT Kharagpur,2017,,260,4,6,16,11,37,0.1423
+IIT Kharagpur,2018,,329,9,3,25,15,52,0.1581
+IIT Kharagpur,2019,,322,5,5,22,23,55,0.1708
+IIT Kharagpur,2020,,254,7,9,18,9,43,0.1693
+IIT Kharagpur,2021,,299,14,7,17,2,40,0.1338
+IIT Kharagpur,2022,,438,6,5,34,8,53,0.121
+IIT Kharagpur,2023,,455,17,10,17,15,59,0.1297
+IIT Kharagpur,2024,,530,18,10,31,9,68,0.1283
+IIT Kharagpur,2025,,519,11,12,21,18,62,0.1195
+IIT Kharagpur,2026,,194,5,6,8,3,22,0.1134
+IIT Kharagpur,all years,Computer Science and Engineering,970,70,50,99,54,273,0.2814
+IIT Kharagpur,all years,Electrical Engineering,596,3,2,18,18,41,0.0688
+IIT Kharagpur,all years,Electronics and Electrical Communication Engg.,490,7,5,46,8,66,0.1347
+IIT Kharagpur,all years,Mechanical Engineering,235,1,0,1,0,2,0.0085
+IIT Kharagpur,all years,G.S Sanyal School of Telecommunication,91,0,3,36,1,40,0.4396
+IIT Kharagpur,all years,Centre for Interdisciplinary and Convergent Technologies,73,0,1,8,3,12,0.1644
+IIT Kharagpur,all years,Mining Engineering,72,0,0,1,8,9,0.125
+IIT Kharagpur,all years,Agricultural and Food Engineering,71,0,0,2,11,13,0.1831
+IIT Kharagpur,all years,Civil Engineering,67,0,0,0,1,1,0.0149
+IIT Kharagpur,all years,Industrial and Systems Engineering,62,0,0,4,2,6,0.0968
+IIT Kharagpur,all years,Geology and Geophysics,60,1,0,0,1,2,0.0333
+IIT Kharagpur,all years,Mathematics,44,0,1,2,1,4,0.0909
+IIT Kharagpur,all years,Artificial Intelligence,41,3,2,3,5,13,0.3171
+IIT Kharagpur,all years,Subir Chowdhury School of Quality and Reliability,41,0,0,2,2,4,0.0976
+IIT Kharagpur,all years,Ranbir and Chitra Gupta School of Infrastructure Design and Mngt.,25,0,0,0,8,8,0.32
+IIT Kharagpur,all years,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",20,0,0,0,2,2,0.1
+IIT Kharagpur,all years,Chemistry,6,1,0,0,0,1,0.1667
+IIT Roorkee,all years,,3211,11,34,144,100,289,0.09
+IIT Roorkee,2016,,162,0,1,2,14,17,0.1049
+IIT Roorkee,2017,,163,0,2,8,3,13,0.0798
+IIT Roorkee,2018,,219,0,1,6,8,15,0.0685
+IIT Roorkee,2019,,205,1,5,8,6,20,0.0976
+IIT Roorkee,2020,,168,0,2,8,10,20,0.119
+IIT Roorkee,2021,,193,1,1,9,4,15,0.0777
+IIT Roorkee,2022,,383,1,1,9,10,21,0.0548
+IIT Roorkee,2023,,530,3,3,12,12,30,0.0566
+IIT Roorkee,2024,,504,0,5,28,18,51,0.1012
+IIT Roorkee,2025,,473,4,8,37,10,59,0.1247
+IIT Roorkee,2026,,211,1,5,17,5,28,0.1327
+IIT Roorkee,all years,Electrical Engineering,874,0,2,3,1,6,0.0069
+IIT Roorkee,all years,Electronics and Communication Engineering,768,1,10,44,25,80,0.1042
+IIT Roorkee,all years,Mechanical and Industrial Engineering,236,0,0,0,1,1,0.0042
+IIT Roorkee,all years,Computer Science and Engineering,233,4,11,81,13,109,0.4678
+IIT Roorkee,all years,Civil Engineering,179,1,0,2,35,38,0.2123
+IIT Roorkee,all years,Physics,127,0,0,1,0,1,0.0079
+IIT Roorkee,all years,Water Resources Development and Management,92,0,0,0,3,3,0.0326
+IIT Roorkee,all years,Mathematics,51,0,0,4,0,4,0.0784
+IIT Roorkee,all years,Earth Sciences,38,0,0,0,2,2,0.0526
+IIT Roorkee,all years,Chemical Engineering,22,0,0,1,0,1,0.0455
+IIT Roorkee,all years,Earthquake Engineering,19,0,0,0,1,1,0.0526
+IIT Roorkee,all years,Centre for Nanotechnology,8,0,0,1,0,1,0.125
+IIT Roorkee,all years,Applied Mathematics and Scientific Computing (Saharanpur),7,0,0,1,0,1,0.1429
+IIT Roorkee,all years,Mehta Family School of Data Science and Artificial Intelligence,1,0,1,0,0,1,1.0

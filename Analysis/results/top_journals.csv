@@ -1,11 +1,21 @@
-﻿institution,rank,journal,papers,most_common_quartile
-IIT Kharagpur,1,Physics of Fluids,330,Q1
-IIT Kharagpur,2,Scientific Reports,194,Q1
-IIT Kharagpur,3,ACS Applied Materials & Interfaces,152,Q1
-IIT Kharagpur,4,Langmuir,130,Q1
-IIT Kharagpur,5,RSC Advances,117,Q1
-IIT Roorkee,1,Scientific Reports,133,Q1
-IIT Roorkee,2,International Journal of Biological Macromolecules,132,Q1
-IIT Roorkee,3,Physical Review C,117,Q1
-IIT Roorkee,4,IEEE Transactions on Industry Applications,111,Q1
-IIT Roorkee,5,Environmental Science and Pollution Research,107,Q1
+﻿institution,rank,journal,papers,most_common_quartile,if_openalex
+IIT Kharagpur,1,Physics of Fluids,325,Q1,4.18
+IIT Kharagpur,2,Scientific Reports,175,Q1,5.22
+IIT Kharagpur,3,ACS Applied Materials & Interfaces,149,Q1,8.77
+IIT Kharagpur,4,Langmuir,130,Q1,4.91
+IIT Kharagpur,5,RSC Advances,112,Q1,7.5
+IIT Kharagpur,6,Physical Chemistry Chemical Physics,107,Q1,3.58
+IIT Kharagpur,7,Journal of Alloys and Compounds,96,Q1,6.35
+IIT Kharagpur,8,ACS Applied Nano Materials,95,Q1,6.88
+IIT Kharagpur,9,Science of The Total Environment,93,Q1,12.15
+IIT Kharagpur,10,Materials Science and Engineering: A,88,Q1,6.82
+IIT Roorkee,1,Scientific Reports,124,Q1,5.22
+IIT Roorkee,2,International Journal of Biological Macromolecules,120,Q1,9.21
+IIT Roorkee,3,Physical Review C,117,Q1,3.19
+IIT Roorkee,4,IEEE Transactions on Industry Applications,110,Q1,4.36
+IIT Roorkee,5,Environmental Science and Pollution Research,101,Q1,6.44
+IIT Roorkee,6,Physics of Fluids,86,Q1,4.18
+IIT Roorkee,7,IEEE Access,85,Q1,6.44
+IIT Roorkee,8,ChemistrySelect,78,Q2,2.49
+IIT Roorkee,9,IEEE Transactions on Electron Devices,77,Q1,3.62
+IIT Roorkee,10,Journal of Environmental Chemical Engineering,70,Q1,6.14

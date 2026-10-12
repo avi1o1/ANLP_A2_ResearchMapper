@@ -1,4 +1,4 @@
 ﻿scope,papers,citation_edges,mean_in_degree,papers_cited_at_least_once,papers_citing_none_in_corpus,largest_weak_component,density,reciprocal_pairs,spearman_pagerank_vs_year
-Cluster (both IITs),52584,96030,1.826,26006,22956,27925,3.47e-05,105,-0.392
-IIT Kharagpur,29997,53798,1.793,14742,13226,13724,5.98e-05,59,-0.398
-IIT Roorkee,22804,38648,1.695,10800,10572,9911,7.43e-05,46,-0.354
+Cluster (both IITs),46072,86090,1.869,23297,19526,24412,4.06e-05,92,-0.392
+IIT Kharagpur,25942,47586,1.834,13049,11146,11765,7.07e-05,55,-0.399
+IIT Roorkee,20326,35246,1.734,9846,9133,8975,8.53e-05,37,-0.354

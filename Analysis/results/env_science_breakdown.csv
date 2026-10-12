@@ -1,0 +1,69 @@
+﻿institution,by,name,papers,share_of_env_papers
+IIT Kharagpur,subfield,Environmental Engineering,659,0.2449
+IIT Kharagpur,subfield,Water Science and Technology,567,0.2107
+IIT Kharagpur,subfield,Global and Planetary Change,518,0.1925
+IIT Kharagpur,subfield,Ecology,294,0.1093
+IIT Kharagpur,subfield,Environmental Chemistry,160,0.0595
+IIT Kharagpur,subfield,Pollution,157,0.0583
+IIT Kharagpur,subfield,Waste Management and Disposal,122,0.0453
+IIT Kharagpur,subfield,"Health, Toxicology and Mutagenesis",93,0.0346
+IIT Kharagpur,subfield,"Management, Monitoring, Policy and Law",81,0.0301
+IIT Kharagpur,subfield,Ecological Modeling,26,0.0097
+IIT Kharagpur,subfield,Nature and Landscape Conservation,14,0.0052
+IIT Kharagpur,topic,Microbial Fuel Cells and Bioremediation,221,0.0821
+IIT Kharagpur,topic,Climate variability and models,190,0.0706
+IIT Kharagpur,topic,Adsorption and biosorption for pollutant removal,145,0.0539
+IIT Kharagpur,topic,Hydrology and Sediment Transport Processes,139,0.0517
+IIT Kharagpur,topic,Hydrology and Watershed Management Studies,115,0.0427
+IIT Kharagpur,topic,Remote Sensing in Agriculture,93,0.0346
+IIT Kharagpur,topic,Arsenic contamination and mitigation,89,0.0331
+IIT Kharagpur,topic,Advanced oxidation water treatment,86,0.032
+IIT Kharagpur,topic,Hydrology and Drought Analysis,86,0.032
+IIT Kharagpur,topic,Hydrological Forecasting Using AI,78,0.029
+IIT Kharagpur,department,Civil Engineering,766,0.2847
+IIT Kharagpur,department,Agricultural and Food Engineering,425,0.1579
+IIT Kharagpur,department,(no faculty identified),401,0.149
+IIT Kharagpur,department,"Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)",301,0.1119
+IIT Kharagpur,department,Chemical Engineering,185,0.0687
+IIT Kharagpur,department,Geology and Geophysics,176,0.0654
+IIT Kharagpur,department,School of Water Resources,130,0.0483
+IIT Kharagpur,department,Bioscience and Biotechnology,89,0.0331
+IIT Kharagpur,department,Mining Engineering,86,0.032
+IIT Kharagpur,department,Architecture and Regional Planning,65,0.0242
+IIT Kharagpur,department,Ranbir and Chitra Gupta School of Infrastructure Design and Mngt.,63,0.0234
+IIT Kharagpur,department,Computer Science and Engineering,54,0.0201
+IIT Kharagpur,total,Environmental Science,2691,0.1037
+IIT Roorkee,subfield,Water Science and Technology,636,0.2459
+IIT Roorkee,subfield,Environmental Engineering,499,0.193
+IIT Roorkee,subfield,Global and Planetary Change,484,0.1872
+IIT Roorkee,subfield,Pollution,213,0.0824
+IIT Roorkee,subfield,Ecology,203,0.0785
+IIT Roorkee,subfield,Waste Management and Disposal,160,0.0619
+IIT Roorkee,subfield,"Management, Monitoring, Policy and Law",142,0.0549
+IIT Roorkee,subfield,Environmental Chemistry,126,0.0487
+IIT Roorkee,subfield,"Health, Toxicology and Mutagenesis",84,0.0325
+IIT Roorkee,subfield,Ecological Modeling,30,0.0116
+IIT Roorkee,subfield,Nature and Landscape Conservation,9,0.0035
+IIT Roorkee,topic,Hydrology and Watershed Management Studies,204,0.0789
+IIT Roorkee,topic,Climate variability and models,163,0.063
+IIT Roorkee,topic,Adsorption and biosorption for pollutant removal,153,0.0592
+IIT Roorkee,topic,Flood Risk Assessment and Management,127,0.0491
+IIT Roorkee,topic,Landslides and related hazards,125,0.0483
+IIT Roorkee,topic,Hydrology and Drought Analysis,94,0.0363
+IIT Roorkee,topic,Hydrology and Sediment Transport Processes,92,0.0356
+IIT Roorkee,topic,Remote Sensing in Agriculture,89,0.0344
+IIT Roorkee,topic,Urban Heat Island Mitigation,78,0.0302
+IIT Roorkee,topic,Water Quality and Pollution Assessment,72,0.0278
+IIT Roorkee,department,Civil Engineering,551,0.2131
+IIT Roorkee,department,(no faculty identified),484,0.1872
+IIT Roorkee,department,Hydrology,385,0.1489
+IIT Roorkee,department,Water Resources Development and Management,377,0.1458
+IIT Roorkee,department,Chemical Engineering,215,0.0831
+IIT Roorkee,department,Earth Sciences,131,0.0507
+IIT Roorkee,department,Architecture and Planning,87,0.0336
+IIT Roorkee,department,Hydro and Renewable Energy,77,0.0298
+IIT Roorkee,department,Biosciences and Bioengineering,75,0.029
+IIT Roorkee,department,Polymer and Process Engineering,75,0.029
+IIT Roorkee,department,Electronics and Communication Engineering,39,0.0151
+IIT Roorkee,department,Chemistry,37,0.0143
+IIT Roorkee,total,Environmental Science,2586,0.1272

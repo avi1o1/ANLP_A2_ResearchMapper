@@ -4,21 +4,24 @@ Outputs (results/):
   trend.csv              papers per year and type, 2016-2026 (2026 partial: collected October 2026)
   quartiles.csv          journal papers by Scimago quartile; Q1 fraction of ranked journal papers and of all journal papers
   core_ranks.csv         conference papers by CORE rank
-  top_journals.csv       top 5 journals per institute by paper count
+  top_journals.csv       top 10 journals per institute by paper count, with the IF (OpenAlex 2-year mean citedness)
   most_cited.csv         top 10 most-cited papers per institute (+ 'Both' = the two institutes together)
   research_areas.csv     share of papers per OpenAlex field (primary topic), per institute
-  faculty.csv            per faculty member: papers, citations, h-index, top journal, Q1 papers, years active
-  departments.csv        per department: faculty, papers (distinct), citations, Q1 fraction, median / max h-index
+  faculty.csv            per faculty member: papers, citations, h-index, i10-index, top journal, Q1 papers, years active,
+                         and the OpenAlex all-career h / i10 of the person's OpenAlex author profile (for comparison;
+                         blank unless >= 5 of their papers were checked and >= 80 % carry that profile id)
+  departments.csv        per department: faculty, papers (distinct), citations, Q1 fraction, mean / SD / median / max h-index
 Figures (figures/): trend.png, quartiles.png, h_index_hist.png, research_areas.png
 h-index = Hirsch index over the faculty member's papers in this dataset (2016-2026 window, citations at collection
 date) - lower than a career h-index; papers with an unknown citation count are skipped.
 usage: python stats_bibliometric.py"""
 import collections as C
 import numpy as np
-from common import (INSTS, YEARS, PARTIAL_YEAR, load_records, paper_key, cites, write_csv, h_index, style, save,
-                    COLOR, ORDINAL, TEXT2, MUTED, plt)
+from common import (INSTS, YEARS, PARTIAL_YEAR, load_records, paper_key, cites, write_csv, h_index, i10_index, style,
+                    save, impact_factor, oa_extra, COLOR, ORDINAL, TEXT2, MUTED, plt)
 
 TYPES = ["journal", "conference", "book-chapter", "preprint"]
+TOP_JOURNALS = 10
 
 
 def main():
@@ -35,19 +38,19 @@ def main():
             row["partial_year"] = y == PARTIAL_YEAR
             rows.append(row)
     write_csv("trend.csv", rows)
-    fig, ax = plt.subplots(figsize=(8, 4.2))
-    for name in recs:
+    fig, ax = plt.subplots(figsize=(8, 4.2))             # yearly counts are discrete: grouped bars, 2026 faded
+    x = np.arange(len(YEARS))
+    for k, name in enumerate(recs):
         ys = [r["total"] for r in rows if r["institution"] == name]
-        ax.plot(YEARS[:-1], ys[:-1], color=COLOR[name], marker="o", markersize=4)
-        ax.plot(YEARS[-2:], ys[-2:], color=COLOR[name], linestyle=(0, (3, 3)), marker="o", markersize=4)
-        ax.annotate(f"{name}  {ys[-2]:,}", (YEARS[-2], ys[-2]), xytext=(6, 0), textcoords="offset points",
-                    va="center", fontsize=9, color=TEXT2)
+        xs = x + (k - 0.5) * 0.38
+        ax.bar(xs[:-1], ys[:-1], width=0.36, color=COLOR[name], label=name)
+        ax.bar(xs[-1], ys[-1], width=0.36, color=COLOR[name], alpha=0.25, edgecolor=COLOR[name], linestyle="--", linewidth=1)
     ax.set_title("Papers per year, 2016-2026")
     ax.set_ylabel("papers (IIT affiliation confirmed)")
-    ax.set_xticks(YEARS)
-    ax.set_ylim(0, None)
-    ax.text(YEARS[-1], ax.get_ylim()[1] * 0.04, "2026 partial\n(to Oct)", ha="center", fontsize=8, color=MUTED)
-    ax.margins(x=0.08)
+    ax.set_xticks(x, YEARS)
+    ax.grid(axis="x", visible=False)
+    ax.legend(loc="upper left")
+    ax.text(x[-1], ax.get_ylim()[1] * 0.97, "2026 partial\n(to Oct)", ha="center", va="top", fontsize=8, color=MUTED)
     save(fig, "trend.png")
 
     # ------------------------------------------------ quartiles & CORE
@@ -91,10 +94,12 @@ def main():
     trows, mrows = [], []
     for name, rs in recs.items():
         cnt = C.Counter(r["venue"] for r in rs if r["type"] == "journal" and not str(r["venue"]).startswith("TODO"))
-        for rank, (v, n) in enumerate(cnt.most_common(5), 1):
+        for rank, (v, n) in enumerate(cnt.most_common(TOP_JOURNALS), 1):
             qs = C.Counter((r.get("quartile") or {}).get("quartile") for r in rs if r["venue"] == v)
+            ifs = C.Counter(x for x in (impact_factor(r) for r in rs if r["venue"] == v) if x is not None)
             trows.append({"institution": name, "rank": rank, "journal": v, "papers": n,
-                          "most_common_quartile": qs.most_common(1)[0][0] or ""})
+                          "most_common_quartile": qs.most_common(1)[0][0] or "",
+                          "if_openalex": round(ifs.most_common(1)[0][0], 2) if ifs else ""})
     both = {}
     for name, rs in recs.items():
         for r in rs:
@@ -143,18 +148,27 @@ def main():
             for f in r["faculty"]:
                 fac_papers[(name, f["roster_id"])][paper_key(r)] = r
                 fac_info[(name, f["roster_id"])] = f
+    authors = oa_extra()["authors"]
     for key, ps in fac_papers.items():
         name, rid = key
         f = fac_info[key]
         cs = [cites(r) for r in ps.values()]
+        oa = authors.get(rid, {})
+        # OpenAlex sometimes merges namesakes into one profile: use its career numbers only when the profile clearly
+        # belongs to this person (>= 5 of their papers checked and >= 80 % of them carry that author id)
+        if not (oa.get("papers_checked", 0) >= 5 and oa.get("papers_with_this_id", 0) >= 0.8 * oa.get("papers_checked", 1)):
+            oa = {}
         jv = C.Counter(r["venue"] for r in ps.values() if r["type"] == "journal" and not str(r["venue"]).startswith("TODO"))
         frows.append({"institution": name, "faculty": f["name"], "department": f["department"], "roster_id": rid,
                       "person_source": "roster" if f.get("person_source", "roster") == "roster" else "ORCID record",
                       "papers": len(ps), "citations": sum(c for c in cs if c is not None),
                       "papers_unknown_citations": sum(1 for c in cs if c is None), "h_index": h_index(cs),
+                      "i10_index": i10_index(cs),
                       "q1_papers": sum(1 for r in ps.values() if (r.get("quartile") or {}).get("quartile") == "Q1"),
                       "top_journal": jv.most_common(1)[0][0] if jv else "",
-                      "first_year": min(r["year"] for r in ps.values()), "last_year": max(r["year"] for r in ps.values())})
+                      "first_year": min(r["year"] for r in ps.values()), "last_year": max(r["year"] for r in ps.values()),
+                      "oa_author_id": oa.get("author", ""), "oa_h_index_all_career": oa.get("h_index", ""),
+                      "oa_i10_all_career": oa.get("i10_index", ""), "oa_works_all_career": oa.get("works", "")})
     frows.sort(key=lambda x: (x["institution"], -x["h_index"], -x["citations"]))
     write_csv("faculty.csv", frows)
     drows = []
@@ -171,7 +185,10 @@ def main():
         drows.append({"institution": name, "department": dept, "faculty_with_papers": len(fl), "papers": len(ps),
                       "citations": sum(cites(r) or 0 for r in ps.values()),
                       "q1_fraction_of_ranked": round(sum(r["quartile"]["quartile"] == "Q1" for r in ranked) / len(ranked), 4) if ranked else "",
-                      "median_h_index": float(np.median(hs)), "max_h_index": hs[-1]})
+                      "mean_h_index": round(float(np.mean(hs)), 2),
+                      "sd_h_index": round(float(np.std(hs, ddof=1)), 2) if len(hs) > 1 else "",
+                      "median_h_index": float(np.median(hs)), "max_h_index": hs[-1],
+                      "mean_i10": round(float(np.mean([fr["i10_index"] for fr in fl])), 2)})
     drows.sort(key=lambda x: (x["institution"], -x["papers"]))
     write_csv("departments.csv", drows)
     fig, axes = plt.subplots(1, 2, figsize=(9, 3.6), sharey=True)
