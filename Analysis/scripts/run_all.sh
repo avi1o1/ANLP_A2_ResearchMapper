@@ -11,9 +11,12 @@ python fetch_openalex_extra.py     # only fetches ids missing from the cache
 python stats_bibliometric.py       # writes faculty.csv, used by the next three
 python stats_faculty.py
 python stats_journals.py
+python stats_large_collab.py       # papers with more than 10 authors: effect on the headline numbers, where they are
 python stats_areas.py
 python stats_citation.py           # writes citation_flow_partners.csv, used by stats_connectivity.py
 python stats_authorship.py
+python stats_citation_dynamics.py    # self-citation, PageRank corrections, distribution fits, preferential attachment
+python stats_authorship_dynamics.py  # Leiden, hierarchy, robustness, SIR spreading, growth (needs faculty_centrality.csv)
 python stats_connectivity.py
 python stats_citing_top.py
 python stats_rosters.py            # yearly faculty lists (needs WebScrape/scripts/wayback_rosters.py output)

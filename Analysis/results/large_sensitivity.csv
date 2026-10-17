@@ -1,0 +1,29 @@
+﻿institution,metric,all_papers,without_large,change,change_pct
+IIT Kharagpur,papers,25950,25416,-534,-2.06
+IIT Kharagpur,citations,428549,402823,-25726,-6.0
+IIT Kharagpur,citations per paper,16.51,15.85,-0.66,-4.0
+IIT Kharagpur,median citations per paper,6.0,6.0,0.0,0.0
+IIT Kharagpur,Q1 share of ranked journal papers,0.6604,0.6552,-0.0052,-0.79
+IIT Kharagpur,papers with >= 100 citations,592,537,-55,-9.29
+IIT Kharagpur,large papers among the 10 most cited,6,0,-6,-100.0
+IIT Kharagpur,faculty with papers,770,767,-3,-0.39
+IIT Kharagpur,median faculty h-index,8.0,7.0,-1.0,-12.5
+IIT Kharagpur,mean faculty h-index,9.55,9.44,-0.11,-1.15
+IIT Kharagpur,max faculty h-index,63,61,-2,-3.17
+IIT Kharagpur,institute h-index,184,176,-8,-4.35
+IIT Kharagpur,faculty whose h-index drops,,74,,9.61
+IIT Kharagpur,faculty who lose all their papers,,3,,
+IIT Roorkee,papers,20326,19872,-454,-2.23
+IIT Roorkee,citations,314533,302856,-11677,-3.71
+IIT Roorkee,citations per paper,15.47,15.24,-0.23,-1.49
+IIT Roorkee,median citations per paper,5.0,5.0,0.0,0.0
+IIT Roorkee,Q1 share of ranked journal papers,0.6074,0.6024,-0.005,-0.82
+IIT Roorkee,papers with >= 100 citations,423,408,-15,-3.55
+IIT Roorkee,large papers among the 10 most cited,2,0,-2,-100.0
+IIT Roorkee,faculty with papers,640,638,-2,-0.31
+IIT Roorkee,median faculty h-index,7.0,7.0,0.0,0.0
+IIT Roorkee,mean faculty h-index,8.7,8.58,-0.12,-1.38
+IIT Roorkee,max faculty h-index,42,40,-2,-4.76
+IIT Roorkee,institute h-index,156,154,-2,-1.28
+IIT Roorkee,faculty whose h-index drops,,57,,8.91
+IIT Roorkee,faculty who lose all their papers,,2,,

@@ -22,7 +22,10 @@ We collected the science and engineering papers of IIT Kharagpur and IIT Roorkee
 1,410 faculty members. We study them at the institution, department and faculty level, and we build a citation network
 and a co-authorship network. Both IITs almost doubled their output, and most of their journal papers are in Q1 journals.
 Their faculty h-index is about half of a career h-index, because we count only ten years of papers. Citations are
-heavy-tailed, and faculty work in tight groups inside their own IIT.
+heavy-tailed and grow by preferential attachment, but 88\% of the citations inside an institute are self-citations, so
+we also rank papers without them. Faculty work in tight, hierarchical groups inside their own IIT. The collaboration
+network is a small world that grew denser every year, and it splits into its two campuses when about 100 bridging
+faculty are removed.
 \end{abstract}
 
 %===========================================================
@@ -303,6 +306,47 @@ are few, 534 papers at KGP (2.1\%) and 454 at Roorkee (2.2\%). 17 and 7 of them 
 more than their share of citations, 6.0\% of all KGP citations and 3.7\% of all Roorkee citations. The flag is in
 \texttt{group3\_data.csv} and on the dashboard.
 
+\subsection{How much do large collaborations matter?}
+To see how much our numbers depend on these papers, we computed every headline number again without them
+(Fig.~\ref{fig:large}, left). The \textbf{typical} paper does not change. The median paper still has 6 citations at
+KGP and 5 at Roorkee, and the Q1 share falls by only half a point. The \textbf{top} changes. At KGP, \textbf{6 of the
+10 most cited papers} have more than 10 authors (2 at Roorkee). Without them, KGP loses 9.3\% of its papers with 100
+or more citations, and its institute h-index falls from 184 to 176. Roorkee's falls from 156 to 154. The faculty
+h-index also moves. 74 KGP faculty (9.6\%) and 57 Roorkee faculty (8.9\%) lose at least one point, and the median
+KGP faculty h-index falls from 8 to 7.
+
+\textbf{A citation premium.} Large papers are cited more than other papers of the same IIT and the same year
+(Fig.~\ref{fig:large}, right). At KGP the median large paper gets \textbf{2.7 times} the citations of the median other
+paper (median over 2016--2024). At Roorkee the premium is smaller, 1.25 times. One reason is that more authors means
+more people who cite the paper and more networks that see it.
+
+\textbf{What these papers are.} 82\% of the large journal papers at KGP are in Q1 journals, against 62\% for its other
+papers (Roorkee 76\% against 57\%). Only 2--3\% are conference papers, against 15--16\% of the other papers. And
+\textbf{81\%} of them have a co-author abroad (Roorkee 76\%), against 22--23\% of the other papers. Thus large teams
+mostly mean international collaboration. Most of them are not huge. 86\% of the KGP and 76\% of the Roorkee large
+papers have 11 to 20 authors. Only 17 and 7 papers have 100 or more.
+
+\textbf{Where they come from.} At KGP they come from materials research: Metallurgical and Materials Engineering
+(78 papers), Physics (60), Agricultural and Food Engineering (60) and Biosciences (45). Materials Science is the largest
+field (22\% of them), and the top venues are \emph{Small}, \emph{Advanced Functional Materials} and \emph{ACS Applied
+Materials \& Interfaces}. At Roorkee they come mostly from \textbf{Physics} (134 papers, 30\% of Roorkee's large papers
+and 9\% of its physics papers), then Biosciences (74) and Hydrology (28). The top venue is \emph{Physical Review C}
+(44 papers), from nuclear physics collaborations. The pulsar timing papers are here too.
+
+\textbf{Who depends on them.} For a few faculty the large papers are a large part of the h-index. At KGP the h-index of
+Tapas Kumar Maiti (Biosciences) falls from 36 to 30 without them, and that of Abhijit Mukherjee (Geology and
+Geophysics) from 44 to 39. At Roorkee the largest drop is in Physics. Bhal Chandra Joshi, who works on pulsar timing
+arrays, goes from 8 to 2. This does not make these papers less valuable. But an h-index from large collaborations
+measures a different thing than one from a small group. So we show both on the dashboard.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.85\linewidth]{large_collab_effect.png}
+\caption{Papers with more than 10 authors. Left: change of the headline numbers without them. Right: their median
+citations divided by the median of the institute's other papers of the same year.}
+\label{fig:large}
+\end{figure*}
+
 %===========================================================
 \section{Faculty and Department Level}\label{sec:fac}
 %===========================================================
@@ -472,15 +516,74 @@ small number of papers.
 
 Fig.~\ref{fig:indeg} shows $P(\text{in-degree} \ge k)$ on a log-log scale. The curve decreases slowly over two orders
 of magnitude. Thus the distribution is \textbf{heavy-tailed}. Most papers get zero, one or two internal citations, but
-a few papers get 40 to 58. This is the ``rich get richer'' effect, or preferential attachment, from our lectures.
-People find a cited paper more easily, so they cite it again. The curves of the two IITs are almost the same. This
-tells us that the effect comes from how citation works, and not from one institute.
+a few papers get 40 to 58. The curves of the two IITs are almost the same. This tells us that the shape comes from how
+citation works, and not from one institute.
 
 \begin{figure}[!t]
 \centering
 \includegraphics[width=0.6\linewidth]{indegree_ccdf.png}
 \caption{In-degree distribution of the citation network (CCDF, log-log).}
 \label{fig:indeg}
+\end{figure}
+
+\subsection{Is it a power law?}
+A straight line on a log-log plot is not enough to call a distribution a power law. We follow the method of Clauset,
+Shalizi and Newman. It fits $P(k) \propto k^{-\alpha}$ above a cut-off $x_{\min}$ by maximum likelihood. Then it
+compares the power law with other heavy-tailed distributions by a likelihood ratio test (Fig.~\ref{fig:fit}).
+
+For the internal in-degree, the fit gives $\alpha = 2.81$ above $x_{\min}=5$. But the \textbf{lognormal} fits much
+better (normalised ratio $R=-13.3$, $p<0.001$), because the curve bends down at the end. This is natural. A paper can
+get at most a few dozen citations from inside two institutes. For the \textbf{global} citation counts, the tail above
+73 citations (1,861 papers) has $\alpha = 3.00 \pm 0.05$. The power law is much better than an exponential ($R=5.4$,
+$p<0.001$), but we cannot tell it apart from a lognormal ($p=0.16$). Thus we can say ``heavy-tailed'', but not
+``scale-free''. This is also what large studies of citations find.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\linewidth]{citation_distribution_fit.png}
+\caption{Maximum-likelihood fits of the tail: power law (grey) and lognormal (orange).}
+\label{fig:fit}
+\end{figure}
+
+\subsection{Preferential attachment, measured}
+In the lectures, the Barab\'asi--Albert model explains heavy tails with \textbf{preferential attachment}: a node with
+degree $k$ gets new links at a rate $\Pi(k) \propto k$. With dated citations we can measure this directly. For each
+year $T$ from 2017 to 2025, we take every paper that already existed, count its citations $k$ up to year $T-1$, and
+count its new citations in year $T$. The mean number of new citations at each $k$ is the attachment rate $A(k)$. We
+use the internal citations and the citations from other Indian institutes, because both have a year.
+
+Fig.~\ref{fig:pa} shows that $A(k)$ grows steadily with $k$. A paper with 10 citations gets about three times as many
+new citations as a paper with one. The best fit is $A(k) = c\,(k + k_0)^{\alpha}$ with $\alpha = 0.80 \pm 0.02$ and
+$k_0 = 1.8$. Thus the attachment is \textbf{slightly sublinear}. The $k_0$ is the ``initial attractiveness'': an
+uncited paper still gets 0.57 new citations a year. A sublinear $\alpha$ gives a stretched-exponential or lognormal
+shape rather than a pure power law. This agrees with the fits above. One caution: papers also differ in quality (their
+``fitness''), and better papers are both cited earlier and cited later. Part of the measured effect can come from
+this.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.62\linewidth]{preferential_attachment.png}
+\caption{Attachment rate $A(k)$: new citations in a year for a paper with $k$ earlier citations.}
+\label{fig:pa}
+\end{figure}
+
+\subsection{Self-citations}
+The brief defines the in-degree as the number of citations from the same institute's papers. We checked who these
+citations come from. An edge is a \textbf{self-citation} if the citing and the cited paper share an author (the same
+OpenAlex author, or the same faculty member). \textbf{88.5\%} of the 86,090 internal edges are self-citations (KGP
+92.8\%, Roorkee 90.1\%). Only 9,909 edges connect different authors. The share falls from 98\% in 2016 to 87--89\% in
+2026 (Fig.~\ref{fig:self}). Over time, more colleagues have papers that one can cite.
+
+This changes how we must read the internal network. It mostly shows how researchers build on \emph{their own} earlier
+work. 42 papers have zero citations in the world but five or more internal citations, and all of these are
+self-citations. 79\% of the edges stay inside one OpenAlex field (field assortativity 0.73), and 76\% of the
+non-self edges do too. Thus ideas move between fields only rarely, even between colleagues.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.62\linewidth]{self_citation_yearly.png}
+\caption{Share of internal citations that are self-citations, by year of the citing paper.}
+\label{fig:self}
 \end{figure}
 
 \subsection{PageRank}
@@ -516,6 +619,26 @@ KGP    & Groundwater quality and depletion in the Indo-Gangetic Basin ... (2016)
 \bottomrule
 \end{tabular}
 \end{table}
+
+\subsection{Correcting PageRank}
+The two problems above, self-citations and age, also affect PageRank. We made two corrections.
+
+First, we ran PageRank on the 9,909 \textbf{non-self} edges. Only 7 of the top 100 papers stay in the top 100. The new
+top papers are cited by other groups. Examples are a review of Himalayan--Karakoram glaciers (Roorkee, 331 citations
+in the world) and studies of rainfall and drought over India (KGP). Second, we removed the \textbf{age bias} with the
+rescaled PageRank of Mariani, Medo and Zhang. Each paper's score becomes a $z$-score among the papers of the same
+year: $R_i = (p_i - \mu_{y(i)})/\sigma_{y(i)}$. The test of a fair ranking is simple. Every year should have about 1\%
+of its papers in the overall top 1\%. Fig.~\ref{fig:agebias} shows the result. With plain PageRank, 6.5\% of the 2016
+papers are in the top 1\%, but no paper from 2024 or 2025. The coefficient of variation of these shares falls from
+\textbf{1.44} (PageRank) to 0.87 (no self-citations) and to \textbf{0.20} (rescaled). In the rescaled top 10, papers
+from 2023--2025 appear next to older ones. These are the papers that started strongly for their age.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.62\linewidth]{pagerank_age_bias.png}
+\caption{Share of each year's papers in the top 1\% of three rankings (2016--2025 papers).}
+\label{fig:agebias}
+\end{figure}
 
 \subsection{Citation flow with other Indian institutes}
 The network above stays inside our two IITs. To see their place in Indian research, we also count citations to and
@@ -557,6 +680,12 @@ and 254 faculty have no faculty co-author. The largest component has 79\% of all
 The two IITs make \textbf{two separate clusters}, and only \textbf{77} edges connect them. This is natural, because the
 two campuses are far apart and most work happens inside one campus.
 
+The faculty network is only a small part of all co-authorship. A faculty member has a median of 25 distinct
+co-authors. Of all the author pairs in \texttt{authorship\_network.csv} with a faculty member, 52\% are with
+students and staff of the same IIT, 21\% with other Indian institutes, 17\% with foreign institutes, and only
+\textbf{7\%} with another faculty member of our two IITs. Thus the faculty network shows the links \emph{between}
+research groups, and the students fill the groups.
+
 \begin{figure}[!t]
 \centering
 \includegraphics[width=0.5\linewidth]{faculty_network.png}
@@ -584,6 +713,12 @@ Chandra Das (0.031) at KGP. Pradip K.\ Maji shows the difference between the two
 co-authors, half as many as the top people by degree, but his co-authors are in different groups. Polymer and process
 engineering is used by chemists, materials scientists and engineers, so it makes sense that he connects them.
 
+\textbf{Do central faculty have more impact?} Degree and h-index are strongly correlated (Spearman $\rho = 0.70$;
+betweenness 0.67). But central faculty also write more papers, and more papers give a higher h-index. If we hold the
+number of papers fixed (partial rank correlation), $\rho$ falls to \textbf{0.15} for degree and 0.08 for betweenness.
+Thus most of the link is productivity. Working with many colleagues helps the h-index only a little beyond the extra
+papers.
+
 \subsection{Communities}
 A \textbf{community} is a group of nodes with many edges inside the group and few edges to other groups. We use the
 \textbf{Louvain} algorithm, which finds the groups with the highest \textbf{modularity}.
@@ -598,6 +733,26 @@ the members are from one IIT. This again shows that collaboration stays inside e
 \textbf{interdisciplinary}. In a typical community, the largest department has only about 46\% of the members. For
 example, the largest community has 139 faculty, almost all from Roorkee. Biosciences is its largest department, but its
 members come from 20 departments. The result is stable. Over 10 random seeds, the mean Adjusted Rand Index is 0.84.
+Fig.~\ref{fig:comm} shows the eight largest communities.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\linewidth]{faculty_communities.png}
+\caption{Collaboration clusters: the eight largest Louvain communities in the largest component.}
+\label{fig:comm}
+\end{figure}
+
+\textbf{Communities and departments.} How much do the communities follow the departments? The normalised mutual
+information between the two labels is \textbf{0.57}, half-way between ``unrelated'' (0) and ``the same'' (1). 49\% of
+the edges join two faculty of the same department, and the department assortativity is 0.47. For the institute it is
+0.94. Thus the campus decides almost everything, and the department about half.
+
+\textbf{Louvain or Leiden?} The brief allows both. Louvain can return a community that is not connected inside, and
+Leiden fixes this. We ran Leiden (seed 42) and compared. At resolution 1, Leiden finds 25 communities with 5 or more
+faculty and $Q = 0.786$, against 26 and $Q = 0.785$ for Louvain, and the two partitions agree well (ARI 0.75). No
+community of either method is disconnected. With a resolution sweep (0.25 to 4), the number of communities with 5 or
+more faculty goes from 8 to 64, and the large communities split into smaller groups. The structure is
+\textbf{hierarchical}: there are groups inside groups.
 
 \subsection{Comparison with random networks}
 As we know from our lectures already, the \textbf{clustering coefficient} is the probability that two co-authors of a
@@ -607,7 +762,8 @@ model is an \textbf{Erd\H{o}s--R\'enyi} (ER) graph with the same number of edges
 \textbf{degree-preserving} rewiring that keeps the degree of every node.
 
 The real network has about \textbf{70 times} more clustering than the ER graph and 23 times more than the rewired
-graph. But its mean shortest path is almost the same as in the ER graph. This is the \textbf{small-world} property. The
+graph. But its mean shortest path is almost the same as in the ER graph. This is the \textbf{small-world} property.
+The small-world coefficient $\sigma = (C/C_{\text{ER}})/(L/L_{\text{ER}})$ is \textbf{72}, far above 1. The
 network has tight local groups, but the paths between people are still short. This makes sense for research groups. A
 new project often brings in a colleague of a colleague. The modularity is also much higher than in the two random
 models. Thus the communities above are real, and the algorithm did not create them. The positive assortativity (0.12)
@@ -629,6 +785,83 @@ Mean shortest path (giant comp.) & 5.34  & 5.48  & 4.28 \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\subsection{Core, hierarchy and rich club}
+The \textbf{k-core} is the largest group in which every member has at least $k$ co-authors inside the group. The
+deepest core is $k=6$ and has 23 faculty, all at KGP, mostly in materials science, metallurgy, rubber technology,
+physics and biosciences. This is the dense centre of Fig.~\ref{fig:comm}. The clustering coefficient falls with the
+degree as $C(k) \sim k^{-0.50}$ (Fig.~\ref{fig:rich}, left). Faculty with few co-authors sit in one tight group, and
+hubs join several groups that are not linked to each other. This is the signature of a hierarchical network from our
+lectures. The \textbf{rich-club coefficient} $\phi(k)$ is the density of links among faculty with more than $k$
+co-authors. Divided by its value in the rewired graphs, it rises from 1 to about \textbf{2} for $k \ge 18$
+(Fig.~\ref{fig:rich}, right). Thus the best-connected faculty work with each other about twice as often as their
+degrees alone explain.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\linewidth]{clustering_richclub.png}
+\caption{Left: clustering spectrum $C(k)$. Right: rich-club coefficient divided by its rewired value.}
+\label{fig:rich}
+\end{figure}
+
+%===========================================================
+\section{Dynamics of the Collaboration Network}\label{sec:dyn}
+%===========================================================
+Our course is about \emph{dynamical} processes. We look at three of them: how the network grew, how it breaks when
+people leave, and how something spreads on it.
+
+\subsection{Growth}
+We date each edge by the first paper of the pair and build the network at the end of each year
+(Fig.~\ref{fig:growth}). In 2016 there were 312 edges among 361 faculty, and the largest component had only 11\% of
+them. In 2017 it had 44\%, and in 2018 already 74\%. This is the emergence of a \textbf{giant component} from the
+lectures. It happened while the mean degree grew only from 1.7 to 2.4. Since then the largest component grew to 96\%, and the
+mean degree grew from 1.7 to 4.7. The edges grow faster than the nodes, $E \sim N^{1.90}$. This is
+\textbf{densification}, as Leskovec and others found for many real networks. The links between the two IITs grew from
+4 to 77.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.92\linewidth]{network_growth.png}
+\caption{Growth of the faculty network: largest component, mean degree, and densification ($E$ against $N$, log-log).}
+\label{fig:growth}
+\end{figure*}
+
+\subsection{Robustness}
+What happens when faculty leave or retire? We remove faculty step by step and measure the largest component
+(Fig.~\ref{fig:robust}). For \textbf{random} removal, the network is robust. We must remove 41\% of the faculty before
+the largest component halves. The mean-field theory from the lectures (Molloy--Reed, $\kappa = \langle k^2\rangle /
+\langle k\rangle = 9.1$) predicts a breakdown only at $f_c = 1 - 1/(\kappa-1) = 0.88$. For a \textbf{targeted attack}
+the network is fragile. Removing the faculty with the highest degree halves it after 14\%. Removing the faculty with
+the highest betweenness halves it after only \textbf{7\%}. At that point (102 faculty) the network falls into a
+Kharagpur part and a Roorkee part. This is the known weakness of heterogeneous networks: they survive random failure
+but not the loss of their hubs and bridges.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.62\linewidth]{robustness.png}
+\caption{Largest component as faculty are removed: random, by degree, by betweenness (both recomputed after each step).}
+\label{fig:robust}
+\end{figure}
+
+\subsection{Spreading}
+Finally, imagine that a new idea or method spreads along the co-author links, like an \textbf{SIR} epidemic. Each
+``infected'' faculty member passes it to each co-author with probability $T$, and then stops. This model is exactly
+\textbf{bond percolation} with probability $T$, so the outbreak started by a person is the cluster that contains this
+person when each edge is kept with probability $T$. We used 1,000 samples for each $T$.
+
+The mean-field threshold is $T_c = \langle k\rangle / (\langle k^2\rangle - \langle k\rangle) = 0.12$. Below it,
+outbreaks stay tiny. Above it, they grow fast (Fig.~\ref{fig:sir}, left). At $T=0.2$ an average start reaches 4\% of
+the faculty, and the best start reaches 20\%. Who is the best place to start? The \textbf{k-core} predicts it best
+(Spearman $\rho = 0.93$), better than the degree (0.89), the number of joint papers (0.81) and the betweenness
+(0.72). This repeats the result of Kitsak and others: the best spreaders are in the \emph{core}, not simply the people
+with the most links. Our top 20 spreaders are all at KGP, in the materials and chemistry core.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\linewidth]{sir_spreading.png}
+\caption{SIR spreading. Left: outbreak size against $T$. Right: expected outbreak against the k-core of the start.}
+\label{fig:sir}
+\end{figure}
 
 %===========================================================
 \section{Connections with Other Indian Institutes}\label{sec:india}
@@ -672,8 +905,13 @@ member lists all their papers in our dataset, so anyone can check a person's num
 To conclude, both IITs almost doubled their science and engineering output in ten years, and about two thirds of their
 ranked journal papers are in Q1. Their faculty h-index is about half of a career h-index, because we count only ten
 years of papers, and it grows by about one point each year. Environmental Science is high because much water and
-climate engineering is filed there. Citations are heavy-tailed, and since 2023 Indian research cites the IITs more than
-they cite it. Faculty work in tight, interdisciplinary groups inside each campus. Each step of this work is a script in
+climate engineering is filed there. Papers with more than 10 authors are only 2\% of the output, but 6 of KGP's ten
+most cited papers. Without them the typical numbers stay the same and only the top moves. Citations are heavy-tailed (lognormal-like rather than a clean power law), and new
+citations go preferentially to papers that are already cited. Most citations inside an institute are self-citations,
+so we also rank papers without them and correct PageRank for age. Since 2023 Indian research cites the IITs more than
+they cite it. Faculty work in tight, hierarchical groups inside each campus. The network is a small world that grew
+denser every year. It survives random loss of faculty, but the loss of about 100 bridging faculty would split the two
+campuses, and ideas spread best from its core. Each step of this work is a script in
 our repository, so anyone can repeat it.
 
 \end{document}

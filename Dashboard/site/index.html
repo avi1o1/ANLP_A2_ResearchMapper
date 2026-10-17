@@ -155,11 +155,16 @@ h3 { font-size: 21px; font-weight: 600; letter-spacing: -0.02em; }
 section:not(.alt) .card { background: var(--band); }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 8px; }
-.grid3 h4, .subfields h4 { font: 600 13px var(--font-text); color: var(--fg2); margin: 14px 0 4px; text-transform: none; }
+.grid3 h4, .subfields h4, h4.sub { font: 600 13px var(--font-text); color: var(--fg2); margin: 14px 0 4px; text-transform: none; }
+table.mini { font-size: 13.5px; margin-top: 4px; }
+table.mini th { cursor: default; }
+table.mini td, table.mini th { padding: 8px 8px; white-space: normal; }
+table.mini td.n, table.mini th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .strip.two { grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 14px 0 6px; }
 .strip.two .stat { padding: 14px 16px; } .strip.two .stat .big { font-size: 26px; }
 .subfields { margin-top: 10px; }
 .subfields .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.bars { list-style: none; margin: 0; padding: 0; }
 .bars li { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; padding: 6px 0; font-size: 14px; border-top: 1px solid var(--hair); }
 .bars li:first-child { border-top: 0; }
 .bars li .bar { grid-column: 1 / -1; height: 4px; border-radius: 2px; background: var(--hair); overflow: hidden; }
@@ -197,6 +202,11 @@ section.alt .facpapers { background: var(--bg); }
 .kpi .row .who { font-size: 13px; color: var(--fg2); white-space: nowrap; }
 .kpi .val { font-family: var(--font-display); font-size: clamp(26px, 3vw, 36px); font-weight: 600; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
 .kpi .row[hidden] { display: none; }
+section.alt .kpi { background: var(--card); }
+.kpis.tight { margin-top: 0; margin-bottom: 20px; }
+.vs li .bar { display: flex; flex-direction: column; gap: 3px; height: auto; background: none; }
+.vs li .bar span { height: 4px; border-radius: 2px; }
+.vs li .bar span.o { background: var(--muted-node); }
 
 /* lists */
 .rank { list-style: none; margin: 0; padding: 0; counter-reset: r; }
@@ -361,13 +371,13 @@ footer p { margin: 4px 0; }
   <div>
     <p class="navh">Data analysis</p>
     <div class="menu">
-      <a href="#overview">Overview</a><a href="#output">Output</a><a href="#quality">Quality</a><a href="#people">People</a><a href="#papers">Most cited papers</a>
+      <a href="#overview">Overview</a><a href="#output">Output</a><a href="#quality">Quality</a><a href="#people">People</a><a href="#papers">Most cited papers</a><a href="#teams">Big-team papers</a>
     </div>
   </div>
   <div>
     <p class="navh">Network analysis</p>
     <div class="menu">
-      <a href="#citations">Citation network</a><a href="#flow">Indian links</a><a href="#collaboration">Collaboration</a><a href="#partners">Partners</a>
+      <a href="#citations">Citation network</a><a href="#flow">Indian links</a><a href="#collaboration">Collaboration</a><a href="#dynamics">Dynamics</a><a href="#partners">Partners</a>
     </div>
   </div>
   <div class="foot">
@@ -561,8 +571,52 @@ footer p { margin: 4px 0; }
   </div>
 </section>
 
+<!-- ================= BIG TEAMS ================= -->
+<section id="teams" class="alt">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Big-team papers</p>
+      <h2>2% of the papers, a big share of the top.</h2>
+      <p class="lede" id="teamsLede"></p>
+    </div>
+    <div class="kpis tight" id="teamKpis"></div>
+    <div class="card rv">
+      <h3>What changes without them</h3>
+      <p class="cap">Each headline number on all papers, and again with the papers of more than 10 authors left out.</p>
+      <div id="teamSens"></div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card rv">
+        <h3>Cited more than their year-mates</h3>
+        <p class="cap">Median citations of big-team papers divided by the median of the institute's other papers from the same year. Above 1 = a citation premium.</p>
+        <div class="chart" id="chTeamPrem"></div>
+        <p class="note" id="teamPremNote"></p>
+      </div>
+      <div class="card rv">
+        <h3>What they look like</h3>
+        <p class="cap">Big-team papers (coloured) against the institute's other papers (grey).</p>
+        <div id="teamProfile"></div>
+        <h4 class="sub">Team size</h4>
+        <div id="teamBands"></div>
+      </div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card rv">
+        <h3>Where they come from</h3>
+        <p class="cap">Departments of the faculty on these papers (bar = share of the institute's big-team papers), research fields, and the venues that publish most of them.</p>
+        <div id="teamWhere"></div>
+      </div>
+      <div class="card rv">
+        <h3>Faculty whose h-index depends most on them</h3>
+        <p class="cap">h-index over 2016–2026 with and without the papers of more than 10 authors.</p>
+        <div id="teamFac"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= CITATIONS ================= -->
-<section id="citations" class="alt">
+<section id="citations">
   <div class="wrap">
     <div class="head rv">
       <p class="eyebrow">Citation network</p>
@@ -600,11 +654,51 @@ footer p { margin: 4px 0; }
         <p class="note" id="ageNote"></p>
       </div>
     </div>
+    <div class="head rv" style="margin-top:40px">
+      <h2 style="font-size:24px">Reading the citation network with care.</h2>
+      <p class="lede">Most citations inside an institute come from the same authors, and PageRank favours old papers. Both can be measured and corrected.</p>
+    </div>
+    <div class="strip rv" id="selfStrip"></div>
+    <div class="grid2">
+      <div class="card rv">
+        <h3>Most internal citations are self-citations</h3>
+        <p class="cap">Share of citations between a paper and an earlier paper of the same institute that share an author, by year of the citing paper.</p>
+        <div class="chart" id="chSelf"></div>
+      </div>
+      <div class="card rv">
+        <h3>Rankings without self-citations and age bias</h3>
+        <p class="cap">Both IITs together. "Age-rescaled" compares each paper's PageRank with papers of the same year (Mariani et al.), so recent papers can rank.</p>
+        <div class="tabs" role="tablist" aria-label="Ranking" data-views="prv">
+          <button type="button" role="tab" data-v="ns" aria-selected="true">No self-citations</button>
+          <button type="button" role="tab" data-v="age" aria-selected="false">Age-rescaled</button>
+          <button type="button" role="tab" data-v="bias" aria-selected="false">Bias check</button>
+        </div>
+        <div data-view="prv:ns"><div id="prvNs"></div></div>
+        <div data-view="prv:age" hidden><div id="prvAge"></div></div>
+        <div data-view="prv:bias" hidden>
+          <p class="cap">Share of each year's papers in the overall top 1%. A fair ranking gives about 1% for every year.</p>
+          <div class="chart short" id="chAge"></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card rv">
+        <h3>Cited papers attract more citations</h3>
+        <p class="cap">Preferential attachment, measured: A(k), the mean number of new citations in a year for a paper that already had k citations (log scales). Internal and Indian citations, 2017–2025.</p>
+        <div class="chart" id="chPA"></div>
+        <p class="note" id="paNote"></p>
+      </div>
+      <div class="card rv">
+        <h3>Heavy tail: power law or lognormal?</h3>
+        <p class="cap">Maximum-likelihood fits of the tail above x<sub>min</sub> (Clauset, Shalizi and Newman). R &lt; 0 with p &lt; 0.05 means the lognormal fits better.</p>
+        <div id="fitTable"></div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ================= FLOW ================= -->
-<section id="flow">
+<section id="flow" class="alt">
   <div class="wrap">
     <div class="head rv">
       <p class="eyebrow">Indian links</p>
@@ -637,7 +731,7 @@ footer p { margin: 4px 0; }
 </section>
 
 <!-- ================= COLLABORATION ================= -->
-<section id="collaboration" class="alt">
+<section id="collaboration">
   <div class="wrap">
     <div class="head rv">
       <p class="eyebrow">Collaboration network</p>
@@ -682,6 +776,65 @@ footer p { margin: 4px 0; }
   </div>
 </section>
 
+<!-- ================= DYNAMICS ================= -->
+<section id="dynamics" class="alt">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Network dynamics</p>
+      <h2>How the network grew, where it breaks, how ideas spread.</h2>
+      <p class="lede">The faculty network of both IITs together, studied as a dynamical system: its growth year by year, its robustness when faculty leave, and SIR spreading along co-author ties.</p>
+    </div>
+    <div class="strip rv" id="dynStrip"></div>
+    <div class="grid2">
+      <div class="card rv">
+        <h3>Growth, 2016–2026</h3>
+        <p class="cap">The network at the end of each year, with each tie dated by the pair's first joint paper.</p>
+        <div class="seg" id="growSeg" role="group" aria-label="Growth measure" style="margin:8px 0 4px">
+          <span class="thumb"></span>
+          <button type="button" data-g="largest_component_share" aria-pressed="true">Largest component</button>
+          <button type="button" data-g="mean_degree" aria-pressed="false">Mean degree</button>
+          <button type="button" data-g="kharagpur_roorkee_ties" aria-pressed="false">KGP–Roorkee ties</button>
+        </div>
+        <div class="chart" id="chGrowth"></div>
+        <p class="note" id="growNote"></p>
+      </div>
+      <div class="card rv">
+        <h3>Robustness when faculty leave</h3>
+        <p class="cap">Share of all faculty in the largest connected group as faculty are removed: at random, or the most connected first (degree), or the biggest bridges first (betweenness), re-ranked after every step.</p>
+        <div class="chart" id="chRobust"></div>
+        <p class="note" id="robustNote"></p>
+      </div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card rv">
+        <h3>SIR spreading</h3>
+        <p class="cap">An idea passes along each co-author tie with probability T, then the carrier stops (SIR). This equals bond percolation, so outbreaks are exact cluster sizes, averaged over 300 samples.</p>
+        <div class="chart" id="chSIR"></div>
+      </div>
+      <div class="card rv">
+        <h3>Who spreads best</h3>
+        <p class="cap">How well each centrality predicts the outbreak a faculty member starts at T = 0.2 (Spearman ρ). The k-core wins, as Kitsak et al. found.</p>
+        <div id="spreadRank"></div>
+        <h4 class="sub">Top spreaders</h4>
+        <div id="topSpread"></div>
+      </div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card rv">
+        <h3>Checks on the communities</h3>
+        <p class="cap">Do communities follow departments, and does Leiden agree with Louvain?</p>
+        <div id="commChecks"></div>
+      </div>
+      <div class="card rv">
+        <h3>Who faculty write with</h3>
+        <p class="cap">All co-author pairs that include one of our faculty. The faculty network above is only the faculty–faculty part.</p>
+        <div id="tieTypes"></div>
+        <p class="note" id="centNote"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= PARTNERS ================= -->
 <section id="partners">
   <div class="wrap">
@@ -716,8 +869,8 @@ footer p { margin: 4px 0; }
       <div><h3>Papers</h3><p>Scraped from Crossref, Europe PMC, DOAJ, INSPIRE, ORCID, DBLP and Semantic Scholar, then checked against OpenAlex. A paper counts only when the IIT is named in an author's affiliation on the paper itself.</p></div>
       <div><h3>Faculty</h3><p>Papers are linked to faculty from the institutes' own lists by ORCID, then by name and department. Unclear names are left unlinked rather than guessed; about 83% of papers have a faculty author.</p></div>
       <div><h3>Journals and conferences</h3><p>Journal quartiles come from Scimago for the year of publication. Conference ranks come from the CORE portal edition in force that year.</p></div>
-      <div><h3>Networks</h3><p>Citation links and Indian partners come from OpenAlex. Influence uses PageRank (damping 0.85); communities use Louvain over ten random seeds.</p></div>
-      <div><h3>Read with care</h3><p>h-index and i10 here cover 2016–2026 papers only, so they are about half a career value. IF is OpenAlex's 2-year mean citedness, which runs higher than Clarivate's JIF. Citation counts are as of October 2026. PageRank favours older papers.</p></div>
+      <div><h3>Networks</h3><p>Citation links and Indian partners come from OpenAlex. Influence uses PageRank (damping 0.85), also without self-citations and rescaled by age; communities use Louvain over ten random seeds, checked with Leiden. Robustness and SIR spreading are simulated on the faculty network.</p></div>
+      <div><h3>Read with care</h3><p>h-index and i10 here cover 2016–2026 papers only, so they are about half a career value. IF is OpenAlex's 2-year mean citedness, which runs higher than Clarivate's JIF. Citation counts are as of October 2026. PageRank favours older papers, and 88% of citations inside an institute are self-citations.</p></div>
       <div><h3>Scope</h3><p>Science and engineering only: papers whose OpenAlex topic is in the Physical or Life Sciences. Faculty of humanities, management, law, education and medical units are not included.</p></div>
     </div>
   </div>
@@ -751,7 +904,7 @@ footer p { margin: 4px 0; }
     .replace("SRM Institute of Science and Technology", "SRM IST").replace("S.N. Bose National Centre for Basic Sciences", "S.N. Bose Centre")
     .replace("Indian Statistical Institute", "ISI").replace("National Institute of Hydrology", "Natl. Inst. of Hydrology");
   const state = { inst: "both", type: "total", size: "pr", dir: "in", color: "inst", sortK: "h", sortDir: -1, page: 0,
-    ifTh: "5", hy: "mean_h", area: "Engineering", facSel: null, tabs: {} };
+    ifTh: "5", hy: "mean_h", g: "largest_component_share", area: "Engineering", facSel: null, tabs: {} };
   try { const s = localStorage.getItem("irm-inst"); if (s) state.inst = s; } catch (e) {}
   const shown = () => state.inst === "both" ? INSTS : [state.inst];
   const col = i => css(i === KGP ? "--kgp" : "--rkg");
@@ -813,6 +966,7 @@ footer p { margin: 4px 0; }
   seg("colorSeg", "color", v => { state.color = v; draw("chFacNet"); legendFac(); });
   seg("ifSeg", "th", v => { state.ifTh = v; draw("chIF"); renderIfStrip(); });
   seg("hySeg", "hy", v => { state.hy = v; draw("chHYear"); });
+  seg("growSeg", "g", v => { state.g = v; draw("chGrowth"); });
 
   /* ---------------- ECharts helpers ---------------- */
   const charts = {};
@@ -1072,6 +1226,17 @@ footer p { margin: 4px 0; }
       <p class="cap">The citation source changes little: the same papers give about the same h with OpenAlex counts. The gap comes from the time window. Papers before 2016 are not counted, and a ten-year window roughly halves the h-index (our value is ${shown().map(i => Math.round(D.h_check[i].median_ratio_ours_to_career * 100) + "%").join(" and ")} of the career value at the median).</p></div>`;
   }
 
+  /* ---------------- 5c. big-team papers ---------------- */
+  builders.chTeamPrem = () => Object.assign(base(), {
+    tooltip: Object.assign(base().tooltip, { valueFormatter: v => v.toFixed(2) + "× the median of other papers" }),
+    legend: legendTop(), grid: { left: 8, right: 16, top: 32, bottom: 8, containLabel: true },
+    xAxis: axisX({ type: "category", data: D.teams[KGP].prem.years }),
+    yAxis: axisY({ type: "value", min: 0, axisLabel: { color: css("--fg2"), formatter: "{value}×" } }),
+    series: shown().map((i, n) => ({ name: SHORT[i], type: "bar", barMaxWidth: 18, barGap: "12%", itemStyle: { color: col(i), borderRadius: [4, 4, 0, 0] },
+      data: D.teams[i].prem.ratio, markLine: n ? undefined : { silent: true, symbol: "none", label: { formatter: "no premium", color: css("--fg2"), position: "insideEndTop" },
+        lineStyle: { color: css("--fg2"), type: [4, 4], width: 1 }, data: [{ yAxis: 1 }] } }))
+  });
+
   /* ---------------- 6. citation network ---------------- */
   const cg = D.citation_graph, hubSet = new Set(D.citation_graph_hubs);
   const cgIdx = new Map(cg.nodes.map((n, j) => [n.id, j]));
@@ -1221,6 +1386,84 @@ footer p { margin: 4px 0; }
         data: pick.map(p => +rows.find(r => r.metric === p)[k]) })) });
   };
 
+  /* ---------------- 9b. beyond the brief: self-citation, corrected PageRank, dynamics ---------------- */
+  const CL = "Cluster (both IITs)", S = k => D.structure[k];
+  const VAR = { all: "PageRank (all citations)", ns: "PageRank (no self-citations)", age: "age-rescaled PageRank (no self-citations)" };
+  const lineS = (name, data, c, extra) => Object.assign({ name, type: "line", symbol: "circle", symbolSize: 6, data,
+    lineStyle: { width: 2, color: c }, itemStyle: { color: c } }, extra);
+  builders.chSelf = () => Object.assign(base(), {
+    tooltip: Object.assign(base().tooltip, { valueFormatter: v => v == null ? "–" : v.toFixed(1) + "% self-citations" }),
+    legend: legendTop(), grid: { left: 8, right: 16, top: 32, bottom: 8, containLabel: true }, xAxis: yearAxis(),
+    yAxis: axisY({ type: "value", min: 70, max: 100, axisLabel: { color: css("--fg2"), formatter: "{value}%" } }),
+    series: shown().map(i => lineS(SHORT[i], D.selfcite_yearly[i].map(v => v == null ? null : +(v * 100).toFixed(2)), col(i)))
+  });
+  builders.chAge = () => {
+    const ys = D.years.slice(0, -1), sets = [[VAR.all, "PageRank", css("--fg3"), [4, 4]], [VAR.ns, "No self-citations", css("--c5"), "solid"],
+      [VAR.age, "Age-rescaled", css("--c1"), "solid"]];
+    return Object.assign(base(), {
+      tooltip: Object.assign(base().tooltip, { valueFormatter: v => v.toFixed(2) + "% of the year's papers" }),
+      legend: { top: 0, left: 0, icon: "circle", itemWidth: 8, textStyle: { color: css("--fg2") } },
+      grid: { left: 8, right: 16, top: 40, bottom: 8, containLabel: true }, xAxis: axisX({ type: "category", data: ys }),
+      yAxis: axisY({ type: "value", axisLabel: { color: css("--fg2"), formatter: "{value}%" } }),
+      series: sets.map(([key, name, c, type], n) => { const r = D.age_bias.find(x => x.ranking === key);
+        return lineS(`${name} (CV ${r.cv.toFixed(2)})`, r.shares, c, Object.assign({ lineStyle: { width: 2, color: c, type } },
+          n === 2 ? { markLine: { silent: true, symbol: "none", label: { formatter: "fair: 1%", color: css("--fg2") },
+            lineStyle: { color: css("--fg2"), type: "solid", width: 1 }, data: [{ yAxis: 1 }] } } : {})); })
+    });
+  };
+  builders.chPA = () => {
+    const P = D.pa, a = P["fit A(k) = c (k + k0)^alpha: alpha"], k0 = P["k0 (initial attractiveness)"], c = P.c, kmax = P.k[P.k.length - 1];
+    const xs = []; for (let k = 0; k <= kmax; k += 0.5) xs.push(k);
+    const lin = P.A[1] / (1 + k0);
+    return Object.assign(base(), {
+      tooltip: Object.assign(base().tooltip, { trigger: "item", formatter: p => p.seriesIndex === 0
+        ? `k = ${p.data.k} earlier citations<br><b>${p.data.value[1].toFixed(2)}</b> new citations a year · ${fmt(p.data.n)} paper-years` : esc(p.seriesName) }),
+      legend: { top: 0, left: 0, icon: "circle", itemWidth: 8, textStyle: { color: css("--fg2") } },
+      grid: { left: 8, right: 16, top: 40, bottom: 30, containLabel: true },
+      xAxis: axisX({ type: "log", min: 1, max: 50, name: "k + 1", nameLocation: "middle", nameGap: 26, nameTextStyle: { color: css("--fg2") } }),
+      yAxis: axisY({ type: "log", min: 0.5, max: 10, axisLabel: { color: css("--fg2"), formatter: v => String(+v.toPrecision(2)) } }),
+      series: [
+        { name: "measured", type: "scatter", symbolSize: d => 6 + 1.2 * Math.log(1 + d[2]), itemStyle: { color: css("--kgp"), borderColor: css("--card"), borderWidth: 1 },
+          data: P.k.map((k, j) => ({ value: [k + 1, P.A[j], P.n[j]], k, n: P.n[j] })) },
+        lineS(`fit: α = ${a.toFixed(2)}, k₀ = ${k0.toFixed(1)}`, xs.map(k => [k + 1, c * Math.pow(k + k0, a)]), css("--fg"), { symbol: "none", tooltip: { show: false } }),
+        lineS("linear (α = 1)", xs.map(k => [k + 1, lin * (k + k0)]), css("--fg3"), { symbol: "none", lineStyle: { width: 1.5, type: [4, 4], color: css("--fg3") }, tooltip: { show: false } })]
+    });
+  };
+  const GROW = { largest_component_share: "Largest component", mean_degree: "Mean degree", kharagpur_roorkee_ties: "KGP–Roorkee ties" };
+  builders.chGrowth = () => {
+    const g = state.g, pctg = g === "largest_component_share";
+    return Object.assign(base(), {
+      tooltip: Object.assign(base().tooltip, { valueFormatter: v => pctg ? v.toFixed(1) + "% of faculty with a tie" : g === "mean_degree" ? v.toFixed(2) + " faculty co-authors" : fmt(v) + " ties" }),
+      grid: { left: 8, right: 16, top: 16, bottom: 8, containLabel: true }, xAxis: yearAxis(),
+      yAxis: axisY({ type: "value", min: 0, max: pctg ? 100 : null, axisLabel: { color: css("--fg2"), formatter: pctg ? "{value}%" : "{value}" } }),
+      series: [lineS(GROW[g], D.growth.map(r => pctg ? +(r[g] * 100).toFixed(1) : r[g]), css("--kgp"))]
+    });
+  };
+  builders.chRobust = () => {
+    const sets = [["random", css("--fg3"), [4, 4]], ["degree (adaptive)", css("--c5"), "solid"], ["betweenness (adaptive)", css("--c6"), "solid"]];
+    return Object.assign(base(), {
+      tooltip: Object.assign(base().tooltip, { formatter: ps => `${ps[0].value[0]}% of faculty removed<br>` + ps.map(p => `${p.marker}${p.seriesName}&nbsp;&nbsp;<b>${p.value[1].toFixed(1)}%</b>`).join("<br>") }),
+      legend: { top: 0, right: 0, icon: "circle", itemWidth: 8, textStyle: { color: css("--fg2") } },
+      grid: { left: 8, right: 16, top: 32, bottom: 30, containLabel: true },
+      xAxis: axisX({ type: "value", max: 50, name: "% of faculty removed", nameLocation: "middle", nameGap: 26, nameTextStyle: { color: css("--fg2") } }),
+      yAxis: axisY({ type: "value", min: 0, max: 80, axisLabel: { color: css("--fg2"), formatter: "{value}%" } }),
+      series: sets.map(([k, c, type]) => lineS(k, D.robust.map(r => [+(r.fraction_removed * 100).toFixed(1), +(r[k] * 100).toFixed(2)]), c, { symbol: "none", lineStyle: { width: 2, color: c, type } }))
+    });
+  };
+  builders.chSIR = () => {
+    const tc = S("mean-field epidemic threshold T_c = <k>/(<k^2>-<k>)");
+    return Object.assign(base(), {
+      tooltip: Object.assign(base().tooltip, { formatter: ps => `T = ${ps[0].value[0]}<br>` + ps.map(p => `${p.marker}${p.seriesName}&nbsp;&nbsp;<b>${p.value[1].toFixed(1)}%</b>`).join("<br>") }),
+      legend: { top: 0, right: 0, icon: "circle", itemWidth: 8, textStyle: { color: css("--fg2") } },
+      grid: { left: 8, right: 16, top: 32, bottom: 30, containLabel: true },
+      xAxis: axisX({ type: "value", max: 1, name: "T, transmission probability per tie", nameLocation: "middle", nameGap: 26, nameTextStyle: { color: css("--fg2") } }),
+      yAxis: axisY({ type: "value", min: 0, max: 100, axisLabel: { color: css("--fg2"), formatter: "{value}%" } }),
+      series: [lineS("from the best spreader", D.sir.map(r => [r.T, +(r.largest_outbreak_share * 100).toFixed(2)]), css("--c6")),
+        lineS("average start", D.sir.map(r => [r.T, +(r.mean_outbreak_share * 100).toFixed(2)]), css("--kgp"), { markLine: { silent: true, symbol: "none",
+          label: { formatter: `mean-field Tc = ${tc.toFixed(2)}`, color: css("--fg2"), position: "insideEndTop" }, lineStyle: { color: css("--fg2"), type: [4, 4], width: 1 }, data: [{ xAxis: +tc.toFixed(3) }] } })]
+    });
+  };
+
   /* ---------------- 10. partners ---------------- */
   builders.chPartners = () => {
     const insts = shown(), rows = [];
@@ -1272,6 +1515,38 @@ footer p { margin: 4px 0; }
     if (D.top_citing) instTabs("topCiting", i => rankList(D.top_citing[i].map((p, n) => `<li><span class="i">${n + 1}</span><span class="t">${p.doi ? `<a href="${esc(p.doi)}" target="_blank" rel="noopener"><b>${esc(p.title)}</b></a>` : `<b>${esc(p.title)}</b>`}
       <span class="m">${[p.journal, p.year, p.insts.split("; ").slice(0, 2).map(instName).join(", ") + (p.insts.split("; ").length > 2 ? " and others" : ""), `cites ${p.n} ${SHORT[i]} paper${p.n > 1 ? "s" : ""}`].filter(Boolean).map(esc).join(" · ")}</span></span>
       <span class="v">${fmt(p.cites)}<small>citations</small></span></li>`), "clamp"));
+    // big-team papers
+    const T = D.teams, sv = (i, m) => T[i].sens.find(x => x.m === m);
+    document.getElementById("teamsLede").textContent = `Papers with more than 10 authors are ${pct(T[KGP].share, 1)} of Kharagpur's papers and ${pct(T[RKG].share, 1)} of Roorkee's, ` +
+      `but ${sv(KGP, "large papers among the 10 most cited").all} of Kharagpur's 10 most cited papers. Most are international, Q1 journal work in which our faculty are one group among many.`;
+    const tiles = [["Papers with more than 10 authors", i => `${fmt(T[i].papers)}<small style="font-size:14px;color:var(--fg2);margin-left:6px">${pct(T[i].share, 1)}</small>`],
+      ["Share of all citations", i => pct(T[i].cite_share, 1)],
+      ["Of the 10 most cited papers", i => `${sv(i, "large papers among the 10 most cited").all}<small style="font-size:14px;color:var(--fg2);margin-left:6px">of 10</small>`],
+      [`With a co-author abroad (other papers: ${shown().map(i => pct(T[i].profile["foreign co-author|other"][0])).join(" / ")})`, i => pct(T[i].profile["foreign co-author|large"][0])]];
+    document.getElementById("teamKpis").innerHTML = tiles.map(([lbl, f]) => `<div class="kpi rv"><div class="lbl">${lbl}</div>` +
+      INSTS.map(i => `<div class="row" ${shown().includes(i) ? "" : "hidden"}><span class="who"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}</span><span class="val">${f(i)}</span></div>`).join("") + `</div>`).join("");
+    const SENS = [["citations", "Citations", fmt], ["citations per paper", "Citations per paper", v => v.toFixed(1)], ["papers with >= 100 citations", "Papers with 100+ citations", fmt],
+      ["institute h-index", "Institute h-index", String], ["median faculty h-index", "Median faculty h-index", String], ["max faculty h-index", "Highest faculty h-index", String],
+      ["Q1 share of ranked journal papers", "Q1 share of journal papers", v => pct(v, 1)], ["large papers among the 10 most cited", "Big-team papers in the top 10", String]];
+    const chg = r => r.pct == null || r.pct === 0 ? `<span style="color:var(--fg3)">no change</span>` : `${r.pct > 0 ? "+" : "−"}${Math.abs(r.pct).toFixed(1)}%`;
+    document.getElementById("teamSens").innerHTML = `<div class="tablewrap"><table class="mini"><thead><tr><th></th>${shown().map(i => `<th class="n" colspan="2"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}: all → without</th>`).join("")}</tr></thead><tbody>` +
+      SENS.map(([m, lbl, f]) => `<tr><td>${lbl}</td>${shown().map(i => { const r = sv(i, m); return `<td class="n">${f(r.all)} → <b>${f(r.wo)}</b></td><td class="n" style="color:var(--fg2)">${chg(r)}</td>`; }).join("")}</tr>`).join("") +
+      `<tr><td>Faculty whose h-index drops</td>${shown().map(i => { const r = sv(i, "faculty whose h-index drops"); return `<td class="n"><b>${r.wo}</b></td><td class="n" style="color:var(--fg2)">${r.pct.toFixed(1)}% of faculty</td>`; }).join("")}</tr></tbody></table></div>` +
+      `<p class="note">The typical paper is unaffected: median citations per paper do not change, and the Q1 share falls by half a point. The top moves: the institute h-index, the 100+ citation club and the most-cited list. Kharagpur's median faculty h-index also drops by one point, because ${sv(KGP, "faculty whose h-index drops").wo} faculty there lose at least one point.</p>`;
+    document.getElementById("teamPremNote").textContent = `Median premium 2016–2024: ${T[KGP].prem.overall.toFixed(1)}× at Kharagpur, ${T[RKG].prem.overall.toFixed(2)}× at Roorkee. 2025–26 papers are too young to compare.`;
+    instTabs("teamWhere", i => `<h4 class="sub">Departments</h4>` + barList(T[i].dept.map(d => ({ name: d.name, share: d.share, n: d.n, of: d.of_dept })), i,
+        d => `${d.n} · ${pct(d.of, 1)} of dept.`) +
+      `<h4 class="sub">Research fields</h4>` + barList(T[i].field.map(f => ({ name: f.name, share: f.share, n: f.n })), i, f => `${f.n} · ${pct(f.share)}`) +
+      `<h4 class="sub">Top venues</h4>` + rankList(T[i].venues.map((v, n) => `<li><span class="i">${n + 1}</span><span class="t"><b>${esc(v.name)}</b>${v.rank ? `<span class="pill">${esc(v.rank)}</span>` : ""}</span><span class="v">${v.n}<small>papers</small></span></li>`)));
+    const PROF = [["quartile|Q1", "Journal papers in Q1"], ["type|journal", "Journal articles"], ["type|conference", "Conference papers"], ["type|preprint", "Preprints"]];
+    instTabs("teamProfile", i => `<ol class="bars vs">` + PROF.map(([k, lbl]) => { const [a, b] = T[i].profile[k] || [0, 0]; return `<li><span>${lbl}</span><span class="v">${pct(a)} vs ${pct(b)}</span>
+        <span class="bar"><span style="width:${(a * 100).toFixed(1)}%;background:${col(i)}"></span><span class="o" style="width:${(b * 100).toFixed(1)}%"></span></span></li>`; }).join("") +
+      (() => { const a = T[i].profile["foreign co-author|large"][0], b = T[i].profile["foreign co-author|other"][0]; return `<li><span>With a co-author abroad</span><span class="v">${pct(a)} vs ${pct(b)}</span>
+        <span class="bar"><span style="width:${(a * 100).toFixed(1)}%;background:${col(i)}"></span><span class="o" style="width:${(b * 100).toFixed(1)}%"></span></span></li>`; })() + `</ol>`);
+    instTabs("teamBands", i => `<div class="tablewrap"><table class="mini"><thead><tr><th>Authors</th><th class="n">Papers</th><th class="n">Median citations</th></tr></thead><tbody>` +
+      T[i].bands.map(b => `<tr><td>${b.band}</td><td class="n">${fmt(b.n)}</td><td class="n">${b.median ?? "–"}</td></tr>`).join("") + `</tbody></table></div>`);
+    instTabs("teamFac", i => rankList(T[i].faculty.map((f, n) => `<li><span class="i">${n + 1}</span><span class="t"><b>${esc(f.name)}</b><span class="m">${esc(f.dept)} · ${f.n} big-team paper${f.n > 1 ? "s" : ""}</span></span>
+      <span class="v">${f.h} → ${f.h_wo}<small>h-index</small></span></li>`)));
     // pagerank top
     const pr = D.pagerank_top[state.inst === "both" ? "Cluster (both IITs)" : state.inst];
     document.getElementById("prTop").innerHTML = rankList(pr.map((p, n) => `<li><span class="i">${n + 1}</span><span class="t"><b title="${esc(p.title)}">${esc(p.title)}</b><span class="m">${p.year} · ${p.indeg} citations from our papers · in-degree rank ${p.indeg_rank}</span></span><span class="v"></span></li>`), "clamp");
@@ -1289,6 +1564,47 @@ footer p { margin: 4px 0; }
     // communities
     document.getElementById("commList").innerHTML = D.communities.slice(0, 6).map((c, k) => `<li><span class="i"><span class="dot" style="background:var(--c${k + 1})"></span></span>
       <span class="t"><b>${esc(c.dept)}</b><span class="m"><b style="color:var(--fg);font-weight:600">${c.kgp >= c.rkg ? "Kharagpur" : "Roorkee"}</b> · ${c.kgp ? c.kgp + " Kharagpur" : ""}${c.kgp && c.rkg ? " · " : ""}${c.rkg ? c.rkg + " Roorkee" : ""} · hub: ${esc(c.hub)}</span></span><span class="v">${c.size}<small>faculty</small></span></li>`).join("");
+    // beyond the brief: self-citation and corrected rankings
+    const sc = D.selfcite[state.inst === "both" ? CL : state.inst];
+    document.getElementById("selfStrip").innerHTML = `
+      <div class="stat"><div class="big">${pct(sc.share, 1)}</div><div class="lbl">of internal citations are self-citations${state.inst === "both" ? "" : " (" + SHORT[state.inst] + ")"}</div></div>
+      <div class="stat"><div class="big">${fmt(sc.non_self)}<small>of ${fmt(sc.edges)}</small></div><div class="lbl">citations between different authors</div></div>
+      <div class="stat"><div class="big">${D.pr_agree[VAR.ns].overlap}<small>of 100</small></div><div class="lbl">PageRank top-100 papers that stay without self-citations</div></div>
+      <div class="stat"><div class="big">${D.pr_agree[VAR.all].cv.toFixed(2)}<small>→ ${D.pr_agree[VAR.age].cv.toFixed(2)}</small></div><div class="lbl">age bias of the top 1% (CV), PageRank → age-rescaled</div></div>`;
+    const prItem = (p, n) => `<li><span class="i">${n + 1}</span><span class="t"><a href="${esc(p.doi)}" target="_blank" rel="noopener"><b title="${esc(p.title)}">${esc(p.title)}</b></a>
+      <span class="m">${p.year} · ${esc(p.insts.replace(/IIT /g, "").replace(";", " & "))} · ${p.nonself} of ${p.indeg} internal citations from other authors</span></span><span class="v">${p.cites == null ? "–" : fmt(p.cites)}<small>citations</small></span></li>`;
+    document.getElementById("prvNs").innerHTML = rankList(D.pr_variants[VAR.ns].map(prItem), "clamp");
+    document.getElementById("prvAge").innerHTML = rankList(D.pr_variants[VAR.age].map(prItem), "clamp");
+    const pp = v => v < 0.001 ? "&lt; 0.001" : v.toFixed(3);
+    document.getElementById("fitTable").innerHTML = `<div class="tablewrap"><table class="mini"><thead><tr><th>Quantity</th><th class="n">α</th><th class="n">x<sub>min</sub></th><th class="n">tail</th><th class="n">R vs lognormal</th><th class="n">p</th></tr></thead><tbody>` +
+      D.fits.map(f => `<tr><td>${esc(f.quantity)}</td><td class="n">${(+f.alpha).toFixed(2)}</td><td class="n">${f.x_min}</td><td class="n">${fmt(f.papers_in_tail)}</td><td class="n">${(+f.R_vs_lognormal).toFixed(1)}</td><td class="n">${pp(+f.p_vs_lognormal)}</td></tr>`).join("") +
+      `</tbody></table></div><p class="note">Internal in-degree is clearly lognormal-like: two institutes can only cite a paper a few dozen times. For worldwide citations the power law and the lognormal cannot be told apart (p = ${(+D.fits[2].p_vs_lognormal).toFixed(2)}), and both beat an exponential: heavy-tailed, but not provably scale-free.</p>`;
+    document.getElementById("paNote").textContent = `A(k) ∝ (k + ${D.pa["k0 (initial attractiveness)"].toFixed(1)})^${D.pa["fit A(k) = c (k + k0)^alpha: alpha"].toFixed(2)} ± ${D.pa["alpha standard error"].toFixed(2)}: slightly sublinear preferential attachment. An uncited paper still gets ${D.pa.A[0].toFixed(2)} new citations a year (initial attractiveness).`;
+    // dynamics
+    const f50 = k => S(`f_50, ${k}: share removed until the largest component halves`), g0 = D.growth[0], gN = D.growth[D.growth.length - 1];
+    document.getElementById("dynStrip").innerHTML = `
+      <div class="stat"><div class="big">${S("small-world sigma = (C/C_ER) / (L/L_ER)").toFixed(0)}</div><div class="lbl">small-world σ (above 1 = small world)</div></div>
+      <div class="stat"><div class="big">E ∝ N<sup style="font-size:.5em">${S("densification exponent a, ties ~ faculty^a").toFixed(2)}</sup></div><div class="lbl">ties grow faster than people (densification)</div></div>
+      <div class="stat"><div class="big">${pct(f50("betweenness (adaptive)"))}<small>vs ${pct(f50("random"))}</small></div><div class="lbl">faculty removed to halve the network: bridges first vs at random</div></div>
+      <div class="stat"><div class="big">${S("mean-field epidemic threshold T_c = <k>/(<k^2>-<k>)").toFixed(2)}</div><div class="lbl">mean-field epidemic threshold T<sub>c</sub></div></div>`;
+    document.getElementById("growNote").textContent = `The largest component went from ${pct(g0.largest_component_share)} of connected faculty in 2016 to ${pct(D.growth[2].largest_component_share)} in 2018: a giant component emerging. Mean degree rose from ${g0.mean_degree.toFixed(1)} to ${gN.mean_degree.toFixed(1)}.`;
+    const rb = D.robust, bt = rb.map(r => r["betweenness (adaptive)"]);
+    let drop = 1; bt.forEach((v, j) => { if (j && bt[j - 1] - v > bt[drop - 1] - bt[drop]) drop = j; });
+    document.getElementById("robustNote").textContent = `Random loss barely matters, but removing the ${Math.round(rb[drop].fraction_removed * D.auth_summary["faculty (nodes)"])} biggest bridges (${pct(rb[drop].fraction_removed)} of faculty) splits Kharagpur from Roorkee. Hubs and bridges are the weak point of a heterogeneous network.`;
+    document.getElementById("spreadRank").innerHTML = `<ol class="bars">${D.spreader_rank.map(r => `<li><span>${esc(r.c)}</span><span class="v">ρ = ${r.rho.toFixed(2)}</span>
+      <span class="bar"><span style="width:${(r.rho * 100).toFixed(1)}%;background:var(--c1)"></span></span></li>`).join("")}</ol>`;
+    document.getElementById("topSpread").innerHTML = rankList(D.top_spreaders.map((p, n) => `<li><span class="i">${n + 1}</span><span class="t"><b>${esc(p.name)}</b><span class="m">${esc(p.dept)} · ${SHORT[p.inst]} · k-core ${p.core} · ${p.deg} faculty co-authors</span></span><span class="v">${pct(p.share, 1)}<small>reached</small></span></li>`));
+    const row = (a, r) => D.leiden.find(x => x.algorithm === a && x.resolution === r);
+    const fact = (label, v, w) => `<li><span>${label}</span><span class="v">${v}</span><span class="bar"><span style="width:${(w * 100).toFixed(1)}%;background:var(--c1)"></span></span></li>`;
+    const nmi = S("NMI(Louvain communities, departments)"), same = S("share of ties inside one department"), ia = S("institute assortativity");
+    document.getElementById("commChecks").innerHTML = `<ol class="bars">${fact("Communities vs departments (NMI, 0 to 1)", nmi.toFixed(2), nmi)}${fact("Ties inside one department", pct(same), same)}${fact("Institute assortativity (−1 to 1)", ia.toFixed(2), ia)}</ol>
+      <div class="tablewrap"><table class="mini"><thead><tr><th>Resolution</th><th class="n">Louvain, groups ≥ 5</th><th class="n">Leiden, groups ≥ 5</th><th class="n">Leiden Q</th><th class="n" title="Adjusted Rand index with the reported Louvain partition">ARI</th></tr></thead><tbody>` +
+      [0.25, 0.5, 1, 2, 4].map(r => `<tr><td>${r}</td><td class="n">${row("Louvain", r).communities_size_ge_5}</td><td class="n">${row("Leiden", r).communities_size_ge_5}</td><td class="n">${row("Leiden", r).modularity_Q_at_resolution_1.toFixed(3)}</td><td class="n">${row("Leiden", r).ari_vs_louvain_resolution_1.toFixed(2)}</td></tr>`).join("") +
+      `</tbody></table></div><p class="note">No community from either method is disconnected. Higher resolution splits groups into sub-groups: the structure is hierarchical (clustering falls with degree as k<sup>−${S("clustering spectrum exponent beta, C(k) ~ k^-beta").toFixed(2)}</sup>).</p>`;
+    document.getElementById("tieTypes").innerHTML = `<ol class="bars">${D.tie_types.map(t => `<li><span>${esc(t.type.charAt(0).toUpperCase() + t.type.slice(1))}</span><span class="v">${pct(t.share)}</span>
+      <span class="bar"><span style="width:${(t.share * 100).toFixed(1)}%;background:var(--c5)"></span></span></li>`).join("")}</ol>`;
+    const ci = (c, m) => D.cent_impact.find(x => x.centrality === c && x.impact === m);
+    document.getElementById("centNote").textContent = `Central faculty have a higher h-index (Spearman ρ = ${ci("degree", "h_index").spearman_rho.toFixed(2)} for degree), but mostly because they publish more: holding the paper count fixed, ρ falls to ${ci("degree", "h_index").partial_rho_given_papers.toFixed(2)}.`;
     renderFaculty(); renderDepts(); legendFac();
   }
 

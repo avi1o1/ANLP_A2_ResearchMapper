@@ -1,0 +1,4 @@
+﻿scope,citation_edges,self_citations,self_share,non_self_edges,papers_cited_at_least_once,papers_cited_at_least_once_non_self
+Cluster (both IITs),86090,76181,0.8849,9909,23297,5651
+IIT Kharagpur,47586,44138,0.9275,3448,13049,2258
+IIT Roorkee,35246,31755,0.901,3491,9846,2001

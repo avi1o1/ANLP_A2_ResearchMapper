@@ -1,0 +1,49 @@
+﻿institution,kind,label,large_papers,rank,share_large,share_other
+IIT Kharagpur,venue,Small,15,Q1,,
+IIT Kharagpur,venue,arXiv,14,,,
+IIT Kharagpur,venue,Scientific Reports,11,Q1,,
+IIT Kharagpur,venue,Advanced Functional Materials,11,Q1,,
+IIT Kharagpur,venue,ACS Applied Materials & Interfaces,10,Q1,,
+IIT Kharagpur,venue,Monthly Notices of the Royal Astronomical Society,10,Q1,,
+IIT Kharagpur,venue,Physical Review B,9,Q1,,
+IIT Kharagpur,venue,Physical Review C,9,Q1,,
+IIT Kharagpur,venue,Science of The Total Environment,7,Q1,,
+IIT Kharagpur,venue,Advanced Materials,6,Q1,,
+IIT Kharagpur,type,book,0,,0.0,0.0009
+IIT Kharagpur,type,book-chapter,8,,0.015,0.067
+IIT Kharagpur,type,conference,13,,0.0243,0.1496
+IIT Kharagpur,type,journal,480,,0.8989,0.7288
+IIT Kharagpur,type,other,4,,0.0075,0.0031
+IIT Kharagpur,type,preprint,28,,0.0524,0.0506
+IIT Kharagpur,type,report,1,,0.0019,0.0
+IIT Kharagpur,quartile,Q1,395,,0.8229,0.6243
+IIT Kharagpur,quartile,Q2,62,,0.1292,0.2625
+IIT Kharagpur,quartile,Q3,3,,0.0063,0.0592
+IIT Kharagpur,quartile,Q4,1,,0.0021,0.0067
+IIT Kharagpur,quartile,unranked,19,,0.0396,0.0473
+IIT Kharagpur,foreign co-author,large,430,,0.8052,
+IIT Kharagpur,foreign co-author,other,5776,,0.2273,
+IIT Roorkee,venue,Physical Review C,44,Q1,,
+IIT Roorkee,venue,arXiv,11,,,
+IIT Roorkee,venue,Scientific Reports,6,Q1,,
+IIT Roorkee,venue,The European Physical Journal A,6,Q1,,
+IIT Roorkee,venue,Physical Review B,6,Q1,,
+IIT Roorkee,venue,bioRxiv (preprint server),6,,,
+IIT Roorkee,venue,Water,6,Q1,,
+IIT Roorkee,venue,The Astrophysical Journal,6,Q1,,
+IIT Roorkee,venue,Physics Letters B,5,Q1,,
+IIT Roorkee,venue,Nature Communications,5,Q1,,
+IIT Roorkee,type,book,1,,0.0022,0.0013
+IIT Roorkee,type,book-chapter,6,,0.0132,0.0685
+IIT Roorkee,type,conference,15,,0.033,0.1608
+IIT Roorkee,type,journal,402,,0.8855,0.7329
+IIT Roorkee,type,other,3,,0.0066,0.0018
+IIT Roorkee,type,preprint,27,,0.0595,0.0346
+IIT Roorkee,type,report,0,,0.0,0.0002
+IIT Roorkee,quartile,Q1,305,,0.7587,0.5722
+IIT Roorkee,quartile,Q2,64,,0.1592,0.288
+IIT Roorkee,quartile,Q3,18,,0.0448,0.0803
+IIT Roorkee,quartile,Q4,2,,0.005,0.0093
+IIT Roorkee,quartile,unranked,13,,0.0323,0.0501
+IIT Roorkee,foreign co-author,large,346,,0.7621,
+IIT Roorkee,foreign co-author,other,4425,,0.2227,

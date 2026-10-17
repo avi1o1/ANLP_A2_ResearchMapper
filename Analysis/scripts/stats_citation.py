@@ -28,15 +28,18 @@ def node_of(oa, doi):
     return oa or (doi or "").lower()
 
 
-def main():
-    style()
+def citation_graph():
+    """(G, meta, edges): the cluster citation graph of internal edges, paper metadata by node, all edge rows."""
     meta = {}
     for inst, name in INSTS.items():
         for r in load_records(inst):
             k = node_of(r.get("openalex_id"), r["doi"] if not str(r["doi"]).startswith("TODO") else "")
             m = meta.setdefault(k, {"insts": set(), "title": r["title"], "year": r["year"], "doi": r["doi"],
-                                    "venue": r["venue"], "citations": cites(r)})
+                                    "venue": r["venue"], "citations": cites(r), "authors": set(), "faculty": set(),
+                                    "field": (r.get("research_area") or {}).get("field") or ""})
             m["insts"].add(name)
+            m["authors"] |= {a["openalex_author"] for a in r.get("authors_openalex") or [] if a.get("openalex_author")}
+            m["faculty"] |= {f["roster_id"] for f in r["faculty"]}
     edges = read_csv(os.path.join(DATA, "citation_network.csv"))
     G = nx.DiGraph()
     G.add_nodes_from(meta)
@@ -45,6 +48,12 @@ def main():
             s, t = node_of(e["source_openalex"], e["source_doi"]), node_of(e["target_openalex"], e["target_doi"])
             if s in meta and t in meta and s != t:
                 G.add_edge(s, t)
+    return G, meta, edges
+
+
+def main():
+    style()
+    G, meta, edges = citation_graph()
 
     # ------------------------------------------------ network metrics
     summ, prow, mrows, drows = [], [], {}, []

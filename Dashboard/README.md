@@ -21,6 +21,22 @@ Both / Kharagpur / Roorkee filter for the whole page, light/dark toggle, interac
 (zoom, hover, click for details, faculty search), and a sortable, searchable faculty table. Reviewed by screenshots
 at desktop width in light and dark mode.
 
+**Update (17 Oct 2026, network analysis beyond the brief)**
+- [x] Citation network: a "Reading the citation network with care" block: self-citation share (overall and per year),
+      PageRank without self-citations and age-rescaled (tabs, with the top-1% bias check), measured preferential
+      attachment A(k), and power-law vs lognormal fits. Data: `Analysis/scripts/stats_citation_dynamics.py`.
+- [x] New **Dynamics** section (sidebar): growth of the faculty network year by year, robustness to faculty loss
+      (random / degree / betweenness), SIR spreading and which centrality predicts the best spreaders, community checks
+      (departments, Louvain vs Leiden over resolutions) and who faculty co-author with. Data:
+      `Analysis/scripts/stats_authorship_dynamics.py`. The partners section is now the shaded band, the method section not.
+- [x] New **Big-team papers** section (sidebar, after Most cited papers): papers with more than 10 authors, every headline
+      number with and without them, citation premium against same-year papers, departments / fields / venues, how they
+      differ (Q1, conference, co-author abroad), team size, and the faculty whose h-index depends most on them. Data:
+      `Analysis/scripts/stats_large_collab.py` (`D.teams`). The band shading of the later sections flipped to keep alternating.
+- [x] `.bars` lists lost the browser's default 40 px indent (the subfield lists were misaligned with their headings).
+- Note: `build_data.py` run with networkx 3.7 lays the two networks out differently; the committed layouts
+  (`citation_graph`, `faculty_graph` in `data.js`) were kept.
+
 **Update (17 Oct 2026)**
 - [x] Navigation moved from the top bar to a left sidebar with two groups, **Data analysis** (overview, output,
       quality, people, most cited papers) and **Network analysis** (citation network, Indian links, collaboration,

@@ -233,6 +233,60 @@ def main():
     D["bridging"] = [{"inst": r["institution"], "name": r["faculty"], "dept": r["department"],
                       "partners": int(r["indian_partner_institutions"])} for r in rd("bridging_faculty.csv")]
 
+    # ---------------- papers with more than 10 authors (stats_journals.py, stats_large_collab.py)
+    lc = {r["institution"]: r for r in rd("large_collaborations.csv") if r["scope"] == "all years"}
+    by = lambda name: by_inst(rd(name))
+    venue = by("large_by_venue.csv")
+    D["teams"] = {i: {
+        "papers": int(lc[i]["more_than_10_authors"]), "share": float(lc[i]["share"]), "cite_share": float(lc[i]["share_of_all_citations"]),
+        "n100": int(lc[i]["with_100_or_more"]),
+        "sens": [{"m": r["metric"], "all": num(r["all_papers"]), "wo": num(r["without_large"]), "pct": num(r["change_pct"])} for r in by("large_sensitivity.csv")[i]],
+        "prem": {"years": [int(r["year"]) for r in by("large_premium.csv")[i] if r["year"].isdigit()],
+                 "ratio": [float(r["ratio"]) for r in by("large_premium.csv")[i] if r["year"].isdigit()],
+                 "overall": next(float(r["ratio"]) for r in by("large_premium.csv")[i] if not r["year"].isdigit())},
+        "dept": [{"name": r["department"], "n": int(r["large_papers"]), "share": float(r["share_of_institute_large"]),
+                  "of_dept": float(r["share_of_department"])} for r in by("large_by_department.csv")[i][:8]],
+        "field": [{"name": r["field"], "n": int(r["large_papers"]), "share": float(r["share_of_large"])} for r in by("large_by_field.csv")[i][:6]],
+        "venues": [{"name": r["label"], "n": int(r["large_papers"]), "rank": r["rank"]} for r in venue[i] if r["kind"] == "venue"][:6],
+        "profile": {f'{r["kind"]}|{r["label"]}': [num(r["share_large"]), num(r["share_other"])] for r in venue[i] if r["kind"] != "venue"},
+        "bands": [{"band": r["authors"], "n": int(r["papers"]), "median": num(r["median_citations"])} for r in by("large_size_bands.csv")[i]],
+        "faculty": [{"name": r["faculty"], "dept": r["department"], "n": int(r["large_papers"]), "h": int(r["h_index"]),
+                     "h_wo": int(r["h_without_large"])} for r in by("large_faculty_impact.csv")[i][:10]]} for i in INSTS}
+
+    # ---------------- beyond the brief: self-citation, corrected PageRank, dynamics (stats_*_dynamics.py)
+    kv = lambda name: {r["metric"]: r["value"] if num(r["value"]) is None else num(r["value"]) for r in rd(name)}
+    D["selfcite"] = {r["scope"]: {"share": float(r["self_share"]), "edges": int(r["citation_edges"]), "non_self": int(r["non_self_edges"])}
+                     for r in rd("self_citation_summary.csv")}
+    sy = C.defaultdict(list)
+    for r in rd("self_citation_yearly.csv"):
+        sy[r["scope"]].append(num(r["self_share"]))
+    D["selfcite_yearly"] = dict(sy)
+    D["pr_variants"] = C.defaultdict(list)
+    for r in rd("pagerank_variants_top10.csv"):
+        D["pr_variants"][r["variant"]].append({"title": r["title"], "year": int(r["year"]), "doi": r["doi"], "insts": r["institutions"],
+                                               "indeg": int(r["internal_in_degree"]), "nonself": int(r["non_self_in_degree"]),
+                                               "cites": num(r["global_citations"], int)})
+    D["pr_agree"] = {r["variant"]: {"cv": float(r["age_bias_cv_top1pct"]), "overlap": int(r["top100_overlap_with_all"])}
+                     for r in rd("pagerank_variant_agreement.csv")}
+    D["age_bias"] = [{"ranking": r["ranking"], "cv": float(r["cv_of_shares"]), "shares": [float(r[str(y)]) for y in range(2016, 2026)]}
+                     for r in rd("pagerank_age_bias.csv")]
+    pa = rd("preferential_attachment.csv")
+    D["pa"] = {"k": [int(r["k_citations_before_year"]) for r in pa], "A": [float(r["attachment_rate_A_k"]) for r in pa],
+               "n": [int(r["paper_years"]) for r in pa], **kv("citation_dynamics_summary.csv")}
+    D["fits"] = [{k: r[k] for k in ("quantity", "alpha", "x_min", "papers_in_tail", "R_vs_lognormal", "p_vs_lognormal", "verdict")}
+                 for r in rd("distribution_fits.csv")]
+    D["structure"] = kv("authorship_structure.csv")
+    D["leiden"] = [{k: num(v) if k != "algorithm" else v for k, v in r.items()} for r in rd("leiden_comparison.csv")]
+    D["growth"] = [{k: num(v) for k, v in r.items()} for r in rd("network_growth.csv")]
+    D["robust"] = [{k: num(v) for k, v in r.items()} for r in rd("robustness.csv")]
+    D["sir"] = [{k: num(v) for k, v in r.items()} for r in rd("sir_outbreaks.csv")]
+    D["spreader_rank"] = [{"c": r["centrality"], "rho": float(r["spearman_rho_with_outbreak"]), "top": float(r["top5pct_overlap_with_best_spreaders"])}
+                          for r in rd("spreader_ranking.csv")]
+    D["top_spreaders"] = [{"name": r["faculty"], "inst": r["institution"], "dept": r["department"], "share": float(r["expected_outbreak_share"]),
+                           "deg": int(r["degree"]), "core": int(r["k_core"])} for r in rd("top_spreaders.csv")[:10]]
+    D["cent_impact"] = [{k: num(v) if k not in ("centrality", "impact") else v for k, v in r.items()} for r in rd("centrality_vs_impact.csv")]
+    D["tie_types"] = [{"type": r["tie_type"], "n": int(r["pair_paper_rows"]), "share": float(r["share"])} for r in rd("coauthor_tie_types.csv")]
+
     # ---------------- partners
     part = by_inst(rd("partners.csv"))
     D["partners"] = {i: [{"partner": r["partner"], "shared": int(r["shared_papers"]), "cluster": r["cluster"],

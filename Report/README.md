@@ -3,7 +3,13 @@
 **Status (12 Oct 2026, after the professor's review):** rewritten for the science-and-engineering scope with the new
 statistics (h / i10 statistics, why h is low, h over the years, IF, important journals, CORE, research-area categories,
 Environmental Science, large collaborations). `report.tex` → `report.pdf` (IEEE two-column, page cap removed; figures
-copied into `figures/`). Build with `latexmk -pdf report.tex`. The numbers in sections 3–4 of this README are from the
+copied into `figures/`). Build with `latexmk -pdf report.tex`.
+**17 Oct 2026:** network sections extended beyond the brief (now 11 pages): power-law vs lognormal fits, measured
+preferential attachment, self-citations, corrected PageRank (no self-citations, age-rescaled), community map,
+communities vs departments, Leiden check, k-core / C(k) / rich club, and a new section on dynamics (growth and
+densification, robustness to faculty loss, SIR spreading). Sources: `stats_citation_dynamics.py`,
+`stats_authorship_dynamics.py`. Also a subsection on papers with more than 10 authors (`stats_large_collab.py`):
+headline numbers with and without them, citation premium, departments, venues, faculty most affected. The numbers in sections 3–4 of this README are from the
 old all-fields scope; the report itself has the current ones.
 
 The brief (`DPCN_Instruction_Note.pdf`, section 8; checklist in section 11) asks for **a statistics report of at most

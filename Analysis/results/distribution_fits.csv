@@ -1,0 +1,4 @@
+﻿quantity,papers_with_value_ge_1,max,alpha,alpha_sigma,x_min,papers_in_tail,R_vs_lognormal,p_vs_lognormal,R_vs_exponential,p_vs_exponential,R_vs_truncated_power_law,p_vs_truncated_power_law,verdict
+internal in-degree (all),23297,58,2.813,0.023,5,6003,-13.28,0.0,-6.95,0.0,-13.3,0.0,lognormal better; exponential better; truncated_power_law better
+internal in-degree (no self-citations),5651,26,2.308,0.017,1,5651,-11.89,0.0,-1.03,0.3027,-11.82,0.0,lognormal better; not distinguishable from exponential; truncated_power_law better
+global citations,36441,2020,2.999,0.046,73,1861,-1.41,0.1586,5.36,0.0,-1.47,0.0163,not distinguishable from lognormal; power law better than exponential; truncated_power_law better

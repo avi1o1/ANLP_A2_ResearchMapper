@@ -1,0 +1,19 @@
+﻿metric,value
+"NMI(Louvain communities, departments)",0.5721
+"NMI, faculty with >= 1 faculty tie",0.547
+"ARI(Louvain communities, departments)",0.1727
+share of ties inside one department,0.4855
+department assortativity,0.4736
+institute assortativity,0.9398
+maximum k-core,6
+faculty in the maximum k-core,23
+"clustering spectrum exponent beta, C(k) ~ k^-beta",0.4988
+small-world sigma = (C/C_ER) / (L/L_ER),71.6464
+"f_50, random: share removed until the largest component halves",0.4099
+"f_50, degree (adaptive): share removed until the largest component halves",0.1447
+"f_50, betweenness (adaptive): share removed until the largest component halves",0.0723
+Molloy-Reed kappa = <k^2>/<k>,9.1306
+mean-field random-failure threshold 1 - 1/(kappa-1),0.877
+mean-field epidemic threshold T_c = <k>/(<k^2>-<k>),0.123
+"densification exponent a, ties ~ faculty^a",1.9007
+"median distinct co-authors per faculty (everyone, not only faculty)",25.0

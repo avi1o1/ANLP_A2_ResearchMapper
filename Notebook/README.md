@@ -14,7 +14,7 @@ data in `Enrichment/out/` and does the analysis.
 
 ```
 git lfs install && git pull        # citation_network.csv and the enriched JSONs are in Git LFS
-pip install pandas numpy networkx scipy scikit-learn matplotlib jupyter
+pip install pandas numpy networkx scipy scikit-learn matplotlib jupyter powerlaw python-igraph leidenalg
 jupyter notebook Notebook/analysis.ipynb
 ```
 No API key is needed. The notebook must not call OpenAlex or ORCID.

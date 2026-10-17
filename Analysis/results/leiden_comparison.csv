@@ -1,0 +1,11 @@
+﻿algorithm,resolution,communities,communities_size_ge_5,largest,modularity_Q_at_resolution_1,ari_vs_louvain_resolution_1,disconnected_communities
+Louvain,0.25,281,8,388,0.6647,0.274,0
+Leiden,0.25,285,8,486,0.6213,0.241,0
+Louvain,0.5,289,15,217,0.7635,0.563,0
+Leiden,0.5,289,14,207,0.7695,0.529,0
+Louvain,1.0,301,26,139,0.7854,1.0,0
+Leiden,1.0,299,25,126,0.7859,0.752,0
+Louvain,2.0,317,42,75,0.7696,0.596,0
+Leiden,2.0,315,39,66,0.7761,0.553,0
+Louvain,4.0,341,63,44,0.7459,0.413,0
+Leiden,4.0,341,64,56,0.7478,0.407,0

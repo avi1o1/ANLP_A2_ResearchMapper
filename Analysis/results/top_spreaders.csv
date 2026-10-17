@@ -1,0 +1,21 @@
+﻿faculty,institution,department,expected_outbreak_share,degree,k_core,betweenness
+Chandra Sekhar Tiwary,IIT Kharagpur,Metallurgical and Materials Engineering,0.1998,36,6,0.02928
+Narayan Chandra Das,IIT Kharagpur,Rubber Technology,0.1995,32,6,0.03127
+Suman Chakraborty,IIT Kharagpur,Mechanical Engineering,0.1979,40,5,0.02867
+Samit Kumar Ray,IIT Kharagpur,Physics,0.1975,28,6,0.01583
+Debabrata Pradhan,IIT Kharagpur,Materials Science Centre,0.1968,29,6,0.03099
+Susanta Banerjee,IIT Kharagpur,Materials Science Centre,0.1966,23,6,0.01666
+Amit Kumar Das,IIT Kharagpur,Bioscience and Biotechnology,0.1954,23,6,0.00886
+Ramkrishna Sen,IIT Kharagpur,Bioscience and Biotechnology,0.1945,30,6,0.03512
+Santanu Chattopadhyay,IIT Kharagpur,Rubber Technology,0.1941,26,6,0.02631
+Dipak Kumar Goswami,IIT Kharagpur,Physics,0.1939,25,6,0.01068
+Indranil Manna,IIT Kharagpur,Metallurgical and Materials Engineering,0.1934,19,5,0.00971
+Tapas Kumar Maiti,IIT Kharagpur,Bioscience and Biotechnology,0.1875,19,5,0.0097
+Brajesh Kumar Dubey,IIT Kharagpur,Civil Engineering,0.186,20,6,0.01265
+Rabibrata Mukherjee,IIT Kharagpur,Chemical Engineering,0.1854,17,5,0.00731
+Makarand Madhao Ghangrekar,IIT Kharagpur,Civil Engineering,0.1852,19,6,0.02082
+Subhasish Basu Majumder,IIT Kharagpur,Materials Science Centre,0.1843,17,6,0.00885
+Arindam Mondal,IIT Kharagpur,Bioscience and Biotechnology,0.1807,12,6,0.0014
+Prasanta Kumar Datta,IIT Kharagpur,Physics,0.1802,18,5,0.01073
+Pallab Banerji,IIT Kharagpur,Materials Science Centre,0.1797,13,6,0.0017
+Surjya Kanta Pal,IIT Kharagpur,Mechanical Engineering,0.1766,18,5,0.01293

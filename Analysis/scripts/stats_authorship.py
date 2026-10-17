@@ -47,9 +47,8 @@ def graph_stats(H):
             "louvain_modularity": nx.community.modularity(H, nx.community.louvain_communities(H, seed=1))}
 
 
-def main():
-    style()
-    # ------------------------------------------------ graph
+def faculty_graph():
+    """(G, info): the weighted faculty co-authorship graph and faculty metadata (name, department, institution)."""
     info = {}
     for inst, name in INSTS.items():
         for r in load_records(inst):
@@ -58,13 +57,22 @@ def main():
     G = nx.Graph()
     for rid, d in info.items():
         G.add_node(rid, **d)
-    pairs = C.defaultdict(set)
+    pairs, first = C.defaultdict(set), {}
     for e in read_csv(os.path.join(DATA, "authorship_network.csv")):
         if e["a_is_faculty"] == "TRUE" and e["b_is_faculty"] == "TRUE" and e["author_a_id"] in info and e["author_b_id"] in info:
-            pairs[frozenset((e["author_a_id"], e["author_b_id"]))].add(e["paper_doi"] or e["author_a_id"] + e["year"])
+            p = frozenset((e["author_a_id"], e["author_b_id"]))
+            pairs[p].add(e["paper_doi"] or e["author_a_id"] + e["year"])
+            if e["year"]:
+                first[p] = min(first.get(p, 9999), int(e["year"]))
     for p, papers in pairs.items():
         a, b = tuple(p)
-        G.add_edge(a, b, weight=len(papers))
+        G.add_edge(a, b, weight=len(papers), first_year=first.get(p))
+    return G, info
+
+
+def main():
+    style()
+    G, info = faculty_graph()
     n, m = G.number_of_nodes(), G.number_of_edges()
     cross = [(a, b) for a, b in G.edges if info[a]["institution"] != info[b]["institution"]]
 

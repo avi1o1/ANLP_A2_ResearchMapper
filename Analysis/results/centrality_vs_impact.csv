@@ -1,0 +1,7 @@
+﻿centrality,impact,spearman_rho,partial_rho_given_papers,faculty
+degree,h_index,0.7,0.146,1410
+betweenness,h_index,0.665,0.084,1410
+degree,citations,0.696,0.177,1410
+betweenness,citations,0.659,0.113,1410
+degree,papers,0.718,,1410
+betweenness,papers,0.697,,1410
