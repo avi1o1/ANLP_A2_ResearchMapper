@@ -56,7 +56,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+html { scroll-behavior: smooth; }
 body {
   margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-text); font-size: 17px; line-height: 1.47;
   letter-spacing: -0.012em; -webkit-font-smoothing: antialiased;
@@ -74,20 +74,45 @@ a:hover { text-decoration: underline; }
 .wrap { max-width: 1080px; margin: 0 auto; padding-inline: 22px; }
 .num { font-variant-numeric: tabular-nums; }
 
-/* ---------- nav ---------- */
-.nav {
-  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--nav);
-  backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 1px solid var(--hair);
+/* ---------- sidebar (wide screens); top bar + slide-in drawer (narrow screens) ---------- */
+:root { --side: 248px; }
+html { scroll-padding-top: 24px; }
+.side {
+  position: fixed; top: 0; bottom: 0; left: 0; z-index: 60; width: var(--side); display: flex; flex-direction: column; gap: 24px;
+  padding: 26px 14px 16px; background: var(--bg); border-right: 1px solid var(--hair); overflow-y: auto; scrollbar-width: thin;
 }
-.nav .wrap { display: flex; align-items: center; gap: 20px; height: 52px; max-width: 1280px; }
+main, footer { margin-left: var(--side); }
 .brand { font-family: var(--font-display); font-weight: 600; font-size: 17px; letter-spacing: -0.02em; color: var(--fg); white-space: nowrap; }
-.brand span { color: var(--fg2); font-weight: 400; }
-.links { display: flex; gap: 18px; flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; }
-.links::-webkit-scrollbar { display: none; }
-.links a { color: var(--fg2); font-size: 12.5px; white-space: nowrap; transition: color .2s; }
-.links a:hover, .links a.on { color: var(--fg); text-decoration: none; }
-.controls { display: flex; align-items: center; gap: 10px; }
+.side .brand { padding-inline: 10px; }
+.side .brand span { display: block; color: var(--fg2); font-weight: 400; font-size: 13px; letter-spacing: 0; margin-top: 2px; }
+.side .seg { display: flex; }
+.side .seg button { flex: 1 1 auto; padding: 5px 6px; }
+.navh { font-size: 11.5px; font-weight: 600; color: var(--fg3); text-transform: uppercase; letter-spacing: .06em; margin: 0 10px 6px; }
+.menu { display: flex; flex-direction: column; gap: 1px; }
+.menu a { display: block; padding: 7px 10px; border-radius: 8px; color: var(--fg2); font-size: 14.5px; transition: background .2s, color .2s; }
+.menu a:hover { color: var(--fg); background: var(--band); text-decoration: none; }
+.menu a.on { color: var(--fg); background: var(--hair); font-weight: 500; }
+.side .foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-top: 12px; border-top: 1px solid var(--hair); }
+.side .foot .menu { flex: 1; }
+.mbar, .scrim { display: none; }
+
+/* in-card tabs: underlined tabs switch between views of a card, pill tabs switch institute */
+.tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--hair); margin: 14px 0 10px; overflow-x: auto; scrollbar-width: none; }
+.tabs button {
+  border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; background: none; font: 500 14px var(--font-text); color: var(--fg2);
+  padding: 8px 12px 9px; cursor: pointer; white-space: nowrap; transition: color .2s, border-color .2s;
+}
+.tabs button:hover { color: var(--fg); }
+.tabs button[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--fg); }
+.itabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 14px 0 6px; }
+.itabs button {
+  border: 1px solid var(--line); background: transparent; color: var(--fg2); font: 500 13px var(--font-text); padding: 4px 12px 4px 10px;
+  border-radius: 999px; cursor: pointer; transition: color .2s, border-color .2s, background .2s;
+}
+.itabs button:hover { color: var(--fg); }
+.itabs button[aria-selected="true"] { color: var(--fg); border-color: var(--fg2); background: var(--hair); }
+.lim:not(.open) > li:nth-child(n+6), tbody.lim:not(.open) > tr:nth-child(n+13) { display: none; }
+.morebtn { margin-top: 10px; }
 
 .seg { position: relative; display: inline-flex; align-self: flex-start; background: var(--hair); border-radius: 9px; padding: 2px; }
 .seg button {
@@ -261,8 +286,21 @@ footer p { margin: 4px 0; }
   * { transition: none !important; }
 }
 
+@media (max-width: 1024px) {
+  html { scroll-padding-top: 64px; }
+  main, footer { margin-left: 0; }
+  .side { transform: translateX(-100%); visibility: hidden; box-shadow: var(--shadow); transition: transform .35s var(--ease), visibility 0s .35s; }
+  .side.open { transform: none; visibility: visible; transition: transform .35s var(--ease); }
+  .side .instbox, .side .foot .iconbtn { display: none; }
+  .scrim { display: block; position: fixed; inset: 0; z-index: 55; border: 0; background: rgba(0, 0, 0, .32); opacity: 0; pointer-events: none; transition: opacity .3s; }
+  .scrim.open { opacity: 1; pointer-events: auto; }
+  .mbar {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; display: flex; align-items: center; gap: 12px; height: 52px; padding-inline: 14px;
+    background: var(--nav); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--hair);
+  }
+  .mbar .brand { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+}
 @media (max-width: 980px) {
-  .links { display: none; }
   .kpis, .strip { grid-template-columns: repeat(2, 1fr); }
   .grid3, .subfields .cols { grid-template-columns: 1fr; }
   .net { grid-template-columns: 1fr; }
@@ -273,17 +311,15 @@ footer p { margin: 4px 0; }
   .grid2, .grid3, .method { grid-template-columns: 1fr; }
   .chart { height: 320px; } .chart.tall { height: 440px; }
   .card { padding: 20px; }
-  .brand span { display: none; }
 }
 @media (max-width: 520px) {
-  .brand { display: none; }
+  .mbar .brand { visibility: hidden; }
   .rank li { grid-template-columns: 24px 1fr; gap: 4px 12px; }
   .rank .v { grid-column: 2; font-size: 15px; }
   .rank .v:empty { display: none; }
-  .nav .wrap { justify-content: space-between; }
 }
 @media (max-width: 440px) {
-  .nav .wrap { gap: 8px; padding-inline: 14px; }
+  .mbar { gap: 8px; }
   .seg button { padding: 5px 8px; font-size: 12px; }
   .kpis { grid-template-columns: 1fr; }
   .strip { gap: 12px; } .stat { padding: 18px; } .stat .big { font-size: 28px; }
@@ -292,26 +328,54 @@ footer p { margin: 4px 0; }
 </head>
 <body>
 
-<nav class="nav" aria-label="Sections">
-  <div class="wrap">
-    <div class="brand">IIT Research Map <span>· Group 3</span></div>
-    <div class="links">
-      <a href="#output">Output</a><a href="#quality">Quality</a><a href="#people">People</a><a href="#papers">Papers</a>
-      <a href="#citations">Citations</a><a href="#flow">Indian links</a><a href="#collaboration">Collaboration</a>
-      <a href="#partners">Partners</a><a href="#method">Method</a>
+<!-- narrow screens: top bar with the menu button, institute filter and theme; the sidebar slides in as a drawer -->
+<header class="mbar">
+  <button type="button" class="iconbtn" id="menuBtn" aria-label="Open menu" aria-controls="side" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <div class="brand">IIT Research Map</div>
+  <div class="seg" id="instSegM" role="group" aria-label="Institute">
+    <span class="thumb"></span>
+    <button type="button" data-inst="both" aria-pressed="true">Both</button>
+    <button type="button" data-inst="IIT Kharagpur" aria-pressed="false"><span class="dot k"></span>Kharagpur</button>
+    <button type="button" data-inst="IIT Roorkee" aria-pressed="false"><span class="dot r"></span>Roorkee</button>
+  </div>
+  <button type="button" class="iconbtn themeBtn" aria-label="Switch light or dark appearance">
+    <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.6 6.6 0 0 0 10.7 10.7z"/></svg>
+    <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+  </button>
+</header>
+<button type="button" class="scrim" id="scrim" aria-label="Close menu" tabindex="-1"></button>
+
+<nav class="side" id="side" aria-label="Sections">
+  <div class="brand">IIT Research Map<span>Group 3 · 2016–2026</span></div>
+  <div class="instbox">
+    <p class="navh">Institute</p>
+    <div class="seg" id="instSeg" role="group" aria-label="Institute">
+      <span class="thumb"></span>
+      <button type="button" data-inst="both" aria-pressed="true">Both</button>
+      <button type="button" data-inst="IIT Kharagpur" aria-pressed="false"><span class="dot k"></span>Kharagpur</button>
+      <button type="button" data-inst="IIT Roorkee" aria-pressed="false"><span class="dot r"></span>Roorkee</button>
     </div>
-    <div class="controls">
-      <div class="seg" id="instSeg" role="group" aria-label="Institute">
-        <span class="thumb"></span>
-        <button type="button" data-inst="both" aria-pressed="true">Both</button>
-        <button type="button" data-inst="IIT Kharagpur" aria-pressed="false"><span class="dot k"></span>Kharagpur</button>
-        <button type="button" data-inst="IIT Roorkee" aria-pressed="false"><span class="dot r"></span>Roorkee</button>
-      </div>
-      <button type="button" class="iconbtn" id="themeBtn" aria-label="Switch light or dark appearance">
-        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.6 6.6 0 0 0 10.7 10.7z"/></svg>
-        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
-      </button>
+  </div>
+  <div>
+    <p class="navh">Data analysis</p>
+    <div class="menu">
+      <a href="#overview">Overview</a><a href="#output">Output</a><a href="#quality">Quality</a><a href="#people">People</a><a href="#papers">Most cited papers</a>
     </div>
+  </div>
+  <div>
+    <p class="navh">Network analysis</p>
+    <div class="menu">
+      <a href="#citations">Citation network</a><a href="#flow">Indian links</a><a href="#collaboration">Collaboration</a><a href="#partners">Partners</a>
+    </div>
+  </div>
+  <div class="foot">
+    <div class="menu"><a href="#method">Method</a></div>
+    <button type="button" class="iconbtn themeBtn" aria-label="Switch light or dark appearance">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.6 6.6 0 0 0 10.7 10.7z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+    </button>
   </div>
 </nav>
 
@@ -374,11 +438,14 @@ footer p { margin: 4px 0; }
         <div class="card rv">
           <h3>Conference ranks</h3>
           <p class="cap">CORE ranking of conference papers. CORE only ranks computing venues, so most conferences have no rank.</p>
-          <div class="chart short" id="chCore"></div>
-          <h3 style="margin-top:22px">CORE ranks per year</h3>
-          <div class="chart short" id="chCoreYear"></div>
-          <h3 style="margin-top:22px">Top CORE venues</h3>
-          <div id="coreVenues"></div>
+          <div class="tabs" role="tablist" aria-label="Conference rank view" data-views="core">
+            <button type="button" role="tab" data-v="all" aria-selected="true">All years</button>
+            <button type="button" role="tab" data-v="year" aria-selected="false">Per year</button>
+            <button type="button" role="tab" data-v="venues" aria-selected="false">Top venues</button>
+          </div>
+          <div data-view="core:all"><div class="chart short" id="chCore"></div></div>
+          <div data-view="core:year" hidden><div class="chart short" id="chCoreYear"></div></div>
+          <div data-view="core:venues" hidden><div id="coreVenues"></div></div>
         </div>
       </div>
       <div class="grid2">
@@ -405,7 +472,7 @@ footer p { margin: 4px 0; }
       <div class="card rv">
         <h3>Why is Environmental Science so large?</h3>
         <p class="cap" id="envLede"></p>
-        <div class="grid3" id="envGrid"></div>
+        <div id="envGrid"></div>
       </div>
     </div>
   </div>
@@ -440,7 +507,12 @@ footer p { margin: 4px 0; }
         </div>
       </div>
       <div class="card rv">
-        <div class="cardhead"><h3>Faculty performance</h3><span class="sub" id="facCount"></span></div>
+        <h3>Faculty and department performance</h3>
+        <div class="tabs" role="tablist" aria-label="Performance table" data-views="perf">
+          <button type="button" role="tab" data-v="fac" aria-selected="true">Faculty <span class="num" id="facCount" style="color:var(--fg3)"></span></button>
+          <button type="button" role="tab" data-v="dept" aria-selected="false">Departments <span class="num" id="deptCount" style="color:var(--fg3)"></span></button>
+        </div>
+        <div data-view="perf:fac">
         <div class="tools">
           <input class="field" id="facSearch" type="search" placeholder="Search faculty or journal" aria-label="Search faculty">
           <select class="field" id="facDept" aria-label="Department"><option value="">All departments</option></select>
@@ -461,15 +533,17 @@ footer p { margin: 4px 0; }
         <p class="cap" style="margin-top:10px">Click a name to list that person's papers in this dataset.</p>
         <div id="facPapers" class="facpapers" hidden></div>
         <div class="pager"><button type="button" class="btn" id="pgPrev">Previous</button><span id="pgInfo" class="num"></span><button type="button" class="btn" id="pgNext">Next</button></div>
-        <details>
-          <summary>Departments</summary>
+        </div>
+        <div data-view="perf:dept" hidden>
+          <p class="cap" style="margin-top:0">Departments by number of papers. Faculty counts only those with at least one paper in this dataset.</p>
           <div class="tablewrap" style="margin-top:12px">
             <table id="deptTable">
               <thead><tr><th>Department</th><th class="n">Faculty</th><th class="n">Papers</th><th class="n">Citations</th><th class="n">Q1 share</th><th class="n">Mean h ± SD</th><th class="n">Median h</th></tr></thead>
-              <tbody></tbody>
+              <tbody class="lim"></tbody>
             </table>
           </div>
-        </details>
+          <button type="button" class="btn morebtn" id="deptMore"></button>
+        </div>
       </div>
     </div>
   </div>
@@ -483,7 +557,7 @@ footer p { margin: 4px 0; }
       <h2>The most cited work.</h2>
       <p class="lede">The ten papers with the most citations worldwide. Papers with more than 10 authors are marked: in those large collaborations our faculty are one group among many.</p>
     </div>
-    <div class="card rv"><ol class="rank" id="mostCited"></ol></div>
+    <div class="card rv" id="mostCited"></div>
   </div>
 </section>
 
@@ -517,7 +591,7 @@ footer p { margin: 4px 0; }
       <div class="card rv">
         <h3>PageRank top 10</h3>
         <p class="cap">"In-degree rank" is the paper's rank by plain citation count inside our corpus. The two lists differ.</p>
-        <ol class="rank clamp" id="prTop"></ol>
+        <div id="prTop"></div>
       </div>
       <div class="card rv">
         <h3>Citations are highly unequal</h3>
@@ -677,7 +751,7 @@ footer p { margin: 4px 0; }
     .replace("SRM Institute of Science and Technology", "SRM IST").replace("S.N. Bose National Centre for Basic Sciences", "S.N. Bose Centre")
     .replace("Indian Statistical Institute", "ISI").replace("National Institute of Hydrology", "Natl. Inst. of Hydrology");
   const state = { inst: "both", type: "total", size: "pr", dir: "in", color: "inst", sortK: "h", sortDir: -1, page: 0,
-    ifTh: "5", hy: "mean_h", area: "Engineering", facSel: null };
+    ifTh: "5", hy: "mean_h", area: "Engineering", facSel: null, tabs: {} };
   try { const s = localStorage.getItem("irm-inst"); if (s) state.inst = s; } catch (e) {}
   const shown = () => state.inst === "both" ? INSTS : [state.inst];
   const col = i => css(i === KGP ? "--kgp" : "--rkg");
@@ -703,10 +777,18 @@ footer p { margin: 4px 0; }
     root.classList.add("theming");
     document.startViewTransition(apply).finished.finally(() => root.classList.remove("theming"));
   }
-  document.getElementById("themeBtn").addEventListener("click", () => retheme(() => {
+  document.querySelectorAll(".themeBtn").forEach(b => b.addEventListener("click", () => retheme(() => {
     root.dataset.theme = isDark() ? "light" : "dark";
     try { localStorage.setItem("irm-theme", root.dataset.theme); } catch (e) {}
-  }));
+  })));
+
+  /* ---------------- drawer (narrow screens) ---------------- */
+  const side = document.getElementById("side"), scrim = document.getElementById("scrim"), menuBtn = document.getElementById("menuBtn");
+  const drawer = open => { side.classList.toggle("open", open); scrim.classList.toggle("open", open); menuBtn.setAttribute("aria-expanded", String(open)); };
+  menuBtn.addEventListener("click", () => drawer(!side.classList.contains("open")));
+  scrim.addEventListener("click", () => drawer(false));
+  side.addEventListener("click", e => { if (e.target.closest("a")) drawer(false); });
+  addEventListener("keydown", e => { if (e.key === "Escape") drawer(false); });
   matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { if (!root.dataset.theme) retheme(() => {}); });
 
   /* ---------------- segmented controls ---------------- */
@@ -719,8 +801,12 @@ footer p { margin: 4px 0; }
     document.fonts && document.fonts.ready.then(place);
     return { set, place };
   }
-  const instSeg = seg("instSeg", "inst", v => { state.inst = v; state.page = 0; try { localStorage.setItem("irm-inst", v); } catch (e) {} renderAll(); });
-  instSeg.set(state.inst);
+  // two copies of the institute filter (sidebar, and the top bar on narrow screens), kept in step
+  const instSegs = ["instSeg", "instSegM"].map(id => seg(id, "inst", v => {
+    state.inst = v; state.page = 0; try { localStorage.setItem("irm-inst", v); } catch (e) {}
+    instSegs.forEach(s => s.set(v)); renderAll();
+  }));
+  instSegs.forEach(s => s.set(state.inst));
   seg("typeSeg", "type", v => { state.type = v; draw("chTrend"); });
   seg("sizeSeg", "size", v => { state.size = v; draw("chCitNet"); });
   seg("flowSeg", "dir", v => { state.dir = v; draw("chFlow"); });
@@ -914,6 +1000,38 @@ footer p { margin: 4px 0; }
   const instHead = i => shown().length > 1 ? `<p class="cap" style="margin-top:18px"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}</p>` : "";
   const barList = (items, i, label) => `<ol class="bars">${items.map(x => `<li><span>${esc(x.name || x.sub)}</span><span class="v">${label(x)}</span>
     <span class="bar"><span style="width:${Math.max(2, x.share * 100).toFixed(1)}%;background:${col(i)}"></span></span></li>`).join("")}</ol>`;
+  // Long per-institute lists: with more than one institute shown, pill tabs show one institute at a time instead of
+  // stacking them, and a ranked list shows its top 5 with a "Show all" button.
+  const tabBodies = {};
+  function instTabs(id, body) {
+    if (body) tabBodies[id] = body;
+    const el = document.getElementById(id), ins = shown(), f = tabBodies[id];
+    if (ins.length < 2) { el.innerHTML = f(ins[0]); return; }
+    const cur = ins.includes(state.tabs[id]) ? state.tabs[id] : ins[0];
+    el.innerHTML = `<div class="itabs" role="tablist" aria-label="Institute" data-tabs="${id}">${ins.map(i =>
+      `<button type="button" role="tab" data-tab="${esc(i)}" aria-selected="${i === cur}"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}</button>`).join("")}</div>` + f(cur);
+  }
+  const LIM = 5;
+  const rankList = (items, cls = "") => `<ol class="rank lim ${cls}">${items.join("")}</ol>` +
+    (items.length > LIM ? `<button type="button" class="btn morebtn">Show all ${items.length}</button>` : "");
+  function showChart(el) {                                  // a chart that was in a hidden tab: draw it, or fit it
+    el.dataset.live = "1";
+    if (charts[el.id]) charts[el.id].resize(); else { draw(el.id); bindChart(el.id); }
+  }
+  document.addEventListener("click", e => {
+    const b = e.target.closest(".tabs button, .itabs button");
+    if (b) {
+      const bar = b.parentElement;
+      if (bar.dataset.tabs) { state.tabs[bar.dataset.tabs] = b.dataset.tab; instTabs(bar.dataset.tabs); return; }
+      const g = bar.dataset.views;
+      bar.querySelectorAll("button").forEach(x => x.setAttribute("aria-selected", String(x === b)));
+      document.querySelectorAll(`[data-view^="${g}:"]`).forEach(p => { p.hidden = p.dataset.view !== g + ":" + b.dataset.v; });
+      document.querySelectorAll(`[data-view="${g}:${b.dataset.v}"] .chart`).forEach(showChart);
+      return;
+    }
+    const m = e.target.closest(".morebtn");
+    if (m) { const p = m.previousElementSibling, ol = p.classList.contains("lim") ? p : p.querySelector(".lim"), open = ol.classList.toggle("open"); m.textContent = open ? "Show fewer" : `Show all ${ol.children.length}`; }
+  });
   function renderIfStrip() {
     const k = state.ifTh;
     document.getElementById("ifStrip").innerHTML = shown().map(i => { const a = D.impact[i].all; return `
@@ -936,13 +1054,13 @@ footer p { margin: 4px 0; }
         <ol class="rank clamp">${ps.map((p, n) => `<li><span class="i">${n + 1}</span><span class="t"><a href="${esc(p.doi)}" target="_blank" rel="noopener"><b>${esc(p.title)}</b></a>
         <span class="m">${esc(p.journal)} · ${p.year} · ${esc(p.faculty || SHORT[p.i])}</span></span><span class="v">${p.cites == null ? "–" : fmt(p.cites)}<small>citations</small></span></li>`).join("")}</ol></details>`; }).join("");
     // CORE venues
-    document.getElementById("coreVenues").innerHTML = shown().map(i => `${instHead(i)}<ol class="rank">${(D.core_venues[i] || []).slice(0, 6).map((v, n) =>
-      `<li><span class="i">${n + 1}</span><span class="t"><b>${esc(v.conf)}</b><span class="pill">CORE ${v.rank}</span></span><span class="v">${v.papers}<small>papers</small></span></li>`).join("")}</ol>`).join("");
+    instTabs("coreVenues", i => rankList((D.core_venues[i] || []).map((v, n) =>
+      `<li><span class="i">${n + 1}</span><span class="t"><b>${esc(v.conf)}</b><span class="pill">CORE ${v.rank}</span></span><span class="v">${v.papers}<small>papers</small></span></li>`)));
     // environmental science
     const e0 = shown().map(i => { const t = D.areas[i].find(a => a.field === "Environmental Science"); return `${(t ? t.share * 100 : 0).toFixed(1)}% of ${SHORT[i]}'s papers`; }).join(" and ");
     document.getElementById("envLede").textContent = `Environmental Science is ${e0}. OpenAlex files water, hydrology, climate and pollution-treatment work there, and most of it comes from engineering departments.`;
-    document.getElementById("envGrid").innerHTML = [["subfield", "Subfields"], ["department", "Departments of the authors"], ["topic", "Most common topics"]].map(([k, t]) =>
-      `<div><h4>${t}</h4>${shown().map(i => instHead(i) + barList(D.env[i][k], i, x => `${fmt(x.papers)} · ${(x.share * 100).toFixed(0)}%`)).join("")}</div>`).join("");
+    instTabs("envGrid", i => `<div class="grid3">` + [["subfield", "Subfields"], ["department", "Departments of the authors"], ["topic", "Most common topics"]].map(([k, t]) =>
+      `<div><h4>${t}</h4>${barList(D.env[i][k], i, x => `${fmt(x.papers)} · ${(x.share * 100).toFixed(0)}%`)}</div>`).join("") + `</div>`);
     // h-index statistics
     document.getElementById("hStrip").innerHTML = shown().map(i => { const h = D.h_summary[i]["h-index"], t = D.h_summary[i]["i10-index"]; return `
       <div class="stat"><div class="big">${h.mean.toFixed(1)}<small>± ${h.sd.toFixed(1)}</small></div><div class="lbl"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}: mean h ± SD (median ${h.median}, middle half ${h.q1}–${h.q3})</div></div>
@@ -1143,22 +1261,20 @@ footer p { margin: 4px 0; }
   function renderHtml() {
     renderKpis();
     // top journals
-    document.getElementById("topJournals").innerHTML = shown().map(i => `${shown().length > 1 ? `<p class="cap" style="margin-top:18px"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}</p>` : ""}
-      <ol class="rank">${D.top_journals[i].map((j, n) => `<li><span class="i">${n + 1}</span><span class="t"><b>${esc(j.journal)}</b>${j.q ? `<span class="pill">${j.q}</span>` : ""}${j.if != null ? `<span class="pill" title="OpenAlex 2-year mean citedness">IF ${j.if.toFixed(1)}</span>` : ""}</span><span class="v">${fmt(j.papers)}<small>papers</small></span></li>`).join("")}</ol>`).join("");
+    instTabs("topJournals", i => rankList(D.top_journals[i].map((j, n) => `<li><span class="i">${n + 1}</span><span class="t"><b>${esc(j.journal)}</b>${j.q ? `<span class="pill">${j.q}</span>` : ""}${j.if != null ? `<span class="pill" title="OpenAlex 2-year mean citedness">IF ${j.if.toFixed(1)}</span>` : ""}</span><span class="v">${fmt(j.papers)}<small>papers</small></span></li>`)));
     renderNew();
     // most cited
     const mc = D.most_cited[state.inst === "both" ? "Both" : state.inst];
-    document.getElementById("mostCited").innerHTML = mc.map((p, n) => `<li><span class="i">${n + 1}</span><span class="t"><a href="${esc(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>
-      <span class="m">${esc(p.journal)} · ${p.year}${state.inst === "both" ? " · " + esc(p.insts.replace(/IIT /g, "").replace(";", " & ")) : ""}${p.na > 10 ? ` · <span class="pill" style="margin-left:0">${p.na >= 100 ? "100+" : p.na} authors</span>` : ""}</span></span><span class="v">${fmt(p.cites)}<small>citations</small></span></li>`).join("");
+    document.getElementById("mostCited").innerHTML = rankList(mc.map((p, n) => `<li><span class="i">${n + 1}</span><span class="t"><a href="${esc(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+      <span class="m">${esc(p.journal)} · ${p.year}${state.inst === "both" ? " · " + esc(p.insts.replace(/IIT /g, "").replace(";", " & ")) : ""}${p.na > 10 ? ` · <span class="pill" style="margin-left:0">${p.na >= 100 ? "100+" : p.na} authors</span>` : ""}</span></span><span class="v">${fmt(p.cites)}<small>citations</small></span></li>`));
     // most-cited papers citing us
     document.getElementById("topCitingCard").hidden = !D.top_citing;
-    if (D.top_citing) document.getElementById("topCiting").innerHTML = shown().map(i => `${shown().length > 1 ? `<p class="cap" style="margin-top:18px"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}</p>` : ""}
-      <ol class="rank clamp">${D.top_citing[i].map((p, n) => `<li><span class="i">${n + 1}</span><span class="t">${p.doi ? `<a href="${esc(p.doi)}" target="_blank" rel="noopener"><b>${esc(p.title)}</b></a>` : `<b>${esc(p.title)}</b>`}
+    if (D.top_citing) instTabs("topCiting", i => rankList(D.top_citing[i].map((p, n) => `<li><span class="i">${n + 1}</span><span class="t">${p.doi ? `<a href="${esc(p.doi)}" target="_blank" rel="noopener"><b>${esc(p.title)}</b></a>` : `<b>${esc(p.title)}</b>`}
       <span class="m">${[p.journal, p.year, p.insts.split("; ").slice(0, 2).map(instName).join(", ") + (p.insts.split("; ").length > 2 ? " and others" : ""), `cites ${p.n} ${SHORT[i]} paper${p.n > 1 ? "s" : ""}`].filter(Boolean).map(esc).join(" · ")}</span></span>
-      <span class="v">${fmt(p.cites)}<small>citations</small></span></li>`).join("")}</ol>`).join("");
+      <span class="v">${fmt(p.cites)}<small>citations</small></span></li>`), "clamp"));
     // pagerank top
     const pr = D.pagerank_top[state.inst === "both" ? "Cluster (both IITs)" : state.inst];
-    document.getElementById("prTop").innerHTML = pr.map((p, n) => `<li><span class="i">${n + 1}</span><span class="t"><b title="${esc(p.title)}">${esc(p.title)}</b><span class="m">${p.year} · ${p.indeg} citations from our papers · in-degree rank ${p.indeg_rank}</span></span><span class="v"></span></li>`).join("");
+    document.getElementById("prTop").innerHTML = rankList(pr.map((p, n) => `<li><span class="i">${n + 1}</span><span class="t"><b title="${esc(p.title)}">${esc(p.title)}</b><span class="m">${p.year} · ${p.indeg} citations from our papers · in-degree rank ${p.indeg_rank}</span></span><span class="v"></span></li>`), "clamp");
     // flow strip
     document.getElementById("flowStrip").innerHTML = shown().map(i => { const k = D.kpi[i]; return `
       <div class="stat"><div class="big">${fmt(k.in_flow)}</div><div class="lbl"><span class="dot ${i === KGP ? "k" : "r"}"></span>${SHORT[i]}: citations received</div></div>
@@ -1205,7 +1321,7 @@ footer p { margin: 4px 0; }
       <td class="n">${fmt(f.papers)}</td><td class="n">${fmt(f.cites)}</td><td class="n"><b>${f.h}</b></td><td class="n">${fmt(f.i10)}</td><td class="n">${fmt(f.q1)}</td><td class="clip" title="${esc(f.journal || "")}">${esc(f.journal || "–")}</td>
       <td class="lcell">${linkChips(f.links) || `<span style="color:var(--fg3)">–</span>`}</td></tr>`).join("")
       || `<tr><td colspan="9" style="color:var(--fg2)">No faculty match this search.</td></tr>`;
-    document.getElementById("facCount").textContent = `${fmt(all.length)} faculty`;
+    document.getElementById("facCount").textContent = fmt(all.length);
     document.getElementById("pgInfo").textContent = `${state.page + 1} / ${pages}`;
     document.getElementById("pgPrev").disabled = state.page === 0;
     document.getElementById("pgNext").disabled = state.page >= pages - 1;
@@ -1249,7 +1365,12 @@ footer p { margin: 4px 0; }
   document.getElementById("pgPrev").addEventListener("click", () => { state.page--; renderFaculty(); });
   document.getElementById("pgNext").addEventListener("click", () => { state.page++; renderFaculty(); });
   function renderDepts() {
-    document.querySelector("#deptTable tbody").innerHTML = D.departments.filter(d => shown().includes(d.inst)).sort((a, b) => b.papers - a.papers)
+    const ds = D.departments.filter(d => shown().includes(d.inst)).sort((a, b) => b.papers - a.papers);
+    document.getElementById("deptCount").textContent = ds.length;
+    const more = document.getElementById("deptMore");
+    more.hidden = ds.length <= 12; more.textContent = `Show all ${ds.length}`;
+    document.querySelector("#deptTable tbody").classList.remove("open");
+    document.querySelector("#deptTable tbody").innerHTML = ds
       .map(d => `<tr><td><span class="dot ${d.inst === KGP ? "k" : "r"}"></span>${esc(d.dept)}</td><td class="n">${d.faculty}</td><td class="n">${fmt(d.papers)}</td><td class="n">${fmt(d.cites)}</td>
       <td class="n">${d.q1 == null ? "–" : pct(d.q1)}</td><td class="n">${d.mean_h == null ? "–" : d.mean_h.toFixed(1) + (d.sd_h == null ? "" : " ± " + d.sd_h.toFixed(1))}</td><td class="n">${d.median_h}</td></tr>`).join("");
   }
@@ -1276,7 +1397,7 @@ footer p { margin: 4px 0; }
     const rv = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("rv-in"); e.target.classList.remove("rv-hide"); rv.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
     document.querySelectorAll(".rv").forEach(el => { if (el.getBoundingClientRect().top > innerHeight) { el.classList.add("rv-hide"); rv.observe(el); } });
   }
-  const navLinks = [...document.querySelectorAll(".links a")];
+  const navLinks = [...document.querySelectorAll(".menu a")];
   const so = io && new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id)); }), { rootMargin: "-45% 0px -50% 0px" });
   document.querySelectorAll("main section").forEach(s => so && so.observe(s));
 })();

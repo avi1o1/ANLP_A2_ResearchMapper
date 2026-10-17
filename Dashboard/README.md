@@ -21,6 +21,18 @@ Both / Kharagpur / Roorkee filter for the whole page, light/dark toggle, interac
 (zoom, hover, click for details, faculty search), and a sortable, searchable faculty table. Reviewed by screenshots
 at desktop width in light and dark mode.
 
+**Update (17 Oct 2026)**
+- [x] Navigation moved from the top bar to a left sidebar with two groups, **Data analysis** (overview, output,
+      quality, people, most cited papers) and **Network analysis** (citation network, Indian links, collaboration,
+      partners). On screens up to 1024 px it becomes a top bar (menu button, institute filter, theme) with a slide-in drawer.
+- [x] Long lists no longer stack both institutes: pill tabs switch institute (top journals, CORE venues, the
+      Environmental Science breakdown, most-cited citing papers), ranked lists show the top 5 with "Show all", and the
+      conference-rank card has view tabs (all years / per year / top venues).
+- [ ] **IIT Ropar** as a third institute: scraped (`WebScrape/iit_ropar.json`) but not enriched. It needs the online
+      enrichment steps (OpenAlex caches, Scimago CSVs) and then `run_all.sh` + `build_data.py`. The tab helpers
+      (`instTabs`) already handle any number of institutes; the filter, `SHORT`, colours and the KGP/RKG-specific
+      text in `index.html` still assume two.
+
 **Update (12 Oct 2026, professor's review)**
 - [x] Scope is science and engineering only (all numbers regenerated).
 - [x] People: h-index mean ± SD / median / quartiles and i10 strip, h-index over the years, "Why is the h-index low?"
